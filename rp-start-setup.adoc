@@ -1,0 +1,74 @@
+---
+sidebar: sidebar 
+permalink: rp-start-setup.html 
+keywords: bluexp, ransomware protection, aws, azure 
+summary: 若要使用勒索軟體復原能力，請執行幾個步驟進行設定。 
+---
+= 設定NetApp勒索軟體復原能力
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以輕鬆部署NetApp勒索軟體復原能力。在開始之前，請查看link:rp-start-prerequisites.html["先決條件"]以確保您的環境已準備就緒。
+
+
+
+== 準備備份目標
+
+準備以下備份目標之一：
+
+* NetAppStorageGRID
+* 亞馬遜網路服務
+* 谷歌雲端平台
+* 微軟 Azure
+
+
+在備份目標本身中配置選項後，您稍後會將其配置為 Ransomware Resilience 中的備份目標。有關如何在 Ransomware Resilience 中配置備份目標的詳細信息，請參閱link:rp-use-settings.html["配置備份目標"]。
+
+
+
+=== 準備StorageGRID以成為備份目標
+
+如果要使用StorageGRID作為備份目標，請參閱 https://docs.netapp.com/us-en/storagegrid-117/index.html["StorageGRID文檔"^]有關StorageGRID的詳細資訊。
+
+
+
+=== 準備 AWS 成為備份目標
+
+* 在 AWS 中設定一個帳戶。
+* 配置 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions.html["AWS 權限"^]在 AWS 中。
+
+
+有關在控制台中管理 AWS 儲存的詳細信息，請參閱 https://docs.netapp.com/us-en/bluexp-setup-admin/task-viewing-amazon-s3.html["管理您的 Amazon S3 儲存桶"^]。
+
+
+
+=== 準備 Azure 以成為備份目標
+
+* 在 Azure 中設定一個帳戶。
+* 配置 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions.html["Azure 權限"^]在 Azure 中。
+
+
+有關在控制台中管理 Azure 儲存體的詳細信息，請參閱 https://docs.netapp.com/us-en/bluexp-blob-storage/task-view-azure-blob-storage.html["管理 Azure 儲存體帳戶"^]。
+
+
+
+== 設定NetApp控制台
+
+下一步是設定控制台和勒索軟體復原能力。
+
+審查 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-standard-mode.html["標準模式的控制台要求"^]。
+
+
+
+=== 建立控制台代理
+
+聯絡您的NetApp銷售代表試用或使用此服務。然後，當您使用控制台代理時，它將包含適當的勒索軟體恢復功能。
+
+若要使用勒索軟體復原功能建立控制台代理，請聯絡具有建立控制台代理權限的控制台組織管理員，並參考描述 https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["如何建立控制台代理"^]。
+
+
+NOTE: 如果您有多個控制台代理，則勒索軟體復原功能會掃描除控制台中目前顯示的代理之外的所有控制台代理的資料。該服務發現與該組織相關的所有項目和所有控制台代理。

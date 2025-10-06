@@ -1,0 +1,41 @@
+---
+sidebar: sidebar 
+permalink: rp-start-quick-start.html 
+keywords: get started, ransomware protection, quick start, resilience, quickstart 
+summary: 只需幾個步驟即可開始使用NetApp勒索軟體復原功能。 
+---
+= NetApp勒索軟體復原能力快速入門
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+以下是開始使用NetApp Ransomware Resilience 所需步驟的概述。每個步驟中的連結都會將您帶到提供更多詳細資訊的頁面。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一"]審查先決條件
+[role="quick-margin-para"]
+link:rp-start-prerequisites.html["確保您的系統符合這些要求"] 。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"]設定勒索軟體抵禦能力
+[role="quick-margin-list"]
+* link:rp-start-setup.html["準備NetApp StorageGRID、Amazon Web Services、Google Cloud Platform 或 Microsoft Azure 作為備份目標"] 。
+* link:rp-start-setup.html["配置控制台代理"] 。
+* link:rp-start-licenses.html["設定許可"] 。
+* link:rp-start-discover.html["在控制台中發現工作負載"] 。
+* link:rp-start-setup.html["配置備份目標"] 。
+* link:rp-start-setup.html["選擇性地啟用威脅偵測"] 。
+* link:rp-start-simulate.html["（可選）進行勒索軟體攻擊準備演習"] 。
+
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三"]下一步是什麼？
+[role="quick-margin-para"]
+設定勒索軟體復原功能後，您可以執行以下操作。
+
+[role="quick-margin-list"]
+* link:rp-use-dashboard.html["在儀表板上查看工作負載保護健康狀況"] 。
+* link:rp-use-protect.html["保護工作負載"] 。
+* link:rp-use-alert.html["回應偵測到的潛在勒索軟體攻擊"] 。
+* link:rp-use-recover.html["從攻擊中恢復（事件消除後）"] 。
+

@@ -1,0 +1,148 @@
+---
+sidebar: sidebar 
+permalink: rp-start-faq.html 
+keywords: ransomware protection faq, ransomware protection frequently asked questions 
+summary: 尋找有關NetApp勒索軟體復原能力的常見問題的答案。 
+---
+= 關於NetApp勒索軟體復原能力的常見問題解答
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+如果您只是想快速找到有關NetApp勒索軟體復原能力的問題的答案，那麼此常見問題解答可以為您提供協助。
+
+
+
+== 部署
+
+*您需要授權才能使用 Ransomware Resilience 嗎？ *
+
+您可以使用以下許可證類型：
+
+* 註冊即可獲得 30 天免費試用。
+* 透過 Amazon Web Services (AWS) Marketplace、Google Cloud Marketplace 和 Microsoft Azure Marketplace 購買NetApp智慧服務和勒索軟體復原的即用即付 (PAYGO) 訂閱。
+* 自帶授權 (BYOL)，即您從NetApp銷售代表取得的NetApp授權文件 (NLF)。您可以使用許可證序號在控制台的授權和訂閱部分啟動 BYOL。
+
+
+*如何啟用勒索軟體防禦功能？ *勒索軟體恢復不需要任何支援。您可以從NetApp控制台存取勒索軟體復原功能。
+
+要開始使用，您需要註冊或聯絡您的NetApp銷售代表來試用此服務。然後，當您使用控制台代理時，它將包含適當的勒索軟體恢復功能。
+
+若要開始使用勒索軟體復原功能，請從其初始登入頁面選擇「開始發現工作負載」。
+
+*勒索軟體復原功能是否在標準、受限和私人模式下可用？ *目前，勒索軟體恢復僅在標準模式下可用。敬請關注。
+
+有關所有NetApp資料服務中這些模式的說明，請參閱 https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["NetApp控制台部署模式"^]。
+
+
+
+== 使用權
+
+*勒索軟體防禦 URL 是什麼？ *在瀏覽器中輸入 https://console.netapp.com/["https://console.netapp.com/ransomware-resilience"^]訪問控制台。
+
+*如何處理存取權限？ *https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["了解所有服務的控制台存取角色"^] 。
+
+*什麼設備解析度最好？ *勒索軟體恢復的建議設備解析度為 1920x1080 或更高。
+
+*我該使用哪種瀏覽器？ *任何現代瀏覽器。
+
+
+
+== 與其他服務的交互
+
+*勒索軟體復原能力是否能夠辨識NetApp ONTAP中的保護設定？ *是的，Ransomware Resilience 發現了在ONTAP中設定的快照計劃。
+
+*如果您使用勒索軟體復原功能設定策略，那麼將來是否只需在此服務中進行變更？ *我們建議您根據勒索軟體復原能力進行策略變更。
+
+*勒索軟體復原能力如何與NetApp Backup and Recovery 和SnapCenter互動？ *
+
+Ransomware Resilience 使用以下產品和服務：
+
+* 備份和恢復，用於發現和設定文件共享工作負載的快照和備份策略
+* SnapCenter或SnapCenter for VMware 用於發現和設定應用程式和 VM 工作負載的快照和備份原則。
+
+
+此外，Ransomware Resilience 使用備份和復原以及SnapCenter / SnapCenter for VMware 來執行檔案和工作負載一致的復原。
+
+
+
+== 工作負載
+
+*工作量由什麼組成？ *工作負載是一個應用程式、一個虛擬機器或一個檔案共用。工作負載包括單一應用程式執行個體所使用的所有磁碟區。例如，部署在 ora3.host.com 上的 Oracle DB 實例可以分別使用 vol1 和 vol2 來儲存其資料和日誌。這些磁碟區共同構成了 Oracle DB 執行個體的特定執行個體的工作負載。
+
+*勒索軟體復原能力如何決定工作負載資料的優先順序？ *資料優先權由所做的快照副本和計劃的備份決定。
+
+工作負載優先順序（關鍵、標準、重要）由已應用於與工作負載關聯的每個磁碟區的快照頻率決定。
+
+link:rp-use-protect.html["了解工作負載優先順序或重要性"] 。
+
+*勒索軟體復原能力支援哪些工作負載？ *
+
+勒索軟體復原可以識別以下工作負載：Oracle、MySQL、檔案共用、區塊儲存、虛擬機器和虛擬機器資料儲存。
+
+此外，如果您使用SnapCenter或SnapCenter for VMware，這些產品支援的所有工作負載也會在 Ransomware Resilience 中識別，並且 Ransomware Resilience 可以以工作負載一致的方式保護和復原這些工作負載。
+
+*如何將資料與工作負載關聯？ *
+
+勒索軟體復原能力透過以下方式將資料與工作負載關聯起來：
+
+* 勒索軟體復原能力發現捲和檔案副檔名，並將它們與適當的工作負載關聯起來。
+* 此外，如果您擁有SnapCenter或SnapCenter for VMware 並在備份和復原中配置了工作負載，那麼 Ransomware Resilience 會發現由SnapCenter和SnapCenter for VMware 管理的工作負載及其關聯磁碟區。
+
+
+*什麼是「受保護」的工作負載？ *在勒索軟體復原中，當啟用主要偵測策略時，工作負載將顯示「受保護」狀態。目前，這意味著 ARP 在與工作負載相關的所有磁碟區上都啟用。
+
+*什麼是「有風險」的工作負載？ *如果工作負載沒有啟用主要偵測策略，那麼即使啟用了備份和快照策略，它仍然「處於危險之中」。
+
+*已新增卷，但尚未出現* 如果您在環境中新增了新卷，請再次啟動發現並套用保護策略來保護該新卷。
+
+
+
+== 保護策略
+
+*勒索軟體復原勒索軟體策略是否與其他類型的工作負載策略共存？ *目前，備份和復原（雲端備份）支援每個磁碟區一個備份策略。因此，備份和復原以及勒索軟體恢復共享備份策略。
+
+快照副本不受限制，可以從每個服務單獨新增。
+
+*勒索軟體防護策略需要哪些政策？ *
+
+勒索軟體防護策略需要以下政策：
+
+* 勒索軟體檢測政策
+* 快照策略
+
+
+勒索軟體抵禦策略中不需要備份策略。
+
+*勒索軟體復原能力是否能夠辨識NetApp ONTAP中的保護設定？ *
+
+是的，勒索軟體復原能力可以發現在ONTAP中設定的快照計劃，以及是否在發現的工作負載的所有磁碟區上啟用了 ARP 和 FPolicy。您最初在儀表板中看到的資訊是從其他NetApp解決方案和產品匯總而來的。
+
+*勒索軟體復原能力是否了解備份和復原以及SnapCenter中已經制定的策略？ *
+
+是的，如果您在備份和復原或SnapCenter中管理工作負載，則這些產品管理的策略將納入勒索軟體復原能力。
+
+*您可以修改從NetApp Backup and Recovery 和/或SnapCenter繼承的策略嗎？ *
+
+不可以，您無法從 Ransomware Resilience 修改由備份和還原或SnapCenter管理的政策。您可以在「備份和復原」或SnapCenter中管理對這些政策的任何變更。
+
+*如果ONTAP中存在策略（已在系統管理員中啟用，例如 ARP、FPolicy 和快照），那麼這些策略是否會在勒索軟體復原能力中發生變化？ *
+
+不會。勒索軟體復原不會修改ONTAP中的任何現有偵測策略（ARP、FPolicy 設定）。
+
+*註冊勒索軟體復原功能後，如果在備份和復原或SnapCenter中新增政策會發生什麼情況？ *
+
+勒索軟體復原能力可識別在備份和復原或SnapCenter中建立的任何新策略。
+
+*您可以從ONTAP更改策略嗎？ *
+
+是的，您可以在 Ransomware Resilience 中從ONTAP更改策略。您也可以在勒索軟體復原中建立新策略並將其應用於工作負載。此操作將以在勒索軟體復原中建立的策略取代現有的ONTAP策略。
+
+*您可以停用策略嗎？ *
+
+您可以使用系統管理員 UI、API 或 CLI 在偵測策略中停用 ARP。
+
+您可以透過套用不包含 FPolicy 和備份策略的其他策略來停用它們。

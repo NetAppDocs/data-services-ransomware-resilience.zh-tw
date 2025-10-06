@@ -1,0 +1,48 @@
+---
+sidebar: sidebar 
+permalink: rp-start-login.html 
+keywords: bluexp login, ransomware protection, cyber attack, log in, access 
+summary: 透過NetApp控制台開始使用NetApp勒索軟體復原能力。 
+---
+= 存取NetApp勒索軟體復原能力
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+透過NetApp控制台登入NetApp Ransomware Resilience。
+
+若要登入控制台，您可以使用您的NetApp支援網站憑證，也可以使用您的電子郵件和密碼註冊NetApp雲端登入。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-logging-in.html["了解有關登入的更多信息"^] 。
+
+*所需的控制台角色* 要執行此任務，您需要組織管理員、資料夾或專案管理員、勒索軟體復原管理員或勒索軟體復原檢視器角色。 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["了解所有服務的BlueXP訪問角色"^] 。
+
+.步驟
+. 打開網頁瀏覽器並前往link:https://console.netapp.com/["主機"^]。
++
+出現控制台登入頁面。
+
+. 登入控制台。
+. 從控制台左側導覽中，選擇*保護*>*勒索軟體恢復*。
++
+如果這是您第一次登入此服務，則會出現登入頁面。
+
++
+
+NOTE: 如果您沒有控制台代理或它不是此服務的代理，則需要部署一個。link:rp-start-setup.html["了解如何設定控制台代理"] 。
+
++
+image:screen-landing.png["勒索軟體恢復登陸頁面的螢幕截圖。"]
+
++
+否則，將出現勒索軟體復原力儀表板。
+
++
+image:screen-dashboard.png["勒索軟體復原力儀表板的螢幕截圖"]
+
+. 如果您還沒有這樣做，請選擇「發現工作負載」選項。
++
+請參閱link:rp-start-discover.html["發現工作負載"] 。
+
+

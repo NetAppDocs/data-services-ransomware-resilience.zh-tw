@@ -1,0 +1,31 @@
+---
+sidebar: sidebar 
+permalink: rp-reference-limitations.html 
+keywords: ransomware protection, protect against ransomware attacks, anti-ransomware, role-based access control, rbac, role, permission, access rights, organization,project,account 
+summary: 已知限制標識了該產品的此版本不支援的平台、設備或功能。 
+---
+= NetApp勒索軟體復原能力的已知限制
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+已知限制標識了該產品的此版本不支援或無法與其正確互通的平台、裝置或功能。仔細審查這些限制。
+
+
+
+== 準備演習重置選項問題
+
+如果您選擇ONTAP 9.11.1 磁碟區進行勒索軟體攻擊準備演習，勒索軟體復原能力會發送警報。如果您使用「複製到磁碟區」選項還原資料並重設鑽孔機，則重設操作將會失敗。
+
+
+
+== Amazon FSx for NetApp ONTAP限制
+
+勒索軟體復原能力支援Amazon FSx for NetApp ONTAP系統。此系統有以下限制：
+
+* Fsx for ONTAP不支援備份策略。在這種環境下，您應該使用Amazon FSx執行備份作業。您可以使用勒索軟體復原功能來恢復這些工作負載。
+* 復原操作僅從快照執行。
+

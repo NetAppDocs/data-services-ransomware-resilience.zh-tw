@@ -1,0 +1,121 @@
+---
+sidebar: sidebar 
+permalink: rp-use-protect-classify.html 
+keywords: ransomware protection, protect against ransomware attacks, anti-ransomware policies, cds, sensitive, pii, classification 
+summary: 使用NetApp資料分類來提高資料的安全性和隱私合規性，以確定您的資料是否包含個人識別資訊或私人資訊。 
+---
+= 使用勒索軟體復原中的NetApp資料分類掃描個人識別資訊
+:allow-uri-read: 
+
+
+[role="lead"]
+在NetApp勒索軟體復原能力中，您可以使用NetApp資料分類來掃描和分類檔案共用工作負載中的資料。對資料進行分類可以幫助您確定資料集是否包含個人識別資訊 (PII)，這可能會增加安全風險。資料分類是控制台的核心元件，無需額外付費即可使用。
+
+link:https://docs.netapp.com/us-en/bluexp-classification/["資料分類"^]利用人工智慧驅動的自然語言處理進行情境資料分析和分類，為您的資料提供可操作的見解，以滿足合規性要求、偵測安全漏洞、優化成本並加速遷移。
+
+
+TIP: 此過程可以影響工作負載的重要性，以幫助確保您獲得適當的保護。
+
+*所需的控制台角色* 要執行此任務，您需要組織管理員、資料夾或專案管理員或勒索軟體復原管理員角色。link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["了解所有服務的控制台存取角色"^] 。
+
+
+
+== 透過資料分類識別隱私暴露
+
+在使用勒索軟體復原功能中的資料分類之前，您需要link:https://docs.netapp.com/us-en/bluexp-classification/task-deploy-cloud-compliance.html["啟用資料分類來掃描您的數據"^]。
+
+您可以在勒索軟體復原的保護頁面內部署資料分類。依照程式識別隱私洩漏。當您選擇**識別暴露**時，如果您尚未部署資料分類，則會出現一個對話框，讓您啟用資料分類。
+
+image:classification-deploy.png["部署分類截圖"]
+
+有關數據分類的更多信息，請參閱：
+
+* https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["了解資料分類"^]
+* https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html["私人資料類別"^]
+* https://docs.netapp.com/us-en/bluexp-classification/task-investigate-data.html["調查組織中儲存的數據"^]
+
+
+.開始之前
+如果您已link:https://docs.netapp.com/us-en/bluexp-classification/task-deploy-cloud-compliance.html["部署資料分類"^]。資料分類作為控制台的一部分提供，無需額外付費，並且可以在本地或客戶雲端中部署。
+
+.步驟
+. 從勒索軟體恢復選單中，選擇*保護*。
+. 在「保護」頁面的「工作負載」欄位中找到檔案共享工作負載。
++
+image:screen-protection-sensitive-preview-column.png["保護頁面顯示隱私權暴露欄"]
+
+. 若要啟用資料分類來掃描您的資料中的 PII，請在「隱私暴露」欄位中選擇「識別暴露」。
+
+
+
+NOTE: 如果您尚未部署資料分類，選擇「識別暴露」將開啟一個對話方塊來部署資料分類。選擇*部署*。部署資料分類後，您可以返回「保護」頁面，然後選擇「識別暴露」。
+
+.結果
+掃描可能需要幾分鐘，具體取決於文件​​的大小和數量。在掃描過程中，保護頁面指示它正在識別文件並提供文件數量。掃描完成後，「隱私暴露」欄位將暴露等級評定為「低」、「中」或「高」。
+
+
+
+== 審查隱私暴露情況
+
+在對 PII 進行資料分類掃描後，評估風險。
+
+PII 資料分為以下三類：
+
+* *高*：超過 70% 的檔案包含 PII
+* *中*：超過 30% 且少於 70% 的檔案包含 PII
+* *低*：大於 0% 且小於 30% 的檔案包含 PII
+
+
+.步驟
+. 從勒索軟體恢復選單中，選擇*保護*。
+. 在「保護」頁面中，在「工作負載」欄位中找到顯示「隱私權暴露」列中狀態的檔案共用工作負載。
++
+image:screen-protection-sensitive-preview-column.png["保護頁面顯示隱私權暴露欄"]
+
+. 選擇「工作負載」列中的工作負載連結即可查看工作負載詳情。
++
+image:screen-protection-workload-details-privacy-exposure.png["顯示隱私暴露圖塊的工作負載詳細資訊螢幕"]
+
+. 在「工作負載詳細資料」頁面中，查看「隱私暴露」圖塊中的詳細資訊。
+
+
+
+
+== 隱私暴露對工作負載重要性的影響
+
+隱私暴露的變化可能會影響工作負載的重要性。
+
+[cols="15,20a,20,20"]
+|===
+| 當隱私暴露時： | 從這次隱私曝光來看： | 對於此隱私暴露： | 那麼，工作量重要性會這樣做：。 
+
+
+| *減少*  a| 
+高、中或低
+| 中、低或無 | 保持不變 
+
+
+.3+| *增加*  a| 
+沒有任何
+| 低的 | 保持標準 
+
+
+| 低的  a| 
+中等的
+| 從標準到重要的變化 
+
+
+| 低或中  a| 
+高的
+| 從標準或重要變成關鍵 
+|===
+
+
+== 更多資訊
+
+有關資料分類的詳細信息，請參閱資料分類文件：
+
+* https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["了解資料分類"^]
+* https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html["私人資料類別"^]
+* https://docs.netapp.com/us-en/bluexp-classification/task-investigate-data.html["調查組織中儲存的數據"^]
+

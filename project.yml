@@ -1,0 +1,66 @@
+---
+settings:
+  name: NetApp Ransomware Resilience
+  internal:
+    pdf_enabled: true
+  prod:
+    pdf_enabled: true
+    harmony_enabled: false
+  rss_page: whats-new.html
+  langs: zh-tw,us-en,de-de,es-es,fr-fr,it-it,pt-br,ja-jp,ko-kr,zh-cn
+sidebar:
+  entries:
+  - title: NetApp勒索軟體復原能力文檔
+    url: "/index.html"
+  - title: 發行說明
+    entries:
+    - title: 勒索軟體抵禦能力的新功能
+      url: "/whats-new.html"
+    - title: 已知限制
+      url: "/rp-reference-limitations.html"
+  - title: 開始
+    entries:
+    - title: 了解勒索軟體抵禦能力
+      url: "/concept-ransomware-resilience.html"
+    - title: 先決條件
+      url: "/rp-start-prerequisites.html"
+    - title: 快速啟動
+      url: "/rp-start-quick-start.html"
+    - title: 設定勒索軟體抵禦能力
+      url: "/rp-start-setup.html"
+    - title: 存取勒索軟體彈性
+      url: "/rp-start-login.html"
+    - title: 設定許可
+      url: "/rp-start-licenses.html"
+    - title: 發現工作負載
+      url: "/rp-start-discover.html"
+    - title: 透過準備演習模擬勒索軟體攻擊
+      url: "/rp-start-simulate.html"
+    - title: 在「設定」中設定備份、威脅偵測和攻擊模擬
+      url: "/rp-use-settings.html"
+  - title: 使用勒索軟體彈性
+    entries:
+    - title: 使用勒索軟體恢復概述
+      url: "/rp-use-overview.html"
+    - title: 使用儀表板查看工作負載健康狀況
+      url: "/rp-use-dashboard.html"
+    - title: 保護工作負載
+      entries:
+      - title: 使用勒索軟體保護策略保護工作負載
+        url: "/rp-use-protect.html"
+      - title: 掃描個人識別資訊
+        url: "/rp-use-protect-classify.html"
+    - title: 響應偵測到的警報
+      url: "/rp-use-alert.html"
+    - title: 從勒索軟體攻擊中恢復
+      url: "/rp-use-recover.html"
+    - title: 下載報告
+      url: "/rp-use-reports.html"
+  - section: support
+  - title: 常問問題
+    url: "/rp-start-faq.html"
+  - title: 法律聲明
+    url: "/legal-notices.html"
+product-family:
+  name: NetApp Data Services
+  repo: data-services-family

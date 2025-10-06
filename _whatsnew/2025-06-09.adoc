@@ -1,0 +1,31 @@
+= 著陸頁更新
+:allow-uri-read: 
+
+
+
+
+=== 著陸頁更新
+
+此版本包括對BlueXP ransomware protection登陸頁面的更新，使開始免費試用和發現變得更加容易。
+
+
+
+=== 準備演習更新
+
+以前，您可以透過模擬對新樣本工作負載的攻擊來執行勒索軟體準備演練。利用此功能，您可以調查模擬攻擊並恢復工作負載。使用此功能來測試警報通知、回應和恢復。根據需要經常運行和安排這些演習。
+
+在此版本中，您可以使用BlueXP ransomware protection儀表板上的新按鈕在測試工作負載上執行勒索軟體準備演練，從而更輕鬆地模擬勒索軟體攻擊、調查其影響並有效地恢復工作負載，所有這些都在受控環境中完成。
+
+現在，除了 NFS 工作負載之外，您還可以在 CIFS（SMB）工作負載上執行準備情況演練。
+
+有關詳細信息，請參閱 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-simulate.html["進行勒索軟體攻擊準備演習"]。
+
+
+
+=== 啟用BlueXP classification更新
+
+在BlueXP ransomware protection服務中使用BlueXP classification之前，您需要啟用BlueXP classification來掃描您的資料。將資料分類有助於您找到個人識別資訊 (PII)，這可能會增加安全風險。
+
+您可以在BlueXP ransomware protection中對文件共享工作負載部署BlueXP classification。在*隱私暴露*欄中，選擇*識別暴露*選項。如果您已啟用分類服務，此操作將識別曝光。否則，在此版本中，對話方塊會顯示部署BlueXP classification的選項。選擇*部署*前往BlueXP classification服務登入頁面，您可以在其中部署服務。西
+
+有關詳細信息，請參閱 https://docs.netapp.com/us-en/bluexp-classification/task-deploy-cloud-compliance.html["在雲端部署BlueXP classification"^]並在BlueXP ransomware protection內使用該服務，請參閱 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect-classify.html["使用BlueXP classification掃描個人識別資訊"]。

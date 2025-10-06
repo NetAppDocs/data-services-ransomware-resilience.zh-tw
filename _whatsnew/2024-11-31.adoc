@@ -1,0 +1,28 @@
+= 使用Data Infrastructure Insights儲存工作負載安全性偵測異常使用者行為
+:allow-uri-read: 
+
+
+
+
+=== 使用Data Infrastructure Insights儲存工作負載安全性偵測異常使用者行為
+
+在此版本中，您可以使用Data Infrastructure Insights儲存工作負載安全性來偵測儲存工作負載中的異常使用者行為。此功能可協助您識別潛在的安全威脅並阻止潛在的惡意使用者以保護您的資料。
+
+有關詳細信息，請參閱 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-alert.html["響應檢測到的勒索軟體警報"]。
+
+在使用Data Infrastructure Insights儲存工作負載安全性偵測異常使用者行為之前，您需要使用BlueXP ransomware protection*設定* 選項來設定此選項。
+
+參考 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["配置BlueXP ransomware protection設置"]。
+
+
+
+=== 選擇要發現和保護的工作負載
+
+在此版本中，您現在可以執行以下操作：
+
+* 在每個連接器中，選擇您想要發現工作負載的工作環境。如果您想保護環境中的特定工作負載而不是其他工作負載，您可能會受益於此功能。
+* 在工作負載發現期間，您可以啟用每個連接器的工作負載自動發現。此功能可讓您選擇要保護的工作負載。
+* 發現先前選擇的工作環境的新建立的工作負載。
+
+
+參考 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-discover.html["發現工作負載"]。

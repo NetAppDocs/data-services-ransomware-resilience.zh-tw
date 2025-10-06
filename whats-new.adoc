@@ -1,0 +1,583 @@
+---
+sidebar: sidebar 
+permalink: whats-new.html 
+keywords: 'what"s new, features, new, release notes, bugs, limitations, known issues, enhancements, fixes, ransomware protection, bluexp, anti-ransomware, cyber attack, ransomware, protection, detection, ARP, netapp' 
+summary: 了解NetApp勒索軟體復原能力的新功能。 
+---
+= NetApp勒索軟體復原能力的新功能
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+了解NetApp勒索軟體復原能力的新功能。
+
+
+
+== 2025年10月6日
+
+
+
+=== BlueXP ransomware protection現已升級NetApp勒索軟體復原能力
+
+BlueXP勒索軟體複製已重新命名為NetApp Ransomware Resilience。
+
+
+
+=== BlueXP現在是NetApp控制台
+
+BlueXP已重新命名並重新設計，以更好地反映其在管理資料基礎架構中的作用。
+
+NetApp控制台提供企業級跨本地和雲端環境的儲存和資料服務的集中管理，提供即時洞察、更快的工作流程和簡化的管理。
+
+有關更改的詳細信息，請參閱 https://docs.netapp.com/us-en/bluexp-relnotes/index.html["NetApp控制台發行說明"]。
+
+
+
+=== 資料外洩保護
+
+
+
+=== 安全資訊與事件管理
+
+
+
+=== 清理恢復環境
+
+
+
+== 2025年7月15日
+
+
+
+=== SAN 工作負載支持
+
+此版本包括對BlueXP ransomware protection中的 SAN 工作負載的支援。現在，除了 NFS 和 CIFS 工作負載之外，您還可以保護 SAN 工作負載。
+
+有關詳細信息，請參閱link:https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-prerequisites.html["BlueXP ransomware protection先決條件"] 。
+
+
+
+=== 改進的工作負載保護
+
+此版本改進了具有其他NetApp工具（如SnapCenter或BlueXP backup and recovery）的快照和備份策略的工作負載的設定過程。在先前的版本中， BlueXP ransomware protection發現了來自其他工具的策略，只允許您更改偵測策略。在這個版本中，您現在可以用BlueXP ransomware protection策略取代快照和備份策略，或繼續使用其他工具中的策略。
+
+有關詳細信息，請參閱link:https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["保護工作負載"]。
+
+
+
+=== 電子郵件通知
+
+如果BlueXP ransomware protection偵測到可能的攻擊， BlueXP通知中會出現通知，並且會向您設定的電子郵件地址發送電子郵件。
+
+電子郵件包含有關嚴重性、受影響的工作負載的信息，以及BlueXP ransomware protection*警報* 標籤中的警報連結。
+
+如果您在BlueXP ransomware protection中配置了安全性和事件管理 (SIEM) 系統，該服務會向您的 SIEM 系統發送警報詳細資訊。
+
+有關詳細信息，請參閱link:https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-alert.html["處理偵測到的勒索軟體警報"]。
+
+
+
+== 2025年6月9日
+
+
+
+=== 著陸頁更新
+
+此版本包括對BlueXP ransomware protection登陸頁面的更新，使開始免費試用和發現變得更加容易。
+
+
+
+=== 準備演習更新
+
+以前，您可以透過模擬對新樣本工作負載的攻擊來執行勒索軟體準備演練。利用此功能，您可以調查模擬攻擊並恢復工作負載。使用此功能來測試警報通知、回應和恢復。根據需要經常運行和安排這些演習。
+
+在此版本中，您可以使用BlueXP ransomware protection儀表板上的新按鈕在測試工作負載上執行勒索軟體準備演練，從而更輕鬆地模擬勒索軟體攻擊、調查其影響並有效地恢復工作負載，所有這些都在受控環境中完成。
+
+現在，除了 NFS 工作負載之外，您還可以在 CIFS（SMB）工作負載上執行準備情況演練。
+
+有關詳細信息，請參閱 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-simulate.html["進行勒索軟體攻擊準備演習"]。
+
+
+
+=== 啟用BlueXP classification更新
+
+在BlueXP ransomware protection服務中使用BlueXP classification之前，您需要啟用BlueXP classification來掃描您的資料。將資料分類有助於您找到個人識別資訊 (PII)，這可能會增加安全風險。
+
+您可以在BlueXP ransomware protection中對文件共享工作負載部署BlueXP classification。在*隱私暴露*欄中，選擇*識別暴露*選項。如果您已啟用分類服務，此操作將識別曝光。否則，在此版本中，對話方塊會顯示部署BlueXP classification的選項。選擇*部署*前往BlueXP classification服務登入頁面，您可以在其中部署服務。西
+
+有關詳細信息，請參閱 https://docs.netapp.com/us-en/bluexp-classification/task-deploy-cloud-compliance.html["在雲端部署BlueXP classification"^]並在BlueXP ransomware protection內使用該服務，請參閱 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect-classify.html["使用BlueXP classification掃描個人識別資訊"]。
+
+
+
+== 2025年5月13日
+
+
+
+=== BlueXP ransomware protection中不支援的工作環境報告
+
+在發現工作流程期間，當您將滑鼠懸停在「支援」或「不支援的工作負載」上時， BlueXP ransomware protection會報告更多詳細資訊。這將幫助您了解為什麼您的某些工作負載未被BlueXP ransomware protection服務發現。
+
+服務不支援工作環境的原因有很多，例如，工作環境中的ONTAP版本可能低於所需的版本。當您將滑鼠懸停在未支援的工作環境上時，工具提示會顯示原因。
+
+您可以在初始發現期間查看不受支援的工作環境，也可以在其中下載結果。您也可以從「設定」頁面中的「*工作負載發現*」選項查看發現的結果。
+
+有關詳細信息，請參閱 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-discover.html["發現BlueXP ransomware protection中的工作負載"]。
+
+
+
+== 2025年4月29日
+
+
+
+=== 支援Amazon FSx for NetApp ONTAP
+
+此版本支援Amazon FSx for NetApp ONTAP 。此功能可協助您使用BlueXP ransomware protection來保護 FSx for ONTAP工作負載。
+
+FSx for ONTAP是一項完全託管的服務，可在雲端提供NetApp ONTAP儲存的強大功能。它提供與您在本機上使用的相同的功能、效能和管理能力，同時具有原生 AWS 服務的靈活性和可擴充性。
+
+BlueXP ransomware protection工作流程進行了以下更改：
+
+* Discovery 包含 FSx for ONTAP 9.15 工作環境中的工作負載。
+* 「保護」標籤顯示 FSx for ONTAP環境中的工作負載。在這種環境中，您應該使用 FSx for ONTAP備份服務執行備份作業。您可以使用BlueXP ransomware protection快照恢復這些工作負載。
++
+
+TIP: 無法在BlueXP中設定在 FSx for ONTAP上執行的工作負載的備份策略。  Amazon FSx for NetApp ONTAP中設定的任何現有備份策略均保持不變。
+
+* 警報事件展示了新的 FSx for ONTAP工作環境。
+
+
+有關詳細信息，請參閱 https://docs.netapp.com/us-en/bluexp-ransomware-protection/concept-ransomware-protection.html["了解BlueXP ransomware protection與工作環境"]。
+
+有關受支援選項的信息，請參閱 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-reference-limitations.html["BlueXP ransomware protection的局限性"]。
+
+
+
+=== 需要BlueXP訪問角色
+
+現在您需要以下存取角色之一來查看、發現或管理BlueXP ransomware protection：組織管理員、資料夾或專案管理員、勒索軟體保護管理員或勒索軟體保護檢視器。
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["了解所有服務的BlueXP訪問角色"^] 。
+
+
+
+== 2025年4月14日
+
+
+
+=== 準備演習報告
+
+透過此版本，您可以查看勒索軟體攻擊準備演習報告。準備演練使您能夠模擬對新建立的範例工作負載的勒索軟體攻擊。然後，調查模擬攻擊並恢復樣本工作負載。此功能可協助您透過測試警報通知、回應和復原流程來了解在發生實際勒索軟體攻擊時是否已做好準備。
+
+有關詳細信息，請參閱 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-simulate.html["進行勒索軟體攻擊準備演習"]。
+
+
+
+=== 新的基於角色的存取控制角色和權限
+
+以前，您可以根據使用者的職責為其分配角色和權限，這有助於您管理使用者對BlueXP ransomware protection的存取。在這個版本中，有兩個特定於BlueXP ransomware protection的新角色具有更新的權限。新角色如下：
+
+* 勒索軟體保護管理員
+* 勒索軟體保護檢視器
+
+
+有關權限的詳細信息，請參閱 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-reference-roles.html["BlueXP ransomware protection基於角色的功能訪問"]。
+
+
+
+=== 付款改進
+
+此版本對支付流程進行了多項改進。
+
+有關詳細信息，請參閱 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-licenses.html["設定許可證和付款選項"]。
+
+
+
+== 2025年3月10日
+
+
+
+=== 模擬攻擊並做出回應
+
+透過此版本，模擬勒索軟體攻擊來測試您對勒索軟體警報的回應。此功能可協助您透過測試警報通知、回應和復原流程來了解在發生實際勒索軟體攻擊時是否已做好準備。
+
+有關詳細信息，請參閱 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-simulate.html["進行勒索軟體攻擊準備演習"]。
+
+
+
+=== 發現過程的增強
+
+此版本包括對選擇性發現和重新發現過程的增強：
+
+* 透過此版本，您可以發現新增到先前選擇的工作環境中的新建立的工作負載。
+* 您也可以在此版本中選擇_新_工作環境。此功能可協助您保護新增至環境中的新工作負載。
+* 您可以在最初的發現過程中或在設定選項中執行這些發現過程。
+
+
+有關詳細信息，請參閱 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-discover.html["發現先前選定的工作環境的新建立的工作負載"]和 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["使用“設定”選項配置功能"]。
+
+
+
+=== 偵測到高度加密時發出警報
+
+在此版本中，即使沒有高檔案副檔名更改，您也可以在工作負載上偵測到高加密時查看警報。此功能使用ONTAP自主勒索軟體防護 (ARP) AI，可協助您識別面臨勒索軟體攻擊風險的工作負載。使用此功能並下載受影響文件的完整清單（無論擴展名是否更改）。
+
+有關詳細信息，請參閱 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-alert.html["響應檢測到的勒索軟體警報"]。
+
+
+
+== 2024年12月16日
+
+
+
+=== 使用Data Infrastructure Insights儲存工作負載安全性偵測異常使用者行為
+
+在此版本中，您可以使用Data Infrastructure Insights儲存工作負載安全性來偵測儲存工作負載中的異常使用者行為。此功能可協助您識別潛在的安全威脅並阻止潛在的惡意使用者以保護您的資料。
+
+有關詳細信息，請參閱 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-alert.html["響應檢測到的勒索軟體警報"]。
+
+在使用Data Infrastructure Insights儲存工作負載安全性偵測異常使用者行為之前，您需要使用BlueXP ransomware protection*設定* 選項來設定此選項。
+
+參考 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["配置BlueXP ransomware protection設置"]。
+
+
+
+=== 選擇要發現和保護的工作負載
+
+在此版本中，您現在可以執行以下操作：
+
+* 在每個連接器中，選擇您想要發現工作負載的工作環境。如果您想保護環境中的特定工作負載而不是其他工作負載，您可能會受益於此功能。
+* 在工作負載發現期間，您可以啟用每個連接器的工作負載自動發現。此功能可讓您選擇要保護的工作負載。
+* 發現先前選擇的工作環境的新建立的工作負載。
+
+
+參考 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-discover.html["發現工作負載"]。
+
+
+
+== 2024年11月7日
+
+
+
+=== 啟用資料分類並掃描個人識別資訊 (PII)
+
+在這個版本中，您可以啟用BlueXP classification（ BlueXP系列的核心元件）來掃描和分類檔案共用工作負載中的資料。將資料分類可以幫助您識別資料是否包含個人資訊或私人資訊，這可能會增加安全風險。此流程也會影響工作負載的重要性，並協助您確保使用適當的保護等級來保護工作負載。
+
+部署了BlueXP classification的客戶通常可以在BlueXP ransomware protection中掃描 PII 資料。  BlueXP classification是作為BlueXP平台的一部分提供，無需額外付費，並且可以在本地或客戶雲端中部署。
+
+參考 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["配置BlueXP ransomware protection設置"]。
+
+若要啟動掃描，請在「保護」頁面上，按一下「隱私權暴露」列中的「識別暴露」。
+
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect-classify.html["使用BlueXP classification掃描個人身份敏感數據"] 。
+
+
+
+=== SIEM 與 Microsoft Sentinel 集成
+
+現在，您可以使用 Microsoft Sentinel 將資料傳送至安全性和事件管理系統 (SIEM) 以進行威脅分析和偵測。以前，您可以選擇 AWS Security Hub 或 Splunk Cloud 作為您的 SIEM。
+
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["了解有關配置BlueXP ransomware protection設定的更多信息"] 。
+
+
+
+=== 立即免費試用 30 天
+
+隨著此版本的發布， BlueXP ransomware protection的新部署現在有 30 天的免費試用期。在此之前， BlueXP ransomware protection提供 90 天的免費試用。如果您已享有 90 天免費試用，則該優惠將持續 90 天。
+
+
+
+=== 在檔案層級恢復 Podman 的應用程式工作負載
+
+在檔案層級恢復應用程式工作負載之前，您現在可以查看可能受到攻擊影響的檔案清單並確定要復原的檔案。以前，如果組織（以前是帳戶）中的BlueXP連接器正在使用 Podman，則此功能將被停用。現在它已為 Podman 啟用。您可以讓BlueXP ransomware protection選擇要恢復的文件，您可以上傳列出受警報影響的所有文件的 CSV 文件，或者您可以手動識別要恢復的文件。
+
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-recover.html["了解有關從勒索軟體攻擊中恢復的更多信息"] 。
+
+
+
+== 2024年9月30日
+
+
+
+=== 檔案共享工作負載的自訂分組
+
+在此版本中，您現在可以將文件共用分組，以便更輕鬆地保護您的資料資產。此服務可以同時保護群組中的所有磁碟區。以前，您需要單獨保護每個磁碟區。
+
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["了解有關在勒索軟體保護策略中分組文件共享工作負載的更多信息"] 。
+
+
+
+== 2024年9月2日
+
+
+
+=== 來自Digital Advisor的安全風險評估
+
+BlueXP ransomware protection現在從NetApp Digital Advisor收集有關叢集的高風險和嚴重安全風險的資訊。如果發現任何風險， BlueXP ransomware protection會在儀表板的“建議操作”窗格中提供建議：“修復叢集 <name> 上的已知安全漏洞。”從儀表板上的建議中，按一下「檢視並修復」建議以查看Digital Advisor和常見漏洞和暴露 (CVE) 文章以解決安全風險。如果存在多個安全風險，請查看Digital Advisor中的資訊。
+
+參考 https://docs.netapp.com/us-en/active-iq/index.html["Digital Advisor文檔"^]。
+
+
+
+=== 備份到 Google Cloud Platform
+
+在此版本中，您可以將備份目標設定為 Google Cloud Platform 儲存桶。以前，您只能將備份目標新增至NetApp StorageGRID、Amazon Web Services 和 Microsoft Azure。
+
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["了解有關配置BlueXP ransomware protection設定的更多信息"] 。
+
+
+
+=== 支持 Google Cloud Platform
+
+該服務現在支援適用於 Google Cloud Platform 的Cloud Volumes ONTAP進行儲存保護。先前，該服務僅支援適用於 Amazon Web Services 和 Microsoft Azure 的Cloud Volumes ONTAP以及本機 NAS。
+
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/concept-ransomware-protection.html["了解BlueXP ransomware protection以及支援的資料來源、備份目標和工作環境"] 。
+
+
+
+=== 基於角色的存取控制
+
+現在您可以使用基於角色的存取控制 (RBAC) 限制對特定活動的存取。  BlueXP ransomware protection使用BlueXP的兩個角色： BlueXP帳號管理員和非帳號管理員（檢視者）。
+
+有關每個角色可以執行的操作的詳細信息，請參閱 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-reference-roles.html["基於角色的存取控制權限"]。
+
+
+
+== 2024年8月5日
+
+
+
+=== 使用 Splunk Cloud 進行威脅偵測
+
+您可以自動將資料傳送到您的安全性和事件管理系統 (SIEM) 進行威脅分析和偵測。在先前的版本中，您只能選擇 AWS Security Hub 作為您的 SIEM。在此版本中，您可以選擇 AWS Security Hub 或 Splunk Cloud 作為您的 SIEM。
+
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["了解有關配置BlueXP ransomware protection設定的更多信息"] 。
+
+
+
+== 2024年7月1日
+
+
+
+=== 自帶授權 (BYOL)
+
+在此版本中，您可以使用 BYOL 許可證，它是您從NetApp銷售代表處獲得的NetApp許可證文件 (NLF)。
+
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-licenses.html["了解有關設置許可的詳細信息"] 。
+
+
+
+=== 在檔案層級恢復應用程式工作負載
+
+在檔案層級恢復應用程式工作負載之前，您現在可以查看可能受到攻擊影響的檔案清單並確定要復原的檔案。您可以讓BlueXP ransomware protection選擇要恢復的文件，您可以上傳列出受警報影響的所有文件的 CSV 文件，或者您可以手動識別要恢復的文件。
+
+
+NOTE: 在此版本中，如果帳戶中的所有BlueXP連接器均未使用 Podman，則啟用單一檔案復原功能。否則，該帳戶將被停用。
+
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-recover.html["了解有關從勒索軟體攻擊中恢復的更多信息"] 。
+
+
+
+=== 下載受影響文件的列表
+
+在檔案層級復原應用程式工作負載之前，您現在可以造訪「警報」頁面以 CSV 檔案形式下載受影響檔案的列表，然後使用「復原」頁面上傳該 CSV 檔案。
+
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-recover.html["了解有關在恢復應用程式之前下載受影響文件的更多信息"] 。
+
+
+
+=== 刪除保護計劃
+
+透過此版本，您現在可以刪除勒索軟體保護策略。
+
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["了解有關保護工作負載和管理勒索軟體保護策略的更多信息"] 。
+
+
+
+== 2024年6月10日
+
+
+
+=== 主儲存體上的快照副本鎖定
+
+啟用此功能可鎖定主儲存體上的快照副本，以便即使勒索軟體攻擊進入備份儲存目標，它們在一定時間內也無法被修改或刪除。
+
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["了解有關在勒索軟體保護策略中保護工作負載和啟用備份鎖定的更多信息"] 。
+
+
+
+=== 支援適用於 Microsoft Azure 的Cloud Volumes ONTAP
+
+此版本除了支援適用於 AWS 的Cloud Volumes ONTAP和本機ONTAP NAS 之外，還支援適用於 Microsoft Azure 的Cloud Volumes ONTAP作為系統。
+
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-getting-started-azure.html["Azure 中的Cloud Volumes ONTAP快速入門"^]
+
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/concept-ransomware-protection.html["了解BlueXP ransomware protection"] 。
+
+
+
+=== Microsoft Azure 新增為備份目標
+
+現在您可以將 Microsoft Azure 與 AWS 和NetApp StorageGRID一起新增為備份目標。
+
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["了解有關如何配置保護設定的更多信息"] 。
+
+
+
+== 2024年5月14日
+
+
+
+=== 許可更新
+
+您可以註冊 90 天免費試用。很快您將能夠透過 Amazon Web Services Marketplace 購買即用即付訂閱或自備NetApp授權。
+
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-licenses.html["了解有關設置許可的詳細信息"] 。
+
+
+
+=== CIFS 協定
+
+該服務現在支援使用 NFS 和 CIFS 協定的 AWS 系統中的本機ONTAP和Cloud Volumes ONTAP 。先前的版本僅支援 NFS 協定。
+
+
+
+=== 工作負載詳情
+
+此版本現在在保護和其他頁面的工作負載資訊中提供了更多詳細信息，以改善工作負載保護評估。從工作負載詳細資料中，您可以查看目前指派的策略並查看配置的備份目標。
+
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["詳細了解如何在“保護”頁面中查看工作負載詳細信息"] 。
+
+
+
+=== 應用程式一致性和虛擬機器一致性保護和恢復
+
+現在，您可以使用NetApp SnapCenter軟體執行應用程式一致性保護，並使用SnapCenter Plug-in for VMware vSphere虛擬機器一致性保護，從而實現靜止且一致的狀態，以避免日後需要復原時可能的資料遺失。如果需要恢復，您可以將應用程式或虛擬機器恢復到任何先前可用的狀態。
+
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["了解有關保護工作負載的更多信息"] 。
+
+
+
+=== 勒索軟體防護策略
+
+如果工作負載上不存在快照或備份策略，您可以建立勒索軟體防護策略，其中可以包含您在此服務中建立的以下策略：
+
+* 快照策略
+* 備份策略
+* 檢測策略
+
+
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["了解有關保護工作負載的更多信息"] 。
+
+
+
+=== 威脅偵測
+
+現在可以使用第三方安全性和事件管理 (SIEM) 系統啟用威脅偵測。儀表板現在顯示「啟用威脅偵測」的新建議，可以在「設定」頁面上進行設定。
+
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["了解有關配置“設定”選項的詳細信息"] 。
+
+
+
+=== 消除誤報
+
+從「警報」標籤中，您現在可以消除誤報或決定立即恢復資料。
+
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-alert.html["詳細了解如何回應勒索軟體警報"] 。
+
+
+
+=== 檢測狀態
+
+新的偵測狀態出現在「保護」頁面上，顯示套用於工作負載的勒索軟體偵測的狀態。
+
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["了解有關保護工作負載和查看保護狀態的更多信息"] 。
+
+
+
+=== 下載 CSV 文件
+
+您可以從保護、警報和復原頁面下載 CSV 檔案*。
+
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-reports.html["詳細了解如何從儀表板和其他頁面下載 CSV 文件"] 。
+
+
+
+=== 文件連結
+
+查看文件連結現在包含在 UI 中。您可以從儀表板垂直*操作*存取此文檔image:button-actions-vertical.png["垂直操作選項"]選項。選擇“*新增功能*”以查看發行說明中的詳細信息，或選擇“*文件*”查看BlueXP ransomware protection文件主頁。
+
+
+
+=== BlueXP backup and recovery
+
+BlueXP backup and recovery服務不再需要在系統上啟用。看link:rp-start-prerequisites.html["先決條件"] 。 BlueXP ransomware protection服務可協助透過「設定」選項配置備份目標。看link:rp-use-settings.html["配置設定"] 。
+
+
+
+=== 設定選項
+
+現在您可以在BlueXP ransomware protection設定中設定備份目的地。
+
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["了解有關配置“設定”選項的詳細信息"] 。
+
+
+
+== 2024年3月5日
+
+
+
+=== 保護策略管理
+
+除了使用預定義策略之外，您現在還可以建立策略。 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["了解有關管理策略的更多信息"] 。
+
+
+
+=== 二級儲存的不變性（DataLock）
+
+現在，您可以使用物件儲存中的NetApp DataLock 技術使備份在二級儲存中不可變。 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["了解有關創建保護策略的更多信息"] 。
+
+
+
+=== 自動備份到NetApp StorageGRID
+
+除了使用 AWS，您現在還可以選擇StorageGRID作為備份目的地。 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["了解有關配置備份目標的更多信息"] 。
+
+
+
+=== 調查潛在攻擊的附加功能
+
+現在您可以查看更多取證詳細資訊來調查偵測到的潛在攻擊。 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-alert.html["詳細了解如何回應偵測到的勒索軟體警報"] 。
+
+
+
+=== 恢復過程
+
+恢復過程得到了加強。現在，您可以按磁碟區或所有磁碟區恢復工作負載。 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-recover.html["了解有關從勒索軟體攻擊中恢復的更多資訊（事件被消除後）"] 。
+
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/concept-ransomware-protection.html["了解BlueXP ransomware protection"] 。
+
+
+
+== 2023年10月6日
+
+BlueXP ransomware protection服務是一種用於保護資料、偵測潛在攻擊以及從勒索軟體攻擊中恢復資料的 SaaS 解決方案。
+
+對於預覽版，該服務可分別保護BlueXP組織內本地 NAS 儲存空間上的 Oracle、MySQL、VM 資料儲存和檔案共用以及 AWS 上的Cloud Volumes ONTAP （使用 NFS 協定）的基於應用程式的工作負載，並將資料備份到 Amazon Web Services 雲端儲存。
+
+BlueXP ransomware protection服務充分利用了多種NetApp技術，以便您的資料安全管理員或安全營運工程師能夠實​​現以下目標：
+
+* 一目了然地查看所有工作負載的勒索軟體保護情況。
+* 深入了解勒索軟體防護建議
+* 根據BlueXP ransomware protection建議改進防護態勢。
+* 指派勒索軟體保護策略，以保護您的主要工作負載和高風險資料免受勒索軟體攻擊。
+* 監控您的工作負載的健康狀況，防範勒索軟體攻擊並尋找資料異常。
+* 快速評估勒索軟體事件對您的工作量的影響。
+* 透過恢復數據並確保不會再次感染儲存的數據，智慧地從勒索軟體事件中恢復。
+
+
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/concept-ransomware-protection.html["了解BlueXP ransomware protection"] 。

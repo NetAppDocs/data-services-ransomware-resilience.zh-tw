@@ -1,0 +1,15 @@
+= BlueXP ransomware protection中不支援的工作環境報告
+:allow-uri-read: 
+
+
+
+
+=== BlueXP ransomware protection中不支援的工作環境報告
+
+在發現工作流程期間，當您將滑鼠懸停在「支援」或「不支援的工作負載」上時， BlueXP ransomware protection會報告更多詳細資訊。這將幫助您了解為什麼您的某些工作負載未被BlueXP ransomware protection服務發現。
+
+服務不支援工作環境的原因有很多，例如，工作環境中的ONTAP版本可能低於所需的版本。當您將滑鼠懸停在未支援的工作環境上時，工具提示會顯示原因。
+
+您可以在初始發現期間查看不受支援的工作環境，也可以在其中下載結果。您也可以從「設定」頁面中的「*工作負載發現*」選項查看發現的結果。
+
+有關詳細信息，請參閱 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-discover.html["發現BlueXP ransomware protection中的工作負載"]。

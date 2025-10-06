@@ -1,0 +1,34 @@
+= 支援Amazon FSx for NetApp ONTAP
+:allow-uri-read: 
+
+
+
+
+=== 支援Amazon FSx for NetApp ONTAP
+
+此版本支援Amazon FSx for NetApp ONTAP 。此功能可協助您使用BlueXP ransomware protection來保護 FSx for ONTAP工作負載。
+
+FSx for ONTAP是一項完全託管的服務，可在雲端提供NetApp ONTAP儲存的強大功能。它提供與您在本機上使用的相同的功能、效能和管理能力，同時具有原生 AWS 服務的靈活性和可擴充性。
+
+BlueXP ransomware protection工作流程進行了以下更改：
+
+* Discovery 包含 FSx for ONTAP 9.15 工作環境中的工作負載。
+* 「保護」標籤顯示 FSx for ONTAP環境中的工作負載。在這種環境中，您應該使用 FSx for ONTAP備份服務執行備份作業。您可以使用BlueXP ransomware protection快照恢復這些工作負載。
++
+
+TIP: 無法在BlueXP中設定在 FSx for ONTAP上執行的工作負載的備份策略。  Amazon FSx for NetApp ONTAP中設定的任何現有備份策略均保持不變。
+
+* 警報事件展示了新的 FSx for ONTAP工作環境。
+
+
+有關詳細信息，請參閱 https://docs.netapp.com/us-en/bluexp-ransomware-protection/concept-ransomware-protection.html["了解BlueXP ransomware protection與工作環境"]。
+
+有關受支援選項的信息，請參閱 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-reference-limitations.html["BlueXP ransomware protection的局限性"]。
+
+
+
+=== 需要BlueXP訪問角色
+
+現在您需要以下存取角色之一來查看、發現或管理BlueXP ransomware protection：組織管理員、資料夾或專案管理員、勒索軟體保護管理員或勒索軟體保護檢視器。
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["了解所有服務的BlueXP訪問角色"^] 。
