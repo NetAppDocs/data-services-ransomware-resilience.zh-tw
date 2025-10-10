@@ -1831,7 +1831,6 @@
   <block id="287f419ab9030dae6e341b7917dea7b9" category="paragraph">與儲存層的 ARP 加密偵測不同，勒索軟體彈性 SaaS 服務透過收集 FPolicy 事件來偵測使用者行為異常。</block>
   <block id="666c1c8dca9ff6ef210c57f04d6e84e8" category="inline-link-macro">啟用可疑用戶活動偵測</block>
   <block id="8d2203d70c1b051af0b7ad506cc40474" category="inline-link-macro">查看異常用戶行為</block>
-  <block id="b270269f4d3564626c9860f0f29f2992" category="paragraph">有關詳細信息，請參閱<block ref="58d7e66449e28231f244d38ab02cc3e1" category="inline-link-macro-rx"></block>和<block ref="f451eade5eddedc7b8e2af13d9e54fd3" category="inline-link-macro-rx"></block>。</block>
   <block id="289ddf7ba01fbf8f514dbc2d06a7bf67" category="section-title">其他可疑用戶活動檢測</block>
   <block id="c59946b2a21d389710dcd9b9ad5f618d" category="paragraph">除了資料外洩偵測之外，勒索軟體復原能力還根據觀察到的可疑使用者活動偵測以下警報類型：</block>
   <block id="9f149be55d2ace2f4ef86d2125660c4c" category="list-text">**資料破壞 - 潛在攻擊** - 當檔案刪除的數量超過歷史標準時，會建立具有潛在攻擊嚴重程度的警報。</block>
@@ -2031,4 +2030,5 @@
   <block id="77d6960ddc4ee40e26fd963e6e1f6e68" category="paragraph">恢復過程得到了加強。現在，您可以按磁碟區或所有磁碟區恢復工作負載。<block ref="2db5667b5f183f51656a41f32740d8f2" category="inline-link-rx"></block> 。</block>
   <block id="0c59fa3b4bea70fe5377775600bed707" category="sidebar">NetApp Ransomware Resilience可保護、偵測並支援從本機和雲端儲存的勒索軟體威脅中復原應用程式工作負載和檔案共用。  Ransomware Resilience 支援 Oracle、MySQL、VM 資料儲存和 NAS 儲存等平台，可實現安全備份和恢復，幫助組織保護關鍵資料並保持業務連續性。</block>
   <block id="e65f6e4b1867bfedf08120cb1ab99c24" category="sidebar">配置可疑用戶活動檢測</block>
+  <block id="75ae81fb1b2b27cbdbd5ba2b48014fe5" category="paragraph">有關詳細信息，請參閱<block ref="4fc0d3ac39798f24cded583e594e4abe" category="inline-link-macro-rx"></block>和<block ref="f451eade5eddedc7b8e2af13d9e54fd3" category="inline-link-macro-rx"></block>。</block>
 </blocks>

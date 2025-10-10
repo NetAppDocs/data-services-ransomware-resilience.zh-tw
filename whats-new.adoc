@@ -42,7 +42,7 @@ NetApp控制台提供企業級跨本地和雲端環境的儲存和資料服務�
 
 與儲存層的 ARP 加密偵測不同，勒索軟體彈性 SaaS 服務透過收集 FPolicy 事件來偵測使用者行為異常。
 
-有關詳細信息，請參閱link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/suspicious-user-activity.htm["啟用可疑用戶活動偵測"]和link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-alert.html#view-anomalous-user-behavior["查看異常用戶行為"]。
+有關詳細信息，請參閱link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/suspicious-user-activity.html["啟用可疑用戶活動偵測"]和link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-alert.html#view-anomalous-user-behavior["查看異常用戶行為"]。
 
 
 
