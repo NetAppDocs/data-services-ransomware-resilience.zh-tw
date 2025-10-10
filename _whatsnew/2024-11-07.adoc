@@ -10,11 +10,11 @@
 
 部署了BlueXP classification的客戶通常可以在BlueXP ransomware protection中掃描 PII 資料。  BlueXP classification是作為BlueXP平台的一部分提供，無需額外付費，並且可以在本地或客戶雲端中部署。
 
-參考 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["配置BlueXP ransomware protection設置"]。
+參考 https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-settings.html["配置BlueXP ransomware protection設置"]。
 
 若要啟動掃描，請在「保護」頁面上，按一下「隱私權暴露」列中的「識別暴露」。
 
-https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect-classify.html["使用BlueXP classification掃描個人身份敏感數據"] 。
+https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect-classify.html["使用BlueXP classification掃描個人身份敏感數據"] 。
 
 
 
@@ -22,7 +22,7 @@ https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect-classi
 
 現在，您可以使用 Microsoft Sentinel 將資料傳送至安全性和事件管理系統 (SIEM) 以進行威脅分析和偵測。以前，您可以選擇 AWS Security Hub 或 Splunk Cloud 作為您的 SIEM。
 
-https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["了解有關配置BlueXP ransomware protection設定的更多信息"] 。
+https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-settings.html["了解有關配置BlueXP ransomware protection設定的更多信息"] 。
 
 
 
@@ -36,4 +36,4 @@ https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html[
 
 在檔案層級恢復應用程式工作負載之前，您現在可以查看可能受到攻擊影響的檔案清單並確定要復原的檔案。以前，如果組織（以前是帳戶）中的BlueXP連接器正在使用 Podman，則此功能將被停用。現在它已為 Podman 啟用。您可以讓BlueXP ransomware protection選擇要恢復的文件，您可以上傳列出受警報影響的所有文件的 CSV 文件，或者您可以手動識別要恢復的文件。
 
-https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-recover.html["了解有關從勒索軟體攻擊中恢復的更多信息"] 。
+https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-recover.html["了解有關從勒索軟體攻擊中恢復的更多信息"] 。

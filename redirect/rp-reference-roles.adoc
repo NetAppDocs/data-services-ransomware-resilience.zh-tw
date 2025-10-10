@@ -1,0 +1,8 @@
+---
+permalink: redirect/rp-reference-roles.adoc 
+redirect: console-setup-admin/reference-iam-ransomware-roles.html 
+---
+= 
+:allow-uri-read: 
+
+

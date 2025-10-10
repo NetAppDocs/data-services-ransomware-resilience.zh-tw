@@ -14,7 +14,7 @@ summary: 透過驗證對您的環境、網路存取、登入和 Web 瀏覽器的
 [role="lead"]
 透過驗證您的操作環境、登入、網路存取和 Web 瀏覽器的準備情況，開始使用NetApp勒索軟體復原能力。
 
-要使用勒索軟體復原能力，您需要滿足先決條件。
+要使用勒索軟體復原能力，您需要滿足以下先決條件。
 
 
 
@@ -32,7 +32,7 @@ NOTE: 僅ONTAP 9.17.1 及更高版本支援 SAN 工作負載。
 
 ** 如果您的本機ONTAP叢集或 AWS 或 Azure 雲端中的Cloud Volumes ONTAP尚未在控制台中登錄，則需要控制台代理程式。
 +
-參考 https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["了解如何配置控制台代理"]和 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-checklist-cm.html["標準控制台要求"^]。
+參考 https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html["了解如何配置控制台代理"]和 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-checklist-cm.html["標準控制台要求"^]。
 
 +
 
@@ -53,7 +53,7 @@ NOTE: 如果您在單一控制台組織中擁有多個控制台代理，則勒�
 NOTE: 與預覽版不同，Ransomware Resilience 的正式版包含NetApp Autonomous Ransomware Protection 技術的授權。參考 https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["自主勒索軟體防護概述"^]了解詳情。
 
 +
-有關更多許可詳細信息，請參閱link:concept-ransomware-protection.html["了解勒索軟體抵禦能力"]。
+有關更多許可詳細信息，請參閱link:concept-ransomware-resilience.html["了解勒索軟體抵禦能力"]。
 
 * 若要套用保護配置（例如啟用自主勒索軟體保護等），勒索軟體復原能力需要ONTAP叢集上的管理員權限。  ONTAP叢集應該只使用ONTAP叢集管理員使用者憑證進行加入。
 * 如果已使用非管理員使用者憑證在控制台中登入ONTAP集群，則必須透過登入ONTAP集群來更新非管理員使用者權限，如本頁所述。
@@ -65,7 +65,7 @@ NOTE: 與預覽版不同，Ransomware Resilience 的正式版包含NetApp Autono
 
 * NetApp StorageGRID、AWS S3、Azure Blob 或 Google Cloud Platform 中用於備份目標的帳戶以及設定的存取權。
 +
-請參閱 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions.html["AWS、Azure 或 S3 權限列表"^]了解詳情。
+請參閱 https://docs.netapp.com/us-en/console-setup-admin/reference-permissions.html["AWS、Azure 或 S3 權限列表"^]了解詳情。
 
 * 不需要在系統上啟用NetApp Backup and Recovery。
 +

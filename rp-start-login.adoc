@@ -16,7 +16,7 @@ summary: 透過NetApp控制台開始使用NetApp勒索軟體復原能力。
 
 若要登入控制台，您可以使用您的NetApp支援網站憑證，也可以使用您的電子郵件和密碼註冊NetApp雲端登入。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-logging-in.html["了解有關登入的更多信息"^] 。
 
-*所需的控制台角色* 要執行此任務，您需要組織管理員、資料夾或專案管理員、勒索軟體復原管理員或勒索軟體復原檢視器角色。 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["了解所有服務的BlueXP訪問角色"^] 。
+*所需的控制台角色* 要執行此任務，您需要組織管理員、資料夾或專案管理員、勒索軟體復原管理員或勒索軟體復原檢視器角色。 https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["了解所有服務的BlueXP訪問角色"^] 。
 
 .步驟
 . 打開網頁瀏覽器並前往link:https://console.netapp.com/["主機"^]。

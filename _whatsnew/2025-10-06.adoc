@@ -6,14 +6,39 @@
 
 === BlueXP ransomware protection現已升級NetApp勒索軟體復原能力
 
-BlueXP勒索軟體複製已重新命名為NetApp Ransomware Resilience。
+BlueXP ransomware protection服務已更名為NetApp Ransomware Resilience。
 
 
 
 === BlueXP現在是NetApp控制台
 
-BlueXP已重新命名並重新設計，以更好地反映其在管理資料基礎架構中的作用。
-
 NetApp控制台提供企業級跨本地和雲端環境的儲存和資料服務的集中管理，提供即時洞察、更快的工作流程和簡化的管理。
 
-有關更改的詳細信息，請參閱 https://docs.netapp.com/us-en/bluexp-relnotes/index.html["NetApp控制台發行說明"]。
+有關更改的詳細信息，請參閱 https://docs.netapp.com/us-en/console-relnotes/index.html["NetApp控制台發行說明"]。
+
+
+
+=== 資料外洩檢測
+
+勒索軟體復原力包括一種新的檢測機制，只需幾個步驟即可激活，以檢測異常用戶讀取作為資料外洩的早期指標。勒索軟體彈性透過建立歷史基線來收集和分析使用者讀取事件，該基線是根據過去資料得出的預期正常行為的概況。當新用戶活動明顯偏離既定規範（例如意外的閱讀激增與可疑的閱讀模式相結合）時，就會產生警報。勒索軟體復原力包括一個用於偵測可疑讀取模式的 AI 模型。
+
+與儲存層的 ARP 加密偵測不同，勒索軟體彈性 SaaS 服務透過收集 FPolicy 事件來偵測使用者行為異常。
+
+有關詳細信息，請參閱link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/suspicious-user-activity.htm["啟用可疑用戶活動偵測"]和link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-alert.html#view-anomalous-user-behavior["查看異常用戶行為"]。
+
+
+
+==== 其他可疑用戶活動檢測
+
+除了資料外洩偵測之外，勒索軟體復原能力還根據觀察到的可疑使用者活動偵測以下警報類型：
+
+* **資料破壞 - 潛在攻擊** - 當檔案刪除的數量超過歷史標準時，會建立具有潛在攻擊嚴重程度的警報。
+* **可疑使用者行為 - 潛在攻擊** - 當觀察到類似於勒索軟體攻擊的讀取、重新命名和刪除操作時，會建立嚴重程度為潛在攻擊的警報
+* **可疑使用者行為 - 警告** - 當檔案活動（讀取、刪除、重新命名等）的總數超過歷史標準時，將建立嚴重程度為警告的警報
+
+
+
+
+==== 資料外洩偵測的新使用者角色
+
+為了管理可疑使用者活動警報，Ransomware Resilience 引入了兩個新角色，以提供對敏感資料（例如使用者的文件活動）的細微存取。有關更多信息，請參閱link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-reference-roles.html["NetApp勒索軟體恢復基於角色的訪問"] 。

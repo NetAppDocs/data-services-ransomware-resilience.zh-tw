@@ -8,7 +8,7 @@
 
 透過此版本，模擬勒索軟體攻擊來測試您對勒索軟體警報的回應。此功能可協助您透過測試警報通知、回應和復原流程來了解在發生實際勒索軟體攻擊時是否已做好準備。
 
-有關詳細信息，請參閱 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-simulate.html["進行勒索軟體攻擊準備演習"]。
+有關詳細信息，請參閱 https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-start-simulate.html["進行勒索軟體攻擊準備演習"]。
 
 
 
@@ -21,7 +21,7 @@
 * 您可以在最初的發現過程中或在設定選項中執行這些發現過程。
 
 
-有關詳細信息，請參閱 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-discover.html["發現先前選定的工作環境的新建立的工作負載"]和 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["使用“設定”選項配置功能"]。
+有關詳細信息，請參閱 https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-start-discover.html["發現先前選定的工作環境的新建立的工作負載"]和 https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-settings.html["使用“設定”選項配置功能"]。
 
 
 
@@ -29,4 +29,4 @@
 
 在此版本中，即使沒有高檔案副檔名更改，您也可以在工作負載上偵測到高加密時查看警報。此功能使用ONTAP自主勒索軟體防護 (ARP) AI，可協助您識別面臨勒索軟體攻擊風險的工作負載。使用此功能並下載受影響文件的完整清單（無論擴展名是否更改）。
 
-有關詳細信息，請參閱 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-alert.html["響應檢測到的勒索軟體警報"]。
+有關詳細信息，請參閱 https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-alert.html["響應檢測到的勒索軟體警報"]。

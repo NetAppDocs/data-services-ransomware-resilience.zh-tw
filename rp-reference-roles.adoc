@@ -20,7 +20,7 @@ NetApp Ransomware Resilience 採用角色來管理每個使用者對特定功能
 * *勒索軟體復原力檢視器*：檢視NetApp工作負載資料、檢視警報資料、下載復原資料及下載報告。
 
 
-這些角色是對控制台平台角色的補充，用於管理對控制台服務和其他服務（例如資料保護、工作負載管理等）的存取。有關所有控制台平台角色的詳細信息，請參閱 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["設定和管理文檔"^]。
+這些角色是對控制台平台角色的補充，用於管理對控制台服務和其他服務（例如資料保護、工作負載管理等）的存取。有關所有控制台平台角色的詳細信息，請參閱 https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["設定和管理文檔"^]。
 
 下表列出了每個勒索軟體復原角色可以執行的動作。
 

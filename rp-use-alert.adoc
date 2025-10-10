@@ -78,7 +78,7 @@ TIP: 如果您在「設定」頁面的「勒索軟體復原」中設定了安全
 
 您可以從勒索軟體復原力儀表板或「警報」標籤存取警報。
 
-*所需的控制台角色* 要執行此任務，您需要組織管理員、資料夾或專案管理員、勒索軟體復原管理員或勒索軟體復原檢視器角色。 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["了解所有服務的BlueXP訪問角色"^] 。
+*所需的控制台角色* 要執行此任務，您需要組織管理員、資料夾或專案管理員、勒索軟體復原管理員或勒索軟體復原檢視器角色。 https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["了解所有服務的BlueXP訪問角色"^] 。
 
 .步驟
 . 在勒索軟體復原力儀表板中，檢視警示窗格。
@@ -107,7 +107,7 @@ image:screen-alerts.png["警報頁面"]
 您可以接收勒索軟體復原警報的電子郵件通知。此功能可協助您隨時了解警報、警報的嚴重程度以及受影響的資源。
 
 
-TIP: 若要訂閱電子郵件通知，請參閱 https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html#set-email-notification-settings["設定電子郵件通知設定"^]。
+TIP: 若要訂閱電子郵件通知，請參閱 https://docs.netapp.com/us-en/console-setup-admin/task-monitor-cm-operations.html#set-email-notification-settings["設定電子郵件通知設定"^]。
 
 . 在勒索軟體復原中，前往*設定*頁面。
 . 在「通知」下，找到電子郵件通知設定。
@@ -117,7 +117,7 @@ TIP: 若要訂閱電子郵件通知，請參閱 https://docs.netapp.com/us-en/bl
 
 當產生新警報時，您將收到電子郵件通知。
 
-*所需的控制台角色* 要執行此任務，您需要組織管理員、資料夾或專案管理員、勒索軟體復原管理員或勒索軟體復原檢視器角色。 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["了解所有服務的BlueXP訪問角色"^] 。
+*所需的控制台角色* 要執行此任務，您需要組織管理員、資料夾或專案管理員、勒索軟體復原管理員或勒索軟體復原檢視器角色。 https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["了解所有服務的BlueXP訪問角色"^] 。
 
 .步驟
 . 查看電子郵件。
@@ -140,30 +140,16 @@ TIP: 若要訂閱電子郵件通知，請參閱 https://docs.netapp.com/us-en/bl
 
 == 偵測惡意活動和異常使用者行為
 
-查看「警報」選項卡，您可以識別是否有惡意活動。
+查看「警報」標籤，您可以識別是否有惡意活動或異常使用者行為。
 
-*所需的控制台角色* 要執行此任務，您需要組織管理員、資料夾或專案管理員或勒索軟體復原管理員角色。link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["了解所有服務的控制台存取角色"^] 。
+您必須設定使用者活動代理並啟用具有使用者行為偵測的保護策略才能查看使用者等級偵測。啟用使用者行為偵測後，*可疑使用者*欄位會出現在警報儀表板中；未啟用使用者行為偵測時則不會顯示。若要啟用可疑使用者偵測，請參閱link:suspicious-user-activity.html["可疑的用戶活動"]。
 
-*出現了哪些細節？ *顯示的詳細資訊取決於警報的觸發方式：
 
-* 由ONTAP中的自主勒索軟體防護功能觸發。這可以根據磁碟區中檔案的行為來偵測惡意活動。
-* 由Data Infrastructure Insights工作負載安全觸發。這需要Data Infrastructure Insights工作負載安全的許可證，並且您需要在勒索軟體復原中啟用它。此功能可偵測儲存工作負載中的異常使用者行為，並允許您阻止該使用者進一步存取。
-+
-若要在勒索軟體復原中啟用工作負載安全，請前往*設定*頁面並選擇*工作負載安全連線*選項。
-
-+
-有關Data Infrastructure Insights工作負載安全性的概述，請查看 https://docs.netapp.com/us-en/data-infrastructure-insights/cs_intro.html["關於工作負載安全"^]。
+NOTE: 如果您正在使用NetAppData Infrastructure Insights(DII) 工作負載安全，建議您使用相同的工作負載安全代理程式來實現勒索軟體復原。您不需要為勒索軟體復原能力部署單獨的工作負載安全代理，但是，使用相同的工作負載安全代理需要勒索軟體復原能力控制台組織和 DII 儲存工作負載安全租用戶之間建立配對關係。請聯絡您的客戶代表以啟用此配對。
 
 
 
-
-TIP: 如果您沒有資料基礎架構工作負載安全的許可證，並且沒有在勒索軟體復原中啟用它，那麼您將看不到異常使用者行為資訊。
-
-當發生惡意活動時，會產生警報並自動拍攝快照。
-
-
-
-=== 僅查看來自 Autonomous Ransomware Protection 的惡意活動
+=== 查看惡意活動
 
 當自主勒索軟體防護在勒索軟體復原中觸發警報時，您可以查看以下詳細資訊：
 
@@ -189,44 +175,16 @@ image:screen-alerts-incidents3.png["警報事件頁面"]
 
 
 
-=== 在Data Infrastructure Insights中查看異常使用者行為工作負載安全
+=== 查看異常用戶行為
 
-當Data Infrastructure Insights工作負載安全性在勒索軟體復原中觸發警報時，您可以直接在Data Infrastructure Insights工作負載安全性中查看可疑使用者、封鎖使用者並調查使用者活動。
-
-
-TIP: 這些功能是對自主勒索軟體防護所提供的詳細資訊的補充。
-
-.開始之前
-此選項需要Data Infrastructure Insights工作負載安全的許可證，並且您需要在勒索軟體復原中啟用它。
-
-若要在 Ransomware Resilience 中啟用工作負載安全，請執行下列操作：
-
-. 轉到*設定*頁面。
-. 選擇*工作負載安全連線*選項。
-+
-有關詳細信息，請參閱link:rp-use-settings.html["配置勒索軟體抵禦能力設置"] 。
-
-
+如果您已配置可疑使用者偵測來查看異常使用者行為，則可以查看使用者級資料並封鎖特定使用者。若要啟用可疑用戶設置，請參閱link:rp-use-settings.html["配置勒索軟體抵禦能力設置"]。
 
 .步驟
 . 從勒索軟體恢復選單中，選擇*警報*。
 . 選擇一個警報。
 . 查看警報中的事件。
-+
-image:screenshot-alerts.png["警報頁面的螢幕截圖。"]
+. 若要阻止可疑使用者進一步存取控制台監控的環境，請選擇該使用者名稱下的「*封鎖*」。
 
-. 若要阻止可疑使用者進一步存取控制台監控的環境，請選擇「封鎖使用者」連結。
-. 研究警報或警報中的事件：
-+
-.. 若要在Data Infrastructure Insights工作負載安全中進一步研究警報，請選擇*調查工作負載安全*連結。
-.. 選擇一個事件來查看該事件的詳細資訊。
-
-
-
-
-Data Infrastructure Insights工作負載安全性在新分頁中開啟。
-
-+image:screen-alerts-incidents-diiws-diiwspage.png["調查工作負載安全性"]
 
 
 
@@ -234,7 +192,7 @@ Data Infrastructure Insights工作負載安全性在新分頁中開啟。
 
 阻止攻擊後，通知儲存管理員資料已準備就緒，以便他們可以開始恢復。
 
-*所需的控制台角色* 要執行此任務，您需要組織管理員、資料夾或專案管理員或勒索軟體復原管理員角色。link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["了解所有服務的控制台存取角色"^] 。
+*所需的控制台角色* 要執行此任務，您需要組織管理員、資料夾或專案管理員或勒索軟體復原管理員角色。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["了解所有服務的控制台存取角色"^] 。
 
 .步驟
 . 從勒索軟體恢復選單中，選擇*警報*。
@@ -258,7 +216,7 @@ image:screen-alerts-incidents3.png["警報事件頁面"]
 
 == 忽略不屬於潛在攻擊的事件
 
-審查事件後，您需要確定該事件是否為潛在的攻擊。如果不滿足前述條件，他們就可以被解僱。
+審查事件後，您需要確定該事件是否為潛在的攻擊。如果它們不是真正的威脅，則可以將其駁回。
 
 您可以忽略誤報或決定立即恢復資料。如果您忽略警報，勒索軟體復原功能會了解此行為，將其與正常操作關聯，並且不會再次針對此類行為發出警報。
 
@@ -267,7 +225,7 @@ image:screen-alerts-incidents3.png["警報事件頁面"]
 
 CAUTION: 如果您關閉警報，則無法將該狀態改回任何其他狀態，也無法撤銷此變更。
 
-*所需的控制台角色* 要執行此任務，您需要組織管理員、資料夾或專案管理員或勒索軟體復原管理員角色。link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["了解所有服務的控制台存取角色"^] 。
+*所需的控制台角色* 要執行此任務，您需要組織管理員、資料夾或專案管理員或勒索軟體復原管理員角色。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["了解所有服務的控制台存取角色"^] 。
 
 .步驟
 . 從勒索軟體恢復選單中，選擇*警報*。
@@ -304,7 +262,7 @@ image:screen-alerts-status-edit.png["警報編輯狀態頁面"]
 
 在檔案層級復原應用程式工作負載之前，您可以查看受影響檔案的清單。您可以造訪警報頁面下載受影響文件的清單。然後使用恢復頁面上傳列表並選擇要恢復的檔案。
 
-*所需的控制台角色* 要執行此任務，您需要組織管理員、資料夾或專案管理員或勒索軟體復原管理員角色。link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["了解所有服務的控制台存取角色"^] 。
+*所需的控制台角色* 要執行此任務，您需要組織管理員、資料夾或專案管理員或勒索軟體復原管理員角色。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["了解所有服務的控制台存取角色"^] 。
 
 .步驟
 使用「警報」頁面檢索受影響文件的清單。

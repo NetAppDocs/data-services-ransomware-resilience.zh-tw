@@ -8,4 +8,4 @@
 
 在此版本中，您現在可以將文件共用分組，以便更輕鬆地保護您的資料資產。此服務可以同時保護群組中的所有磁碟區。以前，您需要單獨保護每個磁碟區。
 
-https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["了解有關在勒索軟體保護策略中分組文件共享工作負載的更多信息"] 。
+https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect.html["了解有關在勒索軟體保護策略中分組文件共享工作負載的更多信息"] 。

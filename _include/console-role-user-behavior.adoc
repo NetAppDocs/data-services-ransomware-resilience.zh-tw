@@ -1,0 +1,5 @@
+= 
+:allow-uri-read: 
+
+
+*所需的控制台角色* 要執行此任務，您需要勒索軟體復原使用者行為管理員角色。link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["了解所有服務的控制台存取角色"^] 。

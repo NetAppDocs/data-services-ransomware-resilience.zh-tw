@@ -8,7 +8,7 @@
 
 此版本包括對BlueXP ransomware protection中的 SAN 工作負載的支援。現在，除了 NFS 和 CIFS 工作負載之外，您還可以保護 SAN 工作負載。
 
-有關詳細信息，請參閱link:https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-prerequisites.html["BlueXP ransomware protection先決條件"] 。
+有關詳細信息，請參閱link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-start-prerequisites.html["BlueXP ransomware protection先決條件"] 。
 
 
 
@@ -16,7 +16,7 @@
 
 此版本改進了具有其他NetApp工具（如SnapCenter或BlueXP backup and recovery）的快照和備份策略的工作負載的設定過程。在先前的版本中， BlueXP ransomware protection發現了來自其他工具的策略，只允許您更改偵測策略。在這個版本中，您現在可以用BlueXP ransomware protection策略取代快照和備份策略，或繼續使用其他工具中的策略。
 
-有關詳細信息，請參閱link:https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["保護工作負載"]。
+有關詳細信息，請參閱link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect.html["保護工作負載"]。
 
 
 
@@ -28,4 +28,4 @@
 
 如果您在BlueXP ransomware protection中配置了安全性和事件管理 (SIEM) 系統，該服務會向您的 SIEM 系統發送警報詳細資訊。
 
-有關詳細信息，請參閱link:https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-alert.html["處理偵測到的勒索軟體警報"]。
+有關詳細信息，請參閱link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-alert.html["處理偵測到的勒索軟體警報"]。

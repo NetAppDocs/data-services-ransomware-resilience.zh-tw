@@ -12,4 +12,4 @@
 
 您可以在初始發現期間查看不受支援的工作環境，也可以在其中下載結果。您也可以從「設定」頁面中的「*工作負載發現*」選項查看發現的結果。
 
-有關詳細信息，請參閱 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-discover.html["發現BlueXP ransomware protection中的工作負載"]。
+有關詳細信息，請參閱 https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-start-discover.html["發現BlueXP ransomware protection中的工作負載"]。

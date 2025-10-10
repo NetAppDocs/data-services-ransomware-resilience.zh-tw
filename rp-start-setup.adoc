@@ -39,20 +39,20 @@ summary: 若要使用勒索軟體復原能力，請執行幾個步驟進行設�
 === 準備 AWS 成為備份目標
 
 * 在 AWS 中設定一個帳戶。
-* 配置 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions.html["AWS 權限"^]在 AWS 中。
+* 配置 https://docs.netapp.com/us-en/console-setup-admin/reference-permissions.html["AWS 權限"^]在 AWS 中。
 
 
-有關在控制台中管理 AWS 儲存的詳細信息，請參閱 https://docs.netapp.com/us-en/bluexp-setup-admin/task-viewing-amazon-s3.html["管理您的 Amazon S3 儲存桶"^]。
+有關在控制台中管理 AWS 儲存的詳細信息，請參閱 https://docs.netapp.com/us-en/console-setup-admin/task-viewing-amazon-s3.html["管理您的 Amazon S3 儲存桶"^]。
 
 
 
 === 準備 Azure 以成為備份目標
 
 * 在 Azure 中設定一個帳戶。
-* 配置 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions.html["Azure 權限"^]在 Azure 中。
+* 配置 https://docs.netapp.com/us-en/console-setup-admin/reference-permissions.html["Azure 權限"^]在 Azure 中。
 
 
-有關在控制台中管理 Azure 儲存體的詳細信息，請參閱 https://docs.netapp.com/us-en/bluexp-blob-storage/task-view-azure-blob-storage.html["管理 Azure 儲存體帳戶"^]。
+有關在控制台中管理 Azure 儲存體的詳細信息，請參閱 https://docs.netapp.com/us-en/storage-management-blob-storage/task-view-azure-blob-storage.html["管理 Azure 儲存體帳戶"^]。
 
 
 
@@ -60,7 +60,7 @@ summary: 若要使用勒索軟體復原能力，請執行幾個步驟進行設�
 
 下一步是設定控制台和勒索軟體復原能力。
 
-審查 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-standard-mode.html["標準模式的控制台要求"^]。
+審查 https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-standard-mode.html["標準模式的控制台要求"^]。
 
 
 

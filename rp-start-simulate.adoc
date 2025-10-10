@@ -32,7 +32,7 @@ TIP: 您的實際工作量資料不會受到影響。
 * 如果您輸入不同的測試工作負載名稱
 
 
-*所需的控制台角色* 要執行此任務，您需要組織管理員、資料夾或專案管理員或勒索軟體復原管理員角色。link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["了解所有服務的控制台存取角色"^] 。
+*所需的控制台角色* 要執行此任務，您需要組織管理員、資料夾或專案管理員或勒索軟體復原管理員角色。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["了解所有服務的控制台存取角色"^] 。
 
 .步驟
 . 從NetApp勒索軟體復原選單中，選擇右上角的 *執行準備演練* 按鈕。
@@ -67,7 +67,7 @@ TIP: 您可以稍後使用「設定」頁面編輯準備演練配置。
 
 配置準備狀況演練後，即可開始演練。
 
-*所需的控制台角色* 要執行此任務，您需要組織管理員、資料夾或專案管理員或勒索軟體復原管理員角色。link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["了解所有服務的控制台存取角色"^] 。
+*所需的控制台角色* 要執行此任務，您需要組織管理員、資料夾或專案管理員或勒索軟體復原管理員角色。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["了解所有服務的控制台存取角色"^] 。
 
 當您開始準備演習時，勒索軟體復原力會跳過學習模式並以主動模式開始演習。工作負載的偵測狀態為「活動」。
 
@@ -96,7 +96,7 @@ NOTE: 演習開始後，您無法編輯準備演習配置。您可以重置它�
 
 透過回應準備演習警報來測試您的準備。
 
-*所需的控制台角色* 要執行此任務，您需要組織管理員、資料夾或專案管理員或勒索軟體復原管理員角色。link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["了解所有服務的控制台存取角色"^] 。
+*所需的控制台角色* 要執行此任務，您需要組織管理員、資料夾或專案管理員或勒索軟體復原管理員角色。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["了解所有服務的控制台存取角色"^] 。
 
 .步驟
 . 從勒索軟體恢復選單中，選擇*警報*。
@@ -119,11 +119,9 @@ image:screen-alerts-readiness-incidents2.png["顯示準備演習警報的事件�
 
 以下是需要注意的一些事項：
 
-* 查看潛在的攻擊類型。
+* 查看潛在攻擊的嚴重性。
 +
-如果類型顯示使用者涉嫌惡意活動，請檢查使用者名稱。您可能希望透過選擇「調查工作負載安全」在「Data Infrastructure Insights工作負載安全」中進一步調查使用者。
-
-
+如果嚴重性表明使用者涉嫌惡意活動，請檢查使用者名稱。您還可以link:rp-use-alert.html#detect-malicious-activity-and-anomalous-user-behavior["封鎖該用戶。"]
 
 * 查看文件活動和可疑進程：
 +
@@ -143,7 +141,7 @@ image:screen-alerts-readiness-incidents2.png["顯示準備演習警報的事件�
 
 審查準備情況演習警報後，如有必要，恢復測試工作量。
 
-*所需的控制台角色* 要執行此任務，您需要組織管理員、資料夾或專案管理員或勒索軟體復原管理員角色。link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["了解所有服務的控制台存取角色"^] 。
+*所需的控制台角色* 要執行此任務，您需要組織管理員、資料夾或專案管理員或勒索軟體復原管理員角色。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["了解所有服務的控制台存取角色"^] 。
 
 .步驟
 . 返回警報詳細資訊頁面。
@@ -181,7 +179,7 @@ TIP: 有關恢復過程的詳細信息，請參閱link:rp-use-recover.html["從�
 
 審查準備情況演習警報並恢復工作量後，根據需要變更警報狀態。
 
-*需要控制台角色* 組織管理員、資料夾或專案管理員或勒索軟體復原管理員。 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["了解所有服務的控制台存取角色"^] 。
+*需要控制台角色* 組織管理員、資料夾或專案管理員或勒索軟體復原管理員。 https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["了解所有服務的控制台存取角色"^] 。
 
 .步驟
 . 返回警報詳細資訊頁面。
@@ -204,7 +202,7 @@ IMPORTANT: 解除攻擊後，您將無法將其改回。如果您解除工作負
 
 準備演習完成後，您可能需要查看並儲存演習報告。
 
-*所需的控制台角色* 要執行此任務，您需要組織管理員、資料夾或專案管理員、勒索軟體復原管理員或勒索軟體復原檢視器角色。 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["了解所有服務的BlueXP訪問角色"^] 。
+*所需的控制台角色* 要執行此任務，您需要組織管理員、資料夾或專案管理員、勒索軟體復原管理員或勒索軟體復原檢視器角色。 https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["了解所有服務的BlueXP訪問角色"^] 。
 
 .步驟
 . 從勒索軟體恢復選單中，選擇*報告*。
