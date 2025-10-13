@@ -4,7 +4,7 @@ permalink: rp-use-alert.html
 keywords: ransomware protection alert, ransomware protection attack, detect ransomware alert 
 summary: 如果勒索軟體復原功能偵測到可能的攻擊，勒索軟體復原功能儀表板上就會出現警報，指示潛在攻擊。此時，您應該查看「勒索軟體彈性警報」標籤中的潛在風險。 
 ---
-= 使用NetApp勒索軟體復原功能處理偵測到的勒索軟體警報
+= 使用NetApp Ransomware Resilience處理偵測到的勒索軟體警報
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -12,7 +12,7 @@ summary: 如果勒索軟體復原功能偵測到可能的攻擊，勒索軟體�
 
 
 [role="lead"]
-當NetApp Ransomware Resilience 偵測到可能的攻擊時，它會在儀表板和通知區域顯示警報。勒索軟體復原能力會立即拍攝快照。查看勒索軟體復原能力*警報*標籤中的潛在風險。
+當NetApp Ransomware Resilience偵測到可能的攻擊時，它會在儀表板和通知區域顯示警報。勒索軟體復原能力會立即拍攝快照。查看勒索軟體復原能力*警報*標籤中的潛在風險。
 
 如果勒索軟體復原功能偵測到可能的攻擊，控制台通知設定中會出現通知，並且電子郵件會傳送到設定的位址。電子郵件包含有關嚴重性、受影響的工作負載的信息，以及勒索軟體復原力*警報*標籤中警報的連結。
 

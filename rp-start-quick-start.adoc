@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: rp-start-quick-start.html 
 keywords: get started, ransomware protection, quick start, resilience, quickstart 
-summary: 只需幾個步驟即可開始使用NetApp勒索軟體復原功能。 
+summary: 只需幾個步驟即可開始使用NetApp Ransomware Resilience。 
 ---
-= NetApp勒索軟體復原能力快速入門
+= NetApp Ransomware Resilience快速入門
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -12,7 +12,7 @@ summary: 只需幾個步驟即可開始使用NetApp勒索軟體復原功能。
 
 
 [role="lead"]
-以下是開始使用NetApp Ransomware Resilience 所需步驟的概述。每個步驟中的連結都會將您帶到提供更多詳細資訊的頁面。
+以下是開始使用NetApp Ransomware Resilience所需步驟的概述。每個步驟中的連結都會將您帶到提供更多詳細資訊的頁面。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一"]審查先決條件
 [role="quick-margin-para"]

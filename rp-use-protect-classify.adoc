@@ -2,14 +2,14 @@
 sidebar: sidebar 
 permalink: rp-use-protect-classify.html 
 keywords: ransomware protection, protect against ransomware attacks, anti-ransomware policies, cds, sensitive, pii, classification 
-summary: 使用NetApp資料分類來提高資料的安全性和隱私合規性，以確定您的資料是否包含個人識別資訊或私人資訊。 
+summary: 使用NetApp Data Classification來提高資料的安全性和隱私合規性，以確定您的資料是否包含個人識別資訊或私人資訊。 
 ---
-= 使用勒索軟體復原中的NetApp資料分類掃描個人識別資訊
+= 使用勒索軟體復原中的NetApp Data Classification掃描個人識別資訊
 :allow-uri-read: 
 
 
 [role="lead"]
-在NetApp勒索軟體復原能力中，您可以使用NetApp資料分類來掃描和分類檔案共用工作負載中的資料。對資料進行分類可以幫助您確定資料集是否包含個人識別資訊 (PII)，這可能會增加安全風險。資料分類是控制台的核心元件，無需額外付費即可使用。
+在NetApp Ransomware Resilience中，您可以使用NetApp Data Classification來掃描和分類檔案共用工作負載中的資料。對資料進行分類可以幫助您確定資料集是否包含個人識別資訊 (PII)，這可能會增加安全風險。資料分類是控制台的核心元件，無需額外付費即可使用。
 
 link:https://docs.netapp.com/us-en/data-services-data-classification/["資料分類"^]利用人工智慧驅動的自然語言處理進行情境資料分析和分類，為您的資料提供可操作的見解，以滿足合規性要求、偵測安全漏洞、優化成本並加速遷移。
 
@@ -24,7 +24,7 @@ TIP: 此過程可以影響工作負載的重要性，以幫助確保您獲得適
 
 在使用勒索軟體復原功能中的資料分類之前，您需要link:https://docs.netapp.com/us-en/data-services-data-classification/task-deploy-cloud-compliance.html["啟用資料分類來掃描您的數據"^]。
 
-您可以在勒索軟體復原的保護頁面內部署資料分類。依照程式識別隱私洩漏。當您選擇**識別暴露**時，如果您尚未部署資料分類，則會出現一個對話框，讓您啟用資料分類。
+您可以在勒索軟體復原的保護頁面內部署資料分類。依照程式識別隱私洩漏。當您選擇**識別暴露**時，如果您尚未部署資料分類，則會顯示對話框，讓您啟用資料分類。
 
 有關數據分類的更多信息，請參閱：
 

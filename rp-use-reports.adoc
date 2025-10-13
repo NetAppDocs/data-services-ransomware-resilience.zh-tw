@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: rp-use-reports.html 
 keywords: ransomware protection, ransomware protection dashboard, detect ransomware attacks, recover from ransomware attack 
-summary: 使用NetApp Ransomware Resilience，您可以下載顯示保護、警報和復原詳細資訊的報告，並將其儲存為 CSV 檔案。 
+summary: 使用NetApp Ransomware Resilience，您可以下載顯示保護、警報和復原詳細資訊的報告並將其儲存為 CSV 檔案。 
 ---
-= 在NetApp勒索軟體復原能力中下載報告
+= 在NetApp Ransomware Resilience中下載報告
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -15,7 +15,7 @@ summary: 使用NetApp Ransomware Resilience，您可以下載顯示保護、警�
 您可以匯出保護資料並下載顯示攻擊準備演習、保護、警報和復原的詳細資訊的 CSV 或 JSON 檔案。
 
 
-TIP: 在下載檔案之前，您應該刷新數據，這也會刷新文件中出現的數據。
+TIP: 在下載檔案之前，您應該刷新數據，這也會刷新文件中顯示的數據。
 
 *所需的控制台角色* 要執行此任務，您需要組織管理員、資料夾或專案管理員、勒索軟體復原管理員或勒索軟體復原檢視器角色。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["了解NetApp Console的勒索軟體復原角色"^] 。
 
@@ -44,7 +44,7 @@ image:screen-dashboard.png["儀表板頁面"]
 . 執行下列操作之一：
 +
 ** 從頁面選擇*下載*image:button-download.png["下載選項"]選項。
-** 從NetApp勒索軟體復原選單中，選擇 *報告*。
+** 從NetApp Ransomware Resilience選單中，選擇 *報告*。
 
 
 . 如果您選擇了“*報告*”選項，請選擇預先配置的檔案名稱並選擇“*下載*”。

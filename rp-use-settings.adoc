@@ -4,7 +4,7 @@ permalink: rp-use-settings.html
 keywords: ransomware protection, protect against ransomware attacks, anti-ransomware settings, backup destination 
 summary: 您可以在設定頁面中配置多個選項，包括備份目標和威脅偵測。 
 ---
-= 在NetApp勒索軟體復原能力中配置保護設置
+= 在NetApp Ransomware Resilience中配置保護設置
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -145,7 +145,7 @@ image:screen-settings-backup-destinations-list2.png["備份目標頁面的「設
 
 若要將 AWS 設定為備份目標，請輸入以下資訊。
 
-有關在控制台中管理 AWS 儲存的詳細信息，請參閱 https://docs.netapp.com/us-en/console-setup-admin/task-viewing-amazon-s3.html["管理您的 Amazon S3 儲存桶"^]。
+有關在控制台中管理 AWS 存儲的詳細信息，請參閱 https://docs.netapp.com/us-en/console-setup-admin/task-viewing-amazon-s3.html["管理您的 Amazon S3 儲存桶"^]。
 
 .步驟
 . 在*設定 > 備份目標*頁面中，選擇*新增*。
@@ -312,7 +312,7 @@ Ransomware Resilience 可以將以下事件資料傳送到您的 SIEM 系統：
 
 * *事件*：
 +
-** *incident_id*：勒索軟體復原功能針對勒索軟體復原功能中受到攻擊的磁碟區所產生的事件 ID。
+** *incident_id*：勒索軟體復原力針對勒索軟體復原力中受到攻擊的捲所產生的事件 ID。
 ** *alert_id*：勒索軟體復原能力為工作負載產生的 ID。
 ** *嚴重性*：以下警報等級之一：「嚴重」、「高」、「中」、「低」。
 ** *描述*：有關檢測到的警報的詳細信息，例如“在工作負載 arp_learning_mode_test_2630 上檢測到潛在的勒索軟體攻擊”
@@ -427,7 +427,7 @@ Ransomware Resilience 可以將以下事件資料傳送到您的 SIEM 系統：
 
 TIP: 客戶端金鑰的有效期限限制為兩年（24 個月）或更短。  Microsoft 建議您設定小於 12 個月的到期值。
 
-. 選擇*新增*來建立您的秘密。
+. 選擇“*新增*”來建立您的秘密。
 . 記錄身份驗證步驟中使用的秘密。離開此頁面後，該秘密將不再顯示。
 
 
@@ -505,8 +505,8 @@ NOTE: 認證成功後，會出現「已認證」的資訊。
 
 .步驟
 . 從控制台選單中，選擇*保護*>*勒索軟體恢復*。
-. 從勒索軟體恢復選單中，選擇垂直image:button-actions-vertical.png["垂直行動"]……右上角的選項。
-. 選擇“設定”。
+. 從勒索軟體恢復選單中，選擇垂直image:button-actions-vertical.png["垂直行動"]...右上角的選項。
+. 選擇“*設定*”。
 +
 出現「設定」頁面。
 

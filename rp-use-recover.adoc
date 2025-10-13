@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: rp-use-recover.html 
 keywords: ransomware protection recovery, recover from a ransomware attack, recovery point, RPA 
-summary: '遭受攻擊後， NetApp Ransomware Resilience 會驗證二級儲存上的備份資料是否乾淨，建議實際復原點 (RPA)，並協調防崩潰復原的工作流程。' 
+summary: '遭受攻擊後， NetApp Ransomware Resilience會驗證二級儲存上的備份資料是否乾淨，建議實際復原點 (RPA)，並協調防崩潰復原的工作流程。' 
 ---
-= 透過NetApp勒索軟體復原能力，在勒索軟體攻擊發生後恢復
+= 透過NetApp Ransomware Resilience，在勒索軟體攻擊發生後恢復
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -12,10 +12,10 @@ summary: '遭受攻擊後， NetApp Ransomware Resilience 會驗證二級儲存�
 
 
 [role="lead"]
-在工作負載被標記為「需要復原」後， NetApp Ransomware Resilience 會建議實際復原點 (RPA) 並協調工作流程以實現抗崩潰復原。
+在工作負載被標記為「需要復原」後， NetApp Ransomware Resilience會建議實際復原點 (RPA) 並協調工作流程以實現抗崩潰復原。
 
-* 如果應用程式或虛擬機器由SnapCenter管理，則勒索軟體復原功能會使用應用程式一致或虛擬機器一致的流程將應用程式或虛擬機器還原到其先前的狀態和最後的交易。應用程式或 VM 一致性恢復將任何未儲存的資料（例如快取或 I/O 操作中的資料）新增至磁碟區中的資料。
-* 如果應用程式或虛擬機器不是由SnapCenter管理，而是由NetApp Backup and Recovery 或 Ransomware Resilience 管理，則 Ransomware Resilience 會執行崩潰一致性恢復，其中會恢復相同時間點磁碟區中的所有資料（例如，如果系統崩潰）。
+* 如果應用程式或虛擬機器由SnapCenter管理，則勒索軟體復原功能會使用應用程式一致或虛擬機器一致的流程將應用程式或虛擬機器還原到其先前的狀態和最後的交易。應用程式或虛擬機器一致性恢復將任何未儲存的資料（例如快取或 I/O 操作中的資料）新增至磁碟區中的資料。
+* 如果應用程式或虛擬機器不是由SnapCenter管理，而是由NetApp Backup and Recovery或 Ransomware Resilience 管理，則 Ransomware Resilience 會執行崩潰一致性恢復，其中會恢復相同時間點磁碟區中的所有資料（例如，如果系統崩潰）。
 +
 您可以透過選擇所有磁碟區、特定磁碟區或特定檔案來還原工作負載。
 
@@ -327,7 +327,7 @@ TIP: 如果您沒有指定還原路徑，檔案將會還原到頂層目錄的新
 
 === 在 VM 層級還原 VM 檔案共享
 
-在選擇要還原的虛擬機器後，在「復原」頁面上繼續執行下列步驟。
+選擇要還原的虛擬機器後，在復原頁面上繼續執行下列步驟。
 
 . *來源*：選擇來源旁的向下箭頭查看詳細資訊。
 +

@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: rp-start-faq.html 
 keywords: ransomware protection faq, ransomware protection frequently asked questions 
-summary: 尋找有關NetApp勒索軟體復原能力的常見問題的答案。 
+summary: 尋找有關NetApp Ransomware Resilience的常見問題的答案。 
 ---
-= 關於NetApp勒索軟體復原能力的常見問題解答
+= 關於NetApp Ransomware Resilience的常見問題解答
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -12,7 +12,7 @@ summary: 尋找有關NetApp勒索軟體復原能力的常見問題的答案。
 
 
 [role="lead"]
-如果您只是想快速找到有關NetApp勒索軟體復原能力的問題的答案，那麼此常見問題解答可以為您提供協助。
+如果您只是想快速找到有關NetApp Ransomware Resilience的問題的答案，那麼這個常見問題解答可以提供協助。
 
 
 
@@ -22,12 +22,12 @@ summary: 尋找有關NetApp勒索軟體復原能力的常見問題的答案。
 
 您可以使用以下許可證類型：
 
-* 註冊即可獲得 30 天免費試用。
-* 透過 Amazon Web Services (AWS) Marketplace、Google Cloud Marketplace 和 Microsoft Azure Marketplace 購買NetApp智慧服務和勒索軟體復原的即用即付 (PAYGO) 訂閱。
+* 註冊 30 天免費試用。
+* 透過 Amazon Web Services (AWS) Marketplace、Google Cloud Marketplace 和 Microsoft Azure Marketplace 購買NetApp Intelligent Services和勒索軟體復原的即用即付 (PAYGO) 訂閱。
 * 自帶授權 (BYOL)，即您從NetApp銷售代表取得的NetApp授權文件 (NLF)。您可以使用許可證序號在控制台的授權和訂閱部分啟動 BYOL。
 
 
-*如何啟用勒索軟體防禦功能？ *勒索軟體恢復不需要任何支援。您可以從NetApp控制台存取勒索軟體復原功能。
+*如何啟用勒索軟體防禦功能？ *勒索軟體恢復不需要任何支援。您可以從NetApp Console存取勒索軟體復原功能。
 
 要開始使用，您需要註冊或聯絡您的NetApp銷售代表來試用此服務。然後，當您使用控制台代理時，它將包含適當的勒索軟體恢復功能。
 
@@ -35,7 +35,7 @@ summary: 尋找有關NetApp勒索軟體復原能力的常見問題的答案。
 
 *勒索軟體復原功能是否在標準、受限和私人模式下可用？ *目前，勒索軟體恢復僅在標準模式下可用。敬請關注。
 
-有關所有NetApp資料服務中這些模式的說明，請參閱 https://docs.netapp.com/us-en/console-setup-admin/concept-modes.html["NetApp控制台部署模式"^]。
+有關所有NetApp資料服務中這些模式的說明，請參閱 https://docs.netapp.com/us-en/console-setup-admin/concept-modes.html["NetApp Console部署模式"^]。
 
 
 
@@ -57,7 +57,7 @@ summary: 尋找有關NetApp勒索軟體復原能力的常見問題的答案。
 
 *如果您使用勒索軟體復原功能設定策略，那麼將來是否只需在此服務中進行變更？ *我們建議您根據勒索軟體復原能力進行策略變更。
 
-*勒索軟體復原能力如何與NetApp Backup and Recovery 和SnapCenter互動？ *
+*勒索軟體復原能力如何與NetApp Backup and Recovery和SnapCenter互動？ *
 
 Ransomware Resilience 使用以下產品和服務：
 
@@ -125,7 +125,7 @@ link:rp-use-protect.html["了解工作負載優先順序或重要性"] 。
 
 是的，如果您在備份和復原或SnapCenter中管理工作負載，則這些產品管理的策略將納入勒索軟體復原能力。
 
-*您可以修改從NetApp Backup and Recovery 和/或SnapCenter繼承的策略嗎？ *
+*您可以修改從NetApp Backup and Recovery和/或SnapCenter繼承的策略嗎？ *
 
 不可以，您無法從 Ransomware Resilience 修改由備份和還原或SnapCenter管理的政策。您可以在「備份和復原」或SnapCenter中管理對這些政策的任何變更。
 

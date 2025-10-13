@@ -4,7 +4,7 @@ permalink: rp-start-setup.html
 keywords: bluexp, ransomware protection, aws, azure 
 summary: 若要使用勒索軟體復原能力，請執行幾個步驟進行設定。 
 ---
-= 設定NetApp勒索軟體復原能力
+= 設定NetApp Ransomware Resilience
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -12,7 +12,7 @@ summary: 若要使用勒索軟體復原能力，請執行幾個步驟進行設�
 
 
 [role="lead"]
-您可以輕鬆部署NetApp勒索軟體復原能力。在開始之前，請查看link:rp-start-prerequisites.html["先決條件"]以確保您的環境已準備就緒。
+您可以輕鬆部署NetApp Ransomware Resilience。在開始之前，請查看link:rp-start-prerequisites.html["先決條件"]以確保您的環境已準備就緒。
 
 
 
@@ -42,7 +42,7 @@ summary: 若要使用勒索軟體復原能力，請執行幾個步驟進行設�
 * 配置 https://docs.netapp.com/us-en/console-setup-admin/reference-permissions.html["AWS 權限"^]在 AWS 中。
 
 
-有關在控制台中管理 AWS 儲存的詳細信息，請參閱 https://docs.netapp.com/us-en/console-setup-admin/task-viewing-amazon-s3.html["管理您的 Amazon S3 儲存桶"^]。
+有關在控制台中管理 AWS 存儲的詳細信息，請參閱 https://docs.netapp.com/us-en/console-setup-admin/task-viewing-amazon-s3.html["管理您的 Amazon S3 儲存桶"^]。
 
 
 
@@ -56,7 +56,7 @@ summary: 若要使用勒索軟體復原能力，請執行幾個步驟進行設�
 
 
 
-== 設定NetApp控制台
+== 設定NetApp Console
 
 下一步是設定控制台和勒索軟體復原能力。
 

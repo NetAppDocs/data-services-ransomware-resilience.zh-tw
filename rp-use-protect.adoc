@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: rp-use-protect.html 
 keywords: ransomware protection, protect against ransomware attacks, anti-ransomware policies, detection, protection, policy, malware 
-summary: 您可以透過在NetApp Ransomware Resilience 中為工作負載分配策略來保護工作負載免受勒索軟體攻擊。 
+summary: 您可以透過在NetApp Ransomware Resilience中為工作負載分配策略來保護工作負載免受勒索軟體攻擊。 
 ---
-= 使用NetApp勒索軟體恢復保護策略保護工作負載
+= 使用NetApp Ransomware Resilience保護策略保護工作負載
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -12,7 +12,7 @@ summary: 您可以透過在NetApp Ransomware Resilience 中為工作負載分配
 
 
 [role="lead"]
-您可以透過在NetApp Ransomware Resilience 中啟用工作負載一致性保護或建立勒索軟體保護策略來保護工作負載免受勒索軟體攻擊。
+您可以透過在NetApp Ransomware Resilience中啟用工作負載一致性保護或建立勒索軟體保護策略來保護工作負載免受勒索軟體攻擊。
 
 *所需的控制台角色* 要執行此任務，您需要組織管理員、資料夾或專案管理員或勒索軟體復原管理員角色。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["了解NetApp Console的勒索軟體復原角色"^] 。
 
@@ -43,7 +43,7 @@ TIP: 為了增強對資料資產的管理和保護，您可以創建link:#create
 
 除了勒索軟體復原能力之外，還可以使用以下服務來管理保護：
 
-* NetApp檔案共享備份與復原、VM 檔案共享
+* NetApp Backup and Recovery、VM 檔案共享
 * SnapCenter for VMware 適用於虛擬機器資料儲存區
 * 適用於 Oracle 和 MySQL 的SnapCenter
 
@@ -99,7 +99,7 @@ NOTE: 看link:#add-a-ransomware-protection-strategy["增加勒索軟體防護策
 *保護狀態*：工作負載可以顯示下列保護狀態之一，以指示是否套用了政策：
 
 * *受保護*：已套用原則。與工作負載相關的所有磁碟區上均啟用了 ARP（或 ARP/AI，取決於ONTAP版本）。
-* *處於危險之中*：未應用任何政策。如果工作負載沒有啟用主要偵測策略，那麼即使啟用了快照和備份策略，它仍然「處於危險之中」。
+* *存在風險*：未應用任何保單。如果工作負載沒有啟用主要偵測策略，那麼即使啟用了快照和備份策略，它仍然「處於危險之中」。
 * *進行中*：政策正在應用但尚未完成。
 * *失敗*：策略已套用但不起作用。
 
@@ -245,10 +245,10 @@ NOTE: **加密使用者擴充**策略是唯一支援可疑使用者行為偵測�
 
 .步驟
 . 從勒索軟體恢復選單中，選擇*儀表板*。
-. 從「建議」窗格中，找到以下建議之一並選擇「審閱並修復」：
+. 從「建議」窗格中，找到以下建議之一並選擇「檢視並修復」：
 +
-** 使用NetApp控制台註冊可用的SnapCenter伺服器
-** 使用NetApp控制台註冊適用SnapCenter Plug-in for VMware vSphere（SCV）
+** 使用NetApp Console註冊可用的SnapCenter伺服器
+** 使用NetApp Console註冊適用SnapCenter Plug-in for VMware vSphere（SCV）
 
 
 . 依照資訊使用備份和還原為 VMware vSphere 主機註冊SnapCenter或SnapCenter Plug-in for VMware vSphere。
@@ -385,7 +385,7 @@ image:screen-protection.png["管理策略頁面"]
 . 選擇**下一步**。
 . 如果您選擇「可疑使用者行為偵測」作為偵測設置，請選擇「使用者活動代理」或link:suspicious-user-activity.html#add-a-user-activity-agent["或創建一個"]。
 +
-用戶活動代理託管新的資料收集器。  Ransomware Resilience 會自動建立資料收集器，將使用者活動事件傳送到 Ransomware Resilience 以偵測異常使用者行為。
+用戶活動代理託管新的資料收集器。Ransomware Resilience 會自動建立資料收集器，將使用者活動事件傳送到 Ransomware Resilience 以偵測異常使用者行為。
 
 . 選擇**下一步**。
 . 審查您的選擇。選擇**創建**來啟動檢測。
@@ -408,7 +408,7 @@ image:screen-protection.png["管理策略頁面"]
 . 選擇保護策略。如果不存在保護策略，請選擇**新增**來建立新策略。有關建立策略的信息，請參閱<<steps,建立保護策略>>。選擇**下一步**。
 . 選擇備份目標或建立新的備份目標。選擇**下一步**。
 +
-.. 如果您的保護策略包含使用者行為偵測，請在您的環境中選擇一個使用者活動代理程式來託管新的資料收集器。  Ransomware Resilience 會自動建立資料收集器，將使用者活動事件傳送到 Ransomware Resilience 以偵測異常使用者行為。
+.. 如果您的保護策略包含使用者行為偵測，請在您的環境中選擇一個使用者活動代理程式來託管新的資料收集器。Ransomware Resilience 會自動建立資料收集器，將使用者活動事件傳送到 Ransomware Resilience 以偵測異常使用者行為。
 
 
 . 查看新的保護策略，然後選擇**保護**來套用它。

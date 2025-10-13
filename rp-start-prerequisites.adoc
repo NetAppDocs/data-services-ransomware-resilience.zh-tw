@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: rp-start-prerequisites.html 
 keywords: bluexp ransomware protection, ransomware protection prerequisites, resilience 
-summary: 透過驗證對您的環境、網路存取、登入和 Web 瀏覽器的支持，開始使用NetApp勒索軟體復原能力。 
+summary: 透過驗證對您的環境、網路存取、登入和 Web 瀏覽器的支持，開始使用NetApp Ransomware Resilience。 
 ---
-= NetApp勒索軟體復原能力前提條件
+= NetApp Ransomware Resilience前提條件
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -12,15 +12,15 @@ summary: 透過驗證對您的環境、網路存取、登入和 Web 瀏覽器的
 
 
 [role="lead"]
-透過驗證您的操作環境、登入、網路存取和 Web 瀏覽器的準備情況，開始使用NetApp勒索軟體復原能力。
+透過驗證您的操作環境、登入、網路存取和 Web 瀏覽器的準備情況，開始使用NetApp Ransomware Resilience。
 
 要使用勒索軟體復原能力，您需要滿足以下先決條件。
 
 
 
-== 在NetApp控制台中
+== 在NetApp Console中
 
-* 具有組織管理員權限的NetApp控制台使用者帳戶，用於發現資源。
+* 具有組織管理員權限的NetApp Console使用者帳戶，用於發現資源。
 * 一個控制台組織，其中至少有一個活動的控制台代理連接到本地ONTAP叢集或 AWS 或 Azure 中的Cloud Volumes ONTAP 。
 * 控制台代理必須具有 `cloudmanager-ransomware-protection`容器處於活動狀態。
 * 至少一個具有NetApp本地ONTAP叢集或 AWS 或 Azure 中的Cloud Volumes ONTAP 的控制台系統。勒索軟體復原支援 NAS（NFS 和 SMB）和 SAN（iSCSI、FC 和 NVMe）協定。
@@ -67,7 +67,7 @@ NOTE: 與預覽版不同，Ransomware Resilience 的正式版包含NetApp Autono
 +
 請參閱 https://docs.netapp.com/us-en/console-setup-admin/reference-permissions.html["AWS、Azure 或 S3 權限列表"^]了解詳情。
 
-* 不需要在系統上啟用NetApp Backup and Recovery。
+* 不需要在系統上啟用NetApp Backup and Recovery 。
 +
 勒索軟體復原力有助於透過設定選項來配置備份目標。看link:rp-use-settings.html["配置設定"] 。
 

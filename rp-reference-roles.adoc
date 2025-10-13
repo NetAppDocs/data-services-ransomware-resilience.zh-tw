@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: rp-reference-roles.html 
 keywords: ransomware protection, protect against ransomware attacks, anti-ransomware, role-based access control, rbac, role, permission, access rights, organization,project,account 
-summary: NetApp Ransomware Resilience 採用角色來管理每個使用者對特定功能和操作的存取權限。 
+summary: NetApp Ransomware Resilience採用角色來管理每個使用者對特定功能和操作的存取權。 
 ---
-= NetApp勒索軟體恢復基於角色的訪問
+= NetApp Ransomware Resilience基於角色的訪問
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -12,7 +12,7 @@ summary: NetApp Ransomware Resilience 採用角色來管理每個使用者對特
 
 
 [role="lead"]
-NetApp Ransomware Resilience 採用角色來管理每個使用者對特定功能和操作的存取權限。
+NetApp Ransomware Resilience採用角色來管理每個使用者對特定功能和操作的存取權。
 
 勒索軟體復原能力使用特定於勒索軟體復原能力的以下角色。
 

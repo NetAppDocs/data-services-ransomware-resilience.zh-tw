@@ -4,7 +4,7 @@ permalink: concept-ransomware-resilience.html
 keywords: artificial intelligence, personal data, personal information, sensitive, personal sensitive data, data sense, ransomware, ransomware protection, ransomware attack, detect, recover, cyberstorage, cyberattack, cybersecurity, protection, bluexp, netapp, role-based access control, rbac 
 summary: 勒索軟體復原能力使您能夠查看有關網路安全的相關信息，並評估您的組織抵禦網路攻擊的能力。它還為您提供了警報和補救步驟的列表，以確保您的資料更加安全。 
 ---
-= 了解NetApp勒索軟體復原能力
+= 了解NetApp Ransomware Resilience
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -16,7 +16,7 @@ summary: 勒索軟體復原能力使您能夠查看有關網路安全的相關�
 [role="lead"]
 勒索軟體攻擊可以阻止對您資料的訪問​​，攻擊者可以要求贖金以換取資料發布或解密。據 IDC 稱，勒索軟體受害者遭受多次勒索軟體攻擊的情況並不少見。攻擊可能會中斷您對資料的訪問​​，時間從一天到幾週不等。
 
-NetApp勒索軟體保護功能可保護您的資料免受勒索軟體攻擊。在勒索軟體復原能力中，可以對基於應用程式的工作負載提供保護，包括本地 NAS 儲存（使用 NFS 和 CIFS 協定）和 SAN 儲存（FC、iSCSI 和 NVMe）上的 Oracle、MySQL、VM 資料儲存區和檔案共用，以及適用於 Amazon Web Services 的Cloud Volumes ONTAP Cloud Volumes ONTAP 、適用於 Google上的Amazon FSx for NetApp ONTAP 。您可以將資料備份到 Amazon Web Services、Google Cloud、Microsoft Azure 雲端儲存和NetApp StorageGRID。
+NetApp Ransomware Resilience可保護您的資料免受勒索軟體攻擊。在勒索軟體復原能力中，可以對基於應用程式的工作負載提供保護，包括本地 NAS 儲存（使用 NFS 和 CIFS 協定）和 SAN 儲存（FC、iSCSI 和 NVMe）上的 Oracle、MySQL、VM 資料儲存區和檔案共用，以及適用於 Amazon Web Services 的Cloud Volumes ONTAP Cloud Volumes ONTAP 、適用於 Google ONT的NetApp Console上的Amazon FSx for NetApp ONTAP 。您可以將資料備份到 Amazon Web Services、Google Cloud、Microsoft Azure 雲端儲存和NetApp StorageGRID。
 
 
 
@@ -39,7 +39,7 @@ image:concept-security-layer-diagram.png["安全圖層圖"]
 
 勒索軟體復原功能充分利用了多種NetApp技術，以便您的儲存管理員、資料安全管理員或安全營運工程師可以實現以下目標：
 
-* *識別* NetApp控制台、專案和控制台代理程式中NetApp內部部署 NAS（NFS 或 CIFS）和 SAN（FC、iSCSI 和 NVMe）系統中所有基於應用程式、檔案共用或 VMware 管理的工作負載。勒索軟體彈性對資料優先級進行分類，並為您提供勒索軟體彈性改進的建議。
+* *識別* NetApp Console、專案和控制台代理程式中的NetApp內部部署 NAS（NFS 或 CIFS）和 SAN（FC、iSCSI 和 NVMe）系統中所有基於應用程式、檔案共用或 VMware 管理的工作負載。勒索軟體彈性對資料優先級進行分類，並為您提供勒索軟體彈性改進的建議。
 * 透過對資料啟用備份、快照副本和勒索軟體保護策略來*保護*您的工作負載。
 * *偵測*可能是勒索軟體攻擊的異常。註腳：[儘管攻擊可能未被發現，但我們的研究表明， NetApp技術已對某些基於文件加密的勒索軟體攻擊實現了高度檢測。 ]
 * 透過自動啟動鎖定的防篡改NetApp ONTAP快照來*應對*潛在的勒索軟體攻擊，這樣副本就不會被意外或惡意刪除。您的備份資料將保持不變，並在來源和目標端受到端到端的保護，免受勒索軟體攻擊。
@@ -62,7 +62,7 @@ image:diagram-rp-features-phases3.png["圖表展示了勒索軟體抵禦攻擊�
 * 保護頂級基於應用程式的工作負載中的數據，例如 MySQL、Oracle、VMware 資料儲存和檔案共用。
 * 使用人工智慧技術即時偵測針對主儲存資料的勒索軟體攻擊。
 * 透過建立快照副本和啟動有關異常活動的警報來啟動自動操作以回應偵測到的潛在攻擊。
-* 應用精心策劃的恢復以滿足 RPO 政策。勒索軟體復原能力透過使用多種NetApp復原服務（包括NetApp備份和復原（以前稱為雲端備份）和SnapCenter）來協調勒索軟體事件的復原。
+* 應用精心策劃的恢復以滿足 RPO 政策。勒索軟體復原能力透過使用多種NetApp復原服務（包括NetApp Backup and Recovery（以前稱為雲端備份）和SnapCenter）來協調勒索軟體事件的復原。
 * 使用基於角色的存取控制 (RBAC) 來管理對功能和操作的存取。
 
 
@@ -77,7 +77,7 @@ NOTE: 隨著 2024 年 10 月的發布，Ransomware Resilience 的新部署提供
 
 如果您同時擁有備份和復原以及勒索軟體復原功能，則受這兩種產品保護的任何公開資料僅由勒索軟體復原功能計費。
 
-購買許可證或 PayGo 訂閱後，任何啟用了勒索軟體偵測策略（自主勒索軟體保護）（由勒索軟體復原力發現或設定）且至少有一個快照或備份策略的工作負載，勒索軟體復原力都會將其歸類為“受保護”，併計入購買的容量或 PayGo 訂閱。如果發現工作負載沒有檢測策略，即使它有備份或快照策略，也會被歸類為“有風險”，並且不會計入購買的容量。
+購買許可證或 PayGo 訂閱後，任何啟用了勒索軟體偵測策略（自主勒索軟體保護）（由勒索軟體復原力發現或設定）且至少有一個快照或備份策略的工作負載，勒索軟體復原力都會將其歸類為“受保護”，併計入購買的容量或 PayGo 訂閱。如果在沒有檢測策略的情況下發現工作負載，即使它具有備份或快照策略，也會將其歸類為“有風險”，並且不會計入購買的容量。
 
 90 天試用期結束後，受保護的工作負載將計入購買的容量或訂閱。勒索軟體恢復按每 GB 為與受保護工作負載相關的資料（在效率之前）收費。
 
@@ -97,21 +97,21 @@ NOTE: 隨著 2024 年 10 月的發布，Ransomware Resilience 的新部署提供
 
 
 
-== NetApp控制台
+== NetApp Console
 
-可透過NetApp控制台存取勒索軟體復原功能。
+可透過NetApp Console存取勒索軟體復原功能。
 
-NetApp控制台提供企業級跨本機和雲端環境的NetApp儲存和資料服務的集中管理。需要控制台才能存取和使用NetApp資料服務。作為管理介面，它使您能夠從一個介面管理許多儲存資源。控制台管理員可以控制企業內所有系統的儲存和服務的存取。
+NetApp Console提供企業級跨本機和雲端環境的NetApp儲存和資料服務的集中管理。需要控制台才能存取和使用NetApp資料服務。作為管理介面，它使您能夠從一個介面管理許多儲存資源。控制台管理員可以控制企業內所有系統的儲存和服務的存取。
 
-您不需要許可證或訂閱即可開始使用NetApp控制台，並且只有當您需要在雲端部署控制台代理程式以確保與儲存系統或NetApp資料服務的連接時才需要付費。但是，一些可從控制台存取的NetApp資料服務是需要授權或基於訂閱的。
+您不需要許可證或訂閱即可開始使用NetApp Console，並且只有當您需要在雲端部署控制台代理程式以確保與儲存系統或NetApp資料服務的連線時才需要付費。但是，一些可從控制台存取的NetApp資料服務是需要授權或基於訂閱的。
 
-詳細了解link:https://docs.netapp.com/us-en/console-setup-admin/concept-overview.html["NetApp控制台"^]。
+詳細了解link:https://docs.netapp.com/us-en/console-setup-admin/concept-overview.html["NetApp Console"^]。
 
 
 
-== 勒索軟體抵禦能力的工作原理
+== 勒索軟體復原的工作原理
 
-Ransomware Resilience 使用NetApp Backup and Recovery 來發現和設定檔案共享工作負載的快照和備份策略，使用SnapCenter或SnapCenter for VMware 來發現和設定應用程式和虛擬機器工作負載的快照和備份策略。此外，Ransomware Resilience 使用備份和復原以及SnapCenter / SnapCenter for VMware 來執行檔案和工作負載一致的復原。
+Ransomware Resilience 使用NetApp Backup and Recovery來發現和設定檔案共享工作負載的快照和備份策略，使用SnapCenter或SnapCenter for VMware 來發現和設定應用程式和虛擬機器工作負載的快照和備份策略。此外，Ransomware Resilience 使用備份和復原以及SnapCenter / SnapCenter for VMware 來執行檔案和工作負載一致的復原。
 
 image:diagram-rp-architecture-preview3.png["勒索軟體抵禦能力架構​​圖"]
 
@@ -123,7 +123,7 @@ image:diagram-rp-architecture-preview3.png["勒索軟體抵禦能力架構​​
 | *確認*  a| 
 * 尋找連接到控制台的所有客戶本地 NAS（NFS 和 CIFS 協定）、SAN（FC、iSCSI 和 NVMe）和Cloud Volumes ONTAP資料。
 * 從ONTAP和SnapCenter服務 API 中識別客戶資料並將其與工作負載關聯。詳細了解 https://docs.netapp.com/us-en/ontap-family/["ONTAP"^]和 https://docs.netapp.com/us-en/snapcenter/index.html["SnapCenter軟體"^]。
-* 發現每個磁碟區的目前NetApp快照副本和備份策略的保護等級以及任何機上偵測功能。然後，勒索軟體復原能力透過使用備份和復原、 ONTAP服務和NetApp技術（例如自主勒索軟體保護（ARP 或 ARP/AI，取決於您的ONTAP版本）、FPolicy、備份策略和快照策略）將此保護態勢與工作負載相關聯。詳細了解 https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["自主勒索軟體防護"^]， https://docs.netapp.com/us-en/data-services-backup-recovery/index.html["NetApp備份與復原"^] ， 和 https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html["ONTAP FPolicy"^]。
+* 發現每個磁碟區的目前NetApp快照副本和備份策略的保護等級以及任何機上偵測功能。然後，勒索軟體復原能力透過使用備份和復原、 ONTAP服務和NetApp技術（例如自主勒索軟體保護（ARP 或 ARP/AI，取決於您的ONTAP版本）、FPolicy、備份策略和快照策略）將此保護態勢與工作負載相關聯。詳細了解 https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["自主勒索軟體防護"^]， https://docs.netapp.com/us-en/data-services-backup-recovery/index.html["NetApp Backup and Recovery"^] ， 和 https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html["ONTAP FPolicy"^]。
 * 根據自動發現的保護等級為每個工作負載分配業務優先級，並根據工作負載的業務優先級建議保護策略。工作負載優先順序是基於已應用於與工作負載相關的每個磁碟區的快照頻率。
 
 

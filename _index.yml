@@ -1,11 +1,11 @@
 ---
 indexpage:
-  title: NetApp勒索軟體復原能力文檔
-  summary: NetApp Ransomware Resilience可保護、偵測並支援從本機和雲端儲存的勒索軟體威脅中復原應用程式工作負載和檔案共用。  Ransomware
+  title: NetApp Ransomware Resilience文檔
+  summary: NetApp Ransomware Resilience可保護、偵測並支援從本機和雲端儲存的勒索軟體威脅中復原應用程式工作負載和檔案共用。Ransomware
     Resilience 支援 Oracle、MySQL、VM 資料儲存和 NAS 儲存等平台，可實現安全備份和恢復，幫助組織保護關鍵資料並保持業務連續性。
   keywords: bluexp, ransomware, anti-ransomware, cyber attack, netapp, ontap, amazon
     web services, aws, storagegrid, protection, resilience
-  lead: NetApp Ransomware Resilience可保護、偵測並支援從本機和雲端儲存的勒索軟體威脅中復原應用程式工作負載和檔案共用。  Ransomware
+  lead: NetApp Ransomware Resilience可保護、偵測並支援從本機和雲端儲存的勒索軟體威脅中復原應用程式工作負載和檔案共用。Ransomware
     Resilience 支援 Oracle、MySQL、VM 資料儲存和 NAS 儲存等平台，可實現安全備份和恢復，幫助組織保護關鍵資料並保持業務連續性。
   tiles:
   - title: 開始
@@ -32,7 +32,7 @@ indexpage:
       url: "/rp-use-dashboard.html"
     - title: 保護工作負載
       url: "/rp-use-protect.html"
-    - title: 使用NetApp資料分類掃描個人識別資訊
+    - title: 使用NetApp Data Classification掃描個人識別資訊
       url: "/rp-use-protect-classify.html"
     - title: 響應偵測到的警報
       url: "/rp-use-alert.html"
@@ -40,9 +40,9 @@ indexpage:
       url: "/rp-use-recover.html"
   - title: 部落格和社區
     links:
-    - title: NetApp控制台
+    - title: NetApp Console
       url: https://www.netapp.com/console
-    - title: NetApp資料服務
+    - title: NetApp Data Services
       url: https://www.netapp.com/data-services/
     - title: NetApp社群
       url: https://community.netapp.com/
