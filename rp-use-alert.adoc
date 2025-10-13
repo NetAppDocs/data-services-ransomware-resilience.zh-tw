@@ -78,7 +78,7 @@ TIP: 如果您在「設定」頁面的「勒索軟體復原」中設定了安全
 
 您可以從勒索軟體復原力儀表板或「警報」標籤存取警報。
 
-*所需的控制台角色* 要執行此任務，您需要組織管理員、資料夾或專案管理員、勒索軟體復原管理員或勒索軟體復原檢視器角色。 https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["了解所有服務的BlueXP訪問角色"^] 。
+*所需的控制台角色* 要執行此任務，您需要組織管理員、資料夾或專案管理員、勒索軟體復原管理員或勒索軟體復原檢視器角色。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["了解NetApp Console的勒索軟體復原角色"^] 。
 
 .步驟
 . 在勒索軟體復原力儀表板中，檢視警示窗格。
@@ -117,7 +117,7 @@ TIP: 若要訂閱電子郵件通知，請參閱 https://docs.netapp.com/us-en/co
 
 當產生新警報時，您將收到電子郵件通知。
 
-*所需的控制台角色* 要執行此任務，您需要組織管理員、資料夾或專案管理員、勒索軟體復原管理員或勒索軟體復原檢視器角色。 https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["了解所有服務的BlueXP訪問角色"^] 。
+*所需的控制台角色* 要執行此任務，您需要組織管理員、資料夾或專案管理員、勒索軟體復原管理員或勒索軟體復原檢視器角色。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["了解NetApp Console的勒索軟體復原角色"^] 。
 
 .步驟
 . 查看電子郵件。
@@ -192,7 +192,7 @@ image:screen-alerts-incidents3.png["警報事件頁面"]
 
 阻止攻擊後，通知儲存管理員資料已準備就緒，以便他們可以開始恢復。
 
-*所需的控制台角色* 要執行此任務，您需要組織管理員、資料夾或專案管理員或勒索軟體復原管理員角色。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["了解所有服務的控制台存取角色"^] 。
+*所需的控制台角色* 要執行此任務，您需要組織管理員、資料夾或專案管理員或勒索軟體復原管理員角色。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["了解NetApp Console的勒索軟體復原角色"^] 。
 
 .步驟
 . 從勒索軟體恢復選單中，選擇*警報*。
@@ -225,7 +225,7 @@ image:screen-alerts-incidents3.png["警報事件頁面"]
 
 CAUTION: 如果您關閉警報，則無法將該狀態改回任何其他狀態，也無法撤銷此變更。
 
-*所需的控制台角色* 要執行此任務，您需要組織管理員、資料夾或專案管理員或勒索軟體復原管理員角色。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["了解所有服務的控制台存取角色"^] 。
+*所需的控制台角色* 要執行此任務，您需要組織管理員、資料夾或專案管理員或勒索軟體復原管理員角色。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["了解NetApp Console的勒索軟體復原角色"^] 。
 
 .步驟
 . 從勒索軟體恢復選單中，選擇*警報*。
@@ -262,7 +262,7 @@ image:screen-alerts-status-edit.png["警報編輯狀態頁面"]
 
 在檔案層級復原應用程式工作負載之前，您可以查看受影響檔案的清單。您可以造訪警報頁面下載受影響文件的清單。然後使用恢復頁面上傳列表並選擇要恢復的檔案。
 
-*所需的控制台角色* 要執行此任務，您需要組織管理員、資料夾或專案管理員或勒索軟體復原管理員角色。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["了解所有服務的控制台存取角色"^] 。
+*所需的控制台角色* 要執行此任務，您需要組織管理員、資料夾或專案管理員或勒索軟體復原管理員角色。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["了解NetApp Console的勒索軟體復原角色"^] 。
 
 .步驟
 使用「警報」頁面檢索受影響文件的清單。

@@ -59,7 +59,7 @@ image:screen-recovery2.png["恢復頁面"]
 
 如果需要恢復，應用程式狀態將會改變。如果備份中包含控製文件，應用程式將從控製文件還原到其先前的狀態。恢復完成後，應用程式將以讀寫模式開啟。
 
-*所需的控制台角色* 要執行此任務，您需要組織管理員、資料夾或專案管理員或勒索軟體復原管理員角色。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["了解所有服務的控制台存取角色"^] 。
+*所需的控制台角色* 要執行此任務，您需要組織管理員、資料夾或專案管理員或勒索軟體復原管理員角色。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["了解NetApp Console的勒索軟體復原角色"^] 。
 
 .步驟
 . 從勒索軟體復原中，選擇*恢復*。
@@ -93,7 +93,7 @@ TIP: 勒索軟體復原能力將最佳還原點識別為事件發生前的最新
 
 使用勒索軟體復原能力，儲存管理員可以決定如何從建議的還原點或首選的還原點最佳地復原工作負載。
 
-*所需的控制台角色* 要執行此任務，您需要組織管理員、資料夾或專案管理員或勒索軟體復原管理員角色。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["了解所有服務的控制台存取角色"^] 。
+*所需的控制台角色* 要執行此任務，您需要組織管理員、資料夾或專案管理員或勒索軟體復原管理員角色。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["了解NetApp Console的勒索軟體復原角色"^] 。
 
 安全儲存管理員可以恢復不同等級的資料：
 

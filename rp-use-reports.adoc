@@ -17,7 +17,7 @@ summary: 使用NetApp Ransomware Resilience，您可以下載顯示保護、警�
 
 TIP: 在下載檔案之前，您應該刷新數據，這也會刷新文件中出現的數據。
 
-*所需的控制台角色* 要執行此任務，您需要組織管理員、資料夾或專案管理員、勒索軟體復原管理員或勒索軟體復原檢視器角色。 https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["了解所有服務的BlueXP訪問角色"^] 。
+*所需的控制台角色* 要執行此任務，您需要組織管理員、資料夾或專案管理員、勒索軟體復原管理員或勒索軟體復原檢視器角色。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["了解NetApp Console的勒索軟體復原角色"^] 。
 
 *您可以下載哪些資料？ *您可以從任何主選單選項下載檔案：
 

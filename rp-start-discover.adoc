@@ -14,7 +14,7 @@ summary: 在發現過程中，勒索軟體復原力會分析所有控制台代�
 [role="lead"]
 在使用NetApp Ransomware Resilience 之前，它需要先發現資料。在發現過程中，勒索軟體復原力會分析組織內所有控制台代理程式和專案系統中的所有捲和檔案。
 
-*所需的控制台角色* 要執行此任務，您需要組織管理員、資料夾或專案管理員或勒索軟體復原管理員角色。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["了解所有服務的控制台存取角色"^] 。
+*所需的控制台角色* 要執行此任務，您需要組織管理員、資料夾或專案管理員或勒索軟體復原管理員角色。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["了解NetApp Console的勒索軟體復原角色"^] 。
 
 *勒索軟體復原能力發現了什麼？ *勒索軟體復原能力評估 MySQL 應用程式、Oracle 應用程式、VMware 資料儲存區、檔案共用和區塊儲存。
 

@@ -14,7 +14,7 @@ summary: 您可以在設定頁面中配置多個選項，包括備份目標和�
 [role="lead"]
 您可以透過存取*設定*選項來設定備份目標、將資料傳送至外部安全性和事件管理 (SIEM) 系統、進行攻擊準備練習、設定工作負載發現或設定可疑使用者活動偵測。
 
-*所需的控制台角色* 要執行此任務，您需要組織管理員、資料夾或專案管理員或勒索軟體復原管理員角色。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["了解所有服務的控制台存取角色"^] 。
+*所需的控制台角色* 要執行此任務，您需要組織管理員、資料夾或專案管理員或勒索軟體復原管理員角色。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["了解NetApp Console的勒索軟體復原角色"^] 。
 
 *您可以在「設定」頁面做什麼？ *在「設定」頁面中，您可以執行以下操作：
 
