@@ -614,8 +614,6 @@
   <block id="60e39582e4cf8359d140fc0851baccb4" category="list-text">一個控制台組織，其中至少有一個活動的控制台代理連接到本地ONTAP叢集或 AWS 或 Azure 中的Cloud Volumes ONTAP 。</block>
   <block id="ffc25a5f8d1276ee801a950e7f83a233" category="list-text">控制台代理必須具有<block ref="d5aabb6133fba5c7ef5a4e8db21d18ae" prefix=" " category="inline-code"></block>容器處於活動狀態。</block>
   <block id="7bff903bef6a1c5af1e562c29d1de15e" category="list-text">至少一個具有NetApp本地ONTAP叢集或 AWS 或 Azure 中的Cloud Volumes ONTAP 的控制台系統。勒索軟體復原支援 NAS（NFS 和 SMB）和 SAN（iSCSI、FC 和 NVMe）協定。</block>
-  <block id="fd90f947530ad3e6b6dfdb82ceff50cb" category="list-text">支援具有ONTAP OS 版本 9.11.1 或更高版本的ONTAP或Cloud Volumes ONTAP叢集。</block>
-  <block id="7ea40a0c9f950a0c8c2ee16edd7f77f2" category="admonition">僅ONTAP 9.17.1 及更高版本支援 SAN 工作負載。</block>
   <block id="097ff3efa4909e783a040ec7edc317d6" category="list-text">如果您的本機ONTAP叢集或 AWS 或 Azure 雲端中的Cloud Volumes ONTAP尚未在控制台中登錄，則需要控制台代理程式。</block>
   <block id="04f679e072129c7e87e077dc95e5e73e" category="inline-link">了解如何配置控制台代理</block>
   <block id="b1fb1d531493b1af3ab2980b2c579a5f" category="inline-link">標準控制台要求</block>
@@ -630,7 +628,6 @@
   <block id="5cc74ffa295c128286831c0e8de84cd1" category="paragraph">有關更多許可詳細信息，請參閱<block ref="11f96aed2a11a318ecdf8f5381ec25fa" category="inline-link-macro-rx"></block>。</block>
   <block id="47c8d077dd25d3b0a8650ef6f84f0820" category="list-text">若要套用保護配置（例如啟用自主勒索軟體保護等），勒索軟體復原能力需要ONTAP叢集上的管理員權限。  ONTAP叢集應該只使用ONTAP叢集管理員使用者憑證進行加入。</block>
   <block id="d6b16e754b93934f7687ad4f252b7073" category="list-text">如果已使用非管理員使用者憑證在控制台中登入ONTAP集群，則必須透過登入ONTAP集群來更新非管理員使用者權限，如本頁所述。</block>
-  <block id="ed5ce0cb12bbc7e366d04460145d59f3" category="section-title">用於資料備份</block>
   <block id="0885a21123eeb2ad2e03289064c229ea" category="list-text">NetApp StorageGRID、AWS S3、Azure Blob 或 Google Cloud Platform 中用於備份目標的帳戶以及設定的存取權。</block>
   <block id="d2e3e802d3f25894bd170688859d6cef" category="inline-link">AWS、Azure 或 S3 權限列表</block>
   <block id="90061bb176f3e723f6f2161eafc1901c" category="paragraph">請參閱<block ref="31e1fb669a04af441205b80b4846232f" category="inline-link-rx"></block>了解詳情。</block>
@@ -743,8 +740,6 @@
   <block id="365d382b2d9ecca9b0d40171c69b38ff" category="list-text">執行下列操作之一：</block>
   <block id="298c644723428b96dd61c8e59f47eee9" category="list-text">從勒索軟體復原選單中，選擇右上角的「運行準備演練」按鈕。</block>
   <block id="8d2bd4422410271303c0633a19aefea9" category="list-text">或者，從「設定」頁面的「準備好練習卡」中選擇「*開始*」。</block>
-  <block id="f54a2552361ef76d1d69e95fc2f63e90" category="list-text">如果您已經配置了準備狀況演習，則選擇*開始*後，準備狀況演習就會開始。</block>
-  <block id="241197791593ba6fe12006bc7c44e045" category="admonition">演習開始後，您無法編輯準備演習配置。您可以重置它以重新開始。</block>
   <block id="1e4a43fb392ed69a6d5a047ba0d88826" category="section-title">響應戰備演習警報</block>
   <block id="6128067a6b325891717a7cfc23e60bae" category="paragraph">透過回應準備演習警報來測試您的準備。</block>
   <block id="e9ebf76599d54488581ec7e47b518db1" category="list-text">從勒索軟體恢復選單中，選擇*警報*。</block>
@@ -2036,4 +2031,11 @@
   <block id="f8a7dc43864435cb9b522a28b586e556" category="sidebar">從勒索軟體攻擊中恢復</block>
   <block id="1fe917b01f9a3f87fa2d7d3b7643fac1" category="sidebar">常問問題</block>
   <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">知識和支持</block>
+  <block id="69d1e7a74a8d35e4122500df6d2f5042" category="list-text">ONTAP或Cloud Volumes ONTAP叢集（ ONTAP版本 9.11.1 或更高版本）支援勒索軟體復原功能。</block>
+  <block id="d36369f24098b858527294c5a234c72d" category="admonition">如果您打算在 SAN 工作負載上使用勒索軟體復原能力，則必須執行ONTAP 9.17.1 或更高版本。</block>
+  <block id="51fecb5d19a6637dea83445678fd4ffa" category="section-title">資料備份</block>
+  <block id="9755e4a474d0024a8dcd40393e571716" category="section-title">可疑的使用者行為</block>
+  <block id="34691f87b892c333fe1b7a23452dcda6" category="paragraph">為了使勒索軟體復原能力提供有關可疑使用者行為的警報，您必須設定使用者活動代理程式。有關詳細信息，請參閱 <block ref="f3d3e5726f7feb4b59ca728c906df758" category="inline-link-macro-rx"></block>。</block>
+  <block id="793485138a653779a0c8cb91bf9fc979" category="list-text">選擇準備演習類型。若要從加密資料外洩手動恢復，請選擇**自訂恢復**。若要從可疑用戶活動中恢復，請選擇**資料外洩**。</block>
+  <block id="8e0b9d66ccd774ed98d0b31d0e6ed305" category="admonition">演練運行時，您無法編輯準備演練配置。您可以重置鑽孔機以停止它並修改配置。</block>
 </blocks>

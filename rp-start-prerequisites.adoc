@@ -25,10 +25,10 @@ summary: 透過驗證對您的環境、網路存取、登入和 Web 瀏覽器的
 * 控制台代理必須具有 `cloudmanager-ransomware-protection`容器處於活動狀態。
 * 至少一個具有NetApp本地ONTAP叢集或 AWS 或 Azure 中的Cloud Volumes ONTAP 的控制台系統。勒索軟體復原支援 NAS（NFS 和 SMB）和 SAN（iSCSI、FC 和 NVMe）協定。
 +
-** 支援具有ONTAP OS 版本 9.11.1 或更高版本的ONTAP或Cloud Volumes ONTAP叢集。
+** ONTAP或Cloud Volumes ONTAP叢集（ ONTAP版本 9.11.1 或更高版本）支援勒索軟體復原功能。
 +
 
-NOTE: 僅ONTAP 9.17.1 及更高版本支援 SAN 工作負載。
+NOTE: 如果您打算在 SAN 工作負載上使用勒索軟體復原能力，則必須執行ONTAP 9.17.1 或更高版本。
 
 ** 如果您的本機ONTAP叢集或 AWS 或 Azure 雲端中的Cloud Volumes ONTAP尚未在控制台中登錄，則需要控制台代理程式。
 +
@@ -61,7 +61,7 @@ NOTE: 與預覽版不同，Ransomware Resilience 的正式版包含NetApp Autono
 
 
 
-== 用於資料備份
+== 資料備份
 
 * NetApp StorageGRID、AWS S3、Azure Blob 或 Google Cloud Platform 中用於備份目標的帳戶以及設定的存取權。
 +
@@ -72,6 +72,12 @@ NOTE: 與預覽版不同，Ransomware Resilience 的正式版包含NetApp Autono
 勒索軟體復原力有助於透過設定選項來配置備份目標。看link:rp-use-settings.html["配置設定"] 。
 
 
+
+
+
+== 可疑的使用者行為
+
+為了使勒索軟體復原能力提供有關可疑使用者行為的警報，您必須設定使用者活動代理程式。有關詳細信息，請參閱 link:suspicious-user-activity.html["在NetApp Ransomware Resilience中配置可疑使用者活動偵測"]。
 
 
 
