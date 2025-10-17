@@ -209,9 +209,6 @@ image:screen-settings-backup-destinations-list2.png["備份目標頁面的「設
 .步驟
 . 在*設定 > 備份目標*頁面中，選擇*新增*。
 . 輸入備份目標的名稱。
-+
-image:screen-settings-backup-destination-gcp.png["備份目標頁面"]
-
 . 選擇*Google Cloud Platform*。
 . 選擇每個設定旁邊的向下箭頭並輸入或選擇值：
 +
@@ -219,6 +216,9 @@ image:screen-settings-backup-destination-gcp.png["備份目標頁面"]
 +
 *** 建立一個新的儲存桶。輸入存取密鑰和密鑰。
 *** 輸入或選擇您的 Google Cloud Platform 專案和區域。
++
+image:screen-settings-backup-destination-gcp.png["備份目標頁面"]
+
 
 
 ** *加密*：如果您正在建立新的儲存桶，請輸入提供者提供給您的加密金鑰資訊。如果您選擇現有儲存桶，加密資訊已經可用。
