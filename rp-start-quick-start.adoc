@@ -12,30 +12,57 @@ summary: 只需幾個步驟即可開始使用NetApp Ransomware Resilience。
 
 
 [role="lead"]
-以下是開始使用NetApp Ransomware Resilience所需步驟的概述。每個步驟中的連結都會將您帶到提供更多詳細資訊的頁面。
+了解設定勒索軟體保護功能和保護工作負載所需遵循的進階步驟。
+
+請按照每個步驟中的連結獲取詳細資訊。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一"]審查先決條件
 [role="quick-margin-para"]
-link:rp-start-prerequisites.html["確保您的系統符合這些要求"] 。
+這些任務需要_Console admin_角色。
+
+[role="quick-margin-list"]
+* link:https://docs.netapp.com/us-en/console-setup-admin/concept-agents.html#agent-installation["確保已安裝控制台代理"^]
+* link:rp-start-prerequisites.html["確保您的系統符合要求"]
+* link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-reference-roles.html["審查勒索軟體恢復使用者角色並為存取勒索軟體復原的使用者分配權限"]
+* link:rp-start-licenses.html["設定許可"]
+
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"]設定勒索軟體抵禦能力
-[role="quick-margin-list"]
-* link:rp-start-setup.html["準備NetApp StorageGRID、Amazon Web Services、Google Cloud Platform 或 Microsoft Azure 作為備份目標"] 。
-* link:rp-start-setup.html["配置控制台代理"] 。
-* link:rp-start-licenses.html["設定許可"] 。
-* link:rp-start-discover.html["在控制台中發現工作負載"] 。
-* link:rp-start-setup.html["配置備份目標"] 。
-* link:rp-start-setup.html["選擇性地啟用威脅偵測"] 。
-* link:rp-start-simulate.html["（可選）進行勒索軟體攻擊準備演習"] 。
-
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三"]下一步是什麼？
 [role="quick-margin-para"]
-設定勒索軟體復原功能後，您可以執行以下操作。
+這些任務需要「勒索軟體復原管理員」角色。
 
 [role="quick-margin-list"]
-* link:rp-use-dashboard.html["在儀表板上查看工作負載保護健康狀況"] 。
-* link:rp-use-protect.html["保護工作負載"] 。
-* link:rp-use-alert.html["回應偵測到的潛在勒索軟體攻擊"] 。
-* link:rp-use-recover.html["從攻擊中恢復（事件消除後）"] 。
+* link:rp-start-discover.html["在控制台中發現工作負載"]
+* link:rp-use-dashboard.html["在儀表板上查看工作負載保護健康狀況"]
+* link:rp-start-simulate.html["（可選）進行勒索軟體攻擊準備演習"]
+
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三"]在 Ransomware Resilience 中設定保護和偵測
+[role="quick-margin-para"]
+這些任務需要「勒索軟體復原管理員」角色。配置可疑用戶行為活動需要額外的「勒索軟體恢復用戶行為管理員」角色。
+
+[role="quick-margin-list"]
+* link:rp-use-protect.html["保護工作負載"]
++
+** 可選地，link:suspicious-user-activity.html["透過配置可疑使用者活動偵測來增強保護"]
+
+
+* （可選）配置備份目標：
++
+** link:rp-start-setup.html["準備NetApp StorageGRID、Amazon Web Services、Google Cloud Platform 或 Microsoft Azure 作為備份目標"] 。
+** link:rp-start-setup.html["配置備份目標"]
+
+
+* link:rp-use-alert.html["回應偵測到的潛在勒索軟體攻擊"]
+* link:rp-use-recover.html["從攻擊中恢復（事件消除後）"]
+
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四"]下一步是什麼？
+[role="quick-margin-para"]
+在勒索軟體復原中配置保護後，您可以執行以下操作。
+
+[role="quick-margin-list"]
+* link:rp-use-protect-classify.html["啟用資料分類來識別治理和安全風險"]
+* link:rp-use-settings.html#connect-to-a-security-and-event-management-system-siem-for-threat-analysis-and-detection["向 SIEM 發送警報"]
+* link:p-use-reports.html["下載警報、保護、準備演習、恢復或摘要報告"]
 
