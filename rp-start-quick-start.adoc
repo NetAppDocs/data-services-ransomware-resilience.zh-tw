@@ -27,7 +27,7 @@ summary: 只需幾個步驟即可開始使用NetApp Ransomware Resilience。
 * link:rp-start-licenses.html["設定許可"]
 
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"]設定勒索軟體抵禦能力
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"]開始使用勒索軟體防禦
 [role="quick-margin-para"]
 這些任務需要「勒索軟體復原管理員」角色。
 

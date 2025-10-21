@@ -473,24 +473,13 @@
   <block id="1f25ef09ab6fce0b56c79cd4246453be" category="paragraph">*您可以停用策略嗎？ *</block>
   <block id="c90f429b2fc82db14813e44ccf0893a7" category="paragraph">您可以使用系統管理員 UI、API 或 CLI 在偵測策略中停用 ARP。</block>
   <block id="389b413db649d1d5d2854fd3e4faf2e6" category="paragraph">您可以透過套用不包含 FPolicy 和備份策略的其他策略來停用它們。</block>
-  <block id="0a0e0e0ad04e5c7e8ed3c1b30cb4d073" category="summary">透過設定許可開始使用 NeApp Ransomware Resilience。</block>
   <block id="8c4e51cf0af97fc084c32c7697ac400c" category="doc">設定NetApp Ransomware Resilience的許可</block>
   <block id="9472cf1130b90417862c1aa4710f22a7" category="paragraph">透過NetApp Ransomware Resilience，您可以使用不同的授權方案。</block>
   <block id="bf82f97d170b8b28711b0f6354af9b31" category="inline-link">了解控制台存取角色</block>
   <block id="28cfeb7fff7b4f9ab9bf205d7135f788" category="paragraph">要執行此任務，您需要組織管理員、資料夾或專案管理員角色。<block ref="43e60870b1a681df3de2812caf2de958" category="inline-link-rx"></block> 。</block>
-  <block id="f53f2f881ada2816fc6ddea06cdcfc60" category="paragraph">*許可證類型* 您可以使用下列許可證類型：</block>
-  <block id="b5bf014c6bc530be1a7b68b5bcfb8ce0" category="list-text">透過 Amazon Web Services (AWS) Marketplace、Google Cloud Marketplace 或 Azure Marketplace 購買即用即付 (PAYGO) 訂閱。</block>
   <block id="bcc2135df9c790b26ee1baa911a601ef" category="paragraph">設定 BYOL 或購買 PAYGO 訂閱後，您可以在控制台的Licenses and subscriptions部分看到授權。</block>
-  <block id="aa4412f38985c565aeb98dc6634f3029" category="paragraph">免費試用期結束或授權或訂閱到期後，您仍然可以在 Ransomware Resilience 中執行以下操作：</block>
-  <block id="9f5e79cce3ac3e1b3962cddaef91e4e0" category="list-text">查看工作負載和工作負載健康狀況。</block>
-  <block id="ed2dd81f2c51f4d72049803cf5ce6211" category="list-text">刪除任何資源，例如策略。</block>
-  <block id="1594f78ebbb281f7b5359eb6d2b89912" category="list-text">執行在試用期間或許可證下建立的所有計劃操作。</block>
   <block id="231fd9de718f42c1c9e89368821092dd" category="section-title">其他許可證</block>
   <block id="1f39796076513bca42919b255963cd5a" category="admonition">如果您同時擁有備份和復原以及勒索軟體復原功能，則受這兩種產品保護的任何公開資料將僅由勒索軟體復原功能計費。</block>
-  <block id="b22e0a0c145eff4bd34bc6c46894b2a1" category="section-title">使用 30 天免費試用版嘗試</block>
-  <block id="50de852d5302d938fcee7f3cfc39b286" category="paragraph">您可以透過 30 天免費試用來嘗試 Ransomware Resilience。您必須是控制台組織管理員才能開始免費試用。</block>
-  <block id="6d82276368a10a436380f0cd7fa6094d" category="admonition">隨著 2024 年 10 月的發布，Ransomware Resilience 的新部署現在有 30 天的免費試用期。在此之前，Ransomware Resilience 提供 90 天的免費試用。如果您已享有 90 天免費試用，則該優惠將持續 90 天。</block>
-  <block id="88c474e49a0cbbc7ef17d052040cd008" category="paragraph">試用期間不實施任何容量限制。</block>
   <block id="3ad87b9da828fc1c8e612ab5674dbabe" category="paragraph">您可以隨時獲得許可證或訂閱，並且在 30 天試用期結束之前不會向您收費。要在 30 天試用期後繼續使用，您需要購買 BYOL 授權或 PAYGO 訂閱。</block>
   <block id="f37d436fdc8600ce24709a8f4435ec79" category="paragraph">在試用期間，您可以使用全部功能。</block>
   <block id="bccaa4aa80831b76c11240a16447975f" category="inline-link">安慰</block>
@@ -498,10 +487,6 @@
   <block id="4a43cddfeeabba4570c14c252dec0bd1" category="list-text">登入控制台。</block>
   <block id="16bcca2caaffd4aceb0b9f940711e44a" category="list-text">從NetApp Console中，選擇「保護」&gt;「勒索軟體復原能力」。</block>
   <block id="04f45bf7defd11ead0b4c56cf8c3f371" category="paragraph">如果這是您第一次登入此服務，則會出現登入頁面。</block>
-  <block id="771e1ea643a8723d0d0dfad6c2b70ace" category="list-text">如果您尚未新增其他服務的連接器，請新增一個。</block>
-  <block id="91e534d044a3d9c6a1c8575f89e73c9b" category="inline-link">了解控制台代理</block>
-  <block id="395a0c83d18cd49c5468e19cda311fa7" category="paragraph">若要新增控制台代理，請參閱<block ref="552a7d66ccd9c93a9dbc55fd8ef74d52" category="inline-link-rx"></block>。</block>
-  <block id="ce56f7856e3d6cb0eb9ff3ddabe5ec4e" category="list-text">設定控制台代理程式後，在勒索軟體復原登入頁面中，新增控制台代理程式的按鈕將變更為發現工作負載的按鈕。選擇*透過發現工作負載開始*。</block>
   <block id="7fd2f910bce182f3bed45cb0ffe3f2b7" category="list-text">要查看免費試用信息，請選擇右上角的下拉選項。</block>
   <block id="07b00cce8ecdc9955eb27940a652e625" category="paragraph">*試用結束後，取得訂閱或授權*</block>
   <block id="a668e7961280a1c2dd9b2e1867761d44" category="paragraph">免費試用結束後，您可以透過其中一個市場進行訂閱，也可以從NetApp購買授權。</block>
@@ -523,7 +508,6 @@
   <block id="adee13c3532773f19ac1ed1cd57fb86d" category="list-text">透過選擇「新增許可證」將許可證新增至控制台。</block>
   <block id="2e8bc7beff420b094bb88e9d8c7ae468" category="inline-image-macro">新增許可證頁面的螢幕截圖。</block>
   <block id="91aa021bc5ef766666131294c51b12a9" category="paragraph"><block ref="91aa021bc5ef766666131294c51b12a9" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="dda85ea2192849a87663a1971ff2c144" category="list-text">在新增許可證頁面中，選擇*輸入序號*，輸入發送給您的電子郵件中包含的序號，然後選擇*新增許可證*。</block>
   <block id="44c74befbf9a8104854254c21263bbd0" category="list-text">要查看許可證詳細信息，請從控制台左側導航中選擇“*管理*”&gt;“*Licenses and subscriptions*”。</block>
   <block id="6ba03f72ccb23acc2e71d13b30e6a6f3" category="list-text">若要查看訂閱訊息，請選擇*訂閱*。</block>
   <block id="3a868051eb374227c279870a3cc58719" category="list-text">若要查看 BYOL 許可證，請選擇「資料服務許可證」。</block>
@@ -574,7 +558,6 @@
   <block id="3973bc267f97fbc53e553dbba08e2ea9" category="admonition">此訊息也出現在Licenses and subscriptions以及<block ref="a12300a172aa5e6e63382bcb48a8348c" category="inline-link-rx"></block>。</block>
   <block id="bf817abc839636c237e9679a5b237f47" category="list-text">您可以發送電子郵件給支援人員以要求更新您的許可證。</block>
   <block id="153d23d2fc1cd1fafa2626b2ebad671d" category="paragraph">在您支付許可證費用並在NetApp支援網站註冊後，控制台會自動更新許可證。數據服務許可證頁面將在 5 到 10 分鐘內反映變更。</block>
-  <block id="6c1f5db8cc1f713f620fa21a318cf1bc" category="list-text">如果控制台無法自動更新許可證，則需要手動上傳許可證文件。</block>
   <block id="147b35ab5352426bba38d99d810db4ed" category="list-text">您可以從NetApp支援網站取得許可證文件。</block>
   <block id="f3538d2e62d8886ed134a8cd0baef1b1" category="list-text">在控制台中，選擇**管理** &gt; **Licenses and subscriptions**。</block>
   <block id="08fc265b64fb33dd4dd39826e253b59a" category="list-text">選擇“*資料服務許可證*”選項卡，選擇要更新的序號的“*操作...*”圖標，然後選擇“*更新許可證*”。</block>
@@ -646,7 +629,6 @@
   <block id="06c2cea18679d64399783748fa367bdd" category="inline-image-macro">一</block>
   <block id="a2d56436fc6737079209e6c74380c5fb" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block>審查先決條件</block>
   <block id="aada29daee1d64ed0fe907043855cb7e" category="inline-image-macro">二</block>
-  <block id="916d9ab8dea7ac43f2e082cba0d4f60d" category="list-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block>設定勒索軟體抵禦能力</block>
   <block id="0545ec91139cbe1d8ed0b333ebef939f" category="inline-link-macro">準備NetApp StorageGRID、Amazon Web Services、Google Cloud Platform 或 Microsoft Azure 作為備份目標</block>
   <block id="72f842d16f2016131d4e9d7e14038e88" category="list-text"><block ref="9e4e7ea8cc8b7b041d3f5d7300c15c3a" category="inline-link-macro-rx"></block> 。</block>
   <block id="fc52e84f4845e2ef8156001fa74f3954" category="inline-link-macro">在控制台中發現工作負載</block>
@@ -841,8 +823,6 @@
   <block id="be962bd392a7a1672125ea27465c8bd8" category="section-title">偵測惡意活動和異常使用者行為</block>
   <block id="9d06719f2534c2ebd6c7bed1fd263123" category="paragraph">查看「警報」標籤，您可以識別是否有惡意活動或異常使用者行為。</block>
   <block id="30cd6d23e33e657384daad5db666d56c" category="inline-link-macro">可疑的用戶活動</block>
-  <block id="92733af7522951b34c707ece97b76dbb" category="paragraph">您必須設定使用者活動代理並啟用具有使用者行為偵測的保護策略才能查看使用者等級偵測。啟用使用者行為偵測後，*可疑使用者*欄位會出現在警報儀表板中；未啟用使用者行為偵測時則不會顯示。若要啟用可疑使用者偵測，請參閱<block ref="da26800578b610b8b3390e49bb643377" category="inline-link-macro-rx"></block>。</block>
-  <block id="df6951a826abfdd03d428573cabc8a91" category="admonition">如果您正在使用NetAppData Infrastructure Insights(DII) 工作負載安全，建議您使用相同的工作負載安全代理程式來實現勒索軟體復原。您不需要為勒索軟體復原能力部署單獨的工作負載安全代理，但是，使用相同的工作負載安全代理需要勒索軟體復原能力控制台組織和 DII 儲存工作負載安全租用戶之間建立配對關係。請聯絡您的客戶代表以啟用此配對。</block>
   <block id="2654c9fc1ffd83d2d016920464872d91" category="section-title">查看惡意活動</block>
   <block id="c0339a08bfb0fb26aa3ecea9980349b3" category="paragraph">當自主勒索軟體防護在勒索軟體復原中觸發警報時，您可以查看以下詳細資訊：</block>
   <block id="da00dfcf2d3126754537ccdf32df23fa" category="list-text">輸入資料的熵</block>
@@ -859,7 +839,6 @@
   <block id="24d8050f046c3ac972fd95f26e1a8670" category="list-text">選擇一個事件來查看該事件的詳細資訊。</block>
   <block id="ff74e9f48366f1b4465d1920693ddea8" category="inline-link-macro">配置勒索軟體抵禦能力設置</block>
   <block id="f784461c39e5b287f6733d0ee28efad4" category="paragraph">如果您已配置可疑使用者偵測來查看異常使用者行為，則可以查看使用者級資料並封鎖特定使用者。若要啟用可疑用戶設置，請參閱<block ref="788275b5d10fa192a2bbf25cebb6c38f" category="inline-link-macro-rx"></block>。</block>
-  <block id="ec2349017ee84d143f6965ba0b643c86" category="list-text">若要阻止可疑使用者進一步存取控制台監控的環境，請選擇該使用者名稱下的「*封鎖*」。</block>
   <block id="705db8b34cf00efb73abf6403278e299" category="section-title">將勒索軟體事件標記為可恢復（事件被消除後）</block>
   <block id="3950c317c3c61c1f422abb2e301a90ca" category="paragraph">阻止攻擊後，通知儲存管理員資料已準備就緒，以便他們可以開始恢復。</block>
   <block id="a31e44b45b823ec61483db05b99be2cb" category="paragraph"><block ref="a31e44b45b823ec61483db05b99be2cb" category="inline-image-macro-rx" type="image"></block></block>
@@ -873,7 +852,6 @@
   <block id="b0b578b8be1448972010b482195bbda8" category="paragraph">審查事件後，您需要確定該事件是否為潛在的攻擊。如果它們不是真正的威脅，則可以將其駁回。</block>
   <block id="74583f536ee54b8803ab561a596f2bb9" category="paragraph">您可以忽略誤報或決定立即恢復資料。如果您忽略警報，勒索軟體復原功能會了解此行為，將其與正常操作關聯，並且不會再次針對此類行為發出警報。</block>
   <block id="5a5533258cfacee641d19f7f201b727f" category="paragraph">如果您解除工作負載，則為應對潛在勒索軟體攻擊而自動取得的所有快照副本都將永久刪除。</block>
-  <block id="e092b1515493abdb05e77ec47a53f36f" category="admonition">如果您關閉警報，則無法將該狀態改回任何其他狀態，也無法撤銷此變更。</block>
   <block id="46b4f01c45e92cd2d2fe7d4406168b5d" category="list-text">選擇一個或多個事件。或者，透過選擇表格左上角的事件 ID 方塊來選擇所有事件。</block>
   <block id="c4229f2836db3c8f0198619d853bad27" category="list-text">如果您確定該事件不構成威脅，請將其視為誤報：</block>
   <block id="a20ff2150b7b9f34f30c94111d0f2672" category="list-text">選擇事件。</block>
@@ -1785,17 +1763,13 @@
   <block id="2a4edc5ec6e55f07dba0609dc2cd6d87" category="summary">勒索軟體復原中的可疑使用者活動偵測可讓您偵測可能構成潛在威脅的使用者活動。</block>
   <block id="906ec8bab01967c36f2f073eff9f54df" category="doc">在NetApp Ransomware Resilience中配置可疑使用者活動偵測</block>
   <block id="9ba1db4a2c84400f14de2d58496b9f52" category="paragraph">勒索軟體抵禦能力支援在偵測策略中偵測可疑使用者行為，使您能夠在使用者層級解決勒索軟體事件。</block>
-  <block id="97f8807a01c3206f369065a241cf5ac7" category="paragraph">勒索軟體彈性透過分析ONTAP中 FPolicy 產生的使用者活動事件來偵測可疑的使用者活動。若要收集使用者活動日期，您需要部署一個或多個使用者活動代理程式。該代理程式是可連接到租用戶上的裝置的 Linux 伺服器或 VM。</block>
   <block id="90c4c763135bd7a7443ed22e4149185b" category="section-title">代理商和收藏家</block>
   <block id="03f21183a058745685d1d78fcc7eab3a" category="paragraph">必須安裝至少一個使用者活動代理程式才能啟動 Ransomware Resilience 中的可疑使用者活動偵測。當您從勒索軟體復原儀表板啟動可疑使用者活動功能時，您需要提供代理主機資訊來啟動該功能。</block>
   <block id="2b294b61543173e7462d37def0724cef" category="paragraph">一個代理可以託管多個資料收集器。資料收集器將資料傳送到 SaaS 位置進行分析。有兩種類型的收集器：</block>
-  <block id="4fb02306f3b85b6cfd31c67b79007829" category="list-text">**資料收集器**從ONTAP收集使用者活動資料。</block>
-  <block id="4449b11da47ae4743bfe16fdd7a33631" category="list-text">**使用者目錄連接器**連接到您的目錄以將使用者 ID 對應到使用者名稱。</block>
   <block id="fa83d0f077ae64e1df0b8a9ed9982815" category="paragraph">收集器在勒索軟體恢復設定中配置。</block>
   <block id="4f047e83e52e21d5382adc1b5dbf3119" category="section-title">新增用戶活動代理</block>
   <block id="4d4379036f7207029fbe126649ccc0a6" category="paragraph">使用者活動代理程式是資料收集器的可執行環境；資料收集器與勒索軟體復原共享使用者活動事件。您必須建立至少一個使用者活動代理程式才能啟用可疑使用者活動偵測。</block>
   <block id="5a2ebfb8baa378cfcfcba58bbb1380c2" category="section-title">要求</block>
-  <block id="69cba9646d8849744460eb9ba06c7bd6" category="paragraph">若要安裝使用者活動代理，您需要一個符合下列任一支援的作業系統和伺服器要求的主機或虛擬機器。</block>
   <block id="176c18a49aa227401be466a34a903666" category="paragraph">**作業系統需求**</block>
   <block id="696c660ff8d9323e55146a6dbd4e4088" category="cell">作業系統</block>
   <block id="2e5d14f7919ff3c6138e7845aec4f915" category="cell">支援的版本</block>
@@ -1821,7 +1795,6 @@
   <block id="fd9b966c1c6f66e7c4f38e133767c880" category="paragraph">伺服器必須滿足以下最低要求：</block>
   <block id="f0499c7832db4d35decdf83de714841c" category="list-text">**CPU**：4 核</block>
   <block id="4a8a49e18f8860c4232837503bcc2edd" category="list-text">**內存**：16GB 內存</block>
-  <block id="465860b9bc6b405baa8ced9914b08ab3" category="list-text">**磁碟空間**：35GB 可用磁碟空間</block>
   <block id="a2ad8789f963859e0c26a6daaec4a76b" category="list-text">如果這是您第一次建立使用者活動代理，請前往**儀表板**。在**使用者活動**圖塊中，選擇**啟動**。</block>
   <block id="44e08a5b01e752ac11f59bba4e07dea7" category="paragraph">如果您要新增其他使用者活動代理，請前往*設定*，找到**使用者活動**圖塊，然後選擇**管理**。在使用者活動畫面上，選擇**使用者活動代理**選項卡，然後選擇**新增**。</block>
   <block id="75d41b8fe2ef8de56d2fd2046bb0dad3" category="list-text">選擇**雲端提供者**，然後選擇**區域**。選擇**下一步**。</block>
@@ -1834,7 +1807,6 @@
   <block id="7298950e09abf5a29938d42a442acced" category="paragraph"><block ref="7298950e09abf5a29938d42a442acced" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f2d7e7792f60fc56fc833ac06d43ff03" category="list-text">檢查您的設定。選擇*啟動*以完成新增使用者活動代理程式。</block>
   <block id="a5990ac92f36dcb99f016321efbfa2cd" category="list-text">確認用戶活動代理程式已成功建立。在使用者活動圖塊中，成功部署顯示為「正在執行」。</block>
-  <block id="58dc71d80ac36fa12a160eef553b4dac" category="paragraph">成功建立使用者活動代理程式後，返回**設定**選單，然後在使用者活動圖塊中選擇**管理**。選擇**用戶活動代理**選項卡，然後選擇用戶活動代理以查看有關它的詳細信息，包括數據收集器和用戶目錄連接器。</block>
   <block id="87890c9758b28588c6845cfcf6d19b17" category="section-title">新增資料收集器</block>
   <block id="cebc35dcf9d04a393d86d35a4e3cf6be" category="inline-xref-macro">新增檢測策略</block>
   <block id="24590b7519b5649099545f7ef699e504" category="paragraph">當您啟用具有可疑使用者活動偵測功能的勒索軟體保護策略時，資料收集器會自動建立。有關更多信息，請參閱<block ref="c43e895be468efa96867f0ef21f97de4" category="inline-xref-macro-rx"></block> 。</block>
@@ -1842,7 +1814,6 @@
   <block id="79994c0d6b62d6854ba2d69416af2030" category="inline-image-macro">使用者活動設定的螢幕截圖</block>
   <block id="eb9abd0b9e77424befbbd0596585482d" category="paragraph"><block ref="eb9abd0b9e77424befbbd0596585482d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ae5063128f989ec31ec308b7dd0cb2ed" category="section-title">新增使用者目錄連接器</block>
-  <block id="0e27165c28d4f54b78e7e5ec47c83fc4" category="paragraph">若要將使用者 ID 對應到使用者名，您必須建立使用者目錄連接器。</block>
   <block id="8348d8dcee9ea32e049e21c42a431b91" category="list-text">在勒索軟體復原中，前往*設定*。</block>
   <block id="9fcb0a7634f29d96ae98e37bbc76e1cd" category="list-text">在使用者活動圖塊中，選擇**管理**。</block>
   <block id="e70202c14c96f451fdcf2617844ea351" category="list-text">選擇**使用者目錄連接器**選項卡，然後選擇**新增**。</block>
@@ -2018,8 +1989,6 @@
   <block id="34691f87b892c333fe1b7a23452dcda6" category="paragraph">為了使勒索軟體復原能力提供有關可疑使用者行為的警報，您必須設定使用者活動代理程式。有關詳細信息，請參閱 <block ref="f3d3e5726f7feb4b59ca728c906df758" category="inline-link-macro-rx"></block>。</block>
   <block id="793485138a653779a0c8cb91bf9fc979" category="list-text">選擇準備演習類型。若要從加密資料外洩手動恢復，請選擇**自訂恢復**。若要從可疑用戶活動中恢復，請選擇**資料外洩**。</block>
   <block id="8e0b9d66ccd774ed98d0b31d0e6ed305" category="admonition">演練運行時，您無法編輯準備演練配置。您可以重置鑽孔機以停止它並修改配置。</block>
-  <block id="4226ab30b4df5e39149316f15c13d274" category="list-text">自帶授權 (BYOL)，即您從NetApp銷售代表取得的NetApp授權文件 (NLF)。您可以使用許可證序號在控制台中啟動 BYOL。</block>
-  <block id="18105991dc2815c0ab610717f615d548" category="admonition">如果您參加六個月的試用，您應該擁有 NLF 許可證。</block>
   <block id="4fa0264ac4080dbcb96449b3dd2eff57" category="paragraph">勒索軟體恢復許可證不包括其他NetApp產品。但是，即使您沒有單獨的備份和復原許可證，勒索軟體復原能力也可以與NetApp Backup and Recovery整合。</block>
   <block id="c785cc029c5e88f7796b29b4ff0e99e1" category="paragraph">了解設定勒索軟體保護功能和保護工作負載所需遵循的進階步驟。</block>
   <block id="6ff0e20f052119502398978ae7712412" category="paragraph">請按照每個步驟中的連結獲取詳細資訊。</block>
@@ -2055,4 +2024,37 @@
   <block id="b5884d5e59b952624998be52e7a9fe97" category="list-text"><block ref="b5884d5e59b952624998be52e7a9fe97" category="inline-link-macro-rx"></block></block>
   <block id="52210acbff73a572a2ca89fb77371615" category="paragraph">在NetApp Ransomware Resilience中，您可以使用NetApp Data Classification來掃描和分類檔案共用工作負載中的資料。對資料進行分類可以幫助您確定資料集是否包含個人識別資訊 (PII)，這可能會增加安全風險。資料分類是NetApp Console的核心元件，無需額外付費即可使用。</block>
   <block id="4342c3c480135ea7c9398a3ba08357ec" category="sidebar">NetApp Ransomware Resilience可保護、偵測並支援從本機和雲端儲存的勒索軟體威脅中復原應用程式工作負載和檔案共用。勒索軟體復原能力可實現安全備份和復原，協助組織保護關鍵資料並維護 Oracle、MySQL、VM 資料儲存、NAS 儲存等的業務連續性。</block>
+  <block id="7b36da612c0e3a400f4daecc8016f21e" category="summary">確保您滿足勒索軟體復原的許可要求，以保護您的系統和工作負載。</block>
+  <block id="785a67fbf7c46bd5774af376154df40a" category="paragraph">*許可證類型* 勒索軟體復原能力適用於下列許可證類型：</block>
+  <block id="5ef05167488611c5bd4ff0f410595ce4" category="list-text">30天免費試用</block>
+  <block id="e71ba6c3178fa6f6844891e615ad0570" category="list-text">透過 Amazon Web Services (AWS) Marketplace、Google Cloud Marketplace 或 Azure Marketplace 購買即用即付 (PAYGO) 訂閱</block>
+  <block id="2f0583f3da64d216aa72116dc3460499" category="list-text">自帶授權 (BYOL)：您從NetApp銷售代表取得的NetApp授權文件 (NLF)。您可以使用許可證序號在控制台中啟動 BYOL。</block>
+  <block id="16c0368d04c8f5c865d6c2e90734f733" category="paragraph">免費試用期結束或許可證或訂閱到期後，您仍然可以：</block>
+  <block id="99c8f1488beda59e11f21ed9f557f56e" category="list-text">查看工作負載和工作負載健康狀況</block>
+  <block id="1975faa7cb5e0e460ae859ca96dbfd00" category="list-text">刪除策略等資源</block>
+  <block id="f51b0d61321d5c9f169d1ee6403840fa" category="list-text">運行在試用期間或許可證下建立的所有計劃操作</block>
+  <block id="3819161dec7fd89239516062a4cc56a3" category="section-title">試試 Ransomware Resilience 30 天免費試用版</block>
+  <block id="e20a7cd21fba7d540ffd7589c1c59928" category="paragraph">您可以免費試用 Ransomware Resilience 30 天。您必須是控制台組織管理員才能開始免費試用。</block>
+  <block id="85a5bc1275ab09d60eed9f7c3b4d429b" category="paragraph">試用期間不強制執行儲存容量限制。</block>
+  <block id="ca78bf5eeed0245ff3d76d132c93b609" category="inline-link-macro">添加一個</block>
+  <block id="94c135a38d325e223714d1f313c8efec" category="list-text">如果您尚未為其他服務新增控制台代理，<block ref="f7f69135987ef22de86b03a4f14a7bc8" category="inline-link-macro-rx"></block> 。</block>
+  <block id="edbdd3e3e169cd712816f78b82e91c2e" category="list-text">在勒索軟體復原登陸頁面中，選擇*從發現工作負載開始*來發現您的工作負載。</block>
+  <block id="2866dfee0ffdf3a11a8323f6d53635f4" category="admonition">僅當您成功安裝了控制台代理後，此選項才可用。</block>
+  <block id="933f33d572b754e91a336439049ae279" category="list-text">在新增許可證頁面中，選擇*輸入序號*，輸入發送給您的電子郵件中包含的序號，然後選擇*新增許可證*。</block>
+  <block id="2515e2bcc68e80666fa8c369e88f71e5" category="paragraph">一則訊息確認許可證已新增。</block>
+  <block id="fca5751a0529f9987d0699648a97be3a" category="list-text">如果控制台無法自動更新許可證，則需要手動上傳許可證文件。</block>
+  <block id="f8541056d6bacae1a78fb5d2b68c67a8" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block>開始使用勒索軟體防禦</block>
+  <block id="43eec2eb3dba42398d66e0c2aa294ea2" category="paragraph">您必須設定使用者活動代理並啟用具有使用者行為偵測的保護策略才能查看使用者級警報。啟用使用者行為偵測後，*可疑使用者*欄位會出現在警報儀表板中；未啟用使用者行為偵測時則不會顯示。若要啟用可疑使用者偵測，請參閱<block ref="da26800578b610b8b3390e49bb643377" category="inline-link-macro-rx"></block>。</block>
+  <block id="3c6a637355e70f686e34e6e7c966c200" category="admonition">如果您正在使用NetAppData Infrastructure Insights(DII) 工作負載安全，建議您使用相同的工作負載安全代理程式來實現勒索軟體復原。您不需要為勒索軟體復原能力部署單獨的工作負載安全代理，但是，使用相同的工作負載安全代理需要勒索軟體復原能力控制台組織和 DII 儲存工作負載安全租戶之間建立配對關係。請聯絡您的客戶代表以啟用此配對。</block>
+  <block id="7a7f05bb105ddcf9c0d221e37f8a923c" category="list-text">若要封鎖您環境中的可疑用戶，請選擇該用戶名下的「封鎖」。</block>
+  <block id="bc8ffb69fb560086f529e0097158caad" category="admonition">如果您關閉警報，則無法變更其狀態或撤銷此變更。</block>
+  <block id="7149ff1e14f0a158752906babaa08dc3" category="list-text">對於該事件，選擇下載圖示以 CSV 格式下載受影響文件的清單。</block>
+  <block id="8c7f95ceb912c8aea11de028710caf47" category="paragraph">勒索軟體彈性透過分析ONTAP中 FPolicy 產生的使用者活動事件來偵測可疑的使用者活動。要收集用戶活動數據，您需要部署一個或多個用戶活動代理程式。該代理程式是可連接到租用戶上的裝置的 Linux 伺服器或 VM。</block>
+  <block id="fe1bb8cb54f03cf7a69c3e9568118b30" category="list-text">**資料收集器**從ONTAP收集使用者活動資料。</block>
+  <block id="b6173a051353d59a4ee775fcef288441" category="list-text">**使用者目錄連接器**連接到您的目錄以將使用者 ID 對應到使用者名稱。</block>
+  <block id="508899c1c018f291af4cb6a0423c426c" category="paragraph">*所需的控制台角色* 若要啟動可疑使用者活動偵測，您需要組織管理員角色。對於可疑使用者活動的後續配置，您需要 Ransomware Resilience 使用者行為管理員角色。<block ref="d9cbbacd5ef5cff6a1660fdb9d259f2f" category="inline-link-macro-rx"></block>。</block>
+  <block id="53b036bcd07f4ebcfe2ec32a98556822" category="paragraph">要安裝用戶活動代理，您需要一個符合以下支援的作業系統和伺服器要求的主機或虛擬機器。</block>
+  <block id="d4a6e9b0b745b83f49163b25271ce445" category="list-text">**磁碟空間**：35GB 可用磁碟空間</block>
+  <block id="398de83ff8f318218f9eaedb05929ef0" category="paragraph">成功建立使用者活動代理程式後，返回**設定**選單，然後在使用者活動圖塊中選擇**管理**。選擇**用戶活動代理**選項卡，然後選擇用戶活動代理以查看有關它的詳細信息，包括數據收集器和用戶目錄連接器。</block>
+  <block id="a83ea9a287c9fdd0689933a464055150" category="paragraph">若要將使用者 ID 對應到使用者名，您必須建立使用者目錄連接器。</block>
 </blocks>

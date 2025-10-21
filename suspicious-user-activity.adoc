@@ -14,7 +14,7 @@ summary: 勒索軟體復原中的可疑使用者活動偵測可讓您偵測可�
 [role="lead"]
 勒索軟體抵禦能力支援在偵測策略中偵測可疑使用者行為，使您能夠在使用者層級解決勒索軟體事件。
 
-勒索軟體彈性透過分析ONTAP中 FPolicy 產生的使用者活動事件來偵測可疑的使用者活動。若要收集使用者活動日期，您需要部署一個或多個使用者活動代理程式。該代理程式是可連接到租用戶上的裝置的 Linux 伺服器或 VM。
+勒索軟體彈性透過分析ONTAP中 FPolicy 產生的使用者活動事件來偵測可疑的使用者活動。要收集用戶活動數據，您需要部署一個或多個用戶活動代理程式。該代理程式是可連接到租用戶上的裝置的 Linux 伺服器或 VM。
 
 
 
@@ -34,7 +34,7 @@ summary: 勒索軟體復原中的可疑使用者活動偵測可讓您偵測可�
 
 == 啟用可疑用戶活動偵測
 
-*所需的控制台角色* 要執行此任務，您需要勒索軟體復原使用者行為管理員角色。您無法使用 Ransomware Resilience 管理員角色執行此任務。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["了解NetApp Console的勒索軟體復原角色"^] 。
+*所需的控制台角色* 若要啟動可疑使用者活動偵測，您需要組織管理員角色。對於可疑使用者活動的後續配置，您需要 Ransomware Resilience 使用者行為管理員角色。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["了解NetApp Console的勒索軟體復原角色"^]。
 
 
 
@@ -46,7 +46,7 @@ summary: 勒索軟體復原中的可疑使用者活動偵測可讓您偵測可�
 
 ==== 要求
 
-若要安裝使用者活動代理，您需要一個符合下列任一支援的作業系統和伺服器要求的主機或虛擬機器。
+要安裝用戶活動代理，您需要一個符合以下支援的作業系統和伺服器要求的主機或虛擬機器。
 
 **作業系統需求**
 

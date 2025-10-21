@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: rp-start-licenses.html 
 keywords: bluexp license, ransomware protection license, netapp console 
-summary: 透過設定許可開始使用 NeApp Ransomware Resilience。 
+summary: 確保您滿足勒索軟體復原的許可要求，以保護您的系統和工作負載。 
 ---
 = 設定NetApp Ransomware Resilience的許可
 :hardbreaks:
@@ -16,23 +16,20 @@ summary: 透過設定許可開始使用 NeApp Ransomware Resilience。
 
 要執行此任務，您需要組織管理員、資料夾或專案管理員角色。 https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["了解控制台存取角色"^] 。
 
-*許可證類型* 您可以使用下列許可證類型：
+*許可證類型* 勒索軟體復原能力適用於下列許可證類型：
 
-* 註冊 30 天免費試用。
-* 透過 Amazon Web Services (AWS) Marketplace、Google Cloud Marketplace 或 Azure Marketplace 購買即用即付 (PAYGO) 訂閱。
-* 自帶授權 (BYOL)，即您從NetApp銷售代表取得的NetApp授權文件 (NLF)。您可以使用許可證序號在控制台中啟動 BYOL。
+* 30天免費試用
+* 透過 Amazon Web Services (AWS) Marketplace、Google Cloud Marketplace 或 Azure Marketplace 購買即用即付 (PAYGO) 訂閱
+* 自帶授權 (BYOL)：您從NetApp銷售代表取得的NetApp授權文件 (NLF)。您可以使用許可證序號在控制台中啟動 BYOL。
 
-
-
-NOTE: 如果您參加六個月的試用，您應該擁有 NLF 許可證。
 
 設定 BYOL 或購買 PAYGO 訂閱後，您可以在控制台的Licenses and subscriptions部分看到授權。
 
-免費試用期結束或授權或訂閱到期後，您仍然可以在 Ransomware Resilience 中執行以下操作：
+免費試用期結束或許可證或訂閱到期後，您仍然可以：
 
-* 查看工作負載和工作負載健康狀況。
-* 刪除任何資源，例如策略。
-* 執行在試用期間或許可證下建立的所有計劃操作。
+* 查看工作負載和工作負載健康狀況
+* 刪除策略等資源
+* 運行在試用期間或許可證下建立的所有計劃操作
 
 
 
@@ -46,14 +43,11 @@ NOTE: 如果您同時擁有備份和復原以及勒索軟體復原功能，則�
 
 
 
-== 使用 30 天免費試用版嘗試
+== 試試 Ransomware Resilience 30 天免費試用版
 
-您可以透過 30 天免費試用來嘗試 Ransomware Resilience。您必須是控制台組織管理員才能開始免費試用。
+您可以免費試用 Ransomware Resilience 30 天。您必須是控制台組織管理員才能開始免費試用。
 
-
-NOTE: 隨著 2024 年 10 月的發布，Ransomware Resilience 的新部署現在有 30 天的免費試用期。在此之前，Ransomware Resilience 提供 90 天的免費試用。如果您已享有 90 天免費試用，則該優惠將持續 90 天。
-
-試用期間不實施任何容量限制。
+試用期間不強制執行儲存容量限制。
 
 您可以隨時獲得許可證或訂閱，並且在 30 天試用期結束之前不會向您收費。要在 30 天試用期後繼續使用，您需要購買 BYOL 授權或 PAYGO 訂閱。
 
@@ -69,11 +63,12 @@ NOTE: 隨著 2024 年 10 月的發布，Ransomware Resilience 的新部署現在
 +
 image:screen-landing.png["勒索軟體復原能力的登陸頁面截圖"]
 
-. 如果您尚未新增其他服務的連接器，請新增一個。
+. 如果您尚未為其他服務新增控制台代理，link:ps://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html["添加一個"^] 。
+. 在勒索軟體復原登陸頁面中，選擇*從發現工作負載開始*來發現您的工作負載。
 +
-若要新增控制台代理，請參閱 https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html["了解控制台代理"^]。
 
-. 設定控制台代理程式後，在勒索軟體復原登入頁面中，新增控制台代理程式的按鈕將變更為發現工作負載的按鈕。選擇*透過發現工作負載開始*。
+NOTE: 僅當您成功安裝了控制台代理後，此選項才可用。
+
 . 要查看免費試用信息，請選擇右上角的下拉選項。
 
 
@@ -123,7 +118,7 @@ image:screen-license-dw-add-license.png["新增許可證頁面的螢幕截圖。
 
 . 返回勒索軟體恢復能力。從控制台左側導覽中，選擇*保護*>*勒索軟體恢復*。
 +
-出現一則訊息，表示已新增許可證。
+一則訊息確認許可證已新增。
 
 
 
