@@ -64,5 +64,5 @@ summary: 只需幾個步驟即可開始使用NetApp Ransomware Resilience。
 [role="quick-margin-list"]
 * link:rp-use-protect-classify.html["啟用資料分類來識別治理和安全風險"]
 * link:rp-use-settings.html#connect-to-a-security-and-event-management-system-siem-for-threat-analysis-and-detection["向 SIEM 發送警報"]
-* link:p-use-reports.html["下載警報、保護、準備演習、恢復或摘要報告"]
+* link:rp-use-reports.html["下載警報、保護、準備演習、恢復或摘要報告"]
 
