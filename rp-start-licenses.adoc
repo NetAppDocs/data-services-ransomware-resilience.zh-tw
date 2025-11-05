@@ -16,7 +16,11 @@ summary: 確保您滿足勒索軟體復原的許可要求，以保護您的系�
 
 要執行此任務，您需要組織管理員、資料夾或專案管理員角色。 https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["了解控制台存取角色"^] 。
 
-*許可證類型* 勒索軟體復原能力適用於下列許可證類型：
+
+
+== 許可證類型
+
+勒索軟體防護功能提供以下幾種許可類型：
 
 * 30天免費試用
 * 透過 Amazon Web Services (AWS) Marketplace、Google Cloud Marketplace 或 Azure Marketplace 購買即用即付 (PAYGO) 訂閱

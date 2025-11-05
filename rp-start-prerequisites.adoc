@@ -12,58 +12,72 @@ summary: 透過驗證對您的環境、網路存取、登入和 Web 瀏覽器的
 
 
 [role="lead"]
-透過驗證您的操作環境、登入、網路存取和 Web 瀏覽器的準備情況，開始使用NetApp Ransomware Resilience。
+首先驗證您的操作環境、網路存取和 Web 瀏覽器是否已準備就緒，即可開始使用NetApp Ransomware Resilience。
 
-要使用勒索軟體復原能力，您需要滿足以下先決條件。
+若要使用勒索軟體復原功能，請確保滿足先決條件。
 
 
 
-== 在NetApp Console中
+== 支援的系統
+
+請確保您使用的是受支援的系統：
+
+* 本地ONTAP NAS（使用 NFS 和 CIFS 協定），採用ONTAP版本 9.11.1 及更高版本
+* 本地ONTAP SAN（使用 FC、iSCSI 和 NVMe 協定），採用ONTAP版本 9.17.1 及更高版本
+* 適用於 AWS 的Cloud Volumes ONTAP 9.11.1 或更高版本（使用 NFS 和 CIFS 協定）
+* 適用於 Google Cloud Platform 的Cloud Volumes ONTAP 9.11.1 或更高版本（使用 NFS 和 CIFS 協定）
+* 適用於 Microsoft Azure 的Cloud Volumes ONTAP 9.12.1 或更高版本（使用 NFS 和 CIFS 協定）
+* 適用於 AWS、Google Cloud Platform 和 Microsoft Azure 的Cloud Volumes ONTAP 9.17.1 或更高版本（使用 FC、iSCSI 和 NVMe 協定）
+* Amazon FSx for NetApp ONTAP，使用自主勒索軟體防護（ARP 而非 ARP/AI）
+
+
+
+NOTE: 在ONTAP中使用 ARP/AI 需要ONTAP 9.16 或更高版本。 + ONTAP不為FlexGroup磁碟區、掛載點磁碟區、掛載路徑磁碟區、離線磁碟區和資料保護 (DP) 磁碟區提供勒索軟體防護支援。請務必查看link:https://docs.netapp.com/us-en/ontap/anti-ransomware/use-cases-restrictions-concept.html["ONTAP中支援且不受支援的配置"^]。
+
+
+
+== NetApp Console需求
+
+您的NetApp Console配置需要：
 
 * 具有組織管理員權限的NetApp Console使用者帳戶，用於發現資源。
-* 一個控制台組織，其中至少有一個活動的控制台代理連接到本地ONTAP叢集或 AWS 或 Azure 中的Cloud Volumes ONTAP 。
-* 控制台代理必須具有 `cloudmanager-ransomware-protection`容器處於活動狀態。
-* 至少一個具有NetApp本地ONTAP叢集或 AWS 或 Azure 中的Cloud Volumes ONTAP 的控制台系統。勒索軟體復原支援 NAS（NFS 和 SMB）和 SAN（iSCSI、FC 和 NVMe）協定。
+* 一個控制台組織和系統，其中至少有一個活動的控制台代理連接到link:concept-ransomware-resilience.html#supported-backup-targets-systems-and-workload-data-sources["支援的系統"]。
 +
-** ONTAP或Cloud Volumes ONTAP叢集（ ONTAP版本 9.11.1 或更高版本）支援勒索軟體復原功能。
-+
-
-NOTE: 如果您打算在 SAN 工作負載上使用勒索軟體復原能力，則必須執行ONTAP 9.17.1 或更高版本。
-
-** 如果您的本機ONTAP叢集或 AWS 或 Azure 雲端中的Cloud Volumes ONTAP尚未在控制台中登錄，則需要控制台代理程式。
-+
-參考 https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html["了解如何配置控制台代理"]和 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-checklist-cm.html["標準控制台要求"^]。
-
+** 如果您的本機ONTAP叢集或 AWS 或 Azure 雲端中的Cloud Volumes ONTAP未在控制台中設置，請參閱link:https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html["了解如何配置控制台代理"^]和link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-checklist-cm.html["標準控制台要求"^]。
 +
 
 NOTE: 如果您在單一控制台組織中擁有多個控制台代理，則勒索軟體復原功能將掃描除控制台 UI 中目前選擇的代理之外的所有控制台代理中的ONTAP資源。
 
 
 
-
-
-
-
-== 在ONTAP 9.11.1 及更高版本中
-
-* 本機ONTAP實例上啟用了ONTAP One 授權。
-* NetApp Autonomous Ransomware Protection 授權（由 Ransomware Resilience 使用）在本機ONTAP實例上啟用，視您使用的ONTAP版本而定。參考 https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["自主勒索軟體防護概述"^]。
+* 控制台代理必須具有 `cloudmanager-ransomware-protection`容器處於活動狀態。
+* 至少一個具有NetApp本地ONTAP叢集或 AWS 或 Azure 中的Cloud Volumes ONTAP 的控制台系統。勒索軟體復原支援 NAS（NFS 和 SMB）和 SAN（iSCSI、FC 和 NVMe）協定。
++
+** ONTAP或Cloud Volumes ONTAP叢集（ ONTAP版本 9.11.1 或更高版本）支援勒索軟體復原功能。
 +
 
-NOTE: 與預覽版不同，Ransomware Resilience 的正式版包含NetApp Autonomous Ransomware Protection 技術的授權。參考 https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["自主勒索軟體防護概述"^]了解詳情。
+NOTE: 若要在 SAN 工作負載上使用勒索軟體復原功能，您必須執行ONTAP 9.17.1 或更高版本。
 
-+
-有關更多許可詳細信息，請參閱link:concept-ransomware-resilience.html["了解勒索軟體抵禦能力"]。
 
-* 若要套用保護配置（例如啟用自主勒索軟體保護等），勒索軟體復原能力需要ONTAP叢集上的管理員權限。  ONTAP叢集應該只使用ONTAP叢集管理員使用者憑證進行加入。
-* 如果已使用非管理員使用者憑證在控制台中登入ONTAP集群，則必須透過登入ONTAP集群來更新非管理員使用者權限，如本頁所述。
 
+
+
+
+
+== ONTAP 需求
+
+* 您必須執行ONTAP 9.11.1 或更高版本，並且在本機ONTAP實例上啟用ONTAP One 授權。有關ONTAP支援的更多信息，請參閱link:https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["自主勒索軟體防護概述"^]。
+* 若要套用保護配置（例如啟用自主勒索軟體保護），勒索軟體復原能力需要ONTAP叢集上的管理員權限。ONTAP叢集應該只使用ONTAP叢集管理員使用者憑證進行加入。
+
+
+
+NOTE: 如果您已使用非管理員憑證將ONTAP叢集連接到控制台，則[您必須更新ONTAP叢集中的憑證](#update-non-admin-user-permissions-in-an-ontap-system)。
 
 
 
 == 資料備份
 
-* NetApp StorageGRID、AWS S3、Azure Blob 或 Google Cloud Platform 中用於備份目標的帳戶以及設定的存取權。
+* 在NetApp StorageGRID、AWS S3、Azure Blob 或 Google Cloud Platform 中擁有一個帳戶，用於備份目標，並配置了適當的存取權。
 +
 請參閱 https://docs.netapp.com/us-en/console-setup-admin/reference-permissions.html["AWS、Azure 或 S3 權限列表"^]了解詳情。
 
@@ -88,7 +102,7 @@ NOTE: 與預覽版不同，Ransomware Resilience 的正式版包含NetApp Autono
 . 登入控制台並尋找需要更新其ONTAP使用者權限的系統。
 . 選擇系統以查看詳細資訊。
 . 選擇“查看其他資訊”以顯示使用者名稱。
-. 使用管理員使用者登入ONTAP集群 CLI。
+. 以管理員使用者身分登入ONTAP集群 CLI。
 . 顯示該使用者的現有角色。進入：
 +
 [listing]
@@ -101,5 +115,5 @@ security login show -user-or-group-name <username>
 ----
 security login modify -user-or-group-name <username> -application console|http|ontapi|ssh|telnet -authentication-method password -role admin
 ----
-. 返回勒索軟體恢復 UI 來使用它。
+. 返回NetApp Console以使用勒索軟體復原功能。
 
