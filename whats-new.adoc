@@ -18,6 +18,12 @@ summary: 了解NetApp Ransomware Resilience的新功能。
 
 
 
+== 2025年11月10日
+
+此版本包含一般增強與改進。
+
+
+
 == 2025年10月6日
 
 

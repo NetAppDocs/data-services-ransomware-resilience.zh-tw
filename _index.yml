@@ -24,8 +24,6 @@ indexpage:
       url: "/rp-start-simulate.html"
   - title: 使用勒索軟體彈性
     links:
-    - title: 使用勒索軟體恢復概述
-      url: "/rp-use-overview.html"
     - title: 發現工作負載
       url: "/rp-start-discover.html"
     - title: 使用儀表板查看工作負載健康狀況
