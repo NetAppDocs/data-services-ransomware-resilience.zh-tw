@@ -2059,4 +2059,12 @@
   <block id="14e79e90c6d487ebb867aa7b0f88bf25" category="list-text">返回NetApp Console以使用勒索軟體復原功能。</block>
   <block id="0d2fa76effcb3dce9fea42e1ccddfc30" category="paragraph">如果您正在使用SnapCenter或SnapCenter for VMware，則這些產品支援的所有工作負載也會在勒索軟體復原功能中被識別。勒索軟體復原能力可以以工作負載一致的方式保護和恢復這些內容。</block>
   <block id="77750efa6f5ff153acdc42067058017f" category="section-title">2025年11月10日</block>
+  <block id="8fe9bae39f62679bc4b589ccb17384a9" category="paragraph">雲端服務提供者支持</block>
+  <block id="4dbf3bdbb500347a8ca0ffe04b7e1f6c" category="paragraph">AWS 和 Azure 在以下區域提供可疑使用者活動偵測：</block>
+  <block id="e29d7c0b36af68edd13ebac84f15b44b" category="cell">雲端提供者</block>
+  <block id="f447ac856e7e72435904956e3b15f433" category="cell">地區</block>
+  <block id="4847e034bb0a55fcbc8a3380d6a3ab80" category="cell">AWS</block>
+  <block id="90f74c5c50c42b91275c19e2cccad976" category="cell">美國東部（us-east-1）</block>
+  <block id="3a580f142203677f1f0bc30898f63f53" category="cell">Azure</block>
+  <block id="3c110de67497eb3f8d4c100e43101c81" category="cell">美國東部</block>
 </blocks>
