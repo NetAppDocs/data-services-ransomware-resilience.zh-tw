@@ -2,14 +2,34 @@
 :allow-uri-read: 
 
 
-* 本地ONTAP NAS（使用 NFS 和 CIFS 協定），採用ONTAP版本 9.11.1 及更高版本
-* 本地ONTAP SAN（使用 FC、iSCSI 和 NVMe 協定），採用ONTAP版本 9.17.1 及更高版本
-* 適用於 AWS 的Cloud Volumes ONTAP 9.11.1 或更高版本（使用 NFS 和 CIFS 協定）
-* 適用於 Google Cloud Platform 的Cloud Volumes ONTAP 9.11.1 或更高版本（使用 NFS 和 CIFS 協定）
-* 適用於 Microsoft Azure 的Cloud Volumes ONTAP 9.12.1 或更高版本（使用 NFS 和 CIFS 協定）
-* 適用於 AWS、Google Cloud Platform 和 Microsoft Azure 的Cloud Volumes ONTAP 9.17.1 或更高版本（使用 FC、iSCSI 和 NVMe 協定）
-* Amazon FSx for NetApp ONTAP，使用自主勒索軟體防護（ARP 而非 ARP/AI）
+|===
+| 環境 | 協定 | 支援的版本 
 
 
+| Amazon FSx for NetApp ONTAP* | NFS、CIFS 和 SAN | 不適用 
 
-NOTE: 在ONTAP中使用 ARP/AI 需要ONTAP 9.16 或更高版本。 + ONTAP不為FlexGroup磁碟區、掛載點磁碟區、掛載路徑磁碟區、離線磁碟區和資料保護 (DP) 磁碟區提供勒索軟體防護支援。請務必查看link:https://docs.netapp.com/us-en/ontap/anti-ransomware/use-cases-restrictions-concept.html["ONTAP中支援且不受支援的配置"^]。
+
+.2+| 適用於 AWS 的Cloud Volumes ONTAP | CIFS 和 NFS | 9.11.1 及更高版本 
+
+
+| SAN（FC、iSCSI 和 NVMe） | 9.17.1 及更高版本 
+
+
+.2+| 適用於 Google Cloud Platform 的Cloud Volumes ONTAP | CIFS 和 NFS | 9.11.1 及更高版本 
+
+
+| SAN（FC、iSCSI 和 NVMe） | 9.17.1 及更高版本 
+
+
+.2+| 適用於 Microsoft Azure 的Cloud Volumes ONTAP | CIFS 和 NFS | 9.12.1 及更高版本 
+
+
+| SAN（FC、iSCSI 和 NVMe） | 9.17.1 及更高版本 
+
+
+.2+| ONTAP （本地部署） | CIFS 和 NFS | 9.11.1 及更高版本 
+
+
+| SAN（FC、iSCSI 和 NVMe） | 9.17.1 及更高版本 
+|===
+{asterisk} Amazon FSx for NetApp ONTAP使用自主勒索軟體保護 (ARP) 而非 ARP/AI。有關兩者區別的更多信息，請參閱link:https://docs.netapp.com/us-en/ontap/anti-ransomware/#arp-ai["ARP/AI"^]。

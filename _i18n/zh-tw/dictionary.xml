@@ -241,18 +241,10 @@
   <block id="5c9ef0d871938dccceb29ee63fad8ddb" category="list-text">谷歌雲端平台</block>
   <block id="6a51ed7bcacdfb13f78abc1e0f69c201" category="list-text">微軟 Azure Blob</block>
   <block id="55cf1a0f0fce69fd543500e5761dd26d" category="list-text">NetAppStorageGRID</block>
-  <block id="5f35d0b4a7930f14f1022ee1f942ee64" category="list-text">本地ONTAP NAS（使用 NFS 和 CIFS 協定），採用ONTAP版本 9.11.1 及更高版本</block>
-  <block id="36471da59b7d9b72aa431fd1f5059d05" category="list-text">本地ONTAP SAN（使用 FC、iSCSI 和 NVMe 協定），採用ONTAP版本 9.17.1 及更高版本</block>
-  <block id="0479370d1a7f4250832bb43f782a1456" category="list-text">適用於 AWS 的Cloud Volumes ONTAP 9.11.1 或更高版本（使用 NFS 和 CIFS 協定）</block>
-  <block id="692821f8e48f34e528c887a1bd9a5a50" category="list-text">適用於 Google Cloud Platform 的Cloud Volumes ONTAP 9.11.1 或更高版本（使用 NFS 和 CIFS 協定）</block>
-  <block id="4d32d1cc8c36c71c8d57d570d802694f" category="list-text">適用於 Microsoft Azure 的Cloud Volumes ONTAP 9.12.1 或更高版本（使用 NFS 和 CIFS 協定）</block>
-  <block id="35042137939d246a1fd01199cb942d15" category="list-text">適用於 AWS、Google Cloud Platform 和 Microsoft Azure 的Cloud Volumes ONTAP 9.17.1 或更高版本（使用 FC、iSCSI 和 NVMe 協定）</block>
-  <block id="54d1e9634870c74de38de33364a86d27" category="list-text">Amazon FSx for NetApp ONTAP，使用自主勒索軟體防護（ARP 而非 ARP/AI）</block>
   <block id="2fd51284279972a6a1390536b053f3c3" category="paragraph">勒索軟體復原能力可保護主資料磁碟區上的以下基於應用程式的工作負載：</block>
   <block id="ffc184891768c331383cd53bcd1bc968" category="list-text">NetApp檔案分享</block>
   <block id="4f0550f066ae72bb8c24fc3f59c323bf" category="list-text">區塊儲存</block>
   <block id="ed11408803c4c1aca5fbebbc43d88458" category="list-text">VMware 資料儲存區</block>
-  <block id="3560990ee46f2f17d59094ab9e308c5e" category="list-text">資料庫（MySQL 和 Oracle）</block>
   <block id="02f360fe822afa82c0f600943169df7e" category="section-title">可能有助於您進行勒索軟體防護的術語</block>
   <block id="77460e2b891748333455193aadd137d8" category="paragraph">了解一些與勒索軟體保護相關的術語可能會對您有所幫助。</block>
   <block id="826a4e8d8facce6f785b2a404538e6cd" category="list-text">*保護*：勒索軟體復原中的保護意味著確保使用保護策略定期在不同的安全域中進行快照和不可變備份。</block>
@@ -2035,7 +2027,6 @@
   <block id="6d1a51f08d9ca2d81528c19a5e4f2463" category="list-text"><block ref="6d1a51f08d9ca2d81528c19a5e4f2463" category="inline-link-macro-rx"></block></block>
   <block id="4db76a2031d1695a2f0a985a14a43ffa" category="paragraph">當您啟用具有可疑使用者活動偵測功能的勒索軟體保護策略時，資料收集器會自動建立。有關詳細信息，請參閱 <block ref="eadf066433fbca34180c794e1f4838ae" category="inline-xref-macro-rx"></block>。</block>
   <block id="649b83fee66314cb36bc122912f59725" category="inline-link-macro">ONTAP中支援且不受支援的配置</block>
-  <block id="49f82a509cd0abff5327e4c71868f448" category="admonition">在ONTAP中使用 ARP/AI 需要ONTAP 9.16 或更高版本。 + ONTAP不為FlexGroup磁碟區、掛載點磁碟區、掛載路徑磁碟區、離線磁碟區和資料保護 (DP) 磁碟區提供勒索軟體防護支援。請務必查看<block ref="49252e6bcf11c366c792cea95977195b" category="inline-link-macro-rx"></block>。</block>
   <block id="0b115ac5b217f989a1fc7dd422161b82" category="section-title">支援的備份目標</block>
   <block id="933247e0be7796a309cfa4c95bd34938" category="section-title">支援的系統</block>
   <block id="d7962ffe79df3d1aba19878fd6d019e4" category="section-title">支援的工作負載資料來源</block>
@@ -2048,7 +2039,6 @@
   <block id="4c2c00472698b27eb7facf4ba3c6971f" category="paragraph">您的NetApp Console配置需要：</block>
   <block id="fda98bab7cfe51ed764422ff7c4cc4dc" category="inline-link-macro">支援的系統</block>
   <block id="24a33b7b8d81b241dc8d72ce84d02061" category="list-text">一個控制台組織和系統，其中至少有一個活動的控制台代理連接到<block ref="33fcda4d13136e9638e8e0eecc30f508" category="inline-link-macro-rx"></block>。</block>
-  <block id="0d2165e32151ff379bcc5699011bbdbe" category="list-text">如果您的本機ONTAP叢集或 AWS 或 Azure 雲端中的Cloud Volumes ONTAP未在控制台中設置，請參閱<block ref="8a718d7913e8764fcbd48fb78a901ed8" category="inline-link-macro-rx"></block>和<block ref="b04507b2bbabc17c071b912167d3ff4f" category="inline-link-macro-rx"></block>。</block>
   <block id="def72830b58fb69b381492858d3b3665" category="admonition">若要在 SAN 工作負載上使用勒索軟體復原功能，您必須執行ONTAP 9.17.1 或更高版本。</block>
   <block id="1b6bc3125f482fcbcf029c833aea1290" category="section-title">ONTAP 需求</block>
   <block id="69e575df737b34413e9ac5e132f6db01" category="list-text">您必須執行ONTAP 9.11.1 或更高版本，並且在本機ONTAP實例上啟用ONTAP One 授權。有關ONTAP支援的更多信息，請參閱<block ref="a17b9b304c2ac7f4ba576e11b099c691" category="inline-link-macro-rx"></block>。</block>
@@ -2060,11 +2050,34 @@
   <block id="0d2fa76effcb3dce9fea42e1ccddfc30" category="paragraph">如果您正在使用SnapCenter或SnapCenter for VMware，則這些產品支援的所有工作負載也會在勒索軟體復原功能中被識別。勒索軟體復原能力可以以工作負載一致的方式保護和恢復這些內容。</block>
   <block id="77750efa6f5ff153acdc42067058017f" category="section-title">2025年11月10日</block>
   <block id="8fe9bae39f62679bc4b589ccb17384a9" category="paragraph">雲端服務提供者支持</block>
-  <block id="4dbf3bdbb500347a8ca0ffe04b7e1f6c" category="paragraph">AWS 和 Azure 在以下區域提供可疑使用者活動偵測：</block>
   <block id="e29d7c0b36af68edd13ebac84f15b44b" category="cell">雲端提供者</block>
   <block id="f447ac856e7e72435904956e3b15f433" category="cell">地區</block>
   <block id="4847e034bb0a55fcbc8a3380d6a3ab80" category="cell">AWS</block>
   <block id="90f74c5c50c42b91275c19e2cccad976" category="cell">美國東部（us-east-1）</block>
   <block id="3a580f142203677f1f0bc30898f63f53" category="cell">Azure</block>
   <block id="3c110de67497eb3f8d4c100e43101c81" category="cell">美國東部</block>
+  <block id="0ba29c6a1afacf586b03a26162c72274" category="cell">環境</block>
+  <block id="888a77f5ac0748b6c8001822417df8b6" category="cell">協定</block>
+  <block id="b881921e058834170584afe9213c4c73" category="cell">Amazon FSx for NetApp ONTAP*</block>
+  <block id="c2b4bf8a420967336b99691646ef85e6" category="cell">NFS、CIFS 和 SAN</block>
+  <block id="382b0f5185773fa0f67a8ed8056c7759" category="cell">不適用</block>
+  <block id="096f3522cfa2f31de45d052b740adc65" category="cell">適用於 AWS 的Cloud Volumes ONTAP</block>
+  <block id="05bcab512eefa1e7e2cc2d1e45970a7d" category="cell">CIFS 和 NFS</block>
+  <block id="1f03f70fe9097fcc16686889bafaf634" category="cell">9.11.1 及更高版本</block>
+  <block id="d32574662083c44bd1c1e27441a5f5f6" category="cell">SAN（FC、iSCSI 和 NVMe）</block>
+  <block id="ce2276d280ca79bc5d0b33e7903a7d49" category="cell">9.17.1 及更高版本</block>
+  <block id="a6810a0b37cbc417c34b4dffc16f07a1" category="cell">適用於 Google Cloud Platform 的Cloud Volumes ONTAP</block>
+  <block id="9722c69e4736d9b151d70e30b917a4e1" category="cell">適用於 Microsoft Azure 的Cloud Volumes ONTAP</block>
+  <block id="22f284bcf4504118b4d7e9ed2bce2c2e" category="cell">9.12.1 及更高版本</block>
+  <block id="7cfe224d3c8892dba0ae59bcf6d0c053" category="cell">ONTAP （本地部署）</block>
+  <block id="954e661212d7a62095e6b957259dc36f" category="inline-link-macro">ARP/AI</block>
+  <block id="7271886a703021fd0851304115b49ee2" category="paragraph">{asterisk} Amazon FSx for NetApp ONTAP使用自主勒索軟體保護 (ARP) 而非 ARP/AI。有關兩者區別的更多信息，請參閱<block ref="ee25b596f35c0a0b982fc7b7e342f828" category="inline-link-macro-rx"></block>。</block>
+  <block id="c71c95f02c8e85a6e5cddd09ad2a5d8b" category="admonition">在ONTAP中使用 ARP/AI 需要ONTAP 9.16 或更高版本。+ ONTAP不為FabricPool FlexCache、 FlexGroup磁碟區、一致性群組掛載點磁碟區、掛載路徑磁碟區、離線磁碟區和資料保護 (DP) 磁碟區提供勒索軟體防護支援。請務必查看<block ref="49252e6bcf11c366c792cea95977195b" category="inline-link-macro-rx"></block>。</block>
+  <block id="fd3b4579ab972a1738986581275cfcfa" category="list-text">資料庫:</block>
+  <block id="78898e52fcbdc5337204a384f2456d4f" category="list-text">微軟 SQL 伺服器</block>
+  <block id="62a004b95946bb97541afa471dcca73a" category="list-text">MySQL</block>
+  <block id="30162ed78b6c10f731411f2fc440c24f" category="list-text">甲骨文</block>
+  <block id="399bd1ee587245ecac6f39beaa99886f" category="list-text">PostgreSQL</block>
+  <block id="b8bf0879f259dbfb5601d4fdb086df91" category="list-text">如果您的本機ONTAP叢集或 AWS 或 Azure 雲端中的Cloud Volumes ONTAP未在控制台中設置，請參閱<block ref="1c09904f3fbf9f22b68e96599d2dcddc" category="inline-link-macro-rx"></block>和<block ref="b04507b2bbabc17c071b912167d3ff4f" category="inline-link-macro-rx"></block>。</block>
+  <block id="acd257a01891523b6ff91a9020b733ba" category="paragraph">可疑用戶活動資料可以儲存在 AWS 和 Azure 的以下區域：</block>
 </blocks>
