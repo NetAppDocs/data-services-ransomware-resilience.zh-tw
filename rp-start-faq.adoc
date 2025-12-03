@@ -56,7 +56,7 @@ https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles
 
 == 互通性
 
-.Ransomware Resilience 是否了解NetApp ONTAP中所做的保護設定？
+.Ransomware Resilience 是否了解ONTAP中的保護設定？
 是的，Ransomware Resilience 發現了在ONTAP中設定的快照計劃。
 
 .勒索軟體復原功能如何與NetApp Backup and Recovery和SnapCenter互動？
@@ -65,6 +65,8 @@ https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles
 勒索軟體復原能力與SnapCenter或SnapCenter for VMware 搭配使用，可以發現並設定應用程式和虛擬機器工作負載的快照和備份策略。
 
 勒索軟體復原功能還可以與備份和復原以及SnapCenter （包括 VMware 版SnapCenter ）搭配使用，以執行檔案和工作負載一致性復原。
+
+對於許可和計費，即使您沒有單獨的備份和復原許可證，勒索軟體復原功能也可以與備份和復原功能整合。如果您同時擁有備份和復原以及勒索軟體復原功能，則受這兩種產品保護的任何公開資料僅由勒索軟體復原功能計費。
 
 
 
@@ -117,7 +119,7 @@ link:rp-use-protect.html["了解工作負載優先順序或重要性"] 。
 
 勒索軟體抵禦策略中不需要備份策略。
 
-.Ransomware Resilience 是否了解NetApp ONTAP中所做的保護設定？
+.Ransomware Resilience 是否了解ONTAP中的保護設定？
 是的，Ransomware Resilience 發現了在ONTAP中設定的快照計劃。它還會發現已發現的工作負載中的所有磁碟區是否啟用了 ARP 和 FPolicy。您在勒索軟體復原儀表板中看到的資訊來自其他NetApp解決方案和產品。
 
 .勒索軟體復原功能是否了解備份和復原以及SnapCenter中已製定的策略？
