@@ -1610,7 +1610,6 @@
   <block id="906ec8bab01967c36f2f073eff9f54df" category="doc">在NetApp Ransomware Resilience中配置可疑使用者活動偵測</block>
   <block id="9ba1db4a2c84400f14de2d58496b9f52" category="paragraph">勒索軟體抵禦能力支援在偵測策略中偵測可疑使用者行為，使您能夠在使用者層級解決勒索軟體事件。</block>
   <block id="90c4c763135bd7a7443ed22e4149185b" category="section-title">代理商和收藏家</block>
-  <block id="03f21183a058745685d1d78fcc7eab3a" category="paragraph">必須安裝至少一個使用者活動代理程式才能啟動 Ransomware Resilience 中的可疑使用者活動偵測。當您從勒索軟體復原儀表板啟動可疑使用者活動功能時，您需要提供代理主機資訊來啟動該功能。</block>
   <block id="2b294b61543173e7462d37def0724cef" category="paragraph">一個代理可以託管多個資料收集器。資料收集器將資料傳送到 SaaS 位置進行分析。有兩種類型的收集器：</block>
   <block id="fa83d0f077ae64e1df0b8a9ed9982815" category="paragraph">收集器在勒索軟體恢復設定中配置。</block>
   <block id="4f047e83e52e21d5382adc1b5dbf3119" category="section-title">新增用戶活動代理</block>
@@ -1626,21 +1625,15 @@
   <block id="6fe8b98c53e8d099686936732785d471" category="cell">Debian</block>
   <block id="96076f12b1cb63e4304e6e93bf2bdf1c" category="cell">11（64 位元）、12（64 位元），包括 SELinux</block>
   <block id="47aa329f6ec0cd1009231b4b7fca0a6b" category="cell">OpenSUSE 飛躍</block>
-  <block id="19b160ebc6598b7f22f292d227c45c9d" category="cell">15.3（64 位）至 15.6（64 位）</block>
   <block id="fdcd362ac5f5f9817e70642dd2a48bfd" category="cell">Oracle Linux</block>
-  <block id="95ccc8f8721ed98f86b3373d9ede2a15" category="cell">8.10（64 位元）、9.1（64 位元）至 9.6（64 位元），包括 SELinux</block>
-  <block id="a82007c47b25723539a00ff94e8b3d27" category="cell">紅帽</block>
   <block id="d33305ae6335b0a9106e226ed71ca60f" category="cell">8.10（64 位元）、9.1（64 位元）至 9.6（64 位元）和 10（64 位元），包括 SELinux</block>
   <block id="d405e3063aac76a254e44386c961b24c" category="cell">洛基</block>
-  <block id="562cb7e6b7d585b5ffbe8d9aec64cf10" category="cell">Rocky 9.4（64 位）至 9.6（64 位），包括 SELinux</block>
   <block id="92ceb02e8fd413288d949e40d8ca4832" category="cell">SUSE 企業 Linux</block>
   <block id="ce370a856bc8592a8206af596cace9ea" category="cell">15 SP4（64 位元）至 15 SP6（64 位元），包括 SELinux</block>
   <block id="3d945423f8e9496c429a5d8c65b4604f" category="cell">Ubuntu</block>
   <block id="6072b01d67af0366830f2fef13cdf0da" category="cell">20.04 LTS（64 位元）、22.04 LTS（64 位元）和 24.04 LTS（64 位元）</block>
   <block id="e5fc81082964adedb5790746c18c9fb7" category="paragraph">**伺服器要求**</block>
   <block id="fd9b966c1c6f66e7c4f38e133767c880" category="paragraph">伺服器必須滿足以下最低要求：</block>
-  <block id="f0499c7832db4d35decdf83de714841c" category="list-text">**CPU**：4 核</block>
-  <block id="4a8a49e18f8860c4232837503bcc2edd" category="list-text">**內存**：16GB 內存</block>
   <block id="a2ad8789f963859e0c26a6daaec4a76b" category="list-text">如果這是您第一次建立使用者活動代理，請前往**儀表板**。在**使用者活動**圖塊中，選擇**啟動**。</block>
   <block id="44e08a5b01e752ac11f59bba4e07dea7" category="paragraph">如果您要新增其他使用者活動代理，請前往*設定*，找到**使用者活動**圖塊，然後選擇**管理**。在使用者活動畫面上，選擇**使用者活動代理**選項卡，然後選擇**新增**。</block>
   <block id="75d41b8fe2ef8de56d2fd2046bb0dad3" category="list-text">選擇**雲端提供者**，然後選擇**區域**。選擇**下一步**。</block>
@@ -1662,24 +1655,14 @@
   <block id="8348d8dcee9ea32e049e21c42a431b91" category="list-text">在勒索軟體復原中，前往*設定*。</block>
   <block id="9fcb0a7634f29d96ae98e37bbc76e1cd" category="list-text">在使用者活動圖塊中，選擇**管理**。</block>
   <block id="e70202c14c96f451fdcf2617844ea351" category="list-text">選擇**使用者目錄連接器**選項卡，然後選擇**新增**。</block>
-  <block id="6b0d749af4fb3ac0e4e4a1eefc36c454" category="list-text">提供連接的詳細資訊：</block>
   <block id="496ee322ba138fdbc777e5ab2e30145e" category="list-text">*姓名*</block>
   <block id="e018ce61f2faa0782aac0cf5ceb4e39f" category="list-text">*使用者目錄類型*</block>
   <block id="817d09446fbab0a167f137ba029b3b2c" category="list-text">*伺服器IP位址或網域名稱*</block>
   <block id="942f115bf2a4bb90285e9cc5de7fd48b" category="list-text">*森林名稱或搜尋名稱*</block>
-  <block id="28781714c6ccf5cfa635f547328898a5" category="list-text">*BIND 網域*</block>
   <block id="f379b6d26456916980ea32f662e2088a" category="list-text">*綁定密碼*</block>
-  <block id="2bfa02843b15eae74dde462c970a2a00" category="list-text">*協議*（可選）</block>
   <block id="5ddcf17f54788a5bb9148e8671562c06" category="list-text">*港口*</block>
   <block id="4648df055f6134caf491290d363fdd55" category="inline-image-macro">使用者目錄連線的螢幕截圖</block>
   <block id="e41447b39a2a8caf5092a92f230bd291" category="paragraph"><block ref="e41447b39a2a8caf5092a92f230bd291" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="86c3d5aee71dba0d2e67a122a900b46d" category="paragraph">提供屬性映射詳細資訊：</block>
-  <block id="67abd0bd8cf8f6b948416d41be7c6f6a" category="list-text">*顯示名稱*</block>
-  <block id="aff175f709dc693d1f9ca4c44728163a" category="list-text">*SID*（如果您使用 LDAP）</block>
-  <block id="3b57547caa3754998fa617bd92514f25" category="list-text">*使用者名稱*</block>
-  <block id="c8a0546946d4ed57fd88fc4918d3825f" category="list-text">*Unix ID*（如果您使用 NFS）</block>
-  <block id="44c65853ed8da5c496344c1e746b1669" category="list-text">選擇*包括可選屬性*。您還可以包括電子郵件地址、電話號碼、角色、州、國家、部門、照片、經理 DN 或群組。</block>
-  <block id="7703674a5321c1f23549682250a732e9" category="paragraph">選擇“*進階*”以新增可選的搜尋查詢。</block>
   <block id="7174ea6988f438d85266f06a4d178a79" category="list-text">選擇**新增**。</block>
   <block id="c46a6dfd4cabd150fef75d97e543d6e6" category="list-text">傳回使用者目錄連接器標籤以檢查使用者目錄連接器的狀態。如果建立成功，使用者目錄連接器的狀態顯示為*正在執行*。</block>
   <block id="ecdd284164c9ec55e281a5e22e24af67" category="section-title">刪除使用者目錄連接器</block>
@@ -1893,7 +1876,6 @@
   <block id="b6173a051353d59a4ee775fcef288441" category="list-text">**使用者目錄連接器**連接到您的目錄以將使用者 ID 對應到使用者名稱。</block>
   <block id="508899c1c018f291af4cb6a0423c426c" category="paragraph">*所需的控制台角色* 若要啟動可疑使用者活動偵測，您需要組織管理員角色。對於可疑使用者活動的後續配置，您需要 Ransomware Resilience 使用者行為管理員角色。<block ref="d9cbbacd5ef5cff6a1660fdb9d259f2f" category="inline-link-macro-rx"></block>。</block>
   <block id="53b036bcd07f4ebcfe2ec32a98556822" category="paragraph">要安裝用戶活動代理，您需要一個符合以下支援的作業系統和伺服器要求的主機或虛擬機器。</block>
-  <block id="d4a6e9b0b745b83f49163b25271ce445" category="list-text">**磁碟空間**：35GB 可用磁碟空間</block>
   <block id="398de83ff8f318218f9eaedb05929ef0" category="paragraph">成功建立使用者活動代理程式後，返回**設定**選單，然後在使用者活動圖塊中選擇**管理**。選擇**用戶活動代理**選項卡，然後選擇用戶活動代理以查看有關它的詳細信息，包括數據收集器和用戶目錄連接器。</block>
   <block id="a83ea9a287c9fdd0689933a464055150" category="paragraph">若要將使用者 ID 對應到使用者名，您必須建立使用者目錄連接器。</block>
   <block id="89bd0177a422e5d81fce2f8f82dac3f6" category="paragraph-title">使用勒索軟體恢復功能需要許可證嗎？</block>
@@ -2071,4 +2053,26 @@
   <block id="f6967390d49d08c53cc88d3cdf42eb92" category="list-text">Oracle SnapCenter</block>
   <block id="897c29783a147c6c7b7844f2d4a9e81a" category="paragraph">預覽版服務可保護BlueXP組織內各個組織中 Oracle、VM 資料儲存和本機 NAS 儲存空間上的檔案共用以及 AWS 上的Cloud Volumes ONTAP （使用 NFS 協定）上的應用程式工作負載，並將資料備份到 Amazon Web Services 雲端儲存。</block>
   <block id="2d2972fc6d16379955701a1cc8c6633f" category="sidebar">NetApp Ransomware Resilience可保護、偵測並支援從本機和雲端儲存的勒索軟體威脅中復原應用程式工作負載和檔案共用。勒索軟體復原能力可實現安全備份和復原，協助組織保護關鍵資料並維持 Oracle、VM 資料儲存、NAS 儲存等的業務連續性。</block>
+  <block id="05a32e62ff35ead335cfbdaf6b19a9b2" category="paragraph">必須安裝至少一個使用者活動代理程式才能啟動 Ransomware Resilience 中的可疑使用者活動偵測。當您從勒索軟體復原儀表板啟動可疑使用者活動功能時，您需要提供代理主機資訊。</block>
+  <block id="f075180c986e3a7a8e0bad4fcec7c485" category="cell">15.3（64 位）至 15.6（64 位）</block>
+  <block id="32d094cff0ab508ab383051555e7844b" category="cell">8.10（64 位元）、9.1（64 位元）至 9.6（64 位元），包括 SELinux</block>
+  <block id="1d9fc183665bd1e195391190be506894" category="cell">紅帽</block>
+  <block id="40a4866844a145aa0d01d094ea38e0d3" category="cell">Rocky 9.4 (64 位) 至 9.6 (64 位)，包括 SELinux</block>
+  <block id="ec0c7e841d2f0e7a16a6b4b47a57ecd8" category="list-text">CPU：4 核</block>
+  <block id="177d9a4926538bc7d9bcbb8ad6ca3f0f" category="list-text">**內存**：16GB 內存</block>
+  <block id="f01ab58abd28b55b4954d17a62080293" category="list-text">**磁碟空間**：35 GB 可用磁碟空間</block>
+  <block id="191a3f30ab05799955dc06c5f394b591" category="list-text">配置連接。請在每個欄位中填寫所需資訊。</block>
+  <block id="6f16a5f8ff5d75ab84c018adacdfcbb7" category="cell">場地</block>
+  <block id="8099786db97f0913cd0cefcd4a7bc6fd" category="cell">請為使用者目錄連接器輸入一個唯一的名稱</block>
+  <block id="4adff96a4a05104e03197234118085e2" category="cell">目錄類型</block>
+  <block id="722fb2ada3f9ea6943e9b3e31070b992" category="cell">連接所在伺服器的 IP 位址或完全限定網域名稱 (FQDN)</block>
+  <block id="de477c1e3721a76952a5b9396ecf6fdd" category="paragraph">您可以將目錄結構的林級別指定為直接網域名稱（例如）。<block ref="50e97bbcb7daba438b04ca294e70b332" prefix=" " category="inline-code"></block>）或一組相對專有名詞（例如：<block ref="a095aad7202650a49f2e97c9b4301648" prefix=" " category="inline-code"></block>）。你也可以輸入一個<block ref="e4a59df8b97206109eb4b7f2fe528a4d" prefix=" " category="inline-code"></block> 按組織單元或<block ref="1c2903397d8833382673bab22aa8b937" prefix=" " category="inline-code"></block> 僅限特定使用者（例如：<block ref="bf398740ce4b2f74d8422fcaf8220aa1" prefix=" " category="inline-code"></block>）。</block>
+  <block id="e84098015e7ceb92236e398c96a2a10d" category="cell">*綁定DN*</block>
+  <block id="bc155f025a2d678a9b7a2ecd0f109bb7" category="cell">BIND DN 是被允許搜尋目錄的使用者帳戶，例如 user@domain.com。使用者需要網域唯讀權限。</block>
+  <block id="c0e32b7e69f6b1f044d23fea6824f4f5" category="cell">BIND DN 中提供的使用者密碼</block>
+  <block id="dce365633ffb688b7532470dfaf4e118" category="cell">*協定*</block>
+  <block id="91fa08a58f816e98d83df1ce310eb825" category="cell">協定字段為可選字段。您可以使用 LDAP、LDAPS 或基於 StartTLS 的 LDAP。</block>
+  <block id="f9115354bfb0b47a80e11c68936a7ec8" category="cell">請輸入您選擇的連接埠號</block>
+  <block id="ffcb2d1f993f068c61d2776ab07c354f" category="paragraph">提供屬性對應詳細資訊： * *顯示名稱* * *SID*（如果您使用 LDAP） * *使用者名稱* * *Unix ID*（如果您使用 NFS） * 如果您選擇 *包含選用屬性*，您也可以新增電子郵件地址、電話號碼、角色、州/省、國家/地區、部門、照片、經理 DN 或群組。</block>
+  <block id="8cab6e56434342fb39a14e12391a5d3e" category="paragraph">+ 選擇「進階」以新增可選的搜尋查詢。</block>
 </blocks>
