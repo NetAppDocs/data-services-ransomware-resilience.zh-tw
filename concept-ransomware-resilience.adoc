@@ -16,7 +16,7 @@ summary: 勒索軟體復原能力使您能夠查看有關網路安全的相關�
 [role="lead"]
 勒索軟體攻擊可以阻止對您資料的訪問​​，攻擊者可以要求贖金以換取資料發布或解密。據 IDC 稱，勒索軟體受害者遭受多次勒索軟體攻擊的情況並不少見。攻擊可能會中斷您對資料的訪問​​，時間從一天到幾週不等。
 
-NetApp Ransomware Resilience可保護您的資料免受勒索軟體攻擊。在勒索軟體復原能力中，可以對基於應用程式的工作負載提供保護，包括本地 NAS 儲存（使用 NFS 和 CIFS 協定）和 SAN 儲存（FC、iSCSI 和 NVMe）上的 Oracle、MySQL、VM 資料儲存區和檔案共用，以及適用於 Amazon Web Services 的Cloud Volumes ONTAP Cloud Volumes ONTAP 、適用於 Google ONT的NetApp Console上的Amazon FSx for NetApp ONTAP 。您可以將資料備份到 Amazon Web Services、Google Cloud、Microsoft Azure 雲端儲存和NetApp StorageGRID。
+NetApp Ransomware Resilience可保護您的資料免受勒索軟體攻擊。在勒索軟體復原功能中，可透過 NetApp 控制台為 Oracle、VM 資料儲存和本機 NAS 儲存體（使用 NFS 和 CIFS 協定）和 SAN 儲存體（FC、iSCSI 和 NVMe）上的檔案共用以及 Amazon Web Services 的Cloud Volumes ONTAP 、Google Cloud 的Cloud Volumes ONTAP 、Microsoft Web Services 的Cloud Volumes ONTAP ONTAPx 的NetApp ConsoleAmazon FSx for NetApp ONTAP的工作。您可以將資料備份到 Amazon Web Services、Google Cloud、Microsoft Azure 雲端儲存和NetApp StorageGRID。
 
 
 
@@ -39,7 +39,7 @@ image:concept-security-layer-diagram.png["安全圖層圖"]
 
 勒索軟體復原功能充分利用了多種NetApp技術，以便您的儲存管理員、資料安全管理員或安全營運工程師可以實現以下目標：
 
-* *識別* NetApp Console、專案和控制台代理程式中的NetApp內部部署 NAS（NFS 或 CIFS）和 SAN（FC、iSCSI 和 NVMe）系統中所有基於應用程式、檔案共用或 VMware 管理的工作負載。勒索軟體彈性對資料優先級進行分類，並為您提供勒索軟體彈性改進的建議。
+* *識別* NetApp本地 NAS（NFS 或 CIFS）和 SAN（FC、iSCSI 和 NVMe）系統中所有基於應用程式、檔案共用或 VMware 管理的工作負載，包括NetApp Console、專案和控制台代理程式。勒索軟體彈性對資料優先級進行分類，並為您提供勒索軟體彈性改進的建議。
 * 透過對資料啟用備份、快照副本和勒索軟體保護策略來*保護*您的工作負載。
 * *偵測*可能是勒索軟體攻擊的異常。註腳：[儘管攻擊可能未被發現，但我們的研究表明， NetApp技術已對某些基於文件加密的勒索軟體攻擊實現了高度檢測。 ]
 * 透過自動啟動鎖定的防篡改NetApp ONTAP快照來*應對*潛在的勒索軟體攻擊，這樣副本就不會被意外或惡意刪除。您的備份資料將保持不變，並在來源和目標端受到端到端的保護，免受勒索軟體攻擊。
@@ -59,7 +59,7 @@ image:diagram-rp-features-phases3.png["圖表展示了勒索軟體抵禦攻擊�
 * 評估您的勒索軟體防護態勢並將其顯示在易於理解的儀表板中。
 * 根據發現和保護態勢分析提供後續步驟的建議。
 * 一鍵存取即可套用 AI/ML 驅動的資料保護建議。
-* 保護頂級基於應用程式的工作負載中的數據，例如 MySQL、Oracle、VMware 資料儲存和檔案共用。
+* 保護基於應用程式的工作負載（例如 Oracle、VMware 資料儲存和檔案共用）中的資料。
 * 使用人工智慧技術即時偵測針對主儲存資料的勒索軟體攻擊。
 * 透過建立快照副本和啟動有關異常活動的警報來啟動自動操作以回應偵測到的潛在攻擊。
 * 應用精心策劃的恢復以滿足 RPO 政策。勒索軟體復原能力透過使用多種NetApp復原服務（包括NetApp Backup and Recovery（以前稱為雲端備份）和SnapCenter）來協調勒索軟體事件的復原。
@@ -228,7 +228,6 @@ NOTE: 在ONTAP中使用 ARP/AI 需要ONTAP 9.16 或更高版本。+ ONTAP不為F
 * 資料庫:
 +
 ** 微軟 SQL 伺服器
-** MySQL
 ** 甲骨文
 ** PostgreSQL
 
@@ -246,5 +245,5 @@ NOTE: 在ONTAP中使用 ARP/AI 需要ONTAP 9.16 或更高版本。+ ONTAP不為F
 了解一些與勒索軟體保護相關的術語可能會對您有所幫助。
 
 * *保護*：勒索軟體復原中的保護意味著確保使用保護策略定期在不同的安全域中進行快照和不可變備份。
-* *工作負載*：勒索軟體復原中的工作負載可以包括 MySQL 或 Oracle 資料庫、VMware 資料儲存區或檔案共用。
+* *工作負載*：勒索軟體復原中的工作負載可以包括 Oracle 資料庫、VMware 資料儲存或檔案共用。
 

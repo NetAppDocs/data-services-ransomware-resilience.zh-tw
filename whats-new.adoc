@@ -599,7 +599,7 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/concept-ransom
 
 BlueXP ransomware protection服務是一種用於保護資料、偵測潛在攻擊以及從勒索軟體攻擊中恢復資料的 SaaS 解決方案。
 
-對於預覽版，該服務可分別保護BlueXP組織內本地 NAS 儲存空間上的 Oracle、MySQL、VM 資料儲存和檔案共用以及 AWS 上的Cloud Volumes ONTAP （使用 NFS 協定）的基於應用程式的工作負載，並將資料備份到 Amazon Web Services 雲端儲存。
+預覽版服務可保護BlueXP組織內各個組織中 Oracle、VM 資料儲存和本機 NAS 儲存空間上的檔案共用以及 AWS 上的Cloud Volumes ONTAP （使用 NFS 協定）上的應用程式工作負載，並將資料備份到 Amazon Web Services 雲端儲存。
 
 BlueXP ransomware protection服務充分利用了多種NetApp技術，以便您的資料安全管理員或安全營運工程師能夠實​​現以下目標：
 

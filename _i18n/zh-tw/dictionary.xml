@@ -155,7 +155,6 @@
   <block id="dac562783f47866b5833397fa3343ac7" category="summary">勒索軟體復原能力使您能夠查看有關網路安全的相關信息，並評估您的組織抵禦網路攻擊的能力。它還為您提供了警報和補救步驟的列表，以確保您的資料更加安全。</block>
   <block id="e1303fde203d17c93a36144831175152" category="doc">了解NetApp Ransomware Resilience</block>
   <block id="841f32df73c3e26168caae171cbe303e" category="paragraph">勒索軟體攻擊可以阻止對您資料的訪問​​，攻擊者可以要求贖金以換取資料發布或解密。據 IDC 稱，勒索軟體受害者遭受多次勒索軟體攻擊的情況並不少見。攻擊可能會中斷您對資料的訪問​​，時間從一天到幾週不等。</block>
-  <block id="97267950d74b2674710974ae13c312d6" category="paragraph">NetApp Ransomware Resilience可保護您的資料免受勒索軟體攻擊。在勒索軟體復原能力中，可以對基於應用程式的工作負載提供保護，包括本地 NAS 儲存（使用 NFS 和 CIFS 協定）和 SAN 儲存（FC、iSCSI 和 NVMe）上的 Oracle、MySQL、VM 資料儲存區和檔案共用，以及適用於 Amazon Web Services 的Cloud Volumes ONTAP Cloud Volumes ONTAP 、適用於 Google ONT的NetApp Console上的Amazon FSx for NetApp ONTAP 。您可以將資料備份到 Amazon Web Services、Google Cloud、Microsoft Azure 雲端儲存和NetApp StorageGRID。</block>
   <block id="428f33a53aa54741f72e5f45b6c621c0" category="section-title">資料層的勒索軟體抵禦能力</block>
   <block id="1b5ac7659c93361ff5fa00f9dc0878ff" category="paragraph">您的安全態勢通常包含多層防禦，以防禦一系列網路威脅。</block>
   <block id="e1e21525512158b10d87c17fe3eb8be1" category="list-text">*最外層*：這是使用防火牆、入侵偵測系統和虛擬專用網路來保護網路邊界的第一道防線。</block>
@@ -167,7 +166,6 @@
   <block id="58cc8c9025afc05f9ee4dee0439c8c7d" category="paragraph"><block ref="58cc8c9025afc05f9ee4dee0439c8c7d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ecdfa974bc0672b6ee5f8d21d623c77b" category="section-title">勒索軟體復原能力可以做什麼</block>
   <block id="08c9bb2f955e4452b60d6285d467218b" category="paragraph">勒索軟體復原功能充分利用了多種NetApp技術，以便您的儲存管理員、資料安全管理員或安全營運工程師可以實現以下目標：</block>
-  <block id="d6676d586bb37c4e1a068fd2d536cfb8" category="list-text">*識別* NetApp Console、專案和控制台代理程式中的NetApp內部部署 NAS（NFS 或 CIFS）和 SAN（FC、iSCSI 和 NVMe）系統中所有基於應用程式、檔案共用或 VMware 管理的工作負載。勒索軟體彈性對資料優先級進行分類，並為您提供勒索軟體彈性改進的建議。</block>
   <block id="ab76e9ddf0b5cc0436537248ef996b33" category="list-text">透過對資料啟用備份、快照副本和勒索軟體保護策略來*保護*您的工作負載。</block>
   <block id="2260f3efb7f7ff8d7a4a295911d64e87" category="list-text">*偵測*可能是勒索軟體攻擊的異常。註腳：[儘管攻擊可能未被發現，但我們的研究表明， NetApp技術已對某些基於文件加密的勒索軟體攻擊實現了高度檢測。 ]</block>
   <block id="61a5394873cb968131d6938cc55d2316" category="list-text">透過自動啟動鎖定的防篡改NetApp ONTAP快照來*應對*潛在的勒索軟體攻擊，這樣副本就不會被意外或惡意刪除。您的備份資料將保持不變，並在來源和目標端受到端到端的保護，免受勒索軟體攻擊。</block>
@@ -181,7 +179,6 @@
   <block id="5992e4770276798f5e7d7d1fe4bc1863" category="list-text">評估您的勒索軟體防護態勢並將其顯示在易於理解的儀表板中。</block>
   <block id="65e19dc168989aed91c1cb48e39f45de" category="list-text">根據發現和保護態勢分析提供後續步驟的建議。</block>
   <block id="26f7eb76c3f0032daa502e8f74affdf8" category="list-text">一鍵存取即可套用 AI/ML 驅動的資料保護建議。</block>
-  <block id="36b4276d015bcc4d4f2b814e00d505a3" category="list-text">保護頂級基於應用程式的工作負載中的數據，例如 MySQL、Oracle、VMware 資料儲存和檔案共用。</block>
   <block id="c530e1fdcf59b6298208943bc8050282" category="list-text">使用人工智慧技術即時偵測針對主儲存資料的勒索軟體攻擊。</block>
   <block id="8343e8aa9aee8047de78869e0826e3b6" category="list-text">透過建立快照副本和啟動有關異常活動的警報來啟動自動操作以回應偵測到的潛在攻擊。</block>
   <block id="4a72582f981b12d4f27dceb8b0d7dbb9" category="list-text">應用精心策劃的恢復以滿足 RPO 政策。勒索軟體復原能力透過使用多種NetApp復原服務（包括NetApp Backup and Recovery（以前稱為雲端備份）和SnapCenter）來協調勒索軟體事件的復原。</block>
@@ -248,7 +245,6 @@
   <block id="02f360fe822afa82c0f600943169df7e" category="section-title">可能有助於您進行勒索軟體防護的術語</block>
   <block id="77460e2b891748333455193aadd137d8" category="paragraph">了解一些與勒索軟體保護相關的術語可能會對您有所幫助。</block>
   <block id="826a4e8d8facce6f785b2a404538e6cd" category="list-text">*保護*：勒索軟體復原中的保護意味著確保使用保護策略定期在不同的安全域中進行快照和不可變備份。</block>
-  <block id="42ef644e3571d83d6c2b5b7c17abfea0" category="list-text">*工作負載*：勒索軟體復原中的工作負載可以包括 MySQL 或 Oracle 資料庫、VMware 資料儲存區或檔案共用。</block>
   <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">法律聲明</block>
   <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="paragraph">法律聲明提供對版權聲明、商標、專利等的存取。</block>
   <block id="6016a2b341113bf496b719905398ecd2" category="section-title">版權</block>
@@ -348,7 +344,6 @@
   <block id="ef54d92c7cc927ca7eb5e489c30b0e9b" category="summary">在發現過程中，勒索軟體復原力會分析所有控制台代理和帳戶的系統中的所有捲和檔案。</block>
   <block id="e9be3c13b1ed73a120f1b23e2cefb058" category="doc">發現NetApp Ransomware Resilience中的工作負載</block>
   <block id="d8200bbebd878a82fc2bda0a2246f0ed" category="paragraph">在使用NetApp Ransomware Resilience之前，它需要先發現資料。在發現過程中，勒索軟體復原力會分析組織內所有控制台代理程式和專案系統中的所有捲和檔案。</block>
-  <block id="bb7ce6422877610df4ac93062321838b" category="paragraph">*勒索軟體復原能力發現了什麼？ *勒索軟體復原能力評估 MySQL 應用程式、Oracle 應用程式、VMware 資料儲存區、檔案共用和區塊儲存。</block>
   <block id="e4838671e2eb3743491ad0a9715b9adc" category="admonition">勒索軟體復原能力無法發現使用FlexGroup磁碟區的工作負載。</block>
   <block id="153ab5406a008784e1089c885b56c101" category="paragraph">勒索軟體復原能力在儀表板中發現並顯示受支援和不受支援的系統配置。</block>
   <block id="a0b703942dbd0a9a1789ecae6d6334fa" category="paragraph">勒索軟體復原能力會檢查您目前的備份保護、快照副本和NetApp自主勒索軟體保護選項。然後它會推薦一些改善勒索軟體防護的方法。</block>
@@ -404,7 +399,6 @@
   <block id="35084d885dea7b061e6894c1cf3036d9" category="section-title">工作負載</block>
   <block id="1f60c8769abcb4f9589fae4ad1831a19" category="inline-link-macro">了解工作負載優先順序或重要性</block>
   <block id="581ad716354744440ad65ff13c86ca1e" category="paragraph"><block ref="1ba24f606c1b9584a2674b4003d5830a" category="inline-link-macro-rx"></block> 。</block>
-  <block id="5129a73689c2f34916e88aab7ca20a5a" category="paragraph">勒索軟體復原可以識別以下工作負載：Oracle、MySQL、檔案共用、區塊儲存、虛擬機器和虛擬機器資料儲存。</block>
   <block id="5d1184f76781faaf229c6b885314bcd3" category="section-title">保護策略</block>
   <block id="41e8b20d4f70cd7ff369ff2c808730ee" category="paragraph">快照副本不受限制，可以從每個服務單獨新增。</block>
   <block id="43963265d27ac7360fe50e98bde4f748" category="list-text">勒索軟體檢測政策</block>
@@ -973,7 +967,6 @@
   <block id="7d94fa5c52f4b044d2cd78e42e11247c" category="paragraph">除了勒索軟體復原能力之外，還可以使用以下服務來管理保護：</block>
   <block id="58c4a0b8427aedffed15f507a82a122c" category="list-text">NetApp Backup and Recovery、VM 檔案共享</block>
   <block id="e10a2e4ef1f3cc661e89aa47c1655787" category="list-text">SnapCenter for VMware 適用於虛擬機器資料儲存區</block>
-  <block id="4a7e813ec2cbdfc4d32fb9d8fe51caf8" category="list-text">適用於 Oracle 和 MySQL 的SnapCenter</block>
   <block id="9f467d31ef54c60530e9d07d18e7df6d" category="paragraph">這些服務的保護資訊出現在 Ransomware Resilience 中。您可以使用 Ransomware Resilience 為這些服務新增偵測策略。增加具有勒索軟體復原能力的保護策略將取代現有的保護策略。</block>
   <block id="f37d79a56cb20cdcf206acc1cfa8be14" category="paragraph">如果勒索軟體偵測策略由ONTAP中的自主勒索軟體防護（ARP 或 ARP/AI，取決於ONTAP版本）和 FPolicy 管理，則這些工作負載將受到保護並將繼續由 ARP 和 FPolicy 管理。</block>
   <block id="7c07f079f6b4547ea768c45b8e8c9c54" category="admonition">Amazon FSx for NetApp ONTAP中的工作負載沒有可用的備份目標。使用 FSx for ONTAP備份服務執行備份作業。您為 AWS 中的 FSx for ONTAP中的工作負載設定備份策略，而不是在 Ransomware Resilience 中設定。備份策略出現在 Ransomware Resilience 中，與 AWS 保持不變。</block>
@@ -1799,7 +1792,6 @@
   <block id="77d6960ddc4ee40e26fd963e6e1f6e68" category="paragraph">恢復過程得到了加強。現在，您可以按磁碟區或所有磁碟區恢復工作負載。<block ref="2db5667b5f183f51656a41f32740d8f2" category="inline-link-rx"></block> 。</block>
   <block id="69483d973a063c873a5a66f6edcc241c" category="section-title">2023年10月6日</block>
   <block id="ae98c30c78f5642e201d040b9e0b468c" category="paragraph">BlueXP ransomware protection服務是一種用於保護資料、偵測潛在攻擊以及從勒索軟體攻擊中恢復資料的 SaaS 解決方案。</block>
-  <block id="978aa39e867fbe7badda46cb2834d11f" category="paragraph">對於預覽版，該服務可分別保護BlueXP組織內本地 NAS 儲存空間上的 Oracle、MySQL、VM 資料儲存和檔案共用以及 AWS 上的Cloud Volumes ONTAP （使用 NFS 協定）的基於應用程式的工作負載，並將資料備份到 Amazon Web Services 雲端儲存。</block>
   <block id="75b67029f102f7aa5f52d85fbaeb59b1" category="paragraph">BlueXP ransomware protection服務充分利用了多種NetApp技術，以便您的資料安全管理員或安全營運工程師能夠實​​現以下目標：</block>
   <block id="c97c8c1adb5529a50db916535c46fa2b" category="list-text">一目了然地查看所有工作負載的勒索軟體保護情況。</block>
   <block id="b6f8dc0dd7c16df94c4c9e61ea4c4dcf" category="list-text">深入了解勒索軟體防護建議</block>
@@ -1872,7 +1864,6 @@
   <block id="81eb2602258c7f155c33ae884e447609" category="list-text"><block ref="81eb2602258c7f155c33ae884e447609" category="inline-link-macro-rx"></block></block>
   <block id="660ecf2355e5ff3c5a22d2e4a48594e8" category="inline-link-macro">下載警報、保護、準備演習、恢復或摘要報告</block>
   <block id="52210acbff73a572a2ca89fb77371615" category="paragraph">在NetApp Ransomware Resilience中，您可以使用NetApp Data Classification來掃描和分類檔案共用工作負載中的資料。對資料進行分類可以幫助您確定資料集是否包含個人識別資訊 (PII)，這可能會增加安全風險。資料分類是NetApp Console的核心元件，無需額外付費即可使用。</block>
-  <block id="4342c3c480135ea7c9398a3ba08357ec" category="sidebar">NetApp Ransomware Resilience可保護、偵測並支援從本機和雲端儲存的勒索軟體威脅中復原應用程式工作負載和檔案共用。勒索軟體復原能力可實現安全備份和復原，協助組織保護關鍵資料並維護 Oracle、MySQL、VM 資料儲存、NAS 儲存等的業務連續性。</block>
   <block id="7b36da612c0e3a400f4daecc8016f21e" category="summary">確保您滿足勒索軟體復原的許可要求，以保護您的系統和工作負載。</block>
   <block id="5ef05167488611c5bd4ff0f410595ce4" category="list-text">30天免費試用</block>
   <block id="e71ba6c3178fa6f6844891e615ad0570" category="list-text">透過 Amazon Web Services (AWS) Marketplace、Google Cloud Marketplace 或 Azure Marketplace 購買即用即付 (PAYGO) 訂閱</block>
@@ -2015,7 +2006,6 @@
   <block id="c71c95f02c8e85a6e5cddd09ad2a5d8b" category="admonition">在ONTAP中使用 ARP/AI 需要ONTAP 9.16 或更高版本。+ ONTAP不為FabricPool FlexCache、 FlexGroup磁碟區、一致性群組掛載點磁碟區、掛載路徑磁碟區、離線磁碟區和資料保護 (DP) 磁碟區提供勒索軟體防護支援。請務必查看<block ref="49252e6bcf11c366c792cea95977195b" category="inline-link-macro-rx"></block>。</block>
   <block id="fd3b4579ab972a1738986581275cfcfa" category="list-text">資料庫:</block>
   <block id="78898e52fcbdc5337204a384f2456d4f" category="list-text">微軟 SQL 伺服器</block>
-  <block id="62a004b95946bb97541afa471dcca73a" category="list-text">MySQL</block>
   <block id="30162ed78b6c10f731411f2fc440c24f" category="list-text">甲骨文</block>
   <block id="399bd1ee587245ecac6f39beaa99886f" category="list-text">PostgreSQL</block>
   <block id="b8bf0879f259dbfb5601d4fdb086df91" category="list-text">如果您的本機ONTAP叢集或 AWS 或 Azure 雲端中的Cloud Volumes ONTAP未在控制台中設置，請參閱<block ref="1c09904f3fbf9f22b68e96599d2dcddc" category="inline-link-macro-rx"></block>和<block ref="b04507b2bbabc17c071b912167d3ff4f" category="inline-link-macro-rx"></block>。</block>
@@ -2072,4 +2062,13 @@
   <block id="d605e764d56b8615ebf6dd5f87998855" category="list-text">美國東部（維吉尼亞北部）（us-east-1）</block>
   <block id="a55a22032fc9fd630abe933324e9d4b9" category="paragraph-title">Ransomware Resilience 是否了解ONTAP中的保護設定？</block>
   <block id="1c8f51534c2fc10dfef26d32d61c7ed3" category="paragraph">對於許可和計費，即使您沒有單獨的備份和復原許可證，勒索軟體復原功能也可以與備份和復原功能整合。如果您同時擁有備份和復原以及勒索軟體復原功能，則受這兩種產品保護的任何公開資料僅由勒索軟體復原功能計費。</block>
+  <block id="5edfe1685c808d7a5514b518857b2cfe" category="paragraph">NetApp Ransomware Resilience可保護您的資料免受勒索軟體攻擊。在勒索軟體復原功能中，可透過 NetApp 控制台為 Oracle、VM 資料儲存和本機 NAS 儲存體（使用 NFS 和 CIFS 協定）和 SAN 儲存體（FC、iSCSI 和 NVMe）上的檔案共用以及 Amazon Web Services 的Cloud Volumes ONTAP 、Google Cloud 的Cloud Volumes ONTAP 、Microsoft Web Services 的Cloud Volumes ONTAP ONTAPx 的NetApp ConsoleAmazon FSx for NetApp ONTAP的工作。您可以將資料備份到 Amazon Web Services、Google Cloud、Microsoft Azure 雲端儲存和NetApp StorageGRID。</block>
+  <block id="0cadfa5b82d6d1eba924c112db6ab9fc" category="list-text">*識別* NetApp本地 NAS（NFS 或 CIFS）和 SAN（FC、iSCSI 和 NVMe）系統中所有基於應用程式、檔案共用或 VMware 管理的工作負載，包括NetApp Console、專案和控制台代理程式。勒索軟體彈性對資料優先級進行分類，並為您提供勒索軟體彈性改進的建議。</block>
+  <block id="182b9ed848b82506c10ba162f10e3f5b" category="list-text">保護基於應用程式的工作負載（例如 Oracle、VMware 資料儲存和檔案共用）中的資料。</block>
+  <block id="aa07eabc400eb4ccb13f116e99da0b48" category="list-text">*工作負載*：勒索軟體復原中的工作負載可以包括 Oracle 資料庫、VMware 資料儲存或檔案共用。</block>
+  <block id="d13f99c12403fe14a2acc4fe8db5ebad" category="paragraph">*勒索軟體復原能力發現了什麼？ *勒索軟體復原能力評估 Oracle 應用程式、VMware 資料儲存、檔案共用和區塊儲存。</block>
+  <block id="6b62768f3f94df043ea31bf9c43b2a42" category="paragraph">勒索軟體復原能力可以識別以下工作負載：Oracle、檔案共享、區塊儲存、虛擬機器和虛擬機器資料儲存。</block>
+  <block id="f6967390d49d08c53cc88d3cdf42eb92" category="list-text">Oracle SnapCenter</block>
+  <block id="897c29783a147c6c7b7844f2d4a9e81a" category="paragraph">預覽版服務可保護BlueXP組織內各個組織中 Oracle、VM 資料儲存和本機 NAS 儲存空間上的檔案共用以及 AWS 上的Cloud Volumes ONTAP （使用 NFS 協定）上的應用程式工作負載，並將資料備份到 Amazon Web Services 雲端儲存。</block>
+  <block id="2d2972fc6d16379955701a1cc8c6633f" category="sidebar">NetApp Ransomware Resilience可保護、偵測並支援從本機和雲端儲存的勒索軟體威脅中復原應用程式工作負載和檔案共用。勒索軟體復原能力可實現安全備份和復原，協助組織保護關鍵資料並維持 Oracle、VM 資料儲存、NAS 儲存等的業務連續性。</block>
 </blocks>

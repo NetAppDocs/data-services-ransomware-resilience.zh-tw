@@ -83,7 +83,7 @@ https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles
 link:rp-use-protect.html["了解工作負載優先順序或重要性"] 。
 
 .勒索軟體復原能力支援哪些工作負載？
-勒索軟體復原可以識別以下工作負載：Oracle、MySQL、檔案共用、區塊儲存、虛擬機器和虛擬機器資料儲存。
+勒索軟體復原能力可以識別以下工作負載：Oracle、檔案共享、區塊儲存、虛擬機器和虛擬機器資料儲存。
 
 如果您正在使用SnapCenter或SnapCenter for VMware，則這些產品支援的所有工作負載也會在勒索軟體復原功能中被識別。勒索軟體復原能力可以以與工作負載一致的方式保護和恢復SnapCenter和SnapCenter工作負載。
 
