@@ -2073,6 +2073,11 @@
   <block id="dce365633ffb688b7532470dfaf4e118" category="cell">*協定*</block>
   <block id="91fa08a58f816e98d83df1ce310eb825" category="cell">協定字段為可選字段。您可以使用 LDAP、LDAPS 或基於 StartTLS 的 LDAP。</block>
   <block id="f9115354bfb0b47a80e11c68936a7ec8" category="cell">請輸入您選擇的連接埠號</block>
-  <block id="ffcb2d1f993f068c61d2776ab07c354f" category="paragraph">提供屬性對應詳細資訊： * *顯示名稱* * *SID*（如果您使用 LDAP） * *使用者名稱* * *Unix ID*（如果您使用 NFS） * 如果您選擇 *包含選用屬性*，您也可以新增電子郵件地址、電話號碼、角色、州/省、國家/地區、部門、照片、經理 DN 或群組。</block>
-  <block id="8cab6e56434342fb39a14e12391a5d3e" category="paragraph">+ 選擇「進階」以新增可選的搜尋查詢。</block>
+  <block id="86c3d5aee71dba0d2e67a122a900b46d" category="paragraph">提供屬性映射詳細資訊：</block>
+  <block id="67abd0bd8cf8f6b948416d41be7c6f6a" category="list-text">*顯示名稱*</block>
+  <block id="aff175f709dc693d1f9ca4c44728163a" category="list-text">*SID*（如果您使用 LDAP）</block>
+  <block id="3b57547caa3754998fa617bd92514f25" category="list-text">*使用者名稱*</block>
+  <block id="c8a0546946d4ed57fd88fc4918d3825f" category="list-text">*Unix ID*（如果您使用 NFS）</block>
+  <block id="1358e8e29329a97048f0688a1813071f" category="list-text">如果您選擇“包含可選屬性”，您還可以新增電子郵件地址、電話號碼、角色、州/省、國家/地區、部門、照片、經理 DN 或群組。</block>
+  <block id="7703674a5321c1f23549682250a732e9" category="paragraph">選擇“*進階*”以新增可選的搜尋查詢。</block>
 </blocks>
