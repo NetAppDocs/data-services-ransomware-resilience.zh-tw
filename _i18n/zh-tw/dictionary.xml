@@ -2069,8 +2069,6 @@
   <block id="8a9b2764802b622f9894a669a606f74f" category="doc">擴充功能阻止功能已在工作負載層級啟用。</block>
   <block id="ab47595f128d75b47b3449fcd4dfb523" category="paragraph">啟用擴充封鎖功能後，現在是在工作負載層級而不是儲存虛擬機器層級啟用此功能。</block>
   <block id="a6493502d5fc22c0b3ccee818dc4a5a5" category="section-title">編輯使用者行為警報狀態</block>
-  <block id="685b0f2db45e4fc09a06ccb4695806de" category="inline-xref-macro">管理警報</block>
-  <block id="30acfc7aa0f5ff9593d73e769de766c0" category="paragraph">有關詳細信息，請參閱 <block ref="32161c93f86d45672d8429d13ea78e6b" category="inline-xref-macro-rx"></block>。</block>
   <block id="d5214a8deea026de61af736ebf8697dd" category="section-title">支援多個控制台代理</block>
   <block id="1a6a565def701385358a626d6728afd8" category="paragraph">勒索軟體復原功能現在支援使用多個控制台代理程式來管理相同系統。</block>
   <block id="76adc55b5a0beb97a709fbc0c204a3d0" category="paragraph">有關控制台代理的更多信息，請參閱<block ref="c97584494dd542160395e5c607ae4c2c" category="inline-link-macro-rx"></block>。</block>
@@ -2089,4 +2087,6 @@
   <block id="8e19d605b8be4e3be2157e822268633f" category="list-text">如果您選擇“包含可選屬性”，您還可以新增電子郵件地址、電話號碼、角色、州/省、國家/地區、部門、照片、經理 DN 或群組。選擇“*進階*”以新增可選的搜尋查詢。</block>
   <block id="2727f68982ff25e8b3c57e026120561d" category="section-title">2025年12月8日</block>
   <block id="4256b08931f8c14d28bbf33199e1b022" category="paragraph">勒索軟體復原功能現在允許您編輯使用者行為警報的狀態。您可以手動關閉和解決警報。</block>
+  <block id="8fe404d4b8af36b9844eb288d2706bbe" category="inline-link-macro">管理勒索軟體復原能力中的警報</block>
+  <block id="869c8807275d576171cb34b892652da6" category="paragraph">有關詳細信息，請參閱 <block ref="ca80a6cafecee489657bc722219fb267" category="inline-link-macro-rx"></block>。</block>
 </blocks>
