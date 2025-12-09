@@ -2069,7 +2069,6 @@
   <block id="8a9b2764802b622f9894a669a606f74f" category="doc">擴充功能阻止功能已在工作負載層級啟用。</block>
   <block id="ab47595f128d75b47b3449fcd4dfb523" category="paragraph">啟用擴充封鎖功能後，現在是在工作負載層級而不是儲存虛擬機器層級啟用此功能。</block>
   <block id="a6493502d5fc22c0b3ccee818dc4a5a5" category="section-title">編輯使用者行為警報狀態</block>
-  <block id="f143f02b29819ec9e761d9f292dea42c" category="paragraph">勒索軟體復原功能現在允許您編輯使用者行為警報的狀態。您可以手動關閉和解決警報。現在您也可以將警報標記為「審核中」。</block>
   <block id="685b0f2db45e4fc09a06ccb4695806de" category="inline-xref-macro">管理警報</block>
   <block id="30acfc7aa0f5ff9593d73e769de766c0" category="paragraph">有關詳細信息，請參閱 <block ref="32161c93f86d45672d8429d13ea78e6b" category="inline-xref-macro-rx"></block>。</block>
   <block id="d5214a8deea026de61af736ebf8697dd" category="section-title">支援多個控制台代理</block>
@@ -2079,7 +2078,6 @@
   <block id="ee1bc5da2dde4f02ef7aa47df921506a" category="doc">在NetApp Ransomware Resilience中管理警報</block>
   <block id="9a51095678260d2a753174230dbe8a88" category="paragraph">當NetApp Ransomware Resilience偵測到可能的攻擊時，它會在儀表板和通知區域顯示警報。勒索軟體復原能力會立即拍攝快照。查看勒索軟體復原能力*警報*標籤中的潛在風險。</block>
   <block id="6fe459ab097d6c4270e2ad317a017b93" category="paragraph">警報事件可以具有以下幾種狀態：</block>
-  <block id="afc3fd7b02af578176e65700acd6709b" category="list-text">*審核中*：您可以在評估事件時將其標記為審核中。</block>
   <block id="93771318f0ad483bcb651c0ded2c6033" category="admonition">攻擊解除後，無法恢復其狀態。如果您解除工作負載，則為應對潛在勒索軟體攻擊而自動取得的所有快照副本都將永久刪除。</block>
   <block id="c95e7dd9856afddc701e5bf3b384f093" category="paragraph">審查事件後，您需要確定該事件是否為潛在的攻擊。如果它們不構成實際威脅，就可以忽略不計。</block>
   <block id="c73a9fafaefc34f0b97adbaba4200dc9" category="paragraph">您可以忽略誤報或決定立即恢復資料。如果您忽略警報，勒索軟體復原能力會學習此行為並將其與正常操作關聯起來，並且不會再次針對此類行為發出警報。</block>
@@ -2090,4 +2088,5 @@
   <block id="6edf03555b64b68b413469994ca42164" category="list-text">*控制台代理* - 控制台代理程式應與使用者活動代理程式位於同一網路中，並可透過 SSH 連線至使用者活動代理程式的 IP 位址。</block>
   <block id="8e19d605b8be4e3be2157e822268633f" category="list-text">如果您選擇“包含可選屬性”，您還可以新增電子郵件地址、電話號碼、角色、州/省、國家/地區、部門、照片、經理 DN 或群組。選擇“*進階*”以新增可選的搜尋查詢。</block>
   <block id="2727f68982ff25e8b3c57e026120561d" category="section-title">2025年12月8日</block>
+  <block id="4256b08931f8c14d28bbf33199e1b022" category="paragraph">勒索軟體復原功能現在允許您編輯使用者行為警報的狀態。您可以手動關閉和解決警報。</block>
 </blocks>
