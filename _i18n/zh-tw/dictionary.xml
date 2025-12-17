@@ -270,8 +270,6 @@
   <block id="e742b92803487dd57d41c5028236224e" category="section-title">準備演習重置選項問題</block>
   <block id="20fd4e2b91312c8ee1419aa853c936e1" category="paragraph">如果您選擇ONTAP 9.11.1 磁碟區進行勒索軟體攻擊準備演習，勒索軟體復原能力會發送警報。如果您使用「複製到磁碟區」選項還原資料並重設鑽孔機，則重設操作將會失敗。</block>
   <block id="4662983aa04c5f2df5dded885a7f15c5" category="section-title">Amazon FSx for NetApp ONTAP限制</block>
-  <block id="1a7d7cabc8f40b807c0e3d0e18e231ec" category="paragraph">勒索軟體復原能力支援Amazon FSx for NetApp ONTAP系統。此系統有以下限制：</block>
-  <block id="99aba3ab78d3c55f241d04672f628ac4" category="list-text">Fsx for ONTAP不支援備份策略。在這種環境下，您應該使用Amazon FSx執行備份作業。您可以使用勒索軟體復原功能來恢復這些工作負載。</block>
   <block id="ae06555bf1899a4ef9c10d46f1e1d5ab" category="list-text">復原操作僅從快照執行。</block>
   <block id="59ad4756ad1f9899a8154575ba4aeb8f" category="summary">NetApp Ransomware Resilience採用角色來管理每個使用者對特定功能和操作的存取權。</block>
   <block id="bb1accae7f94f7f55d6103b9e6ed4887" category="paragraph">勒索軟體復原能力使用特定於勒索軟體復原能力的以下角色。</block>
@@ -342,10 +340,6 @@
   <block id="76722f595147e9e40ab79fef549441a4" category="admonition">我們建議您不要停用快照策略。</block>
   <block id="ef54d92c7cc927ca7eb5e489c30b0e9b" category="summary">在發現過程中，勒索軟體復原力會分析所有控制台代理和帳戶的系統中的所有捲和檔案。</block>
   <block id="e9be3c13b1ed73a120f1b23e2cefb058" category="doc">發現NetApp Ransomware Resilience中的工作負載</block>
-  <block id="d8200bbebd878a82fc2bda0a2246f0ed" category="paragraph">在使用NetApp Ransomware Resilience之前，它需要先發現資料。在發現過程中，勒索軟體復原力會分析組織內所有控制台代理程式和專案系統中的所有捲和檔案。</block>
-  <block id="e4838671e2eb3743491ad0a9715b9adc" category="admonition">勒索軟體復原能力無法發現使用FlexGroup磁碟區的工作負載。</block>
-  <block id="153ab5406a008784e1089c885b56c101" category="paragraph">勒索軟體復原能力在儀表板中發現並顯示受支援和不受支援的系統配置。</block>
-  <block id="a0b703942dbd0a9a1789ecae6d6334fa" category="paragraph">勒索軟體復原能力會檢查您目前的備份保護、快照副本和NetApp自主勒索軟體保護選項。然後它會推薦一些改善勒索軟體防護的方法。</block>
   <block id="66fde4240a0e74342b069b682c733504" category="paragraph">*如何發現工作負載？ *您可以執行以下操作：</block>
   <block id="e532d8f244f0ea9cd5619802d3cb8f03" category="list-text">在每個控制台代理程式中，選擇您想要發現工作負載的系統。如果您想保護環境中的特定工作負載而不是其他工作負載，您可能會受益於此功能。</block>
   <block id="6785cfec3a12064afa1fdb005b389154" category="list-text">發現先前選擇的系統新建立的工作負載。</block>
@@ -364,7 +358,6 @@
   <block id="aa38c459f1855c79933ef88c2500bd20" category="list-text">若要發現特定控制台代理程式的工作負載，請選擇要發現工作負載的控制台代理旁邊的「選擇系統」。</block>
   <block id="b5df43021af6103a6e0b208280b7bd9c" category="list-text">選擇您想要發現工作負載的系統。</block>
   <block id="6717014f0e48b7ab08c9846925b42c93" category="list-text">選擇*發現*。</block>
-  <block id="0f7c9de463aec870ecd99a5af61d3f00" category="paragraph">勒索軟體復原力僅發現具有選定係統的控制台代理的工作負載資料。此過程可能需要幾分鐘。</block>
   <block id="60b91ac4e4f14d7cb892956fc74437d2" category="list-text">若要下載已發現的工作負載列表，請選擇*下載結果*。</block>
   <block id="f78bb7fa8ba897b7d7d1b1b09e4e9938" category="list-text">若要顯示勒索軟體恢復儀表板，請選擇「前往儀表板」。</block>
   <block id="ac0d10b22ed925b5d7db4e7ab168496b" category="paragraph">儀表板顯示資料保護健康狀況。隨著新工作負載的發現，處於危險中或受保護的工作負載的數量會更新。</block>
@@ -375,14 +368,10 @@
   <block id="0e8bd87ff5fa544ac4a41711a3b607ee" category="section-title">發現先前選定的系統新建立的工作負載</block>
   <block id="50cb53872ff54665f11a232b976038d3" category="paragraph">如果您已經選擇了要發現的系統，則可以從儀表板中發現這些環境的新建立的工作負載。</block>
   <block id="349f26e9c45e28e1bbdcacd539035898" category="list-text">若要確定最後發現的日期，請查看勒索軟體復原力儀表板右上角*刷新*圖示旁的日期和時間戳記。</block>
-  <block id="a1fdf07a1b0124ff900cdfc1acd33197" category="list-text">從儀表板中，選擇「刷新圖示」以尋找新的工作負載。</block>
   <block id="cee654483027bd7fe0b0908f5113b46f" category="section-title">發現新系統</block>
   <block id="3a268026d4270688c4ec208104cc118c" category="paragraph">如果您已經發現了系統，您可以找到新的或以前未選擇的系統。</block>
   <block id="12138171b6ceeb4bdc45d66e55bebe1c" category="inline-image-macro">垂直行動</block>
   <block id="981597877eeda1ab60f9f862028665bf" category="list-text">從勒索軟體恢復選單中，選擇垂直<block ref="ddacd9651566dbd67045ad6fbaf81a6c" category="inline-image-macro-rx" type="image"></block>...右上角的選項。從下拉式選單中選擇*設定*。</block>
-  <block id="7834f1609389d2dc0ac0789a0ac2db2f" category="list-text">在工作負載發現卡中，選擇*發現工作負載*。</block>
-  <block id="8d012291b3058b8e8f92869c64fb1559" category="admonition">此過程可能需要幾分鐘，載入圖示顯示進度。</block>
-  <block id="6908dff83acd73fda35b7cd9ce18af1f" category="list-text">勒索軟體復原力可以發現受支援和不受支援的系統。如果系統的ONTAP版本低於所需版本，則勒索軟體復原能力不支援該系統。當您將滑鼠停留在某個不支援的系統上時，工具提示會顯示原因。選擇您想要發現工作負載的系統。</block>
   <block id="405f846fd5caab9c6bb41e637ac55c97" category="summary">尋找有關NetApp Ransomware Resilience的常見問題的答案。</block>
   <block id="815a60d80ffbc32f6db251b3410900b2" category="doc">關於NetApp Ransomware Resilience的常見問題解答</block>
   <block id="0257967210bdc685c6f54c2fd5c5300f" category="paragraph">如果您只是想快速找到有關NetApp Ransomware Resilience的問題的答案，那麼這個常見問題解答可以提供協助。</block>
@@ -2036,7 +2025,6 @@
   <block id="0cadfa5b82d6d1eba924c112db6ab9fc" category="list-text">*識別* NetApp本地 NAS（NFS 或 CIFS）和 SAN（FC、iSCSI 和 NVMe）系統中所有基於應用程式、檔案共用或 VMware 管理的工作負載，包括NetApp Console、專案和控制台代理程式。勒索軟體彈性對資料優先級進行分類，並為您提供勒索軟體彈性改進的建議。</block>
   <block id="182b9ed848b82506c10ba162f10e3f5b" category="list-text">保護基於應用程式的工作負載（例如 Oracle、VMware 資料儲存和檔案共用）中的資料。</block>
   <block id="aa07eabc400eb4ccb13f116e99da0b48" category="list-text">*工作負載*：勒索軟體復原中的工作負載可以包括 Oracle 資料庫、VMware 資料儲存或檔案共用。</block>
-  <block id="d13f99c12403fe14a2acc4fe8db5ebad" category="paragraph">*勒索軟體復原能力發現了什麼？ *勒索軟體復原能力評估 Oracle 應用程式、VMware 資料儲存、檔案共用和區塊儲存。</block>
   <block id="6b62768f3f94df043ea31bf9c43b2a42" category="paragraph">勒索軟體復原能力可以識別以下工作負載：Oracle、檔案共享、區塊儲存、虛擬機器和虛擬機器資料儲存。</block>
   <block id="f6967390d49d08c53cc88d3cdf42eb92" category="list-text">Oracle SnapCenter</block>
   <block id="897c29783a147c6c7b7844f2d4a9e81a" category="paragraph">預覽版服務可保護BlueXP組織內各個組織中 Oracle、VM 資料儲存和本機 NAS 儲存空間上的檔案共用以及 AWS 上的Cloud Volumes ONTAP （使用 NFS 協定）上的應用程式工作負載，並將資料備份到 Amazon Web Services 雲端儲存。</block>
@@ -2089,4 +2077,17 @@
   <block id="4256b08931f8c14d28bbf33199e1b022" category="paragraph">勒索軟體復原功能現在允許您編輯使用者行為警報的狀態。您可以手動關閉和解決警報。</block>
   <block id="8fe404d4b8af36b9844eb288d2706bbe" category="inline-link-macro">管理勒索軟體復原能力中的警報</block>
   <block id="869c8807275d576171cb34b892652da6" category="paragraph">有關詳細信息，請參閱 <block ref="ca80a6cafecee489657bc722219fb267" category="inline-link-macro-rx"></block>。</block>
+  <block id="22a81a009e8d21bf17e2788fdbfa4a6d" category="paragraph">勒索軟體復原能力支援Amazon FSx for NetApp ONTAP系統。以下限制適用於Amazon FSx for ONTAP：</block>
+  <block id="e414901fbfa8ee419bbb8a9bf7c11320" category="list-text">Amazon FSx for ONTAP不支援備份策略。在這種環境下，您應該使用Amazon FSx執行備份作業。您可以使用勒索軟體復原功能來恢復這些工作負載。</block>
+  <block id="f20af4e11539d270463e7ed46557be6f" category="paragraph">在使用NetApp Ransomware Resilience之前，它首先需要發現工作負載資料。在發現過程中，勒索軟體復原力會分析組織內所有控制台代理程式和專案系統中的所有捲和檔案。</block>
+  <block id="55971de7d1268c37251f60641b742b76" category="paragraph">在「發現」儀表板中，「勒索軟體復原能力」顯示受支援且不受支援的系統配置。勒索軟體復原能力評估 Oracle 應用程式、VMware 資料儲存、檔案共用和區塊儲存。</block>
+  <block id="1e55889dc96c3aa2614c39626c9cecdd" category="admonition">勒索軟體復原能力無法發現使用FlexGroup 的磁碟區的工作負載。</block>
+  <block id="c0605366a345249c74664f31f92636c4" category="paragraph">勒索軟體復原能力會檢查您目前的備份保護、快照副本和NetApp自主勒索軟體保護選項。勒索軟體復原能力還可以偵測來自SnapCenter for VMware（用於 VM 資料儲存）、 SnapCenter for Oracle 和NetApp Backup and Recovery （用於檔案共用和 VM 檔案共用）的保護資訊。然後它會推薦一些改善勒索軟體防護的方法。</block>
+  <block id="20571d4d9a9f67814984ceaa9897d90b" category="paragraph">勒索軟體復原功能僅針對選定係統中的控制台代理程式發現工作負載資料。此過程可能需要幾分鐘。</block>
+  <block id="0c4db502345984347741cd5a9a3da447" category="list-text">在控制台中，選擇“刷新”圖示以尋找新的工作負載。</block>
+  <block id="242b6b00ff2f35d933e337704d202041" category="list-text">在工作負載發現卡中，選擇*發現工作負載*。發現過程可能需要幾分鐘。載入圖示顯示進度。</block>
+  <block id="728cc93ad9329b5fca77365b0336ce77" category="list-text">勒索軟體復原力可以發現受支援和不受支援的系統。如果系統的ONTAP版本低於所需版本，則不支援該系統。當您將滑鼠停留在某個不支援的系統上時，工具提示會顯示原因。選擇您想要發現工作負載的系統。</block>
+  <block id="ab066b3292d8ab61ef3b5c77169cdd19" category="section-title">更多資訊</block>
+  <block id="48bf90c5e99016f124c48c02a77dc8fd" category="inline-link-macro">NetApp Console授權和訂閱文檔</block>
+  <block id="0fa9a3c869139d736cd7d6df862b94e3" category="list-text"><block ref="0fa9a3c869139d736cd7d6df862b94e3" category="inline-link-macro-rx"></block></block>
 </blocks>

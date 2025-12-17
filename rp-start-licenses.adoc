@@ -280,3 +280,10 @@ TIP: 此訊息也出現在Licenses and subscriptions以及 https://docs.netapp.c
 . 在下拉詳細資料中，取消勾選「目前付款方式過期後使用」方塊。
 . 選擇*儲存*。
 
+
+
+
+== 更多資訊
+
+* link:https://docs.netapp.com/us-en/console-licenses-subscriptions/index.html["NetApp Console授權和訂閱文檔"^]
+
