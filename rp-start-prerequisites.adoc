@@ -109,9 +109,9 @@ NOTE: 如果您已使用非管理員憑證將ONTAP叢集連接到控制台，則
 
 
 
-== 可疑的使用者行為
+== 可疑用戶行為要求
 
-為了使勒索軟體復原能力提供有關可疑使用者行為的警報，您必須設定使用者活動代理程式。有關詳細信息，請參閱 link:suspicious-user-activity.html["在NetApp Ransomware Resilience中配置可疑使用者活動偵測"]。
+為了使勒索軟體復原能力提供有關可疑使用者行為的警報，您必須設定使用者活動代理程式。要安装用户活动代理，请确保您的系统符合 link:suspicious-user-activity.html["要求"]。
 
 
 

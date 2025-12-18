@@ -168,7 +168,6 @@
   <block id="08c9bb2f955e4452b60d6285d467218b" category="paragraph">勒索軟體復原功能充分利用了多種NetApp技術，以便您的儲存管理員、資料安全管理員或安全營運工程師可以實現以下目標：</block>
   <block id="ab76e9ddf0b5cc0436537248ef996b33" category="list-text">透過對資料啟用備份、快照副本和勒索軟體保護策略來*保護*您的工作負載。</block>
   <block id="2260f3efb7f7ff8d7a4a295911d64e87" category="list-text">*偵測*可能是勒索軟體攻擊的異常。註腳：[儘管攻擊可能未被發現，但我們的研究表明， NetApp技術已對某些基於文件加密的勒索軟體攻擊實現了高度檢測。 ]</block>
-  <block id="61a5394873cb968131d6938cc55d2316" category="list-text">透過自動啟動鎖定的防篡改NetApp ONTAP快照來*應對*潛在的勒索軟體攻擊，這樣副本就不會被意外或惡意刪除。您的備份資料將保持不變，並在來源和目標端受到端到端的保護，免受勒索軟體攻擊。</block>
   <block id="2b9059f4bfe46561bd84cd4afc8e39d5" category="list-text">透過協調多種NetApp技術來*恢復*您的工作負載，從而幫助加快工作負載的正常運作時間。您可以選擇恢復特定的磁碟區。勒索軟體彈性提供最佳選項的建議。</block>
   <block id="c81ae261ce25e22a1af05caba692e648" category="list-text">*管理*：實施勒索軟體保護策略並監控結果。</block>
   <block id="2df7b40bf0b6e6b4631432c24ce9a052" category="inline-image-macro">圖表展示了勒索軟體抵禦攻擊的策略，包括識別、保護、偵測、回應和復原</block>
@@ -184,8 +183,6 @@
   <block id="4a72582f981b12d4f27dceb8b0d7dbb9" category="list-text">應用精心策劃的恢復以滿足 RPO 政策。勒索軟體復原能力透過使用多種NetApp復原服務（包括NetApp Backup and Recovery（以前稱為雲端備份）和SnapCenter）來協調勒索軟體事件的復原。</block>
   <block id="5af59cc2b4c7693a13f53462b371bb84" category="list-text">使用基於角色的存取控制 (RBAC) 來管理對功能和操作的存取。</block>
   <block id="20b4f77bd00b4f63a49ec8e08f3bf6a6" category="section-title">成本</block>
-  <block id="6562c2bca564e449fe43db01de50095f" category="paragraph">NetApp不會向您收取使用 Ransomware Resilience 試用版的費用。</block>
-  <block id="d593a9e1e3308f3f58bd4666acd9e7d2" category="admonition">隨著 2024 年 10 月的發布，Ransomware Resilience 的新部署提供了 30 天的免費試用。在此之前，Ransomware Resilience 提供了 90 天的免費試用。如果您已經註冊了 90 天免費試用，則該試用有效期為 90 天。</block>
   <block id="644c6176733b0f8cdca928e0cc985955" category="paragraph">如果您同時擁有備份和復原以及勒索軟體復原功能，則受這兩種產品保護的任何公開資料僅由勒索軟體復原功能計費。</block>
   <block id="371ddff75d8ad1c060c49de732c7531f" category="paragraph">購買許可證或 PayGo 訂閱後，任何啟用了勒索軟體偵測策略（自主勒索軟體保護）（由勒索軟體復原力發現或設定）且至少有一個快照或備份策略的工作負載，勒索軟體復原力都會將其歸類為“受保護”，併計入購買的容量或 PayGo 訂閱。如果在沒有檢測策略的情況下發現工作負載，即使它具有備份或快照策略，也會將其歸類為“有風險”，並且不會計入購買的容量。</block>
   <block id="9a093ed6d29fdd7ce44eca3fd1e3b883" category="paragraph">90 天試用期結束後，受保護的工作負載將計入購買的容量或訂閱。勒索軟體恢復按每 GB 為與受保護工作負載相關的資料（在效率之前）收費。</block>
@@ -769,16 +766,13 @@
   <block id="a0fd18fc337758e79e647649d69f4149" category="paragraph"><block ref="a0fd18fc337758e79e647649d69f4149" category="inline-image-macro-rx" type="image"></block></block>
   <block id="955d1101c1424d23d653984e03cf7099" category="list-text">對於該事件，選擇下載圖示並以 CSV 格式下載受影響文件的清單。</block>
   <block id="efe8304005b9c8de768eaef14e8d07f2" category="summary">NetApp Ransomware Resilience儀表板提供有關工作負載保護健康狀況的資訊。您可以快速確定處於危險之中或受保護的工作負載、受事件影響或處於復原中的工作負載，並透過查看受保護或處於危險中的儲存量來衡量保護程度。您也可以使用儀表板來查看保護建議並採取行動。</block>
-  <block id="58fb3a7f55ef002a5ceea9d69c7db695" category="doc">使用 NetAPp 勒索軟體復原力儀表板監控工作負載健康狀況</block>
   <block id="8c036228e726b58da7c61083499276b0" category="paragraph">NetApp Ransomware Resilience儀表板提供有關工作負載保護健康狀況的概覽資訊。您可以快速確定處於危險之中或受保護的工作負載，識別受事件影響或處於復原中的工作負載，並透過查看受保護或處於危險中的儲存量來衡量保護程度。</block>
-  <block id="12969eef062c86f82bae05cb86d6089a" category="paragraph">使用儀表板查看保護建議、變更設定、下載報告和檢視文件。</block>
   <block id="b5695a87e857b3dfe980329900e2d5c8" category="section-title">使用儀表板檢查工作負載健康狀況</block>
   <block id="2711b34ed6f854164ab28f6ba7d757fc" category="list-text">控制台發現您的工作負載後，勒索軟體恢復儀表板將顯示工作負載資料保護健康狀況。</block>
   <block id="1de66de0484295c7b0e311cd3746dab8" category="inline-image-macro">儀表板頁面</block>
   <block id="1541b6face8479b500e3accafb066eee" category="paragraph"><block ref="1541b6face8479b500e3accafb066eee" category="inline-image-macro-rx" type="image"></block></block>
   <block id="bbb730a044e88545c3476ffea030b9f1" category="list-text">在儀表板中，您可以在每個窗格中執行以下操作：</block>
   <block id="5cf652b0493bef09f6f5bcbd5925413f" category="list-text">*工作負載資料保護*：選擇*查看全部*可在保護頁面上查看所有處於危險中或受保護的工作負載。當保護等級與保護策略不符時，工作負載就會面臨風險。請參閱<block ref="2b2daeeb32402291362fa9fa843a5c7e" category="inline-link-macro-rx"></block> 。</block>
-  <block id="4159a2cc0463c712e016f2bfb6e3d137" category="admonition">選擇“i”工具提示即可查看有關此數據的提示。若要增加工作量限制，請選擇此 i 註解內的 *增加工作量限制*。選擇此選項將帶您進入控制台支援頁面，您可以在其中建立案例單。</block>
   <block id="7946ca9134fecb1e363f88a194b4e259" category="inline-link-macro">響應偵測到的警報</block>
   <block id="3e68731452668c74a209b358c132dbaa" category="list-text">*警報和工作負載資料復原*：選擇*查看全部*可查看已影響您的工作負載的活動事件、在事件消除後準備恢復的事件或正在復原的事件。請參閱<block ref="a57b82018dcad508c33f5a5c54351028" category="inline-link-macro-rx"></block> 。</block>
   <block id="8cdbaff59230fdce1ca498813a54b0c1" category="list-text">事件分為以下狀態之一：</block>
@@ -843,7 +837,6 @@
   <block id="afce881d2940c0ad45fd669e83552ce8" category="list-text">從勒索軟體復原中的「建議動作」窗格中，選擇一個建議，然後選擇「*檢視並修復*」。</block>
   <block id="b10e70829881666c441e82656f6ce36d" category="list-text">若要稍後再取消該操作，請選擇「*取消*」。</block>
   <block id="1ac10a835f53c6060811d5cfb8fbff70" category="paragraph">該建議將從「待辦事項」清單中清除並出現在「已忽略」清單中。</block>
-  <block id="d546413031876c1e4d267a59f45f1a37" category="admonition">您稍後可以將已消除的項目變更為待辦事項。當您將某項標記為已完成或將已解除的項目變更為待辦事項時，總運算元會增加 1。</block>
   <block id="91ac2d2291b1ce27106b795a77ccc0f3" category="list-text">要查看有關如何根據建議採取行動的信息，請選擇*訊息*圖示。</block>
   <block id="00a080932e73f4d8ad7b946bbd5191d6" category="section-title">將保護資料匯出到 CSV 文件</block>
   <block id="daed4261480079bedadbb918fa15519d" category="paragraph">您可以匯出資料並下載顯示保護、警報和復原詳細資訊的 CSV 檔案。</block>
@@ -851,10 +844,8 @@
   <block id="6f9c031059ce499b64d237a642150228" category="list-text">*保護*：包含所有工作負載的狀態和詳細信息，包括勒索軟體彈性標記為受保護或處於危險中的工作負載總數。</block>
   <block id="4f303d58ecece08d64f03bf8e77bc7a5" category="list-text">*警報*：包括所有警報的狀態和詳細信息，包括警報總數和自動快照。</block>
   <block id="1973c46d3c0e52cd5edacad3e53db5ac" category="list-text">*恢復*：包括需要恢復的所有工作負載的狀態和詳細信息，包括勒索軟體恢復標記為「需要恢復」、「進行中」、「恢復失敗」和「成功恢復」的工作負載總數。</block>
-  <block id="c7c231dbb05238c9bf0176f11aa17d87" category="paragraph">從頁面下載的 CSV 檔案僅包含該頁面的資料。</block>
   <block id="7206de626f5f3d32701a60ffd5ca9c45" category="paragraph">CSV 檔案包含所有控制台系統上所有工作負載的資料。</block>
   <block id="88720d11d44ed6c674eee114228c0d69" category="inline-image-macro">刷新選項</block>
-  <block id="94f33634f7c58d79aeccfd3a5782f0d8" category="list-text">從勒索軟體復原力儀表板中，選擇*刷新*<block ref="94d384894f036157c348eadc55c40952" category="inline-image-macro-rx" type="image"></block>右上角的選項可刷新文件中顯示的資料。</block>
   <block id="c4b039b69c313acc38209c4b1d1da8ef" category="inline-image-macro">下載選項</block>
   <block id="fdf229b723a77d85d0134f45f3d183ce" category="list-text">從頁面選擇*下載*<block ref="c05ed6b7dc469ce447520bacbf36b3ca" category="inline-image-macro-rx" type="image"></block>選項。</block>
   <block id="f34a80cb389a208db15e7ae434fbddf2" category="list-text">如果您選擇了「*報告*」選項，請選擇預先配置的命名文件，然後選擇「*下載（CSV）*」或「*下載（JSON）*」。</block>
@@ -1587,13 +1578,9 @@
   <block id="2a4edc5ec6e55f07dba0609dc2cd6d87" category="summary">勒索軟體復原中的可疑使用者活動偵測可讓您偵測可能構成潛在威脅的使用者活動。</block>
   <block id="906ec8bab01967c36f2f073eff9f54df" category="doc">在NetApp Ransomware Resilience中配置可疑使用者活動偵測</block>
   <block id="9ba1db4a2c84400f14de2d58496b9f52" category="paragraph">勒索軟體抵禦能力支援在偵測策略中偵測可疑使用者行為，使您能夠在使用者層級解決勒索軟體事件。</block>
-  <block id="90c4c763135bd7a7443ed22e4149185b" category="section-title">代理商和收藏家</block>
-  <block id="2b294b61543173e7462d37def0724cef" category="paragraph">一個代理可以託管多個資料收集器。資料收集器將資料傳送到 SaaS 位置進行分析。有兩種類型的收集器：</block>
   <block id="fa83d0f077ae64e1df0b8a9ed9982815" category="paragraph">收集器在勒索軟體恢復設定中配置。</block>
   <block id="4f047e83e52e21d5382adc1b5dbf3119" category="section-title">新增用戶活動代理</block>
   <block id="4d4379036f7207029fbe126649ccc0a6" category="paragraph">使用者活動代理程式是資料收集器的可執行環境；資料收集器與勒索軟體復原共享使用者活動事件。您必須建立至少一個使用者活動代理程式才能啟用可疑使用者活動偵測。</block>
-  <block id="5a2ebfb8baa378cfcfcba58bbb1380c2" category="section-title">要求</block>
-  <block id="176c18a49aa227401be466a34a903666" category="paragraph">**作業系統需求**</block>
   <block id="696c660ff8d9323e55146a6dbd4e4088" category="cell">作業系統</block>
   <block id="2e5d14f7919ff3c6138e7845aec4f915" category="cell">支援的版本</block>
   <block id="c158e3ead98c5929e4228914a1e6e615" category="cell">AlmaLinux</block>
@@ -1610,7 +1597,6 @@
   <block id="ce370a856bc8592a8206af596cace9ea" category="cell">15 SP4（64 位元）至 15 SP6（64 位元），包括 SELinux</block>
   <block id="3d945423f8e9496c429a5d8c65b4604f" category="cell">Ubuntu</block>
   <block id="6072b01d67af0366830f2fef13cdf0da" category="cell">20.04 LTS（64 位元）、22.04 LTS（64 位元）和 24.04 LTS（64 位元）</block>
-  <block id="e5fc81082964adedb5790746c18c9fb7" category="paragraph">**伺服器要求**</block>
   <block id="fd9b966c1c6f66e7c4f38e133767c880" category="paragraph">伺服器必須滿足以下最低要求：</block>
   <block id="a2ad8789f963859e0c26a6daaec4a76b" category="list-text">如果這是您第一次建立使用者活動代理，請前往**儀表板**。在**使用者活動**圖塊中，選擇**啟動**。</block>
   <block id="44e08a5b01e752ac11f59bba4e07dea7" category="paragraph">如果您要新增其他使用者活動代理，請前往*設定*，找到**使用者活動**圖塊，然後選擇**管理**。在使用者活動畫面上，選擇**使用者活動代理**選項卡，然後選擇**新增**。</block>
@@ -1787,8 +1773,6 @@
   <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">知識和支持</block>
   <block id="69d1e7a74a8d35e4122500df6d2f5042" category="list-text">ONTAP或Cloud Volumes ONTAP叢集（ ONTAP版本 9.11.1 或更高版本）支援勒索軟體復原功能。</block>
   <block id="51fecb5d19a6637dea83445678fd4ffa" category="section-title">資料備份</block>
-  <block id="9755e4a474d0024a8dcd40393e571716" category="section-title">可疑的使用者行為</block>
-  <block id="34691f87b892c333fe1b7a23452dcda6" category="paragraph">為了使勒索軟體復原能力提供有關可疑使用者行為的警報，您必須設定使用者活動代理程式。有關詳細信息，請參閱 <block ref="f3d3e5726f7feb4b59ca728c906df758" category="inline-link-macro-rx"></block>。</block>
   <block id="793485138a653779a0c8cb91bf9fc979" category="list-text">選擇準備演習類型。若要從加密資料外洩手動恢復，請選擇**自訂恢復**。若要從可疑用戶活動中恢復，請選擇**資料外洩**。</block>
   <block id="8e0b9d66ccd774ed98d0b31d0e6ed305" category="admonition">演練運行時，您無法編輯準備演練配置。您可以重置鑽孔機以停止它並修改配置。</block>
   <block id="4fa0264ac4080dbcb96449b3dd2eff57" category="paragraph">勒索軟體恢復許可證不包括其他NetApp產品。但是，即使您沒有單獨的備份和復原許可證，勒索軟體復原能力也可以與NetApp Backup and Recovery整合。</block>
@@ -1848,11 +1832,9 @@
   <block id="7a7f05bb105ddcf9c0d221e37f8a923c" category="list-text">若要封鎖您環境中的可疑用戶，請選擇該用戶名下的「封鎖」。</block>
   <block id="bc8ffb69fb560086f529e0097158caad" category="admonition">如果您關閉警報，則無法變更其狀態或撤銷此變更。</block>
   <block id="7149ff1e14f0a158752906babaa08dc3" category="list-text">對於該事件，選擇下載圖示以 CSV 格式下載受影響文件的清單。</block>
-  <block id="8c7f95ceb912c8aea11de028710caf47" category="paragraph">勒索軟體彈性透過分析ONTAP中 FPolicy 產生的使用者活動事件來偵測可疑的使用者活動。要收集用戶活動數據，您需要部署一個或多個用戶活動代理程式。該代理程式是可連接到租用戶上的裝置的 Linux 伺服器或 VM。</block>
   <block id="fe1bb8cb54f03cf7a69c3e9568118b30" category="list-text">**資料收集器**從ONTAP收集使用者活動資料。</block>
   <block id="b6173a051353d59a4ee775fcef288441" category="list-text">**使用者目錄連接器**連接到您的目錄以將使用者 ID 對應到使用者名稱。</block>
   <block id="508899c1c018f291af4cb6a0423c426c" category="paragraph">*所需的控制台角色* 若要啟動可疑使用者活動偵測，您需要組織管理員角色。對於可疑使用者活動的後續配置，您需要 Ransomware Resilience 使用者行為管理員角色。<block ref="d9cbbacd5ef5cff6a1660fdb9d259f2f" category="inline-link-macro-rx"></block>。</block>
-  <block id="53b036bcd07f4ebcfe2ec32a98556822" category="paragraph">要安裝用戶活動代理，您需要一個符合以下支援的作業系統和伺服器要求的主機或虛擬機器。</block>
   <block id="398de83ff8f318218f9eaedb05929ef0" category="paragraph">成功建立使用者活動代理程式後，返回**設定**選單，然後在使用者活動圖塊中選擇**管理**。選擇**用戶活動代理**選項卡，然後選擇用戶活動代理以查看有關它的詳細信息，包括數據收集器和用戶目錄連接器。</block>
   <block id="a83ea9a287c9fdd0689933a464055150" category="paragraph">若要將使用者 ID 對應到使用者名，您必須建立使用者目錄連接器。</block>
   <block id="89bd0177a422e5d81fce2f8f82dac3f6" category="paragraph-title">使用勒索軟體恢復功能需要許可證嗎？</block>
@@ -2029,14 +2011,12 @@
   <block id="f6967390d49d08c53cc88d3cdf42eb92" category="list-text">Oracle SnapCenter</block>
   <block id="897c29783a147c6c7b7844f2d4a9e81a" category="paragraph">預覽版服務可保護BlueXP組織內各個組織中 Oracle、VM 資料儲存和本機 NAS 儲存空間上的檔案共用以及 AWS 上的Cloud Volumes ONTAP （使用 NFS 協定）上的應用程式工作負載，並將資料備份到 Amazon Web Services 雲端儲存。</block>
   <block id="2d2972fc6d16379955701a1cc8c6633f" category="sidebar">NetApp Ransomware Resilience可保護、偵測並支援從本機和雲端儲存的勒索軟體威脅中復原應用程式工作負載和檔案共用。勒索軟體復原能力可實現安全備份和復原，協助組織保護關鍵資料並維持 Oracle、VM 資料儲存、NAS 儲存等的業務連續性。</block>
-  <block id="05a32e62ff35ead335cfbdaf6b19a9b2" category="paragraph">必須安裝至少一個使用者活動代理程式才能啟動 Ransomware Resilience 中的可疑使用者活動偵測。當您從勒索軟體復原儀表板啟動可疑使用者活動功能時，您需要提供代理主機資訊。</block>
   <block id="f075180c986e3a7a8e0bad4fcec7c485" category="cell">15.3（64 位）至 15.6（64 位）</block>
   <block id="32d094cff0ab508ab383051555e7844b" category="cell">8.10（64 位元）、9.1（64 位元）至 9.6（64 位元），包括 SELinux</block>
   <block id="1d9fc183665bd1e195391190be506894" category="cell">紅帽</block>
   <block id="40a4866844a145aa0d01d094ea38e0d3" category="cell">Rocky 9.4 (64 位) 至 9.6 (64 位)，包括 SELinux</block>
   <block id="ec0c7e841d2f0e7a16a6b4b47a57ecd8" category="list-text">CPU：4 核</block>
   <block id="177d9a4926538bc7d9bcbb8ad6ca3f0f" category="list-text">**內存**：16GB 內存</block>
-  <block id="f01ab58abd28b55b4954d17a62080293" category="list-text">**磁碟空間**：35 GB 可用磁碟空間</block>
   <block id="191a3f30ab05799955dc06c5f394b591" category="list-text">配置連接。請在每個欄位中填寫所需資訊。</block>
   <block id="6f16a5f8ff5d75ab84c018adacdfcbb7" category="cell">場地</block>
   <block id="8099786db97f0913cd0cefcd4a7bc6fd" category="cell">請為使用者目錄連接器輸入一個唯一的名稱</block>
@@ -2090,4 +2070,74 @@
   <block id="ab066b3292d8ab61ef3b5c77169cdd19" category="section-title">更多資訊</block>
   <block id="48bf90c5e99016f124c48c02a77dc8fd" category="inline-link-macro">NetApp Console授權和訂閱文檔</block>
   <block id="0fa9a3c869139d736cd7d6df862b94e3" category="list-text"><block ref="0fa9a3c869139d736cd7d6df862b94e3" category="inline-link-macro-rx"></block></block>
+  <block id="ee23d61365a6507dff70606d3790e1de" category="list-text">*應對*潛在的勒索軟體攻擊，自動啟動一個鎖定的時間點快照，以防止副本被意外或惡意刪除。您的備份資料將保持不可更改，並在來源端和目標端受到端到端的保護，免受勒索軟體攻擊。</block>
+  <block id="7e56b5e89b8f29e1bd4a5ecf15c201e8" category="paragraph">您可以免費試用 Ransomware Resilience 30 天。NetApp不會向您收取使用 Ransomware Resilience 試用版的費用。</block>
+  <block id="773dd0f5eb55036249a06d189bd46093" category="section-title">可疑用戶行為要求</block>
+  <block id="567dcfd6302e5511c1b546a4df21a679" category="inline-link-macro">要求</block>
+  <block id="3fa9bd6939fae83104d5483bb4df09cf" category="paragraph">為了使勒索軟體復原能力提供有關可疑使用者行為的警報，您必須設定使用者活動代理程式。要安装用户活动代理，请确保您的系统符合 <block ref="48db2132a53f1fefbda7dcf1745aa324" category="inline-link-macro-rx"></block>。</block>
+  <block id="7f176789d86d465c8df04184cd91e82b" category="doc">使用NetApp Ransomware Resilience儀表板監控工作負載運作狀況</block>
+  <block id="bb0857f5685be3107534e9cb3600a43f" category="paragraph">使用控制面板查看保護建議、變更設定和下載報告。</block>
+  <block id="acf2855d96f83cab1f4ac80844c18ed5" category="admonition">選擇“i”工具提示即可查看有關此數據的提示。若要增加工作量限制，請選擇此 i 註解內的 *增加工作量限制*。選擇此選項將帶您進入控制台支援頁面，您可以在其中建立案例單。</block>
+  <block id="c0bf6edc60bad775ee4a7ad24f670742" category="admonition">您稍後可以將已消除的項目變更為待辦事項。當您將某項標記為已完成或將已解除的項目變更為待辦事項時，總運算元會增加 1。</block>
+  <block id="e820fe024db1b211ec2a532b3515e062" category="paragraph">從網頁下載的 CSV 檔案僅包含該網頁中的資料。</block>
+  <block id="eab868da8e2666bb93a6c4508ffd3e80" category="list-text">在勒索軟體復原能力控制面板中，選擇「刷新」。 <block ref="94d384894f036157c348eadc55c40952" category="inline-image-macro-rx" type="image"></block> 右上角有刷新檔案中顯示的資料的選項。</block>
+  <block id="83740edb7e1cce01ad9abd22c965f833" category="inline-image-macro">下載選項圖示的圖像</block>
+  <block id="003de596593787da81cd02bc78808f9d" category="list-text">從頁面上選擇“下載”按鈕。 <block ref="10920434d8a4b3cb6afdcf0337f83d24" category="inline-image-macro-rx" type="image"></block> 選項。</block>
+  <block id="d51c0020ded66c680ed4bf4dab57a782" category="paragraph">勒索軟體彈性透過分析ONTAP中 FPolicy 產生的使用者活動事件來偵測可疑的使用者活動。要收集用戶活動數據，您需要部署一個或多個用戶活動代理程式。該代理程式是可連接到租用戶上的裝置的 Linux 伺服器或 VM。</block>
+  <block id="951fa3938f2418e5c7bdceb36d525b4e" category="section-title">用戶活動代理和收集器</block>
+  <block id="012fdb750d9f768ed33b4236dd982ae4" category="paragraph">必須安裝至少一個使用者活動代理程式才能啟動 Ransomware Resilience 中的可疑使用者活動偵測。當您從勒索軟體復原儀表板啟動可疑使用者活動功能時，您需要提供代理主機資訊。</block>
+  <block id="da7bfaf398235069a409197330d59b53" category="paragraph">一個代理可以託管多個資料收集器。資料收集器將資料傳送到 SaaS 位置進行分析。有兩種類型的收集器：</block>
+  <block id="1e496ca2f7a66d863132588473f14de2" category="section-title">系統需求</block>
+  <block id="b7cc904e79a175038a121ea330565832" category="paragraph">若要安裝使用者活動代理，您需要一台符合下列要求的主機或虛擬機器。</block>
+  <block id="b9300e15e3fa20c1dc3ecfabbbb96a7b" category="section-title">作業系統要求</block>
+  <block id="afea8c44acd019a3a489f7a3ddeb5c8e" category="admonition">用于用户活动代理的计算机不应运行其他应用程序级别的软件。建議使用專用伺服器。</block>
+  <block id="19edca9ea70315410039bf08b3ffecda" category="paragraph">這<block ref="0a342b59ecdcede0571340b9ed11633f" prefix=" " category="inline-code"></block> 安裝需要該指令。這<block ref="beb493211c3135923a11284ef26bf909" prefix=" " category="inline-code"></block> 該命令用於安裝、運行腳本和卸載。</block>
+  <block id="a54c13ad42512dbfec4e8a44d793a52e" category="section-title">伺服器要求</block>
+  <block id="34af15b56c0def7a2806fd4b03537e12" category="list-text">**磁碟空間**：36 GB 可用磁碟空間</block>
+  <block id="68eda0e29d8e074409c51f53581f3a64" category="admonition">分配額外的磁碟空間以用於建立檔案系統。請確保檔案系統中至少有 35 GB 的可用空間。+ 如果<block ref="68ab1268abb7e5f5688810968df97d6b" prefix=" " category="inline-code"></block> 這是從 NAS 儲存裝置掛載的資料夾，本機使用者必須有權限存取此資料夾。如果本機使用者沒有必要的權限，則使用者活動代理程式建立可能會失敗。</block>
+  <block id="4efd7fc25783a87a8f0795f4de1a8af7" category="admonition">建議您將使用者活動代理安裝在與勒索軟體復原環境不同的系統上。如果將它們安裝在同一台機器上，則應預留 50 至 55 GB 的磁碟空間。對於 Linux 系統，分配 25-30 GB 的空間<block ref="4bf2f0d069734974e4d76e679433aa07" prefix=" " category="inline-code"></block> 以及 25 GB<block ref="ea5f88360fb7c06d3270b165b4dad226" prefix=" " category="inline-code"></block>。</block>
+  <block id="52554f7429cd5c72cd3c3e9561412160" category="admonition">建議您使用網路時間協定 (NTP) 或簡單網路時間協定 (SNTP) 同步ONTAP系統和使用者活動代理程式電腦上的時間。</block>
+  <block id="77469c598ab2b5984e8dafd3d15a2315" category="section-title">雲端網路存取規則</block>
+  <block id="c793f078b8fd1dcce9dfd5ae57f2a51c" category="paragraph">查看您所在地區（亞太地區、歐洲或美國）的雲端網路存取規則。</block>
+  <block id="b59e5489bdc375550b52afe395f08180" category="section-title">基於亞太地區的用戶活動代理部署</block>
+  <block id="60aaf44d4b562252c04db7f98497e9aa" category="cell">港口</block>
+  <block id="f31bbdd1b3e85bccd652680e16935819" category="cell">來源</block>
+  <block id="12007e1d59f4d09c87dbe2c438256244" category="cell">目的地</block>
+  <block id="b136ef5f6a01d816991fe3cf7a6ac763" category="cell">TCP</block>
+  <block id="13f3cf8c531952d72e5847c4183e6910" category="cell">443</block>
+  <block id="f2ca52b87225d79d40f899aebabeec45" category="cell">使用者活動代理</block>
+  <block id="e7d932b2a7bf9471a38ac8c68fbf83ad" category="list-text">&lt;site_name&gt;.cs01-ap-1.cloudinsights.netapp.com</block>
+  <block id="8f31785e58dfdc396495a127fdd7d7dd" category="list-text">&lt;site_name&gt;.c01-ap-1.cloudinsights.netapp.com</block>
+  <block id="edc2894193def90c2ccbb8f855d6f564" category="list-text">&lt;site_name&gt;.c02-ap-1.cloudinsights.netapp.com</block>
+  <block id="b7169d36c5259a3a051359ca51dbd682" category="cell">取得勒索軟體復原能力</block>
+  <block id="012f0abca78822d24d27455403c3d089" category="cell">agentlogin.cs01-ap-1.cloudinsights.netapp.com</block>
+  <block id="d4fedc7f035f96436f1598f9626876e2" category="cell">存取身份驗證服務</block>
+  <block id="0e07fec3da393adf659f6e786a442b5d" category="section-title">歐洲用戶活動代理部署</block>
+  <block id="00c7e633a09840b7e60ee5de5aec797b" category="list-text">&lt;site_name&gt;.cs01-eu-1.cloudinsights.netapp.com</block>
+  <block id="54d1f56395e5ec9d39e9a416c61b311a" category="list-text">&lt;site_name&gt;.c01-eu-1.cloudinsights.netapp.com</block>
+  <block id="0ba615943513b9683a0e9b145f96e5b2" category="list-text">&lt;site_name&gt;.c02-eu-1.cloudinsights.netapp.com</block>
+  <block id="29acd3d3cfc5f8e3cb650abeb2622a68" category="cell">agentlogin.cs01-eu-1.cloudinsights.netapp.com</block>
+  <block id="e0a04d596459d34d5495089a5a992421" category="section-title">美國用戶活動代理部署</block>
+  <block id="686fe123d13d19cbe67fa0429375b0e1" category="list-text">&lt;site_name&gt;.cs01.cloudinsights.netapp.com</block>
+  <block id="ce47b0513e6a5635f603be8cc52f392d" category="list-text">&lt;site_name&gt;.c01.cloudinsights.netapp.com</block>
+  <block id="906a7644c76f341f29012680a39f7225" category="list-text">&lt;site_name&gt;.c02.cloudinsights.netapp.com</block>
+  <block id="142b47c359d647af9faff9ef084152c7" category="cell">agentlogin.cs01.cloudinsights.netapp.com</block>
+  <block id="0cd58d8585970b5311e84ca2c34ba5ef" category="section-title">網路內規則</block>
+  <block id="1b09a58921479be87f9dae639915150f" category="cell">389（LDAP） 636（LDAP/啟動-tls）</block>
+  <block id="84caee864977bc98db0b0df24853f63c" category="cell">LDAP 伺服器 URL</block>
+  <block id="b272c206ad7d80ebc1e17385c8d4450c" category="cell">連線到 LDAP</block>
+  <block id="3e1d4f7104327b6aa02e8d988c873b86" category="cell">叢集或SVM管理IP位址（取決於SVM收集器配置）</block>
+  <block id="9bf305870fa281c6eff0d16d2e8d6b6d" category="cell">API 與ONTAP進行通信</block>
+  <block id="c1d0965e767c67506aa60bc80d5b716e" category="cell">35000 - 55000</block>
+  <block id="4f1eb19420b75b94e053a805cd0feb1d" category="paragraph">SVM 資料 LIF IP 位址</block>
+  <block id="3b04fff3171347ca78c0c2fb925106dd" category="cell">ONTAP與使用者活動代理程式之間關於 Fpolicy 事件的通訊。為了讓ONTAP能夠向用戶活動代理發送事件，必須向其開放這些端口，包括用戶活動代理本身上的任何防火牆（如果存在）。+ **注意：**您不需要預留*所有*這些端口，但您為此預留的端口必須在此範圍內。建議您先預留 100 個端口，如有必要再增加。</block>
+  <block id="3756ac460c094adc890ad7f26460010b" category="cell">35000-55000</block>
+  <block id="0e948943e8277507eeeec08bbb91d3b4" category="cell">叢集管理IP</block>
+  <block id="f41a23af01b3d7e16d16141a3f6003df" category="cell">ONTAP叢集管理 IP 與使用者活動代理程式之間關於 *EMS 事件* 的通訊。為了讓ONTAP向用戶活動代理發送 EMS 事件，必須向用戶活動代理開放這些端口，包括用戶活動代理本身上的任何防火牆。+ **注意：**您不需要預留*所有*這些端口，但您為此預留的端口必須在此範圍內。建議您先預留 100 個端口，如有必要再增加。</block>
+  <block id="765553e6c7ac8592c389acb9878a050a" category="cell">SSH</block>
+  <block id="b6d767d2f8ed5d21a44b0e5886680cb9" category="cell">22</block>
+  <block id="1eb5ae63609e68a11106494d272615bf" category="cell">叢集管理</block>
+  <block id="269ab41459ba8b3de391eb30b649d222" category="cell">需要 CIFS/SMB 使用者阻止。</block>
+  <block id="c3c0e3736c092f9f194505694468ca8b" category="inline-link-macro">系統需求</block>
+  <block id="3711ac0a85bd797cffe6d1b55a460f16" category="paragraph">確保您已滿足以下條件： <block ref="24745d2c3c6c1ff64bcdf410b4214e6b" category="inline-link-macro-rx"></block> 用戶活動代理。請確保您的配置符合支援的雲端提供者和區域要求。</block>
 </blocks>
