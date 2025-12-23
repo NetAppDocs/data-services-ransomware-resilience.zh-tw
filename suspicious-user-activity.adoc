@@ -113,15 +113,10 @@ TIP: 建議您使用網路時間協定 (NTP) 或簡單網路時間協定 (SNTP) 
 | 協定 | 港口 | 來源 | 目的地 | 描述 
 
 
-| TCP | 443 | 使用者活動代理  a| 
-* <site_name>.cs01-ap-1.cloudinsights.netapp.com
-* <site_name>.c01-ap-1.cloudinsights.netapp.com
-* <site_name>.c02-ap-1.cloudinsights.netapp.com
-
-| 取得勒索軟體復原能力 
+| TCP | 443 | 使用者活動代理 | 勒索軟體恢復服務 | 取得勒索軟體復原能力 
 
 
-| TCP | 443 | 使用者活動代理 | agentlogin.cs01-ap-1.cloudinsights.netapp.com | 存取身份驗證服務 
+| TCP | 443 | 使用者活動代理 | 勒索軟體恢復服務 | 存取身份驗證服務 
 |===
 
 
@@ -132,15 +127,10 @@ TIP: 建議您使用網路時間協定 (NTP) 或簡單網路時間協定 (SNTP) 
 | 協定 | 港口 | 來源 | 目的地 | 描述 
 
 
-| TCP | 443 | 使用者活動代理  a| 
-* <site_name>.cs01-eu-1.cloudinsights.netapp.com
-* <site_name>.c01-eu-1.cloudinsights.netapp.com
-* <site_name>.c02-eu-1.cloudinsights.netapp.com
-
-| 取得勒索軟體復原能力 
+| TCP | 443 | 使用者活動代理 | 勒索軟體恢復服務 | 取得勒索軟體復原能力 
 
 
-| TCP | 443 | 使用者活動代理 | agentlogin.cs01-eu-1.cloudinsights.netapp.com | 存取身份驗證服務 
+| TCP | 443 | 使用者活動代理 | 勒索軟體恢復服務 | 存取身份驗證服務 
 |===
 
 
@@ -151,15 +141,10 @@ TIP: 建議您使用網路時間協定 (NTP) 或簡單網路時間協定 (SNTP) 
 | 協定 | 港口 | 來源 | 目的地 | 描述 
 
 
-| TCP | 443 | 使用者活動代理  a| 
-* <site_name>.cs01.cloudinsights.netapp.com
-* <site_name>.c01.cloudinsights.netapp.com
-* <site_name>.c02.cloudinsights.netapp.com
-
-| 取得勒索軟體復原能力 
+| TCP | 443 | 使用者活動代理 | 勒索軟體恢復服務 | 取得勒索軟體復原能力 
 
 
-| TCP | 443 | 使用者活動代理 | agentlogin.cs01.cloudinsights.netapp.com | 存取身份驗證服務 
+| TCP | 443 | 使用者活動代理 | 勒索軟體恢復服務 | 存取身份驗證服務 
 |===
 
 
