@@ -18,13 +18,25 @@ summary: 了解NetApp Ransomware Resilience的新功能。
 
 
 
+== 2026年1月19日
+
+
+
+=== 不支援的捲
+
+勒索軟體復原能力報告現在會在**摘要**報告中捕獲有關受支援和不受支援的捲的資訊。利用這些資訊來診斷系統中的捲為何可能不符合勒索軟體防護條件。
+
+有關詳細信息，請參閱 link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-reports.html["下載勒索軟體復原力報告"^]。
+
+
+
 == 2026年1月12日
 
 
 
 === 將快照複製到ONTAP
 
-勒索軟體復原功能現在支援將快照複製到輔助ONTAP網站。您可以建立包含複製功能的勒索軟體防護策略，也可以使用預先定義的策略。
+勒索軟體復原功能現在支援將快照複製到輔助ONTAP網站。透過使用複製策略的保護群組，您可以為每個工作負載複製到相同的目標位置或不同的目標位置。您可以建立包含複製功能的勒索軟體防護策略，也可以使用預先定義的策略。
 
 有關詳細信息，請參閱 link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect.html["在勒索軟體復原中保護工作負載"^]。
 
