@@ -30,7 +30,9 @@ summary: 勒索軟體復原中的可疑使用者活動偵測可讓您偵測可�
 
 收集器在勒索軟體恢復設定中配置。
 
-*所需的控制台角色* 若要啟動可疑使用者活動偵測，您需要組織管理員角色。對於可疑使用者活動的後續配置，您需要 Ransomware Resilience 使用者行為管理員角色。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["了解NetApp Console的勒索軟體復原角色"^]。
+*需要 Console 角色* 若要啟用可疑使用者活動偵測，您需要 **Organization admin role**。針對後續的可疑使用者活動設定，您需要 **Ransomware Resilience user behavior admin role**。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["了解NetApp Console的勒索軟體復原角色"^]。
+
+確保每個角色都在組織層級套用。
 
 
 

@@ -1753,7 +1753,6 @@
   <block id="7149ff1e14f0a158752906babaa08dc3" category="list-text">對於該事件，選擇下載圖示以 CSV 格式下載受影響文件的清單。</block>
   <block id="fe1bb8cb54f03cf7a69c3e9568118b30" category="list-text">**資料收集器**從ONTAP收集使用者活動資料。</block>
   <block id="b6173a051353d59a4ee775fcef288441" category="list-text">**使用者目錄連接器**連接到您的目錄以將使用者 ID 對應到使用者名稱。</block>
-  <block id="508899c1c018f291af4cb6a0423c426c" category="paragraph">*所需的控制台角色* 若要啟動可疑使用者活動偵測，您需要組織管理員角色。對於可疑使用者活動的後續配置，您需要 Ransomware Resilience 使用者行為管理員角色。<block ref="d9cbbacd5ef5cff6a1660fdb9d259f2f" category="inline-link-macro-rx"></block>。</block>
   <block id="398de83ff8f318218f9eaedb05929ef0" category="paragraph">成功建立使用者活動代理程式後，返回**設定**選單，然後在使用者活動圖塊中選擇**管理**。選擇**用戶活動代理**選項卡，然後選擇用戶活動代理以查看有關它的詳細信息，包括數據收集器和用戶目錄連接器。</block>
   <block id="a83ea9a287c9fdd0689933a464055150" category="paragraph">若要將使用者 ID 對應到使用者名，您必須建立使用者目錄連接器。</block>
   <block id="89bd0177a422e5d81fce2f8f82dac3f6" category="paragraph-title">使用勒索軟體恢復功能需要許可證嗎？</block>
@@ -2126,4 +2125,6 @@
   <block id="5d26628350f5209b3a0d69e817a49a0f" category="list-text">**摘要**：包括支援和不受支援的工作負載清單、改善網路彈性態勢的建議措施，以及勒索軟體彈性儀表板中捕獲的資訊。</block>
   <block id="886b1df808dc5d3879143640b1ad98a7" category="admonition">在「設定」中的「工作負載發現」卡片中，選擇操作選單<block ref="2f43b42fd833d1e77420a8dae7419000" prefix=" " category="inline-code"></block> 然後**下載報告（JSON）**以查看系統中支援和不支援的工作負載清單。</block>
   <block id="194a29c3464a05de3c32434145c0b5d6" category="section-title">2026年1月19日</block>
+  <block id="5971dc29642c8dabe6ddf4db4c2f9634" category="paragraph">*需要 Console 角色* 若要啟用可疑使用者活動偵測，您需要 **Organization admin role**。針對後續的可疑使用者活動設定，您需要 **Ransomware Resilience user behavior admin role**。<block ref="d9cbbacd5ef5cff6a1660fdb9d259f2f" category="inline-link-macro-rx"></block>。</block>
+  <block id="49c6535c126789c87c5cd609fbdb3a3f" category="paragraph">確保每個角色都在組織層級套用。</block>
 </blocks>
