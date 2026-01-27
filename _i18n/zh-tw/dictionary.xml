@@ -604,7 +604,6 @@
   <block id="179e5ea4317177f519c688d15ef67987" category="paragraph"><block ref="179e5ea4317177f519c688d15ef67987" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e462715e9b155f4f9638da4f314c8aff" category="list-text">選擇*準備演習*和*下載*以下載準備演習報告。</block>
   <block id="bb44ab86396f7335c45f2c99c022776c" category="summary">如果勒索軟體復原功能偵測到可能的攻擊，勒索軟體復原功能儀表板上就會出現警報，指示潛在攻擊。此時，您應該查看「勒索軟體彈性警報」標籤中的潛在風險。</block>
-  <block id="0cf61fe483b7c3216a42a15a22e0ef97" category="paragraph">如果勒索軟體復原功能偵測到可能的攻擊，控制台通知設定中會出現通知，並且電子郵件會傳送到設定的位址。電子郵件包含有關嚴重性、受影響的工作負載的信息，以及勒索軟體復原力*警報*標籤中警報的連結。</block>
   <block id="4c8cd66676ad1c434108e699d9777408" category="paragraph">您可以忽略誤報或決定立即恢復資料。</block>
   <block id="899157335f0c98105a8cbc92966ba06d" category="admonition">如果您關閉警報，勒索軟體復原功能會了解此行為，將其與正常操作關聯，並且不會再次對其發出警報。</block>
   <block id="a8fd9e3988acb841854762788963d815" category="paragraph">要開始恢復數據，請將警報標記為準備好恢復，以便儲存管理員可以開始恢復程序。</block>
@@ -620,7 +619,6 @@
   <block id="dfc56481bc0d4c0e37c0cc1e55fec278" category="list-text">之前沒有發現過新的擴展，並且相同行為沒有重複足夠多次以將其聲明為攻擊。</block>
   <block id="2c8035709ee020723e6bf59e526fe816" category="list-text">觀察到高熵。</block>
   <block id="98a2c9ec203e0706ca2f538df133d059" category="list-text">文件讀取、寫入、重新命名或刪除活動比正常水平增加了一倍。</block>
-  <block id="4da187364d63bcda0c1ea8730221bf1a" category="admonition">對於 SAN 環境，警告僅基於高熵。</block>
   <block id="e96b2ea99a3be7415866a5df8f69cf6e" category="paragraph">證據基於ONTAP中的自主勒索軟體防護資訊。有關詳細信息，請參閱<block ref="9a25fd5e356132f930267232d70ad02b" category="inline-link-rx"></block>。</block>
   <block id="64c00e9ea78abe412d8db56dd1df0462" category="paragraph">警報可以具有以下狀態之一：</block>
   <block id="adf79604cd73ac69e1173c85b1070d09" category="list-text">*新的*</block>
@@ -645,15 +643,7 @@
   <block id="3de551d699ac2cc6d8ee45100e3c09c2" category="list-text"><block ref="7b8fc6583551e56b0c8a96f4e8f63c8a" category="inline-xref-macro-rx"></block> 。</block>
   <block id="ab66e5346633f4af4f4982dc29ca7015" category="list-text"><block ref="e99b3e15cfc7ea44c087b4875208c217" category="inline-xref-macro-rx"></block> 。</block>
   <block id="9b317c5e8c93afadbc7755c407538945" category="section-title">回覆警報電子郵件</block>
-  <block id="14e7851a172a122d7528efff8567f8ba" category="paragraph">當勒索軟體彈性偵測到潛在攻擊時，它會根據訂閱用戶的訂閱通知偏好向其發送電子郵件通知。電子郵件包含有關警報的信息，包括嚴重程度和受影響的資源。</block>
-  <block id="bf1a62bcb3143d1124cae262157745d7" category="paragraph">您可以接收勒索軟體復原警報的電子郵件通知。此功能可協助您隨時了解警報、警報的嚴重程度以及受影響的資源。</block>
   <block id="def7f3eac7eed1dada5cdcd2951ede36" category="inline-link">設定電子郵件通知設定</block>
-  <block id="b170729861af663a30599b6746973b7b" category="admonition">若要訂閱電子郵件通知，請參閱<block ref="99cf5d485b43f483ee8ecf47c33bdf82" category="inline-link-rx"></block>。</block>
-  <block id="f2e19c6011cc550fb6503dafd26a8973" category="list-text">在勒索軟體復原中，前往*設定*頁面。</block>
-  <block id="ed6e52d47993626528f7c48bb20927cd" category="list-text">在「通知」下，找到電子郵件通知設定。</block>
-  <block id="581a71037b750a62c75558dfea9bae72" category="list-text">輸入您想要接收警報的電子郵件地址。</block>
-  <block id="345e93a96b6e66cb9274dbad975c0db2" category="list-text">儲存更改。</block>
-  <block id="ea9dd721e10f4a1fefec35d95c57efc7" category="paragraph">當產生新警報時，您將收到電子郵件通知。</block>
   <block id="e66d9f5613065312cf1d46114b193ed7" category="list-text">查看電子郵件。</block>
   <block id="f40ae80cf7396576022afae759080cf1" category="list-text">在電子郵件中，選擇「檢視警報」並登入「勒索軟體復原」。</block>
   <block id="9d425c6001c325d2240cf2219c5c8111" category="paragraph">出現「警報」頁面。</block>
@@ -679,7 +669,6 @@
   <block id="ff74e9f48366f1b4465d1920693ddea8" category="inline-link-macro">配置勒索軟體抵禦能力設置</block>
   <block id="f784461c39e5b287f6733d0ee28efad4" category="paragraph">如果您已配置可疑使用者偵測來查看異常使用者行為，則可以查看使用者級資料並封鎖特定使用者。若要啟用可疑用戶設置，請參閱<block ref="788275b5d10fa192a2bbf25cebb6c38f" category="inline-link-macro-rx"></block>。</block>
   <block id="705db8b34cf00efb73abf6403278e299" category="section-title">將勒索軟體事件標記為可恢復（事件被消除後）</block>
-  <block id="3950c317c3c61c1f422abb2e301a90ca" category="paragraph">阻止攻擊後，通知儲存管理員資料已準備就緒，以便他們可以開始恢復。</block>
   <block id="a31e44b45b823ec61483db05b99be2cb" category="paragraph"><block ref="a31e44b45b823ec61483db05b99be2cb" category="inline-image-macro-rx" type="image"></block></block>
   <block id="9d6e925ee1290815ef828d96d28218c6" category="list-text">在警報頁面中，選擇警報。</block>
   <block id="81e1378e6c274792e689b2705fda8824" category="paragraph"><block ref="81e1378e6c274792e689b2705fda8824" category="inline-image-macro-rx" type="image"></block></block>
@@ -1747,7 +1736,6 @@
   <block id="2515e2bcc68e80666fa8c369e88f71e5" category="paragraph">一則訊息確認許可證已新增。</block>
   <block id="fca5751a0529f9987d0699648a97be3a" category="list-text">如果控制台無法自動更新許可證，則需要手動上傳許可證文件。</block>
   <block id="f8541056d6bacae1a78fb5d2b68c67a8" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block>開始使用勒索軟體防禦</block>
-  <block id="43eec2eb3dba42398d66e0c2aa294ea2" category="paragraph">您必須設定使用者活動代理並啟用具有使用者行為偵測的保護策略才能查看使用者級警報。啟用使用者行為偵測後，*可疑使用者*欄位會出現在警報儀表板中；未啟用使用者行為偵測時則不會顯示。若要啟用可疑使用者偵測，請參閱<block ref="da26800578b610b8b3390e49bb643377" category="inline-link-macro-rx"></block>。</block>
   <block id="7a7f05bb105ddcf9c0d221e37f8a923c" category="list-text">若要封鎖您環境中的可疑用戶，請選擇該用戶名下的「封鎖」。</block>
   <block id="bc8ffb69fb560086f529e0097158caad" category="admonition">如果您關閉警報，則無法變更其狀態或撤銷此變更。</block>
   <block id="7149ff1e14f0a158752906babaa08dc3" category="list-text">對於該事件，選擇下載圖示以 CSV 格式下載受影響文件的清單。</block>
@@ -2111,7 +2099,6 @@
   <block id="872eaae7deb6035c20f9bfe6deefd03d" category="list-text">如果您需要刷新登入憑證令牌，還有一個*更新憑證*選項<block ref="5444f6f0c3983523c8933a1864b2b390" category="inline-image-macro-rx" type="image"></block>菜單。</block>
   <block id="667dffcf5676fe0bd645082d2a512fef" category="section-title">2026年1月12日</block>
   <block id="1f84339ab34d5298a23a70d51ad457d4" category="inline-link-macro">啟用可疑用戶活動偵測</block>
-  <block id="0c72d558c2e8468bc311f1933be197b5" category="admonition">如果您正在使用NetAppData Infrastructure Insights(DII) 工作負載安全，建議您使用相同的工作負載安全代理程式來實現勒索軟體復原。您無需為勒索軟體復原能力部署單獨的工作負載安全代理，但是，使用相同的工作負載安全代理需要勒索軟體復原能力控制台組織和 DII 儲存工作負載安全租用戶之間的配對關係。請聯絡您的客戶經理以啟用此配對功能。+ 如果您未使用 DII，則可以受益於可疑使用者行為偵測功能。請確保您已 <block ref="f31f86ab68cf8ca6dc8a3009e6d9ea7a" category="inline-link-macro-rx"></block> 並已配置相應的代理。</block>
   <block id="49fa679e35a13dc09de6805c384904d1" category="list-text">若要設定備份策略，請選擇一個，然後選擇**下一步**。</block>
   <block id="748b96a793ccf0ab113112372db17649" category="paragraph">勒索軟體復原功能現在支援將快照複製到輔助ONTAP網站。透過使用複製策略的保護群組，您可以為每個工作負載複製到相同的目標位置或不同的目標位置。您可以建立包含複製功能的勒索軟體防護策略，也可以使用預先定義的策略。</block>
   <block id="389e0c39aeda061370262a9fa330d865" category="doc">不支援的捲</block>
@@ -2127,4 +2114,11 @@
   <block id="194a29c3464a05de3c32434145c0b5d6" category="section-title">2026年1月19日</block>
   <block id="5971dc29642c8dabe6ddf4db4c2f9634" category="paragraph">*需要 Console 角色* 若要啟用可疑使用者活動偵測，您需要 **Organization admin role**。針對後續的可疑使用者活動設定，您需要 **Ransomware Resilience user behavior admin role**。<block ref="d9cbbacd5ef5cff6a1660fdb9d259f2f" category="inline-link-macro-rx"></block>。</block>
   <block id="49c6535c126789c87c5cd609fbdb3a3f" category="paragraph">確保每個角色都在組織層級套用。</block>
+  <block id="426b9957bbb31fa730d0ddd4241a548c" category="paragraph">如果 Ransomware Resilience 偵測到可能的攻擊，NetApp Console 通知設定中會顯示通知，並且會傳送電子郵件至設定的位址。該電子郵件包含有關嚴重性、受影響工作負載的資訊，以及指向 Ransomware Resilience *Alerts* 標籤中警示的連結。</block>
+  <block id="ea6028617b2209ac986a738b1b26840a" category="admonition">對於 SAN 環境，警告僅基於高熵值。</block>
+  <block id="53140a5b1fd2965a3ae256fca48ef979" category="paragraph">當 Ransomware Resilience 偵測到潛在攻擊時，它會根據使用者在 NetApp Console 設定中配置的訂閱通知偏好，向已訂閱使用者發送電子郵件通知。該電子郵件包含有關警示的資訊，包括嚴重程度和受影響的資源。</block>
+  <block id="a2079b2871fe8072cb3a3a5245ad0458" category="admonition">若要在 Console 中設定電子郵件通知，請參閱 <block ref="7a8deb9a674d2246166ab2113d0b6247" category="inline-link-macro-rx"></block>。</block>
+  <block id="02b8f736b0a683e2999fdad847ee8cd4" category="paragraph">您必須設定使用者活動代理並啟用包含使用者行為偵測的保護策略才能查看使用者層級警報。*可疑使用者*欄位僅在啟用使用者行為偵測後才會顯示在警報儀表板中。若要啟用可疑使用者偵測，請參閱 <block ref="da26800578b610b8b3390e49bb643377" category="inline-link-macro-rx"></block>。</block>
+  <block id="b37f5f6a060700bfc5da32b05dba5978" category="admonition">如果您正在使用 NetApp Data Infrastructure Insights（DII）工作負載安全功能，建議您將相同的工作負載安全代理程式用於勒索軟體復原功能。您無需為勒索軟體復原功能部署單獨的工作負載安全代理程式，但使用相同的工作負載安全代理程式需要勒索軟體復原控制台組織和 DII 儲存工作負載安全租戶之間建立配對關係。請聯絡您的客戶代表以啟用此配對。+ 若要在不使用 DII 的情況下使用可疑使用者偵測功能，請確保您已<block ref="f31f86ab68cf8ca6dc8a3009e6d9ea7a" category="inline-link-macro-rx"></block>並已設定對應的代理程式。</block>
+  <block id="22b921337bb720d655059859772c0131" category="paragraph">停止攻擊後，通知您的儲存管理員資料已準備就緒，以便他們可以啟動復原程序。</block>
 </blocks>
