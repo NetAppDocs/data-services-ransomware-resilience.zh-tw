@@ -2011,7 +2011,6 @@
   <block id="13f3cf8c531952d72e5847c4183e6910" category="cell">443</block>
   <block id="f2ca52b87225d79d40f899aebabeec45" category="cell">使用者活動代理</block>
   <block id="b7169d36c5259a3a051359ca51dbd682" category="cell">取得勒索軟體復原能力</block>
-  <block id="d4fedc7f035f96436f1598f9626876e2" category="cell">存取身份驗證服務</block>
   <block id="0e07fec3da393adf659f6e786a442b5d" category="section-title">歐洲用戶活動代理部署</block>
   <block id="e0a04d596459d34d5495089a5a992421" category="section-title">美國用戶活動代理部署</block>
   <block id="0cd58d8585970b5311e84ca2c34ba5ef" category="section-title">網路內規則</block>
@@ -2032,7 +2031,6 @@
   <block id="269ab41459ba8b3de391eb30b649d222" category="cell">需要 CIFS/SMB 使用者阻止。</block>
   <block id="c3c0e3736c092f9f194505694468ca8b" category="inline-link-macro">系統需求</block>
   <block id="3711ac0a85bd797cffe6d1b55a460f16" category="paragraph">確保您已滿足以下條件： <block ref="24745d2c3c6c1ff64bcdf410b4214e6b" category="inline-link-macro-rx"></block> 用戶活動代理。請確保您的配置符合支援的雲端提供者和區域要求。</block>
-  <block id="bbeae0eeffca7072631fe62be382e481" category="cell">勒索軟體恢復服務</block>
   <block id="28f949c139c27e6b09df3640a4d3aea0" category="doc">將快照複製到ONTAP</block>
   <block id="6ca5a36112bece1031ef1a3e82518ffb" category="inline-link-macro">在勒索軟體復原中保護工作負載</block>
   <block id="0b603f5148dda4ce1b974e4b20493476" category="paragraph">有關詳細信息，請參閱 <block ref="1b59dbcecddb451034333205ceb2d85d" category="inline-link-macro-rx"></block>。</block>
@@ -2121,4 +2119,17 @@
   <block id="02b8f736b0a683e2999fdad847ee8cd4" category="paragraph">您必須設定使用者活動代理並啟用包含使用者行為偵測的保護策略才能查看使用者層級警報。*可疑使用者*欄位僅在啟用使用者行為偵測後才會顯示在警報儀表板中。若要啟用可疑使用者偵測，請參閱 <block ref="da26800578b610b8b3390e49bb643377" category="inline-link-macro-rx"></block>。</block>
   <block id="b37f5f6a060700bfc5da32b05dba5978" category="admonition">如果您正在使用 NetApp Data Infrastructure Insights（DII）工作負載安全功能，建議您將相同的工作負載安全代理程式用於勒索軟體復原功能。您無需為勒索軟體復原功能部署單獨的工作負載安全代理程式，但使用相同的工作負載安全代理程式需要勒索軟體復原控制台組織和 DII 儲存工作負載安全租戶之間建立配對關係。請聯絡您的客戶代表以啟用此配對。+ 若要在不使用 DII 的情況下使用可疑使用者偵測功能，請確保您已<block ref="f31f86ab68cf8ca6dc8a3009e6d9ea7a" category="inline-link-macro-rx"></block>並已設定對應的代理程式。</block>
   <block id="22b921337bb720d655059859772c0131" category="paragraph">停止攻擊後，通知您的儲存管理員資料已準備就緒，以便他們可以啟動復原程序。</block>
+  <block id="beb3dd3f004aa88c321d7b13cd6d36c1" category="admonition">首次安裝時，請將<block ref="50cff7c5933e29331b88e32e4f2a101d" prefix=" " category="inline-code"></block>替換為通配符<block ref="3389dae361af79b04c9c8e7057f60cc6" prefix="(" category="inline-code"></block>權限。代理啟動並完全運行後，您可以將權限替換為網站名稱。請聯絡您的 NetApp 代表以取得網站名稱。</block>
+  <block id="e7d932b2a7bf9471a38ac8c68fbf83ad" category="list-text">&lt;site_name&gt;.cs01-ap-1.cloudinsights.netapp.com</block>
+  <block id="8f31785e58dfdc396495a127fdd7d7dd" category="list-text">&lt;site_name&gt;.c01-ap-1.cloudinsights.netapp.com</block>
+  <block id="edc2894193def90c2ccbb8f855d6f564" category="list-text">&lt;site_name&gt;.c02-ap-1.cloudinsights.netapp.com</block>
+  <block id="b7293bd6a9f7cb8e5890a221fe74d3cb" category="list-text">gentlogin.cs01-ap-1.cloudinsights.netapp.com</block>
+  <block id="00c7e633a09840b7e60ee5de5aec797b" category="list-text">&lt;site_name&gt;.cs01-eu-1.cloudinsights.netapp.com</block>
+  <block id="54d1f56395e5ec9d39e9a416c61b311a" category="list-text">&lt;site_name&gt;.c01-eu-1.cloudinsights.netapp.com</block>
+  <block id="0ba615943513b9683a0e9b145f96e5b2" category="list-text">&lt;site_name&gt;.c02-eu-1.cloudinsights.netapp.com</block>
+  <block id="29acd3d3cfc5f8e3cb650abeb2622a68" category="list-text">agentlogin.cs01-eu-1.cloudinsights.netapp.com</block>
+  <block id="686fe123d13d19cbe67fa0429375b0e1" category="list-text">&lt;site_name&gt;.cs01.cloudinsights.netapp.com</block>
+  <block id="ce47b0513e6a5635f603be8cc52f392d" category="list-text">&lt;site_name&gt;.c01.cloudinsights.netapp.com</block>
+  <block id="906a7644c76f341f29012680a39f7225" category="list-text">&lt;site_name&gt;.c02.cloudinsights.netapp.com</block>
+  <block id="142b47c359d647af9faff9ef084152c7" category="list-text">agentlogin.cs01.cloudinsights.netapp.com</block>
 </blocks>
