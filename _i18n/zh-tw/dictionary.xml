@@ -2066,7 +2066,6 @@
   <block id="af77f82e6f94939c1b89727420b621ac" category="list-text">如果成功從排除的工作負載清單中刪除工作負載，則「排除的工作負載」頁面上將顯示成功訊息，且該工作負載將不再出現在已排除的工作負載清單中。如果操作失敗，將顯示錯誤訊息；請重試該操作。 <block ref="364f1d2f9b1485226ce83c7872b1bae0" category="inline-image-macro-rx" type="image"></block></block>
   <block id="afc3fd7b02af578176e65700acd6709b" category="list-text">*審核中*：您可以在評估事件時將其標記為審核中。</block>
   <block id="a6e3974f4227562b42dd3774682f3f56" category="admonition">攻擊解除後，無法恢復其狀態。如果您取消某個工作負載，則為應對潛在的勒索軟體攻擊而自動建立的所有快照副本都將永久刪除。</block>
-  <block id="95f7e6287ef0ab80de109e7baee476ad" category="paragraph">勒索軟體防護策略包括偵測、保護和複製策略。</block>
   <block id="b8b45f3c53a227dc5aa1d806ef340f06" category="list-text">**偵測策略** 辨識勒索軟體威脅</block>
   <block id="68fc9b8869c6d23ecc7c4acaf4ef7761" category="list-text">**複製策略** 使您能夠將勒索軟體復原功能的快照複製到輔助網站。複製計劃可以設定為每小時、每天、每週或每月一次的頻率。</block>
   <block id="3ed69b14426127876e3ab79ddc2e266e" category="paragraph">目前，您只能將快照複製到本機ONTAP儲存。</block>
@@ -2132,4 +2131,5 @@
   <block id="ce47b0513e6a5635f603be8cc52f392d" category="list-text">&lt;site_name&gt;.c01.cloudinsights.netapp.com</block>
   <block id="906a7644c76f341f29012680a39f7225" category="list-text">&lt;site_name&gt;.c02.cloudinsights.netapp.com</block>
   <block id="142b47c359d647af9faff9ef084152c7" category="list-text">agentlogin.cs01.cloudinsights.netapp.com</block>
+  <block id="9d710e8874b82a90107c10683350b48a" category="paragraph">勒索軟體防護策略包括_偵測_、_保護_和_複製_策略。</block>
 </blocks>
