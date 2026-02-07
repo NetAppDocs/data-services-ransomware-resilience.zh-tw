@@ -2132,4 +2132,5 @@
   <block id="906a7644c76f341f29012680a39f7225" category="list-text">&lt;site_name&gt;.c02.cloudinsights.netapp.com</block>
   <block id="142b47c359d647af9faff9ef084152c7" category="list-text">agentlogin.cs01.cloudinsights.netapp.com</block>
   <block id="9d710e8874b82a90107c10683350b48a" category="paragraph">勒索軟體防護策略包括_偵測_、_保護_和_複製_策略。</block>
+  <block id="7923de3f0c836263e77d3ef5585b2ee7" category="cell">HTTPS（TCP）</block>
 </blocks>

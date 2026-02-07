@@ -118,7 +118,7 @@ IMPORTANT: 首次安裝時，請將 `<site_name>`替換為通配符(`*`權限。
 | 協定 | 港口 | 來源 | 目的地 | 描述 
 
 
-| TCP | 443 | 使用者活動代理  a| 
+| HTTPS（TCP） | 443 | 使用者活動代理  a| 
 * <site_name>.cs01-ap-1.cloudinsights.netapp.com
 * <site_name>.c01-ap-1.cloudinsights.netapp.com
 * <site_name>.c02-ap-1.cloudinsights.netapp.com
@@ -135,7 +135,7 @@ IMPORTANT: 首次安裝時，請將 `<site_name>`替換為通配符(`*`權限。
 | 協定 | 港口 | 來源 | 目的地 | 描述 
 
 
-| TCP | 443 | 使用者活動代理  a| 
+| HTTPS（TCP） | 443 | 使用者活動代理  a| 
 * <site_name>.cs01-eu-1.cloudinsights.netapp.com
 * <site_name>.c01-eu-1.cloudinsights.netapp.com
 * <site_name>.c02-eu-1.cloudinsights.netapp.com
@@ -152,7 +152,7 @@ IMPORTANT: 首次安裝時，請將 `<site_name>`替換為通配符(`*`權限。
 | 協定 | 港口 | 來源 | 目的地 | 描述 
 
 
-| TCP | 443 | 使用者活動代理  a| 
+| HTTPS（TCP） | 443 | 使用者活動代理  a| 
 * <site_name>.cs01.cloudinsights.netapp.com
 * <site_name>.c01.cloudinsights.netapp.com
 * <site_name>.c02.cloudinsights.netapp.com
@@ -172,7 +172,7 @@ IMPORTANT: 首次安裝時，請將 `<site_name>`替換為通配符(`*`權限。
 | TCP | 389（LDAP） 636（LDAP/啟動-tls） | 使用者活動代理 | LDAP 伺服器 URL | 連線到 LDAP 
 
 
-| TCP | 443 | 使用者活動代理 | 叢集或SVM管理IP位址（取決於SVM收集器配置） | API 與ONTAP進行通信 
+| HTTPS（TCP） | 443 | 使用者活動代理 | 叢集或SVM管理IP位址（取決於SVM收集器配置） | API 與ONTAP進行通信 
 
 
 | TCP | 35000 - 55000  a| 
