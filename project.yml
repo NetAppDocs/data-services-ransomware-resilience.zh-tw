@@ -40,8 +40,14 @@ sidebar:
       url: "/rp-start-simulate.html"
     - title: 在「設定」中設定備份、威脅偵測和攻擊模擬
       url: "/rp-use-settings.html"
-    - title: 配置可疑用戶活動檢測
-      url: "/suspicious-user-activity.html"
+    - title: 設定使用者活動偵測
+      entries:
+      - title: 瞭解使用者活動偵測
+        url: "/concept-user-behavior.html"
+      - title: 使用者活動需求
+        url: "/reference-user-activity-requirements.html"
+      - title: 配置代理程式和收集器
+        url: "/suspicious-user-activity.html"
   - title: 使用勒索軟體彈性
     entries:
     - title: 使用儀表板查看工作負載健康狀況

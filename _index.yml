@@ -22,6 +22,8 @@ indexpage:
       url: "/rp-use-settings.html"
     - title: 模擬勒索軟體攻擊
       url: "/rp-start-simulate.html"
+    - title: 配置可疑使用者活動偵測
+      url: "/suspicious-user-activity.html"
   - title: 使用勒索軟體彈性
     links:
     - title: 發現工作負載

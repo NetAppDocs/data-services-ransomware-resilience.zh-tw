@@ -1,0 +1,60 @@
+---
+sidebar: sidebar 
+permalink: concept-user-behavior.html 
+keywords: ransomware protection alert, ransomware protection attack, detect ransomware alert, user activity, graph view, workload security 
+summary: 利用可疑使用者行為偵測和警示功能，防止工作負載發生資料外洩和資料銷毀事件。 
+---
+= 瞭解 NetApp Ransomware Resilience 中的使用者活動偵測
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp Ransomware Resilience 支援偵測可疑的使用者行為，讓您能夠在使用者層級處理勒索軟體事件。
+
+NetApp Ransomware Resilience 透過監控可疑的使用者活動，提供 AI 驅動的資料外洩偵測。讀取活動的急劇增加以及讀取活動的存取模式被用來判斷惡意意圖。一旦偵測到，Ransomware Resilience 會自動在 NetApp Console、電子郵件以及任何已設定的安全生態系統（例如 SIEM）中產生警示。
+
+透過可疑使用者行為偵測和警示，NetApp Ransomware Resilience 會在發現可疑的資料外洩和破壞企圖及模式時發出警示。在每次警示中，NetApp Ransomware Resilience 都會識別出您可以封鎖的使用者。
+
+勒索軟體彈性透過分析ONTAP中 FPolicy 產生的使用者活動事件來偵測可疑的使用者活動。要收集用戶活動數據，您需要部署一個或多個用戶活動代理程式。該代理程式是可連接到租用戶上的裝置的 Linux 伺服器或 VM。
+
+
+
+== 可疑使用者活動取證
+
+Ransomware Resilience 提供使用者行為取證：透過清單和圖表顯示可疑活動發生的時間以及通知發送的時間。這些圖表詳細記錄了一段時間內檔案、目錄、磁碟區和工作負載上可疑活動的頻率，幫助您繪製事件圖。您也可以觀察新檔案副檔名的出現。
+
+image:suspicious-activity-graph.png["所有檔案活動檢視的螢幕擷取畫面"]。
+
+您可以將可疑活動與所有活動視圖進行比較。在所有活動視圖中，除了存取權限變更和存取被拒絕事件外，您還可以查看讀取、寫入、重新命名、移動、建立和刪除事件。
+
+image:all-file-activity.png["所有檔案活動檢視的螢幕擷取畫面"]。
+
+
+
+== 元件
+
+Ransomware Resilience 可疑使用者行為活動偵測包含三個關鍵組成部分。
+
+* **使用者活動代理程式**是資料收集器的可執行環境。您必須設定使用者活動代理程式。
+* **資料收集器**會將使用者活動事件與 Ransomware Resilience 共用。當您xref:rp-use-protect.adoc#add-a-detection-policy-to-workloads-with-existing-snapshot-and-backup-policies-managed-by-snapcenter-or-backup-and-recovery[啟用勒索軟體防護策略，並偵測可疑的使用者活動]時，資料收集器會自動建立。
+* **使用者目錄連接器**能夠建立使用者名稱和使用者 ID 之間的映射關係，從而在應對可疑使用者行為時提供更清晰的線索。您必須配置使用者目錄連接器。
+
+
+
+
+== Ransomware Resilience 與 Data Infrastructure Insights
+
+Ransomware Resilience 的可疑使用者行為偵測功能與 Data Infrastructure Insights（DII）Workload Security 整合，並使用link:reference-user-activity-requirements.html["Data Infrastructure Insights 端點"]。您無需任何 DII 組態即可在 Ransomware Resilience 中啟用使用者行為偵測。若要啟用使用者行為偵測，link:suspicious-user-activity.html["建立所需的代理程式和收集器，並啟用適當的勒索軟體防護策略"]。
+
+如果您已在使用 NetApp Data Infrastructure Insights（DII）Workload Security、建議您將相同的 Workload Security 代理程式用於 Ransomware Resilience。您無需為 Ransomware Resilience 單獨部署 Workload Security 代理程式、但使用相同的 Workload Security 代理程式需要 Ransomware Resilience Console 組織與 DII Storage Workload Security 租戶建立配對關係。請聯絡您的客戶代表以啟用此配對。
+
+
+
+== 後續步驟
+
+* link:reference-user-activity-requirements.html["使用者行為活動偵測的要求"]
+* link:suspicious-user-activity.html["設定使用者行為活動代理程式和偵測器"]
+

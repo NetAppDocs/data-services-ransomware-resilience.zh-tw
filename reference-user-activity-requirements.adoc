@@ -1,0 +1,194 @@
+---
+sidebar: sidebar 
+permalink: reference-user-activity-requirements.html 
+keywords: data breach detection, data breach, user activity, suspicious, anomalous, requirements, end points, operating systems, networking 
+summary: 在建立使用者活動代理程式和其他收集器之前、您必須確保符合所述的作業系統、伺服器和網路需求。 
+---
+= NetApp Ransomware Resilience 中的使用者行為偵測需求
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+在建立使用者活動代理程式和其他收集器之前、您必須確保符合所述的作業系統、伺服器和網路需求。
+
+
+
+== 雲端供應商支援
+
+雲端服務提供者支持
+
+可疑用戶活動資料可以儲存在 AWS 和 Azure 的以下區域：
+
+|===
+| 雲端提供者 | 地區 
+
+
+| AWS  a| 
+* 亞太地區（雪梨）（ap-southeast-2）
+* 歐洲（法蘭克福）(eu-central-1)
+* 美國東部（維吉尼亞北部）（us-east-1）
+
+
+
+
+| Azure | 美國東部 
+|===
+
+
+== 作業系統要求
+
+以下作業系統支援可疑使用者行為偵測：
+
+[cols="2"]
+|===
+| 作業系統 | 支援的版本 
+
+
+| AlmaLinux | 9.4（64 位元）至 9.5（64 位元）和 10（64 位元），包括 SELinux 
+
+
+| CentOS | CentOS Stream 9（64 位元） 
+
+
+| Debian | 11（64 位元）、12（64 位元），包括 SELinux 
+
+
+| OpenSUSE 飛躍 | 15.3（64 位）至 15.6（64 位） 
+
+
+| Oracle Linux | 8.10（64 位元）、9.1（64 位元）至 9.6（64 位元），包括 SELinux 
+
+
+| 紅帽 | 8.10（64 位元）、9.1（64 位元）至 9.6（64 位元）和 10（64 位元），包括 SELinux 
+
+
+| 洛基 | Rocky 9.4 (64 位) 至 9.6 (64 位)，包括 SELinux 
+
+
+| SUSE 企業 Linux | 15 SP4（64 位元）至 15 SP6（64 位元），包括 SELinux 
+
+
+| Ubuntu | 20.04 LTS（64 位元）、22.04 LTS（64 位元）和 24.04 LTS（64 位元） 
+|===
+
+NOTE: 用于用户活动代理的计算机不应运行其他应用程序级别的软件。建議使用專用伺服器。
+
+這 `unzip` 安裝需要該指令。這 `sudo su -` 該命令用於安裝、運行腳本和卸載。
+
+
+
+== 伺服器要求
+
+伺服器必須滿足以下最低要求：
+
+* CPU：4 核
+* **內存**：16GB 內存
+* **磁碟空間**：36 GB 可用磁碟空間
+
+
+
+
+=== 伺服器建議
+
+* 分配額外的磁碟空間以用於建立檔案系統。請確保檔案系統中至少有 35 GB 的可用空間。+ 如果 `/opt` 這是從 NAS 儲存裝置掛載的資料夾，本機使用者必須有權限存取此資料夾。如果本機使用者沒有必要的權限，則使用者活動代理程式建立可能會失敗。
+* 建議您將使用者活動代理安裝在與 Ransomware Resilience 環境不同的系統上。如果確實要安裝在同一台機器上，則應預留 50 至 55 GB 的磁碟空間。對於 Linux 系統，請分配 25-30 GB 的空間至 `/opt/netapp`，並分配 25 GB 至 `var/log/netapp`。
+* 建議您使用網路時間協定 (NTP) 或簡單網路時間協定 (SNTP) 同步ONTAP系統和使用者活動代理程式電腦上的時間。
+
+
+
+
+== 雲端網路存取規則
+
+查看您所在地區（亞太地區、歐洲或美國）的雲端網路存取規則。
+
+
+IMPORTANT: 在初始安裝期間，請將  `<site_name>` 替換為萬用字元 (`*` 權限。代理程式啟動並完全運作後，您可以將權限替換為網站名稱。請聯絡您的 NetApp 代表以取得網站名稱。
+
+
+NOTE: 使用者活動代理程式使用 NetApp Data Infrastructure Insights 技術，因此需要使用 `cloudinsights`端點。如需詳細資訊，請參閱
+
+
+
+=== 基於亞太地區的使用者活動代理程式部署
+
+[cols="1,1,1,3,1"]
+|===
+| 協定 | 港口 | 來源 | 目的地 | 描述 
+
+
+| HTTPS（TCP） | 443 | 使用者活動代理  a| 
+* <site_name>.cs01-ap-1.cloudinsights.netapp.com
+* <site_name>.c01-ap-1.cloudinsights.netapp.com
+* <site_name>.c02-ap-1.cloudinsights.netapp.com
+* gentlogin.cs01-ap-1.cloudinsights.netapp.com
+
+| 取得勒索軟體復原能力 
+|===
+
+
+=== 歐洲使用者活動代理程式部署
+
+[cols="1,1,1,3,1"]
+|===
+| 協定 | 港口 | 來源 | 目的地 | 描述 
+
+
+| HTTPS（TCP） | 443 | 使用者活動代理  a| 
+* <site_name>.cs01-eu-1.cloudinsights.netapp.com
+* <site_name>.c01-eu-1.cloudinsights.netapp.com
+* <site_name>.c02-eu-1.cloudinsights.netapp.com
+* agentlogin.cs01-eu-1.cloudinsights.netapp.com
+
+| 取得勒索軟體復原能力 
+|===
+
+
+=== 美國使用者活動代理程式部署
+
+[cols="1,1,1,3,1"]
+|===
+| 協定 | 港口 | 來源 | 目的地 | 描述 
+
+
+| HTTPS（TCP） | 443 | 使用者活動代理  a| 
+* <site_name>.cs01.cloudinsights.netapp.com
+* <site_name>.c01.cloudinsights.netapp.com
+* <site_name>.c02.cloudinsights.netapp.com
+* agentlogin.cs01.cloudinsights.netapp.com
+
+| 取得勒索軟體復原能力 
+|===
+
+
+== 網路內規則
+
+[cols="5*"]
+|===
+| 協定 | 港口 | 來源 | 目的地 | 描述 
+
+
+| TCP | 389（LDAP） 636（LDAP/啟動-tls） | 使用者活動代理 | LDAP 伺服器 URL | 連線到 LDAP 
+
+
+| HTTPS（TCP） | 443 | 使用者活動代理 | 叢集或SVM管理IP位址（取決於SVM收集器配置） | API 與ONTAP進行通信 
+
+
+| TCP | 35000 - 55000  a| 
+SVM 資料 LIF IP 位址
+| 使用者活動代理 | ONTAP與使用者活動代理程式之間關於 Fpolicy 事件的通訊。為了讓ONTAP能夠向用戶活動代理發送事件，必須向其開放這些端口，包括用戶活動代理本身上的任何防火牆（如果存在）。+ **注意：**您不需要預留*所有*這些端口，但您為此預留的端口必須在此範圍內。建議您先預留 100 個端口，如有必要再增加。 
+
+
+| TCP | 35000-55000 | 叢集管理IP | 使用者活動代理 | ONTAP叢集管理 IP 與使用者活動代理程式之間關於 *EMS 事件* 的通訊。為了讓ONTAP向用戶活動代理發送 EMS 事件，必須向用戶活動代理開放這些端口，包括用戶活動代理本身上的任何防火牆。+ **注意：**您不需要預留*所有*這些端口，但您為此預留的端口必須在此範圍內。建議您先預留 100 個端口，如有必要再增加。 
+
+
+| SSH | 22 | 使用者活動代理 | 叢集管理 | 需要 CIFS/SMB 使用者阻止。 
+|===
+
+
+== 下一步
+
+* link:suspicious-user-activity.html["設定使用者活動代理程式和收集器"]
+

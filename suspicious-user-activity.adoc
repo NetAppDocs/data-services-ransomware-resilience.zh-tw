@@ -4,7 +4,7 @@ permalink: suspicious-user-activity.html
 keywords: data breach detection, data breach, user activity, suspicious, anomalous, 
 summary: 勒索軟體復原中的可疑使用者活動偵測可讓您偵測可能構成潛在威脅的使用者活動。 
 ---
-= 在NetApp Ransomware Resilience中配置可疑使用者活動偵測
+= 在 NetApp Ransomware Resilience 中設定代理程式與收集器以偵測使用者活動
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -12,15 +12,7 @@ summary: 勒索軟體復原中的可疑使用者活動偵測可讓您偵測可�
 
 
 [role="lead"]
-勒索軟體抵禦能力支援在偵測策略中偵測可疑使用者行為，使您能夠在使用者層級解決勒索軟體事件。
-
-勒索軟體彈性透過分析ONTAP中 FPolicy 產生的使用者活動事件來偵測可疑的使用者活動。要收集用戶活動數據，您需要部署一個或多個用戶活動代理程式。該代理程式是可連接到租用戶上的裝置的 Linux 伺服器或 VM。
-
-
-
-== 用戶活動代理和收集器
-
-必須安裝至少一個使用者活動代理程式才能啟動 Ransomware Resilience 中的可疑使用者活動偵測。當您從勒索軟體復原儀表板啟動可疑使用者活動功能時，您需要提供代理主機資訊。
+若要在 NetApp Ransomware Resilience 中啟用可疑使用者行為偵測功能，您必須至少安裝一個使用者活動代理程式。當您從 Ransomware Resilience 控制面板啟動可疑使用者活動功能時，需要提供使用者活動代理程式的主機資訊。
 
 一個代理可以託管多個資料收集器。資料收集器將資料傳送到 SaaS 位置進行分析。有兩種類型的收集器：
 
@@ -30,190 +22,27 @@ summary: 勒索軟體復原中的可疑使用者活動偵測可讓您偵測可�
 
 收集器在勒索軟體恢復設定中配置。
 
+
+NOTE: 如果您已在使用 NetApp Data Infrastructure Insights（DII）Workload Security、建議您將相同的 Workload Security 代理程式用於 Ransomware Resilience。您無需為 Ransomware Resilience 單獨部署 Workload Security 代理程式、但使用相同的 Workload Security 代理程式需要 Ransomware Resilience Console 組織與 DII Storage Workload Security 租戶建立配對關係。請聯絡您的客戶代表以啟用此配對。
+
++ 如果您尚未使用 Data Infrastructure Insights，請按照此處的設定說明進行操作。
+
+
+
+== 開始之前
+
+* 確保您符合link:reference-user-activity-requirements.html["作業系統、伺服器和網路要求"]。
+
+
 *需要 Console 角色* 若要啟用可疑使用者活動偵測，您需要 **Organization admin role**。針對後續的可疑使用者活動設定，您需要 **Ransomware Resilience user behavior admin role**。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["了解NetApp Console的勒索軟體復原角色"^]。
 
 確保每個角色都在組織層級套用。
 
 
 
-== 系統需求
+== 建立使用者活動代理程式
 
-若要安裝使用者活動代理，您需要一台符合下列要求的主機或虛擬機器。
-
-
-
-=== 作業系統要求
-
-[cols="2"]
-|===
-| 作業系統 | 支援的版本 
-
-
-| AlmaLinux | 9.4（64 位元）至 9.5（64 位元）和 10（64 位元），包括 SELinux 
-
-
-| CentOS | CentOS Stream 9（64 位元） 
-
-
-| Debian | 11（64 位元）、12（64 位元），包括 SELinux 
-
-
-| OpenSUSE 飛躍 | 15.3（64 位）至 15.6（64 位） 
-
-
-| Oracle Linux | 8.10（64 位元）、9.1（64 位元）至 9.6（64 位元），包括 SELinux 
-
-
-| 紅帽 | 8.10（64 位元）、9.1（64 位元）至 9.6（64 位元）和 10（64 位元），包括 SELinux 
-
-
-| 洛基 | Rocky 9.4 (64 位) 至 9.6 (64 位)，包括 SELinux 
-
-
-| SUSE 企業 Linux | 15 SP4（64 位元）至 15 SP6（64 位元），包括 SELinux 
-
-
-| Ubuntu | 20.04 LTS（64 位元）、22.04 LTS（64 位元）和 24.04 LTS（64 位元） 
-|===
-
-NOTE: 用于用户活动代理的计算机不应运行其他应用程序级别的软件。建議使用專用伺服器。
-
-這 `unzip` 安裝需要該指令。這 `sudo su -` 該命令用於安裝、運行腳本和卸載。
-
-
-
-=== 伺服器要求
-
-伺服器必須滿足以下最低要求：
-
-* CPU：4 核
-* **內存**：16GB 內存
-* **磁碟空間**：36 GB 可用磁碟空間
-
-
-
-NOTE: 分配額外的磁碟空間以用於建立檔案系統。請確保檔案系統中至少有 35 GB 的可用空間。+ 如果 `/opt` 這是從 NAS 儲存裝置掛載的資料夾，本機使用者必須有權限存取此資料夾。如果本機使用者沒有必要的權限，則使用者活動代理程式建立可能會失敗。
-
-
-NOTE: 建議您將使用者活動代理安裝在與勒索軟體復原環境不同的系統上。如果將它們安裝在同一台機器上，則應預留 50 至 55 GB 的磁碟空間。對於 Linux 系統，分配 25-30 GB 的空間 `/opt/netapp` 以及 25 GB `var/log/netapp`。
-
-
-TIP: 建議您使用網路時間協定 (NTP) 或簡單網路時間協定 (SNTP) 同步ONTAP系統和使用者活動代理程式電腦上的時間。
-
-
-
-=== 雲端網路存取規則
-
-查看您所在地區（亞太地區、歐洲或美國）的雲端網路存取規則。
-
-
-IMPORTANT: 首次安裝時，請將 `<site_name>`替換為通配符(`*`權限。代理啟動並完全運行後，您可以將權限替換為網站名稱。請聯絡您的 NetApp 代表以取得網站名稱。
-
-
-
-==== 基於亞太地區的用戶活動代理部署
-
-[cols="1,1,1,3,1"]
-|===
-| 協定 | 港口 | 來源 | 目的地 | 描述 
-
-
-| HTTPS（TCP） | 443 | 使用者活動代理  a| 
-* <site_name>.cs01-ap-1.cloudinsights.netapp.com
-* <site_name>.c01-ap-1.cloudinsights.netapp.com
-* <site_name>.c02-ap-1.cloudinsights.netapp.com
-* gentlogin.cs01-ap-1.cloudinsights.netapp.com
-
-| 取得勒索軟體復原能力 
-|===
-
-
-==== 歐洲用戶活動代理部署
-
-[cols="1,1,1,3,1"]
-|===
-| 協定 | 港口 | 來源 | 目的地 | 描述 
-
-
-| HTTPS（TCP） | 443 | 使用者活動代理  a| 
-* <site_name>.cs01-eu-1.cloudinsights.netapp.com
-* <site_name>.c01-eu-1.cloudinsights.netapp.com
-* <site_name>.c02-eu-1.cloudinsights.netapp.com
-* agentlogin.cs01-eu-1.cloudinsights.netapp.com
-
-| 取得勒索軟體復原能力 
-|===
-
-
-==== 美國用戶活動代理部署
-
-[cols="1,1,1,3,1"]
-|===
-| 協定 | 港口 | 來源 | 目的地 | 描述 
-
-
-| HTTPS（TCP） | 443 | 使用者活動代理  a| 
-* <site_name>.cs01.cloudinsights.netapp.com
-* <site_name>.c01.cloudinsights.netapp.com
-* <site_name>.c02.cloudinsights.netapp.com
-* agentlogin.cs01.cloudinsights.netapp.com
-
-| 取得勒索軟體復原能力 
-|===
-
-
-=== 網路內規則
-
-[cols="5*"]
-|===
-| 協定 | 港口 | 來源 | 目的地 | 描述 
-
-
-| TCP | 389（LDAP） 636（LDAP/啟動-tls） | 使用者活動代理 | LDAP 伺服器 URL | 連線到 LDAP 
-
-
-| HTTPS（TCP） | 443 | 使用者活動代理 | 叢集或SVM管理IP位址（取決於SVM收集器配置） | API 與ONTAP進行通信 
-
-
-| TCP | 35000 - 55000  a| 
-SVM 資料 LIF IP 位址
-| 使用者活動代理 | ONTAP與使用者活動代理程式之間關於 Fpolicy 事件的通訊。為了讓ONTAP能夠向用戶活動代理發送事件，必須向其開放這些端口，包括用戶活動代理本身上的任何防火牆（如果存在）。+ **注意：**您不需要預留*所有*這些端口，但您為此預留的端口必須在此範圍內。建議您先預留 100 個端口，如有必要再增加。 
-
-
-| TCP | 35000-55000 | 叢集管理IP | 使用者活動代理 | ONTAP叢集管理 IP 與使用者活動代理程式之間關於 *EMS 事件* 的通訊。為了讓ONTAP向用戶活動代理發送 EMS 事件，必須向用戶活動代理開放這些端口，包括用戶活動代理本身上的任何防火牆。+ **注意：**您不需要預留*所有*這些端口，但您為此預留的端口必須在此範圍內。建議您先預留 100 個端口，如有必要再增加。 
-
-
-| SSH | 22 | 使用者活動代理 | 叢集管理 | 需要 CIFS/SMB 使用者阻止。 
-|===
-
-
-== 啟用可疑用戶活動偵測
-
-確保您已滿足以下條件： link:#system-requirements["系統需求"] 用戶活動代理。請確保您的配置符合支援的雲端提供者和區域要求。
-
-雲端服務提供者支持
-
-可疑用戶活動資料可以儲存在 AWS 和 Azure 的以下區域：
-
-|===
-| 雲端提供者 | 地區 
-
-
-| AWS  a| 
-* 亞太地區（雪梨）（ap-southeast-2）
-* 歐洲（法蘭克福）(eu-central-1)
-* 美國東部（維吉尼亞北部）（us-east-1）
-
-
-
-
-| Azure | 美國東部 
-|===
-
-
-=== 新增用戶活動代理
-
-使用者活動代理程式是資料收集器的可執行環境；資料收集器與勒索軟體復原共享使用者活動事件。您必須建立至少一個使用者活動代理程式才能啟用可疑使用者活動偵測。
+使用者活動代理程式是 link:#add-a-data-collector["資料收集器"] 的可執行環境；資料收集器與 Ransomware Resilience 共用使用者活動事件。您必須建立至少一個使用者活動代理程式才能啟用可疑使用者活動偵測功能。
 
 .步驟
 . 如果這是您第一次建立使用者活動代理，請前往**儀表板**。在**使用者活動**圖塊中，選擇**啟動**。
@@ -234,11 +63,11 @@ image:user-activity-agent.png["新增活動代理介面截圖。"]
 
 . 選擇**下一步**。
 . 檢查您的設定。選擇*啟動*以完成新增使用者活動代理程式。
-. 確認用戶活動代理程式已成功建立。在使用者活動圖塊中，成功部署顯示為「正在執行」。
+. 確認使用者活動代理程式已成功建立。在「使用者活動」磁貼中，成功部署後會顯示為 **Running**。
 
 
 .結果
-成功建立使用者活動代理程式後，返回**設定**選單，然後在使用者活動圖塊中選擇**管理**。選擇**用戶活動代理**選項卡，然後選擇用戶活動代理以查看有關它的詳細信息，包括數據收集器和用戶目錄連接器。
+使用者活動代理程式成功建立後、返回 **Settings** 功能表、然後在 User activity 磚中選取 **Manage** 。選取 **User activity agents** 索引標籤、然後選取使用者活動代理程式以檢視其詳細資料、包括資料收集器和使用者目錄連接器。
 
 
 
@@ -252,7 +81,7 @@ image:user-activity-settings.png["使用者活動設定的螢幕截圖"]
 
 
 
-=== 新增使用者目錄連接器
+== 建立使用者目錄連接器
 
 若要將使用者 ID 對應到使用者名，您必須建立使用者目錄連接器。
 
@@ -318,11 +147,11 @@ image:screenshot-user-directory-connection.png["使用者目錄連線的螢幕�
 . 找到使用者活動圖塊，選擇**管理**。
 . 選擇**使用者目錄連接器**選項卡。
 . 確定要刪除的使用者目錄連接器。在行尾的操作選單中，選擇三個點 `...`然後**刪除**。
-. 在彈出的對話方塊中，選擇**刪除**以確認您的動作。
+. 在彈出的對話方塊中、選取 **Delete** 進行確認。
 
 
 
 
 == 回應可疑用戶活動警報
 
-配置可疑使用者活動偵測後，您可以在警報頁面中監控事件。有關更多信息，請參閱link:rp-use-alert.html#detect-malicious-activity-and-anomalous-user-behavior["偵測惡意活動和異常使用者行為"] 。
+配置可疑使用者活動偵測後，您可以在警報頁面監控事件。如需詳細資訊，請參閱 link:rp-use-alert.html#detect-malicious-activity-and-anomalous-user-behavior["偵測惡意活動和可疑使用者行為"]。
