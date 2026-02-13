@@ -55,7 +55,14 @@ NOTE: 如果您已在使用 NetApp Data Infrastructure Insights（DII）Workload
 ** **使用者活動代理名稱**
 ** *控制台代理* - 控制台代理程式應與使用者活動代理程式位於同一網路中，並可透過 SSH 連線至使用者活動代理程式的 IP 位址。
 ** *VM DNS 名稱或 IP 位址*
-** *虛擬機器 SSH 金鑰*
+** *VM SSH Key* - 請使用以下格式輸入 SSH 金鑰：
++
+[code]
+----
+-----BEGIN OPENSSH PRIVATE KEY-----
+private-key-contents
+-----END OPENSSH PRIVATE KEY-----
+----
 +
 image:user-activity-agent.png["新增活動代理介面截圖。"]
 

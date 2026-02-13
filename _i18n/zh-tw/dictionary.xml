@@ -1502,7 +1502,6 @@
   <block id="604a864dab990debb57e02cc6550cb0b" category="list-text">提供用戶活動代理詳細資訊：</block>
   <block id="8b67ab5f6d4b7a7c9b54a220ab393e0f" category="list-text">**使用者活動代理名稱**</block>
   <block id="b023c42f6578a2febd3d77169ecb00ef" category="list-text">*VM DNS 名稱或 IP 位址*</block>
-  <block id="95a1594aeff80ead5b4f2710e4acb1c5" category="list-text">*虛擬機器 SSH 金鑰*</block>
   <block id="1dc03f52e7a38f5b6ec91f4303e010ad" category="inline-image-macro">新增活動代理介面截圖。</block>
   <block id="7298950e09abf5a29938d42a442acced" category="paragraph"><block ref="7298950e09abf5a29938d42a442acced" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f2d7e7792f60fc56fc833ac06d43ff03" category="list-text">檢查您的設定。選擇*啟動*以完成新增使用者活動代理程式。</block>
@@ -2170,4 +2169,5 @@
   <block id="f31838bfd1a4d7d1cc348bb0e79249aa" category="sidebar">瞭解使用者活動偵測</block>
   <block id="f77c342afbfaabafce4f6d6b3c0fc25a" category="sidebar">使用者活動需求</block>
   <block id="851ba516be036ed05e26d4e1aa17e994" category="sidebar">配置代理程式和收集器</block>
+  <block id="f00a921e7dbbed8405cd9ce5fce914d3" category="list-text">*VM SSH Key* - 請使用以下格式輸入 SSH 金鑰：</block>
 </blocks>
