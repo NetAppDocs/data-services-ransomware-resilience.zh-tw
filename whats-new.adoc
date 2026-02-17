@@ -18,6 +18,34 @@ summary: 了解NetApp Ransomware Resilience的新功能。
 
 
 
+== 2026 年 2 月 16 日
+
+
+
+=== Azure NetApp Files 支援
+
+Ransomware Resilience 現已支援 Azure NetApp Files 系統，使您能夠有效率地偵測和應對 Azure NetApp Files 中的勒索軟體威脅。當您發現工作負載時，Ransomware Resilience 現在會呈現 Azure NetApp Files 並在保護儀表板中顯示。Ransomware Resilience 對 Azure NetApp Files 的支援僅包括使用快照的偵測和保護策略。對 Azure NetApp Files 的支援目前處於預覽階段。
+
+如需詳細資訊，請參閱 link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/concept-ransomware-resilience.html["了解勒索軟體抵禦能力"^]。
+
+
+
+=== 將使用者從使用者行為警示中排除
+
+NetApp Ransomware Resilience 現已允許您將特定使用者從使用者行為警報中排除。排除受信任的使用者可以防止誤報和不必要的警報。
+
+如需詳細資訊，請參閱 link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/suspicious-user-activity.html#exclude-users-from-alerts["將使用者排除在警示範圍之外"^]。
+
+
+
+=== 使用者行為活動的保護群組支援
+
+Ransomware Resilience 防護群組現在支援可疑使用者行為偵測的偵測原則。將勒索軟體防護策略套用至防護群組時,它會在工作負載之間套用原則,簡化網路安全態勢的管理。
+
+如需詳細資訊，請參閱 link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect.html#create-a-protection-group["建立保護組"^]。
+
+
+
 == 2026年1月19日
 
 
@@ -36,7 +64,7 @@ summary: 了解NetApp Ransomware Resilience的新功能。
 
 === 將快照複製到ONTAP
 
-勒索軟體復原功能現在支援將快照複製到輔助ONTAP網站。透過使用複製策略的保護群組，您可以為每個工作負載複製到相同的目標位置或不同的目標位置。您可以建立包含複製功能的勒索軟體防護策略，也可以使用預先定義的策略。
+Ransomware Resilience 現已支援將快照複製到輔助 ONTAP 網站。使用複製策略的保護群組，您可以為每個工作負載複製到相同或不同的目標位置。您可以建立包含複製功能的勒索軟體防護策略，也可以使用預先定義的策略。
 
 有關詳細信息，請參閱 link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect.html["在勒索軟體復原中保護工作負載"^]。
 

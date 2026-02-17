@@ -858,7 +858,6 @@
   <block id="e10a2e4ef1f3cc661e89aa47c1655787" category="list-text">SnapCenter for VMware 適用於虛擬機器資料儲存區</block>
   <block id="9f467d31ef54c60530e9d07d18e7df6d" category="paragraph">這些服務的保護資訊出現在 Ransomware Resilience 中。您可以使用 Ransomware Resilience 為這些服務新增偵測策略。增加具有勒索軟體復原能力的保護策略將取代現有的保護策略。</block>
   <block id="f37d79a56cb20cdcf206acc1cfa8be14" category="paragraph">如果勒索軟體偵測策略由ONTAP中的自主勒索軟體防護（ARP 或 ARP/AI，取決於ONTAP版本）和 FPolicy 管理，則這些工作負載將受到保護並將繼續由 ARP 和 FPolicy 管理。</block>
-  <block id="7c07f079f6b4547ea768c45b8e8c9c54" category="admonition">Amazon FSx for NetApp ONTAP中的工作負載沒有可用的備份目標。使用 FSx for ONTAP備份服務執行備份作業。您為 AWS 中的 FSx for ONTAP中的工作負載設定備份策略，而不是在 Ransomware Resilience 中設定。備份策略出現在 Ransomware Resilience 中，與 AWS 保持不變。</block>
   <block id="d62f06f1ca9fb020be7953fe3101f0a3" category="section-title">針對不受NetApp應用程式保護的工作負載的保護策略</block>
   <block id="ec45a6a3163f1e5c5139c2b24b9596f2" category="paragraph">如果您的工作負載不是由備份和復原、勒索軟體復原、 SnapCenter或SnapCenter Plug-in for VMware vSphere管理的，則它可能具有作為ONTAP或其他產品的一部分拍攝的快照。如果ONTAP FPolicy 保護已到位，則可以使用ONTAP變更 FPolicy 保護。</block>
   <block id="631014fb608aae26275f461a597abc09" category="section-title">查看工作負載上的勒索軟體保護</block>
@@ -1024,7 +1023,6 @@
   <block id="e6cd86d61f4639c8a27006c6c29b3e9f" category="list-text">選擇“下一步”。</block>
   <block id="f7ba12bb96df2ae9d69ffbf1bc2af6bb" category="inline-image-macro">新增保護群組 - 策略頁面</block>
   <block id="a739b6145911af1f850b745cae737475" category="paragraph"><block ref="a739b6145911af1f850b745cae737475" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="1ae08906aa42275aa58a2b7641019104" category="list-text">選擇策略來管理該群組的保護。若要確認，請選擇“下一步”。</block>
   <block id="f724f66c90177c8dac8336038a0778c0" category="list-text">如果您的偵測策略包含使用者行為偵測，請選擇您想要使用的資料收集器，然後按一下**下一步**。</block>
   <block id="0fc76de5572d1186f1358665dff6076f" category="list-text">檢查保護組的選擇。</block>
   <block id="d7a75d0f58bb349985e6d2104ca65596" category="list-text">若要完成保護群組的創建，請選擇“*新增*”。</block>
@@ -1178,13 +1176,10 @@
   <block id="09121bb3cb936ab87dd837c1fd8da18a" category="list-text">如果您選擇了“*報告*”選項，請選擇預先配置的檔案名稱並選擇“*下載*”。</block>
   <block id="edb56701c02931a83b80f61481367ade" category="summary">您可以在設定頁面中配置多個選項，包括備份目標和威脅偵測。</block>
   <block id="9aa6ed30a3e0d803a1b8b079e0b8d650" category="doc">在NetApp Ransomware Resilience中配置保護設置</block>
-  <block id="efc5b90b499969efcedcd2b7276a218d" category="paragraph">您可以透過存取*設定*選項來設定備份目標、將資料傳送至外部安全性和事件管理 (SIEM) 系統、進行攻擊準備練習、設定工作負載發現或設定可疑使用者活動偵測。</block>
   <block id="105c4d7cf6704d10a27fac5acd7333a3" category="paragraph">*您可以在「設定」頁面做什麼？ *在「設定」頁面中，您可以執行以下操作：</block>
   <block id="2fdebc69dc6e7b0ee210d7c727cf37e2" category="list-text">透過進行準備演習來模擬勒索軟體攻擊，並對模擬勒索軟體警報做出回應。有關詳細信息，請參閱<block ref="764586bbfc596fce1f2309fe8b2a42c0" category="inline-link-macro-rx"></block> 。</block>
   <block id="3fdd6341b0ef86488ae1a773932c96c7" category="list-text">配置工作負載發現。</block>
-  <block id="ad5a89c970ba403587fba991f4218c99" category="list-text">配置可疑用戶活動報告。</block>
   <block id="d9e0cef30d1fd79b64dd0675b6e2eb12" category="list-text">新增備份目的地。</block>
-  <block id="43360d747c31106b5dbf428088f9fabc" category="list-text">連接您的安全性和事件管理系統 (SIEM) 以進行威脅分析和偵測。啟用威脅偵測會自動將資料傳送到您的 SIEM 進行威脅分析。</block>
   <block id="f6de47008760d29836d5758a5a06bf0f" category="section-title">直接存取設定頁面</block>
   <block id="47ee39f07973e19ecd9ed033f5faabb1" category="paragraph">您可以從頂部選單附近的“操作”選項輕鬆存取“設定”頁面。</block>
   <block id="2ed94c26a1d2bdd8aa204fd20eb40937" category="list-text">從勒索軟體復原能力中，選擇垂直<block ref="ddacd9651566dbd67045ad6fbaf81a6c" category="inline-image-macro-rx" type="image"></block>...右上角的選項。</block>
@@ -1202,13 +1197,10 @@
   <block id="4c624f22bdf5c52da245d3b038c2b92e" category="list-text">勾選您想要發現工作負載的系統，或選擇表格頂部的方塊以發現所有已發現工作負載環境中的工作負載。</block>
   <block id="9f9e31c32e5b1d13d9371a818f0a6ee0" category="list-text">根據需要對其他系統執行此操作。</block>
   <block id="04abb68cc3e6cbd75c6183768d3cdb47" category="list-text">選擇「發現」使勒索軟體復原功能自動發現所選控制台代理程式中的新工作負載。</block>
-  <block id="6a8da91afd3259d0e94261d0d1d4cdaa" category="paragraph">在使用者活動卡中，您可以建立和管理偵測可疑使用者活動所需的使用者活動代理程式。</block>
-  <block id="1e9de376e860f46db74a2fe6749a824e" category="paragraph">有關更多信息，請參閱<block ref="da26800578b610b8b3390e49bb643377" category="inline-link-macro-rx"></block> 。</block>
   <block id="55483e3219b15f38112442f737a1bf92" category="section-title">新增備份目標</block>
   <block id="ca0d9b702b5686b0dbe483b8b038b9d5" category="paragraph">勒索軟體復原能力可以識別尚未有任何備份的工作負載以及尚未分配任何備份目標的工作負載。</block>
   <block id="dc0a4770af38e660c7408d8ac2fac395" category="paragraph">為了保護這些工作負載，您應該新增備份目標。您可以選擇以下備份目標之一：</block>
   <block id="943ca3782b28d89aff2f86a50b332b3c" category="list-text">亞馬遜網路服務（AWS）</block>
-  <block id="065ced4e95bc23c02a22f53b7d00da49" category="admonition">Amazon FSx for NetApp ONTAP中的工作負載沒有可用的備份目標。使用 FSx for ONTAP備份服務執行備份作業。</block>
   <block id="4ec94f814f491d45c196584c149a7d3e" category="paragraph">您可以根據儀表板中的建議操作或存取功能表上的「設定」選項來新增備份目標。</block>
   <block id="423773f9edb45d8141b1c7b6278c8092" category="section-title">從儀表板的建議操作存取備份目標選項</block>
   <block id="fd0da3fefc8a8a7ae1d9742f929d60d2" category="paragraph">儀表板提供了許多建議。一個建議可能是配置備份目標。</block>
@@ -1274,10 +1266,7 @@
   <block id="6c2708162873644f82108cfcad8ae099" category="list-text">或者，選擇是否使用先前設定的 Azure 專用終端點。</block>
   <block id="8044b0463892d9d29dbab8cfd03e8863" category="inline-link">Azure PrivateLink</block>
   <block id="13ed98575f9b615f49abab3355f19c34" category="paragraph">如果您想使用 Azure PrivateLink，請參閱<block ref="dc49bf79d1a3da34447e7543d00fee44" category="inline-link-rx"></block>。</block>
-  <block id="e82028134cc149b687f7fdb64684dbf7" category="section-title">連接到安全性和事件管理系統 (SIEM) 進行威脅分析和偵測</block>
-  <block id="c442f897ba9f28d5d7d3b1643ea9284a" category="paragraph">您可以自動將資料傳送到您的安全性和事件管理系統 (SIEM) 進行威脅分析和偵測。您可以選擇 AWS Security Hub、Microsoft Sentinel 或 Splunk Cloud 作為您的 SIEM。</block>
   <block id="cbf029478800b63da0670604895d0640" category="paragraph">在 Ransomware Resilience 中啟用 SIEM 之前，您需要設定您的 SIEM 系統。</block>
-  <block id="7e15fa4f52a2b2bbe9c0fde780818748" category="paragraph-title">關於發送到 SIEM 的事件數據</block>
   <block id="44af434bf59e9ca7200d90f680bae3bc" category="paragraph">Ransomware Resilience 可以將以下事件資料傳送到您的 SIEM 系統：</block>
   <block id="5976a11ab4dca8b4245edb915c6dfbd7" category="list-text">*情境*:</block>
   <block id="c01e6c1876fd41a917ea803c3ef48d66" category="list-text">*os*：這是一個具有ONTAP值的常數。</block>
@@ -1293,7 +1282,6 @@
   <block id="09471f7939b8b27b32ee107cd9b1c44b" category="list-text">*嚴重性*：以下警報等級之一：「嚴重」、「高」、「中」、「低」。</block>
   <block id="6f51b5c965cb508d8d37085592031c21" category="list-text">*描述*：有關檢測到的警報的詳細信息，例如“在工作負載 arp_learning_mode_test_2630 上檢測到潛在的勒索軟體攻擊”</block>
   <block id="0df177143ce12a3516098cd3329e85c2" category="section-title">設定 AWS Security Hub 進行威脅偵測</block>
-  <block id="ffc1de84dbea7f504a06f3ac9f3aca23" category="paragraph">在 Ransomware Resilience 中啟用 AWS Security Hub 之前，您需要在 AWS Security Hub 中執行下列進階步驟：</block>
   <block id="de9b4f41a945df92e6c5b62f443f03f1" category="list-text">在 AWS Security Hub 中設定權限。</block>
   <block id="5fd0d2c5fd8b96b7b7b69f69b942c559" category="list-text">在 AWS Security Hub 中設定身份驗證存取金鑰和金鑰。  （此處未提供這些步驟。）</block>
   <block id="12eef9b6a125a82d69978241dca88c07" category="list-title">在 AWS Security Hub 中設定權限的步驟</block>
@@ -1301,7 +1289,6 @@
   <block id="bf6953a41efa897b0862fca0fe547641" category="list-text">選擇*政策*。</block>
   <block id="2228b7980f61d80481608141744ecee0" category="list-text">使用以下 JSON 格式的程式碼建立策略：</block>
   <block id="cd4d66bdd803d46b839b94afd734cbcd" category="section-title">設定 Microsoft Sentinel 進行威脅偵測</block>
-  <block id="0554c1e832e7fe2b51d5dcb9023f05f5" category="paragraph">在 Ransomware Resilience 中啟用 Microsoft Sentinel 之前，您需要在 Microsoft Sentinel 中執行下列進階步驟：</block>
   <block id="fc01add8dc5e609f9be29c977daabdb7" category="list-text">*先決條件*</block>
   <block id="37f2e7903c233bd04580bbd9be3e01dd" category="list-text">啟用 Microsoft Sentinel。</block>
   <block id="4b78ed88f7480fc055e7d156d68bc76f" category="list-text">在 Microsoft Sentinel 中建立自訂角色。</block>
@@ -1697,7 +1684,6 @@
   <block id="7257a2c29f00e84365c5a48447d9c803" category="inline-link-macro">啟用資料分類來識別治理和安全風險</block>
   <block id="746bceb6a53af383ec0aa4495f694a94" category="list-text"><block ref="746bceb6a53af383ec0aa4495f694a94" category="inline-link-macro-rx"></block></block>
   <block id="1d1758803ee1f7559973be04f120a0f7" category="inline-link-macro">向 SIEM 發送警報</block>
-  <block id="81eb2602258c7f155c33ae884e447609" category="list-text"><block ref="81eb2602258c7f155c33ae884e447609" category="inline-link-macro-rx"></block></block>
   <block id="660ecf2355e5ff3c5a22d2e4a48594e8" category="inline-link-macro">下載警報、保護、準備演習、恢復或摘要報告</block>
   <block id="52210acbff73a572a2ca89fb77371615" category="paragraph">在NetApp Ransomware Resilience中，您可以使用NetApp Data Classification來掃描和分類檔案共用工作負載中的資料。對資料進行分類可以幫助您確定資料集是否包含個人識別資訊 (PII)，這可能會增加安全風險。資料分類是NetApp Console的核心元件，無需額外付費即可使用。</block>
   <block id="7b36da612c0e3a400f4daecc8016f21e" category="summary">確保您滿足勒索軟體復原的許可要求，以保護您的系統和工作負載。</block>
@@ -1719,7 +1705,6 @@
   <block id="2515e2bcc68e80666fa8c369e88f71e5" category="paragraph">一則訊息確認許可證已新增。</block>
   <block id="fca5751a0529f9987d0699648a97be3a" category="list-text">如果控制台無法自動更新許可證，則需要手動上傳許可證文件。</block>
   <block id="f8541056d6bacae1a78fb5d2b68c67a8" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block>開始使用勒索軟體防禦</block>
-  <block id="7a7f05bb105ddcf9c0d221e37f8a923c" category="list-text">若要封鎖您環境中的可疑用戶，請選擇該用戶名下的「封鎖」。</block>
   <block id="bc8ffb69fb560086f529e0097158caad" category="admonition">如果您關閉警報，則無法變更其狀態或撤銷此變更。</block>
   <block id="7149ff1e14f0a158752906babaa08dc3" category="list-text">對於該事件，選擇下載圖示以 CSV 格式下載受影響文件的清單。</block>
   <block id="fe1bb8cb54f03cf7a69c3e9568118b30" category="list-text">**資料收集器**從ONTAP收集使用者活動資料。</block>
@@ -1819,7 +1804,6 @@
   <block id="0ba29c6a1afacf586b03a26162c72274" category="cell">環境</block>
   <block id="888a77f5ac0748b6c8001822417df8b6" category="cell">協定</block>
   <block id="b881921e058834170584afe9213c4c73" category="cell">Amazon FSx for NetApp ONTAP*</block>
-  <block id="c2b4bf8a420967336b99691646ef85e6" category="cell">NFS、CIFS 和 SAN</block>
   <block id="382b0f5185773fa0f67a8ed8056c7759" category="cell">不適用</block>
   <block id="096f3522cfa2f31de45d052b740adc65" category="cell">適用於 AWS 的Cloud Volumes ONTAP</block>
   <block id="05bcab512eefa1e7e2cc2d1e45970a7d" category="cell">CIFS 和 NFS</block>
@@ -1945,7 +1929,6 @@
   <block id="8fe404d4b8af36b9844eb288d2706bbe" category="inline-link-macro">管理勒索軟體復原能力中的警報</block>
   <block id="869c8807275d576171cb34b892652da6" category="paragraph">有關詳細信息，請參閱 <block ref="ca80a6cafecee489657bc722219fb267" category="inline-link-macro-rx"></block>。</block>
   <block id="22a81a009e8d21bf17e2788fdbfa4a6d" category="paragraph">勒索軟體復原能力支援Amazon FSx for NetApp ONTAP系統。以下限制適用於Amazon FSx for ONTAP：</block>
-  <block id="e414901fbfa8ee419bbb8a9bf7c11320" category="list-text">Amazon FSx for ONTAP不支援備份策略。在這種環境下，您應該使用Amazon FSx執行備份作業。您可以使用勒索軟體復原功能來恢復這些工作負載。</block>
   <block id="f20af4e11539d270463e7ed46557be6f" category="paragraph">在使用NetApp Ransomware Resilience之前，它首先需要發現工作負載資料。在發現過程中，勒索軟體復原力會分析組織內所有控制台代理程式和專案系統中的所有捲和檔案。</block>
   <block id="55971de7d1268c37251f60641b742b76" category="paragraph">在「發現」儀表板中，「勒索軟體復原能力」顯示受支援且不受支援的系統配置。勒索軟體復原能力評估 Oracle 應用程式、VMware 資料儲存、檔案共用和區塊儲存。</block>
   <block id="1e55889dc96c3aa2614c39626c9cecdd" category="admonition">勒索軟體復原能力無法發現使用FlexGroup 的磁碟區的工作負載。</block>
@@ -2058,7 +2041,6 @@
   <block id="50723c157cd9ea132a02f421411e273d" category="list-text">*複製策略*：</block>
   <block id="f84245dfb1fc8217e62c0934102ba606" category="list-text">*複製策略基本名稱*：輸入新名稱或選擇現有名稱。基本名稱是附加到所有快照的前綴。</block>
   <block id="d230465858c85552b6c5a5b1ef3bb21f" category="list-text">*複製計畫*：切換要啟用的頻率（每小時、每天、每週或每月），並為每個啟用的計畫設定保留值（要保留的複製快照的數量）。</block>
-  <block id="228ec8f5cf8241b99a71e0c11689b0e6" category="list-text">選擇所需的偵測設定：*加密偵測* *可疑使用者行為偵測* *封鎖可疑檔案副檔名*</block>
   <block id="447fce6406d4a8e99de98a2d5d107536" category="list-text">如果您的策略包含複製，請選擇**目標系統**和**目標儲存虛擬機器**。選擇**下一步**。</block>
   <block id="6f540707e47351a26c8e3c79ccce18ea" category="list-text">*保護*：包括所有工作負載的狀態和詳細信息，包括受保護和處於風險中的工作負載總數。</block>
   <block id="38fc1b337c0ea26463916fc2913205c1" category="paragraph"><block ref="38fc1b337c0ea26463916fc2913205c1" category="inline-image-macro-rx" type="image"></block></block>
@@ -2067,7 +2049,6 @@
   <block id="872eaae7deb6035c20f9bfe6deefd03d" category="list-text">如果您需要刷新登入憑證令牌，還有一個*更新憑證*選項<block ref="5444f6f0c3983523c8933a1864b2b390" category="inline-image-macro-rx" type="image"></block>菜單。</block>
   <block id="667dffcf5676fe0bd645082d2a512fef" category="section-title">2026年1月12日</block>
   <block id="49fa679e35a13dc09de6805c384904d1" category="list-text">若要設定備份策略，請選擇一個，然後選擇**下一步**。</block>
-  <block id="748b96a793ccf0ab113112372db17649" category="paragraph">勒索軟體復原功能現在支援將快照複製到輔助ONTAP網站。透過使用複製策略的保護群組，您可以為每個工作負載複製到相同的目標位置或不同的目標位置。您可以建立包含複製功能的勒索軟體防護策略，也可以使用預先定義的策略。</block>
   <block id="389e0c39aeda061370262a9fa330d865" category="doc">不支援的捲</block>
   <block id="7aedbf1b65f2bcaf699a2f7f37ba458b" category="paragraph">勒索軟體復原能力報告現在會在**摘要**報告中捕獲有關受支援和不受支援的捲的資訊。利用這些資訊來診斷系統中的捲為何可能不符合勒索軟體防護條件。</block>
   <block id="6a43554be5f7f046255a806f0d7cbba9" category="inline-link-macro">下載勒索軟體復原力報告</block>
@@ -2170,4 +2151,63 @@
   <block id="f77c342afbfaabafce4f6d6b3c0fc25a" category="sidebar">使用者活動需求</block>
   <block id="851ba516be036ed05e26d4e1aa17e994" category="sidebar">配置代理程式和收集器</block>
   <block id="f00a921e7dbbed8405cd9ce5fce914d3" category="list-text">*VM SSH Key* - 請使用以下格式輸入 SSH 金鑰：</block>
+  <block id="6180003c782f1663eb2df1464acac0bd" category="cell">CIFS、NFS 和 SAN</block>
+  <block id="691a3e8e2059e924160a8104310f552d" category="paragraph">Ransomware Resilience 現已支援將快照複製到輔助 ONTAP 網站。使用複製策略的保護群組，您可以為每個工作負載複製到相同或不同的目標位置。您可以建立包含複製功能的勒索軟體防護策略，也可以使用預先定義的策略。</block>
+  <block id="17dfbc312023bdd4da992d8e751e72ac" category="doc">Azure NetApp Files 支援</block>
+  <block id="ea2f778dfb597a4b527dac7e944ad95b" category="paragraph">Ransomware Resilience 現已支援 Azure NetApp Files 系統，使您能夠有效率地偵測和應對 Azure NetApp Files 中的勒索軟體威脅。當您發現工作負載時，Ransomware Resilience 現在會呈現 Azure NetApp Files 並在保護儀表板中顯示。Ransomware Resilience 對 Azure NetApp Files 的支援僅包括使用快照的偵測和保護策略。對 Azure NetApp Files 的支援目前處於預覽階段。</block>
+  <block id="5e0e68da0b873ce6ac5da97de07de426" category="paragraph">如需詳細資訊，請參閱 <block ref="d50b16a5274f0acc6be171c51d532ef9" category="inline-link-macro-rx"></block>。</block>
+  <block id="533173be617e8e70b39c22d6b639f1ef" category="section-title">將使用者從使用者行為警示中排除</block>
+  <block id="34db265ea1c563cd1e8fec4196fdd55a" category="paragraph">NetApp Ransomware Resilience 現已允許您將特定使用者從使用者行為警報中排除。排除受信任的使用者可以防止誤報和不必要的警報。</block>
+  <block id="0801620ca1af462c0fd534ad95bfa3b0" category="inline-link-macro">將使用者排除在警示範圍之外</block>
+  <block id="628cc6a9c569438d880eccc1e4a778da" category="paragraph">如需詳細資訊，請參閱 <block ref="dfd47d5e016db97d5fa8c5e4a7bd25f8" category="inline-link-macro-rx"></block>。</block>
+  <block id="366a951452a8cc6f0127d24e9230c837" category="section-title">使用者行為活動的保護群組支援</block>
+  <block id="3393700830226a018a19341bd00d6fa7" category="paragraph">Ransomware Resilience 防護群組現在支援可疑使用者行為偵測的偵測原則。將勒索軟體防護策略套用至防護群組時,它會在工作負載之間套用原則,簡化網路安全態勢的管理。</block>
+  <block id="e37ee5388292007ad9d3935327219122" category="paragraph">如需詳細資訊，請參閱 <block ref="5988324edfd7d92a7675cb7a08ac2a7e" category="inline-link-macro-rx"></block>。</block>
+  <block id="58c30bd4c949be43357ab1b7557703b5" category="list-text">Amazon FSx for ONTAP 不支援備份原則。在此環境中，您應該使用 Amazon FSx 執行備份作業。您可以使用 NetApp Ransomware Resilience 來恢復這些工作負載。</block>
+  <block id="2a0c2a157bd80927f000333567138b57" category="section-title">Azure NetApp Files 限制</block>
+  <block id="9ccc8d744240b4ff1c9fb964a84a7d3c" category="paragraph">Azure NetApp Files 在 Ransomware Resilience 中受到支援。以下限制適用於 Azure NetApp Files ：</block>
+  <block id="b285edab772b215df16e97f47e6cf852" category="list-text">Azure NetApp Files 不支援使用備份原則的勒索軟體防護策略。但您可以使用 Azure NetApp Files 備份功能。</block>
+  <block id="af5eb4e584c938e9f8b3531d944e3a59" category="list-text">Azure NetApp Files 不支援複製功能的勒索軟體防護策略。</block>
+  <block id="1c312af1f49befaddd00883a617fa8ba" category="list-text">選擇保護策略時，請確保其快照排程與 Azure NetApp Files 相容。Azure NetApp Files 中最常使用的快照排程是每小時一次。</block>
+  <block id="e02189957b252d42e679aa66d35030cd" category="list-text"><block ref="e02189957b252d42e679aa66d35030cd" category="inline-link-macro-rx"></block></block>
+  <block id="bf1ffe0e445fb2a07fc3757d6ae841ec" category="list-text">若要封鎖環境中的可疑使用者、請在使用者名稱旁邊選取 *Block* 。</block>
+  <block id="0f20f1de24e002ee03e9a0d693faaf59" category="list-text">若要停用針對特定使用者的警報（該使用者收到的警報為誤報），請選擇三個點 <block ref="2f43b42fd833d1e77420a8dae7419000" prefix="(" category="inline-code"></block>，然後選擇**將此使用者從監控中排除**。查看對話框，然後選擇**排除**進行確認。</block>
+  <block id="c65a69d50600a3f76ccdd1109d15b6e3" category="inline-link-macro">排除使用者</block>
+  <block id="d632bf28d8164d0436ca05f069b989e9" category="admonition">若要重新啟用某個使用者的警報，請返回該警報。選擇三個點，然後選擇 **Include this user in monitoring**。您也可以<block ref="e33a84d4132808c30f0e6b091e9f7e88" category="inline-link-macro-rx"></block>從監控。</block>
+  <block id="fb7f1789c81ab5377f72e16f6b9384ad" category="inline-link-macro">每項服務的限制</block>
+  <block id="771abd282157ca2dcc3c9f4d73d158c2" category="admonition">如果您正在為 Amazon FSxN for ONTAP 和 Azure NetApp Files 配置保護策略，請參閱<block ref="f35eaad9edb95ec2be22c4403bf0d360" category="inline-link-macro-rx"></block>。</block>
+  <block id="3adbdb581af927d3972b2f1c8cfb96a6" category="admonition">Amazon FSx for NetApp ONTAP 或 Azure NetApp Files 中的工作負載無法使用備份目的地。請使用 FSx for ONTAP 備份服務執行備份作業。您需要在 AWS 中為 FSx for ONTAP 工作負載設定備份原則，而不是在 Ransomware Resilience 中設定。備份原則會顯示在 Ransomware Resilience 中，並且與 AWS 中的設定保持一致。</block>
+  <block id="3bc2d94b3185bcb1259a8b3cf7da880b" category="list-text">選擇所需的偵測設定：</block>
+  <block id="d5fc4bf8c0e9a03cea6fbde26d8608f2" category="list-text">選擇用於管理此群組保護的原則。</block>
+  <block id="e468b341048b440bba27f4904f7a59c4" category="paragraph">在 NetApp Ransomware Resilience 設定標籤中，您可以設定備份目的地、執行攻擊準備演練、設定工作負載偵測，或設定可疑使用者活動偵測。</block>
+  <block id="04ba211304888e157a1517c86860bd73" category="list-text">配置可疑用戶活動報告。如需詳細資訊，請參閱 <block ref="da26800578b610b8b3390e49bb643377" category="inline-link-macro-rx"></block>。</block>
+  <block id="5d8eeee45929294781013d6d152aae8a" category="inline-link-macro">將 NetApp Ransomware Resilience 連接到 SIEM</block>
+  <block id="143fb46cdff0222e6e176aa99a0f923e" category="list-text">連接您的安全資訊和事件管理系統（SIEM）以進行威脅分析和偵測。啟用威脅偵測後，系統會自動將資料傳送到您的 SIEM 進行威脅分析。如需詳細資訊，請參閱 <block ref="c7d7e4de61d3da74895aed14b126475d" category="inline-link-macro-rx"></block>。</block>
+  <block id="fb12d4a7a4843715dd8c19d7dd88935d" category="admonition">Amazon FSx for NetApp ONTAP 和 Azure NetApp Files 中的工作負載無法使用備份目標。請使用原生備份解決方案執行備份作業：FSx for ONTAP 備份服務或 Azure NetApp Files 備份服務。</block>
+  <block id="eb7705f4441056c554dc7aea52de0b17" category="paragraph">如果某些受信任使用者的行為可能會觸發使用者行為警示，您可以將他們從警示中排除。</block>
+  <block id="0189c7f085ff5d22843080df2225281b" category="list-text">在「設定」儀表板中，找到「使用者活動」卡片，然後選取 **Manage**。</block>
+  <block id="82694a5fa079406313056daf01f9118b" category="list-text">選擇 **Excluded users** 標籤。</block>
+  <block id="de13c27fd58614b060a46c2092ed0545" category="list-text">若要在使用者介面中檢閱個別使用者，請選擇 **手動選取**。若要上傳排除的使用者清單，請選取 **上傳**。</block>
+  <block id="9dd5e919daf597022ca9ace5ebd739e9" category="list-text">如果您選擇了 **Select manually**，請選取要排除的特定使用者名稱旁的核取方塊。</block>
+  <block id="d2b1df006cba7f480a48064be15b71ec" category="list-text">如果您選擇 **Upload**，則必須先下載包含所有使用者清單的 CSV 檔案。選擇 **Download** 即可存取該清單。</block>
+  <block id="f44e20ff3f0d285a050e5f4e9dc1267f" category="paragraph">檢閱 CSV 檔案。移除所有您想要維持偵測的使用者名稱。當清單僅包含您想要從偵測中排除的使用者名稱時，請儲存該清單。選取 **Upload** 以找到檔案，然後選擇該檔案。</block>
+  <block id="8641c2055d546da7c2e15e6d18bc9016" category="list-text">選擇 **Add** 以完成將使用者新增至排除清單的操作。</block>
+  <block id="98e062a77fcb05260f463a017f171f72" category="list-text">在「已排除使用者」標籤中，現在會在儀表板中顯示已從使用者行為偵測警示中移除的使用者名稱。</block>
+  <block id="bf7da00a56585a6a89ff8f8184dfd6fd" category="inline-link-macro">回應勒索軟體警示</block>
+  <block id="face5a9388d96715a2df2a403febcfad" category="admonition">您也可以直接將使用者從警示中排除。如需詳細資訊、請參閱 <block ref="56429daef20ebac0c2b98002f6d61934" category="inline-link-macro-rx"></block>。</block>
+  <block id="0b09185e7ecba92cf7f8f0712501db0b" category="section-title">從排除使用者清單中移除使用者</block>
+  <block id="3ba04eb11eb815c62355b0a9cb7b05e5" category="paragraph">之後您可以將使用者重新加入偵測。</block>
+  <block id="144c603fbbde0985023a4ea73e22e35b" category="list-text">從排除使用者清單中找到要移除的使用者名稱。在該使用者名稱所在的行選擇操作選單 <block ref="2f43b42fd833d1e77420a8dae7419000" prefix="(" category="inline-code"></block>），然後選擇**移除**。</block>
+  <block id="581c5c550f20f231f6c9e881e699829b" category="list-text">在對話方塊中、選取 **Remove** 以確認您要移除所選使用者。</block>
+  <block id="90c78a95b0a3dffc0aa664d3139d1369" category="summary">您可以自動將資料從 NetApp Ransomware Resilience 傳送到您的安全性與事件管理系統（SIEM），以進行威脅分析與偵測。</block>
+  <block id="2e83d7690079c133e11ad37c5e4ff93e" category="doc">將 NetApp Ransomware Resilience 連接到安全性與事件管理系統（SIEM），以進行威脅分析與偵測</block>
+  <block id="7be8ef49fa437b6a669fb54a081312c4" category="paragraph">Ransomware Resilience 支援下列 SIEM ：</block>
+  <block id="03883d80013dc0b2b972eccd5b93b56f" category="list-text">AWS Security Hub</block>
+  <block id="11759e65f10609550e1a85679db960a9" category="list-text">Microsoft Sentinel</block>
+  <block id="a60efb4483a892cd919ec4e745900e2d" category="list-text">Splunk Cloud</block>
+  <block id="46fa98b3b308dc6f48d40cf8b1712bfe" category="section-title">傳送至 SIEM 的事件資料</block>
+  <block id="cfa147fb3f8ac9012f43e41767ad8241" category="paragraph">在 Ransomware Resilience 中啟用 AWS Security Hub 之前，您需要在 AWS Security Hub 中執行以下幾個主要步驟：</block>
+  <block id="2787b10f438b5f28e340793feb9becb6" category="paragraph">在 Ransomware Resilience 中啟用 Microsoft Sentinel 之前、您需要在 Microsoft Sentinel 中執行下列高階步驟：</block>
+  <block id="fb042b7b99959e391eeb7c417511098a" category="section-title">2026 年 2 月 16 日</block>
+  <block id="51f5590fac3af82049df229fcb91793c" category="sidebar">設定 SIEM</block>
 </blocks>

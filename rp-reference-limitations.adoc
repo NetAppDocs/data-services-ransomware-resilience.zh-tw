@@ -26,6 +26,17 @@ summary: 已知限制標識了該產品的此版本不支援的平台、設備�
 
 勒索軟體復原能力支援Amazon FSx for NetApp ONTAP系統。以下限制適用於Amazon FSx for ONTAP：
 
-* Amazon FSx for ONTAP不支援備份策略。在這種環境下，您應該使用Amazon FSx執行備份作業。您可以使用勒索軟體復原功能來恢復這些工作負載。
+* Amazon FSx for ONTAP 不支援備份原則。在此環境中，您應該使用 Amazon FSx 執行備份作業。您可以使用 NetApp Ransomware Resilience 來恢復這些工作負載。
 * 復原操作僅從快照執行。
+
+
+
+
+== Azure NetApp Files 限制
+
+Azure NetApp Files 在 Ransomware Resilience 中受到支援。以下限制適用於 Azure NetApp Files ：
+
+* Azure NetApp Files 不支援使用備份原則的勒索軟體防護策略。但您可以使用 Azure NetApp Files 備份功能。
+* Azure NetApp Files 不支援複製功能的勒索軟體防護策略。
+* 選擇保護策略時，請確保其快照排程與 Azure NetApp Files 相容。Azure NetApp Files 中最常使用的快照排程是每小時一次。
 

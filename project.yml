@@ -40,6 +40,8 @@ sidebar:
       url: "/rp-start-simulate.html"
     - title: 在「設定」中設定備份、威脅偵測和攻擊模擬
       url: "/rp-use-settings.html"
+    - title: 設定 SIEM
+      url: "/task-siem.html"
     - title: 設定使用者活動偵測
       entries:
       - title: 瞭解使用者活動偵測

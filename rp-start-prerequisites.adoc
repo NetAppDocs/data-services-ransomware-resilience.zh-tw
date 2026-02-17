@@ -26,7 +26,10 @@ summary: 透過驗證對您的環境、網路存取、登入和 Web 瀏覽器的
 | 環境 | 協定 | 支援的版本 
 
 
-| Amazon FSx for NetApp ONTAP* | NFS、CIFS 和 SAN | 不適用 
+| Amazon FSx for NetApp ONTAP* | CIFS、NFS 和 SAN | 不適用 
+
+
+| Azure NetApp Files | CIFS 和 NFS | 不適用 
 
 
 .2+| 適用於 AWS 的Cloud Volumes ONTAP | CIFS 和 NFS | 9.11.1 及更高版本 
