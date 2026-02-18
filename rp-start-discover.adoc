@@ -21,6 +21,9 @@ NOTE: 勒索軟體復原能力無法發現使用FlexGroup 的磁碟區的工作�
 
 勒索軟體復原能力會檢查您目前的備份保護、快照副本和NetApp自主勒索軟體保護選項。勒索軟體復原能力還可以偵測來自SnapCenter for VMware（用於 VM 資料儲存）、 SnapCenter for Oracle 和NetApp Backup and Recovery （用於檔案共用和 VM 檔案共用）的保護資訊。然後它會推薦一些改善勒索軟體防護的方法。
 
+
+IMPORTANT: 雖然 Ransomware Resilience 可以識別來自 SnapCenter 的原則，但您無法透過 SnapCenter 使用 Ransomware Resilience 執行還原。
+
 *所需的控制台角色* 要執行此任務，您需要組織管理員、資料夾或專案管理員或勒索軟體復原管理員角色。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["了解NetApp Console的勒索軟體復原角色"^] 。
 
 

@@ -62,9 +62,9 @@ https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles
 .勒索軟體復原功能如何與NetApp Backup and Recovery和SnapCenter互動？
 勒索軟體復原功能與備份和復原功能協同工作，以發現並設定檔案共享工作負載的快照和備份策略。
 
-勒索軟體復原能力與SnapCenter或SnapCenter for VMware 搭配使用，可以發現並設定應用程式和虛擬機器工作負載的快照和備份策略。
+Ransomware Resilience 可與 SnapCenter 或 SnapCenter for VMware 搭配使用，以發現並設定應用程式和虛擬機器工作負載的快照和備份策略。目前，您無法將 Ransomware Resilience 與 SnapCenter 搭配使用進行復原。
 
-勒索軟體復原功能還可以與備份和復原以及SnapCenter （包括 VMware 版SnapCenter ）搭配使用，以執行檔案和工作負載一致性復原。
+NetApp Ransomware Resilience 也可與 NetApp Backup and Recovery 搭配使用，以執行檔案和工作負載一致的還原。
 
 對於許可和計費，即使您沒有單獨的備份和復原許可證，勒索軟體復原功能也可以與備份和復原功能整合。如果您同時擁有備份和復原以及勒索軟體復原功能，則受這兩種產品保護的任何公開資料僅由勒索軟體復原功能計費。
 
@@ -85,7 +85,7 @@ link:rp-use-protect.html["了解工作負載優先順序或重要性"] 。
 .勒索軟體復原能力支援哪些工作負載？
 勒索軟體復原能力可以識別以下工作負載：Oracle、檔案共享、區塊儲存、虛擬機器和虛擬機器資料儲存。
 
-如果您正在使用SnapCenter或SnapCenter for VMware，則這些產品支援的所有工作負載也會在勒索軟體復原功能中被識別。勒索軟體復原能力可以以與工作負載一致的方式保護和恢復SnapCenter和SnapCenter工作負載。
+如果您正在使用 SnapCenter 或 SnapCenter for VMware，則這些產品支援的所有工作負載也會在 Ransomware Resilience 中被識別。
 
 .如何將資料與工作負載關聯？
 勒索軟體復原能力會發現捲和檔案副檔名，並將它們與相應的工作負載關聯起來。

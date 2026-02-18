@@ -1,0 +1,108 @@
+---
+sidebar: sidebar 
+permalink: task-protection-group 
+keywords: ransomware protection, protection group, modify, create, 
+summary: 您可以透過在NetApp Ransomware Resilience中為工作負載分配策略來保護工作負載免受勒索軟體攻擊。 
+---
+= 在 NetApp Ransomware Resilience 中管理保護群組
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp Ransomware Resilience 提供保護群組，以便更輕鬆地管理您的資料資產。保護群組是工作負載的邏輯分組。Ransomware Resilience 可以使用單一保護策略，同時保護保護群組中的所有磁碟區，讓您無需為每個工作負載分別套用策略。
+
+*所需的控制台角色* 要執行此任務，您需要組織管理員、資料夾或專案管理員或勒索軟體復原管理員角色。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["了解NetApp Console的勒索軟體復原角色"^] 。
+
+
+
+== 建立保護組
+
+您可以建立群組，無論其保護狀態如何（即未受保護的群組和受保護的群組）。在保護群組新增保護策略時，新的保護策略將取代任何現有策略，包括由 NetApp Backup and Recovery 管理的策略。
+
+.步驟
+. 從勒索軟體恢復選單中，選擇*保護*。
++
+image:screen-protection.png["管理策略頁面"]
+
+. 在「保護」儀表板中，選擇 *Protection groups* 標籤。
++
+image:screen-protection-groups.png["保護群組頁面"]
+
+. 選擇“*新增*”。
++
+image:screen-protection-groups-add.png["新增保護群組頁面"]
+
+. 輸入保護組的名稱。
+. 選擇要新增到群組中的工作負載。
++
+
+TIP: 要查看有關工作負載的更多詳細信息，請滾動到右側。
+
+. 選擇“下一步”。
++
+image:screen-protection-groups-policy.png["新增保護群組 - 策略頁面"]
+
+. 為該群組選擇保護策略。
+. 如果保護策略包含複製功能，請檢查複製設定。
++
+.. 若要將所有快照複製到相同目標位置，請勾選「**每個工作負載使用相同目標位置**」。在控制台代理部分，為工作負載選擇*目標系統*和*目標儲存虛擬機器*。+ 若要使用不同的目的地，請取消選取該方塊。檢查每個控制台代理程式下的每個工作負載，並為每個工作負載分配一個*目標系統*和*目標儲存虛擬機器*。選擇**下一步**。
+
+
+. 若要設定備份策略，請選擇一個，然後選擇**下一步**。
+. 如果您的偵測策略包含使用者行為偵測，請選擇您想要使用的資料收集器，然後按一下**下一步**。
+. 檢查保護組的選擇。
+. 若要完成保護群組、請選取 *Add* 。
+
+
+
+
+=== 編輯組保護
+
+您可以變更現有群組的偵測策略。
+
+.步驟
+. 從勒索軟體恢復選單中，選擇*保護*。
+. 在「保護」頁面中，選擇「保護群組」選項卡，然後選擇要修改其政策的群組。
+. 從保護群組的概覽頁面中，選擇「編輯保護」。
+. 選擇要套用的現有保護原則，或選擇 **Add** 以建立新的保護原則。如需新增保護原則的詳細資訊，請參閱 link:rp-use-protect.html#add-a-ransomware-protection-strategy["建立保護策略"]。然後選擇 **Save**。
+. 在備份目標概覽中，選擇現有的備份目標或**新增新的備份目標**。
+. 選擇**下一步**來查看您的變更。
+
+
+
+
+== 從保護群組移除工作負載
+
+之後您可能需要從現有保護群組中移除工作負載。
+
+.步驟
+. 從勒索軟體恢復選單中，選擇*保護*。
+. 在「保護」頁面中，選擇「保護群組」標籤。
+. 選擇要從中刪除一個或多個工作負載的群組。
++
+image:screen-protection-groups-more-workloads.png["保護組詳細資料頁面"]
+
+. 在保護群組頁面中、選擇要從群組中移除的工作負載、然後選擇 *Actions* image:screenshot_horizontal_more_button.gif["操作按鈕"] 選項。
+. 從「操作」功能表中，選擇「*刪除工作負載*」。
+. 確認您要刪除工作負載並選擇*刪除*。
+
+
+
+
+== 刪除保護群組
+
+刪除保護群組時、Ransomware Resilience 會移除該群組及工作負載上的保護策略。它不會刪除個別工作負載。
+
+.步驟
+. 從勒索軟體恢復選單中，選擇*保護*。
+. 在「保護」頁面中，選擇「保護群組」標籤。
+. 選擇要從中刪除一個或多個工作負載的群組。
++
+image:screen-protection-groups-more-workloads.png["保護組詳細資料頁面"]
+
+. 在選定的保護群組頁面的右上角，選擇「*刪除保護群組*」。
+. 確認您要刪除該群組並選擇*刪除*。
+

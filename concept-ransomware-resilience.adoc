@@ -108,7 +108,7 @@ NetApp Console提供企業級跨本機和雲端環境的NetApp儲存和資料服
 
 == 勒索軟體復原的工作原理
 
-Ransomware Resilience 使用NetApp Backup and Recovery來發現和設定檔案共享工作負載的快照和備份策略，使用SnapCenter或SnapCenter for VMware 來發現和設定應用程式和虛擬機器工作負載的快照和備份策略。此外，Ransomware Resilience 使用備份和復原以及SnapCenter / SnapCenter for VMware 來執行檔案和工作負載一致的復原。
+Ransomware Resilience 使用 NetApp Backup and Recovery 來探索並設定檔案共用工作負載的快照和備份原則。
 
 image:diagram-rp-architecture-preview3.png["勒索軟體抵禦能力架構​​圖"]
 
@@ -119,7 +119,7 @@ image:diagram-rp-architecture-preview3.png["勒索軟體抵禦能力架構​​
 
 | *確認*  a| 
 * 尋找連接到控制台的所有客戶本地 NAS（NFS 和 CIFS 協定）、SAN（FC、iSCSI 和 NVMe）和Cloud Volumes ONTAP資料。
-* 從ONTAP和SnapCenter服務 API 中識別客戶資料並將其與工作負載關聯。詳細了解 https://docs.netapp.com/us-en/ontap-family/["ONTAP"^]和 https://docs.netapp.com/us-en/snapcenter/index.html["SnapCenter軟體"^]。
+* 從 ONTAP 和 SnapCenter 服務 API 中識別客戶數據，並將其與工作負載關聯。深入瞭解 https://docs.netapp.com/us-en/ontap-family/["ONTAP"^]。
 * 發現每個磁碟區的目前NetApp快照副本和備份策略的保護等級以及任何機上偵測功能。然後，勒索軟體復原能力透過使用備份和復原、 ONTAP服務以及NetApp技術（例如自主勒索軟體保護（ARP 或 ARP/AI，取決於您的ONTAP版本）、FPolicy、備份策略和快照策略）將此保護狀態與工作負載關聯。了解更多 https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["自主勒索軟體防護"^]， https://docs.netapp.com/us-en/data-services-backup-recovery/index.html["NetApp Backup and Recovery"^] ， 和 https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html["ONTAP FPolicy"^]。
 * 根據自動發現的保護等級為每個工作負載分配業務優先級，並根據工作負載的業務優先級建議保護策略。工作負載優先順序是基於已應用於與工作負載相關的每個磁碟區的快照頻率。
 
@@ -127,7 +127,7 @@ image:diagram-rp-architecture-preview3.png["勒索軟體抵禦能力架構​​
 
 
 | *保護*  a| 
-* 透過將政策應用於每個已識別的工作負載，主動監控工作負載並協調備份和復原、 SnapCenter和ONTAP API 的使用。
+* 主動監控工作負載，並透過將原則套用至每個已識別的工作負載來協調 Backup and Recovery 和 ONTAP API 的使用。
 
 
 
@@ -235,8 +235,6 @@ NOTE: 在ONTAP中使用 ARP/AI 需要ONTAP 9.16 或更高版本。+ ONTAP不為F
 * NetApp檔案分享
 * VMware 資料儲存區
 
-
-如果您正在使用SnapCenter或SnapCenter for VMware，則這些產品支援的所有工作負載也會在勒索軟體復原功能中被識別。勒索軟體復原能力可以以工作負載一致的方式保護和恢復這些內容。
 
 
 

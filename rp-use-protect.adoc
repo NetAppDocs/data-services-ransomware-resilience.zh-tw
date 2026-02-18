@@ -42,20 +42,17 @@ summary: 您可以透過在NetApp Ransomware Resilience中為工作負載分配�
 NOTE: 如果您正在為 Amazon FSxN for ONTAP 和 Azure NetApp Files 配置保護策略，請參閱link:rp-reference-limitations.html["每項服務的限制"]。
 
 
-TIP: 為了增強對資料資產的管理和保護，您可以創建link:#create-a-protection-group["群組文件共享"]透過策略來集體保護卷。
+TIP: 為了更好地管理和保護您的資料資產，您可以建立link:task-protection-group.html["群組工作負載"]，以便在一個策略下統一保護多個磁碟區。
 
 
 
 === 與其他NetApp託管服務結合的保護策略
 
-除了勒索軟體復原能力之外，還可以使用以下服務來管理保護：
+除了 Ransomware Resilience 之外，您還可以使用 NetApp Backup and Recovery 來管理檔案共用、VM 檔案共用的保護。
 
-* NetApp Backup and Recovery、VM 檔案共享
-* SnapCenter for VMware 適用於虛擬機器資料儲存區
-* Oracle SnapCenter
+來自 Backup & Recovery 服務的保護資訊會顯示在 Ransomware Resilience 中。您可以使用 Ransomware Resilience 為這些服務新增偵測原則。使用 Ransomware Resilience 新增保護原則會取代現有的保護原則。
 
-
-這些服務的保護資訊出現在 Ransomware Resilience 中。您可以使用 Ransomware Resilience 為這些服務新增偵測策略。增加具有勒索軟體復原能力的保護策略將取代現有的保護策略。
+Ransomware Resilience 也會發現 SnapCenter for VMware 虛擬機器資料儲存區和 SnapCenter for Oracle 的保護原則。您無法使用這些服務透過 Ransomware Resilience 進行還原。
 
 如果勒索軟體偵測策略由ONTAP中的自主勒索軟體防護（ARP 或 ARP/AI，取決於ONTAP版本）和 FPolicy 管理，則這些工作負載將受到保護並將繼續由 ARP 和 FPolicy 管理。
 
@@ -66,7 +63,7 @@ NOTE: Amazon FSx for NetApp ONTAP 或 Azure NetApp Files 中的工作負載無�
 
 === 針對不受NetApp應用程式保護的工作負載的保護策略
 
-如果您的工作負載不是由備份和復原、勒索軟體復原、 SnapCenter或SnapCenter Plug-in for VMware vSphere管理的，則它可能具有作為ONTAP或其他產品的一部分拍攝的快照。如果ONTAP FPolicy 保護已到位，則可以使用ONTAP變更 FPolicy 保護。
+如果您的工作負載未由 Backup and Recovery 或 Ransomware Resilience 管理，則可能已建立快照，這些快照是 ONTAP 或其他產品的一部分。如果已啟用 ONTAP FPolicy 保護，您可以使用 ONTAP 變更 FPolicy 保護。
 
 
 
@@ -95,7 +92,7 @@ image:screen-protection.png["保護頁面"]
 
 
 
-NOTE: 看link:#add-a-ransomware-protection-strategy["增加勒索軟體防護策略"]了解在現有SnapCenter或備份和復原的現有保護策略的情況下使用勒索軟體復原能力的情況。
+NOTE: 請參閱link:#add-a-ransomware-protection-strategy["增加勒索軟體防護策略"]以瞭解在已有 NetApp Backup and Recovery 保護原則的情況下使用 NetApp Ransomware Resilience。
 
 
 
@@ -130,7 +127,7 @@ NOTE: 可疑使用者行為活動和 FPolicy（可疑文件副檔名）活動與
 
 *複製目標*：如果您已設定快照複製，則會列出目標儲存虛擬機器和系統的名稱。如果沒有複製項，此欄位顯示「無」。
 
-*快照和備份策略*：此列顯示應用於工作負載的快照和備份策略以及管理這些策略的產品或服務。
+*Snapshot、複寫和備份原則*：此欄顯示套用至工作負載的 Snapshot 和備份原則，以及管理這些原則的產品或服務。
 
 * 由SnapCenter管理
 * 由適用於SnapCenter Plug-in for VMware vSphere管理
@@ -138,6 +135,9 @@ NOTE: 可疑使用者行為活動和 FPolicy（可疑文件副檔名）活動與
 * 管理快照和備份的勒索軟體保護策略的名稱
 * 沒有任何
 
+
+
+NOTE: 您無法在 Ransomware Resilience 中為任何 SnapCenter 策略管理復原。
 
 *工作量的重要性*
 
@@ -285,37 +285,6 @@ NOTE: **加密使用者擴充**策略是唯一支援可疑使用者行為偵測�
 |===
 
 
-== 使用SnapCenter實現應用程式或虛擬機器一致的保護
-
-啟用應用程式或虛擬機器一致性保護可協助您以一致的方式保護應用程式或虛擬機器工作負載，實現靜止且一致的狀態，以避免日後需要復原時發生潛在的資料遺失。
-
-此程序啟動使用備份和還原為應用程式註冊SnapCenter軟體伺服器或SnapCenter Plug-in for VMware vSphere。
-
-啟用工作負載一致性保護後，您可以在勒索軟體復原中管理保護策略。保護策略包括在其他地方管理的快照和備份策略以及在勒索軟體復原中管理的勒索軟體偵測策略。
-
-若要了解如何使用備份和復原註冊適用於 VMware vSphere 的SnapCenter或SnapCenter Plug-in for VMware vSphere，請參閱下列資訊：
-
-* https://docs.netapp.com/us-en/data-services-backup-recovery/task-register-snapcenter-server.html["註冊SnapCenter伺服器軟體"^]
-* https://docs.netapp.com/us-en/data-services-backup-recovery/task-register-snapCenter-plug-in-for-vmware-vsphere.html["SnapCenter Plug-in for VMware vSphere"^]
-
-
-.步驟
-. 從勒索軟體恢復選單中，選擇*儀表板*。
-. 從「建議」窗格中，找到以下建議之一並選擇「檢視並修復」：
-+
-** 使用NetApp Console註冊可用的SnapCenter伺服器
-** 使用NetApp Console註冊適用SnapCenter Plug-in for VMware vSphere（SCV）
-
-
-. 依照資訊使用備份和還原為 VMware vSphere 主機註冊SnapCenter或SnapCenter Plug-in for VMware vSphere。
-. 返回勒索軟體恢復能力。
-. 從勒索軟體復原力導航到儀表板並再次啟動發現過程。
-. 從勒索軟體復原中，選擇「保護」以查看「保護」頁面。
-. 查看「保護」頁面上的快照和備份策略列中的詳細信息，以了解這些策略是否在其他地方進行管理。
-
-
-
-
 == 增加勒索軟體防護策略
 
 有三種增加勒索軟體保護策略：
@@ -330,7 +299,7 @@ NOTE: **加密使用者擴充**策略是唯一支援可疑使用者行為偵測�
 ** 備份策略
 
 
-* **以勒索軟體復原管理的保護策略取代SnapCenter或備份和復原保護中的現有快照或備份策略。 **
+* **將 Backup and Recovery 保護中現有的快照或備份原則替換為由 Ransomware Resilience 管理的保護策略。**
 +
 勒索軟體防護策略包括：
 
@@ -425,15 +394,15 @@ TIP: 若要在輔助儲存上啟用備份鎖定，請使用*設定*選項來設�
 
 
 
-=== 將偵測原則新增至具有由SnapCenter或備份和復原管理的現有快照和備份原則的工作負載
+=== 在 Backup and Recovery 管理的、具有現有快照和備份原則的工作負載中新增偵測原則
 
-勒索軟體復原能力可讓您為在其他NetApp產品或服務中管理的現有快照和備份保護的工作負載指派偵測策略或保護策略。其他服務（例如備份和還原和SnapCenter）使用管理快照、複製到二級儲存或備份到物件儲存的策略。
+Ransomware Resilience 可讓您為已在其他 NetApp 產品或服務中管理現有快照和備份保護的工作負載指派偵測原則或保護原則。Backup and Recovery 使用原則來管理快照、複寫到次要儲存設備或備份到物件儲存設備。
 
 
 
 ==== 在具有現有備份或快照策略的工作負載中新增偵測策略
 
-如果您已有具有備份和復原或SnapCenter 的快照或備份策略，則可以新增策略來偵測勒索軟體攻擊。若要使用 Ransomware Resilience 管理保護和偵測，請參閱<<protection,利用勒索軟體抵禦能力進行保護>>。
+如果您已在 NetApp Backup and Recovery 中設定了快照或備份策略，則可以新增策略來偵測勒索軟體攻擊。若要使用 NetApp Ransomware Resilience 管理保護和偵測，請參閱<<protection,利用勒索軟體抵禦能力進行保護>>。
 
 .步驟
 . 從勒索軟體恢復選單中，選擇*保護*。
@@ -441,9 +410,8 @@ TIP: 若要在輔助儲存上啟用備份鎖定，請使用*設定*選項來設�
 image:screen-protection.png["管理策略頁面"]
 
 . 在「保護」頁面中，選擇一個工作負載，然後選擇「*保護*」。
-. 勒索軟體復原能力偵測是否存在活動的SnapCenter或備份和復原策略。
-. 若要保留現有的備份和復原或SnapCenter策略並僅套用_偵測_策略，請取消選取**取代現有策略**框。
-. 要查看SnapCenter策略的詳細信息，請選擇*向下箭頭*。
+. NetApp Ransomware Resilience 會偵測是否有現有的有效 NetApp Backup and Recovery 原則。
+. 若要保留現有的 Backup and Recovery 策略，僅套用_偵測_策略，請取消選取**取代現有策略**方塊。
 . 選擇所需的偵測設定：
 +
 ....
@@ -473,7 +441,7 @@ image:screen-protection.png["管理策略頁面"]
 image:screen-protection.png["管理策略頁面"]
 
 . 在「保護」頁面中，選擇一個工作負載，然後選擇「*保護*」。
-. 勒索軟體復原能力偵測是否有現有的活動備份和復原或SnapCenter策略。若要取代現有的備份和復原或SnapCenter策略，請勾選「取代現有策略」方塊。當您勾選該方塊時，勒索軟體復原力會以偵測策略取代偵測策略清單。
+. Ransomware Resilience 會偵測是否有現有的作用中 Backup and Recovery 原則。若要取代現有原則、請選取 **取代現有原則** 方塊。當您選取此方塊時、 Ransomware Resilience 會將偵測原則清單取代為偵測原則。
 . 選擇保護策略。如果不存在保護策略，請選擇**新增**來建立新策略。有關建立策略的信息，請參閱<<steps,建立保護策略>>。選擇**下一步**。
 . 如果您的策略包含複製，請選擇**目標系統**和**目標儲存虛擬機器**。選擇**下一步**。
 . 選擇備份目標或建立新的備份目標。選擇**下一步**。
@@ -494,103 +462,10 @@ image:screen-protection.png["管理策略頁面"]
 .步驟
 . 從勒索軟體恢復選單中，選擇*保護*。
 . 在「保護」頁面的工作負載行上，選擇「編輯保護」。
-. 如果工作負載具有您想要維護的現有備份和復原或SnapCenter策略，請取消勾選「取代現有策略」。若要取代現有策略，請勾選**取代現有策略**。
+. 如果工作負載已有 NetApp Backup and Recovery 策略且您希望保留該策略，請取消勾選 **Replace existing policies**。若要取代現有策略，請勾選 **Replace existing policies**。
 . 在「策略」頁面中，選擇要指派的策略的向下箭頭以查看詳細資訊。
 . 選擇您想要指派的策略。
 . 選擇*保護*以完成變更。
-
-
-
-
-== 建立保護組
-
-將文件共用分組到保護組中可以更輕鬆地保護您的資料資產。勒索軟體復原能力可以同時保護群組中的所有捲，而不是單獨保護每個磁碟區。
-
-您可以建立群組，而不管其保護狀態如何（即未受保護的群組和受保護的群組）。當您將保護策略新增至保護群組時，新的保護策略將取代任何現有策略，包括由SnapCenter和NetApp Backup and Recovery管理的策略。
-
-.步驟
-. 從勒索軟體恢復選單中，選擇*保護*。
-+
-image:screen-protection.png["管理策略頁面"]
-
-. 在「保護」頁面中，選擇「保護群組」標籤。
-+
-image:screen-protection-groups.png["保護群組頁面"]
-
-. 選擇“*新增*”。
-+
-image:screen-protection-groups-add.png["新增保護群組頁面"]
-
-. 輸入保護組的名稱。
-. 選擇要新增到群組中的工作負載。
-+
-
-TIP: 要查看有關工作負載的更多詳細信息，請滾動到右側。
-
-. 選擇“下一步”。
-+
-image:screen-protection-groups-policy.png["新增保護群組 - 策略頁面"]
-
-. 選擇用於管理此群組保護的原則。
-. 如果保護策略包含複製功能，請檢查複製設定。
-+
-.. 若要將所有快照複製到相同目標位置，請勾選「**每個工作負載使用相同目標位置**」。在控制台代理部分，為工作負載選擇*目標系統*和*目標儲存虛擬機器*。+ 若要使用不同的目的地，請取消選取該方塊。檢查每個控制台代理程式下的每個工作負載，並為每個工作負載分配一個*目標系統*和*目標儲存虛擬機器*。選擇**下一步**。
-
-
-. 若要設定備份策略，請選擇一個，然後選擇**下一步**。
-. 如果您的偵測策略包含使用者行為偵測，請選擇您想要使用的資料收集器，然後按一下**下一步**。
-. 檢查保護組的選擇。
-. 若要完成保護群組的創建，請選擇“*新增*”。
-
-
-
-
-=== 編輯組保護
-
-您可以變更現有群組的偵測策略。
-
-.步驟
-. 從勒索軟體恢復選單中，選擇*保護*。
-. 在「保護」頁面中，選擇「保護群組」選項卡，然後選擇要修改其政策的群組。
-. 從保護群組的概覽頁面中，選擇「編輯保護」。
-. 選擇要套用的現有保護策略或選擇**新增**以建立新的保護策略。有關添加保護策略的更多信息，請參閱<<steps,建立保護策略>>。然後選擇**儲存**。
-. 在備份目標概覽中，選擇現有的備份目標或**新增新的備份目標**。
-. 選擇**下一步**來查看您的變更。
-
-
-
-
-=== 從群組中刪除工作負載
-
-您可能稍後需要從現有群組中刪除工作負載。
-
-.步驟
-. 從勒索軟體恢復選單中，選擇*保護*。
-. 在「保護」頁面中，選擇「保護群組」標籤。
-. 選擇要從中刪除一個或多個工作負載的群組。
-+
-image:screen-protection-groups-more-workloads.png["保護組詳細資料頁面"]
-
-. 在選定的保護群組頁面中，選擇要從群組中刪除的工作負載，然後選擇“操作”image:screenshot_horizontal_more_button.gif["操作按鈕"]選項。
-. 從「操作」功能表中，選擇「*刪除工作負載*」。
-. 確認您要刪除工作負載並選擇*刪除*。
-
-
-
-
-=== 刪除保護群組
-
-刪除保護群組會刪除該群組及其保護，但不會刪除單一工作負載。
-
-.步驟
-. 從勒索軟體恢復選單中，選擇*保護*。
-. 在「保護」頁面中，選擇「保護群組」標籤。
-. 選擇要從中刪除一個或多個工作負載的群組。
-+
-image:screen-protection-groups-more-workloads.png["保護組詳細資料頁面"]
-
-. 在選定的保護群組頁面的右上角，選擇「*刪除保護群組*」。
-. 確認您要刪除該群組並選擇*刪除*。
 
 
 
