@@ -12,7 +12,7 @@ summary: 使用NetApp Ransomware Resilience，您可以下載顯示保護、警�
 
 
 [role="lead"]
-您可以匯出保護資料並下載顯示攻擊準備演習、保護、警報和復原的詳細資訊的 CSV 或 JSON 檔案。
+NetApp Ransomware Resilience 提供 CSV 和 JSON 格式的報告，詳細展示受支援和不受支援的磁碟區、攻擊準備演練、防護、警示和還原情況。使用這些報告，您可以儲存並離線查看有關演練、防護狀態、警示和還原事件的報告。
 
 
 TIP: 下載檔案之前，請先刷新儀表板以取得報告中的最新資料。

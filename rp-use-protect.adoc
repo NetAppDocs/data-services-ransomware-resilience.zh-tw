@@ -12,7 +12,7 @@ summary: 您可以透過在NetApp Ransomware Resilience中為工作負載分配�
 
 
 [role="lead"]
-您可以透過在NetApp Ransomware Resilience中啟用工作負載一致性保護或建立勒索軟體保護策略來保護工作負載免受勒索軟體攻擊。
+勒索軟體防護策略是 NetApp Ransomware Resilience 的關鍵功能：它們支援偵測、防護和複寫。防護策略是網路安全態勢的重要組成部分。
 
 *所需的控制台角色* 要執行此任務，您需要組織管理員、資料夾或專案管理員或勒索軟體復原管理員角色。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["了解NetApp Console的勒索軟體復原角色"^] 。
 
@@ -61,92 +61,9 @@ NOTE: Amazon FSx for NetApp ONTAP 或 Azure NetApp Files 中的工作負載無�
 
 
 
-=== 針對不受NetApp應用程式保護的工作負載的保護策略
+==== 針對不受NetApp應用程式保護的工作負載的保護策略
 
 如果您的工作負載未由 Backup and Recovery 或 Ransomware Resilience 管理，則可能已建立快照，這些快照是 ONTAP 或其他產品的一部分。如果已啟用 ONTAP FPolicy 保護，您可以使用 ONTAP 變更 FPolicy 保護。
-
-
-
-== 查看工作負載上的勒索軟體保護
-
-保護工作負載的第一步是查看目前工作負載及其保護狀態。您可以看到以下類型的工作負載：
-
-* 應用程式工作負載
-* 阻止工作負載
-* 檔案共享工作負載
-* 虛擬機器工作負載
-
-
-.步驟
-. 從控制台左側導覽列中選擇“保護”>“勒索軟體恢復”。
-. 執行下列操作之一：
-+
-** 從儀表板上的資料保護窗格中，選擇「查看全部」。
-** 從選單中選擇*保護*。
-+
-image:screen-protection.png["保護頁面"]
-
-
-
-. 在此頁面中，您可以查看和變更工作負載的保護詳細資料。
-
-
-
-NOTE: 請參閱link:#add-a-ransomware-protection-strategy["增加勒索軟體防護策略"]以瞭解在已有 NetApp Backup and Recovery 保護原則的情況下使用 NetApp Ransomware Resilience。
-
-
-
-=== 了解保護頁面
-
-保護頁面顯示有關工作負載保護的以下資訊：
-
-*保護狀態*：工作負載可以顯示下列保護狀態之一，以指示是否套用了政策：
-
-* *受保護*：已套用原則。與工作負載相關的所有磁碟區上均啟用了 ARP（或 ARP/AI，取決於ONTAP版本）。
-* *存在風險*：未應用任何保單。如果工作負載沒有啟用主要偵測策略，那麼即使啟用了快照和備份策略，它仍然「處於危險之中」。
-* *進行中*：政策正在應用但尚未完成。
-* *失敗*：策略已套用但不起作用。
-
-
-*偵測狀態*：工作負載可以具有下列勒索軟體偵測狀態之一：
-
-* *學習*：最近為工作負載分配了勒索軟體偵測策略，而勒索軟體復原正在掃描工作負載。
-* *主動*：已指派勒索軟體偵測保護策略。
-* *未設定*：未指派勒索軟體偵測保護策略。
-* *錯誤*：已指派勒索軟體偵測策略，但勒索軟體復原遇到錯誤。
-+
-
-TIP: 當在勒索軟體復原中啟用保護時，勒索軟體偵測策略狀態從學習模式變成主動模式後，警報偵測和報告開始。
-
-
-
-
-NOTE: 可疑使用者行為活動和 FPolicy（可疑文件副檔名）活動與偵測狀態分開列出。
-
-*偵測策略*：如果已指派勒索軟體偵測策略，則會顯示其名稱。如果尚未指派偵測策略，則會顯示「N/A」。
-
-*複製目標*：如果您已設定快照複製，則會列出目標儲存虛擬機器和系統的名稱。如果沒有複製項，此欄位顯示「無」。
-
-*Snapshot、複寫和備份原則*：此欄顯示套用至工作負載的 Snapshot 和備份原則，以及管理這些原則的產品或服務。
-
-* 由SnapCenter管理
-* 由適用於SnapCenter Plug-in for VMware vSphere管理
-* 由備份和復原管理
-* 管理快照和備份的勒索軟體保護策略的名稱
-* 沒有任何
-
-
-
-NOTE: 您無法在 Ransomware Resilience 中為任何 SnapCenter 策略管理復原。
-
-*工作量的重要性*
-
-勒索軟體復原能力根據對每個工作負載的分析，在發現過程中為每個工作負載分配重要性或優先順序。工作負載重要性由下列快照頻率決定：
-
-* *關鍵*：每小時會建立多個快照副本（高度激進的保護計畫）
-* *重要提示*：快照副本的建立頻率低於每小時一次，但高於每天一次。
-* *標準*：每天拍攝多次快照副本
-
 
 
 
@@ -394,11 +311,11 @@ image:screen-protection.png["管理策略頁面"]
 . 若要保留現有的 Backup and Recovery 策略，僅套用_偵測_策略，請取消選取**取代現有策略**方塊。
 . 選擇所需的偵測設定：
 +
-....
-*Encryption detection*
-*Suspicious user behavior detection*
-*Block suspicious file extensions*
-....
+** *加密偵測*
+** *可疑使用者行為偵測*
+** *封鎖可疑的檔案副檔名*
+
+
 . 選擇**下一步**。
 . 如果您選擇了 *Suspicious user behavior detection* 作為偵測設置，請選擇 User activity agent 或link:suspicious-user-activity.html#create-a-user-activity-agent["或創建一個"]。
 +

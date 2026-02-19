@@ -12,9 +12,9 @@ summary: 確保您滿足勒索軟體復原的許可要求，以保護您的系�
 
 
 [role="lead"]
-透過NetApp Ransomware Resilience，您可以使用不同的授權方案。
+NetApp Ransomware Resilience 提供不同的授權方案，讓您能夠在對貴組織有意義的地方訂閱服務。
 
-要執行此任務，您需要組織管理員、資料夾或專案管理員角色。 https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["了解控制台存取角色"^] 。
+要設定授權，您需要擁有 Organization admin、Folder 或 project admin 角色 https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["了解控制台存取角色"^]。
 
 
 

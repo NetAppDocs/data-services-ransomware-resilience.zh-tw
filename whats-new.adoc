@@ -52,7 +52,7 @@ Ransomware Resilience 防護群組現在支援可疑使用者行為偵測的偵�
 
 === 不支援的捲
 
-勒索軟體復原能力報告現在會在**摘要**報告中捕獲有關受支援和不受支援的捲的資訊。利用這些資訊來診斷系統中的捲為何可能不符合勒索軟體防護條件。
+Ransomware Resilience 報告現在會在 **Summary** 報告中記錄受支援和不受支援的磁碟區的資訊。使用此資訊可以診斷系統中的磁碟區為何可能不符合勒索軟體防護條件。
 
 有關詳細信息，請參閱 link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-reports.html["下載勒索軟體復原力報告"^]。
 
@@ -439,7 +439,7 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect
 
 === 來自Digital Advisor的安全風險評估
 
-BlueXP ransomware protection現在從NetApp Digital Advisor收集有關叢集的高風險和嚴重安全風險的資訊。如果發現任何風險， BlueXP ransomware protection會在儀表板的“建議操作”窗格中提供建議：“修復叢集 <name> 上的已知安全漏洞。”從儀表板上的建議中，按一下「檢視並修復」建議以查看Digital Advisor和常見漏洞和暴露 (CVE) 文章以解決安全風險。如果存在多個安全風險，請查看Digital Advisor中的資訊。
+BlueXP ransomware protection 現在會從 NetApp Digital Advisor 收集與叢集相關的高風險和重大安全風險資訊。如果發現任何風險，BlueXP ransomware protection 會在控制面板的 *建議操作* 窗格中提供建議：「修正叢集上的已知安全漏洞 <name>」。從控制面板的建議中選擇 *檢視並修復* 後，系統會提示您查看 Digital Advisor 和一篇通用漏洞揭露（CVE）文章，以解決安全風險。如果存在多個安全風險，請查看 Digital Advisor 中的資訊。
 
 參考 https://docs.netapp.com/us-en/active-iq/index.html["Digital Advisor文檔"^]。
 

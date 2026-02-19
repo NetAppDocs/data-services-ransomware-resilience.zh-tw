@@ -6,6 +6,6 @@
 
 === 不支援的捲
 
-勒索軟體復原能力報告現在會在**摘要**報告中捕獲有關受支援和不受支援的捲的資訊。利用這些資訊來診斷系統中的捲為何可能不符合勒索軟體防護條件。
+Ransomware Resilience 報告現在會在 **Summary** 報告中記錄受支援和不受支援的磁碟區的資訊。使用此資訊可以診斷系統中的磁碟區為何可能不符合勒索軟體防護條件。
 
 有關詳細信息，請參閱 link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-reports.html["下載勒索軟體復原力報告"^]。

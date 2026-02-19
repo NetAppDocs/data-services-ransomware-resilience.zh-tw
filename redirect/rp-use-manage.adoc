@@ -1,15 +1,13 @@
 ---
-sidebar: sidebar 
 permalink: rp-use-manage.html 
-keywords: ransomware protection workload name, ransomware protection 
-summary: 您可以透過變更工作負載名稱來管理工作負載，而不是使用風險較大的預設名稱。 
+redirect: data-services-ransomware-resilience/rp-use-protect.html 
 ---
-= 在NetApp Ransomware Resilience中管理工作負載
-:hardbreaks:
+= 
 :allow-uri-read: 
-:icons: font
-:imagesdir: ./media/
 
+
+'''
+sidebar: sidebar permalink: rp-use-manage.html keywords: ransomware protection workload name, ransomware protection summary: 您可以透過更改工作負載名稱來管理工作負載，而不是使用風險較高的預設名稱。--- = 在 NetApp Ransomware Resilience 中更改工作負載名稱 :hardbreaks: :icons: font :imagesdir: ./media/
 
 [role="lead"]
 您可以透過變更工作負載名稱來管理NetApp Ransomware Resilience中的工作負載。使用預設名稱可能會遭受勒索軟體攻擊。

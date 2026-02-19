@@ -1,0 +1,95 @@
+---
+sidebar: sidebar 
+permalink: task-review-protection.html 
+keywords: ransomware protection, protect against ransomware attacks, anti-ransomware policies, detection, protection, policy, malware 
+summary: 您可以透過在NetApp Ransomware Resilience中為工作負載分配策略來保護工作負載免受勒索軟體攻擊。 
+---
+= 在 NetApp Ransomware Resilience 中檢視保護狀態
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp Ransomware Resilience 的保護儀表板提供工作負載保護狀態和就緒情況的概覽。使用保護儀表板，您可以深入了解哪些內容已受到保護、哪些內容需要保護以及保護範圍。
+
+一旦您了解目前保護的範圍，link:rp-use-protect.html["您可以為您的工作負載建立和套用勒索軟體防護策略"]
+
+
+
+== 檢視工作負載的保護
+
+保護工作負載的第一步是查看目前工作負載及其保護狀態。您可以看到以下類型的工作負載：
+
+* 應用程式工作負載
+* 阻止工作負載
+* 檔案共享工作負載
+* 虛擬機器工作負載
+
+
+.步驟
+. 從控制台左側導覽列中選擇“保護”>“勒索軟體恢復”。
+. 執行下列操作之一：
++
+** 從儀表板上的資料保護窗格中，選擇「查看全部」。
+** 從選單中選擇*保護*。
++
+image:screen-protection.png["保護頁面"]
+
+
+
+. 在此頁面中，您可以查看和變更工作負載的保護詳細資料。
+
+
+
+NOTE: 請參閱link:rp-use-protect.html#add-a-ransomware-protection-strategy["增加勒索軟體防護策略"]以瞭解在已有 NetApp Backup and Recovery 保護原則的情況下使用 NetApp Ransomware Resilience。
+
+
+
+== 了解保護儀表板
+
+Ransomware Resilience 中的防護儀表板除了顯示防護狀態的相關資訊外，還提供有關工作負載的詳細資訊（例如，工作負載名稱和類型、Console 代理、系統和儲存虛擬機器）。使用防護儀表板可以查看和管理工作負載的勒索軟體防護準備。以下欄位對於了解您的防護狀況特別重要：
+
+*保護狀態*：工作負載可以顯示下列保護狀態之一，以指示是否套用了政策：
+
+* *受保護*：已套用原則。與工作負載相關的所有磁碟區上均啟用了 ARP（或 ARP/AI，取決於ONTAP版本）。
+* *存在風險*：未應用任何保單。如果工作負載沒有啟用主要偵測策略，那麼即使啟用了快照和備份策略，它仍然「處於危險之中」。
+* *進行中*：政策正在應用但尚未完成。
+* *失敗*：策略已套用但不起作用。
+
+
+*偵測狀態*：
+
++ Ransomware Resilience 可協助您了解已在工作負載上配置的勒索軟體偵測原則的範圍。請使用以下欄位檢視偵測範圍。
+
+* *加密偵測狀態*
+* *可疑使用者行為偵測狀態*
+* *封鎖可疑的檔案副檔名*
+
+
+*Snapshot、replication 和 backup 策略*：此欄顯示管理該策略的產品或服務。如果沒有策略，則該欄位顯示 N/A。
+
+*重要性*
+
+勒索軟體復原能力根據對每個工作負載的分析，在發現過程中為每個工作負載分配重要性或優先順序。工作負載重要性由下列快照頻率決定：
+
+* *關鍵*：每小時會建立多個快照副本（高度激進的保護計畫）
+* *重要提示*：快照副本的建立頻率低於每小時一次，但高於每天一次。
+* *標準*：每天拍攝多次快照副本
+
+
+*隱私洩漏*：選擇此選項以link:task-classify.html["使用 NetApp Data Classification 掃描個人可識別資訊"]。
+
+*Replication destination*：如果您已設定 snapshot 複寫，則會列出目標儲存 VM 和系統的名稱。如果沒有複寫，此欄位將顯示「N/A」。
+
+*備份目標*：如果您已設定了具有備份的 ransomware protection 策略，則備份目標系統的名稱將在此處列出。
+
+
+
+== 後續步驟
+
+* link:rp-use-protect.html["使用勒索軟體保護策略保護工作負載"]
+* link:task-protection-group.html["管理保護群組"]
+* link:task-classify.html["掃描個人識別資訊"]
+

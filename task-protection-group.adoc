@@ -58,6 +58,9 @@ image:screen-protection-groups-policy.png["新增保護群組 - 策略頁面"]
 
 
 
+TIP: 在查看 Ransomware Resilience 中的保護儀表板時、您可以按保護群組對工作負載進行排序。
+
+
 
 === 編輯組保護
 

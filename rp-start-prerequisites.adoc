@@ -12,9 +12,9 @@ summary: 透過驗證對您的環境、網路存取、登入和 Web 瀏覽器的
 
 
 [role="lead"]
-首先驗證您的操作環境、網路存取和 Web 瀏覽器是否已準備就緒，即可開始使用NetApp Ransomware Resilience。
+為確保 NetApp Ransomware Resilience 的成功部署，請驗證您的操作環境、網路存取和網路瀏覽器是否已準備就緒。
 
-若要使用勒索軟體復原功能，請確保滿足先決條件。
+請檢查並確保您符合以下要求。
 
 
 

@@ -4,7 +4,7 @@ permalink: rp-use-dashboard.html
 keywords: ransomware protection, ransomware protection dashboard, detect ransomware attacks, recover from ransomware attack 
 summary: NetApp Ransomware Resilience儀表板提供有關工作負載保護健康狀況的資訊。您可以快速確定處於危險之中或受保護的工作負載、受事件影響或處於復原中的工作負載，並透過查看受保護或處於危險中的儲存量來衡量保護程度。您也可以使用儀表板來查看保護建議並採取行動。 
 ---
-= 使用NetApp Ransomware Resilience儀表板監控工作負載運作狀況
+= 在 NetApp Ransomware Resilience 中監控工作負載健全狀況
 :hardbreaks:
 :allow-uri-read: 
 :icons: font

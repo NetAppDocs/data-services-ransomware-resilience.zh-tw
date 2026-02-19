@@ -12,20 +12,20 @@ summary: 勒索軟體復原中的可疑使用者活動偵測可讓您偵測可�
 
 
 [role="lead"]
-若要在 NetApp Ransomware Resilience 中啟用可疑使用者行為偵測功能，您必須至少安裝一個使用者活動代理程式。當您從 Ransomware Resilience 控制面板啟動可疑使用者活動功能時，需要提供使用者活動代理程式的主機資訊。
+NetApp Ransomware Resilience 的使用者活動偵測功能可協助您預防使用者等級的勒索軟體攻擊事件。若要啟用 Ransomware Resilience 中的可疑使用者行為偵測功能，您必須安裝至少一個使用者活動代理程式。該代理程式會建立一個資料收集環境，用於監控使用者行為中是否存在類似勒索軟體攻擊的異常模式。
 
-一個代理可以託管多個資料收集器。資料收集器將資料傳送到 SaaS 位置進行分析。有兩種類型的收集器：
+使用者活動代理程式包含資料收集器和使用者目錄連接器，它們都會將資料傳送到 SaaS 位置進行分析。
 
-* **資料收集器**從ONTAP收集使用者活動資料。
-* **使用者目錄連接器**連接到您的目錄以將使用者 ID 對應到使用者名稱。
+* **資料收集器**會從 ONTAP 收集使用者活動資料。當您建立包含使用者行為偵測的保護策略時，系統會自動建立資料收集器。
+* **使用者目錄連接器**用於連接到您的目錄，並將使用者 ID 對應到使用者名稱。您必須配置使用者目錄連接器。
 
 
-收集器在勒索軟體恢復設定中配置。
+使用者活動代理程式、資料收集器和使用者目錄連接器都可以從 Ransomware Resilience 設定儀表板進行管理。
 
 
 NOTE: 如果您已在使用 NetApp Data Infrastructure Insights（DII）Workload Security、建議您將相同的 Workload Security 代理程式用於 Ransomware Resilience。您無需為 Ransomware Resilience 單獨部署 Workload Security 代理程式、但使用相同的 Workload Security 代理程式需要 Ransomware Resilience Console 組織與 DII Storage Workload Security 租戶建立配對關係。請聯絡您的客戶代表以啟用此配對。
 
-+ 如果您尚未使用 Data Infrastructure Insights，請按照此處的設定說明進行操作。
++ 如果您_未_使用 DII，請按照此處的設定說明進行操作。
 
 
 

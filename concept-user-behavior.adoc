@@ -12,7 +12,7 @@ summary: 利用可疑使用者行為偵測和警示功能，防止工作負載�
 
 
 [role="lead"]
-NetApp Ransomware Resilience 支援偵測可疑的使用者行為，讓您能夠在使用者層級處理勒索軟體事件。
+透過使用者活動偵測，NetApp Ransomware Resilience 讓您能夠在使用者層級處理勒索軟體事件，阻止資料外洩和大規模刪除等事件。
 
 NetApp Ransomware Resilience 透過監控可疑的使用者活動，提供 AI 驅動的資料外洩偵測。讀取活動的急劇增加以及讀取活動的存取模式被用來判斷惡意意圖。一旦偵測到，Ransomware Resilience 會自動在 NetApp Console、電子郵件以及任何已設定的安全生態系統（例如 SIEM）中產生警示。
 

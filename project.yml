@@ -56,6 +56,8 @@ sidebar:
       url: "/rp-use-dashboard.html"
     - title: 保護工作負載
       entries:
+      - title: 檢閱保護
+        url: "/task-review-protection.html"
       - title: 使用勒索軟體保護策略保護工作負載
         url: "/rp-use-protect.html"
       - title: 管理保護群組

@@ -11,7 +11,7 @@ summary: 您可以自動將資料從 NetApp Ransomware Resilience 傳送到您�
 
 
 [role="lead"]
-您可以自動將資料從 NetApp Ransomware Resilience 傳送到您的安全性與事件管理系統（SIEM），以進行威脅分析與偵測。
+安全資訊和事件管理系統 (SIEM) 集中管理日誌和事件數據，以便深入了解安全事件和合規性。NetApp Ransomware Resilience 支援自動將資料傳送到您的 SIEM，從而簡化威脅分析和偵測流程。
 
 Ransomware Resilience 支援下列 SIEM ：
 
@@ -183,7 +183,7 @@ TIP: 這是您之前創建的自訂角色。
 . 輸入憑證：
 +
 .. 輸入租用戶 ID、客戶端應用程式 ID 和客戶端應用程式金鑰。
-.. 按一下“*驗證*”。
+.. 選擇 *Authenticate* 。
 +
 
 NOTE: 認證成功後，會出現「已認證」的資訊。
