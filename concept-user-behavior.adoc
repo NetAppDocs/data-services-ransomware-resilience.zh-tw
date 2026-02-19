@@ -39,7 +39,7 @@ image:all-file-activity.png["所有檔案活動檢視的螢幕擷取畫面"]。
 Ransomware Resilience 可疑使用者行為活動偵測包含三個關鍵組成部分。
 
 * **使用者活動代理程式**是資料收集器的可執行環境。您必須設定使用者活動代理程式。
-* **資料收集器**會將使用者活動事件與 Ransomware Resilience 共用。當您xref:rp-use-protect.adoc#add-a-detection-policy-to-workloads-with-existing-snapshot-and-backup-policies-managed-by-snapcenter-or-backup-and-recovery[啟用勒索軟體防護策略，並偵測可疑的使用者活動]時，資料收集器會自動建立。
+* **資料收集器**會將使用者活動事件與 Ransomware Resilience 共用。當您link:rp-use-protect.html#add-a-detection-policy-to-workloads-with-existing-backup-or-snapshot-policies["啟用勒索軟體防護策略，並偵測可疑的使用者活動"]時，資料收集器會自動建立。
 * **使用者目錄連接器**能夠建立使用者名稱和使用者 ID 之間的映射關係，從而在應對可疑使用者行為時提供更清晰的線索。您必須配置使用者目錄連接器。
 
 

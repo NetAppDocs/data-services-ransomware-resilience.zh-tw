@@ -61,7 +61,7 @@ sidebar:
       - title: 管理保護群組
         url: "/task-protection-group.html"
       - title: 掃描個人識別資訊
-        url: "/rp-use-protect-classify.html"
+        url: "/task-classify.html"
     - title: 響應偵測到的警報
       url: "/rp-use-alert.html"
     - title: 從勒索軟體攻擊中恢復

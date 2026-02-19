@@ -33,7 +33,7 @@ indexpage:
     - title: 保護工作負載
       url: "/rp-use-protect.html"
     - title: 使用NetApp Data Classification掃描個人識別資訊
-      url: "/rp-use-protect-classify.html"
+      url: "/task-classify.html"
     - title: 響應偵測到的警報
       url: "/rp-use-alert.html"
     - title: 從攻擊中恢復

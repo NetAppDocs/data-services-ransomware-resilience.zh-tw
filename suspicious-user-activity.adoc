@@ -80,11 +80,11 @@ image:user-activity-agent.png["新增活動代理介面截圖。"]
 
 === 新增資料收集器
 
-當您啟用具有可疑使用者活動偵測功能的勒索軟體保護策略時，資料收集器會自動建立。有關詳細信息，請參閱 xref:rp-use-protect.adoc#add-a-detection-policy-to-workloads-with-existing-snapshot-and-backup-policies-managed-by-snapcenter-or-backup-and-recovery[新增檢測策略]。
+啟用包含可疑使用者活動偵測功能的勒索軟體防護策略時，系統會自動建立資料收集器。如需詳細資訊，請參閱 link:rp-use-protect.html#add-a-detection-policy-to-workloads-with-existing-backup-or-snapshot-policies["新增檢測策略"]。
 
 您可以查看資料收集器的詳細資訊。從「設定」中，選擇「使用者活動」圖塊中的「**管理**」。選擇**資料收集器**選項卡，然後選擇資料收集器以查看其詳細資訊或暫停它。
 
-image:user-activity-settings.png["使用者活動設定的螢幕截圖"]
+image:user-activity-settings.png["使用者活動設定的螢幕擷取畫面。"]
 
 
 

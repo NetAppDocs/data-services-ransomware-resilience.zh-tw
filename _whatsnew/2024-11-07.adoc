@@ -10,11 +10,7 @@
 
 部署了BlueXP classification的客戶通常可以在BlueXP ransomware protection中掃描 PII 資料。  BlueXP classification是作為BlueXP平台的一部分提供，無需額外付費，並且可以在本地或客戶雲端中部署。
 
-參考 https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-settings.html["配置BlueXP ransomware protection設置"]。
-
-若要啟動掃描，請在「保護」頁面上，按一下「隱私權暴露」列中的「識別暴露」。
-
-https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect-classify.html["使用BlueXP classification掃描個人身份敏感數據"] 。
+若要啟動掃描，請在「保護」頁面上，選擇「保護」儀表板「隱私暴露」列中的 *識別暴露*。有關更多信息，請參閱 https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-classify.html["使用 BlueXP classification 掃描個人識別敏感資料"]。
 
 
 
@@ -22,7 +18,7 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect
 
 現在，您可以使用 Microsoft Sentinel 將資料傳送至安全性和事件管理系統 (SIEM) 以進行威脅分析和偵測。以前，您可以選擇 AWS Security Hub 或 Splunk Cloud 作為您的 SIEM。
 
-https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-settings.html["了解有關配置BlueXP ransomware protection設定的更多信息"] 。
+https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem.html["了解有關配置BlueXP ransomware protection設定的更多信息"]。
 
 
 

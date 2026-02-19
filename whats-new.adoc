@@ -236,7 +236,7 @@ IMPORTANT: 您必須使用新的link:#new-user-roles-for-data-breach-detection["
 
 您可以在BlueXP ransomware protection中對文件共享工作負載部署BlueXP classification。在*隱私暴露*欄中，選擇*識別暴露*選項。如果您已啟用分類服務，此操作將識別曝光。否則，在此版本中，對話方塊會顯示部署BlueXP classification的選項。選擇*部署*前往BlueXP classification服務登入頁面，您可以在其中部署服務。西
 
-有關詳細信息，請參閱 https://docs.netapp.com/us-en/data-services-data-classification/task-deploy-cloud-compliance.html["在雲端部署BlueXP classification"^]並在BlueXP ransomware protection內使用該服務，請參閱 https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect-classify.html["使用BlueXP classification掃描個人識別資訊"]。
+如需詳細資訊、請參閱 https://docs.netapp.com/us-en/data-services-data-classification/task-deploy-cloud-compliance.html["在雲端部署BlueXP classification"^]、若要在 BlueXP ransomware protection 中使用服務、請參閱 https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-classify.html["使用BlueXP classification掃描個人識別資訊"]。
 
 
 
@@ -395,11 +395,7 @@ https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles
 
 部署了BlueXP classification的客戶通常可以在BlueXP ransomware protection中掃描 PII 資料。  BlueXP classification是作為BlueXP平台的一部分提供，無需額外付費，並且可以在本地或客戶雲端中部署。
 
-參考 https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-settings.html["配置BlueXP ransomware protection設置"]。
-
-若要啟動掃描，請在「保護」頁面上，按一下「隱私權暴露」列中的「識別暴露」。
-
-https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect-classify.html["使用BlueXP classification掃描個人身份敏感數據"] 。
+若要啟動掃描，請在「保護」頁面上，選擇「保護」儀表板「隱私暴露」列中的 *識別暴露*。有關更多信息，請參閱 https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-classify.html["使用 BlueXP classification 掃描個人識別敏感資料"]。
 
 
 
@@ -407,7 +403,7 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect
 
 現在，您可以使用 Microsoft Sentinel 將資料傳送至安全性和事件管理系統 (SIEM) 以進行威脅分析和偵測。以前，您可以選擇 AWS Security Hub 或 Splunk Cloud 作為您的 SIEM。
 
-https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-settings.html["了解有關配置BlueXP ransomware protection設定的更多信息"] 。
+https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem.html["了解有關配置BlueXP ransomware protection設定的更多信息"]。
 
 
 

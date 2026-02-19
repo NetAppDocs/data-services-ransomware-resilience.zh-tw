@@ -30,9 +30,6 @@
   <block id="3406306d1e826f71d49547332136491d" category="paragraph">部署了BlueXP classification的客戶通常可以在BlueXP ransomware protection中掃描 PII 資料。  BlueXP classification是作為BlueXP平台的一部分提供，無需額外付費，並且可以在本地或客戶雲端中部署。</block>
   <block id="006f40c12cb6b543cd40a6cd5a750b98" category="inline-link">配置BlueXP ransomware protection設置</block>
   <block id="365282835fe2185be49e22eccc151d34" category="paragraph">參考<block ref="85c64411e31b00f7bee1a78a00529706" category="inline-link-rx"></block>。</block>
-  <block id="dc2ee5afb67051a37353df40cc16729a" category="paragraph">若要啟動掃描，請在「保護」頁面上，按一下「隱私權暴露」列中的「識別暴露」。</block>
-  <block id="e7d05f872780d58e08011a44ce4be77b" category="inline-link">使用BlueXP classification掃描個人身份敏感數據</block>
-  <block id="e25cb74a977c264db490ebb07eba7a44" category="paragraph"><block ref="8bcdeaa38a69cce5cfa3ac7429e480b6" category="inline-link-rx"></block> 。</block>
   <block id="a2c442ceb4053f2fbfe23023529b9acb" category="section-title">SIEM 與 Microsoft Sentinel 集成</block>
   <block id="5148a0988dead45b54188f22121bb178" category="paragraph">現在，您可以使用 Microsoft Sentinel 將資料傳送至安全性和事件管理系統 (SIEM) 以進行威脅分析和偵測。以前，您可以選擇 AWS Security Hub 或 Splunk Cloud 作為您的 SIEM。</block>
   <block id="178324624f63d3f322bedd1a0cf9e6fc" category="section-title">立即免費試用 30 天</block>
@@ -112,7 +109,6 @@
   <block id="960c237c5456a08952ee4a0c6bc67ab9" category="paragraph">您可以在BlueXP ransomware protection中對文件共享工作負載部署BlueXP classification。在*隱私暴露*欄中，選擇*識別暴露*選項。如果您已啟用分類服務，此操作將識別曝光。否則，在此版本中，對話方塊會顯示部署BlueXP classification的選項。選擇*部署*前往BlueXP classification服務登入頁面，您可以在其中部署服務。西</block>
   <block id="55d5a81a565b7cb4265c8c73ecd4aa37" category="inline-link">在雲端部署BlueXP classification</block>
   <block id="6b0e91bb98e8a9394dda94307f3217d0" category="inline-link">使用BlueXP classification掃描個人識別資訊</block>
-  <block id="7e42707703b4d067b548f10acbf4df99" category="paragraph">有關詳細信息，請參閱<block ref="c12ecfc72dc196e054946f32c2360b19" category="inline-link-rx"></block>並在BlueXP ransomware protection內使用該服務，請參閱<block ref="546f381a7c557bb1741d0a7b3184b38d" category="inline-link-rx"></block>。</block>
   <block id="90b6690e6ff7c4f6c224ce1794630ced" category="doc">SAN 工作負載支持</block>
   <block id="bbc67024ab73d889ccf53c2243f12ec0" category="paragraph">此版本包括對BlueXP ransomware protection中的 SAN 工作負載的支援。現在，除了 NFS 和 CIFS 工作負載之外，您還可以保護 SAN 工作負載。</block>
   <block id="1e4e512c953bb68c6492ac3e8c1ea138" category="inline-link-macro">BlueXP ransomware protection先決條件</block>
@@ -1424,8 +1420,6 @@
   <block id="87890c9758b28588c6845cfcf6d19b17" category="section-title">新增資料收集器</block>
   <block id="cebc35dcf9d04a393d86d35a4e3cf6be" category="inline-xref-macro">新增檢測策略</block>
   <block id="723cff7a2b53371ffdffcdc65a370014" category="paragraph">您可以查看資料收集器的詳細資訊。從「設定」中，選擇「使用者活動」圖塊中的「**管理**」。選擇**資料收集器**選項卡，然後選擇資料收集器以查看其詳細資訊或暫停它。</block>
-  <block id="79994c0d6b62d6854ba2d69416af2030" category="inline-image-macro">使用者活動設定的螢幕截圖</block>
-  <block id="eb9abd0b9e77424befbbd0596585482d" category="paragraph"><block ref="eb9abd0b9e77424befbbd0596585482d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8348d8dcee9ea32e049e21c42a431b91" category="list-text">在勒索軟體復原中，前往*設定*。</block>
   <block id="9fcb0a7634f29d96ae98e37bbc76e1cd" category="list-text">在使用者活動圖塊中，選擇**管理**。</block>
   <block id="e70202c14c96f451fdcf2617844ea351" category="list-text">選擇**使用者目錄連接器**選項卡，然後選擇**新增**。</block>
@@ -1611,7 +1605,6 @@
   <block id="84b770f92be71ec30166cecd58fe295f" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block>下一步是什麼？</block>
   <block id="6bed92a99cdfd0c4fededd25f3e7cc23" category="paragraph">在勒索軟體復原中配置保護後，您可以執行以下操作。</block>
   <block id="7257a2c29f00e84365c5a48447d9c803" category="inline-link-macro">啟用資料分類來識別治理和安全風險</block>
-  <block id="746bceb6a53af383ec0aa4495f694a94" category="list-text"><block ref="746bceb6a53af383ec0aa4495f694a94" category="inline-link-macro-rx"></block></block>
   <block id="1d1758803ee1f7559973be04f120a0f7" category="inline-link-macro">向 SIEM 發送警報</block>
   <block id="660ecf2355e5ff3c5a22d2e4a48594e8" category="inline-link-macro">下載警報、保護、準備演習、恢復或摘要報告</block>
   <block id="52210acbff73a572a2ca89fb77371615" category="paragraph">在NetApp Ransomware Resilience中，您可以使用NetApp Data Classification來掃描和分類檔案共用工作負載中的資料。對資料進行分類可以幫助您確定資料集是否包含個人識別資訊 (PII)，這可能會增加安全風險。資料分類是NetApp Console的核心元件，無需額外付費即可使用。</block>
@@ -1697,7 +1690,6 @@
   <block id="8eb907afc706971993c8bde086302ff0" category="paragraph-title">可以在ONTAP中停用策略嗎？</block>
   <block id="7986143a8e8e26aa1cd4fe5e42208a2b" category="paragraph">您可以使用ONTAP中的系統管理員 UI、API 或 CLI 在偵測策略中停用 ARP。</block>
   <block id="6d1a51f08d9ca2d81528c19a5e4f2463" category="list-text"><block ref="6d1a51f08d9ca2d81528c19a5e4f2463" category="inline-link-macro-rx"></block></block>
-  <block id="4db76a2031d1695a2f0a985a14a43ffa" category="paragraph">當您啟用具有可疑使用者活動偵測功能的勒索軟體保護策略時，資料收集器會自動建立。有關詳細信息，請參閱 <block ref="eadf066433fbca34180c794e1f4838ae" category="inline-xref-macro-rx"></block>。</block>
   <block id="649b83fee66314cb36bc122912f59725" category="inline-link-macro">ONTAP中支援且不受支援的配置</block>
   <block id="0b115ac5b217f989a1fc7dd422161b82" category="section-title">支援的備份目標</block>
   <block id="933247e0be7796a309cfa4c95bd34938" category="section-title">支援的系統</block>
@@ -2024,7 +2016,6 @@
   <block id="b4fb5162d4e2b2c8cd91b15fdb14da68" category="paragraph">Ransomware Resilience 可疑使用者行為活動偵測包含三個關鍵組成部分。</block>
   <block id="33f62223b33e38496534300dcae35620" category="list-text">**使用者活動代理程式**是資料收集器的可執行環境。您必須設定使用者活動代理程式。</block>
   <block id="deecb3eddf0c0100fbbd14529b41b460" category="inline-xref-macro">啟用勒索軟體防護策略，並偵測可疑的使用者活動</block>
-  <block id="c4609467d00df3610ff2f210aafff8b2" category="list-text">**資料收集器**會將使用者活動事件與 Ransomware Resilience 共用。當您<block ref="c19104d57074dd1c9a267e1c5da6c193" category="inline-xref-macro-rx"></block>時，資料收集器會自動建立。</block>
   <block id="36a3ad726c8c5be9317408ba7fc9fbbb" category="list-text">**使用者目錄連接器**能夠建立使用者名稱和使用者 ID 之間的映射關係，從而在應對可疑使用者行為時提供更清晰的線索。您必須配置使用者目錄連接器。</block>
   <block id="bf79cae4914e3581b2da41344f5d22a3" category="section-title">Ransomware Resilience 與 Data Infrastructure Insights</block>
   <block id="58fad0abcf1e493b911b1fec13e0ad03" category="inline-link-macro">Data Infrastructure Insights 端點</block>
@@ -2173,4 +2164,13 @@
   <block id="82cec7652bb841468c070420458d39c0" category="section-title">刪除保護群組</block>
   <block id="fbd3e733007100e47d8c59bbffb4a650" category="paragraph">刪除保護群組時、Ransomware Resilience 會移除該群組及工作負載上的保護策略。它不會刪除個別工作負載。</block>
   <block id="3f3b36ab9f107f9d308521e786376b81" category="sidebar">管理保護群組</block>
+  <block id="6fa24cb1199d7551567ae5147baa8ae1" category="inline-link">使用 BlueXP classification 掃描個人識別敏感資料</block>
+  <block id="61254452b9c7b52c4825719fb7163cab" category="paragraph">若要啟動掃描，請在「保護」頁面上，選擇「保護」儀表板「隱私暴露」列中的 *識別暴露*。有關更多信息，請參閱<block ref="86de5be1d85537ee0a7c80fb5506e13c" category="inline-link-rx"></block>。</block>
+  <block id="2ff2f80605b00791346304d899194c4d" category="paragraph"><block ref="8bdf12f188822bfc44a34815ce7a153b" category="inline-link-rx"></block>。</block>
+  <block id="dfe76ab4454115af338fd440f071a89e" category="paragraph">如需詳細資訊、請參閱<block ref="c12ecfc72dc196e054946f32c2360b19" category="inline-link-rx"></block>、若要在 BlueXP ransomware protection 中使用服務、請參閱<block ref="6ed3445f138ef3ab9a3e98b1a5f5a95a" category="inline-link-rx"></block>。</block>
+  <block id="291f492c93a47859f497681329695348" category="list-text">**資料收集器**會將使用者活動事件與 Ransomware Resilience 共用。當您<block ref="35f6199cfc3b91fb0a22f240b5ced34d" category="inline-link-macro-rx"></block>時，資料收集器會自動建立。</block>
+  <block id="30a0e6457237bf72d78f12eb705334af" category="list-text"><block ref="30a0e6457237bf72d78f12eb705334af" category="inline-link-macro-rx"></block></block>
+  <block id="8e36a47d283ab631611b9d4e43f749d0" category="paragraph">啟用包含可疑使用者活動偵測功能的勒索軟體防護策略時，系統會自動建立資料收集器。如需詳細資訊，請參閱 <block ref="197232a118beafa8882aae5625527a41" category="inline-link-macro-rx"></block>。</block>
+  <block id="c83e802b0c338d35c6b87847e7c32f3b" category="inline-image-macro">使用者活動設定的螢幕擷取畫面。</block>
+  <block id="d30589c83707b077a1cb3dec5d118521" category="paragraph"><block ref="d30589c83707b077a1cb3dec5d118521" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>

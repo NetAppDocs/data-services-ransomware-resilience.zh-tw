@@ -28,4 +28,4 @@
 
 您可以在BlueXP ransomware protection中對文件共享工作負載部署BlueXP classification。在*隱私暴露*欄中，選擇*識別暴露*選項。如果您已啟用分類服務，此操作將識別曝光。否則，在此版本中，對話方塊會顯示部署BlueXP classification的選項。選擇*部署*前往BlueXP classification服務登入頁面，您可以在其中部署服務。西
 
-有關詳細信息，請參閱 https://docs.netapp.com/us-en/data-services-data-classification/task-deploy-cloud-compliance.html["在雲端部署BlueXP classification"^]並在BlueXP ransomware protection內使用該服務，請參閱 https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect-classify.html["使用BlueXP classification掃描個人識別資訊"]。
+如需詳細資訊、請參閱 https://docs.netapp.com/us-en/data-services-data-classification/task-deploy-cloud-compliance.html["在雲端部署BlueXP classification"^]、若要在 BlueXP ransomware protection 中使用服務、請參閱 https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-classify.html["使用BlueXP classification掃描個人識別資訊"]。
