@@ -21,6 +21,9 @@ NetApp Ransomware Resilience 透過監控可疑的使用者活動，提供 AI �
 勒索軟體彈性透過分析ONTAP中 FPolicy 產生的使用者活動事件來偵測可疑的使用者活動。要收集用戶活動數據，您需要部署一個或多個用戶活動代理程式。該代理程式是可連接到租用戶上的裝置的 Linux 伺服器或 VM。
 
 
+IMPORTANT: 目前 SAN 工作負載不支援使用者活動偵測。您可以在 Amazon FSxN for ONTAP、Cloud Volumes ONTAP 和 ONTAP 中使用 NAS 工作負載的使用者活動偵測。
+
+
 
 == 可疑使用者活動取證
 
