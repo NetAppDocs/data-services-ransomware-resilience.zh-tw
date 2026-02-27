@@ -41,7 +41,7 @@ CSV 或 JSON 檔案包含所有控制台系統上所有工作負載的資料。
 +
 image:screen-dashboard.png["儀表板頁面"]
 
-. 從儀表板或其他頁面，選擇*重新整理*image:button-refresh.png["刷新選項"]右上角的選項可刷新報告中顯示的資料。
+. 在儀錶板或其他頁面中，選擇右上角的 *Refresh* image:button-refresh.png["刷新選項"] 選項，即可重新整理報告中顯示的資料。
 . 執行下列操作之一：
 +
 ** 從頁面選擇*下載*image:button-download.png["下載選項"]選項。

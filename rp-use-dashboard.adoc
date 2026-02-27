@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: rp-use-dashboard.html 
 keywords: ransomware protection, ransomware protection dashboard, detect ransomware attacks, recover from ransomware attack 
-summary: NetApp Ransomware Resilience儀表板提供有關工作負載保護健康狀況的資訊。您可以快速確定處於危險之中或受保護的工作負載、受事件影響或處於復原中的工作負載，並透過查看受保護或處於危險中的儲存量來衡量保護程度。您也可以使用儀表板來查看保護建議並採取行動。 
+summary: 使用 Ransomware Resilience 來確定哪些工作負載需要保護或關注，並透過查看有多少儲存受到保護或面臨風險來評估保護程度。 
 ---
 = 在 NetApp Ransomware Resilience 中監控工作負載健全狀況
 :hardbreaks:
@@ -12,22 +12,22 @@ summary: NetApp Ransomware Resilience儀表板提供有關工作負載保護健�
 
 
 [role="lead"]
-NetApp Ransomware Resilience儀表板提供有關工作負載保護健康狀況的概覽資訊。您可以快速確定處於危險之中或受保護的工作負載，識別受事件影響或處於復原中的工作負載，並透過查看受保護或處於危險中的儲存量來衡量保護程度。
+NetApp Ransomware Resilience 儀表板可讓您一目了然地了解工作負載的保護狀況。您可以快速確定哪些工作負載有風險或已受到保護、識別受事件影響或正在復原的工作負載，並透過查看受保護或有風險的儲存量來評估保護程度。
 
-使用控制面板查看保護建議、變更設定和下載報告。
+使用儀表板檢視保護建議、變更設定及下載報告。
 
 *所需的控制台角色* 要執行此任務，您需要組織管理員、資料夾或專案管理員、勒索軟體復原管理員或勒索軟體復原檢視器角色。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["了解NetApp Console的勒索軟體復原角色"^] 。
 
 
 
-== 使用儀表板檢查工作負載健康狀況
+== 使用儀表板檢視工作負載健全狀況
 
 .步驟
 . 控制台發現您的工作負載後，勒索軟體恢復儀表板將顯示工作負載資料保護健康狀況。
 +
 image:screen-dashboard.png["儀表板頁面"]
 
-. 在儀表板中，您可以在每個窗格中執行以下操作：
+. 從儀表板中，您可以在每個窗格中執行下列動作：
 +
 ** *工作負載資料保護*：選擇*查看全部*可在保護頁面上查看所有處於危險中或受保護的工作負載。當保護等級與保護策略不符時，工作負載就會面臨風險。請參閱link:rp-use-protect.html["保護工作負載"] 。
 +
@@ -62,10 +62,10 @@ TIP: 選擇“i”工具提示即可查看有關此數據的提示。若要增�
 
 ** *建議的措施*：為了增強保護，請查看每項建議，然後選擇*查看並修復*。
 +
-看link:rp-use-dashboard.html#review-protection-recommendations-on-the-dashboard["查看儀表板上的保護建議"]或者link:rp-use-protect.html["保護工作負載"] 。
+請參閱 link:rp-use-dashboard.html#review-protection-recommendations-on-the-dashboard["在控制面板上檢視保護建議"] 或 link:rp-use-protect.html["保護工作負載"]。
 
 +
-勒索軟體復原力會顯示自您上次造訪儀表板以來 24 小時內帶有「新」標籤的新建議。操作按優先順序顯示，最重要的操作位於頂部。審查、執行或駁回每項建議。
+Ransomware Resilience 會顯示您上次造訪儀表板後的新建議，並附有「New」標籤，持續 24 小時。動作會按優先順序顯示，最重要的顯示在頂部。檢閱、執行或忽略每個建議。
 
 +
 總操作數不包括您已忽略的操作。
@@ -78,7 +78,7 @@ TIP: 選擇“i”工具提示即可查看有關此數據的提示。若要增�
 
 
 
-== 查看儀表板上的保護建議
+== 在儀表板上檢視保護建議
 
 勒索軟體復原能力會評估您工作負載的保護情況，並建議採取措施來改善保護。
 
@@ -94,7 +94,7 @@ TIP: 選擇“i”工具提示即可查看有關此數據的提示。若要增�
 | 增加勒索軟體保護策略。 | 工作負載目前不受保護。 | 為工作負載分配策略。請參閱link:rp-use-protect.html["保護工作負載免受勒索軟體攻擊"] 。 
 
 
-| 連接到 SIEM 進行威脅報告。 | 將資料傳送到安全性和事件管理系統 (SIEM) 進行威脅分析和偵測。 | 輸入 SIEM/XDR 伺服器詳細資訊以啟用威脅偵測。請參閱link:rp-use-settings.html["配置保護設定"] 。 
+| 連接到 SIEM 進行威脅報告。 | 將資料傳送到安全性和事件管理系統 (SIEM) 進行威脅分析和偵測。 | 輸入 SIEM/XDR 伺服器詳細資訊以啟用威脅偵測。請參閱 link:task-siem.html["連線至 SIEM"]。 
 
 
 | 改善系統的安全態勢 | NetApp Digital Advisor已發現至少一個高或嚴重的安全風險。 | 審查NetApp Digital Advisor中的所有安全風險。參考 https://docs.netapp.com/us-en/active-iq/index.html["Digital Advisor文檔"^]。 
@@ -103,7 +103,7 @@ TIP: 選擇“i”工具提示即可查看有關此數據的提示。若要增�
 | 使政策更加有力。 | 某些工作負載可能沒有足夠的保護。透過策略加強對工作負載的保護。 | 增加保留、新增備份、強制執行不可變備份、阻止可疑檔案副檔名、啟用二級儲存偵測等。請參閱link:rp-use-protect.html["保護工作負載免受勒索軟體攻擊"] 。 
 
 
-| 準備 <備份提供者> 作為備份目標來備份您的工作負載資料。 | 工作負載目前沒有任何備份目標。 | 向此工作負載新增備份目標以保護它。請參閱link:rp-use-settings.html["配置保護設定"] 。 
+| 準備 <備份提供者> 作為備份目標來備份您的工作負載資料。 | 工作負載目前沒有任何備份目標。 | 為該工作負載新增備份目標以保護它。請參閱 link:task-backup-destination.html["新增備份目標"]。 
 
 
 | 保護關鍵或高度重要的應用程式工作負載免受勒索軟體的攻擊。 | 保護頁面顯示未受保護的關鍵或高度重要（基於分配的優先順序）應用程式工作負載。 | 為這些工作負載分配策略。請參閱link:rp-use-protect.html["保護工作負載免受勒索軟體攻擊"] 。 

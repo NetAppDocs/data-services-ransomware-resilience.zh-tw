@@ -449,7 +449,7 @@ BlueXP ransomware protection 現在會從 NetApp Digital Advisor 收集與叢集
 
 在此版本中，您可以將備份目標設定為 Google Cloud Platform 儲存桶。以前，您只能將備份目標新增至NetApp StorageGRID、Amazon Web Services 和 Microsoft Azure。
 
-https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-settings.html["了解有關配置BlueXP ransomware protection設定的更多信息"] 。
+https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-backup-destination.html["了解有關配置BlueXP ransomware protection設定的更多信息"].
 
 
 
@@ -477,7 +477,7 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/concept-ransom
 
 您可以自動將資料傳送到您的安全性和事件管理系統 (SIEM) 進行威脅分析和偵測。在先前的版本中，您只能選擇 AWS Security Hub 作為您的 SIEM。在此版本中，您可以選擇 AWS Security Hub 或 Splunk Cloud 作為您的 SIEM。
 
-https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-settings.html["了解有關配置BlueXP ransomware protection設定的更多信息"] 。
+https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem.html["了解有關配置BlueXP ransomware protection設定的更多信息"]。
 
 
 
@@ -546,7 +546,7 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/concept-ransom
 
 現在您可以將 Microsoft Azure 與 AWS 和NetApp StorageGRID一起新增為備份目標。
 
-https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-settings.html["了解有關如何配置保護設定的更多信息"] 。
+https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-backup-destination.html["了解有關如何配置保護設定的更多信息"].
 
 
 
@@ -601,7 +601,7 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect
 
 現在可以使用第三方安全性和事件管理 (SIEM) 系統啟用威脅偵測。儀表板現在顯示「啟用威脅偵測」的新建議，可以在「設定」頁面上進行設定。
 
-https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-settings.html["了解有關配置“設定”選項的詳細信息"] 。
+https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem.html["了解有關配置“設定”選項的詳細信息"].
 
 
 
@@ -637,7 +637,7 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-reports
 
 === BlueXP backup and recovery
 
-BlueXP backup and recovery服務不再需要在系統上啟用。看link:rp-start-prerequisites.html["先決條件"] 。 BlueXP ransomware protection服務可協助透過「設定」選項配置備份目標。看link:rp-use-settings.html["配置設定"] 。
+BlueXP 備份和復原服務不再需要在系統上預先啟用。請參閱link:rp-start-prerequisites.html["先決條件"]。BlueXP 勒索軟體防護服務可透過「設定」選項協助配置備份目標位置。請參閱link:task-backup-destination.html["配置設定"]。
 
 
 
@@ -645,7 +645,7 @@ BlueXP backup and recovery服務不再需要在系統上啟用。看link:rp-star
 
 現在您可以在BlueXP ransomware protection設定中設定備份目的地。
 
-https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-settings.html["了解有關配置“設定”選項的詳細信息"] 。
+https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-backup-destination.html["了解有關配置“設定”選項的詳細信息"].
 
 
 
@@ -667,7 +667,7 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-setting
 
 === 自動備份到NetApp StorageGRID
 
-除了使用 AWS，您現在還可以選擇StorageGRID作為備份目的地。 https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-settings.html["了解有關配置備份目標的更多信息"] 。
+除了使用 AWS 之外、您現在還可以選擇 StorageGRID 作為備份目的地 https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-backup-destination.html["了解有關配置備份目標的更多信息"]。
 
 
 

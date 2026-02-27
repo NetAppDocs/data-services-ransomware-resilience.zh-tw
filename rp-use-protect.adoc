@@ -280,7 +280,7 @@ Snapshot 副本鎖定適用於ONTAP 9.12.1 及更高版本。要了解有關Snap
 *** *備份計畫*：選擇二級儲存的計畫選項並啟用該計畫。
 +
 
-TIP: 若要在輔助儲存上啟用備份鎖定，請使用*設定*選項來設定備份目標。有關詳細信息，請參閱link:rp-use-settings.html["配置設定"] 。
+TIP: 若要在輔助儲存裝置上啟用備份鎖定，請使用 *Settings* 選項來設定備份目標位置。如需詳細資訊，請參閱 link:task-backup-destination.html["配置設定"]。
 
 
 

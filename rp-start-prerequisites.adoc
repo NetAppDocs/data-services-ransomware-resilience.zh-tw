@@ -102,7 +102,7 @@ NOTE: 如果您已使用非管理員憑證將ONTAP叢集連接到控制台，則
 
 * 不需要在系統上啟用NetApp Backup and Recovery 。
 +
-勒索軟體復原力有助於透過設定選項來配置備份目標。看link:rp-use-settings.html["配置設定"] 。
+Ransomware Resilience 可透過「設定」選項配置備份目標位置。請參閱 link:task-backup-destination.html["新增備份目標"]。
 
 
 

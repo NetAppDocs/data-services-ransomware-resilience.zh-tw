@@ -30,44 +30,46 @@ sidebar:
       url: "/rp-start-quick-start.html"
     - title: 設定勒索軟體抵禦能力
       url: "/rp-start-setup.html"
-    - title: 存取勒索軟體彈性
-      url: "/rp-start-login.html"
     - title: 設定許可
       url: "/rp-start-licenses.html"
     - title: 發現工作負載
       url: "/rp-start-discover.html"
-    - title: 透過準備演習模擬勒索軟體攻擊
-      url: "/rp-start-simulate.html"
-    - title: 在「設定」中設定備份、威脅偵測和攻擊模擬
-      url: "/rp-use-settings.html"
-    - title: 設定 SIEM
-      url: "/task-siem.html"
-    - title: 設定使用者活動偵測
-      entries:
-      - title: 瞭解使用者活動偵測
-        url: "/concept-user-behavior.html"
-      - title: 使用者活動需求
-        url: "/reference-user-activity-requirements.html"
-      - title: 配置代理程式和收集器
-        url: "/suspicious-user-activity.html"
   - title: 使用勒索軟體彈性
     entries:
-    - title: 使用儀表板查看工作負載健康狀況
+    - title: 存取勒索軟體彈性
+      url: "/rp-start-login.html"
+    - title: 檢視工作負載健全狀況
       url: "/rp-use-dashboard.html"
-    - title: 保護工作負載
+    - title: 保護和偵測
       entries:
       - title: 檢閱保護
         url: "/task-review-protection.html"
-      - title: 使用勒索軟體保護策略保護工作負載
+      - title: 配置備份目標
+        url: "/task-backup-destination.html"
+      - title: 保護工作負載
         url: "/rp-use-protect.html"
+      - title: 設定使用者活動偵測
+        entries:
+        - title: 瞭解使用者活動偵測
+          url: "/concept-user-behavior.html"
+        - title: 使用者活動偵測需求
+          url: "/reference-user-activity-requirements.html"
+        - title: 配置代理程式和收集器
+          url: "/suspicious-user-activity.html"
       - title: 管理保護群組
         url: "/task-protection-group.html"
       - title: 掃描個人識別資訊
         url: "/task-classify.html"
-    - title: 響應偵測到的警報
-      url: "/rp-use-alert.html"
-    - title: 從勒索軟體攻擊中恢復
-      url: "/rp-use-recover.html"
+    - title: 回應並恢復
+      entries:
+      - title: 響應偵測到的警報
+        url: "/rp-use-alert.html"
+      - title: 從勒索軟體攻擊中恢復
+        url: "/rp-use-recover.html"
+    - title: 進行整備演練
+      url: "/rp-start-simulate.html"
+    - title: 設定 SIEM
+      url: "/task-siem.html"
     - title: 下載報告
       url: "/rp-use-reports.html"
   - section: support

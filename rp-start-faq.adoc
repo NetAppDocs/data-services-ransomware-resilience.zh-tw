@@ -120,7 +120,7 @@ link:rp-use-protect.html["了解工作負載優先順序或重要性"] 。
 勒索軟體抵禦策略中不需要備份策略。
 
 .Ransomware Resilience 是否了解ONTAP中的保護設定？
-是的，Ransomware Resilience 發現了在ONTAP中設定的快照計劃。它還會發現已發現的工作負載中的所有磁碟區是否啟用了 ARP 和 FPolicy。您在勒索軟體復原儀表板中看到的資訊來自其他NetApp解決方案和產品。
+是的，Ransomware Resilience 可以發現 ONTAP 中設定的快照排程。它還可以發現已發現工作負載中的所有磁碟區是否都啟用了 ARP 和 FPolicy。您在 Ransomware Resilience 儀表板中看到的資訊是從其他 NetApp 解決方案和產品彙總而來。
 
 .勒索軟體復原功能是否了解備份和復原以及SnapCenter中已製定的策略？
 是的，如果您在備份和復原或SnapCenter中管理工作負載，則這些產品管理的策略將納入勒索軟體復原能力。
