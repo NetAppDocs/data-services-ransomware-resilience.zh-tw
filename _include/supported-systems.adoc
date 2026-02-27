@@ -15,19 +15,19 @@
 .2+| 適用於 AWS 的Cloud Volumes ONTAP | CIFS 和 NFS | 9.11.1 及更高版本 
 
 
-| SAN（FC、iSCSI 和 NVMe） | 9.17.1 及更高版本 
+| SAN（iSCSI 和 NVMe） | 9.17.1 及更高版本 
 
 
 .2+| 適用於 Google Cloud Platform 的Cloud Volumes ONTAP | CIFS 和 NFS | 9.11.1 及更高版本 
 
 
-| SAN（FC、iSCSI 和 NVMe） | 9.17.1 及更高版本 
+| SAN（iSCSI 和 NVMe） | 9.17.1 及更高版本 
 
 
 .2+| 適用於 Microsoft Azure 的Cloud Volumes ONTAP | CIFS 和 NFS | 9.12.1 及更高版本 
 
 
-| SAN（FC、iSCSI 和 NVMe） | 9.17.1 及更高版本 
+| SAN（iSCSI 和 NVMe） | 9.17.1 及更高版本 
 
 
 .2+| ONTAP （本地部署） | CIFS 和 NFS | 9.11.1 及更高版本 

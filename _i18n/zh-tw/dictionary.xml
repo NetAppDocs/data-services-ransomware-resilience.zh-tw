@@ -170,8 +170,6 @@
   <block id="dfef1dd7ecfa43f053518a5e8d06bca2" category="section-title">使用勒索軟體恢復能力的好處</block>
   <block id="8dd7021fbc1ad5ec5537fd346b89b5e7" category="paragraph">勒索軟體復原能力有以下優勢：</block>
   <block id="b271e9c6be36aff67404f5d3ab5006f5" category="list-text">發現工作負載及其現有的快照和備份計劃，並對其相對重要性進行排序。</block>
-  <block id="5992e4770276798f5e7d7d1fe4bc1863" category="list-text">評估您的勒索軟體防護態勢並將其顯示在易於理解的儀表板中。</block>
-  <block id="65e19dc168989aed91c1cb48e39f45de" category="list-text">根據發現和保護態勢分析提供後續步驟的建議。</block>
   <block id="26f7eb76c3f0032daa502e8f74affdf8" category="list-text">一鍵存取即可套用 AI/ML 驅動的資料保護建議。</block>
   <block id="c530e1fdcf59b6298208943bc8050282" category="list-text">使用人工智慧技術即時偵測針對主儲存資料的勒索軟體攻擊。</block>
   <block id="8343e8aa9aee8047de78869e0826e3b6" category="list-text">透過建立快照副本和啟動有關異常活動的警報來啟動自動操作以回應偵測到的潛在攻擊。</block>
@@ -179,8 +177,6 @@
   <block id="5af59cc2b4c7693a13f53462b371bb84" category="list-text">使用基於角色的存取控制 (RBAC) 來管理對功能和操作的存取。</block>
   <block id="20b4f77bd00b4f63a49ec8e08f3bf6a6" category="section-title">成本</block>
   <block id="644c6176733b0f8cdca928e0cc985955" category="paragraph">如果您同時擁有備份和復原以及勒索軟體復原功能，則受這兩種產品保護的任何公開資料僅由勒索軟體復原功能計費。</block>
-  <block id="371ddff75d8ad1c060c49de732c7531f" category="paragraph">購買許可證或 PayGo 訂閱後，任何啟用了勒索軟體偵測策略（自主勒索軟體保護）（由勒索軟體復原力發現或設定）且至少有一個快照或備份策略的工作負載，勒索軟體復原力都會將其歸類為“受保護”，併計入購買的容量或 PayGo 訂閱。如果在沒有檢測策略的情況下發現工作負載，即使它具有備份或快照策略，也會將其歸類為“有風險”，並且不會計入購買的容量。</block>
-  <block id="9a093ed6d29fdd7ce44eca3fd1e3b883" category="paragraph">90 天試用期結束後，受保護的工作負載將計入購買的容量或訂閱。勒索軟體恢復按每 GB 為與受保護工作負載相關的資料（在效率之前）收費。</block>
   <block id="0b9c6eef4e3d3a222eb04e910d252339" category="section-title">授權</block>
   <block id="6e9aa43e61b748fc94327a81b1b6fe77" category="paragraph">透過 Ransomware Resilience，您可以使用不同的授權計劃，包括免費試用、即用即付訂閱或自備授權。</block>
   <block id="c69a0cc5cf253fb4b33607ed2eb36b95" category="paragraph">勒索軟體復原需要NetApp ONTAP One 許可證。</block>
@@ -436,7 +432,6 @@
   <block id="fd2baaaf591d18081f2e012015874835" category="doc">NetApp Ransomware Resilience前提條件</block>
   <block id="e315520b8d0944e7422c773e49fc17a7" category="list-text">具有組織管理員權限的NetApp Console使用者帳戶，用於發現資源。</block>
   <block id="ffc25a5f8d1276ee801a950e7f83a233" category="list-text">控制台代理必須具有<block ref="d5aabb6133fba5c7ef5a4e8db21d18ae" prefix=" " category="inline-code"></block>容器處於活動狀態。</block>
-  <block id="7bff903bef6a1c5af1e562c29d1de15e" category="list-text">至少一個具有NetApp本地ONTAP叢集或 AWS 或 Azure 中的Cloud Volumes ONTAP 的控制台系統。勒索軟體復原支援 NAS（NFS 和 SMB）和 SAN（iSCSI、FC 和 NVMe）協定。</block>
   <block id="04f679e072129c7e87e077dc95e5e73e" category="inline-link">了解如何配置控制台代理</block>
   <block id="b1fb1d531493b1af3ab2980b2c579a5f" category="inline-link">標準控制台要求</block>
   <block id="f9a3157f34101a0d560e518291db02ba" category="admonition">如果您在單一控制台組織中擁有多個控制台代理，則勒索軟體復原功能將掃描除控制台 UI 中目前選擇的代理之外的所有控制台代理中的ONTAP資源。</block>
@@ -1533,7 +1528,6 @@
   <block id="f8a7dc43864435cb9b522a28b586e556" category="sidebar">從勒索軟體攻擊中恢復</block>
   <block id="1fe917b01f9a3f87fa2d7d3b7643fac1" category="sidebar">常問問題</block>
   <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">知識和支持</block>
-  <block id="69d1e7a74a8d35e4122500df6d2f5042" category="list-text">ONTAP或Cloud Volumes ONTAP叢集（ ONTAP版本 9.11.1 或更高版本）支援勒索軟體復原功能。</block>
   <block id="51fecb5d19a6637dea83445678fd4ffa" category="section-title">資料備份</block>
   <block id="793485138a653779a0c8cb91bf9fc979" category="list-text">選擇準備演習類型。若要從加密資料外洩手動恢復，請選擇**自訂恢復**。若要從可疑用戶活動中恢復，請選擇**資料外洩**。</block>
   <block id="8e0b9d66ccd774ed98d0b31d0e6ed305" category="admonition">演練運行時，您無法編輯準備演練配置。您可以重置鑽孔機以停止它並修改配置。</block>
@@ -1693,7 +1687,6 @@
   <block id="78898e52fcbdc5337204a384f2456d4f" category="list-text">微軟 SQL 伺服器</block>
   <block id="30162ed78b6c10f731411f2fc440c24f" category="list-text">甲骨文</block>
   <block id="399bd1ee587245ecac6f39beaa99886f" category="list-text">PostgreSQL</block>
-  <block id="b8bf0879f259dbfb5601d4fdb086df91" category="list-text">如果您的本機ONTAP叢集或 AWS 或 Azure 雲端中的Cloud Volumes ONTAP未在控制台中設置，請參閱<block ref="1c09904f3fbf9f22b68e96599d2dcddc" category="inline-link-macro-rx"></block>和<block ref="b04507b2bbabc17c071b912167d3ff4f" category="inline-link-macro-rx"></block>。</block>
   <block id="acd257a01891523b6ff91a9020b733ba" category="paragraph">可疑用戶活動資料可以儲存在 AWS 和 Azure 的以下區域：</block>
   <block id="2feeca48692986e9cc471ec61f847fca" category="paragraph">NetApp以多種方式為NetApp Console及其雲端服務提供支援。全天候提供廣泛的免費自助支援選項，例如知識庫 (KB) 文章和社群論壇。您的支援註冊包含透過網路工單取得的遠端技術支援。</block>
   <block id="317cbd2c4fdbfd06a6c66bcd3f57d7ad" category="paragraph">有關雲端提供者文件服務、其基礎設施或使用該服務的任何解決方案的技術支持，請參閱該產品的文檔。</block>
@@ -1747,8 +1740,6 @@
   <block id="d605e764d56b8615ebf6dd5f87998855" category="list-text">美國東部（維吉尼亞北部）（us-east-1）</block>
   <block id="a55a22032fc9fd630abe933324e9d4b9" category="paragraph-title">Ransomware Resilience 是否了解ONTAP中的保護設定？</block>
   <block id="1c8f51534c2fc10dfef26d32d61c7ed3" category="paragraph">對於許可和計費，即使您沒有單獨的備份和復原許可證，勒索軟體復原功能也可以與備份和復原功能整合。如果您同時擁有備份和復原以及勒索軟體復原功能，則受這兩種產品保護的任何公開資料僅由勒索軟體復原功能計費。</block>
-  <block id="5edfe1685c808d7a5514b518857b2cfe" category="paragraph">NetApp Ransomware Resilience可保護您的資料免受勒索軟體攻擊。在勒索軟體復原功能中，可透過 NetApp 控制台為 Oracle、VM 資料儲存和本機 NAS 儲存體（使用 NFS 和 CIFS 協定）和 SAN 儲存體（FC、iSCSI 和 NVMe）上的檔案共用以及 Amazon Web Services 的Cloud Volumes ONTAP 、Google Cloud 的Cloud Volumes ONTAP 、Microsoft Web Services 的Cloud Volumes ONTAP ONTAPx 的NetApp ConsoleAmazon FSx for NetApp ONTAP的工作。您可以將資料備份到 Amazon Web Services、Google Cloud、Microsoft Azure 雲端儲存和NetApp StorageGRID。</block>
-  <block id="0cadfa5b82d6d1eba924c112db6ab9fc" category="list-text">*識別* NetApp本地 NAS（NFS 或 CIFS）和 SAN（FC、iSCSI 和 NVMe）系統中所有基於應用程式、檔案共用或 VMware 管理的工作負載，包括NetApp Console、專案和控制台代理程式。勒索軟體彈性對資料優先級進行分類，並為您提供勒索軟體彈性改進的建議。</block>
   <block id="182b9ed848b82506c10ba162f10e3f5b" category="list-text">保護基於應用程式的工作負載（例如 Oracle、VMware 資料儲存和檔案共用）中的資料。</block>
   <block id="aa07eabc400eb4ccb13f116e99da0b48" category="list-text">*工作負載*：勒索軟體復原中的工作負載可以包括 Oracle 資料庫、VMware 資料儲存或檔案共用。</block>
   <block id="6b62768f3f94df043ea31bf9c43b2a42" category="paragraph">勒索軟體復原能力可以識別以下工作負載：Oracle、檔案共享、區塊儲存、虛擬機器和虛擬機器資料儲存。</block>
@@ -2040,7 +2031,6 @@
   <block id="04ba211304888e157a1517c86860bd73" category="list-text">配置可疑用戶活動報告。如需詳細資訊，請參閱 <block ref="da26800578b610b8b3390e49bb643377" category="inline-link-macro-rx"></block>。</block>
   <block id="5d8eeee45929294781013d6d152aae8a" category="inline-link-macro">將 NetApp Ransomware Resilience 連接到 SIEM</block>
   <block id="143fb46cdff0222e6e176aa99a0f923e" category="list-text">連接您的安全資訊和事件管理系統（SIEM）以進行威脅分析和偵測。啟用威脅偵測後，系統會自動將資料傳送到您的 SIEM 進行威脅分析。如需詳細資訊，請參閱 <block ref="c7d7e4de61d3da74895aed14b126475d" category="inline-link-macro-rx"></block>。</block>
-  <block id="fb12d4a7a4843715dd8c19d7dd88935d" category="admonition">Amazon FSx for NetApp ONTAP 和 Azure NetApp Files 中的工作負載無法使用備份目標。請使用原生備份解決方案執行備份作業：FSx for ONTAP 備份服務或 Azure NetApp Files 備份服務。</block>
   <block id="eb7705f4441056c554dc7aea52de0b17" category="paragraph">如果某些受信任使用者的行為可能會觸發使用者行為警示，您可以將他們從警示中排除。</block>
   <block id="0189c7f085ff5d22843080df2225281b" category="list-text">在「設定」儀表板中，找到「使用者活動」卡片，然後選取 **Manage**。</block>
   <block id="82694a5fa079406313056daf01f9118b" category="list-text">選擇 **Excluded users** 標籤。</block>
@@ -2194,4 +2184,13 @@
   <block id="378c9aa27d38e9ec5b0fbf34bcb8febc" category="list-text">當存取權限被更改或拒絕時</block>
   <block id="49408f5917e16f5795da1781a7748aa5" category="list-text">受影響的工作負載、磁碟區、檔案和目錄</block>
   <block id="a6bd7f80fc17cbb8e58e8dca754bf710" category="list-text">若要封鎖環境中的可疑使用者，請在使用者名稱旁邊選取 *Block* 。</block>
+  <block id="e2907e7cb7d68b36821cd11cda209bc3" category="cell">SAN（iSCSI 和 NVMe）</block>
+  <block id="65072a668477cd315b4302df8afcce32" category="paragraph">NetApp Ransomware Resilience 可保護您的資料免受勒索軟體攻擊。在 Ransomware Resilience 中，可為 Oracle 的應用程式型工作負載、VM 資料存放區，以及 NAS 儲存設備（NFS 和 CIFS 傳輸協定）和 SAN 儲存設備（FC、iSCSI 和 NVMe 傳輸協定）的檔案共用提供保護。Ransomware Resilience 支援內部部署儲存設備，以及適用於 Amazon Web Services 的 Cloud Volumes ONTAP、適用於 Google Cloud 的 Cloud Volumes ONTAP、適用於 Microsoft Azure 的 Cloud Volumes ONTAP、Azure NetApp Files 和 Amazon FSx for NetApp ONTAP，所有功能均可透過 NetApp Console 存取。您可以將資料備份到 Amazon Web Services、Google Cloud、Microsoft Azure 和 NetApp StorageGRID。</block>
+  <block id="8987946f77221ac2f7d1494a4fcae0a6" category="list-text">*識別* 在 NetApp 本地 NAS 和 SAN 系統中，基於應用程式、檔案共享或 VMware 管理的工作負載，並可於 NetApp Console、專案及 Console 代理程式中進行管理。在發現工作負載後，Ransomware Resilience 會識別提升勒索軟體韌性的機會。</block>
+  <block id="3b9c98c430c62cb3627db641468d7e64" category="list-text">評估您的勒索軟體防護狀況，並在易於理解的儀表板中顯示，同時提供改進防護的建議。</block>
+  <block id="8ab218529be70765f2dbc68a1731ea6e" category="paragraph">當工作負載被歸類為受保護時，它會計入已購買的容量或 PayGo 訂閱。Ransomware Resilience 會在啟用了至少一項快照或備份原則的偵測原則時，將工作負載歸類為受保護。如果工作負載已啟用偵測原則，但沒有備份或快照原則，則會被歸類為有風險。存在風險的工作負載不會計入已購買的容量。</block>
+  <block id="89895786495ed60e80d759587b508469" category="paragraph">免費試用期結束後，受保護的工作負載將計入購買的容量或訂閱費用。NetApp Ransomware Resilience 會根據受保護工作負載相關資料在提高效率之前的每 GB 來收費。</block>
+  <block id="9bd1fe262c57584526c5184d4de31827" category="list-text">如果您的內部部署 ONTAP 叢集或 Cloud Volumes ONTAP 系統未在 Console 中設定，請參閱 <block ref="1c09904f3fbf9f22b68e96599d2dcddc" category="inline-link-macro-rx"></block> 和 <block ref="b04507b2bbabc17c071b912167d3ff4f" category="inline-link-macro-rx"></block>。</block>
+  <block id="3eb45f3714606347a6ff182b822b69cc" category="list-text">對於 ONTAP 或 Cloud Volumes ONTAP 叢集，Ransomware Resilience 要求 ONTAP 版本為 9.11.1 或更高版本。</block>
+  <block id="3bb07e9c940e6f6fa3da1abd9524ca12" category="admonition">Amazon FSx for NetApp ONTAP 和 Azure NetApp Files 中的工作負載無法使用備份目標。請使用原生備份解決方案執行備份作業：FSx for ONTAP 備份服務或 Azure NetApp Files 備份。</block>
 </blocks>

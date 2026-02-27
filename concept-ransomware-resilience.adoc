@@ -16,7 +16,7 @@ summary: 勒索軟體復原能力使您能夠查看有關網路安全的相關�
 [role="lead"]
 勒索軟體攻擊可以阻止對您資料的訪問​​，攻擊者可以要求贖金以換取資料發布或解密。據 IDC 稱，勒索軟體受害者遭受多次勒索軟體攻擊的情況並不少見。攻擊可能會中斷您對資料的訪問​​，時間從一天到幾週不等。
 
-NetApp Ransomware Resilience可保護您的資料免受勒索軟體攻擊。在勒索軟體復原功能中，可透過 NetApp 控制台為 Oracle、VM 資料儲存和本機 NAS 儲存體（使用 NFS 和 CIFS 協定）和 SAN 儲存體（FC、iSCSI 和 NVMe）上的檔案共用以及 Amazon Web Services 的Cloud Volumes ONTAP 、Google Cloud 的Cloud Volumes ONTAP 、Microsoft Web Services 的Cloud Volumes ONTAP ONTAPx 的NetApp ConsoleAmazon FSx for NetApp ONTAP的工作。您可以將資料備份到 Amazon Web Services、Google Cloud、Microsoft Azure 雲端儲存和NetApp StorageGRID。
+NetApp Ransomware Resilience 可保護您的資料免受勒索軟體攻擊。在 Ransomware Resilience 中，可為 Oracle 的應用程式型工作負載、VM 資料存放區，以及 NAS 儲存設備（NFS 和 CIFS 傳輸協定）和 SAN 儲存設備（FC、iSCSI 和 NVMe 傳輸協定）的檔案共用提供保護。Ransomware Resilience 支援內部部署儲存設備，以及適用於 Amazon Web Services 的 Cloud Volumes ONTAP、適用於 Google Cloud 的 Cloud Volumes ONTAP、適用於 Microsoft Azure 的 Cloud Volumes ONTAP、Azure NetApp Files 和 Amazon FSx for NetApp ONTAP，所有功能均可透過 NetApp Console 存取。您可以將資料備份到 Amazon Web Services、Google Cloud、Microsoft Azure 和 NetApp StorageGRID。
 
 
 
@@ -39,7 +39,7 @@ image:concept-security-layer-diagram.png["安全圖層圖"]
 
 勒索軟體復原功能充分利用了多種NetApp技術，以便您的儲存管理員、資料安全管理員或安全營運工程師可以實現以下目標：
 
-* *識別* NetApp本地 NAS（NFS 或 CIFS）和 SAN（FC、iSCSI 和 NVMe）系統中所有基於應用程式、檔案共用或 VMware 管理的工作負載，包括NetApp Console、專案和控制台代理程式。勒索軟體彈性對資料優先級進行分類，並為您提供勒索軟體彈性改進的建議。
+* *識別* 在 NetApp 本地 NAS 和 SAN 系統中，基於應用程式、檔案共享或 VMware 管理的工作負載，並可於 NetApp Console、專案及 Console 代理程式中進行管理。在發現工作負載後，Ransomware Resilience 會識別提升勒索軟體韌性的機會。
 * 透過對資料啟用備份、快照副本和勒索軟體保護策略來*保護*您的工作負載。
 * *偵測*可能是勒索軟體攻擊的異常。註腳：[儘管攻擊可能未被發現，但我們的研究表明， NetApp技術已對某些基於文件加密的勒索軟體攻擊實現了高度檢測。 ]
 * *應對*潛在的勒索軟體攻擊，自動啟動一個鎖定的時間點快照，以防止副本被意外或惡意刪除。您的備份資料將保持不可更改，並在來源端和目標端受到端到端的保護，免受勒索軟體攻擊。
@@ -56,8 +56,7 @@ image:diagram-rp-features-phases3.png["圖表展示了勒索軟體抵禦攻擊�
 勒索軟體復原能力有以下優勢：
 
 * 發現工作負載及其現有的快照和備份計劃，並對其相對重要性進行排序。
-* 評估您的勒索軟體防護態勢並將其顯示在易於理解的儀表板中。
-* 根據發現和保護態勢分析提供後續步驟的建議。
+* 評估您的勒索軟體防護狀況，並在易於理解的儀表板中顯示，同時提供改進防護的建議。
 * 一鍵存取即可套用 AI/ML 驅動的資料保護建議。
 * 保護基於應用程式的工作負載（例如 Oracle、VMware 資料儲存和檔案共用）中的資料。
 * 使用人工智慧技術即時偵測針對主儲存資料的勒索軟體攻擊。
@@ -74,9 +73,9 @@ image:diagram-rp-features-phases3.png["圖表展示了勒索軟體抵禦攻擊�
 
 如果您同時擁有備份和復原以及勒索軟體復原功能，則受這兩種產品保護的任何公開資料僅由勒索軟體復原功能計費。
 
-購買許可證或 PayGo 訂閱後，任何啟用了勒索軟體偵測策略（自主勒索軟體保護）（由勒索軟體復原力發現或設定）且至少有一個快照或備份策略的工作負載，勒索軟體復原力都會將其歸類為“受保護”，併計入購買的容量或 PayGo 訂閱。如果在沒有檢測策略的情況下發現工作負載，即使它具有備份或快照策略，也會將其歸類為“有風險”，並且不會計入購買的容量。
+當工作負載被歸類為受保護時，它會計入已購買的容量或 PayGo 訂閱。Ransomware Resilience 會在啟用了至少一項快照或備份原則的偵測原則時，將工作負載歸類為受保護。如果工作負載已啟用偵測原則，但沒有備份或快照原則，則會被歸類為有風險。存在風險的工作負載不會計入已購買的容量。
 
-90 天試用期結束後，受保護的工作負載將計入購買的容量或訂閱。勒索軟體恢復按每 GB 為與受保護工作負載相關的資料（在效率之前）收費。
+免費試用期結束後，受保護的工作負載將計入購買的容量或訂閱費用。NetApp Ransomware Resilience 會根據受保護工作負載相關資料在提高效率之前的每 GB 來收費。
 
 
 
@@ -193,19 +192,19 @@ image:diagram-rp-architecture-preview3.png["勒索軟體抵禦能力架構​​
 .2+| 適用於 AWS 的Cloud Volumes ONTAP | CIFS 和 NFS | 9.11.1 及更高版本 
 
 
-| SAN（FC、iSCSI 和 NVMe） | 9.17.1 及更高版本 
+| SAN（iSCSI 和 NVMe） | 9.17.1 及更高版本 
 
 
 .2+| 適用於 Google Cloud Platform 的Cloud Volumes ONTAP | CIFS 和 NFS | 9.11.1 及更高版本 
 
 
-| SAN（FC、iSCSI 和 NVMe） | 9.17.1 及更高版本 
+| SAN（iSCSI 和 NVMe） | 9.17.1 及更高版本 
 
 
 .2+| 適用於 Microsoft Azure 的Cloud Volumes ONTAP | CIFS 和 NFS | 9.12.1 及更高版本 
 
 
-| SAN（FC、iSCSI 和 NVMe） | 9.17.1 及更高版本 
+| SAN（iSCSI 和 NVMe） | 9.17.1 及更高版本 
 
 
 .2+| ONTAP （本地部署） | CIFS 和 NFS | 9.11.1 及更高版本 

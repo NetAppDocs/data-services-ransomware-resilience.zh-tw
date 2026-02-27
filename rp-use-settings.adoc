@@ -79,7 +79,7 @@ TIP: 在「設定」中的「工作負載發現」卡片中，選擇操作選單
 
 
 
-NOTE: Amazon FSx for NetApp ONTAP 和 Azure NetApp Files 中的工作負載無法使用備份目標。請使用原生備份解決方案執行備份作業：FSx for ONTAP 備份服務或 Azure NetApp Files 備份服務。
+NOTE: Amazon FSx for NetApp ONTAP 和 Azure NetApp Files 中的工作負載無法使用備份目標。請使用原生備份解決方案執行備份作業：FSx for ONTAP 備份服務或 Azure NetApp Files 備份。
 
 您可以根據儀表板中的建議操作或存取功能表上的「設定」選項來新增備份目標。
 
