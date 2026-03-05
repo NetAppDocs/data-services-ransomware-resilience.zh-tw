@@ -59,12 +59,8 @@ https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles
 .Ransomware Resilience 是否了解ONTAP中的保護設定？
 是的，Ransomware Resilience 發現了在ONTAP中設定的快照計劃。
 
-.勒索軟體復原功能如何與NetApp Backup and Recovery和SnapCenter互動？
-勒索軟體復原功能與備份和復原功能協同工作，以發現並設定檔案共享工作負載的快照和備份策略。
-
-Ransomware Resilience 可與 SnapCenter 或 SnapCenter for VMware 搭配使用，以發現並設定應用程式和虛擬機器工作負載的快照和備份策略。目前，您無法將 Ransomware Resilience 與 SnapCenter 搭配使用進行復原。
-
-NetApp Ransomware Resilience 也可與 NetApp Backup and Recovery 搭配使用，以執行檔案和工作負載一致的還原。
+.勒索軟體復原能力如何與 NetApp Backup and Recovery 互動？
+Ransomware Resilience 與 Backup and Recovery 協同工作，以發現並設定檔案共享工作負載的快照和備份原則。Ransomware Resilience 也與 Backup and Recovery 協同工作，以執行檔案和工作負載一致性還原。
 
 對於許可和計費，即使您沒有單獨的備份和復原許可證，勒索軟體復原功能也可以與備份和復原功能整合。如果您同時擁有備份和復原以及勒索軟體復原功能，則受這兩種產品保護的任何公開資料僅由勒索軟體復原功能計費。
 
@@ -85,12 +81,8 @@ link:rp-use-protect.html["了解工作負載優先順序或重要性"] 。
 .勒索軟體復原能力支援哪些工作負載？
 勒索軟體復原能力可以識別以下工作負載：Oracle、檔案共享、區塊儲存、虛擬機器和虛擬機器資料儲存。
 
-如果您正在使用 SnapCenter 或 SnapCenter for VMware，則這些產品支援的所有工作負載也會在 Ransomware Resilience 中被識別。
-
 .如何將資料與工作負載關聯？
 勒索軟體復原能力會發現捲和檔案副檔名，並將它們與相應的工作負載關聯起來。
-
-如果您擁有SnapCenter或SnapCenter for VMware，並且在備份和復原中配置了工作負載，那麼勒索軟體復原功能將發現由SnapCenter和SnapCenter for VMware 管理的工作負載及其關聯的磁碟區。
 
 .什麼是受保護的工作負載？
 在勒索軟體復原能力中，當工作負載啟用了主要偵測策略時，其狀態將顯示為“*受保護*”，這意味著 link:concept-ransomware-resilience.html["自主勒索軟體防護 (ARP)"] 已在與工作負載相關的所有磁碟區上啟用。
@@ -122,17 +114,17 @@ link:rp-use-protect.html["了解工作負載優先順序或重要性"] 。
 .Ransomware Resilience 是否了解ONTAP中的保護設定？
 是的，Ransomware Resilience 可以發現 ONTAP 中設定的快照排程。它還可以發現已發現工作負載中的所有磁碟區是否都啟用了 ARP 和 FPolicy。您在 Ransomware Resilience 儀表板中看到的資訊是從其他 NetApp 解決方案和產品彙總而來。
 
-.勒索軟體復原功能是否了解備份和復原以及SnapCenter中已製定的策略？
-是的，如果您在備份和復原或SnapCenter中管理工作負載，則這些產品管理的策略將納入勒索軟體復原能力。
+.Ransomware Resilience 是否了解 Backup and Recovery 中已製定的策略？
+是的，如果您在 Backup and Recovery 中管理工作負載，則這些產品管理的原則將引入 Ransomware Resilience 。
 
-.能否修改從NetApp Backup and Recovery和/或SnapCenter繼承的策略？
-不可以，您無法從 Ransomware Resilience 修改由備份和還原或SnapCenter管理的政策。您可以在「備份和復原」或SnapCenter中管理對這些政策的任何變更。
+.您可以修改從 NetApp Backup and Recovery 繼承的原有原則嗎？
+不，您無法透過勒索軟體復原功能修改由 NetApp Backup and Recovery 管理的原則。您需要在 NetApp Backup and Recovery 中管理這些原則的任何變更。
 
 .如果ONTAP中存在政策（例如 ARP、FPolicy 和快照），這些策略是否會在勒索軟體復原功能中變更？
 不會。勒索軟體復原不會修改ONTAP中的任何現有偵測策略（ARP、FPolicy 設定）。
 
-.註冊勒索軟體復原功能後，如果在備份和復原或SnapCenter中新增政策會發生什麼情況？
-勒索軟體復原能力可以識別備份和復原或SnapCenter中新建立的策略和原則變更。
+.註冊 Ransomware Resilience 後，如果在 Backup and Recovery 中新增原則會發生什麼情況？
+勒索軟體復原能力能夠識別 NetApp Backup and Recovery 中新建立的原則和原則變更。
 
 .能否透過ONTAP更改策略？
 是的，您可以在 Ransomware Resilience 中從ONTAP更改策略。您也可以在勒索軟體復原中建立新策略並將其應用於工作負載。此操作將以在勒索軟體復原中建立的策略取代現有的ONTAP策略。

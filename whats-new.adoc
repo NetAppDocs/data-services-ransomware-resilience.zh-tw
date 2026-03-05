@@ -190,7 +190,7 @@ IMPORTANT: 您必須使用新的link:#new-user-roles-for-data-breach-detection["
 
 === 改進的工作負載保護
 
-此版本改進了具有其他NetApp工具（如SnapCenter或BlueXP backup and recovery）的快照和備份策略的工作負載的設定過程。在先前的版本中， BlueXP ransomware protection發現了來自其他工具的策略，只允許您更改偵測策略。在這個版本中，您現在可以用BlueXP ransomware protection策略取代快照和備份策略，或繼續使用其他工具中的策略。
+此版本改進了來自其他 NetApp 工具（例如 BlueXP backup and recovery）的快照和備份原則工作負載的組態程序。在先前的版本中，BlueXP ransomware protection 會探索來自其他工具的原則，僅允許您變更偵測原則。在此版本中，您現在可以將快照和備份原則替換為 BlueXP ransomware protection 原則，或繼續使用其他工具的原則。
 
 有關詳細信息，請參閱link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect.html["保護工作負載"]。
 
@@ -208,7 +208,7 @@ IMPORTANT: 您必須使用新的link:#new-user-roles-for-data-breach-detection["
 
 
 
-== 2025年6月9日
+== 2025 年 6 月 9 日
 
 
 
@@ -385,7 +385,7 @@ https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles
 
 
 
-== 2024年11月7日
+== 2024 年 11 月 7 日
 
 
 
@@ -433,7 +433,7 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect
 
 
 
-== 2024年9月2日
+== 2024 年 9 月 2 日
 
 
 
@@ -469,7 +469,7 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/concept-ransom
 
 
 
-== 2024年8月5日
+== 2024 年 8 月 5 日
 
 
 
@@ -481,7 +481,7 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem.html
 
 
 
-== 2024年7月1日
+== 2024 年 7 月 1 日
 
 
 
@@ -576,14 +576,6 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect
 
 
 
-=== 應用程式一致性和虛擬機器一致性保護和恢復
-
-現在，您可以使用NetApp SnapCenter軟體執行應用程式一致性保護，並使用SnapCenter Plug-in for VMware vSphere虛擬機器一致性保護，從而實現靜止且一致的狀態，以避免日後需要復原時可能的資料遺失。如果需要恢復，您可以將應用程式或虛擬機器恢復到任何先前可用的狀態。
-
-https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect.html["了解有關保護工作負載的更多信息"] 。
-
-
-
 === 勒索軟體防護策略
 
 如果工作負載上不存在快照或備份策略，您可以建立勒索軟體防護策略，其中可以包含您在此服務中建立的以下策略：
@@ -649,7 +641,7 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-backup-de
 
 
 
-== 2024年3月5日
+== 2024 年 3 月 05 日
 
 
 
@@ -685,7 +677,7 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/concept-ransom
 
 
 
-== 2023年10月6日
+== 2023 年 10 月 6 日
 
 BlueXP ransomware protection服務是一種用於保護資料、偵測潛在攻擊以及從勒索軟體攻擊中恢復資料的 SaaS 解決方案。
 
