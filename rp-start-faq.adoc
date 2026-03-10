@@ -36,6 +36,15 @@ summary: 尋找有關NetApp Ransomware Resilience的常見問題的答案。
 
 有關所有NetApp資料服務中這些模式的說明，請參閱 https://docs.netapp.com/us-en/console-setup-admin/concept-modes.html["NetApp Console部署模式"^]。
 
+.Ransomware Resilience 的計費方式是怎麼樣的？
+您可以免費試用 Ransomware Resilience 30 天。NetApp不會向您收取使用 Ransomware Resilience 試用版的費用。
+
+如果您同時擁有備份和復原以及勒索軟體復原功能，則受這兩種產品保護的任何公開資料僅由勒索軟體復原功能計費。
+
+當工作負載被歸類為受保護時，它會計入已購買的容量或 PAYGO 訂閱。Ransomware Resilience 會在啟用了至少一項快照或備份原則的偵測原則時，將工作負載歸類為受保護。已探索到具有偵測原則但沒有備份或快照原則的工作負載會被歸類為有風險。有風險的工作負載不會計入已購買的容量。
+
+受保護的工作負載在免費試用期結束後將計入購買的容量或訂閱費用。Ransomware Resilience 按 GB 計費，費用基於與受保護工作負載相關的資料（由 ONTAP 報告），不包含效率提升。
+
 
 
 == 使用權

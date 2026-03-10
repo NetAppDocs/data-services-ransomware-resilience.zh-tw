@@ -2060,8 +2060,6 @@
   <block id="65072a668477cd315b4302df8afcce32" category="paragraph">NetApp Ransomware Resilience 可保護您的資料免受勒索軟體攻擊。在 Ransomware Resilience 中，可為 Oracle 的應用程式型工作負載、VM 資料存放區，以及 NAS 儲存設備（NFS 和 CIFS 傳輸協定）和 SAN 儲存設備（FC、iSCSI 和 NVMe 傳輸協定）的檔案共用提供保護。Ransomware Resilience 支援內部部署儲存設備，以及適用於 Amazon Web Services 的 Cloud Volumes ONTAP、適用於 Google Cloud 的 Cloud Volumes ONTAP、適用於 Microsoft Azure 的 Cloud Volumes ONTAP、Azure NetApp Files 和 Amazon FSx for NetApp ONTAP，所有功能均可透過 NetApp Console 存取。您可以將資料備份到 Amazon Web Services、Google Cloud、Microsoft Azure 和 NetApp StorageGRID。</block>
   <block id="8987946f77221ac2f7d1494a4fcae0a6" category="list-text">*識別* 在 NetApp 本地 NAS 和 SAN 系統中，基於應用程式、檔案共享或 VMware 管理的工作負載，並可於 NetApp Console、專案及 Console 代理程式中進行管理。在發現工作負載後，Ransomware Resilience 會識別提升勒索軟體韌性的機會。</block>
   <block id="3b9c98c430c62cb3627db641468d7e64" category="list-text">評估您的勒索軟體防護狀況，並在易於理解的儀表板中顯示，同時提供改進防護的建議。</block>
-  <block id="8ab218529be70765f2dbc68a1731ea6e" category="paragraph">當工作負載被歸類為受保護時，它會計入已購買的容量或 PayGo 訂閱。Ransomware Resilience 會在啟用了至少一項快照或備份原則的偵測原則時，將工作負載歸類為受保護。如果工作負載已啟用偵測原則，但沒有備份或快照原則，則會被歸類為有風險。存在風險的工作負載不會計入已購買的容量。</block>
-  <block id="89895786495ed60e80d759587b508469" category="paragraph">免費試用期結束後，受保護的工作負載將計入購買的容量或訂閱費用。NetApp Ransomware Resilience 會根據受保護工作負載相關資料在提高效率之前的每 GB 來收費。</block>
   <block id="9bd1fe262c57584526c5184d4de31827" category="list-text">如果您的內部部署 ONTAP 叢集或 Cloud Volumes ONTAP 系統未在 Console 中設定，請參閱 <block ref="1c09904f3fbf9f22b68e96599d2dcddc" category="inline-link-macro-rx"></block> 和 <block ref="b04507b2bbabc17c071b912167d3ff4f" category="inline-link-macro-rx"></block>。</block>
   <block id="3eb45f3714606347a6ff182b822b69cc" category="list-text">對於 ONTAP 或 Cloud Volumes ONTAP 叢集，Ransomware Resilience 要求 ONTAP 版本為 9.11.1 或更高版本。</block>
   <block id="4b2c42068bb1431d3a8d94e9ca135659" category="paragraph"><block ref="187dbd743d444b65478d146e1c2c85f6" category="inline-link-rx"></block>.</block>
@@ -2167,4 +2165,9 @@
   <block id="fd117b89b92e15d359324da93300356b" category="doc">將 NetApp Ransomware Resilience 連接至 SIEM 以進行威脅分析與偵測</block>
   <block id="e02579eaf37afcb0e3837dd893799871" category="paragraph">安全資訊和事件管理系統 (SIEM) 集中管理日誌和事件數據，以便深入了解安全事件和合規性。NetApp Ransomware Resilience 支援自動將資料傳送到您的 SIEM，從而簡化威脅分析和偵測流程。</block>
   <block id="df4bdd45174b09881add6730bdfaf045" category="section-title">2026 年 3 月 09 日</block>
+  <block id="b4dfd6d471f025389f9c78ebe17c16ba" category="paragraph">當工作負載被歸類為受保護時，它會計入已購買的容量或 PAYGO 訂閱。Ransomware Resilience 會在啟用了至少一項快照或備份原則的偵測原則時，將工作負載歸類為受保護。已探索到具有偵測原則但沒有備份或快照原則的工作負載會被歸類為有風險。有風險的工作負載不會計入已購買的容量。</block>
+  <block id="9b0a81f6fc494248483a10631a72dabe" category="paragraph">受保護的工作負載在免費試用期結束後將計入購買的容量或訂閱費用。Ransomware Resilience 按 GB 計費，費用基於與受保護工作負載相關的資料（由 ONTAP 報告），不包含效率提升。</block>
+  <block id="1dba6347dc69b3be8eba699851eddc8f" category="paragraph-title">Ransomware Resilience 的計費方式是怎麼樣的？</block>
+  <block id="6c1c5737355a8b30e87ad5d7c6da9553" category="inline-link-macro">更新授權</block>
+  <block id="fb8e096a7050c588583ae61ddb846c94" category="admonition">在 Ransomware Resilience 防護儀表板中監控受保護資料的大小。若要增加容量，請參閱 <block ref="0cb59e747afacc80ad7810dc5f26bca9" category="inline-link-macro-rx"></block>。</block>
 </blocks>
