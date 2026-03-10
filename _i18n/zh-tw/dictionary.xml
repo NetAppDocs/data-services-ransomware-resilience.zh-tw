@@ -1893,7 +1893,6 @@
   <block id="691a3e8e2059e924160a8104310f552d" category="paragraph">Ransomware Resilience 現已支援將快照複製到輔助 ONTAP 網站。使用複製策略的保護群組，您可以為每個工作負載複製到相同或不同的目標位置。您可以建立包含複製功能的勒索軟體防護策略，也可以使用預先定義的策略。</block>
   <block id="17dfbc312023bdd4da992d8e751e72ac" category="doc">Azure NetApp Files 支援</block>
   <block id="ea2f778dfb597a4b527dac7e944ad95b" category="paragraph">Ransomware Resilience 現已支援 Azure NetApp Files 系統，使您能夠有效率地偵測和應對 Azure NetApp Files 中的勒索軟體威脅。當您發現工作負載時，Ransomware Resilience 現在會呈現 Azure NetApp Files 並在保護儀表板中顯示。Ransomware Resilience 對 Azure NetApp Files 的支援僅包括使用快照的偵測和保護策略。對 Azure NetApp Files 的支援目前處於預覽階段。</block>
-  <block id="5e0e68da0b873ce6ac5da97de07de426" category="paragraph">如需詳細資訊，請參閱 <block ref="d50b16a5274f0acc6be171c51d532ef9" category="inline-link-macro-rx"></block>。</block>
   <block id="533173be617e8e70b39c22d6b639f1ef" category="section-title">將使用者從使用者行為警示中排除</block>
   <block id="34db265ea1c563cd1e8fec4196fdd55a" category="paragraph">NetApp Ransomware Resilience 現已允許您將特定使用者從使用者行為警報中排除。排除受信任的使用者可以防止誤報和不必要的警報。</block>
   <block id="0801620ca1af462c0fd534ad95bfa3b0" category="inline-link-macro">將使用者排除在警示範圍之外</block>
@@ -1920,8 +1919,6 @@
   <block id="82694a5fa079406313056daf01f9118b" category="list-text">選擇 **Excluded users** 標籤。</block>
   <block id="de13c27fd58614b060a46c2092ed0545" category="list-text">若要在使用者介面中檢閱個別使用者，請選擇 **手動選取**。若要上傳排除的使用者清單，請選取 **上傳**。</block>
   <block id="9dd5e919daf597022ca9ace5ebd739e9" category="list-text">如果您選擇了 **Select manually**，請選取要排除的特定使用者名稱旁的核取方塊。</block>
-  <block id="d2b1df006cba7f480a48064be15b71ec" category="list-text">如果您選擇 **Upload**，則必須先下載包含所有使用者清單的 CSV 檔案。選擇 **Download** 即可存取該清單。</block>
-  <block id="f44e20ff3f0d285a050e5f4e9dc1267f" category="paragraph">檢閱 CSV 檔案。移除所有您想要維持偵測的使用者名稱。當清單僅包含您想要從偵測中排除的使用者名稱時，請儲存該清單。選取 **Upload** 以找到檔案，然後選擇該檔案。</block>
   <block id="8641c2055d546da7c2e15e6d18bc9016" category="list-text">選擇 **Add** 以完成將使用者新增至排除清單的操作。</block>
   <block id="98e062a77fcb05260f463a017f171f72" category="list-text">在「已排除使用者」標籤中，現在會在儀表板中顯示已從使用者行為偵測警示中移除的使用者名稱。</block>
   <block id="bf7da00a56585a6a89ff8f8184dfd6fd" category="inline-link-macro">回應勒索軟體警示</block>
@@ -1931,7 +1928,6 @@
   <block id="144c603fbbde0985023a4ea73e22e35b" category="list-text">從排除使用者清單中找到要移除的使用者名稱。在該使用者名稱所在的行選擇操作選單 <block ref="2f43b42fd833d1e77420a8dae7419000" prefix="(" category="inline-code"></block>），然後選擇**移除**。</block>
   <block id="581c5c550f20f231f6c9e881e699829b" category="list-text">在對話方塊中、選取 **Remove** 以確認您要移除所選使用者。</block>
   <block id="90c78a95b0a3dffc0aa664d3139d1369" category="summary">您可以自動將資料從 NetApp Ransomware Resilience 傳送到您的安全性與事件管理系統（SIEM），以進行威脅分析與偵測。</block>
-  <block id="2e83d7690079c133e11ad37c5e4ff93e" category="doc">將 NetApp Ransomware Resilience 連接到安全性與事件管理系統（SIEM），以進行威脅分析與偵測</block>
   <block id="7be8ef49fa437b6a669fb54a081312c4" category="paragraph">Ransomware Resilience 支援下列 SIEM ：</block>
   <block id="03883d80013dc0b2b972eccd5b93b56f" category="list-text">AWS Security Hub</block>
   <block id="11759e65f10609550e1a85679db960a9" category="list-text">Microsoft Sentinel</block>
@@ -2025,7 +2021,6 @@
   <block id="5ca3c8d5b41265fc9239c63ce669af8e" category="list-text"><block ref="5ca3c8d5b41265fc9239c63ce669af8e" category="inline-link-macro-rx"></block></block>
   <block id="a328de7375b1a392aaa6da8ac6a9c525" category="list-text"><block ref="a328de7375b1a392aaa6da8ac6a9c525" category="inline-link-macro-rx"></block></block>
   <block id="3e16604d2667be9816f6bfb6ba4f70f1" category="list-text"><block ref="3e16604d2667be9816f6bfb6ba4f70f1" category="inline-link-macro-rx"></block></block>
-  <block id="d3a17ab1969b7e28ae5324bee6d4cd54" category="paragraph">安全資訊和事件管理系統 (SIEM) 集中管理日誌和事件數據，以便深入了解安全事件和合規性。NetApp Ransomware Resilience 支援自動將資料傳送到您的 SIEM，從而簡化威脅分析和偵測流程。</block>
   <block id="1054e7cee5045661c2dae3afe8f146e4" category="list-text">選擇 *Authenticate* 。</block>
   <block id="3538785960373ea81ad23e72866e9266" category="sidebar">檢閱保護</block>
   <block id="9b792a24170d5651c572c72e1a0fcfc2" category="admonition">目前 SAN 工作負載不支援使用者活動偵測。您可以在 Amazon FSxN for ONTAP、Cloud Volumes ONTAP 和 ONTAP 中使用 NAS 工作負載的使用者活動偵測。</block>
@@ -2157,4 +2152,19 @@
   <block id="65f1f74c15350fb3342360320ff8c717" category="section-title">2024 年 7 月 1 日</block>
   <block id="c3084a9e2d458e9a14fb0606a505126d" category="section-title">2024 年 3 月 05 日</block>
   <block id="ff1c2e86cdd326544983c6d6affd39a5" category="section-title">2023 年 10 月 6 日</block>
+  <block id="d78202f5dede249577567c1012878352" category="paragraph">如需詳細資訊，請參閱 <block ref="d50b16a5274f0acc6be171c51d532ef9" category="inline-link-macro-rx"></block>。</block>
+  <block id="f1997d5dfd164e5a0380ec3b9fe07b89" category="doc">批量將使用者從使用者行為警示中排除</block>
+  <block id="4de429b8f1b2702e94fc5d32dd614fa1" category="paragraph">除了現有的 UI 和基於 CSV 的選項外，Ransomware Resilience 現在還支援上傳 JSON 用戶列表，以將特定用戶從用戶行為活動警報中排除。</block>
+  <block id="0255e4883b8e158de2dac4173dac190a" category="paragraph">如需詳細資訊，請參閱 <block ref="dfd47d5e016db97d5fa8c5e4a7bd25f8" category="inline-link-macro-rx"></block>。</block>
+  <block id="5d8e3a83bb9b2062983b23dd93a1a59a" category="section-title">使用者行為活動增強功能</block>
+  <block id="fcd457ee097f566ef709e77f46015c87" category="paragraph">Ransomware Resilience 透過新增電子郵件警示並將使用者行為事件納入受支援的 SIEM 事件資料（AWS Security Hub、Microsoft Sentinel 和 Splunk Cloud）中，增強了對使用者行為的洞察。這些增強功能可協助您更準確地了解安全性和法規遵循監控情況。</block>
+  <block id="5d8eeee45929294781013d6d152aae8a" category="inline-link-macro">將 NetApp Ransomware Resilience 連接到 SIEM</block>
+  <block id="ffe0756ca1f78d7e15e127b325f96178" category="paragraph">如需詳細資訊，請參閱 <block ref="372c79e94d2824fc0323cc318a30717d" category="inline-link-macro-rx"></block>。</block>
+  <block id="2aeee41e03e1ec5e48f7c1deb934b617" category="list-text">如果您選擇 **Upload**，請下載包含所有使用者清單的 CSV 或 JSON 檔案。選擇 **Download** 即可存取該清單。</block>
+  <block id="e2616004bc9cf87f18910a512e2c2379" category="paragraph">在本機上，查看該檔案。刪除所有您希望保留偵測的使用者名稱。當清單中僅包含您希望從偵測中排除的使用者名稱時，請儲存該檔案。</block>
+  <block id="3e56f67eb69a3fdb139a993bc1606e4f" category="paragraph">在 Ransomware Resilience 中，選取 **Upload**。找到並上傳檔案。</block>
+  <block id="2a26cf4062a1ee4ec346c86574259847" category="list-text">若要從使用者介面中排除個別使用者，請選擇 **手動選擇**。</block>
+  <block id="fd117b89b92e15d359324da93300356b" category="doc">將 NetApp Ransomware Resilience 連接至 SIEM 以進行威脅分析與偵測</block>
+  <block id="e02579eaf37afcb0e3837dd893799871" category="paragraph">安全資訊和事件管理系統 (SIEM) 集中管理日誌和事件數據，以便深入了解安全事件和合規性。NetApp Ransomware Resilience 支援自動將資料傳送到您的 SIEM，從而簡化威脅分析和偵測流程。</block>
+  <block id="df4bdd45174b09881add6730bdfaf045" category="section-title">2026 年 3 月 09 日</block>
 </blocks>

@@ -1,0 +1,19 @@
+= 批量將使用者從使用者行為警示中排除
+:allow-uri-read: 
+
+
+
+
+=== 批量將使用者從使用者行為警示中排除
+
+除了現有的 UI 和基於 CSV 的選項外，Ransomware Resilience 現在還支援上傳 JSON 用戶列表，以將特定用戶從用戶行為活動警報中排除。
+
+如需詳細資訊，請參閱 link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/suspicious-user-activity.html#exclude-users-from-alerts["將使用者排除在警示範圍之外"^]。
+
+
+
+=== 使用者行為活動增強功能
+
+Ransomware Resilience 透過新增電子郵件警示並將使用者行為事件納入受支援的 SIEM 事件資料（AWS Security Hub、Microsoft Sentinel 和 Splunk Cloud）中，增強了對使用者行為的洞察。這些增強功能可協助您更準確地了解安全性和法規遵循監控情況。
+
+如需詳細資訊，請參閱 link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/suspicious-user-activity.html["將 NetApp Ransomware Resilience 連接到 SIEM"^]。

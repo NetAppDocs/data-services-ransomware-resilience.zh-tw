@@ -4,7 +4,7 @@ permalink: task-siem.html
 keywords: ransomware protection, SIEM, security event management system, soar, playbook, orchestration, event management 
 summary: 您可以自動將資料從 NetApp Ransomware Resilience 傳送到您的安全性與事件管理系統（SIEM），以進行威脅分析與偵測。 
 ---
-= 將 NetApp Ransomware Resilience 連接到安全性與事件管理系統（SIEM），以進行威脅分析與偵測
+= 將 NetApp Ransomware Resilience 連接至 SIEM 以進行威脅分析與偵測
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
