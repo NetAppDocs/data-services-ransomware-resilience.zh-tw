@@ -2172,4 +2172,31 @@
   <block id="a8bb9ad5a88304569c56e3805762683b" category="doc">在 NetApp Ransomware Resilience 中掃描個人可識別資訊</block>
   <block id="1ca81bce832a538b6144470d9a25c786" category="paragraph">在 NetApp Ransomware Resilience 中，您可以使用 NetApp Data Classification 來掃描並分類檔案共用工作負載中的資料。資料分類有助於您判斷資料集是否包含個人可識別資訊（PII），這可能會增加安全風險。</block>
   <block id="1954c0eede9cec276e44236c76142770" category="paragraph">Data Classification 是 NetApp Console 的核心元件。您不需要授權即可使用 Data Classification 。根據您的設定、設定 Data Classification 可能會產生成本、這些成本不會由 Ransomware Resilience 收取。如需詳細資訊、請參閱<block ref="c5cce5d1091349460847f69d486fd688" category="inline-link-macro-rx"></block>。</block>
+  <block id="70c542a285cfdf5cc22587e58fc3fcbb" category="doc">適用於 Microsoft Sentinel 和 Splunk 的 SOAR 劇本</block>
+  <block id="2f9304fe9b427489507405bef9a0bb9f" category="inline-link-macro">Splunk</block>
+  <block id="e0df5750183f59f1a681c84ab0a08458" category="paragraph">Ransomware Resilience 現在提供適用於 <block ref="353f990ad0de32e744a84d05e731dc96" category="inline-link-macro-rx"></block> 和 <block ref="4655146bfbabab7fd679c2d1ca7a8d15" category="inline-link-macro-rx"></block> 的安全編排、自動化和回應（SOAR）劇本。這些劇本能夠簡化威脅回應管理，自動執行任務測試和關鍵的勒索軟體回應工作，包括建立快照和將磁碟區離線。</block>
+  <block id="c75f115758f26a9b54a9d51601b66cf9" category="inline-link-macro">整合 SOAR 劇本</block>
+  <block id="b8b94feeaf531f391629f42d138991ba" category="paragraph">如需詳細資訊、請參閱<block ref="ea7002ba1a528c89bfc86119082f1178" category="inline-link-macro-rx"></block>。</block>
+  <block id="e809d3cd971f3bd0702a07af10ed5b3f" category="summary">整合並使用 SOAR 劇本來自動化 NetApp Ransomware Resilience 威脅回應任務。</block>
+  <block id="64495558f55fc510fa1f0d8417e9d0f9" category="doc">整合 SOAR 劇本以實現 NetApp Ransomware Resilience</block>
+  <block id="15ece8e7c495c241dd67ef0baad7fcaf" category="paragraph">NetApp Ransomware Resilience 提供安全協調、自動化和回應（SOAR）劇本，讓您能夠自動執行威脅回應等任務。</block>
+  <block id="be0ccf0303f9149ec406ad081d1e1b4f" category="paragraph">Ransomware Resilience 手冊提供以下功能：</block>
+  <block id="70a6131a6c77f1f9afbf85c23200dee6" category="list-text">建立磁碟區的快照</block>
+  <block id="a4431e17a1690b12df20e34bb2f4b744" category="list-text">利用威脅情報豐富 IP 位址</block>
+  <block id="762279f864f96ffbe81b311754b74896" category="list-text">豐富給定代理程式和系統的儲存資訊</block>
+  <block id="b826f101cb377022bc455ad2020f2f86" category="list-text">將磁碟區離線以進行事件回應</block>
+  <block id="dbc85b383817f560c0d1b083f4449627" category="list-text">測試連線能力</block>
+  <block id="870d0fb8b0bf7879e6ada101131c6864" category="list-text">檢閱擴充工作的狀態</block>
+  <block id="5156f3fe3404db2816f53b4f01711a75" category="section-title">劇本</block>
+  <block id="0c7fbad5c54a3cc727fd8969a07d6ea4" category="paragraph">Ransomware Resilience 提供適用於 Microsoft Sentinel 和 Splunk 的 playbook。請查看對應的 GitHub 頁面以了解設定詳情。</block>
+  <block id="8ab0c1a60a7c0ca7e1eee721cf8a8924" category="list-text"><block ref="8ab0c1a60a7c0ca7e1eee721cf8a8924" category="inline-link-macro-rx"></block></block>
+  <block id="4655146bfbabab7fd679c2d1ca7a8d15" category="list-text"><block ref="4655146bfbabab7fd679c2d1ca7a8d15" category="inline-link-macro-rx"></block></block>
+  <block id="fcd13f38c6a87165a33577bfdd3654b4" category="inline-link-macro">Splunkbase</block>
+  <block id="2a89449caab8a2ca7d825a1c6a44640c" category="admonition">對於 Splunk Cloud、您必須執行平台版本 7.0、7.1、7.2、8.0 或 8.4。如需詳細資訊、請參閱 <block ref="258077ff9a23292548ab7c25d009028a" category="inline-link-macro-rx"></block>。</block>
+  <block id="d11de361a9507cdd0eba54b47b77df6e" category="list-text"><block ref="d11de361a9507cdd0eba54b47b77df6e" category="inline-link-macro-rx"></block></block>
+  <block id="5d0a0988b6064ad1afb79d8f5aa31f02" category="inline-link-macro">安全協調、自動化和回應（SOAR）劇本</block>
+  <block id="b6f1ae85c12d06f23f82164c0136a6fc" category="admonition">Ransomware Resilience 也支援<block ref="de8332ed81162473af5cb8a1551a7e36" category="inline-link-macro-rx"></block>。</block>
+  <block id="d8c1214f51ea9ce3d7b9e64dd8a16327" category="inline-link-macro">整合 SOAR 劇本</block>
+  <block id="450000aaa83625b4284af1b1791c4576" category="list-text"><block ref="450000aaa83625b4284af1b1791c4576" category="inline-link-macro-rx"></block></block>
+  <block id="462a6e98fbd2a13cda63645b676477e3" category="section-title">2026 年 3 月 12 日</block>
 </blocks>

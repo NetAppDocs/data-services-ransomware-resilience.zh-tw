@@ -23,6 +23,9 @@ Ransomware Resilience 支援下列 SIEM ：
 在 Ransomware Resilience 中啟用 SIEM 之前，您需要設定您的 SIEM 系統。
 
 
+TIP: Ransomware Resilience 也支援link:reference-soar.html["安全協調、自動化和回應（SOAR）劇本"^]。
+
+
 
 == 傳送至 SIEM 的事件資料
 
@@ -256,4 +259,11 @@ NOTE: 您輸入的資訊取決於您選擇的 SIEM。
 +
 設定頁面顯示「已連線」。
 
+
+
+
+
+== 後續步驟
+
+* link:reference-soar.html["整合 SOAR 劇本"]
 

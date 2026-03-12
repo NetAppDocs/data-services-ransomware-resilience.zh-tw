@@ -1,0 +1,11 @@
+= 適用於 Microsoft Sentinel 和 Splunk 的 SOAR 劇本
+:allow-uri-read: 
+
+
+
+
+=== 適用於 Microsoft Sentinel 和 Splunk 的 SOAR 劇本
+
+Ransomware Resilience 現在提供適用於 link:https://github.com/Azure/Azure-Sentinel/tree/master/Solutions/NetApp%20Ransomware%20Resilience/Playbooksp["Microsoft Sentinel"^] 和 link:https://github.com/splunk-soar-connectors/netappransomwareresilience["Splunk"^] 的安全編排、自動化和回應（SOAR）劇本。這些劇本能夠簡化威脅回應管理，自動執行任務測試和關鍵的勒索軟體回應工作，包括建立快照和將磁碟區離線。
+
+如需詳細資訊、請參閱link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/reference-soar.html["整合 SOAR 劇本"^]。

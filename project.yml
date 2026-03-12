@@ -70,6 +70,8 @@ sidebar:
       url: "/rp-start-simulate.html"
     - title: 設定 SIEM
       url: "/task-siem.html"
+    - title: 整合 SOAR 劇本
+      url: "/reference-soar.html"
     - title: 下載報告
       url: "/rp-use-reports.html"
   - section: support

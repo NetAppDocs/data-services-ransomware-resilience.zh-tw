@@ -1,0 +1,44 @@
+---
+sidebar: sidebar 
+permalink: reference-soar.html 
+keywords: ransomware protection, soar, security orchestration, microsoft sentinel, splunk, automation, threat response, playbook 
+summary: 整合並使用 SOAR 劇本來自動化 NetApp Ransomware Resilience 威脅回應任務。 
+---
+= 整合 SOAR 劇本以實現 NetApp Ransomware Resilience
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp Ransomware Resilience 提供安全協調、自動化和回應（SOAR）劇本，讓您能夠自動執行威脅回應等任務。
+
+Ransomware Resilience 手冊提供以下功能：
+
+* 建立磁碟區的快照
+* 利用威脅情報豐富 IP 位址
+* 豐富給定代理程式和系統的儲存資訊
+* 將磁碟區離線以進行事件回應
+* 測試連線能力
+* 檢閱擴充工作的狀態
+
+
+
+
+== 劇本
+
+Ransomware Resilience 提供適用於 Microsoft Sentinel 和 Splunk 的 playbook。請查看對應的 GitHub 頁面以了解設定詳情。
+
+* link:https://github.com/Azure/Azure-Sentinel/tree/master/Solutions/NetApp%20Ransomware%20Resilience/Playbooks["Microsoft Sentinel"^]
+* link:https://github.com/splunk-soar-connectors/netappransomwareresilience["Splunk"^]
+
+
+
+NOTE: 對於 Splunk Cloud、您必須執行平台版本 7.0、7.1、7.2、8.0 或 8.4。如需詳細資訊、請參閱 link:https://splunkbase.splunk.com/app/8483["Splunkbase"^]。
+
+
+
+== 更多資訊
+
+* link:task-siem.html["將 NetApp Ransomware Resilience 連接至 SIEM 以進行威脅分析與偵測"]
+
