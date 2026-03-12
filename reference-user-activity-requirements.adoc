@@ -4,7 +4,7 @@ permalink: reference-user-activity-requirements.html
 keywords: data breach detection, data breach, user activity, suspicious, anomalous, requirements, end points, operating systems, networking 
 summary: 在建立使用者活動代理程式和其他收集器之前、您必須確保符合所述的作業系統、伺服器和網路需求。 
 ---
-= NetApp Ransomware Resilience 中的使用者行為偵測需求
+= NetApp Ransomware Resilience 的使用者活動偵測需求
 :hardbreaks:
 :allow-uri-read: 
 :icons: font

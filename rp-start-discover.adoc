@@ -4,7 +4,7 @@ permalink: rp-start-discover.html
 keywords: bluexp, ransomware protection, protection, risk, cyber attack, security,data security, data protection, data recovery, data discovery 
 summary: 在發現過程中，勒索軟體復原力會分析所有控制台代理和帳戶的系統中的所有捲和檔案。 
 ---
-= 在 NetApp Ransomware Resilience 中發現並管理工作負載
+= 在 NetApp Ransomware Resilience 中探索工作負載
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
