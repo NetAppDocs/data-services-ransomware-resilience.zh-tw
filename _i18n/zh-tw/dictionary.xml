@@ -2174,7 +2174,6 @@
   <block id="1954c0eede9cec276e44236c76142770" category="paragraph">Data Classification 是 NetApp Console 的核心元件。您不需要授權即可使用 Data Classification 。根據您的設定、設定 Data Classification 可能會產生成本、這些成本不會由 Ransomware Resilience 收取。如需詳細資訊、請參閱<block ref="c5cce5d1091349460847f69d486fd688" category="inline-link-macro-rx"></block>。</block>
   <block id="70c542a285cfdf5cc22587e58fc3fcbb" category="doc">適用於 Microsoft Sentinel 和 Splunk 的 SOAR 劇本</block>
   <block id="2f9304fe9b427489507405bef9a0bb9f" category="inline-link-macro">Splunk</block>
-  <block id="e0df5750183f59f1a681c84ab0a08458" category="paragraph">Ransomware Resilience 現在提供適用於 <block ref="353f990ad0de32e744a84d05e731dc96" category="inline-link-macro-rx"></block> 和 <block ref="4655146bfbabab7fd679c2d1ca7a8d15" category="inline-link-macro-rx"></block> 的安全編排、自動化和回應（SOAR）劇本。這些劇本能夠簡化威脅回應管理，自動執行任務測試和關鍵的勒索軟體回應工作，包括建立快照和將磁碟區離線。</block>
   <block id="c75f115758f26a9b54a9d51601b66cf9" category="inline-link-macro">整合 SOAR 劇本</block>
   <block id="b8b94feeaf531f391629f42d138991ba" category="paragraph">如需詳細資訊、請參閱<block ref="ea7002ba1a528c89bfc86119082f1178" category="inline-link-macro-rx"></block>。</block>
   <block id="e809d3cd971f3bd0702a07af10ed5b3f" category="summary">整合並使用 SOAR 劇本來自動化 NetApp Ransomware Resilience 威脅回應任務。</block>
@@ -2199,4 +2198,5 @@
   <block id="d8c1214f51ea9ce3d7b9e64dd8a16327" category="inline-link-macro">整合 SOAR 劇本</block>
   <block id="450000aaa83625b4284af1b1791c4576" category="list-text"><block ref="450000aaa83625b4284af1b1791c4576" category="inline-link-macro-rx"></block></block>
   <block id="462a6e98fbd2a13cda63645b676477e3" category="section-title">2026 年 3 月 12 日</block>
+  <block id="cb4ae29d8762239c8dfdfc76bdb65d37" category="paragraph">Ransomware Resilience 現在提供適用於 <block ref="8ab0c1a60a7c0ca7e1eee721cf8a8924" category="inline-link-macro-rx"></block> 和 <block ref="4655146bfbabab7fd679c2d1ca7a8d15" category="inline-link-macro-rx"></block> 的安全編排、自動化和回應（SOAR）劇本。這些劇本能夠簡化威脅回應管理，自動執行任務測試和關鍵的勒索軟體回應工作，包括建立快照和將磁碟區離線。</block>
 </blocks>
