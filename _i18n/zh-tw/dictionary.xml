@@ -2186,7 +2186,6 @@
   <block id="dbc85b383817f560c0d1b083f4449627" category="list-text">測試連線能力</block>
   <block id="870d0fb8b0bf7879e6ada101131c6864" category="list-text">檢閱擴充工作的狀態</block>
   <block id="5156f3fe3404db2816f53b4f01711a75" category="section-title">劇本</block>
-  <block id="0c7fbad5c54a3cc727fd8969a07d6ea4" category="paragraph">Ransomware Resilience 提供適用於 Microsoft Sentinel 和 Splunk 的 playbook。請查看對應的 GitHub 頁面以了解設定詳情。</block>
   <block id="8ab0c1a60a7c0ca7e1eee721cf8a8924" category="list-text"><block ref="8ab0c1a60a7c0ca7e1eee721cf8a8924" category="inline-link-macro-rx"></block></block>
   <block id="4655146bfbabab7fd679c2d1ca7a8d15" category="list-text"><block ref="4655146bfbabab7fd679c2d1ca7a8d15" category="inline-link-macro-rx"></block></block>
   <block id="fcd13f38c6a87165a33577bfdd3654b4" category="inline-link-macro">Splunkbase</block>
@@ -2202,11 +2201,12 @@
   <block id="0a444369e66f3a256a69eec8c1934071" category="paragraph">在考慮容量大小時，授權成本是基於作用中檔案系統的邏輯容量（表示快照所佔用的空間不包括在內）。</block>
   <block id="ed300adca180c1e33d800707367434a6" category="doc">適用於 Google SecOps 的 SOAR 策略手冊</block>
   <block id="d6e96acd595d94a4f4fd9727f77f8f89" category="inline-link-macro">Google SecOps</block>
-  <block id="6e9577ca2ef4afc51475afb9c4855a58" category="paragraph">Ransomware Resilience 現在提供了一個安全編排、自動化和回應 (SOAR) 劇本<block ref="a0b16504c1687e5508c034346a32796a" category="inline-link-macro-rx"></block>。該劇本能夠簡化威脅回應管理，自動化任務測試和關鍵的勒索軟體回應工作，包括建立快照和將磁碟區離線。</block>
   <block id="d942356c034f7ad3c314a5fae7d11e1d" category="list-text"><block ref="d942356c034f7ad3c314a5fae7d11e1d" category="inline-link-macro-rx"></block></block>
   <block id="1432a60da610bc1b6af09d6319597446" category="inline-link-macro">Azure NetApp Files 的限制</block>
   <block id="7c227d7b6723bc5af92a1b877aae1bbe" category="admonition">對於 Azure NetApp Files 系統，請查看 <block ref="a1a46b98c4974de0d0c21339035b1250" category="inline-link-macro-rx"></block> 與 SOAR。</block>
   <block id="895dff905f51ff367d108afbf6e634a7" category="inline-link-macro">SOAR 行動手冊</block>
-  <block id="fbaf8ef61cfa55e52a929ce171ffe013" category="list-text">建議您不要將支援的 <block ref="237628f5d72273fb0e39c8149431292e" category="inline-link-macro-rx"></block> 與 Azure NetApp Files 一起使用，因為 Azure NetApp Files API 會阻止自動化操作。</block>
   <block id="d8fdc2681cdec613a02ac551c44a6e8c" category="section-title">2026 年 3 月 31 日</block>
+  <block id="d0c1ba6e120f697911d5bd92a51f0322" category="paragraph">Ransomware Resilience 現在提供了一個安全編排、自動化和回應 (SOAR) 劇本<block ref="d942356c034f7ad3c314a5fae7d11e1d" category="inline-link-macro-rx"></block>。該劇本能夠簡化威脅回應管理、自動化任務和測試，並支援關鍵的勒索軟體回應工作，包括建立快照和將磁碟區離線。</block>
+  <block id="dce0959f50faa93a47d141f615365404" category="paragraph">勒索軟體防護方案提供適用於 Google SecOps、Microsoft Sentinel 和 Splunk 的劇本。請查看對應的 GitHub 頁面以了解設定詳情。</block>
+  <block id="4f61a1c38b74708d0982090b3ace3f21" category="list-text">建議您不要使用 <block ref="237628f5d72273fb0e39c8149431292e" category="inline-link-macro-rx"></block> 與 Azure NetApp Files，因為 Azure NetApp Files API 會阻止自動化操作。</block>
 </blocks>

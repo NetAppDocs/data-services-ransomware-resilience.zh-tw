@@ -24,7 +24,7 @@ summary: 了解NetApp Ransomware Resilience的新功能。
 
 === 適用於 Google SecOps 的 SOAR 策略手冊
 
-Ransomware Resilience 現在提供了一個安全編排、自動化和回應 (SOAR) 劇本link:https://github.com/chronicle/content-hub/tree/main/content/response_integrations/third_party/partner/netappransomwareresiliences["Google SecOps"^]。該劇本能夠簡化威脅回應管理，自動化任務測試和關鍵的勒索軟體回應工作，包括建立快照和將磁碟區離線。
+Ransomware Resilience 現在提供了一個安全編排、自動化和回應 (SOAR) 劇本link:https://github.com/chronicle/content-hub/tree/main/content/response_integrations/third_party/partner/netappransomwareresilience["Google SecOps"^]。該劇本能夠簡化威脅回應管理、自動化任務和測試，並支援關鍵的勒索軟體回應工作，包括建立快照和將磁碟區離線。
 
 如需詳細資訊、請參閱link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/reference-soar.html["整合 SOAR 劇本"^]。
 

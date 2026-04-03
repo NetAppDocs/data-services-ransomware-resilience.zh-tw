@@ -27,7 +27,7 @@ Ransomware Resilience 手冊提供以下功能：
 
 == 劇本
 
-Ransomware Resilience 提供適用於 Microsoft Sentinel 和 Splunk 的 playbook。請查看對應的 GitHub 頁面以了解設定詳情。
+勒索軟體防護方案提供適用於 Google SecOps、Microsoft Sentinel 和 Splunk 的劇本。請查看對應的 GitHub 頁面以了解設定詳情。
 
 * link:https://github.com/chronicle/content-hub/tree/main/content/response_integrations/third_party/partner/netappransomwareresilience["Google SecOps"^]
 * link:https://github.com/Azure/Azure-Sentinel/tree/master/Solutions/NetApp%20Ransomware%20Resilience/Playbooks["Microsoft Sentinel"^]
