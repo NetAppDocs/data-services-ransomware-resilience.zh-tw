@@ -498,7 +498,6 @@
   <block id="6c66a8a541d348bc3f3a48dc2e58492c" category="list-text">選擇一個測試系統。</block>
   <block id="9d5c8a6e3597683b4559e2c596a2ead9" category="list-text">選擇測試儲存 SVM。</block>
   <block id="09cb5a7830e25d2457463ef0f909f5a0" category="list-text">如果您選擇了 CIFS (SMB) 儲存虛擬機，則會出現**使用者名稱**和**密碼**欄位。輸入儲存虛擬機器的使用者名稱和密碼。</block>
-  <block id="6773f809e3f238c4a8a25adcd8e46f13" category="list-text">輸入要建立的新測試工作負載的名稱。名稱中不要包含破折號。</block>
   <block id="b5ffafbc91e02195737c6716b418141e" category="admonition">您可以稍後使用「設定」頁面編輯準備演練配置。</block>
   <block id="187666a138e7f6f15224af7bcef93040" category="section-title">開始準備演習</block>
   <block id="b30d5003eb8b470d6df77c1edbb96724" category="paragraph">配置準備狀況演練後，即可開始演練。</block>
@@ -538,7 +537,6 @@
   <block id="402892b652810818eb61e703ca333d06" category="list-text">選擇*標記需要恢復*。</block>
   <block id="f1a43a1191cd8e11a5db942f4175b31f" category="list-text">查看確認訊息，然後在確認框中選擇*標記需要恢復*。</block>
   <block id="63d4b8d17265522f12b229a2016b08c9" category="list-text">從勒索軟體恢復選單中，選擇*恢復*。</block>
-  <block id="001b6bed17667ada4d5dad085e5729b3" category="list-text">選擇要復原的標示為「準備演練」的測試工作負載。</block>
   <block id="f77361b272ce81d8275727f7b1a756a8" category="list-text">選擇*恢復*。</block>
   <block id="98576e747c7efb09ca0d1e50a58ae308" category="list-text">在「還原」頁面中，提供還原的資訊：</block>
   <block id="05e2304cb46b92601ea1e826aa3fec0b" category="list-text">選擇來源快照副本。</block>
@@ -555,7 +553,6 @@
   <block id="b707d985234424bd425b96580911950e" category="list-text">再次選擇警報。</block>
   <block id="2da9a9f4e6a92f5857d147337ae308f7" category="list-text">透過選擇*編輯狀態*來指示狀態，並將狀態變更為以下之一：</block>
   <block id="e0a30b860c06e610cadc21ebf64426da" category="list-text">已解除：如果您懷疑該活動不是勒索軟體攻擊，請將狀態變更為已解除。</block>
-  <block id="ff8d215b189dca41bf900d6545392594" category="admonition">解除攻擊後，您將無法將其改回。如果您解除工作負載，則為應對潛在勒索軟體攻擊而自動取得的所有快照副本都將永久刪除。如果您解除警報，則準備演習即視為完成。</block>
   <block id="36b45588cbfa3653d0bdeb91883b49f4" category="list-text">已解決：事件已得到緩解。</block>
   <block id="1be5568d0c3f299b7d0fa2b810d4b90d" category="section-title">審查準備演習報告</block>
   <block id="1618fcb06831249fd4142102d83577f5" category="paragraph">準備演習完成後，您可能需要查看並儲存演習報告。</block>
@@ -2209,4 +2206,7 @@
   <block id="d0c1ba6e120f697911d5bd92a51f0322" category="paragraph">Ransomware Resilience 現在提供了一個安全編排、自動化和回應 (SOAR) 劇本<block ref="d942356c034f7ad3c314a5fae7d11e1d" category="inline-link-macro-rx"></block>。該劇本能夠簡化威脅回應管理、自動化任務和測試，並支援關鍵的勒索軟體回應工作，包括建立快照和將磁碟區離線。</block>
   <block id="dce0959f50faa93a47d141f615365404" category="paragraph">勒索軟體防護方案提供適用於 Google SecOps、Microsoft Sentinel 和 Splunk 的劇本。請查看對應的 GitHub 頁面以了解設定詳情。</block>
   <block id="4f61a1c38b74708d0982090b3ace3f21" category="list-text">建議您不要使用 <block ref="237628f5d72273fb0e39c8149431292e" category="inline-link-macro-rx"></block> 與 Azure NetApp Files，因為 Azure NetApp Files API 會阻止自動化操作。</block>
+  <block id="4fcce21aba16e6a89d3c15cbcce7db5a" category="list-text">請輸入測試工作負載的名稱。名稱中請勿包含連字符。</block>
+  <block id="922e09477f5763a3965ac29db0b9139d" category="list-text">選擇標示為「準備演練」的測試工作負載，即可恢復該工作負載。</block>
+  <block id="3aecb1c0d4a2579d6c2b4487309b2cdc" category="admonition">攻擊警報解除後，無法撤銷。如果解除工作負載，所有為應對潛在勒索軟體攻擊而自動建立的 Snapshot 副本都將永久刪除。如果解除警報，則視為準備演練完成。</block>
 </blocks>
