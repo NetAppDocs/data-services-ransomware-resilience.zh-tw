@@ -1132,12 +1132,7 @@
   <block id="53e68cb1edb551af8b1c0d8fee230e44" category="admonition">認證成功後，會出現「已認證」的資訊。</block>
   <block id="00bcd4c2f217493f06ecbb6ddfa3862b" category="list-text">輸入應用程式的 Log Analytics 工作區詳細資訊。</block>
   <block id="b263ba58e894356680bda9edd8c52400" category="list-text">選擇訂閱 ID、資源群組和 Log Analytics 工作區。</block>
-  <block id="9ccf45c8190b08c78e0be70f31ab71c4" category="section-title">設定 Splunk Cloud 進行威脅偵測</block>
-  <block id="4d6d1328084c627bf56727551f4a6626" category="paragraph">在 Ransomware Resilience 中啟用 Splunk Cloud 之前，您需要在 Splunk Cloud 中執行下列進階步驟：</block>
-  <block id="8a628c54baa5d5a16a963626db04a20f" category="list-text">在 Splunk Cloud 中啟用 HTTP 事件收集器以透過 HTTP 或 HTTPS 從控制台接收事件資料。</block>
-  <block id="a0df7816503d32b52e0b8eaf94868e56" category="list-text">在 Splunk Cloud 中建立事件收集器令牌。</block>
   <block id="2c65d4e0cdac9c48880857277c1bc9e3" category="list-title">在 Splunk 中啟用 HTTP 事件收集器的步驟</block>
-  <block id="a99a07d12915c1a94a26205b4a84ba20" category="list-text">轉到 Splunk Cloud。</block>
   <block id="ce0362998bb10251a5412bcabd9b833c" category="list-text">選擇*設定* &gt; *資料輸入*。</block>
   <block id="069c7509480a5fbadda560c7376dca8a" category="list-text">選擇 *HTTP 事件收集器* &gt; *全域設定*。</block>
   <block id="b42b974604014d593eace2a8678716ed" category="list-text">在所有令牌切換上，選擇*已啟用*。</block>
@@ -1162,7 +1157,6 @@
   <block id="322bdafeaec3f2756e524c7676eec70b" category="inline-image-macro">啟用威脅偵測詳細資訊頁面</block>
   <block id="a79d3cc091ba614079e19b05bd4144d7" category="paragraph"><block ref="a79d3cc091ba614079e19b05bd4144d7" category="inline-image-macro-rx" type="image"></block></block>
   <block id="53ff0c832c14f6bc98decd93490e2576" category="list-text">選擇其中一個 SIEM 系統。</block>
-  <block id="8b2302df496c7e3838b65f0dfaee3ab4" category="list-text">輸入您在 AWS Security Hub 或 Splunk Cloud 中配置的令牌和驗證詳細資訊。</block>
   <block id="4cb0caa7f0c97dd44ed525e6237432d2" category="admonition">您輸入的資訊取決於您選擇的 SIEM。</block>
   <block id="71377237946a16cc4981e8007b83be9b" category="list-text">選擇*啟用*。</block>
   <block id="f29be3377655fbc2e89f86e482ef5ca2" category="paragraph">設定頁面顯示「已連線」。</block>
@@ -2207,6 +2201,16 @@
   <block id="dce0959f50faa93a47d141f615365404" category="paragraph">勒索軟體防護方案提供適用於 Google SecOps、Microsoft Sentinel 和 Splunk 的劇本。請查看對應的 GitHub 頁面以了解設定詳情。</block>
   <block id="4f61a1c38b74708d0982090b3ace3f21" category="list-text">建議您不要使用 <block ref="237628f5d72273fb0e39c8149431292e" category="inline-link-macro-rx"></block> 與 Azure NetApp Files，因為 Azure NetApp Files API 會阻止自動化操作。</block>
   <block id="4fcce21aba16e6a89d3c15cbcce7db5a" category="list-text">請輸入測試工作負載的名稱。名稱中請勿包含連字符。</block>
-  <block id="922e09477f5763a3965ac29db0b9139d" category="list-text">選擇標示為「準備演練」的測試工作負載，即可恢復該工作負載。</block>
   <block id="3aecb1c0d4a2579d6c2b4487309b2cdc" category="admonition">攻擊警報解除後，無法撤銷。如果解除工作負載，所有為應對潛在勒索軟體攻擊而自動建立的 Snapshot 副本都將永久刪除。如果解除警報，則視為準備演練完成。</block>
+  <block id="a1f10863eda000ced0430d0c31580729" category="list-text">Azure NetApp Files 不支援 FPolicy 或使用者行為活動。</block>
+  <block id="001b6bed17667ada4d5dad085e5729b3" category="list-text">選擇要還原的標記為「準備演練」的測試工作負載。</block>
+  <block id="5dba46907e72d7502229329d2aafd8a2" category="list-text">Splunk Enterprise</block>
+  <block id="a8fdc49c32c2aa34ebd35cbf9823def6" category="section-title">設定 Splunk Cloud 和 Splunk Enterprise 以進行威脅偵測</block>
+  <block id="681024dbfdb70dd04ac980451d89db64" category="paragraph">勒索軟體復原功能支援使用 Splunk Cloud 和 Splunk Enterprise 進行威脅偵測。在勒索軟體復原功能中啟用 Splunk 連線之前，您需要：</block>
+  <block id="026d482451225403707f4d919cfb8461" category="list-text">在 Splunk Cloud 或 Enterprise 中啟用 HTTP Event Collector，以便透過 HTTP 或 HTTPS 從 Console 接收事件資料。</block>
+  <block id="42de63532cd927f3b14ff23339042fae" category="list-text">在 Splunk Cloud 或 Enterprise 中建立 Event Collector 權杖。</block>
+  <block id="b8e9fd0fd0fe8e4c4d930ae7315048e4" category="admonition">對於 Splunk Enterprise，您必須允許入站公共網際網路流量，以便 Ransomware Resilience 能夠使用提供給它的 HTTP 事件收集器詳細資訊推送事件。</block>
+  <block id="261f193d834ffba7dae6c54f99306659" category="list-text">前往您選擇的 Splunk 環境：Cloud 或 Enterprise。</block>
+  <block id="eade5cc0d987bed25c884550a681c364" category="list-text">前往 Splunk Cloud 或 Enterprise。</block>
+  <block id="e4f58ddb798b11dab7791e0175f6cf0f" category="list-text">輸入您在 AWS Security Hub、Splunk Cloud 或 Splunk Enterprise 中設定的權杖和驗證詳細資料。</block>
 </blocks>
