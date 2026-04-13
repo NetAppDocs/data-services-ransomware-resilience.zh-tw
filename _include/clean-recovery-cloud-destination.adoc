@@ -2,12 +2,7 @@
 :allow-uri-read: 
 
 
-[NOTE]
 .無塵室 SVM 資料 LIF IP（crr-data-LIF-IP）
-====
-如果您正在為 ONTAP 配置來源為 Amazon FSxN 的 IRE，請跳過此無塵室 SVM 資料 LIF IP 要求。
-
-====
 * 為潔淨室 SVM 資料 LIF 配置 IP 位址。記下該 IP 位址：IRE 組態程序中需要用到此 IP 位址。
 +
 ** 對於使用雲端到雲端乾淨還原的 AWS Cloud Volumes ONTAP，請確保已將 IP 位址指派給彈性網路介面。
@@ -15,6 +10,9 @@
 
 * 允許從 SVM 資料 LIF IP 路由到 IRE。
 
+
+
+NOTE: 如果您正在為 ONTAP 配置來源為 Amazon FSxN 的 IRE，請跳過此無塵室 SVM 資料 LIF IP 要求。
 
 .正式作業環境路由表
 * 生產路由表必須允許來自 IRE 子網路到乾淨還原資料 LIF IP 的流量。您必須將此路由新增至生產路由表。
@@ -61,7 +59,8 @@
 
 .雲端權限
 * Ransomware Resilience 需要具備正確 IAM 權限的 AWS 存取金鑰和密碼金鑰，才能在 AWS 環境中執行全新還原。link:https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_create.html["在 AWS 中建立 IAM 原則"^]具備下列權限，然後將原則附加至新建立的使用者。建立使用者之後，請產生 IAM 認證資料並提供給全新還原。
-+
+
+
 [source, json]
 ----
 {
@@ -132,4 +131,3 @@
     ]
 }
 ----
-
