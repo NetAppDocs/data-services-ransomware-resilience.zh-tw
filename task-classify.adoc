@@ -4,7 +4,7 @@ permalink: task-classify.html
 keywords: ransomware protection, protect against ransomware attacks, anti-ransomware policies, cds, sensitive, pii, classification 
 summary: 使用NetApp Data Classification來提高資料的安全性和隱私合規性，以確定您的資料是否包含個人識別資訊或私人資訊。 
 ---
-= 在 NetApp Ransomware Resilience 中掃描個人可識別資訊
+= 使用 NetApp Ransomware Resilience 識別隱私曝露
 :allow-uri-read: 
 
 

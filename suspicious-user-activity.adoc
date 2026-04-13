@@ -4,7 +4,7 @@ permalink: suspicious-user-activity.html
 keywords: data breach detection, data breach, user activity, suspicious, anomalous, 
 summary: 勒索軟體復原中的可疑使用者活動偵測可讓您偵測可能構成潛在威脅的使用者活動。 
 ---
-= 在 NetApp Ransomware Resilience 中設定代理程式與收集器以偵測使用者活動
+= 在 NetApp Ransomware Resilience 中設定使用者活動偵測
 :hardbreaks:
 :allow-uri-read: 
 :icons: font

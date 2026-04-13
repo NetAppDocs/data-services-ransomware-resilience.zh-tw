@@ -1,0 +1,71 @@
+---
+sidebar: sidebar 
+permalink: task-clean-restore-recover.html 
+keywords: clean room, clean restore, secure recovery, recover, isolated recovery environment, ire 
+summary: Ransomware Resilience 可讓您透過乾淨的還原來控制和清理工作負載。 
+---
+= 使用 NetApp Ransomware Resilience 的乾淨還原來復原工作負載
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+使用 NetApp Ransomware Resilience，您可以在遭受加密型勒索軟體攻擊後，透過乾淨還原執行引導式復原。乾淨還原會識別最佳化的復原路徑，以將資料遺失降至最低，並在最短時間內讓您的工作負載重新上線。
+
+乾淨還原選項是 xref:task-custom-restore.html[自訂還原選項] 的替代方案。
+
+
+
+== 開始之前
+
+您必須先設定 link:task-clean-restore.html["隔離復原環境"^]，才能執行乾淨還原。
+
+*所需的控制台角色* 要執行此任務，您需要組織管理員、資料夾或專案管理員或勒索軟體復原管理員角色。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["了解NetApp Console的勒索軟體復原角色"^] 。
+
+
+
+== 考量事項
+
+* 您只能針對基於加密的勒索軟體攻擊執行乾淨還原。
+* 如果隔離的復原環境沒有足夠的容量來執行新的操作，則會將其排入佇列，直到有可用容量為止。
++
+** 您可以在 Ransomware Resilience Recovery 儀表板中隨時監控正在進行且已排隊的清理還原作業的狀態。
+
+
+* 執行乾淨復原時，原始磁碟區將被卸載，這可能會中斷 I/O 存取。
+
+
+
+
+== 執行全新還原
+
+. 在 **Recovery** 區段中，選取您要還原的工作負載。選取 **Restore**。
+. 在 Restore Type 選項中，選取 **Clean restore**，然後選取 **Next**。
+. 選擇要使用的隔離復原環境，然後按一下 **Next** 。
+. 檢查隔離的復原環境，確認其位置正確。選取 **Restore**。
+. Ransomware Resilience 會執行必要的設定。設定成功完成後,Ransomware Resilience 會顯示 **Setup complete**。若要繼續進行分析,請選取 **Next**。
+. 設定完成後、請選取 **Run analysis** 。NetApp Ransomware Resilience 會分析勒索軟體事件發生前七天內所有可用的還原點、並顯示還原點的日期和類型。
++
+image:screenshot-clean-room-analysis.png["全新還原分析步驟的螢幕擷取畫面。"]
+
+. 分析完成後，選擇 **Next** 以規劃恢復方案。Ransomware Resilience 提供兩個選項：**Least data loss** 和 **Latest unimpacted restore point**。選擇其中之一，並可選擇查看對應還原點的單一檔案資料。
++
+若要檢視精細的檔案事件資料，請選取要分析其加密狀態的檔案；檔案建立、修改或刪除的時間，以及哪個還原點對應於哪個動作。
+
++
+image:clean-restore-plan.png["完整還原計畫步驟的螢幕擷取畫面。"]
+
+. 選擇還原點後，選取 **Next** 開始清理檔案。
+. Ransomware Resilience 開始清理工作負載。
++
+清理完成後，選取 **Start recovery** 以啟動還原。
+
+. 選擇是否要儲存原始工作負載。若要放棄儲存原始工作負載，請選擇 **No, replace the original workload**。若要儲存原始工作負載，請選擇 **Yes, save the original workload**，然後輸入工作負載的新名稱。
+. 選取 **Start recovery** 以啟動還原。
+. 當復原完成時，請選取 **Next** 以移至最後階段。
+. 選擇 **Release resources and end** 以釋放資源並關閉 clean room。若要確認釋放資源，請選擇 **End**。
+
