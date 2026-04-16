@@ -1065,7 +1065,6 @@
   <block id="fbc1ce5001bb72336a31bd6789ea9410" category="list-text">*事件*：</block>
   <block id="4bd1481e6e41ef9455be86b308947d80" category="list-text">*incident_id*：勒索軟體復原力針對勒索軟體復原力中受到攻擊的捲所產生的事件 ID。</block>
   <block id="cc3ab46854d1cd0291788ac54819f4cb" category="list-text">*alert_id*：勒索軟體復原能力為工作負載產生的 ID。</block>
-  <block id="09471f7939b8b27b32ee107cd9b1c44b" category="list-text">*嚴重性*：以下警報等級之一：「嚴重」、「高」、「中」、「低」。</block>
   <block id="6f51b5c965cb508d8d37085592031c21" category="list-text">*描述*：有關檢測到的警報的詳細信息，例如“在工作負載 arp_learning_mode_test_2630 上檢測到潛在的勒索軟體攻擊”</block>
   <block id="0df177143ce12a3516098cd3329e85c2" category="section-title">設定 AWS Security Hub 進行威脅偵測</block>
   <block id="de9b4f41a945df92e6c5b62f443f03f1" category="list-text">在 AWS Security Hub 中設定權限。</block>
@@ -2445,4 +2444,19 @@
   <block id="8d81ff5c5b48d23cce9332dd984632b4" category="paragraph">您可以追蹤進度。在「設定」標籤中，選擇 **隔離復原環境**。「隔離復原環境」頁面會顯示 IRE 及其狀態。選擇 **檢視工作** 以查看與該環境相關的所有工作的詳細資訊。</block>
   <block id="4f9ce9d8880d6bdd44ed37068e5fb560" category="admonition">如果需要更改 IRE 的任何詳細信息，請從 Ransomware Resilience 側邊欄中選擇 *Settings*，然後在 Clean restore 卡片中選擇 **Manage**。選擇 IRE 的操作選單，然後選擇 **Edit** 以變更配置。</block>
   <block id="b84cf7acbf3f47154038369f7661d257" category="list-text">識別您要刪除的無塵室。選擇 IRE 的操作選單<block ref="2f43b42fd833d1e77420a8dae7419000" prefix="(" category="inline-code"></block>，然後選擇**刪除**。</block>
+  <block id="26878907f297abf4a6b9ee208577dd47" category="inline-link-macro">SIEM 報告</block>
+  <block id="f7816573bcae53abb1ea5d75ebbcc21f" category="list-text">部分事件資料未包含在 <block ref="b3b62e437019ccd4f3f5eaf4371edbef" category="inline-link-macro-rx"></block> 中，適用於 Azure NetApp Files 組態。</block>
+  <block id="48d3ab7b017da0151934baee35c16686" category="list-text">*severity*：警示層級的嚴重程度：「CRITICAL」、「HIGH」、「MEDIUM」、「LOW」。</block>
+  <block id="476907eec09be2e630a16004aa28b05c" category="list-text">*title*：偵測到的警示的顯示名稱</block>
+  <block id="00a5492099d0c380c62d2bca0017768b" category="list-text">*criticality*：評估您環境中磁碟區的重要性：「CRITICAL」、「IMPORTANT」、「STANDARD」。</block>
+  <block id="cf9e1e333f399d756f12b7eaeca06cf0" category="list-text">*incident_status*：事件的作用中狀態，可以是：「NEW」、「RESOLVED」、「DISMISSED」、「AUTO_RESOLVED」。</block>
+  <block id="7ca5319a89508d8a4627d00f61af6052" category="list-text">*first_detected*：Ransomware Resilience 首次偵測到該事件的時間戳記。</block>
+  <block id="afcc1dc9ee42af2b994f4bc3c230cf05" category="list-text">*is_readiness_drill*：一個布林值，指示警示是演習還是實際事件。</block>
+  <block id="bab1ad221140ac4e4ec08ff369bf3d19" category="list-text">*protocol*：磁碟區使用的傳輸協定。可能的值為「iSCSI」、「NFS」和「SMB」。</block>
+  <block id="f3b109f0ac2cf449900a6b67dbeb858a" category="list-text">*alert_type*：偵測到的威脅類型。可能的值包括 "Encryption"、"Data destruction"、"Data breach" 和 "Suspicious user behavior"。</block>
+  <block id="1d217eb56fafce6504630e4bb01c45a4" category="list-text">*user_name*：與警示相關聯的可疑使用者的使用者名稱。</block>
+  <block id="a943b30ba2be58cbc52a883804bfa5fa" category="list-text">*user_id*：與警示相關聯的可疑使用者的使用者 ID。</block>
+  <block id="7a755da696018214d12394be03c26ad9" category="list-text">*client_ips*：與可疑活動相關聯的用戶端 IP 位址清單，僅適用於 NFS 警示。</block>
+  <block id="f9eb142e440614e3bc3df451c259e688" category="inline-xref-macro">使用者行為偵測</block>
+  <block id="7cf317ef553074fdf56ee4c41abb350e" category="admonition">只有在您配置了 <block ref="25f82e638d2822742166353d70e9d327" category="inline-xref-macro-rx"></block> 之後，*user_name* 和 *user_id* 欄位才相關。</block>
 </blocks>

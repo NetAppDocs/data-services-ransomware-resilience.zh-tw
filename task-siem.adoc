@@ -47,11 +47,24 @@ Ransomware Resilience 可以將以下事件資料傳送到您的 SIEM 系統：
 +
 ** *incident_id*：勒索軟體復原力針對勒索軟體復原力中受到攻擊的捲所產生的事件 ID。
 ** *alert_id*：勒索軟體復原能力為工作負載產生的 ID。
-** *嚴重性*：以下警報等級之一：「嚴重」、「高」、「中」、「低」。
+** *severity*：警示層級的嚴重程度：「CRITICAL」、「HIGH」、「MEDIUM」、「LOW」。
 ** *描述*：有關檢測到的警報的詳細信息，例如“在工作負載 arp_learning_mode_test_2630 上檢測到潛在的勒索軟體攻擊”
+** *title*：偵測到的警示的顯示名稱
+** *criticality*：評估您環境中磁碟區的重要性：「CRITICAL」、「IMPORTANT」、「STANDARD」。
+** *incident_status*：事件的作用中狀態，可以是：「NEW」、「RESOLVED」、「DISMISSED」、「AUTO_RESOLVED」。
+** *first_detected*：Ransomware Resilience 首次偵測到該事件的時間戳記。
+** *is_readiness_drill*：一個布林值，指示警示是演習還是實際事件。
+** *protocol*：磁碟區使用的傳輸協定。可能的值為「iSCSI」、「NFS」和「SMB」。
+** *alert_type*：偵測到的威脅類型。可能的值包括 "Encryption"、"Data destruction"、"Data breach" 和 "Suspicious user behavior"。
+** *user_name*：與警示相關聯的可疑使用者的使用者名稱。
+** *user_id*：與警示相關聯的可疑使用者的使用者 ID。
+** *client_ips*：與可疑活動相關聯的用戶端 IP 位址清單，僅適用於 NFS 警示。
 
 
 
+
+
+NOTE: 只有在您配置了 xref:concept-user-behavior.adoc[使用者行為偵測] 之後，*user_name* 和 *user_id* 欄位才相關。
 
 
 
