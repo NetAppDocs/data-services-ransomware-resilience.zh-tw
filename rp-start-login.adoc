@@ -41,8 +41,5 @@ image:screen-landing.png["勒索軟體恢復登陸頁面的螢幕截圖。"]
 +
 image:screen-dashboard.png["勒索軟體復原力儀表板的螢幕截圖"]
 
-. 如果您還沒有這樣做，請選擇「發現工作負載」選項。
-+
-請參閱link:rp-start-discover.html["發現工作負載"] 。
-
+. 如果這是您第一次使用 Ransomware Resiliencelink:rp-start-discover.html["發現工作負載"]。
 

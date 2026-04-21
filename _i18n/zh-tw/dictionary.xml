@@ -161,7 +161,6 @@
   <block id="08c9bb2f955e4452b60d6285d467218b" category="paragraph">勒索軟體復原功能充分利用了多種NetApp技術，以便您的儲存管理員、資料安全管理員或安全營運工程師可以實現以下目標：</block>
   <block id="ab76e9ddf0b5cc0436537248ef996b33" category="list-text">透過對資料啟用備份、快照副本和勒索軟體保護策略來*保護*您的工作負載。</block>
   <block id="2260f3efb7f7ff8d7a4a295911d64e87" category="list-text">*偵測*可能是勒索軟體攻擊的異常。註腳：[儘管攻擊可能未被發現，但我們的研究表明， NetApp技術已對某些基於文件加密的勒索軟體攻擊實現了高度檢測。 ]</block>
-  <block id="2b9059f4bfe46561bd84cd4afc8e39d5" category="list-text">透過協調多種NetApp技術來*恢復*您的工作負載，從而幫助加快工作負載的正常運作時間。您可以選擇恢復特定的磁碟區。勒索軟體彈性提供最佳選項的建議。</block>
   <block id="c81ae261ce25e22a1af05caba692e648" category="list-text">*管理*：實施勒索軟體保護策略並監控結果。</block>
   <block id="2df7b40bf0b6e6b4631432c24ce9a052" category="inline-image-macro">圖表展示了勒索軟體抵禦攻擊的策略，包括識別、保護、偵測、回應和復原</block>
   <block id="cfab6cedd02afb98600a358d70d70886" category="paragraph"><block ref="cfab6cedd02afb98600a358d70d70886" category="inline-image-macro-rx" type="image"></block></block>
@@ -257,24 +256,16 @@
   <block id="91a892e300bf9b67ce6a16b0a80f1b1a" category="inline-link-macro">設定勒索軟體恢復許可</block>
   <block id="88699be3d302c7e5f5715be794649591" category="paragraph">有關許可證到期後仍可執行的操作的詳細信息，請參閱<block ref="f3b829d4bde16775bc19f33a0a06c197" category="inline-link-macro-rx"></block>。</block>
   <block id="c724e39bb0a48a947cd8004592d90338" category="section-title">停用保護策略</block>
-  <block id="1312742e007207f60e4a52af11c06567" category="paragraph">如果您想停止使用套用於工作負載的保護策略，您可以使用系統管理員、API 呼叫或 CLI 停用它們。</block>
   <block id="64086e522631840f7f453586e2c9736d" category="inline-link-macro">保護工作負載免受勒索軟體攻擊</block>
   <block id="8ba3ac2a14af0c43cfde525668f6e546" category="paragraph">您可以透過套用不包含它們的其他策略來停用勒索軟體復原中的 FPolicy 和備份策略。有關設定保護策略的說明，請參閱<block ref="cc10c371e1aab359fa44a886d5e79433" category="inline-link-macro-rx"></block>。</block>
   <block id="76722f595147e9e40ab79fef549441a4" category="admonition">我們建議您不要停用快照策略。</block>
   <block id="ef54d92c7cc927ca7eb5e489c30b0e9b" category="summary">在發現過程中，勒索軟體復原力會分析所有控制台代理和帳戶的系統中的所有捲和檔案。</block>
-  <block id="790472d97707885ad0bca12c5442db2a" category="paragraph">在每個控制台代理程式中，選擇您想要發現工作負載的系統。</block>
   <block id="f3a29486bed19a90f2da6d007818b427" category="list-title">步驟</block>
-  <block id="7b8dc42ed597eb23a119869a1195c334" category="list-text">從NetApp Console中，選擇 *保護* &gt; *勒索軟體保護*。</block>
-  <block id="475360813ddb5fa78d5eb18ec0fff45d" category="paragraph">如果這是您的第一次登錄，則會出現登入頁面。</block>
   <block id="d44e74d71274e14e6b7f32dbf6277d75" category="inline-image-macro">勒索軟體復原能力的登陸頁面截圖</block>
   <block id="e66ce57fedc4caff000c35f070d7b537" category="paragraph"><block ref="e66ce57fedc4caff000c35f070d7b537" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="7c3643602c46264fa601bce5ec20f6df" category="admonition">如果您開始免費試用，*開始 30 天免費試用*按鈕標籤將更改為*透過發現工作負載開始*。</block>
-  <block id="27a22ff8cea8c84583985661c68afc5b" category="list-text">從初始登入頁面，選擇*從發現工作負載開始*。</block>
   <block id="5a73bf8837c9a23f81b6df3efef9dee3" category="paragraph">勒索軟體復原力可發現受支援和不受支援的系統。此過程可能需要幾分鐘。</block>
   <block id="18eb5242d6e5ac768698e677b047a0eb" category="inline-image-macro">發現工作負載螢幕截圖</block>
   <block id="d79f191c2ec9abafe65a74f3afd2fd3e" category="paragraph"><block ref="d79f191c2ec9abafe65a74f3afd2fd3e" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="aa38c459f1855c79933ef88c2500bd20" category="list-text">若要發現特定控制台代理程式的工作負載，請選擇要發現工作負載的控制台代理旁邊的「選擇系統」。</block>
-  <block id="b5df43021af6103a6e0b208280b7bd9c" category="list-text">選擇您想要發現工作負載的系統。</block>
   <block id="6717014f0e48b7ab08c9846925b42c93" category="list-text">選擇*發現*。</block>
   <block id="60b91ac4e4f14d7cb892956fc74437d2" category="list-text">若要下載已發現的工作負載列表，請選擇*下載結果*。</block>
   <block id="f78bb7fa8ba897b7d7d1b1b09e4e9938" category="list-text">若要顯示勒索軟體恢復儀表板，請選擇「前往儀表板」。</block>
@@ -409,9 +400,6 @@
   <block id="6c9642c3e49c9627e18f399bd2f107c7" category="paragraph">否則，將出現勒索軟體復原力儀表板。</block>
   <block id="9fc4ee93846b9550507b5403fc073ebd" category="inline-image-macro">勒索軟體復原力儀表板的螢幕截圖</block>
   <block id="90fe6d0f96c8ecd14685b359ef85e68f" category="paragraph"><block ref="90fe6d0f96c8ecd14685b359ef85e68f" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="8df9c75ead72be3995c8516a43376cb6" category="list-text">如果您還沒有這樣做，請選擇「發現工作負載」選項。</block>
-  <block id="54300910bbc8e214a070c89af79010e7" category="inline-link-macro">發現工作負載</block>
-  <block id="ac6282fe86530df822c059310d9c8cc3" category="paragraph">請參閱<block ref="40333c3f84ed5cb5976f4d99c62be349" category="inline-link-macro-rx"></block> 。</block>
   <block id="d0e83b4dfc8809d4d0f31e184c6f9ebb" category="summary">透過驗證對您的環境、網路存取、登入和 Web 瀏覽器的支持，開始使用NetApp Ransomware Resilience。</block>
   <block id="fd2baaaf591d18081f2e012015874835" category="doc">NetApp Ransomware Resilience前提條件</block>
   <block id="e315520b8d0944e7422c773e49fc17a7" category="list-text">具有組織管理員權限的NetApp Console使用者帳戶，用於發現資源。</block>
@@ -1439,7 +1427,6 @@
   <block id="7257a2c29f00e84365c5a48447d9c803" category="inline-link-macro">啟用資料分類來識別治理和安全風險</block>
   <block id="1d1758803ee1f7559973be04f120a0f7" category="inline-link-macro">向 SIEM 發送警報</block>
   <block id="660ecf2355e5ff3c5a22d2e4a48594e8" category="inline-link-macro">下載警報、保護、準備演習、恢復或摘要報告</block>
-  <block id="7b36da612c0e3a400f4daecc8016f21e" category="summary">確保您滿足勒索軟體復原的許可要求，以保護您的系統和工作負載。</block>
   <block id="5ef05167488611c5bd4ff0f410595ce4" category="list-text">30天免費試用</block>
   <block id="e71ba6c3178fa6f6844891e615ad0570" category="list-text">透過 Amazon Web Services (AWS) Marketplace、Google Cloud Marketplace 或 Azure Marketplace 購買即用即付 (PAYGO) 訂閱</block>
   <block id="2f0583f3da64d216aa72116dc3460499" category="list-text">自帶授權 (BYOL)：您從NetApp銷售代表取得的NetApp授權文件 (NLF)。您可以使用許可證序號在控制台中啟動 BYOL。</block>
@@ -1609,10 +1596,8 @@
   <block id="a55a22032fc9fd630abe933324e9d4b9" category="paragraph-title">Ransomware Resilience 是否了解ONTAP中的保護設定？</block>
   <block id="1c8f51534c2fc10dfef26d32d61c7ed3" category="paragraph">對於許可和計費，即使您沒有單獨的備份和復原許可證，勒索軟體復原功能也可以與備份和復原功能整合。如果您同時擁有備份和復原以及勒索軟體復原功能，則受這兩種產品保護的任何公開資料僅由勒索軟體復原功能計費。</block>
   <block id="182b9ed848b82506c10ba162f10e3f5b" category="list-text">保護基於應用程式的工作負載（例如 Oracle、VMware 資料儲存和檔案共用）中的資料。</block>
-  <block id="aa07eabc400eb4ccb13f116e99da0b48" category="list-text">*工作負載*：勒索軟體復原中的工作負載可以包括 Oracle 資料庫、VMware 資料儲存或檔案共用。</block>
   <block id="6b62768f3f94df043ea31bf9c43b2a42" category="paragraph">勒索軟體復原能力可以識別以下工作負載：Oracle、檔案共享、區塊儲存、虛擬機器和虛擬機器資料儲存。</block>
   <block id="897c29783a147c6c7b7844f2d4a9e81a" category="paragraph">預覽版服務可保護BlueXP組織內各個組織中 Oracle、VM 資料儲存和本機 NAS 儲存空間上的檔案共用以及 AWS 上的Cloud Volumes ONTAP （使用 NFS 協定）上的應用程式工作負載，並將資料備份到 Amazon Web Services 雲端儲存。</block>
-  <block id="2d2972fc6d16379955701a1cc8c6633f" category="sidebar">NetApp Ransomware Resilience可保護、偵測並支援從本機和雲端儲存的勒索軟體威脅中復原應用程式工作負載和檔案共用。勒索軟體復原能力可實現安全備份和復原，協助組織保護關鍵資料並維持 Oracle、VM 資料儲存、NAS 儲存等的業務連續性。</block>
   <block id="f075180c986e3a7a8e0bad4fcec7c485" category="cell">15.3（64 位）至 15.6（64 位）</block>
   <block id="32d094cff0ab508ab383051555e7844b" category="cell">8.10（64 位元）、9.1（64 位元）至 9.6（64 位元），包括 SELinux</block>
   <block id="1d9fc183665bd1e195391190be506894" category="cell">紅帽</block>
@@ -1660,9 +1645,6 @@
   <block id="22a81a009e8d21bf17e2788fdbfa4a6d" category="paragraph">勒索軟體復原能力支援Amazon FSx for NetApp ONTAP系統。以下限制適用於Amazon FSx for ONTAP：</block>
   <block id="f20af4e11539d270463e7ed46557be6f" category="paragraph">在使用NetApp Ransomware Resilience之前，它首先需要發現工作負載資料。在發現過程中，勒索軟體復原力會分析組織內所有控制台代理程式和專案系統中的所有捲和檔案。</block>
   <block id="55971de7d1268c37251f60641b742b76" category="paragraph">在「發現」儀表板中，「勒索軟體復原能力」顯示受支援且不受支援的系統配置。勒索軟體復原能力評估 Oracle 應用程式、VMware 資料儲存、檔案共用和區塊儲存。</block>
-  <block id="1e55889dc96c3aa2614c39626c9cecdd" category="admonition">勒索軟體復原能力無法發現使用FlexGroup 的磁碟區的工作負載。</block>
-  <block id="242b6b00ff2f35d933e337704d202041" category="list-text">在工作負載發現卡中，選擇*發現工作負載*。發現過程可能需要幾分鐘。載入圖示顯示進度。</block>
-  <block id="728cc93ad9329b5fca77365b0336ce77" category="list-text">勒索軟體復原力可以發現受支援和不受支援的系統。如果系統的ONTAP版本低於所需版本，則不支援該系統。當您將滑鼠停留在某個不支援的系統上時，工具提示會顯示原因。選擇您想要發現工作負載的系統。</block>
   <block id="ab066b3292d8ab61ef3b5c77169cdd19" category="section-title">更多資訊</block>
   <block id="48bf90c5e99016f124c48c02a77dc8fd" category="inline-link-macro">NetApp Console授權和訂閱文檔</block>
   <block id="0fa9a3c869139d736cd7d6df862b94e3" category="list-text"><block ref="0fa9a3c869139d736cd7d6df862b94e3" category="inline-link-macro-rx"></block></block>
@@ -2027,7 +2009,6 @@
   <block id="a6bd7f80fc17cbb8e58e8dca754bf710" category="list-text">若要封鎖環境中的可疑使用者，請在使用者名稱旁邊選取 *Block* 。</block>
   <block id="e2907e7cb7d68b36821cd11cda209bc3" category="cell">SAN（iSCSI 和 NVMe）</block>
   <block id="65072a668477cd315b4302df8afcce32" category="paragraph">NetApp Ransomware Resilience 可保護您的資料免受勒索軟體攻擊。在 Ransomware Resilience 中，可為 Oracle 的應用程式型工作負載、VM 資料存放區，以及 NAS 儲存設備（NFS 和 CIFS 傳輸協定）和 SAN 儲存設備（FC、iSCSI 和 NVMe 傳輸協定）的檔案共用提供保護。Ransomware Resilience 支援內部部署儲存設備，以及適用於 Amazon Web Services 的 Cloud Volumes ONTAP、適用於 Google Cloud 的 Cloud Volumes ONTAP、適用於 Microsoft Azure 的 Cloud Volumes ONTAP、Azure NetApp Files 和 Amazon FSx for NetApp ONTAP，所有功能均可透過 NetApp Console 存取。您可以將資料備份到 Amazon Web Services、Google Cloud、Microsoft Azure 和 NetApp StorageGRID。</block>
-  <block id="8987946f77221ac2f7d1494a4fcae0a6" category="list-text">*識別* 在 NetApp 本地 NAS 和 SAN 系統中，基於應用程式、檔案共享或 VMware 管理的工作負載，並可於 NetApp Console、專案及 Console 代理程式中進行管理。在發現工作負載後，Ransomware Resilience 會識別提升勒索軟體韌性的機會。</block>
   <block id="3b9c98c430c62cb3627db641468d7e64" category="list-text">評估您的勒索軟體防護狀況，並在易於理解的儀表板中顯示，同時提供改進防護的建議。</block>
   <block id="9bd1fe262c57584526c5184d4de31827" category="list-text">如果您的內部部署 ONTAP 叢集或 Cloud Volumes ONTAP 系統未在 Console 中設定，請參閱 <block ref="1c09904f3fbf9f22b68e96599d2dcddc" category="inline-link-macro-rx"></block> 和 <block ref="b04507b2bbabc17c071b912167d3ff4f" category="inline-link-macro-rx"></block>。</block>
   <block id="3eb45f3714606347a6ff182b822b69cc" category="list-text">對於 ONTAP 或 Cloud Volumes ONTAP 叢集，Ransomware Resilience 要求 ONTAP 版本為 9.11.1 或更高版本。</block>
@@ -2037,8 +2018,6 @@
   <block id="401331622ba7c8cd9b2b100526565200" category="paragraph"><block ref="401331622ba7c8cd9b2b100526565200" category="inline-image-macro-rx" type="image"></block></block>
   <block id="01dfed405f4d8cc130b8369c1886ec0f" category="inline-link-macro">了解儀表板顯示的內容。</block>
   <block id="7ca04b3ca0d38a36dbb53ddae48a80fa" category="paragraph"><block ref="7ca04b3ca0d38a36dbb53ddae48a80fa" category="inline-link-macro-rx"></block></block>
-  <block id="c86672f01f1885742d44030caeca3656" category="list-text">從控制台中、選取 *Refresh* 圖示以尋找新的工作負載。</block>
-  <block id="6a9bfc63a8ad7addf42c2109b163b952" category="paragraph">如果您已經探索工作負載，可以尋找新的或先前未選取的工作負載。</block>
   <block id="86f1d97261d36debcad3b0a69e10f3f4" category="list-text">從 Ransomware Resilience 中、選取 *Settings* 。</block>
   <block id="91437eaac9ac7d1f1da9a4e4751cbaa6" category="paragraph">是的，Ransomware Resilience 可以發現 ONTAP 中設定的快照排程。它還可以發現已發現工作負載中的所有磁碟區是否都啟用了 ARP 和 FPolicy。您在 Ransomware Resilience 儀表板中看到的資訊是從其他 NetApp 解決方案和產品彙總而來。</block>
   <block id="30d645e3c3e5cd0e502a92a067fc1be8" category="paragraph">Ransomware Resilience 可透過「設定」選項配置備份目標位置。請參閱 <block ref="e25a1b60993d45f33b0deea2ae726330" category="inline-link-macro-rx"></block>。</block>
@@ -2099,8 +2078,6 @@
   <block id="d805ea206a1d58881a7d28213018ae80" category="sidebar">進行整備演練</block>
   <block id="a23f6543c6afd691624522ac1b0c2620" category="paragraph">此版本改進了來自其他 NetApp 工具（例如 BlueXP backup and recovery）的快照和備份原則工作負載的組態程序。在先前的版本中，BlueXP ransomware protection 會探索來自其他工具的原則，僅允許您變更偵測原則。在此版本中，您現在可以將快照和備份原則替換為 BlueXP ransomware protection 原則，或繼續使用其他工具的原則。</block>
   <block id="b720eb62a1de68d6cb9c9dbea3c63907" category="list-text">應用精心設計的恢復方案以滿足 RPO 策略。勒索軟體復原能力透過 NetApp Backup and Recovery 協調勒索軟體事件的復原工作。</block>
-  <block id="a819c959f129152fca4db3ef3b38727c" category="list-text">尋找連接到 Console 的系統中所有客戶內部部署和雲端 NAS（NFS 和 CIFS 協定）和 SAN（FC、iSCSI 和 NVMe）資料。</block>
-  <block id="d24b6d4f9b8a5c2126c721c0f8b448e5" category="list-text">從 ONTAP 和 Backup and Recovery 服務 API 中識別客戶數據，並將其與工作負載關聯。深入瞭解<block ref="a16fd9a0601d0464b4c9ce4f59c2454b" category="inline-link-rx"></block>。</block>
   <block id="5d81d4b181b1f6e47c262988038cd67d" category="paragraph">勒索軟體韌性會檢查您目前的備份保護、快照複本，以及 NetApp Autonomous Ransomware Protection 選項。勒索軟體韌性也會偵測來自 NetApp Backup and Recovery 的檔案共用與 VM 檔案共用的保護資訊。然後，它會建議提升您勒索軟體防護的方法。</block>
   <block id="c048f8419f5606e294e716a232b223a2" category="paragraph-title">勒索軟體復原能力如何與 NetApp Backup and Recovery 互動？</block>
   <block id="eadde9be35eb975c3bbd5558937ea6ce" category="paragraph">Ransomware Resilience 與 Backup and Recovery 協同工作，以發現並設定檔案共享工作負載的快照和備份原則。Ransomware Resilience 也與 Backup and Recovery 協同工作，以執行檔案和工作負載一致性還原。</block>
@@ -2459,4 +2436,25 @@
   <block id="7a755da696018214d12394be03c26ad9" category="list-text">*client_ips*：與可疑活動相關聯的用戶端 IP 位址清單，僅適用於 NFS 警示。</block>
   <block id="f9eb142e440614e3bc3df451c259e688" category="inline-xref-macro">使用者行為偵測</block>
   <block id="7cf317ef553074fdf56ee4c41abb350e" category="admonition">只有在您配置了 <block ref="25f82e638d2822742166353d70e9d327" category="inline-xref-macro-rx"></block> 之後，*user_name* 和 *user_id* 欄位才相關。</block>
+  <block id="25b4dd9535e0d17e415da7dea9f2e1a2" category="list-text">*識別* NetApp 本地 NAS 和 SAN 系統中的工作負載，涵蓋 NetApp Console、專案及 Console 代理程式。發現工作負載後，Ransomware Resilience 會識別提升勒索軟體韌性的機會。</block>
+  <block id="76c07e024915a14c275975a549a9ee9b" category="list-text">*恢復*您的工作負載，透過整合多種 NetApp 技術來協助加速工作負載正常運作時間。您可以選擇恢復特定磁碟區。Ransomware Resilience 會提供最佳選項的建議。</block>
+  <block id="857d0c5d34b476c300d20857901434ee" category="list-text">尋找連接到 NetApp Console 的系統中所有內部部署和雲端 NAS（NFS 和 CIFS 協定）和 SAN（FC、iSCSI 和 NVMe）資料。</block>
+  <block id="8d2a9bcb8af52527cb5ef134952b126c" category="list-text">識別來自 ONTAP 和 NetApp Backup and Recovery 服務 API 的資料，並將其與工作負載建立關聯。深入瞭解<block ref="a16fd9a0601d0464b4c9ce4f59c2454b" category="inline-link-rx"></block>。</block>
+  <block id="aea5e53a84ea68f5c29fd5b651210249" category="list-text">*工作負載*：工作負載是系統內儲存資源的邏輯分組，例如 Oracle 資料庫、VMware 資料存放區或檔案共用。</block>
+  <block id="185b7516beffeca9e791d1462be2e3df" category="paragraph">如果要停止使用套用於工作負載的保護原則，可以使用 System Manager、API 呼叫或 CLI 停用它們。</block>
+  <block id="321e92de54fb9050ca985e93dd41037e" category="admonition">Ransomware Resilience 無法探索使用 FlexGroup 的磁碟區系統。</block>
+  <block id="660970b5bfb72eddca5566de07107009" category="section-title">選擇要探索的工作負載</block>
+  <block id="2206052869b09e544d3b0ca84614cb93" category="paragraph">在每個 Console 代理程式中，選擇要識別工作負載的系統。</block>
+  <block id="3e567fadbb65a78232511f4530a5e9ee" category="inline-link-macro">設定保護</block>
+  <block id="542dbcbddb5ad48872c0a3467bca19cf" category="paragraph">發現工作負載並不會自動保護它們。Ransomware Resilience 會在發現過程中識別來自 NetApp Backup and Recovery 或 ONTAP 的現有保護原則。任何沒有保護的工作負載都需要您<block ref="7fe4ee5a6fb50faf1d1032b2174bc3d8" category="inline-link-macro-rx"></block>。</block>
+  <block id="c9469d9f20bc9e5b5d8e18790baaa32c" category="paragraph">如果這是您第一次登入，則會顯示登入頁面。若要開始免費試用，請選取 *Start 30-day free trial*。如果您已啟用試用，請選取 *Start by discovering workloads*。</block>
+  <block id="25e55f8e8c02fccd0565ce3e09516eaa" category="list-text">若要探索特定 Console 代理程式的系統，請選擇包含您要探索之系統的 Console 代理程式的向下箭頭。</block>
+  <block id="491d8571b2a09dcbae564ec801e25fe7" category="list-text">選擇您要執行探索的系統。</block>
+  <block id="d741204137cafb846d39315517ca1067" category="list-text">在控制台中，選擇 *Refresh* 圖示以識別新的工作負載。</block>
+  <block id="812c0e17c55314eccce1dcb3ee7d6153" category="paragraph">如果您已經對系統執行探索，並在之後新增工作負載，請再次執行探索以識別工作負載。</block>
+  <block id="b793bd330c25538b7cd98bb4e4bec503" category="list-text">在「工作負載探索」卡片中，選擇 *Discover* 。探索過程可能需要幾分鐘。載入圖示會顯示進度。</block>
+  <block id="e35ddec8b9589eba5325509abe9f7e64" category="list-text">Ransomware Resilience 可探索受支援和不受支援的系統。如果系統的 ONTAP 版本低於所需版本，則不支援該系統。將滑鼠游標停留在不受支援的系統上時，工具提示會顯示原因。選取您要識別工作負載的系統。</block>
+  <block id="6d008767b6b1ed8f9bb99930968157ff" category="summary">請確保您符合 Ransomware Resilience 的授權要求，以保護您的工作負載。</block>
+  <block id="360e5892ccf9a138fa1f7477e6e2db92" category="list-text">如果這是您第一次使用 Ransomware Resilience<block ref="f19bbe7d2dbc45b6f2a3e4d9d3615c0f" category="inline-link-macro-rx"></block>。</block>
+  <block id="df3fb79f22fd0d8a496bd6ab0f7fcb62" category="sidebar">NetApp Ransomware Resilience 可保護、偵測並支援從勒索軟體威脅中恢復本地端及雲端儲存的工作負載。Ransomware Resilience 提供安全的備份與還原，協助組織保護關鍵資料，並維持 Oracle、VM 資料存放區、NAS 儲存等的業務持續運作。</block>
 </blocks>
