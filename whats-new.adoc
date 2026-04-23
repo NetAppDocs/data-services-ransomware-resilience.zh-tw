@@ -485,14 +485,6 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem.html
 
 
 
-=== 在檔案層級恢復 Podman 的應用程式工作負載
-
-在檔案層級恢復應用程式工作負載之前，您現在可以查看可能受到攻擊影響的檔案清單並確定要復原的檔案。以前，如果組織（以前是帳戶）中的BlueXP連接器正在使用 Podman，則此功能將被停用。現在它已為 Podman 啟用。您可以讓BlueXP ransomware protection選擇要恢復的文件，您可以上傳列出受警報影響的所有文件的 CSV 文件，或者您可以手動識別要恢復的文件。
-
-https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-recover.html["了解有關從勒索軟體攻擊中恢復的更多信息"] 。
-
-
-
 == 2024年9月30日
 
 
@@ -565,9 +557,9 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-start-licen
 
 
 
-=== 在檔案層級恢復應用程式工作負載
+=== 在檔案層級還原工作負載
 
-在檔案層級恢復應用程式工作負載之前，您現在可以查看可能受到攻擊影響的檔案清單並確定要復原的檔案。您可以讓BlueXP ransomware protection選擇要恢復的文件，您可以上傳列出受警報影響的所有文件的 CSV 文件，或者您可以手動識別要恢復的文件。
+在檔案層級還原工作負載之前，您現在可以檢視可能受到攻擊影響的檔案清單，並識別要還原的檔案。您可以讓 BlueXP 勒索軟體保護選擇要還原的檔案、上傳列出所有受警示影響之檔案的 CSV 檔案，或手動識別要還原的檔案。
 
 
 NOTE: 在此版本中，如果帳戶中的所有BlueXP連接器均未使用 Podman，則啟用單一檔案復原功能。否則，該帳戶將被停用。
@@ -578,9 +570,9 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-recover
 
 === 下載受影響文件的列表
 
-在檔案層級復原應用程式工作負載之前，您現在可以造訪「警報」頁面以 CSV 檔案形式下載受影響檔案的列表，然後使用「復原」頁面上傳該 CSV 檔案。
+在還原檔案層級的工作負載之前，您現在可以存取「警示」頁面，下載受影響檔案的清單（CSV 檔案），然後使用「還原」頁面上傳 CSV 檔案。
 
-https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-recover.html["了解有關在恢復應用程式之前下載受影響文件的更多信息"] 。
+link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-recover.html["深入瞭解在還原工作負載之前下載受影響檔案的相關資訊"]
 
 
 

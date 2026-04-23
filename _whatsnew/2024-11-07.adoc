@@ -25,11 +25,3 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem.html
 === 立即免費試用 30 天
 
 隨著此版本的發布， BlueXP ransomware protection的新部署現在有 30 天的免費試用期。在此之前， BlueXP ransomware protection提供 90 天的免費試用。如果您已享有 90 天免費試用，則該優惠將持續 90 天。
-
-
-
-=== 在檔案層級恢復 Podman 的應用程式工作負載
-
-在檔案層級恢復應用程式工作負載之前，您現在可以查看可能受到攻擊影響的檔案清單並確定要復原的檔案。以前，如果組織（以前是帳戶）中的BlueXP連接器正在使用 Podman，則此功能將被停用。現在它已為 Podman 啟用。您可以讓BlueXP ransomware protection選擇要恢復的文件，您可以上傳列出受警報影響的所有文件的 CSV 文件，或者您可以手動識別要恢復的文件。
-
-https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-recover.html["了解有關從勒索軟體攻擊中恢復的更多信息"] 。
