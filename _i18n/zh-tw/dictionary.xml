@@ -682,15 +682,7 @@
   <block id="0c494aaba0bbfa24f1d3a7438930b616" category="list-text">選擇一個工作負載，選擇右側的*操作*...圖標，然後選擇*編輯工作負載名稱*。</block>
   <block id="b7ac3f69f0c0ac25814be4d03ba11c24" category="list-text">輸入新的工作負載名稱並選擇*儲存*。</block>
   <block id="565c83689e020f29cdb2b1a2a0116b1a" category="inline-link-macro">從攻擊中恢復</block>
-  <block id="bc1b76060f49fe8ad404d389d8431371" category="summary">使用NetApp Data Classification來提高資料的安全性和隱私合規性，以確定您的資料是否包含個人識別資訊或私人資訊。</block>
-  <block id="604880f6f585767eee17ec85b3c76533" category="inline-link-macro">資料分類</block>
-  <block id="00735a048dd8a101a0cf04ff8cf7c168" category="paragraph"><block ref="2324d2fecbef2eccb7e03b987d67689b" category="inline-link-macro-rx"></block>利用人工智慧驅動的自然語言處理進行情境資料分析和分類，為您的資料提供可操作的見解，以滿足合規性要求、偵測安全漏洞、優化成本並加速遷移。</block>
-  <block id="d3b14d365ca3277402fce2839d562f60" category="admonition">此過程可以影響工作負載的重要性，以幫助確保您獲得適當的保護。</block>
-  <block id="aeb066b15e66f67bbfa9db1332465422" category="section-title">透過資料分類識別隱私暴露</block>
   <block id="ba2c5a24730716f70a2b315220375de6" category="inline-link-macro">啟用資料分類來掃描您的數據</block>
-  <block id="c4f1661d1e0ca939d13156f9f3d34d48" category="paragraph">在使用勒索軟體復原功能中的資料分類之前，您需要<block ref="c872c876324415ce189a729b6026b061" category="inline-link-macro-rx"></block>。</block>
-  <block id="ee34749052b0d62bf351eb75d25107b1" category="paragraph">您可以在勒索軟體復原的保護頁面內部署資料分類。依照程式識別隱私洩漏。當您選擇**識別暴露**時，如果您尚未部署資料分類，則會顯示對話框，讓您啟用資料分類。</block>
-  <block id="9ed086de7334074ba1b8a57d92fad8c8" category="paragraph">有關數據分類的更多信息，請參閱：</block>
   <block id="06e283ee316863d38f0fea16ba5785cc" category="inline-link">了解資料分類</block>
   <block id="8b3703ff6ebaa8b98d723211fb1dfc77" category="list-text"><block ref="8b3703ff6ebaa8b98d723211fb1dfc77" category="inline-link-rx"></block></block>
   <block id="93f515959ce6187b986c42fa6959168b" category="inline-link">私人資料類別</block>
@@ -698,30 +690,15 @@
   <block id="499dd7659f4fa7b600ca3796c449e41b" category="inline-link">調查組織中儲存的數據</block>
   <block id="23ca466c11f4192b1b942a142ef1083f" category="list-text"><block ref="23ca466c11f4192b1b942a142ef1083f" category="inline-link-rx"></block></block>
   <block id="b4b23bfb09d955d9adbd34e9b10730b7" category="inline-link-macro">部署資料分類</block>
-  <block id="6f70238b9dd1b1b13dcaa8388f9eb830" category="paragraph">如果您已<block ref="76ec7a4f27737b4abf63f3c2ea7bce9c" category="inline-link-macro-rx"></block>。資料分類作為控制台的一部分提供，無需額外付費，並且可以在本地或客戶雲端中部署。</block>
-  <block id="22da148f02a4f9df3c95fa55ebe1f0e4" category="list-text">在「保護」頁面的「工作負載」欄位中找到檔案共享工作負載。</block>
   <block id="ae026bf5e2ca5066c55b7b1740de800e" category="inline-image-macro">保護頁面顯示隱私權暴露欄</block>
   <block id="9dedf1958376570fec810d3b47c2d3ec" category="paragraph"><block ref="9dedf1958376570fec810d3b47c2d3ec" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="6167c82beb8173b9fd8c04acf7729651" category="list-text">若要啟用資料分類來掃描您的資料中的 PII，請在「隱私暴露」欄位中選擇「識別暴露」。</block>
-  <block id="7058bb0083130a5c71fe119ba40e514f" category="admonition">如果您尚未部署資料分類，選擇「識別暴露」將開啟一個對話方塊來部署資料分類。選擇*部署*。部署資料分類後，您可以返回「保護」頁面，然後選擇「識別暴露」。</block>
-  <block id="a5795ac9b0de866cf01ea8939331c119" category="paragraph">掃描可能需要幾分鐘，具體取決於文件​​的大小和數量。在掃描過程中，保護頁面指示它正在識別文件並提供文件數量。掃描完成後，「隱私暴露」欄位將暴露等級評定為「低」、「中」或「高」。</block>
-  <block id="70f91b9311063ebb918671e1632eea94" category="section-title">審查隱私暴露情況</block>
-  <block id="0537b0ecb09c0d9c0d03fe90ad780697" category="paragraph">在對 PII 進行資料分類掃描後，評估風險。</block>
-  <block id="8a35aa96c6cd6c5a2441282d0cba7849" category="paragraph">PII 資料分為以下三類：</block>
   <block id="d2d08f06bc04a605f3fcfb8f214d6693" category="list-text">*高*：超過 70% 的檔案包含 PII</block>
   <block id="28f2318706a91f0a8540b36afa47aa64" category="list-text">*中*：超過 30% 且少於 70% 的檔案包含 PII</block>
   <block id="ea1385f5976d3bde8b3b9d5653072157" category="list-text">*低*：大於 0% 且小於 30% 的檔案包含 PII</block>
-  <block id="743c833ae848226cd938cbcdec4813e8" category="list-text">在「保護」頁面中，在「工作負載」欄位中找到顯示「隱私權暴露」列中狀態的檔案共用工作負載。</block>
-  <block id="648eb89d24fbd412ac4e5191ba6b3cfc" category="list-text">選擇「工作負載」列中的工作負載連結即可查看工作負載詳情。</block>
   <block id="0bb4a1497d3056f8b2f0423eff14e160" category="inline-image-macro">顯示隱私暴露圖塊的工作負載詳細資訊螢幕</block>
   <block id="7b0824f1068863bca201f38cc7763786" category="paragraph"><block ref="7b0824f1068863bca201f38cc7763786" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="0d24b9f644f661e7276d0d4f3fdfaa2e" category="list-text">在「工作負載詳細資料」頁面中，查看「隱私暴露」圖塊中的詳細資訊。</block>
   <block id="dffb203aa27226e3750f92c5c60829df" category="section-title">隱私暴露對工作負載重要性的影響</block>
   <block id="61915adac4ce0b36ecdb70a5e446a80b" category="paragraph">隱私暴露的變化可能會影響工作負載的重要性。</block>
-  <block id="a201dfb7539c6083e641a0bc8121201b" category="cell">當隱私暴露時：</block>
-  <block id="65dc756d3347a26af4774cab05b6f1a6" category="cell">從這次隱私曝光來看：</block>
-  <block id="8dc6cf962cd8b6b9d4c2ec1c25942b36" category="cell">對於此隱私暴露：</block>
-  <block id="9a70ecaf65d678d97afe7382a0197469" category="cell">那麼，工作量重要性會這樣做：。</block>
   <block id="e999cd086de455a56c2f7d169210876b" category="cell">*減少*</block>
   <block id="a479d5f7790c7e99c1c56e63d46a8d05" category="paragraph">高、中或低</block>
   <block id="bd05a001892856f4f5d6aa48b0879798" category="cell">中、低或無</block>
@@ -735,8 +712,6 @@
   <block id="f8307a8be7170a599a441165be60a2d7" category="cell">低或中</block>
   <block id="655d20c1ca69519ca647684edbb2db35" category="paragraph">高的</block>
   <block id="f5bfc54a73042ca571add47438fea77e" category="cell">從標準或重要變成關鍵</block>
-  <block id="d13de4a83d7b44c2e65495def8ef1c7b" category="section-title">更多資訊</block>
-  <block id="420b39017799ccdb233cdc7c2b2d4d58" category="paragraph">有關資料分類的詳細信息，請參閱資料分類文件：</block>
   <block id="903c9d0250ec5956f3a9e1f0a3469c20" category="summary">您可以透過在NetApp Ransomware Resilience中為工作負載分配策略來保護工作負載免受勒索軟體攻擊。</block>
   <block id="54a418aa76c7e9afaa77a58a34a3d3ed" category="doc">使用NetApp Ransomware Resilience保護策略保護工作負載</block>
   <block id="9d76fd8cddbcb128567856bd698d409e" category="section-title">了解勒索軟體防護策略</block>
@@ -2075,8 +2050,6 @@
   <block id="7df30d939fa4f3d1575169ec6d1894d8" category="doc">NetApp Ransomware Resilience 的已知限制</block>
   <block id="e9be3c13b1ed73a120f1b23e2cefb058" category="doc">在 NetApp Ransomware Resilience 中探索工作負載</block>
   <block id="871215526a8732732fd40b6335388e98" category="doc">NetApp Ransomware Resilience 常見問題</block>
-  <block id="1ca81bce832a538b6144470d9a25c786" category="paragraph">在 NetApp Ransomware Resilience 中，您可以使用 NetApp Data Classification 來掃描並分類檔案共用工作負載中的資料。資料分類有助於您判斷資料集是否包含個人可識別資訊（PII），這可能會增加安全風險。</block>
-  <block id="1954c0eede9cec276e44236c76142770" category="paragraph">Data Classification 是 NetApp Console 的核心元件。您不需要授權即可使用 Data Classification 。根據您的設定、設定 Data Classification 可能會產生成本、這些成本不會由 Ransomware Resilience 收取。如需詳細資訊、請參閱<block ref="c5cce5d1091349460847f69d486fd688" category="inline-link-macro-rx"></block>。</block>
   <block id="70c542a285cfdf5cc22587e58fc3fcbb" category="doc">適用於 Microsoft Sentinel 和 Splunk 的 SOAR 劇本</block>
   <block id="2f9304fe9b427489507405bef9a0bb9f" category="inline-link-macro">Splunk</block>
   <block id="c75f115758f26a9b54a9d51601b66cf9" category="inline-link-macro">整合 SOAR 劇本</block>
@@ -2355,7 +2328,6 @@
   <block id="138cbd11459ece46267adb92ab34ee1f" category="paragraph">評估受影響的檔案後，您可以還原這些檔案。</block>
   <block id="403f4a170e2d1c03d329e0f0dd8d1b84" category="section-title">2026 年 4 月 13 日</block>
   <block id="794c08acf0fdad83a95c363b8c9662f4" category="sidebar">檢閱還原狀態</block>
-  <block id="d14be6fd318be2bc44adb6224cd0309b" category="sidebar">使用乾淨還原進行還原</block>
   <block id="6ff288c704ac97afbc67708bc23dbc09" category="paragraph">若要瞭解支援的組態以及如何設定系統以進行全新還原，請參閱 <block ref="bce58762a021948ccde0fba2f5f7a845" category="inline-link-macro-rx"></block>。若要瞭解如何使用全新還原進行還原，請參閱 <block ref="c39fc221f9e8d680274efcf9f5170bf4" category="inline-link-macro-rx"></block>。</block>
   <block id="482b73c713ea8cffc3070c798b03badc" category="open-title">從內部部署到雲端</block>
   <block id="8880534a0e139c017e28bbf6bc44e84b" category="open-title">內部部署到內部部署</block>
@@ -2447,4 +2419,22 @@
   <block id="b61174a96feeed9315df09125dbf021e" category="inline-link-macro">深入瞭解在還原工作負載之前下載受影響檔案的相關資訊</block>
   <block id="f9ab80c55fbab58c37aab4891dabffae" category="paragraph"><block ref="f9ab80c55fbab58c37aab4891dabffae" category="inline-link-macro-rx"></block></block>
   <block id="23bb3b926c6da9edf1342c50a0cbf22e" category="list-text">必須安裝並執行 Docker 版本 20.x 或更新版本。</block>
+  <block id="337f89149c6ad76d149c111687549e82" category="summary">Ransomware Resilience 可以識別資料中的隱私外洩風險，幫助您提高工作負載的安全性。</block>
+  <block id="2f43f805784f8d4ccf5eecb446bb36af" category="paragraph">在 NetApp Ransomware Resilience 中，您可以使用 NetApp Data Classification 來識別隱私暴露並主動保護您的資料。識別隱私暴露可揭示資料集是否包含個人可識別資訊（PII）。隱私暴露可能會增加安全風險並改變工作負載的重要性指定。</block>
+  <block id="fa8dac95fc1c211dbfe88b9f20fc8136" category="section-title">識別隱私暴露</block>
+  <block id="8c5e5072ac9e7825c5c9f373d2f1937a" category="paragraph">在識別 Ransomware Resilience 中的隱私漏洞之前，您需要<block ref="c872c876324415ce189a729b6026b061" category="inline-link-macro-rx"></block>。</block>
+  <block id="43e618d6407986d787a8d0e2c9b466e7" category="inline-link-macro">可能會產生成本</block>
+  <block id="d12546195d910bd6bdcd0c2558c63365" category="paragraph">Data Classification 是 NetApp Console 的核心元件，與 Ransomware Resilience 是兩個獨立的產品。使用它不需要授權。根據您的設定，部署 <block ref="7e7dc9a1a76801355616ea493c3dce9e" category="inline-link-macro-rx"></block>，Ransomware Resilience 不會收取費用。</block>
+  <block id="ce9cc130bc25a69c11fdf2053c205381" category="paragraph">您可以從 Ransomware Resilience 的「Protection」頁面部署 Data Classification。依照步驟辨識隱私外洩風險。選擇 **Identify exposure** 後，將出現一個對話方塊；選擇 *Deploy Classification for free*。部署成功後，您可以返回 Ransomware Resilience，識別工作負載中的風險。</block>
+  <block id="52e9471e9883639fa069802b2af375d6" category="paragraph">如果您<block ref="76ec7a4f27737b4abf63f3c2ea7bce9c" category="inline-link-macro-rx"></block>，則可以在 Ransomware Resilience 中掃描 PII 資料。</block>
+  <block id="5afb28d9607fc0dfe3e7066a9a67cb87" category="list-text">在「保護」頁面上，在「工作負載」欄中找到檔案共用工作負載。</block>
+  <block id="1c124aeff3f31fd0eb4b2a910d95eecd" category="list-text">在 *Privacy exposure* 欄位中，選擇 *Identify exposure*。掃描可能需要幾分鐘。</block>
+  <block id="885d53eecb4dbc5294b615795243a7c8" category="list-text">掃描完成後，請檢閱您的曝險程度。曝險程度分為以下三種類型之一：</block>
+  <block id="8343a5d017382b35f03dd3e6e3a97a4d" category="inline-xref">隱私外洩對工作負載重要性的影響</block>
+  <block id="24bb1248c7c9f44b075b9c7dbccc782a" category="list-text">若要檢視有關隱私曝險的更多詳細資訊，請選取工作負載名稱並評估 <block ref="61dd50589a2fef3583fd959f8d71ff50" category="inline-xref-macro-rx"></block>。</block>
+  <block id="532a317daa1b8ba820044c5ab5f734c1" category="cell">隱私暴露變更</block>
+  <block id="f5eb9155d3b6975ee55efb74e561e33d" category="cell">先前接觸</block>
+  <block id="79297b17dc9f8b6a6e468bfe48b8e0e4" category="cell">目前曝險</block>
+  <block id="cbe03757132fcab02b71ae82dd1e0884" category="cell">工作負載重要性的變化</block>
+  <block id="2f976de5f743c1cf88b6945568efbc4d" category="paragraph">有關補救隱私洩露的資訊，請參閱 NetApp Data Classification 說明文件：</block>
 </blocks>

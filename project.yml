@@ -66,14 +66,14 @@ sidebar:
         url: "/rp-use-alert.html"
       - title: 檢閱還原狀態
         url: "/rp-use-recover.html"
-      - title: 使用自訂還原進行還原
-        url: "/rp-use-recover.html"
-      - title: 執行全新還原
+      - title: 使用乾淨還原進行還原
         entries:
         - title: 建立隔離的復原環境
           url: "/task-clean-restore.html"
-        - title: 使用乾淨還原進行還原
+        - title: 執行全新還原
           url: "/task-clean-restore-recover.html"
+      - title: 使用自訂還原進行還原
+        url: "/rp-use-recover.html"
     - title: 進行整備演練
       url: "/rp-start-simulate.html"
     - title: 設定 SIEM
