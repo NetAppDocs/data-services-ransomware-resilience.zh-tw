@@ -2289,7 +2289,6 @@
   <block id="fa48228aaf71277e6bc2d05f062b62bb" category="list-text">必須安裝並執行 VMware Tools。</block>
   <block id="c3d0c72650d11485355d35484d14c0a1" category="list-text">必須啟用 SSH。</block>
   <block id="e1be34a58f3251e0469bedfad3e4788d" category="list-text">您必須安裝 nfs-common。</block>
-  <block id="bf53e61c050ee11a55b3479c83c5512f" category="list-text">必須安裝並執行 Docker。</block>
   <block id="66ed64c9284af661b30715d4eca9f181" category="list-text">您必須至少有 40 GB 的可用空間。</block>
   <block id="300cc7d3b66cf666cb37df412b0cc68b" category="list-text">對於 Windows VM ：</block>
   <block id="21755314d24463f2d188ab45bb05c0c0" category="list-text">Windows 虛擬機器應有 20 GB 的可用空間。</block>
@@ -2447,4 +2446,5 @@
   <block id="367e5a02a217d0d56ba1d4196683de67" category="paragraph">在還原檔案層級的工作負載之前，您現在可以存取「警示」頁面，下載受影響檔案的清單（CSV 檔案），然後使用「還原」頁面上傳 CSV 檔案。</block>
   <block id="b61174a96feeed9315df09125dbf021e" category="inline-link-macro">深入瞭解在還原工作負載之前下載受影響檔案的相關資訊</block>
   <block id="f9ab80c55fbab58c37aab4891dabffae" category="paragraph"><block ref="f9ab80c55fbab58c37aab4891dabffae" category="inline-link-macro-rx"></block></block>
+  <block id="23bb3b926c6da9edf1342c50a0cbf22e" category="list-text">必須安裝並執行 Docker 版本 20.x 或更新版本。</block>
 </blocks>
