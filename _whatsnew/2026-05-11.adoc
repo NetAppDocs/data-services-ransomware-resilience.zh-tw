@@ -6,9 +6,9 @@
 
 === 乾淨還原增強功能
 
-全新還原現在支援還原至替代叢集，並支援超過七天的分析。
+現在，乾淨還原功能支援還原到備用位置，讓您可以將磁碟區還原到由相同 Console 代理程式管理的不同系統、儲存 VM 和 Aggregate。此外，乾淨還原功能也取消了搜尋可用還原 Snapshot 的七天限制。現在，無論距離勒索軟體事件發生的時間遠近，乾淨還原功能都會持續搜尋可用 Snapshot 以找到可行的還原點。
 
-link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-clean-restore.html["使用乾淨還原來恢復工作負載"^]。
+link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-clean-restore-recover.html["使用乾淨還原來恢復工作負載"^]。
 
 
 
