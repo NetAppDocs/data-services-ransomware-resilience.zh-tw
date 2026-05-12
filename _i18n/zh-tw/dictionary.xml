@@ -2481,5 +2481,5 @@
   <block id="3709262a3984a4066d844e26650ffbfd" category="list-text">為 HTTP Event Collector 選擇**通訊協定**。建議使用 HTTPS，但如果 HTTP Event Collector 未啟用 SSL，請選擇 *HTTP*。</block>
   <block id="0bffbc11a95d5a4be5584ad87467b460" category="list-text">請輸入執行 HTTP Event Collector 的 Splunk Cloud 執行個體的 *Host* 和 *Port*。連接埠應與您在 HTTP Event Collector 程序中輸入的連接埠相符。</block>
   <block id="00b8afb4b439e4d80895bdc0b67f43e4" category="list-text">輸入您在 Splunk 中建立的事件收集器權杖。</block>
-  <block id="448172d3af38cf3c8143e719c364e53d" category="section-title">2026 年 3 月 11 日</block>
+  <block id="9b70df306d1f1719fd9d70e02911394c" category="section-title">2026 年 5 月 11 日</block>
 </blocks>
