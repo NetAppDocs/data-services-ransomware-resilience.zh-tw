@@ -2199,7 +2199,6 @@
   <block id="42d5a005352158447d080ff821694db4" category="list-text">使用相同的機器身分會導致授權和啟動問題。</block>
   <block id="2b973fe4e18c7b4ee211cfe2a2373d41" category="paragraph">為避免這些衝突，Ransomware Resilience 會對複製虛擬機器執行 sysprep，重設 SID、CN 和機器識別碼。重設這些值可確保複製虛擬機器作為獨立實例運行，不會幹擾來源虛擬機器。</block>
   <block id="c94b2ef9dde0531d36cb0d4e5d7b4b72" category="section-title">次要來源</block>
-  <block id="08607b19598a980be86467b52da1e4d3" category="paragraph">建立內部部署來源的 IRE 時，您可以選擇新增次要來源。</block>
   <block id="4a03772068b579d9b09ff0433b7acadd" category="paragraph">根據預設，全新還原程序會分析來源環境中的快照。如果來源環境無法使用，或來源上沒有未加密的快照，則全新還原會分析次要系統上的快照（如果您已設定次要系統）。</block>
   <block id="bf6aff190124dd12362477474eddaf9b" category="paragraph">全新還原是 Ransomware Resilience 的一部分。執行全新還原或建立 IRE 不需要額外的授權。</block>
   <block id="2c5f8b1bf69ff1fef550992679ff59b6" category="paragraph">啟用全新還原功能可能會產生第三方雲端供應商的費用。根據您使用該服務的方式，只要全新還原環境存在，這些費用就可能持續產生。</block>
@@ -2493,4 +2492,5 @@
   <block id="84c03f1b38aa942e542555e111083674" category="paragraph"><block ref="84c03f1b38aa942e542555e111083674" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f5cfed6a695ca584c4de91e043cec8df" category="list-text">選擇 **Release resources and exit** 以釋放資源並關閉 clean room。若要確認，請選擇 **End**。</block>
   <block id="ee9eb963788511d80fc2e4d572229dfc" category="paragraph">如果主要來源無法使用，且您已設定次要來源，則全新還原作業將還原至次要來源。</block>
+  <block id="1ed548d363a0d2a6ce0c5db113b94db8" category="paragraph">建立 IRE 時，您可以選擇新增次要來源。</block>
 </blocks>
