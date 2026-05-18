@@ -23,6 +23,10 @@ summary: 只需幾個步驟即可開始使用NetApp Ransomware Resilience。
 [role="quick-margin-list"]
 * link:https://docs.netapp.com/us-en/console-setup-admin/concept-agents.html#agent-installation["確保已安裝控制台代理"^]
 * link:rp-start-prerequisites.html["確保您的系統符合要求"]
++
+** 同時查看 link:reference-user-activity-requirements.html["偵測可疑使用者活動"] 和 link:task-clean-restore.html["全新還原"] 的要求。
+
+
 * link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-reference-roles.html["審查勒索軟體恢復使用者角色並為存取勒索軟體復原的使用者分配權限"]
 * link:rp-start-licenses.html["設定許可"]
 

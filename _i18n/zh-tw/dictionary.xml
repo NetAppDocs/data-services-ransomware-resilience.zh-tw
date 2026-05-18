@@ -398,7 +398,6 @@
   <block id="ffc25a5f8d1276ee801a950e7f83a233" category="list-text">控制台代理必須具有<block ref="d5aabb6133fba5c7ef5a4e8db21d18ae" prefix=" " category="inline-code"></block>容器處於活動狀態。</block>
   <block id="04f679e072129c7e87e077dc95e5e73e" category="inline-link">了解如何配置控制台代理</block>
   <block id="b1fb1d531493b1af3ab2980b2c579a5f" category="inline-link">標準控制台要求</block>
-  <block id="f9a3157f34101a0d560e518291db02ba" category="admonition">如果您在單一控制台組織中擁有多個控制台代理，則勒索軟體復原功能將掃描除控制台 UI 中目前選擇的代理之外的所有控制台代理中的ONTAP資源。</block>
   <block id="13572bbe68fe6ecbb17fb5a38d1313bb" category="inline-link">自主勒索軟體防護概述</block>
   <block id="d5d09e7741370854c28c983cfbae51eb" category="inline-link-macro">了解勒索軟體抵禦能力</block>
   <block id="d2e3e802d3f25894bd170688859d6cef" category="inline-link">AWS、Azure 或 S3 權限列表</block>
@@ -1439,7 +1438,6 @@
   <block id="1b6bc3125f482fcbcf029c833aea1290" category="section-title">ONTAP 需求</block>
   <block id="69e575df737b34413e9ac5e132f6db01" category="list-text">您必須執行ONTAP 9.11.1 或更高版本，並且在本機ONTAP實例上啟用ONTAP One 授權。有關ONTAP支援的更多信息，請參閱<block ref="a17b9b304c2ac7f4ba576e11b099c691" category="inline-link-macro-rx"></block>。</block>
   <block id="287d5057af26ee58d3ebb3f5ab1c418c" category="list-text">若要套用保護配置（例如啟用自主勒索軟體保護），勒索軟體復原能力需要ONTAP叢集上的管理員權限。ONTAP叢集應該只使用ONTAP叢集管理員使用者憑證進行加入。</block>
-  <block id="afabe9e17313d371201713a96a9674ac" category="admonition">如果您已使用非管理員憑證將ONTAP叢集連接到控制台，則[您必須更新ONTAP叢集中的憑證](#update-non-admin-user-permissions-in-an-ontap-system)。</block>
   <block id="2256fdd13b41cd806db98cd42c5b498c" category="list-text">在NetApp StorageGRID、AWS S3、Azure Blob 或 Google Cloud Platform 中擁有一個帳戶，用於備份目標，並配置了適當的存取權。</block>
   <block id="27bfb5502a8db50d09f593ce1b77b181" category="list-text">以管理員使用者身分登入ONTAP集群 CLI。</block>
   <block id="14e79e90c6d487ebb867aa7b0f88bf25" category="list-text">返回NetApp Console以使用勒索軟體復原功能。</block>
@@ -1742,8 +1740,6 @@
   <block id="e85295e320f98fda3869b6fd777fcb74" category="inline-link-macro">設定使用者活動代理程式和收集器</block>
   <block id="1cb54935f05151077e45294fd0acda40" category="list-text"><block ref="1cb54935f05151077e45294fd0acda40" category="inline-link-macro-rx"></block></block>
   <block id="a7f617894520c70eda06105083582777" category="paragraph">為了使 Ransomware Resilience 能夠發出有關可疑使用者行為的警報，您必須設定使用者活動代理程式。若要安裝使用者活動代理程式，請確保您的系統符合<block ref="423b5fb22336ee99727442d2bf2268c5" category="inline-link-macro-rx"></block>。</block>
-  <block id="f5d77d7a39be1811d47f1310b0b80a61" category="paragraph">如果您需要更新特定系統中的非管理員使用者權限，請依照下列步驟操作。</block>
-  <block id="ecafefb609794a493ed83be961865b30" category="list-text">登入 Console 。在儀表板中，找到需要更新 ONTAP 使用者權限的系統。</block>
   <block id="6a3ad50557786ed110b2cefa2a2be7bd" category="list-text">選擇系統以檢視其詳細資訊。</block>
   <block id="6872a6ef5ae2db047b6effa74304d0af" category="list-text">顯示該使用者的現有角色：</block>
   <block id="67c903793b6bf8b730fee76339b93672" category="list-text">如果您選擇了 *Suspicious user behavior detection* 作為偵測設置，請選擇 User activity agent 或<block ref="0fcb9e48262f104799fbf49d6c09d7d5" category="inline-link-macro-rx"></block>。</block>
@@ -1927,7 +1923,6 @@
   <block id="e2907e7cb7d68b36821cd11cda209bc3" category="cell">SAN（iSCSI 和 NVMe）</block>
   <block id="3b9c98c430c62cb3627db641468d7e64" category="list-text">評估您的勒索軟體防護狀況，並在易於理解的儀表板中顯示，同時提供改進防護的建議。</block>
   <block id="9bd1fe262c57584526c5184d4de31827" category="list-text">如果您的內部部署 ONTAP 叢集或 Cloud Volumes ONTAP 系統未在 Console 中設定，請參閱 <block ref="1c09904f3fbf9f22b68e96599d2dcddc" category="inline-link-macro-rx"></block> 和 <block ref="b04507b2bbabc17c071b912167d3ff4f" category="inline-link-macro-rx"></block>。</block>
-  <block id="3eb45f3714606347a6ff182b822b69cc" category="list-text">對於 ONTAP 或 Cloud Volumes ONTAP 叢集，Ransomware Resilience 要求 ONTAP 版本為 9.11.1 或更高版本。</block>
   <block id="4b2c42068bb1431d3a8d94e9ca135659" category="paragraph"><block ref="187dbd743d444b65478d146e1c2c85f6" category="inline-link-rx"></block>.</block>
   <block id="e300a441bfe88a3cd9729e46cfd3c605" category="paragraph">儀表板顯示資料保護健全狀況。存在風險或受到保護的工作負載數量會隨著新工作負載的發現而更新。</block>
   <block id="3d7e9fe4b06f7b72aa18a4870bc065e4" category="inline-image-macro">勒索軟體恢復能力儀表板</block>
@@ -2493,4 +2488,15 @@
   <block id="f5cfed6a695ca584c4de91e043cec8df" category="list-text">選擇 **Release resources and exit** 以釋放資源並關閉 clean room。若要確認，請選擇 **End**。</block>
   <block id="ee9eb963788511d80fc2e4d572229dfc" category="paragraph">如果主要來源無法使用，且您已設定次要來源，則全新還原作業將還原至次要來源。</block>
   <block id="1ed548d363a0d2a6ce0c5db113b94db8" category="paragraph">建立 IRE 時，您可以選擇新增次要來源。</block>
+  <block id="61fcfe4267994f7a09ac2c0eac28d82e" category="admonition">如果單一 Console 組織中有多個 Console 代理程式，則 Ransomware Resilience 將掃描 Console UI 中目前選定的代理程式以外的所有 Console 代理程式上的 ONTAP 資源。</block>
+  <block id="8c2c19111935f9243c0b70cc9147c7f6" category="list-text">對於 ONTAP 或 Cloud Volumes ONTAP 叢集，勒索軟體復原功能需要 ONTAP 版本 9.11.1 或更高版本。</block>
+  <block id="fdd0606f2daa519f710ae175b71f67f1" category="admonition">如果您使用非管理員憑證將 ONTAP 叢集連接到主控台，則必須<block ref="065743cc2c7ea5dd36eed7ab4585f3ce" category="inline-xref-macro-rx"></block>。</block>
+  <block id="6677749fe8a4ba0666e6645ce9e88655" category="section-title">清理還原先決條件</block>
+  <block id="9f7a1ec0fd7d8ed497c98ea393a4f199" category="inline-link-macro">請確保您符合先決條件</block>
+  <block id="fa846f105dbfe513971f8343a3907be6" category="paragraph">勒索軟體恢復功能提供乾淨還原，它提供引導式還原流程，可發現最佳還原路徑。若要使用乾淨還原<block ref="b5c2c0cc1a78442b8e29bd0cb44004f7" category="inline-link-macro-rx"></block>。</block>
+  <block id="c36975af9ca6baf7b5a05658605b577d" category="paragraph">如果您需要更新特定系統的非管理員使用者權限，請使用此程序：</block>
+  <block id="3e24330471da607e91da657f3cdf7a39" category="list-text">登入控制台。在儀表板上，找到需要更新 ONTAP 使用者權限的系統。</block>
+  <block id="7f3418b9bbded932a1a1585ec05f42c3" category="inline-link-macro">偵測可疑使用者活動</block>
+  <block id="df790109011414a6034217652cd48d7c" category="inline-link-macro">全新還原</block>
+  <block id="c40aa9438834745dead5ab833fb4ad95" category="list-text">同時查看 <block ref="8195b6c486e4af94bbefa0d6c4fe0d9d" category="inline-link-macro-rx"></block> 和 <block ref="5909784b16712ef276fd16aaaa47a088" category="inline-link-macro-rx"></block> 的要求。</block>
 </blocks>
