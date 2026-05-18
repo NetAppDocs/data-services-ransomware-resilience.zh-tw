@@ -33,6 +33,12 @@
 .2+| ONTAP （本地部署） | CIFS 和 NFS | 9.11.1 及更高版本 
 
 
-| SAN（FC、iSCSI 和 NVMe） | 9.17.1 及更高版本 
+| SAN（iSCSI 和 NVMe） | 9.17.1 及更高版本 
+
+
+| Google Cloud NetApp Volumes | CIFS、NFS、SAN（iSCSI 和 NVMe） | 不適用 
 |===
 {asterisk} Amazon FSx for NetApp ONTAP使用自主勒索軟體保護 (ARP) 而非 ARP/AI。有關兩者區別的更多信息，請參閱link:https://docs.netapp.com/us-en/ontap/anti-ransomware/#arp-ai["ARP/AI"^]。
+
+
+NOTE: Azure NetApp Files 和 Google Cloud NetApp Volumes 不支援可疑使用者活動偵測。如需可疑使用者活動偵測支援的詳細資訊，請參閱 link:reference-user-activity-requirements.html["使用者活動偵測需求"]。

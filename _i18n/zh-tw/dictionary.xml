@@ -1454,7 +1454,6 @@
   <block id="096f3522cfa2f31de45d052b740adc65" category="cell">適用於 AWS 的Cloud Volumes ONTAP</block>
   <block id="05bcab512eefa1e7e2cc2d1e45970a7d" category="cell">CIFS 和 NFS</block>
   <block id="1f03f70fe9097fcc16686889bafaf634" category="cell">9.11.1 及更高版本</block>
-  <block id="d32574662083c44bd1c1e27441a5f5f6" category="cell">SAN（FC、iSCSI 和 NVMe）</block>
   <block id="ce2276d280ca79bc5d0b33e7903a7d49" category="cell">9.17.1 及更高版本</block>
   <block id="a6810a0b37cbc417c34b4dffc16f07a1" category="cell">適用於 Google Cloud Platform 的Cloud Volumes ONTAP</block>
   <block id="9722c69e4736d9b151d70e30b917a4e1" category="cell">適用於 Microsoft Azure 的Cloud Volumes ONTAP</block>
@@ -1562,7 +1561,6 @@
   <block id="4256b08931f8c14d28bbf33199e1b022" category="paragraph">勒索軟體復原功能現在允許您編輯使用者行為警報的狀態。您可以手動關閉和解決警報。</block>
   <block id="8fe404d4b8af36b9844eb288d2706bbe" category="inline-link-macro">管理勒索軟體復原能力中的警報</block>
   <block id="869c8807275d576171cb34b892652da6" category="paragraph">有關詳細信息，請參閱 <block ref="ca80a6cafecee489657bc722219fb267" category="inline-link-macro-rx"></block>。</block>
-  <block id="22a81a009e8d21bf17e2788fdbfa4a6d" category="paragraph">勒索軟體復原能力支援Amazon FSx for NetApp ONTAP系統。以下限制適用於Amazon FSx for ONTAP：</block>
   <block id="f20af4e11539d270463e7ed46557be6f" category="paragraph">在使用NetApp Ransomware Resilience之前，它首先需要發現工作負載資料。在發現過程中，勒索軟體復原力會分析組織內所有控制台代理程式和專案系統中的所有捲和檔案。</block>
   <block id="ab066b3292d8ab61ef3b5c77169cdd19" category="section-title">更多資訊</block>
   <block id="48bf90c5e99016f124c48c02a77dc8fd" category="inline-link-macro">NetApp Console授權和訂閱文檔</block>
@@ -1771,7 +1769,6 @@
   <block id="e37ee5388292007ad9d3935327219122" category="paragraph">如需詳細資訊，請參閱 <block ref="5988324edfd7d92a7675cb7a08ac2a7e" category="inline-link-macro-rx"></block>。</block>
   <block id="58c30bd4c949be43357ab1b7557703b5" category="list-text">Amazon FSx for ONTAP 不支援備份原則。在此環境中，您應該使用 Amazon FSx 執行備份作業。您可以使用 NetApp Ransomware Resilience 來恢復這些工作負載。</block>
   <block id="2a0c2a157bd80927f000333567138b57" category="section-title">Azure NetApp Files 限制</block>
-  <block id="9ccc8d744240b4ff1c9fb964a84a7d3c" category="paragraph">Azure NetApp Files 在 Ransomware Resilience 中受到支援。以下限制適用於 Azure NetApp Files ：</block>
   <block id="b285edab772b215df16e97f47e6cf852" category="list-text">Azure NetApp Files 不支援使用備份原則的勒索軟體防護策略。但您可以使用 Azure NetApp Files 備份功能。</block>
   <block id="af5eb4e584c938e9f8b3531d944e3a59" category="list-text">Azure NetApp Files 不支援複製功能的勒索軟體防護策略。</block>
   <block id="1c312af1f49befaddd00883a617fa8ba" category="list-text">選擇保護策略時，請確保其快照排程與 Azure NetApp Files 相容。Azure NetApp Files 中最常使用的快照排程是每小時一次。</block>
@@ -2499,4 +2496,26 @@
   <block id="7f3418b9bbded932a1a1585ec05f42c3" category="inline-link-macro">偵測可疑使用者活動</block>
   <block id="df790109011414a6034217652cd48d7c" category="inline-link-macro">全新還原</block>
   <block id="c40aa9438834745dead5ab833fb4ad95" category="list-text">同時查看 <block ref="8195b6c486e4af94bbefa0d6c4fe0d9d" category="inline-link-macro-rx"></block> 和 <block ref="5909784b16712ef276fd16aaaa47a088" category="inline-link-macro-rx"></block> 的要求。</block>
+  <block id="ff3968cf2fd662dd2275d75511ef33af" category="cell">CIFS、NFS、SAN（iSCSI 和 NVMe）</block>
+  <block id="d334ebc491af4228eb4cd8e0de126818" category="admonition">Azure NetApp Files 和 Google Cloud NetApp Volumes 不支援可疑使用者活動偵測。如需可疑使用者活動偵測支援的詳細資訊，請參閱 <block ref="69d552b440ad08cbfe2c75fd459bcf87" category="inline-link-macro-rx"></block>。</block>
+  <block id="a1b7351b5e78c5f7b3c07f1f9b210761" category="doc">Google Cloud NetApp Volumes 支援（預覽版）</block>
+  <block id="d80af1c0606a32f418ab576db57cacc1" category="paragraph">勒索軟體復原功能現已支援 Google Cloud NetApp Volumes 系統，讓您能夠有效率地偵測並應對 Google Cloud NetApp Volumes 中的勒索軟體威脅。在進行發現時,勒索軟體復原功能會自動顯示來自 Google Cloud NetApp Volumes 系統的工作負載。發現這些系統後,它們會顯示在勒索軟體復原功能控制面板中。目前,勒索軟體復原功能對 Google Cloud NetApp Volumes 的支援仍處於預覽階段。</block>
+  <block id="35b27350003f459df80234524883b5fc" category="inline-link-macro">勒索軟體復原能力的限制</block>
+  <block id="cae4e00f2196b1be86c3e1e5dec224f5" category="paragraph">如需詳細資訊，請參閱 <block ref="d50b16a5274f0acc6be171c51d532ef9" category="inline-link-macro-rx"></block>。如需 Google Cloud NetApp Volumes 支援範圍的相關資訊，請參閱 <block ref="27362f7d9843ec19f9f3145cc1ee646c" category="inline-link-macro-rx"></block>。</block>
+  <block id="f5523776592686b65cfe8d99ccda44ac" category="paragraph">現在，乾淨恢復功能支援產生報告。透過報告，您可以檢視和評估乾淨復原操作，並將這些資訊儲存為 CSV 檔案以便離線使用。</block>
+  <block id="b5be0bbdf1965d7e362ac1fcae7cb4bb" category="paragraph">現在，乾淨還原也支援停止分析。如果停止分析，則必須重新開始乾淨還原。</block>
+  <block id="4756b9491ac344d3e27adc7e34c8640b" category="paragraph">若要深入瞭解報告,請參閱 <block ref="225fa9dfe1003c8a72e52db2e5a89a50" category="inline-link-macro-rx"></block>。若要深入瞭解還原,請參閱 <block ref="c39fc221f9e8d680274efcf9f5170bf4" category="inline-link-macro-rx"></block>。</block>
+  <block id="fd3b4579ab972a1738986581275cfcfa" category="list-text">資料庫：</block>
+  <block id="78898e52fcbdc5337204a384f2456d4f" category="list-text">Microsoft SQL Server</block>
+  <block id="30162ed78b6c10f731411f2fc440c24f" category="list-text">Oracle</block>
+  <block id="ed11408803c4c1aca5fbebbc43d88458" category="list-text">VMware 資料存放區</block>
+  <block id="67e04a8275d417d66dbae3b41f8b109f" category="paragraph">Ransomware Resilience 支援對本機 ONTAP 系統以及 Amazon FSx for NetApp ONTAP 和 Cloud Volumes ONTAP 系統中的工作負載進行使用者行為活動偵測,這些系統符合 <block ref="12d7be4f3da31a90f0de3bba45ddeec1" category="inline-xref-macro-rx"></block>。</block>
+  <block id="d46a6d4256967df0f7292fba7af7750e" category="paragraph">以下限制適用於 Amazon FSx for ONTAP：</block>
+  <block id="0a3365d021ca1305c9f785f72440818f" category="paragraph">以下限制適用於 Azure NetApp Files ：</block>
+  <block id="36a3b80be6de8003f2c8586abef3da11" category="section-title">Google Cloud NetApp Volumes 的限制</block>
+  <block id="03b202e92a2bf372a4034ee95f36d4a7" category="paragraph">以下限制適用於 Google Cloud NetApp Volumes：</block>
+  <block id="f74751df940b5d304cec8e85cc517212" category="list-text">目前，您只能將加密和 FPolicy 為基礎的防護策略套用至 Google Cloud NetApp Volumes 工作負載。您無法套用使用者行為活動防護策略。</block>
+  <block id="fd97f891be8e4ff9fd31d19ccffe7cfa" category="list-text">目前不支援使用複寫的保護策略於 Google Cloud NetApp Volumes</block>
+  <block id="98d8c0e0a6e1f848e25119bcb40e31fb" category="paragraph">分析執行時，您可以選擇 **Stop**。停止分析需要重新啟動乾淨還原程序。</block>
+  <block id="3bfca6a430fa87d8630a8459fe8a4aa1" category="section-title">2026 年 5 月 18 日</block>
 </blocks>

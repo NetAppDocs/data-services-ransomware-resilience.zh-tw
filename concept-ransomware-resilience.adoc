@@ -211,9 +211,15 @@ image:diagram-rp-architecture-preview3.png["勒索軟體抵禦能力架構​​
 .2+| ONTAP （本地部署） | CIFS 和 NFS | 9.11.1 及更高版本 
 
 
-| SAN（FC、iSCSI 和 NVMe） | 9.17.1 及更高版本 
+| SAN（iSCSI 和 NVMe） | 9.17.1 及更高版本 
+
+
+| Google Cloud NetApp Volumes | CIFS、NFS、SAN（iSCSI 和 NVMe） | 不適用 
 |===
 {asterisk} Amazon FSx for NetApp ONTAP使用自主勒索軟體保護 (ARP) 而非 ARP/AI。有關兩者區別的更多信息，請參閱link:https://docs.netapp.com/us-en/ontap/anti-ransomware/#arp-ai["ARP/AI"^]。
+
+
+NOTE: Azure NetApp Files 和 Google Cloud NetApp Volumes 不支援可疑使用者活動偵測。如需可疑使用者活動偵測支援的詳細資訊，請參閱 link:reference-user-activity-requirements.html["使用者活動偵測需求"]。
 
 
 NOTE: 在ONTAP中使用 ARP/AI 需要ONTAP 9.16 或更高版本。+ ONTAP不為FabricPool FlexCache、 FlexGroup磁碟區、一致性群組掛載點磁碟區、掛載路徑磁碟區、離線磁碟區和資料保護 (DP) 磁碟區提供勒索軟體防護支援。請務必查看link:https://docs.netapp.com/us-en/ontap/anti-ransomware/use-cases-restrictions-concept.html["ONTAP中支援且不受支援的配置"^]。
@@ -225,7 +231,14 @@ NOTE: 在ONTAP中使用 ARP/AI 需要ONTAP 9.16 或更高版本。+ ONTAP不為F
 Ransomware Resilience 可保護主要資料磁碟區上的下列工作負載：
 
 * 區塊儲存
+* 資料庫：
++
+** Microsoft SQL Server
+** Oracle
+
+
 * 檔案共用
+* VMware 資料存放區
 
 
 
