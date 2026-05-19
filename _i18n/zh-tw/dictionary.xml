@@ -204,7 +204,6 @@
   <block id="059d032d5bb8125e3e1681f7d9ce6023" category="list-text">透過使用備份和復原、 ONTAP、自主勒索軟體防護（ARP 或 ARP/AI，取決於您的ONTAP版本）以及 FPolicy 技術和服務，確定最佳快照或備份並推薦最佳復原點實際 (RPA)。</block>
   <block id="4ddd3abee434eb92eb13e6cac3e1ad1d" category="cell">*治理*</block>
   <block id="cc4378b1dc9af2e69cb13a88397e2aa7" category="list-text">分配勒索軟體保護策略</block>
-  <block id="90d096ff0013c9c2874a247b26e69950" category="list-text">幫助您監控結果。</block>
   <block id="4f743c093ec077920561596aa32a74f6" category="section-title">支援的備份目標、系統和工作負載資料來源</block>
   <block id="b45c27598e81de132cbcf41c4f6124d9" category="paragraph">勒索軟體復原支援以下備份目標、系統和資料來源：</block>
   <block id="736ca911d7d143d01bd8cbfe0d4afbca" category="list-text">亞馬遜網路服務（AWS）S3</block>
@@ -1859,7 +1858,6 @@
   <block id="fa97e4f101b82056aea0cbbc9151ce6c" category="list-text">**資料收集器**會從 ONTAP 收集使用者活動資料。當您建立包含使用者行為偵測的保護策略時，系統會自動建立資料收集器。</block>
   <block id="039bbdbfc55cf385f4e9d2f185a58a2f" category="list-text">**使用者目錄連接器**用於連接到您的目錄，並將使用者 ID 對應到使用者名稱。您必須配置使用者目錄連接器。</block>
   <block id="8f8ab86c0f901231688c7df2b7c1fe00" category="paragraph">使用者活動代理程式、資料收集器和使用者目錄連接器都可以從 Ransomware Resilience 設定儀表板進行管理。</block>
-  <block id="3bf09ba6164b30984f536fd784b700e3" category="paragraph">+ 如果您_未_使用 DII，請按照此處的設定說明進行操作。</block>
   <block id="8e1169256c8218a428d9f7bf9485bb7a" category="admonition">在查看 Ransomware Resilience 中的保護儀表板時、您可以按保護群組對工作負載進行排序。</block>
   <block id="4baf379055a0f4c2e8270e48da4264cd" category="doc">在 NetApp Ransomware Resilience 中檢視保護狀態</block>
   <block id="1a54b4ce88b0b40ec2bc5535c46c4022" category="paragraph">NetApp Ransomware Resilience 的保護儀表板提供工作負載保護狀態和就緒情況的概覽。使用保護儀表板，您可以深入了解哪些內容已受到保護、哪些內容需要保護以及保護範圍。</block>
@@ -2518,4 +2516,29 @@
   <block id="fd97f891be8e4ff9fd31d19ccffe7cfa" category="list-text">目前不支援使用複寫的保護策略於 Google Cloud NetApp Volumes</block>
   <block id="98d8c0e0a6e1f848e25119bcb40e31fb" category="paragraph">分析執行時，您可以選擇 **Stop**。停止分析需要重新啟動乾淨還原程序。</block>
   <block id="3bfca6a430fa87d8630a8459fe8a4aa1" category="section-title">2026 年 5 月 18 日</block>
+  <block id="2e16025a0775d82fdc475daeb18a1fe1" category="list-text">幫助您監控結果。</block>
+  <block id="b39c809eea98a8d210feb1830518c4e1" category="section-title">大小調整建議</block>
+  <block id="00a0542d454a2c3d33aa384b663f57ae" category="paragraph">收集使用者事件時，請確保執行使用者活動代理程式的機器配置足以應付事件發生率。這意味著您需要確保執行使用者活動代理程式的機器擁有足夠的資料收集器、CPU 和 RAM，以承受每秒事件數。若要增加資料收集器的數量，您可能需要增加 RAM 或 CPU 容量。Ransomware Resilience 每個使用者活動代理程式最多支援 50 個資料收集器。</block>
+  <block id="6be806c9e81235cc334525899e24ce6d" category="paragraph">下表提供大小調整的一般指引：</block>
+  <block id="b8ba9599bd38d83618d773a0942a64b8" category="cell">使用者活動代理程式機器組態</block>
+  <block id="3999d93ad3d5c74655af6243f558b8c2" category="cell">資料收集器數量</block>
+  <block id="18d4395da7ff8f089039a4b405433d06" category="cell">最大事件速率</block>
+  <block id="b5de202e9046a5a5b8fefd0d5db9cad4" category="cell">4 核心，16GB</block>
+  <block id="23c89b5a97c4b2cdaa4c2463c212461a" category="cell">10 個資料收集器</block>
+  <block id="269caf37ed3e8cf3c1e0fedca333dc67" category="cell">每秒 20,000 個事件</block>
+  <block id="4abe7d5f36e50b61122614a74ed19547" category="cell">4 核心，32 GB</block>
+  <block id="4e562f558044748b7be8a4092faa6075" category="cell">20 個資料收集器</block>
+  <block id="9f4dd2227b035f32e343309b777f9a0f" category="paragraph">您也可以計算您的具體需求。計算適當的容量時，建議預留 30% 的緩衝率。使用此公式來確定您的配置是否能夠承受負載。</block>
+  <block id="ad126668a8b9ef5079623e9949eca426" category="example-title">Ransomware Resilience 提供了一個用於計算事件資料速率的腳本。了解如何在 Ransomware Resilience 中計算事件資料速率。</block>
+  <block id="05ad069676a9f89984541497cb4b503a" category="paragraph">Ransomware Resilience 提供了一個腳本，您可以在系統上執行該腳本來計算事件資料速率。預設情況下，此腳本最多可處理五個儲存 VM。如果您的環境包含超過 5 個 SVM，您可以相應地修改腳本。無論 SVM 的數量如何，該腳本大約需要五分鐘才能獲得平均事件速率讀數。在執行腳本之前，您必須具備以下條件：</block>
+  <block id="a8addc595422085e1668bb3064c9e3c2" category="inline-link-macro">已設定使用者活動代理程式</block>
+  <block id="ee4ff3935e64f4bc766cf7c778ecf035" category="list-text"><block ref="ee4ff3935e64f4bc766cf7c778ecf035" category="inline-link-macro-rx"></block></block>
+  <block id="b824ffb71459288c7a3f5b876e2c6648" category="list-text">叢集 IP 位址</block>
+  <block id="3b35700f5db77466b9829093b579bafc" category="list-text">叢集管理使用者名稱和密碼</block>
+  <block id="8357c5714e49295e422957fed4ec2caa" category="list-text">已安裝<block ref="2fa62e05d832f87969a8d99226be5a74" prefix=" " category="inline-code"></block> 在 Linux 機器上（您可以使用命令進行安裝<block ref="bd20ec476e804fab40ab36d6175d1936" prefix=" " category="inline-code"></block>）</block>
+  <block id="361ccd8284c6f49a106851d9aeaab8b2" category="list-text">從託管使用者活動代理程式的叢集中，以管理員身份執行指令碼：<block ref="3b9c122b681f59f04f03105e338591ce" prefix=" " category="inline-code"></block></block>
+  <block id="e0e0df3692200b73a8808571748906b3" category="list-text">出現提示時，提供叢集 IP 位址、管理員使用者名稱和管理員密碼。</block>
+  <block id="2757451d7ac78a3fd169d2600d54a8ad" category="list-text">該腳本大約需要五分鐘才能執行完畢。執行完成後，命令列會顯示事件速率，例如「Svm svm_rate 正在產生 100 個事件/秒」。</block>
+  <block id="73e368716ffe1eef8733ba4acf297472" category="paragraph">使用事件速率來計算您的大小。</block>
+  <block id="caa617e3833cdf64d33905efb6a82682" category="paragraph">如果您未使用 DII，請按照此處的組態說明進行操作。</block>
 </blocks>
