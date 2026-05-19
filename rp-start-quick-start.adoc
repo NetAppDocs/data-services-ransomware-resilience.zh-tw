@@ -24,7 +24,7 @@ summary: 只需幾個步驟即可開始使用NetApp Ransomware Resilience。
 * link:https://docs.netapp.com/us-en/console-setup-admin/concept-agents.html#agent-installation["確保已安裝控制台代理"^]
 * link:rp-start-prerequisites.html["確保您的系統符合要求"]
 +
-** 同時查看 link:reference-user-activity-requirements.html["偵測可疑使用者活動"] 和 link:task-clean-restore.html["全新還原"] 的要求。
+** 同時查看 link:reference-user-activity-requirements.html["偵測可疑使用者行為"] 和 link:task-clean-restore.html["全新還原"] 的要求。
 
 
 * link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-reference-roles.html["審查勒索軟體恢復使用者角色並為存取勒索軟體復原的使用者分配權限"]
@@ -43,12 +43,12 @@ summary: 只需幾個步驟即可開始使用NetApp Ransomware Resilience。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三"]在 Ransomware Resilience 中設定保護和偵測
 [role="quick-margin-para"]
-這些任務需要「勒索軟體復原管理員」角色。配置可疑用戶行為活動需要額外的「勒索軟體恢復用戶行為管理員」角色。
+這些任務需要 _Ransomware Resilience admin_ 角色。配置使用者行為偵測需要額外的 _Ransomware Resilience user behavior admin_ 角色。
 
 [role="quick-margin-list"]
 * link:rp-use-protect.html["保護工作負載"]
 +
-** 可選地，link:suspicious-user-activity.html["透過配置可疑使用者活動偵測來增強保護"]
+** （選用）link:suspicious-user-activity.html["透過設定使用者行為偵測來增強保護"]
 
 
 * （可選）配置備份目標：
@@ -63,10 +63,11 @@ summary: 只需幾個步驟即可開始使用NetApp Ransomware Resilience。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四"]下一步是什麼？
 [role="quick-margin-para"]
-在勒索軟體復原中配置保護後，您可以執行以下操作。
+在 Ransomware Resilience 中設定保護後、您可以：
 
 [role="quick-margin-list"]
 * link:task-classify.html["啟用資料分類來識別治理和安全風險"]
 * link:task-siem.html["向 SIEM 發送警報"]
+* link:reference-soar.html["設定 SOAR 劇本"]
 * link:rp-use-reports.html["下載警報、保護、準備演習、恢復或摘要報告"]
 

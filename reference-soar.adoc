@@ -24,7 +24,7 @@ Ransomware Resilience 手冊提供以下功能：
 * 檢閱擴充工作的狀態
 
 
-{asterisk} 使用者封鎖功能僅適用於 Splunk 和 Google SecOps SOAR playbook。您必須在受支援的系統上設定 link:concept-user-behavior["使用者行為活動偵測"] 才能封鎖使用者。
+{asterisk} 使用者封鎖功能僅適用於 Splunk 和 Google SecOps SOAR playbook。您必須在受支援的系統上設定 link:concept-user-behavior["使用者行為偵測"] 才能封鎖使用者。
 
 
 

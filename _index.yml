@@ -28,7 +28,7 @@ indexpage:
       url: "/rp-use-dashboard.html"
     - title: 保護工作負載
       url: "/rp-use-protect.html"
-    - title: 設定可疑使用者活動偵測
+    - title: 設定使用者活動偵測
       url: "/suspicious-user-activity.html"
     - title: 響應偵測到的警報
       url: "/rp-use-alert.html"
