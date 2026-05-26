@@ -2544,4 +2544,7 @@
   <block id="1003fdbfa95a1ad8e273ca1560375f69" category="paragraph">啟用包含使用者活動偵測的勒索軟體防護策略時，系統會自動建立資料收集器。如需詳細資訊，請參閱<block ref="197232a118beafa8882aae5625527a41" category="inline-link-macro-rx"></block>。</block>
   <block id="d4f53dbb2dd23ad3f2c3d3656c20777b" category="section-title">回應使用者活動警示</block>
   <block id="d0073f8a1f393dd14a8d4168ebf29ac2" category="paragraph">設定使用者活動偵測後，您可以在警示頁面監控事件。如需詳細資訊，請參閱 <block ref="8143bbb79caf2751151f26d9d0abf580" category="inline-link-macro-rx"></block>。</block>
+  <block id="3f8fbfed6e13f7cb7fb11b080bdb9718" category="inline-link-macro">在 Ransomware Resilience 中建立保護群組</block>
+  <block id="afe30c0d6b10a23db7ce0d1907082557" category="paragraph">勒索軟體韌性現在支援在 Google Cloud NetApp Volumes 系統中建立保護群組，使您能夠將多個工作負載組織在一個政策下，以簡化管理。如需更多資訊，請參閱<block ref="002b0319872c1627d4b50bdcb04f2ca6" category="inline-link-macro-rx"></block>。</block>
+  <block id="54ab5224cb7ab20d9d094be05a20cb88" category="section-title">2026 年 5 月 26 日</block>
 </blocks>
