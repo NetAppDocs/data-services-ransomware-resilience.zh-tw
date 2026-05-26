@@ -387,7 +387,6 @@
   <block id="d5d09e7741370854c28c983cfbae51eb" category="inline-link-macro">了解勒索軟體抵禦能力</block>
   <block id="d2e3e802d3f25894bd170688859d6cef" category="inline-link">AWS、Azure 或 S3 權限列表</block>
   <block id="90061bb176f3e723f6f2161eafc1901c" category="paragraph">請參閱<block ref="31e1fb669a04af441205b80b4846232f" category="inline-link-rx"></block>了解詳情。</block>
-  <block id="583833d6f0468c713c410ea158e1b6f6" category="list-text">不需要在系統上啟用NetApp Backup and Recovery 。</block>
   <block id="fb197ee87a0f850dc3b7bb98fe408518" category="inline-link-macro">配置設定</block>
   <block id="1afe90b99262d688f040631ea9d6dcce" category="section-title">更新ONTAP系統中的非管理員使用者權限</block>
   <block id="ddf0d8cb7fa932ccfbf9231d4f27f992" category="list-text">選擇“查看其他資訊”以顯示使用者名稱。</block>
@@ -1756,7 +1755,6 @@
   <block id="46fa98b3b308dc6f48d40cf8b1712bfe" category="section-title">傳送至 SIEM 的事件資料</block>
   <block id="fb042b7b99959e391eeb7c417511098a" category="section-title">2026 年 2 月 16 日</block>
   <block id="51f5590fac3af82049df229fcb91793c" category="sidebar">設定 SIEM</block>
-  <block id="8944abed4a7795983ff8cde0c660dfda" category="paragraph">Ransomware Resilience 使用 NetApp Backup and Recovery 來探索並設定檔案共用工作負載的快照和備份原則。</block>
   <block id="c7508e265b893e4d518594502d79c380" category="list-text">主動監控工作負載，並透過將原則套用至每個已識別的工作負載來協調 Backup and Recovery 和 ONTAP API 的使用。</block>
   <block id="e47b008a3c9b07db3a7f7c525eeccc5a" category="cell">為每個工作負載分配策略。請參閱 <block ref="cc10c371e1aab359fa44a886d5e79433" category="inline-link-macro-rx"></block>。請參閱 <block ref="cc10c371e1aab359fa44a886d5e79433" category="inline-link-macro-rx"></block>。請參閱 <block ref="cc10c371e1aab359fa44a886d5e79433" category="inline-link-macro-rx"></block>。</block>
   <block id="402b250b6b0cd33bf0396353ed30be82" category="inline-link-macro">群組工作負載</block>
@@ -1879,7 +1877,6 @@
   <block id="7ca04b3ca0d38a36dbb53ddae48a80fa" category="paragraph"><block ref="7ca04b3ca0d38a36dbb53ddae48a80fa" category="inline-link-macro-rx"></block></block>
   <block id="86f1d97261d36debcad3b0a69e10f3f4" category="list-text">從 Ransomware Resilience 中、選取 *Settings* 。</block>
   <block id="91437eaac9ac7d1f1da9a4e4751cbaa6" category="paragraph">是的，Ransomware Resilience 可以發現 ONTAP 中設定的快照排程。它還可以發現已發現工作負載中的所有磁碟區是否都啟用了 ARP 和 FPolicy。您在 Ransomware Resilience 儀表板中看到的資訊是從其他 NetApp 解決方案和產品彙總而來。</block>
-  <block id="30d645e3c3e5cd0e502a92a067fc1be8" category="paragraph">Ransomware Resilience 可透過「設定」選項配置備份目標位置。請參閱 <block ref="e25a1b60993d45f33b0deea2ae726330" category="inline-link-macro-rx"></block>。</block>
   <block id="c4550c3db972a64a4938aff3fdcc3f3d" category="paragraph">在備份目的地本身設定選項後，稍後您需要將其設定為 Ransomware Resilience 中的備份目的地。有關如何在 Ransomware Resilience 中設定備份目的地的詳細資訊，請參閱 <block ref="e0972ac2b24cae233c2035120c295c6d" category="inline-link-macro-rx"></block>。</block>
   <block id="bc46a0ba0f385a3e46fe17c4f792de15" category="summary">如果 Ransomware Resilience 偵測到可能的攻擊，Ransomware Resilience 儀表板上會顯示警示，指出潛在攻擊。此時，您應該在 Ransomware Resilience Alerts 標籤中查看潛在風險。</block>
   <block id="3c333ed4b45464bb8628169fb460f0b4" category="paragraph">當 NetApp Ransomware Resilience 偵測到可能的攻擊時，會在儀表板和通知選單中顯示警示。Ransomware Resilience 會立即建立快照。當你收到警示時，請在 Ransomware Resilience *警示* 分頁中檢視潛在風險，以評估對資料的影響並防止潛在的勒索軟體攻擊。</block>
@@ -2545,6 +2542,10 @@
   <block id="d4f53dbb2dd23ad3f2c3d3656c20777b" category="section-title">回應使用者活動警示</block>
   <block id="d0073f8a1f393dd14a8d4168ebf29ac2" category="paragraph">設定使用者活動偵測後，您可以在警示頁面監控事件。如需詳細資訊，請參閱 <block ref="8143bbb79caf2751151f26d9d0abf580" category="inline-link-macro-rx"></block>。</block>
   <block id="3f8fbfed6e13f7cb7fb11b080bdb9718" category="inline-link-macro">在 Ransomware Resilience 中建立保護群組</block>
-  <block id="afe30c0d6b10a23db7ce0d1907082557" category="paragraph">勒索軟體韌性現在支援在 Google Cloud NetApp Volumes 系統中建立保護群組，使您能夠將多個工作負載組織在一個政策下，以簡化管理。如需更多資訊，請參閱<block ref="002b0319872c1627d4b50bdcb04f2ca6" category="inline-link-macro-rx"></block>。</block>
   <block id="54ab5224cb7ab20d9d094be05a20cb88" category="section-title">2026 年 5 月 26 日</block>
+  <block id="bf294be5c1e56f5593f503af52286773" category="paragraph">勒索軟體韌性現在支援在 Google Cloud NetApp Volumes 系統中建立保護群組，使您能夠將多個工作負載組織在一個政策下，以簡化管理。</block>
+  <block id="8d317d4f29fef19dda568fc8ae7b0751" category="paragraph">如需更多資訊，請參閱<block ref="002b0319872c1627d4b50bdcb04f2ca6" category="inline-link-macro-rx"></block>。</block>
+  <block id="9d72a156b56c5cfe0d0bcd54c96cf39a" category="paragraph">Ransomware Resilience 可與您現有的 Console 和 ONTAP 設定配合使用，以識別勒索軟體威脅、保護您的工作負載並快速恢復。</block>
+  <block id="40ad71d352fd267903b0c9896408ca5f" category="inline-link-macro">在 Ransomware Resilience 中配置備份目標</block>
+  <block id="a7594ef03dc90d06c5e3a823eab6aae4" category="admonition">您可以<block ref="0e8a0563855377563403f0031aef555d" category="inline-link-macro-rx"></block>。如果您的工作負載受到 NetApp Backup and Recovery 保護，Ransomware Resilience 會自動識別保護詳細資訊，包括快照和備份目的地。使用 Ransomware Resilience 不需要 Backup and Recovery。</block>
 </blocks>

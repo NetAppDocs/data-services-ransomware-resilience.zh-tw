@@ -108,7 +108,7 @@ NetApp Console提供企業級跨本機和雲端環境的NetApp儲存和資料服
 
 == 勒索軟體復原的工作原理
 
-Ransomware Resilience 使用 NetApp Backup and Recovery 來探索並設定檔案共用工作負載的快照和備份原則。
+Ransomware Resilience 可與您現有的 Console 和 ONTAP 設定配合使用，以識別勒索軟體威脅、保護您的工作負載並快速恢復。
 
 image:diagram-rp-architecture-preview3.png["勒索軟體抵禦能力架構​​圖"]
 
