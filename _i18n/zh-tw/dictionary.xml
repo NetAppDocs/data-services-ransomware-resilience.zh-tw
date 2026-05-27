@@ -2,8 +2,6 @@
 <blocks>
   <block id="d41d8cd98f00b204e9800998ecf8427e" category="doc"></block>
   <block id="fc873becb3d197af9044ddf128631756" category="inline-link-macro">了解NetApp Console的勒索軟體復原角色</block>
-  <block id="ffc546c33a9583234d58a821767e1895" category="paragraph">*所需的控制台角色* 要執行此任務，您需要組織管理員、資料夾或專案管理員、勒索軟體復原管理員或勒索軟體復原檢視器角色。<block ref="d9cbbacd5ef5cff6a1660fdb9d259f2f" category="inline-link-macro-rx"></block> 。</block>
-  <block id="abd422919398ff257d563d8b5c5699c0" category="paragraph">*所需的控制台角色* 要執行此任務，您需要組織管理員、資料夾或專案管理員或勒索軟體復原管理員角色。<block ref="d9cbbacd5ef5cff6a1660fdb9d259f2f" category="inline-link-macro-rx"></block> 。</block>
   <block id="a0bc9be88b94133627ac97e11a259c1c" category="paragraph">*所需的控制台角色* 要執行此任務，您需要勒索軟體復原使用者行為管理員角色。您無法使用 Ransomware Resilience 管理員角色執行此任務。<block ref="d9cbbacd5ef5cff6a1660fdb9d259f2f" category="inline-link-macro-rx"></block> 。</block>
   <block id="997bcd377ced78770953e6e3775b8ef8" category="doc">來自Digital Advisor的安全風險評估</block>
   <block id="ea7b2437ddd14dce6ba3f65494d634fd" category="inline-link">Digital Advisor文檔</block>
@@ -2548,4 +2546,7 @@
   <block id="9d72a156b56c5cfe0d0bcd54c96cf39a" category="paragraph">Ransomware Resilience 可與您現有的 Console 和 ONTAP 設定配合使用，以識別勒索軟體威脅、保護您的工作負載並快速恢復。</block>
   <block id="40ad71d352fd267903b0c9896408ca5f" category="inline-link-macro">在 Ransomware Resilience 中配置備份目標</block>
   <block id="a7594ef03dc90d06c5e3a823eab6aae4" category="admonition">您可以<block ref="0e8a0563855377563403f0031aef555d" category="inline-link-macro-rx"></block>。如果您的工作負載受到 NetApp Backup and Recovery 保護，Ransomware Resilience 會自動識別保護詳細資訊，包括快照和備份目的地。使用 Ransomware Resilience 不需要 Backup and Recovery。</block>
+  <block id="ff6a5ffc05eb6e03c3063d043a5357eb" category="inline-link-macro">超級管理員</block>
+  <block id="3a7fa73e20b4b1d037f90f17dc665f22" category="paragraph">*所需控制台角色* 要執行此任務，您需要擁有 <block ref="91fb5ef1173b6f41fdaa815d28743781" category="inline-link-macro-rx"></block>、Ransomware Resilience admin 或 Ransomware Resilience viewer 角色。<block ref="d9cbbacd5ef5cff6a1660fdb9d259f2f" category="inline-link-macro-rx"></block>。</block>
+  <block id="61c00724cddefbe4d1c796a3d8795e62" category="paragraph">*所需控制台角色* 要執行此任務，您需要擁有 <block ref="91fb5ef1173b6f41fdaa815d28743781" category="inline-link-macro-rx"></block> 或 Ransomware Resilience 管理員角色。<block ref="d9cbbacd5ef5cff6a1660fdb9d259f2f" category="inline-link-macro-rx"></block>。</block>
 </blocks>

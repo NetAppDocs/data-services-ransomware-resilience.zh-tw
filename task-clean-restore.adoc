@@ -16,7 +16,7 @@ summary: 在 NetApp Ransomare Resilience 中執行乾淨還原之前，您必須
 [role="lead"]
 NetApp Ransomware Resilience 提供乾淨還原，能在勒索軟體攻擊後引導進行復原。要執行乾淨還原，您必須先建立一個隔離復原環境（IRE），可以是在本地端或支援的雲端環境中。在 IRE 中，您會建立一個乾淨空間，讓 Ransomware Resilience 將工作負載隔離，以判斷哪些檔案是乾淨的，哪些則受到勒索軟體影響。
 
-*所需的控制台角色* 要執行此任務，您需要組織管理員、資料夾或專案管理員或勒索軟體復原管理員角色。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["了解NetApp Console的勒索軟體復原角色"^] 。
+*所需控制台角色* 要執行此任務，您需要擁有 link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-platform-roles.html#super-admin-roles["超級管理員"^] 或 Ransomware Resilience 管理員角色。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["了解NetApp Console的勒索軟體復原角色"^]。
 
 
 

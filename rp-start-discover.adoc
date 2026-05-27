@@ -21,7 +21,7 @@ NOTE: Ransomware Resilience 無法探索使用 FlexGroup 的磁碟區系統。
 
 勒索軟體韌性會檢查您目前的備份保護、快照複本，以及 NetApp Autonomous Ransomware Protection 選項。勒索軟體韌性也會偵測來自 NetApp Backup and Recovery 的檔案共用與 VM 檔案共用的保護資訊。然後，它會建議提升您勒索軟體防護的方法。
 
-*所需的控制台角色* 要執行此任務，您需要組織管理員、資料夾或專案管理員或勒索軟體復原管理員角色。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["了解NetApp Console的勒索軟體復原角色"^] 。
+*所需控制台角色* 要執行此任務，您需要擁有 link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-platform-roles.html#super-admin-roles["超級管理員"^] 或 Ransomware Resilience 管理員角色。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["了解NetApp Console的勒索軟體復原角色"^]。
 
 
 
