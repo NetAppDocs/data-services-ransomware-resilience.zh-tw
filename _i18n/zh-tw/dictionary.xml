@@ -1609,7 +1609,6 @@
   <block id="9f1822f26663cadd0ea726defa3cca17" category="list-text">在對話方塊中，選擇「刪除」以確認要從排除清單中刪除工作負載。</block>
   <block id="01e74a47d7af3692bf72faf95ffcd1a3" category="inline-image-macro">成功移除已排除的工作負載的螢幕截圖。</block>
   <block id="af77f82e6f94939c1b89727420b621ac" category="list-text">如果成功從排除的工作負載清單中刪除工作負載，則「排除的工作負載」頁面上將顯示成功訊息，且該工作負載將不再出現在已排除的工作負載清單中。如果操作失敗，將顯示錯誤訊息；請重試該操作。 <block ref="364f1d2f9b1485226ce83c7872b1bae0" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="b8b45f3c53a227dc5aa1d806ef340f06" category="list-text">**偵測策略** 辨識勒索軟體威脅</block>
   <block id="68fc9b8869c6d23ecc7c4acaf4ef7761" category="list-text">**複製策略** 使您能夠將勒索軟體復原功能的快照複製到輔助網站。複製計劃可以設定為每小時、每天、每週或每月一次的頻率。</block>
   <block id="3ed69b14426127876e3ab79ddc2e266e" category="paragraph">目前，您只能將快照複製到本機ONTAP儲存。</block>
   <block id="6474bbda8f7c072686c6e020cf107ead" category="list-text">從控制台左側導覽列中選擇“保護”&gt;“勒索軟體恢復”。</block>
@@ -1977,7 +1976,6 @@
   <block id="70a6131a6c77f1f9afbf85c23200dee6" category="list-text">建立磁碟區的快照</block>
   <block id="a4431e17a1690b12df20e34bb2f4b744" category="list-text">利用威脅情報豐富 IP 位址</block>
   <block id="762279f864f96ffbe81b311754b74896" category="list-text">豐富給定代理程式和系統的儲存資訊</block>
-  <block id="b826f101cb377022bc455ad2020f2f86" category="list-text">將磁碟區離線以進行事件回應</block>
   <block id="dbc85b383817f560c0d1b083f4449627" category="list-text">測試連線能力</block>
   <block id="870d0fb8b0bf7879e6ada101131c6864" category="list-text">檢閱擴充工作的狀態</block>
   <block id="5156f3fe3404db2816f53b4f01711a75" category="section-title">劇本</block>
@@ -2057,7 +2055,6 @@
   <block id="c81c8aac6cfb1c5f690b914eda6a69fd" category="inline-link-macro">將 Ransomware Resilience 連接至 SIEM</block>
   <block id="dbdca0e081ed0b247153e35ce9b1c298" category="paragraph">如需詳細資訊，請參閱 <block ref="d02df671c233387bf6b644be94acfdf7" category="inline-link-macro-rx"></block>。</block>
   <block id="7ee4b3a8392885d95b1b7c9f5a6c99e5" category="paragraph">資料外洩事件的相關資訊現在會在事件發生後保留 13 個月，從而滿足您更長的報告記錄保存需求。</block>
-  <block id="787e93d4c2f472a6434cd13d74f3f4d4" category="paragraph">如需詳細資訊，請參閱 <block ref="1a6935dbce91cdb72e61e2f8c1313b36" category="inline-link-macro-rx"></block>。</block>
   <block id="ff1d8a11789570b9a7e5f2d8fa4b3245" category="list-text">如果您尚未為其他服務新增 Console 代理程式，<block ref="51497621bfe4b6ebf6d24d0214cc9366" category="inline-link-macro-rx"></block>。</block>
   <block id="5ce927453063236746bf9f7b1ee339ed" category="list-text">選擇 *Add license* 進入 Console Licenses and subscriptions 頁面。</block>
   <block id="5aacdcc38fb6938e8f7950fb8e5395fc" category="doc">在 NetApp Ransomware Resilience 中檢視復原狀態</block>
@@ -2344,7 +2341,6 @@
   <block id="23261131430f46ec6fb27110ac7f00fc" category="section-title">SOAR 支援封鎖使用者</block>
   <block id="e5b8f2d9ef7cdce04d260640283c68c6" category="paragraph">Ransomware Resilience 現在支援使用 Google SecOps 和 Splunk SOAR playbook 封鎖單一使用者。透過此功能，當 Ransomware Resilience 偵測到可疑的使用者活動（例如資料外洩或大量刪除資料）時，您可以自動封鎖使用者。</block>
   <block id="2f82a2e72d177e2d1d65a490cf072506" category="paragraph"><block ref="f63222f2dbc8e79c6867c1aa1bf7ad40" category="inline-link-macro-rx"></block>。</block>
-  <block id="cec6d1e77603c10f8f9b0c0c23a333f4" category="list-text">封鎖使用者*</block>
   <block id="5e5e4d611b545e088600f1e94c227e02" category="list-text">在 Type （類型）部分中，選擇 *Cleaning only* （僅清潔）。</block>
   <block id="15133f0d70ddd9da0f0a4ccaf25d12f2" category="paragraph">安全資訊和事件管理 (SIEM) 系統集中管理日誌和事件資料，從而提供對安全事件和合規性的深入洞察。NetApp Ransomware Resilience 支援自動將資料傳送到您的 SIEM，以簡化威脅分析和偵測流程。</block>
   <block id="f6f2f1de81eb4c260d55918d831d8b4e" category="paragraph">Ransomware Resilience 支援以下 SIEM 系統：</block>
@@ -2486,11 +2482,8 @@
   <block id="d8e08662cf603a3c4ee9aaf071e19599" category="section-title">攻擊類型</block>
   <block id="e4234a1d906d9cdc9c698d93ee4a1039" category="paragraph">Ransomware Resilience 可辨識五種類型的攻擊：</block>
   <block id="fa56851239948098bf91b1314fa7effe" category="cell">攻擊類型</block>
-  <block id="0b890b1926b90387673882e6ccae7fdc" category="cell">定義</block>
   <block id="c4ffd36782688a65f942ba6948827e83" category="cell">加密（熵）</block>
-  <block id="fd2cef800f88467f684f65a53518ac63" category="cell">NetApp Ransomware Resilience 可以識別異常的 IOPS 模式、資料熵和非標準檔案後綴。</block>
   <block id="403901db25c61c486833fc82dd2d7acd" category="cell">加密（使用者行為）</block>
-  <block id="4ae2d9c30cc3f3a656abf5d6a3d16fa4" category="cell">Ransomware Resilience 可識別特定使用者執行的異常檔案讀取、寫入和重新命名活動。</block>
   <block id="bf4ede30456e84ab02d9c068f99126f7" category="cell">Ransomware Resilience 可偵測特定使用者執行的異常檔案讀取存取模式。</block>
   <block id="85205fe8e109c0311a7cc912374e07a9" category="cell">Ransomware Resilience 可偵測到特定使用者大量刪除檔案的行為。</block>
   <block id="9ad1cf824a5d301d8eb3668a3f64e5c9" category="cell">Ransomware Resilience 可識別超出資料外洩、資料銷毀或加密範圍的異常行為。</block>
@@ -2509,7 +2502,6 @@
   <block id="73ec7da766dca94cf1c4b669985cd2a5" category="list-text"><block ref="73ec7da766dca94cf1c4b669985cd2a5" category="inline-link-macro-rx"></block></block>
   <block id="f2947fbfc4001f394585c42e28740767" category="inline-link-macro">設定使用者行為代理程式和偵測器</block>
   <block id="ad709ceaf0cfdbb15b5cbf9fdce90fd8" category="list-text"><block ref="ad709ceaf0cfdbb15b5cbf9fdce90fd8" category="inline-link-macro-rx"></block></block>
-  <block id="bd3c8dbfc7f9bd3854a71cfc2ee0f27e" category="paragraph">{asterisk} 使用者封鎖功能僅適用於 Splunk 和 Google SecOps SOAR playbook。您必須在受支援的系統上設定 <block ref="1c8c6ad1b9f3fa5ec23ffb4b53fcc1e8" category="inline-link-macro-rx"></block> 才能封鎖使用者。</block>
   <block id="4a7bec04cbec6247858664ff561920a3" category="paragraph">Ransomware Resilience 支援對本機 ONTAP 系統以及 Amazon FsxN for NetApp ONTAP 和 Cloud Volumes ONTAP 系統中的工作負載進行使用者行為偵測,這些系統符合 <block ref="12d7be4f3da31a90f0de3bba45ddeec1" category="inline-xref-macro-rx"></block>。</block>
   <block id="f79eb8967b3c8df9a5242b71bfa6765b" category="paragraph">使用者行為資料可以儲存在 AWS 和 Azure 的以下區域：</block>
   <block id="f7d8c82b937f1272bcd68f037f70dcbb" category="list-text">Azure NetApp Files 不支援 FPolicy 或使用者行為偵測。Azure NetApp Files 也不支援熵鑑識。</block>
@@ -2549,4 +2541,25 @@
   <block id="ff6a5ffc05eb6e03c3063d043a5357eb" category="inline-link-macro">超級管理員</block>
   <block id="3a7fa73e20b4b1d037f90f17dc665f22" category="paragraph">*所需控制台角色* 要執行此任務，您需要擁有 <block ref="91fb5ef1173b6f41fdaa815d28743781" category="inline-link-macro-rx"></block>、Ransomware Resilience admin 或 Ransomware Resilience viewer 角色。<block ref="d9cbbacd5ef5cff6a1660fdb9d259f2f" category="inline-link-macro-rx"></block>。</block>
   <block id="61c00724cddefbe4d1c796a3d8795e62" category="paragraph">*所需控制台角色* 要執行此任務，您需要擁有 <block ref="91fb5ef1173b6f41fdaa815d28743781" category="inline-link-macro-rx"></block> 或 Ransomware Resilience 管理員角色。<block ref="d9cbbacd5ef5cff6a1660fdb9d259f2f" category="inline-link-macro-rx"></block>。</block>
+  <block id="4b77ea6c402cb5104fd06a61c7376030" category="inline-link-macro">了解使用者行為偵測</block>
+  <block id="85780f52607b54dbe81ff2c46d981a17" category="paragraph">如需詳細資訊，請參閱<block ref="371ae1c35fd8f1482622c079d0f009f9" category="inline-link-macro-rx"></block>。</block>
+  <block id="ad047b692e58386490130db85fe198fd" category="doc">增強保護策略的靈活性</block>
+  <block id="0492ddae19933de338f553ff06833c6f" category="paragraph">Ransomware Resilience 現在提供了更靈活的勒索軟體偵測策略選擇。以前，所有勒索軟體防護策略都必須包含加密偵測。現在，您可以啟用僅包含使用者行為偵測的勒索軟體防護策略。</block>
+  <block id="7238c31678a241cb872ee9d18f1e46a2" category="paragraph">保護策略仍然可以同時包含加密偵測和可疑使用者行為偵測。任何保護策略還可以新增封鎖檔案副檔名的功能。</block>
+  <block id="bd1924893d8fb00ed3c326b7af6243b5" category="paragraph">如果停用現有原則的部分保護策略，則在先前原則版本下建立的任何現有警示只能標記為「已解決」，而不能標記為「已忽略」。例如，如果您的保護策略包含加密偵測和可疑使用者行為偵測，但您停用了加密偵測，則只能解決該工作負載的現有加密警示。</block>
+  <block id="2b7a103134591ddcc36191e5b569a29b" category="paragraph">如需詳細資訊，請參閱<block ref="5b0b8f72704979749944145d24f2c6be" category="inline-link-macro-rx"></block>。</block>
+  <block id="eac1000048fff271adb3d0d010dd86f5" category="section-title">SOAR 劇本增強功能</block>
+  <block id="993b3419e78327c12451169533b8d701" category="paragraph">勒索軟體恢復能力 SOAR 劇本現在提供了在阻止使用者或將磁碟區離線後的補救步驟。如果該操作被判定為並非勒索軟體威脅，您現在可以將磁碟區重新上線並解除對使用者的封鎖。</block>
+  <block id="74ea76930b47f412faf2fb55e463038e" category="cell">Ransomware Resilience 可識別異常的 IOPS 模式、資料熵和非標準檔案後綴。</block>
+  <block id="583ab768c1c1f45999e48e96c301cc48" category="cell">勒索軟體復原能力可識別特定使用者執行的異常檔案讀取、寫入和重新命名活動。</block>
+  <block id="48c197e68b527d9bc2137bcea71c2e76" category="list-text">封鎖/解除封鎖使用者*</block>
+  <block id="1943cfeff6e7967a7ab396ecab9a4c21" category="list-text">將磁碟區離線以進行事件回應，或在事件發生後將磁碟區上線</block>
+  <block id="46d3a8bf54f5d5c4058a1eba2e7daa4a" category="paragraph">{asterisk} 使用者封鎖/解除封鎖功能僅支援 Splunk 和 Google SecOps SOAR playbook。您必須在受支援的系統上設定 <block ref="1c8c6ad1b9f3fa5ec23ffb4b53fcc1e8" category="inline-link-macro-rx"></block> 才能封鎖使用者。</block>
+  <block id="495dc566c29577d14a3418e529c90d3c" category="list-text">**偵測原則**可識別勒索軟體威脅。您有三種偵測選項：</block>
+  <block id="b3b96411f9486bb0c2c8a4e2b07e7d35" category="list-text">加密偵測</block>
+  <block id="2b694a9a00b006682bcbea870c2ca4fb" category="list-text">阻止可疑檔案副檔名</block>
+  <block id="a1c735fa1a87c7cfca09d994cfe02048" category="inline-link-macro">可疑的使用者活動（需要額外組態）</block>
+  <block id="262d414194517bdfa67b048201f2b424" category="paragraph">您的偵測原則可以包含所有三個選項或其組合。它必須包含加密偵測或 <block ref="0c1271458a5eed3dcf0b345a743161db" category="inline-link-macro-rx"></block>。</block>
+  <block id="38cfc49361136d6f7410fbe2c3b7430a" category="list-text">*保護變更*：包括對特定時間段（30 天、60 天、90 天或 1 年）內工作負載保護策略變更的審查。</block>
+  <block id="3e323562bd488e4cbd90a025b9424181" category="section-title">2026 年 6 月 08 日</block>
 </blocks>
