@@ -35,17 +35,14 @@ Ransomware Resilience 手冊提供以下功能：
 * link:https://github.com/chronicle/content-hub/tree/main/content/response_integrations/third_party/partner/netappransomwareresilience["Google SecOps"^]
 * link:https://github.com/Azure/Azure-Sentinel/tree/master/Solutions/NetApp%20Ransomware%20Resilience/Playbooks["Microsoft Sentinel"^]
 * link:https://github.com/splunk-soar-connectors/netappransomwareresilience["Splunk"^]
++
+對於 Splunk Cloud、您必須執行平台版本 7.0、7.1、7.2、8.0 或 8.4。如需詳細資訊、請參閱 link:https://splunkbase.splunk.com/app/8483["Splunkbase"^]。
 
 
-
-NOTE: 對於 Splunk Cloud、您必須執行平台版本 7.0、7.1、7.2、8.0 或 8.4。如需詳細資訊、請參閱 link:https://splunkbase.splunk.com/app/8483["Splunkbase"^]。
 
 
 NOTE: 對於 Azure NetApp Files 系統，請查看 link:rp-reference-limitations.html["Azure NetApp Files 的限制"] 與 SOAR。
 
-
-
-== 更多資訊
-
+.更多資訊
 * link:task-siem.html["將 NetApp Ransomware Resilience 連接至 SIEM 以進行威脅分析與偵測"]
 

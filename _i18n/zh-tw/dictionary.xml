@@ -521,7 +521,6 @@
   <block id="179e5ea4317177f519c688d15ef67987" category="paragraph"><block ref="179e5ea4317177f519c688d15ef67987" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e462715e9b155f4f9638da4f314c8aff" category="list-text">選擇*準備演習*和*下載*以下載準備演習報告。</block>
   <block id="4c8cd66676ad1c434108e699d9777408" category="paragraph">您可以忽略誤報或決定立即恢復資料。</block>
-  <block id="899157335f0c98105a8cbc92966ba06d" category="admonition">如果您關閉警報，勒索軟體復原功能會了解此行為，將其與正常操作關聯，並且不會再次對其發出警報。</block>
   <block id="a8fd9e3988acb841854762788963d815" category="paragraph">要開始恢復數據，請將警報標記為準備好恢復，以便儲存管理員可以開始恢復程序。</block>
   <block id="304b86572af1a03e438d6a3b86bfad43" category="paragraph">每個警報可能包含不同數量​​和狀態的多個事件。審查所有事件。</block>
   <block id="271b5be554c7641bb10d05402276d05a" category="list-text">文件擴展名已建立或更改</block>
@@ -709,10 +708,6 @@
   <block id="4dc51b8615944f599801153cc7777840" category="list-text">在此頁面中，您可以查看和變更工作負載的保護詳細資料。</block>
   <block id="cf077fd7afe54e3a0c2d1f4f171b9592" category="inline-link-macro">增加勒索軟體防護策略</block>
   <block id="ce4ef271bc40fcdcc146584fcac5d544" category="paragraph">*保護狀態*：工作負載可以顯示下列保護狀態之一，以指示是否套用了政策：</block>
-  <block id="463f5e1b668b83efc12cf4dbc90300ff" category="list-text">*受保護*：已套用原則。與工作負載相關的所有磁碟區上均啟用了 ARP（或 ARP/AI，取決於ONTAP版本）。</block>
-  <block id="2849b9294b844719ab6e63ff0e8d64a0" category="list-text">*存在風險*：未應用任何保單。如果工作負載沒有啟用主要偵測策略，那麼即使啟用了快照和備份策略，它仍然「處於危險之中」。</block>
-  <block id="d8b2d86957c187231adaeb328cc57adb" category="list-text">*進行中*：政策正在應用但尚未完成。</block>
-  <block id="a6539f11a6b87c60fecf3f4d34dfb4d1" category="list-text">*失敗*：策略已套用但不起作用。</block>
   <block id="0882532dc9eb74e24a8b137f1e6a0b39" category="paragraph">勒索軟體復原能力根據對每個工作負載的分析，在發現過程中為每個工作負載分配重要性或優先順序。工作負載重要性由下列快照頻率決定：</block>
   <block id="58adba48bf0678c3abb71d1fdf829602" category="paragraph">您可以選擇以下勒索軟體復原預定義策略之一，這些策略與工作負載重要性相符。</block>
   <block id="4d293abd3f96b37c9afdf90f01855f8b" category="admonition">**加密使用者擴充**策略是唯一支援可疑使用者行為偵測的預先定義策略。</block>
@@ -767,7 +762,6 @@
   <block id="e4574be2aa1d855d0a159fa734c028b7" category="list-text">對於每個項目，選擇*向下箭頭*。</block>
   <block id="b77a56354e9e39a76b1a118e9bfa09d3" category="list-text">*檢測政策*：</block>
   <block id="949db64066489b0349a4ff1451832808" category="list-text">*策略*：選擇預先設計的偵測策略之一。</block>
-  <block id="66ecff8104cfb8cf22c05ebdad07a66a" category="list-text">*可疑使用者行為偵測*：啟用使用者行為偵測，將使用者活動事件傳輸到勒索軟體復原能力並偵測可疑事件，例如資料外洩。</block>
   <block id="7c06fadd4f73e4b63eb519df7d9880fc" category="paragraph">如果您想更改被封鎖的檔案副檔名，請在系統管理員中編輯它們。</block>
   <block id="c8499d03897189696e5af26fc5ab9f45" category="list-text">*快照策略*：</block>
   <block id="007ac2633329ecdb55692304050d9260" category="list-text">*快照策略基礎名稱*：選擇一個政策或選擇*建立*並輸入快照策略的名稱。</block>
@@ -988,7 +982,6 @@
   <block id="0df177143ce12a3516098cd3329e85c2" category="section-title">設定 AWS Security Hub 進行威脅偵測</block>
   <block id="de9b4f41a945df92e6c5b62f443f03f1" category="list-text">在 AWS Security Hub 中設定權限。</block>
   <block id="5fd0d2c5fd8b96b7b7b69f69b942c559" category="list-text">在 AWS Security Hub 中設定身份驗證存取金鑰和金鑰。  （此處未提供這些步驟。）</block>
-  <block id="12eef9b6a125a82d69978241dca88c07" category="list-title">在 AWS Security Hub 中設定權限的步驟</block>
   <block id="66d20ba773065dfc079ca6feb04ef773" category="list-text">前往 *AWS IAM 控制台*。</block>
   <block id="bf6953a41efa897b0862fca0fe547641" category="list-text">選擇*政策*。</block>
   <block id="2228b7980f61d80481608141744ecee0" category="list-text">使用以下 JSON 格式的程式碼建立策略：</block>
@@ -1375,11 +1368,8 @@
   <block id="65a602dc25a2da85e0a1dfb15824b10b" category="paragraph-title">如何將資料與工作負載關聯？</block>
   <block id="e2201c0935bcdfd14ed840897f30bcdc" category="paragraph">勒索軟體復原能力會發現捲和檔案副檔名，並將它們與相應的工作負載關聯起來。</block>
   <block id="f7d49d845f0e8fd37a070e797785ddd2" category="paragraph-title">什麼是受保護的工作負載？</block>
-  <block id="7259cd6e0f46eebf9079f25f465a8c63" category="inline-link-macro">自主勒索軟體防護 (ARP)</block>
-  <block id="7fd0dced59717f1ce225e83c1eba7879" category="paragraph">在勒索軟體復原能力中，當工作負載啟用了主要偵測策略時，其狀態將顯示為“*受保護*”，這意味著 <block ref="f47b2a56bf7e72f952a180e4f688a755" category="inline-link-macro-rx"></block> 已在與工作負載相關的所有磁碟區上啟用。</block>
   <block id="a7728d009ece45c9ca2552ef1b9e83b5" category="paragraph-title">什麼是「高風險」工作量？</block>
   <block id="feb245a8019757951a6c89440c58dbd0" category="inline-link-macro">檢測策略</block>
-  <block id="073899b4550e086de0057b494471a8d5" category="paragraph">如果工作負載未啟用主偵測策略，即使啟用了備份和快照策略，也會被標記為「有風險」。為了防止勒索軟體攻擊，您應該啟用… <block ref="ffe6233ab872c39a610f87efd1e90b37" category="inline-link-macro-rx"></block>。</block>
   <block id="77f988a37bbdd1881b090c55f9b830f1" category="paragraph-title">我新增了一個新卷，但它還沒有顯示出來。我該怎麼辦？</block>
   <block id="2173d44554906f5f04303f8e155b7e0d" category="inline-link-macro">採取保護策略以保護新增容量</block>
   <block id="b79a0001646a8a21be92374c30d89073" category="paragraph">如果您在環境中新增了新磁碟區，請重新啟動工作負載發現。在發現體積後， <block ref="11d93ee27365ded5cd7b6061cdb7f916" category="inline-link-macro-rx"></block>。</block>
@@ -1622,8 +1612,6 @@
   <block id="aa9adfa847815670c9bd986dafc8c79c" category="cell">快照副本的最大數量</block>
   <block id="cf9344351eb239ccd95661876c4d97ee" category="cell">*關鍵複製策略*</block>
   <block id="ad53fda1a18da9db9d8aa1d460952aa5" category="list-text">二次複製到ONTAP</block>
-  <block id="8f6c5d8baaf38cda61b5392a06e30e68" category="list-text">*主要偵測*：啟用勒索軟體復原功能，以偵測潛在的勒索軟體攻擊。</block>
-  <block id="21fd87cf8a3d6f008657537a5cec6e82" category="list-text">*封鎖檔案副檔名*：啟用勒索軟體復原功能，以封鎖已知的可疑檔案副檔名。啟用主偵測功能後，勒索軟體復原功能會自動建立快照副本。</block>
   <block id="50723c157cd9ea132a02f421411e273d" category="list-text">*複製策略*：</block>
   <block id="f84245dfb1fc8217e62c0934102ba606" category="list-text">*複製策略基本名稱*：輸入新名稱或選擇現有名稱。基本名稱是附加到所有快照的前綴。</block>
   <block id="d230465858c85552b6c5a5b1ef3bb21f" category="list-text">*複製計畫*：切換要啟用的頻率（每小時、每天、每週或每月），並為每個啟用的計畫設定保留值（要保留的複製快照的數量）。</block>
@@ -2346,7 +2334,6 @@
   <block id="f6f2f1de81eb4c260d55918d831d8b4e" category="paragraph">Ransomware Resilience 支援以下 SIEM 系統：</block>
   <block id="963e2ddcdebcdd0f6fcbd1dad696e580" category="admonition">NetApp Ransomware Resilience 也提供 <block ref="de8332ed81162473af5cb8a1551a7e36" category="inline-link-macro-rx"></block>。</block>
   <block id="1d128c6086cbb73d30a6cbf3e127963d" category="list-text">*title*：偵測到的警示的顯示名稱。</block>
-  <block id="bf49f7b724de055a76d11fee549a6a9c" category="paragraph">在 Ransomware Resilience 中啟用 AWS Security Hub 之前，您需要在 AWS Security Hub 中執行以下幾個主要步驟：</block>
   <block id="41b1238763de1c7569a52c2f6f418f26" category="list-title">在 Ransomware Resilience 中驗證 AWS Security Hub</block>
   <block id="a9e57cc6ddc3d658ec2f623d0d9bc8a4" category="list-text">在 Ransomware Resilience 中，選取側邊欄中的 *Settings* 。</block>
   <block id="d28cdccd0f4e99a6f4e0f91d5197063e" category="list-text">選擇 *AWS Security Hub* 作為 SIEM 供應商。</block>
@@ -2562,4 +2549,18 @@
   <block id="262d414194517bdfa67b048201f2b424" category="paragraph">您的偵測原則可以包含所有三個選項或其組合。它必須包含加密偵測或 <block ref="0c1271458a5eed3dcf0b345a743161db" category="inline-link-macro-rx"></block>。</block>
   <block id="38cfc49361136d6f7410fbe2c3b7430a" category="list-text">*保護變更*：包括對特定時間段（30 天、60 天、90 天或 1 年）內工作負載保護策略變更的審查。</block>
   <block id="3e323562bd488e4cbd90a025b9424181" category="section-title">2026 年 6 月 08 日</block>
+  <block id="8301d3df17a7d3b229e97daa256bc551" category="paragraph">在 Ransomware Resilience 中，如果工作負載啟用了_偵測_原則，則其狀態將顯示為*受保護*。此偵測原則必須包含加密偵測或可疑使用者行為偵測（或兩者兼有）。它還可以包含可疑檔案副檔名偵測。如需更多資訊，請參閱 <block ref="ffe6233ab872c39a610f87efd1e90b37" category="inline-link-macro-rx"></block>。</block>
+  <block id="6c6097f9e44fb30ef0bc0a6e210dce9b" category="paragraph">如果工作負載未啟用偵測原則，即使啟用了備份和快照原則，也會被標記為「有風險」。為了防止勒索軟體攻擊，您應該啟用 <block ref="ffe6233ab872c39a610f87efd1e90b37" category="inline-link-macro-rx"></block>。</block>
+  <block id="fec111d809c49ffc75c21732e808fe2d" category="admonition">如果您忽略警報，Ransomware Resilience 會學習此行為，將其與正常操作關聯起來，並停止在類似事件發生時發送警報。</block>
+  <block id="7f2998da36c9b089182a98b4c6ff6c5d" category="admonition">如果您已實施保護策略，然後停用其中的某項偵測功能，則在先前策略版本下建立的任何警示只能標記為「已解決」，而不能標記為「已忽略」。例如，如果您有一個針對包含加密偵測和可疑使用者行為偵測的保護策略的有效警示，但後來停用了加密偵測，則您只能將該警示標記為「已解決」。</block>
+  <block id="5e37428a91a220042e4764361ae6e656" category="list-text">*加密偵測*：啟用 Ransomware Resilience 以偵測基於加密的攻擊。</block>
+  <block id="83b90da4f4a4213417bbdd607b6813c9" category="list-text">*可疑使用者行為偵測*：啟用使用者行為偵測，將使用者活動事件傳輸到 Ransomware Resilience，並偵測可疑事件，例如資料外洩或資料銷毀。</block>
+  <block id="8d9e80b9523ae8e43c09fee979fbfe13" category="list-text">*封鎖檔案副檔名*：啟用 Ransomware Resilience 以封鎖已知的可疑檔案副檔名。</block>
+  <block id="87c5b70bcda4f0448400bb7245e5d975" category="admonition">您可以選擇任意組合的偵測原則。偵測原則必須包含加密偵測或可疑使用者行為偵測。</block>
+  <block id="18282a82722e35ec83f6634f6933e908" category="list-text">*受保護*：已套用偵測原則。</block>
+  <block id="689a050b69b980dbe9c67ea9fdaeb981" category="list-text">*處於風險狀態*：未套用任何策略。即使啟用了快照和備份策略，如果工作負載未啟用偵測策略，則仍處於「風險狀態」。</block>
+  <block id="1c2f725024e8db3f57c9ffb6c1869a4f" category="list-text">*進行中*：正在套用原則，但作業尚未完成。</block>
+  <block id="7f2fe4ecc84891950d87f953f70363aa" category="list-text">*失敗*：原則已設定，但發生錯誤。</block>
+  <block id="ed3c60417302240ba271d87f011c0f32" category="paragraph">在 Ransomware Resilience 中啟用 AWS Security Hub 之前，您需要在 AWS Security Hub 中執行安全組態設定：</block>
+  <block id="6209d7a62e35781f2a36ba4149e80d90" category="list-title">在 AWS Security Hub 中設定權限</block>
 </blocks>
