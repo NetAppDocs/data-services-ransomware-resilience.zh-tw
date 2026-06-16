@@ -6,7 +6,7 @@
 | 環境 | 協定 | 支援的版本 
 
 
-| Amazon FSx for NetApp ONTAP* | CIFS、NFS 和 SAN | 不適用 
+| Amazon FSx for NetApp ONTAP | CIFS、NFS 和 SAN | 不適用 
 
 
 | Azure NetApp Files | CIFS 和 NFS | 不適用 
@@ -38,7 +38,5 @@
 
 | Google Cloud NetApp Volumes | CIFS、NFS、SAN（iSCSI 和 NVMe） | 不適用 
 |===
-{asterisk} Amazon FSx for NetApp ONTAP使用自主勒索軟體保護 (ARP) 而非 ARP/AI。有關兩者區別的更多信息，請參閱link:https://docs.netapp.com/us-en/ontap/anti-ransomware/#arp-ai["ARP/AI"^]。
-
 
 NOTE: Azure NetApp Files 或 Google Cloud NetApp Volumes 不支援使用者活動偵測。如需使用者活動偵測支援的詳細資訊、請參閱link:reference-user-activity-requirements.html["使用者活動偵測需求"]。

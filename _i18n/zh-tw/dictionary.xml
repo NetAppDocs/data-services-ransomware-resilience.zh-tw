@@ -1411,7 +1411,6 @@
   <block id="3c110de67497eb3f8d4c100e43101c81" category="cell">美國東部</block>
   <block id="0ba29c6a1afacf586b03a26162c72274" category="cell">環境</block>
   <block id="888a77f5ac0748b6c8001822417df8b6" category="cell">協定</block>
-  <block id="b881921e058834170584afe9213c4c73" category="cell">Amazon FSx for NetApp ONTAP*</block>
   <block id="382b0f5185773fa0f67a8ed8056c7759" category="cell">不適用</block>
   <block id="096f3522cfa2f31de45d052b740adc65" category="cell">適用於 AWS 的Cloud Volumes ONTAP</block>
   <block id="05bcab512eefa1e7e2cc2d1e45970a7d" category="cell">CIFS 和 NFS</block>
@@ -1421,8 +1420,6 @@
   <block id="9722c69e4736d9b151d70e30b917a4e1" category="cell">適用於 Microsoft Azure 的Cloud Volumes ONTAP</block>
   <block id="22f284bcf4504118b4d7e9ed2bce2c2e" category="cell">9.12.1 及更高版本</block>
   <block id="7cfe224d3c8892dba0ae59bcf6d0c053" category="cell">ONTAP （本地部署）</block>
-  <block id="954e661212d7a62095e6b957259dc36f" category="inline-link-macro">ARP/AI</block>
-  <block id="7271886a703021fd0851304115b49ee2" category="paragraph">{asterisk} Amazon FSx for NetApp ONTAP使用自主勒索軟體保護 (ARP) 而非 ARP/AI。有關兩者區別的更多信息，請參閱<block ref="ee25b596f35c0a0b982fc7b7e342f828" category="inline-link-macro-rx"></block>。</block>
   <block id="c71c95f02c8e85a6e5cddd09ad2a5d8b" category="admonition">在ONTAP中使用 ARP/AI 需要ONTAP 9.16 或更高版本。+ ONTAP不為FabricPool FlexCache、 FlexGroup磁碟區、一致性群組掛載點磁碟區、掛載路徑磁碟區、離線磁碟區和資料保護 (DP) 磁碟區提供勒索軟體防護支援。請務必查看<block ref="49252e6bcf11c366c792cea95977195b" category="inline-link-macro-rx"></block>。</block>
   <block id="2feeca48692986e9cc471ec61f847fca" category="paragraph">NetApp以多種方式為NetApp Console及其雲端服務提供支援。全天候提供廣泛的免費自助支援選項，例如知識庫 (KB) 文章和社群論壇。您的支援註冊包含透過網路工單取得的遠端技術支援。</block>
   <block id="317cbd2c4fdbfd06a6c66bcd3f57d7ad" category="paragraph">有關雲端提供者文件服務、其基礎設施或使用該服務的任何解決方案的技術支持，請參閱該產品的文檔。</block>
@@ -1717,7 +1714,6 @@
   <block id="c65a69d50600a3f76ccdd1109d15b6e3" category="inline-link-macro">排除使用者</block>
   <block id="d632bf28d8164d0436ca05f069b989e9" category="admonition">若要重新啟用某個使用者的警報，請返回該警報。選擇三個點，然後選擇 **Include this user in monitoring**。您也可以<block ref="e33a84d4132808c30f0e6b091e9f7e88" category="inline-link-macro-rx"></block>從監控。</block>
   <block id="fb7f1789c81ab5377f72e16f6b9384ad" category="inline-link-macro">每項服務的限制</block>
-  <block id="771abd282157ca2dcc3c9f4d73d158c2" category="admonition">如果您正在為 Amazon FSxN for ONTAP 和 Azure NetApp Files 配置保護策略，請參閱<block ref="f35eaad9edb95ec2be22c4403bf0d360" category="inline-link-macro-rx"></block>。</block>
   <block id="3adbdb581af927d3972b2f1c8cfb96a6" category="admonition">Amazon FSx for NetApp ONTAP 或 Azure NetApp Files 中的工作負載無法使用備份目的地。請使用 FSx for ONTAP 備份服務執行備份作業。您需要在 AWS 中為 FSx for ONTAP 工作負載設定備份原則，而不是在 Ransomware Resilience 中設定。備份原則會顯示在 Ransomware Resilience 中，並且與 AWS 中的設定保持一致。</block>
   <block id="3bc2d94b3185bcb1259a8b3cf7da880b" category="list-text">選擇所需的偵測設定：</block>
   <block id="eb7705f4441056c554dc7aea52de0b17" category="paragraph">如果某些受信任使用者的行為可能會觸發使用者行為警示，您可以將他們從警示中排除。</block>
@@ -1818,7 +1814,6 @@
   <block id="3e16604d2667be9816f6bfb6ba4f70f1" category="list-text"><block ref="3e16604d2667be9816f6bfb6ba4f70f1" category="inline-link-macro-rx"></block></block>
   <block id="1054e7cee5045661c2dae3afe8f146e4" category="list-text">選擇 *Authenticate* 。</block>
   <block id="3538785960373ea81ad23e72866e9266" category="sidebar">檢閱保護</block>
-  <block id="9b792a24170d5651c572c72e1a0fcfc2" category="admonition">目前 SAN 工作負載不支援使用者活動偵測。您可以在 Amazon FSxN for ONTAP、Cloud Volumes ONTAP 和 ONTAP 中使用 NAS 工作負載的使用者活動偵測。</block>
   <block id="51f69bf6a11f3daca8752b8344ebc420" category="section-title">警示的產生方式</block>
   <block id="9e7bcb464844b7db89d979e9085bac76" category="paragraph">Ransomware Resilience 依靠資料熵模式、檔案副檔名類型和加密方式等方面的證據來產生警報。警報基於以下事件：</block>
   <block id="fb7cc6e16ef254f2ff2f03b0ba6cadee" category="list-text">資料外洩</block>
@@ -2001,7 +1996,6 @@
   <block id="261f193d834ffba7dae6c54f99306659" category="list-text">前往您選擇的 Splunk 環境：Cloud 或 Enterprise。</block>
   <block id="eade5cc0d987bed25c884550a681c364" category="list-text">前往 Splunk Cloud 或 Enterprise。</block>
   <block id="c49fdbd48abc0805f78e165d087f6c4b" category="list-title">無塵室 SVM 資料 LIF IP（crr-data-LIF-IP）</block>
-  <block id="f0778a7682182f497af90edd54b04a18" category="admonition">如果您正在為 ONTAP 配置來源為 Amazon FSxN 的 IRE，請跳過此無塵室 SVM 資料 LIF IP 要求。</block>
   <block id="074ccc576a0d2f59ff97aa7d5cd6f1db" category="list-text">為潔淨室 SVM 資料 LIF 配置 IP 位址。記下該 IP 位址：IRE 組態程序中需要用到此 IP 位址。</block>
   <block id="6e72e986d17ee66e6f3fdfe4e138163d" category="list-text">對於使用雲端到雲端乾淨還原的 AWS Cloud Volumes ONTAP，請確保已將 IP 位址指派給彈性網路介面。</block>
   <block id="b1573f80f25470f8eb281542e0c5be32" category="list-text">允許從 SVM 資料 LIF IP 路由到 IRE。</block>
@@ -2105,7 +2099,6 @@
   <block id="8086e076c1440c96a66792ace0ad9a9a" category="list-text">US East 1</block>
   <block id="2cefd515e4957f2cd0e6e94109aedf59" category="list-text">EU Central 1</block>
   <block id="3189552bad716cc50b21cf06e1ce8055" category="cell">雲端:Cloud Volumes ONTAP 與 AWS*</block>
-  <block id="6eac9a8614fc5276d77f16262e773b73" category="cell">雲端：Amazon FSxN for ONTAP</block>
   <block id="b1f5b0ae27e9c2d8ce17d7546a138c55" category="paragraph">{asterisk} 您必須執行 ONTAP 9.11.1 或更高版本。</block>
   <block id="e94e6e5768958058fb727a7416bb95cc" category="inline-link-macro">成本與授權</block>
   <block id="df793ad0d2ee67dbaef2bbd64569c674" category="admonition">在雲端環境中執行全新還原可能會產生雲端供應商的額外運算費用。如需詳細資訊，請參閱 <block ref="c8aa07fb5af5da0ce42c5de706498fc6" category="inline-link-macro-rx"></block>。</block>
@@ -2175,7 +2168,6 @@
   <block id="c8e2277ecfb1427838c488c217f99466" category="open-title">雲端</block>
   <block id="b0836e1bf6680e789281aea3293f7647" category="list-text">對於雲端型 IRE，請選擇 **Amazon Web Services**。</block>
   <block id="b330f48d8947ae91888a185951c00937" category="list-text">展開 *Systems* 區段。選擇您要連線至 IRE 的系統。對於您選取的每個系統，您必須提供儲存 VM 的 IP 位址、子網路遮罩和閘道。</block>
-  <block id="9c0961645ab2dde42b360b9dd39f0dcc" category="admonition">對於部署到 Amazon FSxN for ONTAP 的 IRE，您無需提供此資訊。</block>
   <block id="be33043acadffab164c32971cd856af7" category="inline-image-macro">系統選擇介面的螢幕擷取畫面。</block>
   <block id="9aa6cf1eff1a76b0409b3e752312ea85" category="paragraph"><block ref="9aa6cf1eff1a76b0409b3e752312ea85" category="inline-image-macro-rx" type="image"></block></block>
   <block id="89fdf1c0dc132ad5060755aed85034a8" category="list-text">展開 **Authentication** 部分。</block>
@@ -2489,7 +2481,6 @@
   <block id="73ec7da766dca94cf1c4b669985cd2a5" category="list-text"><block ref="73ec7da766dca94cf1c4b669985cd2a5" category="inline-link-macro-rx"></block></block>
   <block id="f2947fbfc4001f394585c42e28740767" category="inline-link-macro">設定使用者行為代理程式和偵測器</block>
   <block id="ad709ceaf0cfdbb15b5cbf9fdce90fd8" category="list-text"><block ref="ad709ceaf0cfdbb15b5cbf9fdce90fd8" category="inline-link-macro-rx"></block></block>
-  <block id="4a7bec04cbec6247858664ff561920a3" category="paragraph">Ransomware Resilience 支援對本機 ONTAP 系統以及 Amazon FsxN for NetApp ONTAP 和 Cloud Volumes ONTAP 系統中的工作負載進行使用者行為偵測,這些系統符合 <block ref="12d7be4f3da31a90f0de3bba45ddeec1" category="inline-xref-macro-rx"></block>。</block>
   <block id="f79eb8967b3c8df9a5242b71bfa6765b" category="paragraph">使用者行為資料可以儲存在 AWS 和 Azure 的以下區域：</block>
   <block id="f7d8c82b937f1272bcd68f037f70dcbb" category="list-text">Azure NetApp Files 不支援 FPolicy 或使用者行為偵測。Azure NetApp Files 也不支援熵鑑識。</block>
   <block id="30d4c1b67b11bb42e2278b195f299c80" category="list-text">目前，您只能對 Google Cloud NetApp Volumes 工作負載套用基於加密和 FPolicy 的保護策略。您無法套用使用者行為保護策略。</block>
@@ -2563,4 +2554,11 @@
   <block id="7f2fe4ecc84891950d87f953f70363aa" category="list-text">*失敗*：原則已設定，但發生錯誤。</block>
   <block id="ed3c60417302240ba271d87f011c0f32" category="paragraph">在 Ransomware Resilience 中啟用 AWS Security Hub 之前，您需要在 AWS Security Hub 中執行安全組態設定：</block>
   <block id="6209d7a62e35781f2a36ba4149e80d90" category="list-title">在 AWS Security Hub 中設定權限</block>
+  <block id="7eba97a8ef53163c9fd30177df926301" category="admonition">如果您正在設定來源位於 Amazon FSx for NetApp ONTAP 中的 IRE，請跳過此無塵室 SVM 資料 LIF IP 要求。</block>
+  <block id="4d82a1ec1af02725042c8c785564ee7a" category="cell">Amazon FSx for NetApp ONTAP</block>
+  <block id="7e04984fc8cb78806e36cbf9552342fd" category="admonition">目前 SAN 工作負載不支援使用者活動偵測。您可以在 Amazon FSx for NetApp ONTAP、Cloud Volumes ONTAP 和 ONTAP 中將使用者活動偵測與 NAS 工作負載搭配使用。</block>
+  <block id="d3009064cbb364032ea2a7bc94ab246b" category="paragraph">Ransomware Resilience 支援對本機 ONTAP 系統以及 Amazon FSx for NetApp ONTAP 和 Cloud Volumes ONTAP 系統中的工作負載進行使用者行為偵測，這些系統符合 <block ref="12d7be4f3da31a90f0de3bba45ddeec1" category="inline-xref-macro-rx"></block>。</block>
+  <block id="0270ec13158ac8d81c5022ad41a38235" category="admonition">如果您正在為 Amazon FSx for NetApp ONTAP 和 Azure NetApp Files 設定保護策略，請參閱<block ref="f35eaad9edb95ec2be22c4403bf0d360" category="inline-link-macro-rx"></block>。</block>
+  <block id="b70244907e8a4cb4fbb47d6e9fdda53a" category="cell">雲端：Amazon FSx for NetApp ONTAP</block>
+  <block id="b4bada7d854e6650f9cc28e404fe40fb" category="admonition">對於部署到 Amazon FSx for NetApp ONTAP 的 IRE，您無需提供此資訊。</block>
 </blocks>
