@@ -31,6 +31,9 @@ NOTE: Ransomware Resilience 無法探索使用 FlexGroup 的磁碟區系統。
 
 發現工作負載並不會自動保護它們。Ransomware Resilience 會在發現過程中識別來自 NetApp Backup and Recovery 或 ONTAP 的現有保護原則。任何沒有保護的工作負載都需要您link:rp-use-protect.html["設定保護"]。
 
+
+NOTE: 勒索軟體復原能力每個 Console 代理最多只能探索 3,000 個工作負載。
+
 .步驟
 . 從NetApp Console中，選擇「保護」>「勒索軟體復原能力」。
 +

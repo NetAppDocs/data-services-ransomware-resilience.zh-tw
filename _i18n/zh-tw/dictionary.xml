@@ -2561,4 +2561,6 @@
   <block id="0270ec13158ac8d81c5022ad41a38235" category="admonition">如果您正在為 Amazon FSx for NetApp ONTAP 和 Azure NetApp Files 設定保護策略，請參閱<block ref="f35eaad9edb95ec2be22c4403bf0d360" category="inline-link-macro-rx"></block>。</block>
   <block id="b70244907e8a4cb4fbb47d6e9fdda53a" category="cell">雲端：Amazon FSx for NetApp ONTAP</block>
   <block id="b4bada7d854e6650f9cc28e404fe40fb" category="admonition">對於部署到 Amazon FSx for NetApp ONTAP 的 IRE，您無需提供此資訊。</block>
+  <block id="f5b6822ed53c8f99c424ea0e8e011bf7" category="admonition">勒索軟體復原能力每個 Console 代理最多只能探索 3,000 個工作負載。</block>
+  <block id="bb4393b6187d55f98dbeb4c5bb8add00" category="list-text">每個 Console 代理程式最多可處理 3,000 個工作負載。</block>
 </blocks>

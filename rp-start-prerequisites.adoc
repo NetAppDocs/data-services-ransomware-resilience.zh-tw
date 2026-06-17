@@ -78,6 +78,7 @@ NOTE: 如果單一 Console 組織中有多個 Console 代理程式，則 Ransomw
 
 
 * 控制台代理必須具有 `cloudmanager-ransomware-protection`容器處於活動狀態。
+* 每個 Console 代理程式最多可處理 3,000 個工作負載。
 * 對於 ONTAP 或 Cloud Volumes ONTAP 叢集，勒索軟體復原功能需要 ONTAP 版本 9.11.1 或更高版本。
 +
 
