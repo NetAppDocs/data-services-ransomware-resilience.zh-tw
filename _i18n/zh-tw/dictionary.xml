@@ -2405,7 +2405,6 @@
   <block id="c36975af9ca6baf7b5a05658605b577d" category="paragraph">如果您需要更新特定系統的非管理員使用者權限，請使用此程序：</block>
   <block id="3e24330471da607e91da657f3cdf7a39" category="list-text">登入控制台。在儀表板上，找到需要更新 ONTAP 使用者權限的系統。</block>
   <block id="df790109011414a6034217652cd48d7c" category="inline-link-macro">全新還原</block>
-  <block id="ff3968cf2fd662dd2275d75511ef33af" category="cell">CIFS、NFS、SAN（iSCSI 和 NVMe）</block>
   <block id="a1b7351b5e78c5f7b3c07f1f9b210761" category="doc">Google Cloud NetApp Volumes 支援（預覽版）</block>
   <block id="d80af1c0606a32f418ab576db57cacc1" category="paragraph">勒索軟體復原功能現已支援 Google Cloud NetApp Volumes 系統，讓您能夠有效率地偵測並應對 Google Cloud NetApp Volumes 中的勒索軟體威脅。在進行發現時,勒索軟體復原功能會自動顯示來自 Google Cloud NetApp Volumes 系統的工作負載。發現這些系統後,它們會顯示在勒索軟體復原功能控制面板中。目前,勒索軟體復原功能對 Google Cloud NetApp Volumes 的支援仍處於預覽階段。</block>
   <block id="35b27350003f459df80234524883b5fc" category="inline-link-macro">勒索軟體復原能力的限制</block>
@@ -2563,4 +2562,6 @@
   <block id="b4bada7d854e6650f9cc28e404fe40fb" category="admonition">對於部署到 Amazon FSx for NetApp ONTAP 的 IRE，您無需提供此資訊。</block>
   <block id="f5b6822ed53c8f99c424ea0e8e011bf7" category="admonition">勒索軟體復原能力每個 Console 代理最多只能探索 3,000 個工作負載。</block>
   <block id="bb4393b6187d55f98dbeb4c5bb8add00" category="list-text">每個 Console 代理程式最多可處理 3,000 個工作負載。</block>
+  <block id="8df5e57d843114bbbb53a4c85f76cb68" category="list-text">來自 Google Cloud NetApp Volumes 的 SAN 工作負載目前不受勒索軟體復原功能支援。</block>
+  <block id="afce532bad172bcef50d75935d2ed43b" category="list-text">複製策略</block>
 </blocks>

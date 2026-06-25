@@ -56,7 +56,7 @@ summary: 透過驗證對您的環境、網路存取、登入和 Web 瀏覽器的
 | SAN（iSCSI 和 NVMe） | 9.17.1 及更高版本 
 
 
-| Google Cloud NetApp Volumes | CIFS、NFS、SAN（iSCSI 和 NVMe） | 不適用 
+| Google Cloud NetApp Volumes | CIFS 和 NFS | 不適用 
 |===
 
 NOTE: Azure NetApp Files 或 Google Cloud NetApp Volumes 不支援使用者活動偵測。如需使用者活動偵測支援的詳細資訊、請參閱link:reference-user-activity-requirements.html["使用者活動偵測需求"]。

@@ -738,9 +738,10 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect
 
 如果工作負載上不存在快照或備份策略，您可以建立勒索軟體防護策略，其中可以包含您在此服務中建立的以下策略：
 
-* 快照策略
-* 備份策略
 * 檢測策略
+* 備份策略
+* 快照策略
+* 複製策略
 
 
 https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect.html["了解有關保護工作負載的更多信息"] 。
