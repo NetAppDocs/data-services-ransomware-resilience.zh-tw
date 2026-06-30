@@ -1,0 +1,78 @@
+---
+sidebar: sidebar 
+permalink: task-automate-user-activity.html 
+keywords: data breach detection, data breach, user activity, automated response 
+summary: NetApp Ransomware Resilience 支援對使用者活動事件建立自動回應，使您能夠自動建立快照或封鎖使用者。 
+---
+= 在 NetApp Ransomware Resilience 中自動回應使用者活動警報
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp Ransomware Resilience 支援建立自動回應link:concept-user-behavior.html["使用者活動事件"]。透過自動回應功能，Ransomware Resilience 可在偵測到攻擊或警告時建立快照或封鎖使用者，從而更迅速地回應勒索軟體事件。
+
+支援加密（使用者行為）、資料外洩和資料銷毀事件的自動回應。在建立自動回應之前，您必須具備 link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/suspicious-user-activity.html#create-a-user-activity-agent["配置了使用者活動代理，啟用了具有使用者活動偵測功能的原則，並建立了使用者目錄連接器。"]。
+
+
+
+== 建立自動回應
+
+您只能保護一個儲存 VM，且該 VM 至少需要有一個受可疑使用者行為偵測原則保護的工作負載。
+
+.步驟
+. 在勒索軟體恢復功能中，選擇**設定**。
+. 在「使用者活動監控」磁貼中，選擇 **Manage**。
+. 選擇 **Automated responses** 索引標籤。
+. 選擇 **新增** 以建立該行為。
+. 請輸入自動回覆的**名稱**。
+. 選擇觸發回應的事件類型：**攻擊** 或 **警告**。深入瞭解不同的link:rp-use-alert.html#alert-types-and-statuses["警報類型"]。
+. 請選擇答案：
++
+** **封鎖使用者存取**：當警報觸發時，該使用者將被封鎖，無法存取所有受 Ransomware Resilience 保護的儲存虛擬機器。
++
+如果您選擇此選項，則也必須選擇鎖定時長。鎖定時長可以是 1 到 24 小時之間的任意時長，也可以是永久鎖定。
+
+** **建立快照**：為受影響的工作負載建立快照，以便在必要時進行復原。快照將保留七天。
+
+
+. 選擇觸發自動回應的警報類型：
++
+|===
+
+
+| 警報類型 | 描述 
+
+
+| 加密（使用者行為） | 勒索軟體復原能力可識別特定使用者執行的異常檔案讀取、寫入和重新命名活動。 
+
+
+| 資料外洩 | Ransomware Resilience 可偵測特定使用者執行的異常檔案讀取存取模式。 
+
+
+| 資料銷毀 | Ransomware Resilience 可偵測到特定使用者大量刪除檔案的行為。 
+|===
+. 選擇要套用自動回應的儲存虛擬機器。
+. 選擇**新增**以建立自動回應。
+
+
+
+
+== 修改自動回覆
+
+建立自動回應後，您可以暫停、重新啟動或修改該回應。您可以修改回應名稱、觸發回應的警報類型、儲存 VM 以及採取的動作。
+
+.步驟
+. 在勒索軟體恢復功能中，選擇**設定**。
+. 在「使用者活動監控」磁貼中，選擇 **Manage**。
+. 選擇 **Automated responses** 索引標籤。
+. 選擇您要修改的自動回覆。
+. 若要暫停或刪除回應，請選擇操作選單，然後選擇**暫停**（或**開始**）或**刪除**。
++
+若要修改回應，請選擇 **Edit**。
+
+. 除了警報嚴重程度之外，您可以修改任何設定。
+. 選擇 **Save** 以儲存變更。
+

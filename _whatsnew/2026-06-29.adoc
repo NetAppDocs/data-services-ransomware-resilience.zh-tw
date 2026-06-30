@@ -1,0 +1,11 @@
+= 對使用者活動警報的自動回應
+:allow-uri-read: 
+
+
+
+
+=== 對使用者活動警報的自動回應
+
+Ransomware Resilience 現已支援在產生使用者活動警報時自動建立快照和封鎖使用者。透過自動回應，您可以在產生警告後立即封鎖使用者並建立快照以進行復原，從而實現更快速的回應，無需人工介入。
+
+如需詳細資訊，請參閱 link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-automate-user-activity.html["自動回應使用者活動警示"^]。

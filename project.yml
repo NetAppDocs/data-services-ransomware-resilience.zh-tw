@@ -56,6 +56,8 @@ sidebar:
           url: "/reference-user-activity-requirements.html"
         - title: 配置代理程式和收集器
           url: "/suspicious-user-activity.html"
+        - title: 管理使用者警示與封鎖
+          url: "/task-users-manage.html"
       - title: 管理保護群組
         url: "/task-protection-group.html"
       - title: 掃描個人識別資訊
@@ -64,6 +66,8 @@ sidebar:
       entries:
       - title: 響應偵測到的警報
         url: "/rp-use-alert.html"
+      - title: 自動回應使用者活動警示
+        url: "/task-automate-user-activity.html"
       - title: 檢閱還原狀態
         url: "/rp-use-recover.html"
       - title: 使用乾淨還原進行還原

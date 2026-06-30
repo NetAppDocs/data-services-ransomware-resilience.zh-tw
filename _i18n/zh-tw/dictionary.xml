@@ -1163,9 +1163,7 @@
   <block id="f2d7e7792f60fc56fc833ac06d43ff03" category="list-text">檢查您的設定。選擇*啟動*以完成新增使用者活動代理程式。</block>
   <block id="87890c9758b28588c6845cfcf6d19b17" category="section-title">新增資料收集器</block>
   <block id="cebc35dcf9d04a393d86d35a4e3cf6be" category="inline-xref-macro">新增檢測策略</block>
-  <block id="723cff7a2b53371ffdffcdc65a370014" category="paragraph">您可以查看資料收集器的詳細資訊。從「設定」中，選擇「使用者活動」圖塊中的「**管理**」。選擇**資料收集器**選項卡，然後選擇資料收集器以查看其詳細資訊或暫停它。</block>
   <block id="8348d8dcee9ea32e049e21c42a431b91" category="list-text">在勒索軟體復原中，前往*設定*。</block>
-  <block id="9fcb0a7634f29d96ae98e37bbc76e1cd" category="list-text">在使用者活動圖塊中，選擇**管理**。</block>
   <block id="e70202c14c96f451fdcf2617844ea351" category="list-text">選擇**使用者目錄連接器**選項卡，然後選擇**新增**。</block>
   <block id="496ee322ba138fdbc777e5ab2e30145e" category="list-text">*姓名*</block>
   <block id="e018ce61f2faa0782aac0cf5ceb4e39f" category="list-text">*使用者目錄類型*</block>
@@ -1178,7 +1176,6 @@
   <block id="7174ea6988f438d85266f06a4d178a79" category="list-text">選擇**新增**。</block>
   <block id="c46a6dfd4cabd150fef75d97e543d6e6" category="list-text">傳回使用者目錄連接器標籤以檢查使用者目錄連接器的狀態。如果建立成功，使用者目錄連接器的狀態顯示為*正在執行*。</block>
   <block id="ecdd284164c9ec55e281a5e22e24af67" category="section-title">刪除使用者目錄連接器</block>
-  <block id="064c929bca3d74ce57c593b98179d9b6" category="list-text">找到使用者活動圖塊，選擇**管理**。</block>
   <block id="7a4d95b4bd97e134c18ec0bc73dfdc26" category="list-text">選擇**使用者目錄連接器**選項卡。</block>
   <block id="78b1b242bace6a18a2fc89d34f35271a" category="list-text">確定要刪除的使用者目錄連接器。在行尾的操作選單中，選擇三個點<block ref="2f43b42fd833d1e77420a8dae7419000" prefix=" " category="inline-code"></block>然後**刪除**。</block>
   <block id="e5b5e43b801607d44c3fb5101a5e5b57" category="summary">了解NetApp Ransomware Resilience的新功能。</block>
@@ -1685,8 +1682,6 @@
   <block id="72ae3905ad051e75d558266df8b1e63a" category="list-text">確保您符合<block ref="4535d4c19297d046165dc98674d914e8" category="inline-link-macro-rx"></block>。</block>
   <block id="59ad45573dbf4296a202cefa7894c118" category="section-title">建立使用者活動代理程式</block>
   <block id="a757b06cbcf40569f4970cd41ee13a89" category="inline-link-macro">資料收集器</block>
-  <block id="3e5b5a49d2a1ae0f82a222ba8e4ffa7c" category="list-text">確認使用者活動代理程式已成功建立。在「使用者活動」磁貼中，成功部署後會顯示為 **Running**。</block>
-  <block id="01aa0dea5e13315b3322ab5d449cbb8e" category="paragraph">使用者活動代理程式成功建立後、返回 **Settings** 功能表、然後在 User activity 磚中選取 **Manage** 。選取 **User activity agents** 索引標籤、然後選取使用者活動代理程式以檢視其詳細資料、包括資料收集器和使用者目錄連接器。</block>
   <block id="1c3618a77bb3c98ee22e85ebb2ff2cb5" category="section-title">建立使用者目錄連接器</block>
   <block id="450a540c6661e25e017db4862aec2e38" category="list-text">在彈出的對話方塊中、選取 **Delete** 進行確認。</block>
   <block id="236c87046e76c7fbe637db256ad65c54" category="inline-link-macro">偵測惡意活動和可疑使用者行為</block>
@@ -1712,22 +1707,15 @@
   <block id="e02189957b252d42e679aa66d35030cd" category="list-text"><block ref="e02189957b252d42e679aa66d35030cd" category="inline-link-macro-rx"></block></block>
   <block id="0f20f1de24e002ee03e9a0d693faaf59" category="list-text">若要停用針對特定使用者的警報（該使用者收到的警報為誤報），請選擇三個點 <block ref="2f43b42fd833d1e77420a8dae7419000" prefix="(" category="inline-code"></block>，然後選擇**將此使用者從監控中排除**。查看對話框，然後選擇**排除**進行確認。</block>
   <block id="c65a69d50600a3f76ccdd1109d15b6e3" category="inline-link-macro">排除使用者</block>
-  <block id="d632bf28d8164d0436ca05f069b989e9" category="admonition">若要重新啟用某個使用者的警報，請返回該警報。選擇三個點，然後選擇 **Include this user in monitoring**。您也可以<block ref="e33a84d4132808c30f0e6b091e9f7e88" category="inline-link-macro-rx"></block>從監控。</block>
   <block id="fb7f1789c81ab5377f72e16f6b9384ad" category="inline-link-macro">每項服務的限制</block>
   <block id="3adbdb581af927d3972b2f1c8cfb96a6" category="admonition">Amazon FSx for NetApp ONTAP 或 Azure NetApp Files 中的工作負載無法使用備份目的地。請使用 FSx for ONTAP 備份服務執行備份作業。您需要在 AWS 中為 FSx for ONTAP 工作負載設定備份原則，而不是在 Ransomware Resilience 中設定。備份原則會顯示在 Ransomware Resilience 中，並且與 AWS 中的設定保持一致。</block>
   <block id="3bc2d94b3185bcb1259a8b3cf7da880b" category="list-text">選擇所需的偵測設定：</block>
   <block id="eb7705f4441056c554dc7aea52de0b17" category="paragraph">如果某些受信任使用者的行為可能會觸發使用者行為警示，您可以將他們從警示中排除。</block>
-  <block id="0189c7f085ff5d22843080df2225281b" category="list-text">在「設定」儀表板中，找到「使用者活動」卡片，然後選取 **Manage**。</block>
-  <block id="82694a5fa079406313056daf01f9118b" category="list-text">選擇 **Excluded users** 標籤。</block>
   <block id="de13c27fd58614b060a46c2092ed0545" category="list-text">若要在使用者介面中檢閱個別使用者，請選擇 **手動選取**。若要上傳排除的使用者清單，請選取 **上傳**。</block>
   <block id="9dd5e919daf597022ca9ace5ebd739e9" category="list-text">如果您選擇了 **Select manually**，請選取要排除的特定使用者名稱旁的核取方塊。</block>
-  <block id="8641c2055d546da7c2e15e6d18bc9016" category="list-text">選擇 **Add** 以完成將使用者新增至排除清單的操作。</block>
-  <block id="98e062a77fcb05260f463a017f171f72" category="list-text">在「已排除使用者」標籤中，現在會在儀表板中顯示已從使用者行為偵測警示中移除的使用者名稱。</block>
   <block id="bf7da00a56585a6a89ff8f8184dfd6fd" category="inline-link-macro">回應勒索軟體警示</block>
   <block id="face5a9388d96715a2df2a403febcfad" category="admonition">您也可以直接將使用者從警示中排除。如需詳細資訊、請參閱 <block ref="56429daef20ebac0c2b98002f6d61934" category="inline-link-macro-rx"></block>。</block>
   <block id="0b09185e7ecba92cf7f8f0712501db0b" category="section-title">從排除使用者清單中移除使用者</block>
-  <block id="3ba04eb11eb815c62355b0a9cb7b05e5" category="paragraph">之後您可以將使用者重新加入偵測。</block>
-  <block id="144c603fbbde0985023a4ea73e22e35b" category="list-text">從排除使用者清單中找到要移除的使用者名稱。在該使用者名稱所在的行選擇操作選單 <block ref="2f43b42fd833d1e77420a8dae7419000" prefix="(" category="inline-code"></block>），然後選擇**移除**。</block>
   <block id="581c5c550f20f231f6c9e881e699829b" category="list-text">在對話方塊中、選取 **Remove** 以確認您要移除所選使用者。</block>
   <block id="90c78a95b0a3dffc0aa664d3139d1369" category="summary">您可以自動將資料從 NetApp Ransomware Resilience 傳送到您的安全性與事件管理系統（SIEM），以進行威脅分析與偵測。</block>
   <block id="03883d80013dc0b2b972eccd5b93b56f" category="list-text">AWS Security Hub</block>
@@ -1936,7 +1924,6 @@
   <block id="2aeee41e03e1ec5e48f7c1deb934b617" category="list-text">如果您選擇 **Upload**，請下載包含所有使用者清單的 CSV 或 JSON 檔案。選擇 **Download** 即可存取該清單。</block>
   <block id="e2616004bc9cf87f18910a512e2c2379" category="paragraph">在本機上，查看該檔案。刪除所有您希望保留偵測的使用者名稱。當清單中僅包含您希望從偵測中排除的使用者名稱時，請儲存該檔案。</block>
   <block id="3e56f67eb69a3fdb139a993bc1606e4f" category="paragraph">在 Ransomware Resilience 中，選取 **Upload**。找到並上傳檔案。</block>
-  <block id="2a26cf4062a1ee4ec346c86574259847" category="list-text">若要從使用者介面中排除個別使用者，請選擇 **手動選擇**。</block>
   <block id="fd117b89b92e15d359324da93300356b" category="doc">將 NetApp Ransomware Resilience 連接至 SIEM 以進行威脅分析與偵測</block>
   <block id="df4bdd45174b09881add6730bdfaf045" category="section-title">2026 年 3 月 09 日</block>
   <block id="9b0a81f6fc494248483a10631a72dabe" category="paragraph">受保護的工作負載在免費試用期結束後將計入購買的容量或訂閱費用。Ransomware Resilience 按 GB 計費，費用基於與受保護工作負載相關的資料（由 ONTAP 報告），不包含效率提升。</block>
@@ -2564,4 +2551,79 @@
   <block id="bb4393b6187d55f98dbeb4c5bb8add00" category="list-text">每個 Console 代理程式最多可處理 3,000 個工作負載。</block>
   <block id="8df5e57d843114bbbb53a4c85f76cb68" category="list-text">來自 Google Cloud NetApp Volumes 的 SAN 工作負載目前不受勒索軟體復原功能支援。</block>
   <block id="afce532bad172bcef50d75935d2ed43b" category="list-text">複製策略</block>
+  <block id="fb9721f24a420ba827ac36665b13797e" category="doc">對使用者活動警報的自動回應</block>
+  <block id="5b29c2b1307b96a1557ab05a56715041" category="paragraph">Ransomware Resilience 現已支援在產生使用者活動警報時自動建立快照和封鎖使用者。透過自動回應，您可以在產生警告後立即封鎖使用者並建立快照以進行復原，從而實現更快速的回應，無需人工介入。</block>
+  <block id="709c9c15efe20baf89cd9c0bc4da8ba3" category="inline-link-macro">自動回應使用者活動警示</block>
+  <block id="1683df33985dedfe87b3e10a6e28374e" category="paragraph">如需詳細資訊，請參閱 <block ref="af4a7ce82e0454100b9537cefe9d85c8" category="inline-link-macro-rx"></block>。</block>
+  <block id="f3948d55e3032152ce189836caaf0b14" category="list-text">在「Responses」圖塊中，選擇「Take snapshot now」以建立快照。</block>
+  <block id="c6adf86dd8ab3fa173149ecb95e0444f" category="list-text">如果您已在 SVM 上啟用自動回應，請選擇「編輯使用者封鎖」來封鎖該使用者。若要封鎖該使用者，請選擇「封鎖使用者的時間段」，然後設定封鎖持續時間（從一小時到永久均可）。如果您認為警報並非勒索軟體事件，也可以取消封鎖該使用者。選擇「儲存」。</block>
+  <block id="a6a7e26bcffa88b63e76d3f0a0f08eda" category="admonition">若要重新啟用某個使用者的警報，請返回該警報。選擇三個點，然後選擇 **Include this user in monitoring**。您也可以<block ref="1a21a4e753ba6e9b70e02139a1cf7da7" category="inline-link-macro-rx"></block>從監控。</block>
+  <block id="670130480e76ce2b912da3ad5daf63f4" category="inline-link-macro">自動回應使用者活動事件</block>
+  <block id="8cd568562744ebd2ad72f4d26b638c5b" category="list-text"><block ref="8cd568562744ebd2ad72f4d26b638c5b" category="inline-link-macro-rx"></block></block>
+  <block id="cb69a3dbb2ce54452da8242f5d593a7d" category="list-text">確認使用者活動代理程式已成功建立。在「使用者活動監控」磁貼中，成功部署後會顯示為 **Running**。</block>
+  <block id="f8154656f491b6010fd0659081a5e592" category="paragraph">使用者活動代理程式建立成功後，返回「**設定**」選單，然後在「使用者活動監控」磁貼中選擇「**管理**」。選擇「**使用者活動代理程式**」索引標籤，然後選擇使用者活動代理程式以檢視其詳細資料，包括資料收集器和使用者目錄連接器。</block>
+  <block id="6e2ca6477a8595f1e41d451cdd9ebd00" category="paragraph">您可以查看資料收集器的詳細資訊。在「設定」中，選擇「使用者活動監控」磁貼中的「管理」。選擇「資料收集器」索引標籤，然後選擇資料收集器以查看其詳細資訊或暫停其運作。</block>
+  <block id="8e01f2104a7304e76047e58936807cf1" category="list-text">在「使用者活動監控」磁貼中，選擇 **Manage**。</block>
+  <block id="7e6d3cb777f931902eef28d721b391ad" category="list-text">在 Ransomware Resilience 中，選擇 *Settings*。</block>
+  <block id="8e80013d454d77fa5da380a02985bf08" category="list-text">找到「使用者活動監控」磁貼，選擇 **Manage**。</block>
+  <block id="ca9b34b1ac8edb836cc31adfeb86da35" category="paragraph">您還可以<block ref="8cd568562744ebd2ad72f4d26b638c5b" category="inline-link-macro-rx"></block>。</block>
+  <block id="83019ea39039a789f3a1ef050322b3c6" category="inline-link-macro">在 NetApp Ransomware Resilience 中管理使用者封鎖和警示</block>
+  <block id="ab86c889344f48e6cc9a644f588de541" category="list-text"><block ref="ab86c889344f48e6cc9a644f588de541" category="inline-link-macro-rx"></block></block>
+  <block id="0e5314dd9df9fd8758e118ce1e7ba897" category="summary">NetApp Ransomware Resilience 支援對使用者活動事件建立自動回應，使您能夠自動建立快照或封鎖使用者。</block>
+  <block id="da6a5c0ffdbef8b4ec186025eff8e43b" category="doc">在 NetApp Ransomware Resilience 中自動回應使用者活動警報</block>
+  <block id="11b56910cc00c324c49386ed5582988f" category="inline-link-macro">使用者活動事件</block>
+  <block id="0a8871a3299a107751c7b0db71e644f4" category="paragraph">NetApp Ransomware Resilience 支援建立自動回應<block ref="8b86ab47aa824ef9943240ff5124bbba" category="inline-link-macro-rx"></block>。透過自動回應功能，Ransomware Resilience 可在偵測到攻擊或警告時建立快照或封鎖使用者，從而更迅速地回應勒索軟體事件。</block>
+  <block id="24bb73d1c33f357d17024d9c2c631ff2" category="inline-link-macro">配置了使用者活動代理，啟用了具有使用者活動偵測功能的原則，並建立了使用者目錄連接器。</block>
+  <block id="5a1cf133e86dfea0d4fd6beddf99419d" category="paragraph">支援加密（使用者行為）、資料外洩和資料銷毀事件的自動回應。在建立自動回應之前，您必須具備 <block ref="c512b877bbe8303215878962f3edb05e" category="inline-link-macro-rx"></block>。</block>
+  <block id="5a9dbc95cd10e68b8aa5b25769a12f66" category="section-title">建立自動回應</block>
+  <block id="525947b7bc9136d3c68f8d5e68e67c65" category="paragraph">您只能保護一個儲存 VM，且該 VM 至少需要有一個受可疑使用者行為偵測原則保護的工作負載。</block>
+  <block id="0ba604d3520d7d31a74f42a24b136cf6" category="list-text">選擇 **Automated responses** 索引標籤。</block>
+  <block id="ba6bbd2f6aa7a13738511856f29ba569" category="list-text">選擇 **新增** 以建立該行為。</block>
+  <block id="ca08d0e59990fdffbb6467bdd7f00b5f" category="list-text">請輸入自動回覆的**名稱**。</block>
+  <block id="92e6ea9e52b7a81fdf0b4994719a42c1" category="inline-link-macro">警報類型</block>
+  <block id="5abb35f1388941d8bf8186c476c69efb" category="list-text">選擇觸發回應的事件類型：**攻擊** 或 **警告**。深入瞭解不同的<block ref="ef3f4c22db9f55b59ebc4da2b7df602e" category="inline-link-macro-rx"></block>。</block>
+  <block id="aa7a11a604c21a1423b1261241c7d78c" category="list-text">請選擇答案：</block>
+  <block id="9646518b7752370de53f195201268e7d" category="list-text">**封鎖使用者存取**：當警報觸發時，該使用者將被封鎖，無法存取所有受 Ransomware Resilience 保護的儲存虛擬機器。</block>
+  <block id="5fe611c6876641199f70e49558f48be4" category="paragraph">如果您選擇此選項，則也必須選擇鎖定時長。鎖定時長可以是 1 到 24 小時之間的任意時長，也可以是永久鎖定。</block>
+  <block id="a2f16c29a43535c7c6aa7898c58ae9f8" category="list-text">**建立快照**：為受影響的工作負載建立快照，以便在必要時進行復原。快照將保留七天。</block>
+  <block id="972f6ae068eb9ed1c0b103c19d4c1136" category="list-text">選擇觸發自動回應的警報類型：</block>
+  <block id="2bc4fcf9346e74ca05878a7e5dd6e2d4" category="cell">警報類型</block>
+  <block id="677329539728cfa937ee007c1bf7e778" category="list-text">選擇要套用自動回應的儲存虛擬機器。</block>
+  <block id="7838a605d6ae3901553635e8d43bc210" category="list-text">選擇**新增**以建立自動回應。</block>
+  <block id="ecc70cc5b710cb19c30985347907a33f" category="section-title">修改自動回覆</block>
+  <block id="70df577ad04e86da4cfcd49d12f42c34" category="paragraph">建立自動回應後，您可以暫停、重新啟動或修改該回應。您可以修改回應名稱、觸發回應的警報類型、儲存 VM 以及採取的動作。</block>
+  <block id="6957bab7b5de8b995af86b7615cf8877" category="list-text">選擇您要修改的自動回覆。</block>
+  <block id="bc06f86137f36e1395909963dc24a7e9" category="list-text">若要暫停或刪除回應，請選擇操作選單，然後選擇**暫停**（或**開始**）或**刪除**。</block>
+  <block id="ffaa50c6810616dffe4f2fa3b11dd9d5" category="paragraph">若要修改回應，請選擇 **Edit**。</block>
+  <block id="9190ef848f1a62966c143f87f9a3b16e" category="list-text">除了警報嚴重程度之外，您可以修改任何設定。</block>
+  <block id="60fb8ad171246036e201929bc65c1158" category="list-text">選擇 **Save** 以儲存變更。</block>
+  <block id="b1e9096bc5102d69a78befc70d41fe69" category="summary">在 NetApp Ransomware Resilience 中建立使用者目錄連接器後，您可以封鎖和取消封鎖使用者，並將使用者從警示中排除。</block>
+  <block id="728a9373b496fb3b49cccf8e1eb055c0" category="paragraph">在 NetApp Ransomware Resilience 中建立使用者目錄連接器後，您可以在遇到勒索軟體事件時封鎖和解除封鎖使用者，並對其進行評估。如果您確定某些使用者的行為並非攻擊，也可以選擇性地將他們從勒索軟體警報中排除。</block>
+  <block id="9594e6c0471983974b6adc193bd57d4e" category="paragraph">您必須<block ref="c512b877bbe8303215878962f3edb05e" category="inline-link-macro-rx"></block>才能封鎖使用者。</block>
+  <block id="37bcec617eba318667a247a58bd99097" category="inline-link-macro">自動回應</block>
+  <block id="88450b9601513114d92202ed82d65469" category="admonition">您可以<block ref="5b864d1f7cea25f12e7a99e07202259f" category="inline-link-macro-rx"></block>查看使用者活動偵測事件。</block>
+  <block id="25fce885a9bc8a8f1284152fe15304d0" category="section-title">管理已封鎖用戶</block>
+  <block id="f633d2cf36d2d43dc232424839fa15de" category="paragraph">如果您認為某個使用者從事惡意活動，您可以將其封鎖。</block>
+  <block id="5fbbcc09a7f5316f17aaf20a9f942557" category="list-title">封鎖用戶</block>
+  <block id="93e35e2f3f7138fcbfc327d758e1ec96" category="list-text">在「設定」儀表板中，找到「使用者活動監控」磁貼，然後選擇 **Manage**。</block>
+  <block id="2361358ff14122114e736beff61c48a2" category="list-text">選取「使用者」索引標籤。</block>
+  <block id="766067e25ac4a8f22dad6344937ca56d" category="list-text">選取**封鎖使用者**。</block>
+  <block id="b00b5ebe4a8164319e36e4bbef8f727f" category="list-text">選擇封鎖持續時間：可以是 1 小時到 24 小時，也可以是永久封鎖。</block>
+  <block id="50d68502e7fbfa82f99e1abb688a948f" category="list-text">選取要封鎖的使用者名稱旁的核取方塊。</block>
+  <block id="126b3c7582135a76321582de4bcad51d" category="list-text">選擇 **Block**。</block>
+  <block id="23e9aa0fec2a06ec7f4b6f9076d62992" category="list-title">修改已封鎖使用者列表</block>
+  <block id="3d06dabf3eaa23797059f7fffa998cfd" category="list-text">選擇**編輯使用者屏蔽**。</block>
+  <block id="e2d552c6afc3cd9e9e5367d429f832c4" category="list-text">選擇修改選項。若要修改封鎖時長，請選擇 **封鎖使用者的時間段**，然後修改時長。若要從封鎖使用者清單中移除使用者，請選擇 **解除封鎖使用者**。</block>
+  <block id="4ecd815bab325d10795007a2e86d0a31" category="list-text">選取要變更狀態的被封鎖使用者名稱旁的核取方塊。</block>
+  <block id="8d5311b8775f8a9ea8945d76095bb698" category="list-text">選擇**儲存**。</block>
+  <block id="d90cde04b4a8cbf5c0f2097687b77bc8" category="section-title">管理使用者警示</block>
+  <block id="bf21122a37b943f2b70a86b30f0af377" category="list-text">選取「**排除在監控之外**」索引標籤。</block>
+  <block id="a5e15107d3aab04bc0c5f9ef6e7eafe8" category="list-text">選擇**新增**以完成將使用者新增至排除清單的操作。</block>
+  <block id="999d037bde1c176486633543cd03a250" category="list-text">在「**已排除在監控之外**」標籤中，現在會在儀表板中顯示已從使用者行為偵測警示中移除的使用者名稱。</block>
+  <block id="0e1a585fedc96851082d7b2be641fb77" category="list-text">若要從使用者介面中排除個別使用者，請選擇**手動選擇**。</block>
+  <block id="2e1bb6ba10017caa1a34a9693a9495b0" category="list-text">找到要從排除使用者清單中移除的使用者名稱。選取使用者名稱所在列上的動作選單 <block ref="2f43b42fd833d1e77420a8dae7419000" prefix="(" category="inline-code"></block>，然後選取 **Remove**。</block>
+  <block id="f1d60a07f24fee746248e3b38e0d0891" category="inline-link-macro">自動回應使用者活動偵測事件</block>
+  <block id="67f8bfb01063a7bf1e47bc5de6e7fcb9" category="list-text"><block ref="67f8bfb01063a7bf1e47bc5de6e7fcb9" category="inline-link-macro-rx"></block></block>
+  <block id="f210e90dbf694c894759f78cc6d8b222" category="section-title">2026 年 6 月 29 日</block>
+  <block id="97d60b3e7c986739c534cb2a3c8f2b99" category="sidebar">管理使用者警示與封鎖</block>
 </blocks>
