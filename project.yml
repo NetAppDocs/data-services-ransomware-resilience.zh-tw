@@ -56,7 +56,7 @@ sidebar:
           url: "/reference-user-activity-requirements.html"
         - title: 配置代理程式和收集器
           url: "/suspicious-user-activity.html"
-        - title: 管理使用者警示與封鎖
+        - title: 管理警報和已封鎖的用戶
           url: "/task-users-manage.html"
       - title: 管理保護群組
         url: "/task-protection-group.html"

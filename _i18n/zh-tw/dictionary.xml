@@ -1666,7 +1666,6 @@
   <block id="9dd5e919daf597022ca9ace5ebd739e9" category="list-text">如果您選擇了 **Select manually**，請選取要排除的特定使用者名稱旁的核取方塊。</block>
   <block id="bf7da00a56585a6a89ff8f8184dfd6fd" category="inline-link-macro">回應勒索軟體警示</block>
   <block id="face5a9388d96715a2df2a403febcfad" category="admonition">您也可以直接將使用者從警示中排除。如需詳細資訊、請參閱 <block ref="56429daef20ebac0c2b98002f6d61934" category="inline-link-macro-rx"></block>。</block>
-  <block id="0b09185e7ecba92cf7f8f0712501db0b" category="section-title">從排除使用者清單中移除使用者</block>
   <block id="581c5c550f20f231f6c9e881e699829b" category="list-text">在對話方塊中、選取 **Remove** 以確認您要移除所選使用者。</block>
   <block id="90c78a95b0a3dffc0aa664d3139d1369" category="summary">您可以自動將資料從 NetApp Ransomware Resilience 傳送到您的安全性與事件管理系統（SIEM），以進行威脅分析與偵測。</block>
   <block id="03883d80013dc0b2b972eccd5b93b56f" category="list-text">AWS Security Hub</block>
@@ -1759,7 +1758,6 @@
   <block id="147fa6a15cbb387b90cd75ccc34d8cfe" category="list-text">資料銷毀</block>
   <block id="9755e4a474d0024a8dcd40393e571716" category="list-text">可疑的使用者行為</block>
   <block id="f94e6cd450a12c55223329be07d15575" category="inline-link-macro">使用者活動偵測</block>
-  <block id="09e9060a723336e7b5657759fccb4bbf" category="admonition">對於資料外洩、資料銷毀和可疑使用者行為警示，您必須設定 <block ref="9403988536e87b1b5fabe2157e11581a" category="inline-link-macro-rx"></block>。</block>
   <block id="b413c7d063ce740207cbb531b68c46dc" category="section-title">警示類型和狀態</block>
   <block id="1405a7e68c0a63e640869ddcfd6a3c37" category="paragraph">警示有兩種狀態： *New* 或 *Inactive* 。</block>
   <block id="75a90d27a357c4859ab2e4e41a012d82" category="paragraph">警示分為以下幾種類型之一：</block>
@@ -2515,8 +2513,6 @@
   <block id="7e6d3cb777f931902eef28d721b391ad" category="list-text">在 Ransomware Resilience 中，選擇 *Settings*。</block>
   <block id="8e80013d454d77fa5da380a02985bf08" category="list-text">找到「使用者活動監控」磁貼，選擇 **Manage**。</block>
   <block id="ca9b34b1ac8edb836cc31adfeb86da35" category="paragraph">您還可以<block ref="8cd568562744ebd2ad72f4d26b638c5b" category="inline-link-macro-rx"></block>。</block>
-  <block id="83019ea39039a789f3a1ef050322b3c6" category="inline-link-macro">在 NetApp Ransomware Resilience 中管理使用者封鎖和警示</block>
-  <block id="ab86c889344f48e6cc9a644f588de541" category="list-text"><block ref="ab86c889344f48e6cc9a644f588de541" category="inline-link-macro-rx"></block></block>
   <block id="0e5314dd9df9fd8758e118ce1e7ba897" category="summary">NetApp Ransomware Resilience 支援對使用者活動事件建立自動回應，使您能夠自動建立快照或封鎖使用者。</block>
   <block id="da6a5c0ffdbef8b4ec186025eff8e43b" category="doc">在 NetApp Ransomware Resilience 中自動回應使用者活動警報</block>
   <block id="11b56910cc00c324c49386ed5582988f" category="inline-link-macro">使用者活動事件</block>
@@ -2545,8 +2541,6 @@
   <block id="ffaa50c6810616dffe4f2fa3b11dd9d5" category="paragraph">若要修改回應，請選擇 **Edit**。</block>
   <block id="9190ef848f1a62966c143f87f9a3b16e" category="list-text">除了警報嚴重程度之外，您可以修改任何設定。</block>
   <block id="60fb8ad171246036e201929bc65c1158" category="list-text">選擇 **Save** 以儲存變更。</block>
-  <block id="b1e9096bc5102d69a78befc70d41fe69" category="summary">在 NetApp Ransomware Resilience 中建立使用者目錄連接器後，您可以封鎖和取消封鎖使用者，並將使用者從警示中排除。</block>
-  <block id="728a9373b496fb3b49cccf8e1eb055c0" category="paragraph">在 NetApp Ransomware Resilience 中建立使用者目錄連接器後，您可以在遇到勒索軟體事件時封鎖和解除封鎖使用者，並對其進行評估。如果您確定某些使用者的行為並非攻擊，也可以選擇性地將他們從勒索軟體警報中排除。</block>
   <block id="9594e6c0471983974b6adc193bd57d4e" category="paragraph">您必須<block ref="c512b877bbe8303215878962f3edb05e" category="inline-link-macro-rx"></block>才能封鎖使用者。</block>
   <block id="37bcec617eba318667a247a58bd99097" category="inline-link-macro">自動回應</block>
   <block id="88450b9601513114d92202ed82d65469" category="admonition">您可以<block ref="5b864d1f7cea25f12e7a99e07202259f" category="inline-link-macro-rx"></block>查看使用者活動偵測事件。</block>
@@ -2564,16 +2558,12 @@
   <block id="e2d552c6afc3cd9e9e5367d429f832c4" category="list-text">選擇修改選項。若要修改封鎖時長，請選擇 **封鎖使用者的時間段**，然後修改時長。若要從封鎖使用者清單中移除使用者，請選擇 **解除封鎖使用者**。</block>
   <block id="4ecd815bab325d10795007a2e86d0a31" category="list-text">選取要變更狀態的被封鎖使用者名稱旁的核取方塊。</block>
   <block id="8d5311b8775f8a9ea8945d76095bb698" category="list-text">選擇**儲存**。</block>
-  <block id="d90cde04b4a8cbf5c0f2097687b77bc8" category="section-title">管理使用者警示</block>
   <block id="bf21122a37b943f2b70a86b30f0af377" category="list-text">選取「**排除在監控之外**」索引標籤。</block>
   <block id="a5e15107d3aab04bc0c5f9ef6e7eafe8" category="list-text">選擇**新增**以完成將使用者新增至排除清單的操作。</block>
   <block id="999d037bde1c176486633543cd03a250" category="list-text">在「**已排除在監控之外**」標籤中，現在會在儀表板中顯示已從使用者行為偵測警示中移除的使用者名稱。</block>
-  <block id="0e1a585fedc96851082d7b2be641fb77" category="list-text">若要從使用者介面中排除個別使用者，請選擇**手動選擇**。</block>
-  <block id="2e1bb6ba10017caa1a34a9693a9495b0" category="list-text">找到要從排除使用者清單中移除的使用者名稱。選取使用者名稱所在列上的動作選單 <block ref="2f43b42fd833d1e77420a8dae7419000" prefix="(" category="inline-code"></block>，然後選取 **Remove**。</block>
   <block id="f1d60a07f24fee746248e3b38e0d0891" category="inline-link-macro">自動回應使用者活動偵測事件</block>
   <block id="67f8bfb01063a7bf1e47bc5de6e7fcb9" category="list-text"><block ref="67f8bfb01063a7bf1e47bc5de6e7fcb9" category="inline-link-macro-rx"></block></block>
   <block id="f210e90dbf694c894759f78cc6d8b222" category="section-title">2026 年 6 月 29 日</block>
-  <block id="97d60b3e7c986739c534cb2a3c8f2b99" category="sidebar">管理使用者警示與封鎖</block>
   <block id="acd27fc46144e7ce943b73180eb0d3a8" category="paragraph">在 NetApp Ransomware Resilience 中執行勒索軟體攻擊準備演練，以測試您應對真實勒索軟體攻擊的準備。透過此演練，Ransomware Resilience 會模擬對新樣本工作負載的攻擊，使您能夠在不影響真實生產資料的情況下調查模擬攻擊並執行復原操作。此演練有助於您熟悉警報通知，並做好回應和復原準備。您可以根據需要多次執行此演練。</block>
   <block id="537f8bf1cb00339aa74d0eb9f514b0df" category="list-text">在「整備演練」圖塊中，選取 **Configure**。</block>
   <block id="58217f0a1f8bf12ba3006ea914fc528d" category="list-text">選擇**準備演練類型**。</block>
@@ -2618,4 +2608,28 @@
   <block id="e3b01c4848ac6d1626374e4dee0f0685" category="list-text">**資料外洩復原**：您必須先設定 <block ref="ea7722fd5c2c373bdaffcbde2ca3bbf6" category="inline-link-macro-rx"></block> 才能啟用此演練類型。</block>
   <block id="05d14520f5a3fd970bfca710b43ae17a" category="admonition">演練進行中無法編輯整備演練配置。若要修改整備演練，請選擇 **Reset**，然後編輯演練。</block>
   <block id="7820d7f245e7637e7833faccb183f36d" category="admonition">對於針對可疑使用者行為的自動回應，您只能進行快照處理。自動回應可疑使用者行為時，不支援封鎖使用者。</block>
+  <block id="ddebb8e31f83ddb3bde0b3a0292845dc" category="doc">從使用者行為警報中排除檔案路徑</block>
+  <block id="33239db9e04a3b1473f3468fd2d9d99b" category="paragraph">Ransomware Resilience 支援將特定檔案路徑從使用者行為監控警示中排除。如果您確定這些檔案路徑不存在風險，或者您正在對可能觸發警示的磁碟區中的檔案進行操作，則可以將其排除在外。</block>
+  <block id="f1780a3dd9362a514caa277752b942f2" category="inline-link-macro">從警報中排除檔案路徑</block>
+  <block id="4cbd1bb5d6b8178b77b88be565a35c9b" category="paragraph">如需更多資訊，請參閱 <block ref="8c33118b4350e89c06a1a557095207c2" category="inline-link-macro-rx"></block>。</block>
+  <block id="1d20fa647694e6811cd363111cf77538" category="inline-link-macro">特定檔案路徑和使用者</block>
+  <block id="2e9d0337668c42840413047306ef5b57" category="admonition">對於資料外洩、資料銷毀和可疑使用者行為警示，您必須設定<block ref="9403988536e87b1b5fabe2157e11581a" category="inline-link-macro-rx"></block>。您也可以防止<block ref="bd37368d247ac8892eb2f81e8ff6fc76" category="inline-link-macro-rx"></block>產生警示。</block>
+  <block id="75cd3815cc2e90d9679458215fb968dd" category="inline-link-macro">管理警報設定和已封鎖的用戶</block>
+  <block id="84bc023659fbaeb1e92bb1563d94a709" category="list-text"><block ref="84bc023659fbaeb1e92bb1563d94a709" category="inline-link-macro-rx"></block></block>
+  <block id="0050dfe8b12d7f41e074b38a1584c2e0" category="summary">在 NetApp Ransomware Resilience 中建立使用者目錄連接器後，您可以封鎖和解除封鎖使用者，並將使用者從警示清單中排除。您也可以將檔案路徑排除在警示產生範圍之外。</block>
+  <block id="19355628ba4f308abb52b989d195cbf2" category="doc">在 NetApp Ransomware Resilience 中管理警示與封鎖的使用者</block>
+  <block id="ec80e76fb9a96ba31394caae7738733c" category="paragraph">在 NetApp Ransomware Resilience 中設定使用者行為監控後，您可以自訂警報並管理被封鎖的使用者。自訂警報可讓您將特定使用者或檔案路徑排除在警報產生範圍之外。封鎖使用者旨在回應勒索軟體事件，以防止惡意使用者活動。</block>
+  <block id="978942e6f751f778d0fea794ac36a5ed" category="list-title">從排除使用者清單中移除使用者</block>
+  <block id="0189c7f085ff5d22843080df2225281b" category="list-text">在「設定」儀表板中，找到「使用者活動」卡片，然後選取 **Manage**。</block>
+  <block id="2a26cf4062a1ee4ec346c86574259847" category="list-text">若要從使用者介面中排除個別使用者，請選擇 **手動選擇**。</block>
+  <block id="144c603fbbde0985023a4ea73e22e35b" category="list-text">從排除使用者清單中找到要移除的使用者名稱。選取使用者名稱所在列上的動作選單 <block ref="2f43b42fd833d1e77420a8dae7419000" prefix="(" category="inline-code"></block>，然後選取 **Remove**。</block>
+  <block id="d6a20124c5d6d93a842f0081d06dac75" category="section-title">從監控中排除檔案路徑</block>
+  <block id="34b2f1838e031e0797b877cf1d2da3f4" category="paragraph">每個檔案路徑必須以磁碟區名稱開頭。它可以包含該磁碟區最多三個子目錄，例如「volume/directory/subdirectory/subdirectory2」。您可以手動輸入檔案路徑或上傳包含路徑清單的 CSV 檔案來排除某些檔案路徑。</block>
+  <block id="ba84271ee1ea783891cb6e404dfb3d53" category="list-text">選擇「*排除在監控之外*」標籤。</block>
+  <block id="b4a2bf9e81e72a625f2411631cceee8c" category="list-text">選擇**新增**以輸入要排除的檔案路徑。</block>
+  <block id="2de7a68b6ff6ef34aae577dd6bfe5c03" category="list-text">若要在使用者介面中輸入檔案路徑，請選擇「手動輸入」單選按鈕，然後輸入檔案路徑，例如「volume/directory/subdirectory/」。若要輸入其他檔案路徑，請選擇**選擇檔案路徑**。</block>
+  <block id="3dac93d0e83abe331915c1ec220e04ac" category="list-text">若要上傳檔案路徑列表，請選擇「上傳」單選按鈕。選擇上傳按鈕以選擇 CSV 檔案。</block>
+  <block id="67510fe1e2eaace9d146396c21a7a119" category="paragraph">操作成功完成後，Ransomware Resilience 會將選取路徑中的檔案從可疑使用者行為監控中排除。您可以隨時在「設定」選單中查看路徑清單。如果需要重新啟用對這些檔案路徑的監控，您可以將其從清單中移除。</block>
+  <block id="ea1fca7315926f55d77bcab3ed051982" category="section-title">2026年7月7日</block>
+  <block id="4c0600f62cb13917f7a785731376b1cb" category="sidebar">管理警報和已封鎖的用戶</block>
 </blocks>
