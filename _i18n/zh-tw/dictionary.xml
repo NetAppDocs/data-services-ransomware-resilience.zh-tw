@@ -435,9 +435,7 @@
   <block id="039a0f51fabaf695c33b745ebbd147bf" category="inline-link">如何建立控制台代理</block>
   <block id="f9bf2b4f9267c7961cbfeea4412e4d63" category="paragraph">若要使用勒索軟體復原功能建立控制台代理，請聯絡具有建立控制台代理權限的控制台組織管理員，並參考描述<block ref="a747c66fa3a9e5a767b0d1460e988f0c" category="inline-link-rx"></block>。</block>
   <block id="3b6afbed7c49d679fd061dcc03462ca9" category="admonition">如果您有多個控制台代理，則勒索軟體復原功能會掃描除控制台中目前顯示的代理之外的所有控制台代理的資料。該服務發現與該組織相關的所有項目和所有控制台代理。</block>
-  <block id="427b8d3f96436f6a74500df89f6e5e4b" category="summary">透過模擬對新建立的範例工作負載的勒索軟體攻擊來進行勒索軟體準備演習。然後，調查模擬攻擊並恢復樣本工作負載。您可以多次執行勒索軟體準備演習。</block>
   <block id="004823325f4227a58d03f7083e873d82" category="doc">在NetApp Ransomware Resilience中進行勒索軟體攻擊準備演練</block>
-  <block id="1beda934b3626b55dcd019ee000eb5bb" category="admonition">您的實際工作量資料不會受到影響。</block>
   <block id="b308768da13f40be05907e77ea473622" category="paragraph">您可以對 NFS 和 CIFS (SMB) 工作負載進行準備情況演練。</block>
   <block id="b6db234bfb48479bbe03939977a7b42c" category="section-title">配置勒索軟體攻擊準備演習</block>
   <block id="008b8b82922cab3483d70d8899f74b5c" category="inline-image-macro">顯示「運行準備度演練」按鈕的儀表板頁面</block>
@@ -2579,12 +2577,8 @@
   <block id="acd27fc46144e7ce943b73180eb0d3a8" category="paragraph">在 NetApp Ransomware Resilience 中執行勒索軟體攻擊準備演練，以測試您應對真實勒索軟體攻擊的準備。透過此演練，Ransomware Resilience 會模擬對新樣本工作負載的攻擊，使您能夠在不影響真實生產資料的情況下調查模擬攻擊並執行復原操作。此演練有助於您熟悉警報通知，並做好回應和復原準備。您可以根據需要多次執行此演練。</block>
   <block id="537f8bf1cb00339aa74d0eb9f514b0df" category="list-text">在「整備演練」圖塊中，選取 **Configure**。</block>
   <block id="58217f0a1f8bf12ba3006ea914fc528d" category="list-text">選擇**準備演練類型**。</block>
-  <block id="7b1c6c26786355a2591470660c65da62" category="inline-link-macro">自訂恢復</block>
-  <block id="0f17af467c79e20d3693f219481946ab" category="list-text">**自訂復原**：此演練會建立警報，然後讓您執行<block ref="03c74c192711f88b7d0a53dcc4c4539e" category="inline-link-macro-rx"></block>，以設定復原點。</block>
   <block id="65b568f05372e5de535ad8c825aeb375" category="inline-link-macro">徹底恢復</block>
-  <block id="c4ea46b930e86e42d84d7d62143805bf" category="list-text">**徹底恢復**：此操作會發出警報，然後引導您進入 <block ref="d08d369745dba9c2b6dd002a205d6b5a" category="inline-link-macro-rx"></block> 恢復程序，該程序會引導您找到最佳恢復點。</block>
   <block id="532361f2ad995113181b7cf1df1c5462" category="inline-link-macro">使用者活動代理</block>
-  <block id="735dd28d475e0e047aa789767a8252e0" category="list-text">**資料外洩復原**：此演練會在使用者啟動資料外洩事件後建立警報。您必須先設定 <block ref="ea7722fd5c2c373bdaffcbde2ca3bbf6" category="inline-link-macro-rx"></block> 才能啟用此演練類型。</block>
   <block id="74e66061c3c27ae398760dc1adda70dc" category="list-text">選擇進行戰備演練測試的環境。</block>
   <block id="3026f14fd36d3165478399b611373fb8" category="list-text">選擇 **Console agent** 和 **System**。</block>
   <block id="7cbdec3ae1628850b555ad8bb540d67e" category="list-text">選擇 **System** 後，從預先填入清單中選擇 **Storage VM**。</block>
@@ -2595,7 +2589,6 @@
   <block id="022d85fe9248458ef65cf16481972329" category="list-text">開始演練：</block>
   <block id="81107e8f37cdb96dee7eb88d136b8e27" category="list-text">在 Ransomware Resilience 儀表板上，選擇右上角的 *Run readiness drill* 按鈕。</block>
   <block id="b3833f107edd43c29b6874a2a10bef7a" category="list-text">或進入**設定**。在「準備演練」圖塊中，選擇*開始*。</block>
-  <block id="f62bfcf4d7189e2ae5caf57497df14b5" category="admonition">演練進行中無法編輯整備演練配置。若要修改整備演練，請選擇 **Reset**，然後編輯演練。</block>
   <block id="3798ead7c288ba8d157f0c0b116976de" category="list-text">選擇帶有「準備演習」指示的警報。</block>
   <block id="aa888903a6021760fd560a3f35a5fe39" category="paragraph">審查事件時，請考慮以下因素：</block>
   <block id="aa823a078e061b627817667be59a3966" category="list-text">潛在攻擊的嚴重程度。</block>
@@ -2611,4 +2604,18 @@
   <block id="42caf31af7b0b287a88952c8986218ab" category="list-text">選擇狀態旁的「編輯」按鈕，即可變更狀態。將狀態變更為以下選項之一：</block>
   <block id="12c6663cbe23396ea86ae553869baab3" category="paragraph">演練結束後，您可以產生並儲存演練報告。演練報告是一個 JSON 檔案，其中包含偵測原則、警示類型和時間戳記、攻擊詳情以及恢復狀態等資訊。</block>
   <block id="4c5236fa54058c5de2620586b5275209" category="paragraph">在工作負載被標記為「需要恢復」之後，NetApp Ransomware Resilience 會建議一個實際復原點 （RPA），並協調工作流程以實現抗崩潰復原。</block>
+  <block id="da60db99c4c18d3244ee8042d2e49214" category="summary">透過模擬對範例工作負載發動勒索軟體攻擊，進行勒索軟體防範演練。然後，調查模擬攻擊並恢復範例工作負載。您可以多次開展勒索軟體防範演練。</block>
+  <block id="bc057280e260f0d5b39e389c43a2b1d3" category="section-title">戰備演練的運作方式</block>
+  <block id="695e71e91ef5d7909ee4240515cabbc1" category="inline-link-macro">自訂恢復</block>
+  <block id="01f2f9af50a7c029ac63c2cca055d4c6" category="inline-link-macro">資料外洩恢復</block>
+  <block id="ccfa1479deb2689401eb429cc06854de" category="paragraph">勒索軟體復原能力支援三種類型的演練：<block ref="d08d369745dba9c2b6dd002a205d6b5a" category="inline-link-macro-rx"></block>、<block ref="aab2f7e4d863babb030e318d1d730c9b" category="inline-link-macro-rx"></block> 和 <block ref="0a8d14a50d2701efa6ff6a56afe4b8f4" category="inline-link-macro-rx"></block>。乾淨復原和自訂復原演練模擬基於加密（熵）的攻擊，且兩者提供的復原方法有所不同。資料外洩復原演練模擬對您的資料進行異常讀取模式的竊取行為。</block>
+  <block id="3e2cdf9795c074cd40ede70cbf85a9b9" category="paragraph">配置整備演練時，Ransomware Resilience 會建立測試磁碟區、將勒索軟體保護與快照原則套用至該磁碟區、驗證連線能力、掛載磁碟區、複製基準資料、卸載磁碟區，並建立基準快照。</block>
+  <block id="fe2b3b951ec2ee39e3b94a78b27d6b96" category="paragraph">啟動演練後，Ransomware Resilience 會掛載磁碟區，然後模擬勒索軟體攻擊。如果演練是針對自訂恢復或乾淨還原，則測試磁碟區的基準資料將被替換為已知為勒索軟體的檔案副檔名以及加密/熵修改後的檔案。對於資料外洩復原演練，檔案不會被取代；Ransomware Resilience 會模擬攻擊者有系統地讀取和竊取資料。無論演練類型為何，Ransomware Resilience 都會觸發警報，並驗證警報是否已成功產生。</block>
+  <block id="ec48be06a1fa5ff039c9c72596c427f2" category="paragraph">執行演練時，您可以測試對警報的回應，並可選擇逐步完成復原過程，而不會影響真實資料。</block>
+  <block id="5c443c5dabb6ec11bf27dce07c9fd377" category="inline-link-macro">自訂還原</block>
+  <block id="e17d87cf10e73e1e3694a18b0b70c7af" category="list-text">**自訂恢復**：透過 <block ref="80fac8a28dde36dd3a08a6d3cf5b9f5b" category="inline-link-macro-rx"></block> 回應加密（熵）攻擊，您可以在其中設定恢復點。</block>
+  <block id="22db649015dad497d63774a6e7d2af47" category="list-text">**乾淨還原**：針對加密（熵）攻擊，透過 <block ref="d08d369745dba9c2b6dd002a205d6b5a" category="inline-link-macro-rx"></block> 恢復程序來回應，該程序會引導您找到最佳恢復點。</block>
+  <block id="e3b01c4848ac6d1626374e4dee0f0685" category="list-text">**資料外洩復原**：您必須先設定 <block ref="ea7722fd5c2c373bdaffcbde2ca3bbf6" category="inline-link-macro-rx"></block> 才能啟用此演練類型。</block>
+  <block id="05d14520f5a3fd970bfca710b43ae17a" category="admonition">演練進行中無法編輯整備演練配置。若要修改整備演練，請選擇 **Reset**，然後編輯演練。</block>
+  <block id="7820d7f245e7637e7833faccb183f36d" category="admonition">對於針對可疑使用者行為的自動回應，您只能進行快照處理。自動回應可疑使用者行為時，不支援封鎖使用者。</block>
 </blocks>

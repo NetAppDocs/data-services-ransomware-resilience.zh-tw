@@ -22,6 +22,9 @@ NetApp Ransomware Resilience 支援建立自動回應link:concept-user-behavior.
 
 您只能保護一個儲存 VM，且該 VM 至少需要有一個受可疑使用者行為偵測原則保護的工作負載。
 
+
+NOTE: 對於針對可疑使用者行為的自動回應，您只能進行快照處理。自動回應可疑使用者行為時，不支援封鎖使用者。
+
 .步驟
 . 在勒索軟體恢復功能中，選擇**設定**。
 . 在「使用者活動監控」磁貼中，選擇 **Manage**。
@@ -53,6 +56,9 @@ NetApp Ransomware Resilience 支援建立自動回應link:concept-user-behavior.
 
 
 | 資料銷毀 | Ransomware Resilience 可偵測到特定使用者大量刪除檔案的行為。 
+
+
+| 可疑的使用者行為 | Ransomware Resilience 可識別超出資料外洩、資料銷毀或加密範圍的異常行為。 
 |===
 . 選擇要套用自動回應的儲存虛擬機器。
 . 選擇**新增**以建立自動回應。
