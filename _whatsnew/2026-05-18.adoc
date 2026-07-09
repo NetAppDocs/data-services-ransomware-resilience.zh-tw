@@ -4,6 +4,7 @@
 
 
 
+[[google-cloud-netapp-volumes-support-preview]]
 === Google Cloud NetApp Volumes 支援（預覽版）
 
 勒索軟體復原功能現已支援 Google Cloud NetApp Volumes 系統，讓您能夠有效率地偵測並應對 Google Cloud NetApp Volumes 中的勒索軟體威脅。在進行發現時,勒索軟體復原功能會自動顯示來自 Google Cloud NetApp Volumes 系統的工作負載。發現這些系統後,它們會顯示在勒索軟體復原功能控制面板中。目前,勒索軟體復原功能對 Google Cloud NetApp Volumes 的支援仍處於預覽階段。
@@ -12,6 +13,7 @@
 
 
 
+[[clean-restore-enhancements]]
 === 乾淨還原增強功能
 
 現在，乾淨恢復功能支援產生報告。透過報告，您可以檢視和評估乾淨復原操作，並將這些資訊儲存為 CSV 檔案以便離線使用。

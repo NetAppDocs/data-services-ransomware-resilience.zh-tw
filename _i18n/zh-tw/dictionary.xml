@@ -2632,4 +2632,72 @@
   <block id="ea1fca7315926f55d77bcab3ed051982" category="section-title">2026年7月7日</block>
   <block id="4c0600f62cb13917f7a785731376b1cb" category="sidebar">管理警報和已封鎖的用戶</block>
   <block id="5f2a57952e65084ab1bcb535d4662440" category="paragraph">如需詳細資訊，請參閱 <block ref="8c33118b4350e89c06a1a557095207c2" category="inline-link-macro-rx"></block>。</block>
+  <block id="088851556c5183ba62f78e52f665450d" category="summary">NetApp Ransomware Resilience 在您啟用使用者活動監控時提供一個腳本，用於測試基於加密的勒索軟體攻擊和資料外洩事件。</block>
+  <block id="f10a2790decd8276267a9325d2ec853c" category="doc">在 NetApp Ransomware Resilience 中模擬惡意使用者行為</block>
+  <block id="4e0329a11fc113704ab597dec933d4f9" category="paragraph">在 NetApp Ransomware Resilience 中設定使用者活動監控時，您可以執行測試腳本來模擬可疑的使用者行為事件。</block>
+  <block id="48870f5f7ec6a7cd18dda2260f3f863d" category="paragraph">此腳本旨在模擬已知使用者發起的基於加密的勒索軟體攻擊。透過附加命令，您還可以模擬資料外洩或資料銷毀攻擊。</block>
+  <block id="b61313cb99a86aa7c4af1cfa344ac6cd" category="section-title">關於指令碼</block>
+  <block id="da3cedfecf043e3ceb03125c26fecc0d" category="paragraph">啟用電腦上的使用者活動監控後，即可使用測試腳本。您可以使用 shell 或 Python 來執行該腳本。</block>
+  <block id="7e6f25d1d7385994a39a9ac6707d57d7" category="paragraph">您應該在已建立資料收集器的儲存虛擬機器的某個磁碟區上執行此腳本。該腳本應在包含至少 100 個檔案（分佈在多個子目錄中）的測試資料磁碟區上執行；您可以使用腳本以程式設計方式產生這些檔案。在建立測試資料之前暫停資料收集器，然後在建立完成後繼續執行。</block>
+  <block id="f2cd23a46c4739df7b265821b029b5e5" category="list-text">此腳本模擬使用者加密事件。只能在 Linux 系統上執行。</block>
+  <block id="44be22ec8c354e86f26878a2e6869a6a" category="list-text">如果您的系統使用 NFSv4.1，則必須執行 ONTAP 9.15.1 或更高版本。</block>
+  <block id="531cbc897b356bf21820a08095b8c1a8" category="list-text">您可以將腳本作為 shell 腳本執行，或使用 Python 執行。</block>
+  <block id="9a1b8a4eb3ef803a3599c362930c48b1" category="admonition">需要<block ref="d7c15ecbf1bd0b493d7d802a7d5593c8" category="inline-xref-macro-rx"></block>來執行 Python 腳本。</block>
+  <block id="bb6ebe7d3cdaa25ff6af3432f080a641" category="inline-link-macro">資料收集器</block>
+  <block id="8c03a22f9c95640c3bb8429f4bf5e109" category="paragraph">您必須已在要進行測試的系統上建立 <block ref="25255e849fb901c2a60ef562973adcbd" category="inline-link-macro-rx"></block>。這需要建立使用者活動代理，然後啟用包含可疑使用者行為偵測功能的勒索軟體防護策略。</block>
+  <block id="0658a5d053bc56d26874c74f4f82eb95" category="section-title">Python 腳本的要求</block>
+  <block id="aa4b3b0dd36ad2480f69ecbf85167a6f" category="paragraph">要在 Python 中執行該腳本，您必須具備以下條件：</block>
+  <block id="8fae4712a65fdfaf48cbde542b2a9ade" category="inline-link-macro">已安裝 Python 版本 3.5.2 或更高版本</block>
+  <block id="c16a7f3126c119e01f3735cfa03fcd14" category="list-text"><block ref="c16a7f3126c119e01f3735cfa03fcd14" category="inline-link-macro-rx"></block></block>
+  <block id="930c8d3ab7ccdfb89b6367f3e4c9e33a" category="inline-link-macro">已安裝 pip</block>
+  <block id="05150bdac5efcf781bc7dc39187000ff" category="list-text"><block ref="05150bdac5efcf781bc7dc39187000ff" category="inline-link-macro-rx"></block></block>
+  <block id="c494a383b88b41e65ab6a667d5b86eab" category="list-text">已安裝 PyCryptodome 程式庫：<block ref="194fc90597125afc86caf1d15cbf368c" prefix=" " category="inline-code"></block></block>
+  <block id="946a47fad0db31bcb1352814f354f62e" category="admonition">您可以使用命令檢查您的 Python 版本<block ref="ac719163117fd79e0e5eddf5be2929c4" prefix=" " category="inline-code"></block>。您可以使用命令測試 pip 安裝<block ref="3327b3fc56e7d8a50b0df977a4c20e3b" prefix=" " category="inline-code"></block>。您可以使用命令測試 PyCryptodome 安裝<block ref="ee7f1b491d78d8f365fc68f9f583d45a" prefix=" " category="inline-code"></block>。</block>
+  <block id="8f0b614002da860dc1e6531a85cb97f3" category="section-title">模擬加密事件</block>
+  <block id="3eee06b6e6c02b14b6bf0a76a8e1ee71" category="list-title">準備系統</block>
+  <block id="87e2110ce690ce81adb3e713b153b873" category="list-text">將用於建立範例檔案的目標磁碟區掛載到 Linux 機器上。您可以掛載 NFS 或 CIFS 匯出磁碟區。</block>
+  <block id="1d1a594959ec615f56516f5d0f5e8ddb" category="open-title">NFS</block>
+  <block id="c6546b53840ec8245dd4d4d70fcdbc26" category="open-title">CIFS</block>
+  <block id="f50e5184fb8c928d7117d67711584443" category="inline-link-macro">目標磁碟區</block>
+  <block id="1673cf027945840c2811415d6232efdd" category="list-text">保護<block ref="3d3c2588c42d776cb353386bd6eee25e" category="inline-link-macro-rx"></block>。</block>
+  <block id="bc979566f738dcfe656a3b320c999839" category="list-text">暫停資料採集器。</block>
+  <block id="8c23ab446281c217db1cff12b27ccfd2" category="paragraph">在 Ransomware Resilience 中，選取 **Settings**，然後在 User detection monitoring 磁貼中選取 **Manage**。在 Data collector 標籤中，選取儲存 VM 的資料收集器，然後選取 **Pause**。</block>
+  <block id="a7a3e8f26a5ca674052385b91e2af3f9" category="list-text">新增要加密的檔案。您可以手動將要加密的檔案複製到目標資料夾或磁碟區中，也可以使用提供的腳本以程式設計方式建立這些檔案。您至少需要新增 100 個檔案。</block>
+  <block id="7e82a47442c59e75e46f9fdd753262f1" category="paragraph">若要以程式設計方式建立檔案：</block>
+  <block id="ea89b68c34ce4a63c0f77e17413c6e30" category="open-title">Shell</block>
+  <block id="c11cbcce6b0ad89ee99892b0be101ae0" category="list-text">登入執行用戶活動代理程式的主機。</block>
+  <block id="2d58c6f19a717d43f32a96bdf10d6ea3" category="list-text">將檔案伺服器儲存虛擬機器上的 NFS 或 CIFS 共用掛載到執行使用者活動代理程式的機器上。將工作目錄變更為相應的磁碟區以進行測試。</block>
+  <block id="9b06fa9f212979fe62299f124d940ebb" category="list-text">將腳本從使用者目錄代理安裝目錄複製到目標掛載位置：</block>
+  <block id="b3caaa68d416a8514777fe70cce61658" category="list-text">執行<block ref="ab2b6c413bb2ed5d0773bf72872cb574" prefix=" " category="inline-code"></block>指令，使用掛載目錄中的腳本建立測試資料集資料夾和檔案。此指令會在掛載資料夾下名為「test_dataset」的目錄中建立 100 個具有不同副檔名的非空檔案。</block>
+  <block id="a7f5f35426b927411fc9231b56382173" category="open-title">Python</block>
+  <block id="81241013d4d86f41891746f6aa17b1cb" category="list-text">將腳本從使用者目錄代理安裝目錄複製到目標磁碟區：</block>
+  <block id="6c9617bf31efa03703c1d95ebd8ae628" category="list-text">建立測試資料集：<block ref="d9e54f0bcc3f9baa2eba11b3752679fa" prefix=" " category="inline-code"></block>。</block>
+  <block id="e334323c00387f9c7a97f89668f49278" category="paragraph">此命令會在掛載資料夾下名為「test_dataset」的目錄中建立 100 個具有不同副檔名的（非空）檔案。</block>
+  <block id="5f47ed0572459cd1bd9d24536a91b94f" category="list-text">恢復收集器。</block>
+  <block id="725f6a6f3ce0c97f02d177ac7f5837ea" category="paragraph">在 Ransomware Resilience 中，選取 **Settings**，然後在 User detection monitoring 圖磚中選取 **Manage**。在 Data collector 索引標籤中，選取儲存 VM 的資料收集器，然後選取 **Resume**。</block>
+  <block id="84777a8a48e5db1a305f8031c48714e7" category="paragraph-title">模擬攻擊</block>
+  <block id="26b17225b626fb9238849fd60eabdf60" category="paragraph">+</block>
+  <block id="a9d5986540c724cee5301f21be69fcdb" category="list-text">將腳本從代理安裝目錄複製到目標掛載位置：<block ref="494e32253615c0d68d99633322481510" prefix=" " category="inline-code"></block>。</block>
+  <block id="3691873db288ed4131190505aca1ca8b" category="list-text">在掛載的目錄中執行腳本以加密測試資料集：<block ref="63e7482ce629b80b8af855bab40816a3" prefix=" " category="inline-code"></block>。</block>
+  <block id="d4c261be6751956136d8899a67f73a3a" category="list-text">將腳本從 Agent 安裝目錄複製到目標掛載位置：<block ref="384ad51ddad01da131e783aa5e8f11c5" prefix=" " category="inline-code"></block>。</block>
+  <block id="79f03c887a5b87f60dc11888eb1912c8" category="list-text">執行腳本以加密 "test_dataset" 中的資料：<block ref="fb27c7de1224eb6c593d86d443e08cba" prefix=" " category="inline-code"></block></block>
+  <block id="c831854b6d1296b1799fcf60d7b7b23a" category="inline-link-macro">請在 Ransomware Resilience Alerts 選單中查看警報。</block>
+  <block id="a356ea555457a50fd1024b72eda469df" category="paragraph">運行腳本後，您可以<block ref="947e5f30e76a2b5bc4762ca3a4aecff4" category="inline-link-macro-rx"></block>。</block>
+  <block id="ae5bda10485478daa986cdf30bc9e269" category="paragraph-title">在 Ransomware Resilience 中產生其他警示</block>
+  <block id="e05643c8bdde83ac8e66b25523f73c2e" category="paragraph">由於 Ransomware Resilience 會根據使用者行為進行調整，因此如果使用者在 24 小時內對相同資料重複執行相同操作，則不會產生後續警報。因此，您無法僅透過重新加密資料來產生另一個警報。若要產生更多警報，您必須重複上述程序：重新建立測試資料，然後對其進行加密。</block>
+  <block id="c7c8ba74ff4da532146fafc10096fb17" category="section-title">模擬資料外洩和資料銷毀警報</block>
+  <block id="fa99409416aabd6f21788becebea7f8c" category="paragraph">Ransomware Resilience 也支援模擬資料外洩或資料銷毀事件。</block>
+  <block id="45bda3ef7e901d33873cbff1e6690379" category="admonition">使用者必須在系統中活躍超過七天，使用者警示才能登錄。</block>
+  <block id="cfad69f39333cee3e161b5244b11653e" category="list-text">掛載受保護磁碟區：</block>
+  <block id="88f75a382c65ffd132afb22173b12253" category="list-text">暫停資料採集器：</block>
+  <block id="60ce062ddaebd3a3bb4145e9ac9ec1cd" category="list-text">建立資料集。此命令會建立一個包含 5,000 個檔案的資料集：</block>
+  <block id="e50f2b72c469150557983c8e468853cd" category="list-text">恢復資料收集器的操作：</block>
+  <block id="7f9d9c534a11d35cdc123038548fbc5a" category="list-text">執行批次讀取：</block>
+  <block id="a4d1f9df55cc0e951116c0a1ae2a8312" category="list-text">清除快取：</block>
+  <block id="12db011a51ee87b1a0fba45cff8aeca1" category="list-text">對所有檔案執行讀取操作，以模擬資料外洩：</block>
+  <block id="d70072b82ef29f9ccd9b78c13dcb0dd2" category="inline-link-macro">警報儀表板</block>
+  <block id="30c987f189c1203506e252277c182117" category="list-text">等待資料外洩警報出現。您可以確認警報是否存在於 <block ref="cd880d4b431a9e359489824093adec00" category="inline-link-macro-rx"></block> 中，並調查警報的詳細資訊。</block>
+  <block id="92e8752dc37f12422b8f4598efa4f75e" category="list-text">從警報中提取所需資訊後，刪除資料：</block>
+  <block id="b30a6af22c230e409ffe8e8aea6d40cd" category="sidebar">模擬攻擊</block>
+  <block id="9146963b2f60b37c2a323f89b7563bb7" category="sidebar">模擬惡意使用者事件</block>
 </blocks>

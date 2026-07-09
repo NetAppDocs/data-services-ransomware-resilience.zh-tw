@@ -4,6 +4,7 @@
 
 
 
+[[san-workload-support]]
 === SAN 工作負載支持
 
 此版本包括對BlueXP ransomware protection中的 SAN 工作負載的支援。現在，除了 NFS 和 CIFS 工作負載之外，您還可以保護 SAN 工作負載。
@@ -12,6 +13,7 @@
 
 
 
+[[improved-workload-protection]]
 === 改進的工作負載保護
 
 此版本改進了來自其他 NetApp 工具（例如 BlueXP backup and recovery）的快照和備份原則工作負載的組態程序。在先前的版本中，BlueXP ransomware protection 會探索來自其他工具的原則，僅允許您變更偵測原則。在此版本中，您現在可以將快照和備份原則替換為 BlueXP ransomware protection 原則，或繼續使用其他工具的原則。
@@ -20,6 +22,7 @@
 
 
 
+[[email-notifications]]
 === 電子郵件通知
 
 如果BlueXP ransomware protection偵測到可能的攻擊， BlueXP通知中會出現通知，並且會向您設定的電子郵件地址發送電子郵件。

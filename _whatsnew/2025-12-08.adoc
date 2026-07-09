@@ -4,12 +4,14 @@
 
 
 
+[[extension-blocking-is-enabled-at-the-workload-level]]
 === 擴充功能阻止功能已在工作負載層級啟用。
 
 啟用擴充封鎖功能後，現在是在工作負載層級而不是儲存虛擬機器層級啟用此功能。
 
 
 
+[[edit-user-behavior-alert-status]]
 === 編輯使用者行為警報狀態
 
 勒索軟體復原功能現在允許您編輯使用者行為警報的狀態。您可以手動關閉和解決警報。
@@ -18,6 +20,7 @@
 
 
 
+[[support-for-multiple-console-agents]]
 === 支援多個控制台代理
 
 勒索軟體復原功能現在支援使用多個控制台代理程式來管理相同系統。

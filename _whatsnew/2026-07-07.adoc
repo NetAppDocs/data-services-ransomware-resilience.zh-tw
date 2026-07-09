@@ -4,6 +4,7 @@
 
 
 
+[[exclude-file-paths-from-user-behavior-alerts]]
 === 從使用者行為警報中排除檔案路徑
 
 Ransomware Resilience 支援將特定檔案路徑從使用者行為監控警示中排除。如果您確定這些檔案路徑不存在風險，或者您正在對可能觸發警示的磁碟區中的檔案進行操作，則可以將其排除在外。

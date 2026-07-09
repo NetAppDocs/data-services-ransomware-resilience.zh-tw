@@ -4,6 +4,7 @@
 
 
 
+[[automated-responses-to-user-activity-alerts]]
 === 對使用者活動警報的自動回應
 
 Ransomware Resilience 現已支援在產生使用者活動警報時自動建立快照和封鎖使用者。透過自動回應，您可以在產生警告後立即封鎖使用者並建立快照以進行復原，從而實現更快速的回應，無需人工介入。

@@ -25,6 +25,7 @@ NOTE: Ransomware Resilience 無法探索使用 FlexGroup 的磁碟區系統。
 
 
 
+[[select-workloads-to-discover]]
 == 選擇要探索的工作負載
 
 在每個 Console 代理程式中，選擇要識別工作負載的系統。
@@ -69,6 +70,7 @@ link:rp-use-dashboard.html["了解儀表板顯示的內容。"]
 
 
 
+[[discover-newly-created-workloads-for-previously-selected-systems]]
 == 發現先前選定的系統新建立的工作負載
 
 如果您已向先前發現的系統新增了工作負載，則需要重新啟動發現以保護新的工作負載。
@@ -83,6 +85,7 @@ TIP: 如果您發現已發現的系統中存在未顯示的捲，則這些卷可
 
 
 
+[[discover-new-systems]]
 == 發現新系統
 
 如果您已經對系統執行探索，並在之後新增工作負載，請再次執行探索以識別工作負載。
@@ -96,6 +99,7 @@ TIP: 如果您發現已發現的系統中存在未顯示的捲，則這些卷可
 
 
 
+[[exclude-workloads]]
 == 排除工作負載
 
 勒索軟體復原功能可讓您將系統中的特定工作負載排除在勒索軟體保護和偵測之外。

@@ -28,6 +28,7 @@ Ransomware Resilience 手冊提供以下功能：
 
 
 
+[[playbooks]]
 == 劇本
 
 勒索軟體防護方案提供適用於 Google SecOps、Microsoft Sentinel 和 Splunk 的劇本。請查看對應的 GitHub 頁面以了解設定詳情。

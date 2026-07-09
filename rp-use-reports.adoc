@@ -53,6 +53,7 @@ image:screen-reports.png["顯示準備狀況演練報告的報告頁面"]
 
 
 
+[[more-information]]
 == 更多資訊
 
 * link:task-automate-user-activity.html["自動回應使用者活動事件"]

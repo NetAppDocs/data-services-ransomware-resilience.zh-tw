@@ -33,6 +33,7 @@ TIP: 工作負載恢復可能會影響正在運行的工作負載。您應該與
 
 
 
+[[view-workloads-that-are-ready-to-be-restored]]
 == 查看已準備好恢復的工作負載
 
 查看處於「需要恢復」恢復狀態的工作負載。
@@ -50,6 +51,7 @@ image:screen-recovery2.png["恢復頁面"]
 
 
 
+[[recover-a-workload]]
 == 恢復工作負載
 
 評估工作負載後、您有兩種選項可以還原工作負載：
