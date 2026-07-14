@@ -2700,4 +2700,10 @@
   <block id="92e8752dc37f12422b8f4598efa4f75e" category="list-text">從警報中提取所需資訊後，刪除資料：</block>
   <block id="b30a6af22c230e409ffe8e8aea6d40cd" category="sidebar">模擬攻擊</block>
   <block id="9146963b2f60b37c2a323f89b7563bb7" category="sidebar">模擬惡意使用者事件</block>
+  <block id="edf20e41ca56535f9914b651d4176206" category="section-title">適用於 Microsoft Sentinel 的 ARM 模板</block>
+  <block id="7add8fc88b51e4a92eb3463aed73b61d" category="paragraph">Ransomware Resilience 現在提供 Azure Resource Manager （ARM） 範本，用於將 Microsoft Sentinel 連接至 SIEM，提供一種輔助部署的方法。</block>
+  <block id="5b782deb754617d2be1da0beb60e5b16" category="inline-link-macro">連接到安全資訊和事件管理 (SIEM) 系統以進行威脅偵測和分析</block>
+  <block id="861174940ee146accf84fbe687b7ff1c" category="paragraph">如需詳細資訊，請參閱 <block ref="9ce2483ddf8d37cd167d593bafc6e6e7" category="inline-link-macro-rx"></block>。</block>
+  <block id="ae00487184e64f3a5e5738cc82621c2c" category="list-text">Microsoft Sentinel*</block>
+  <block id="daea42ccacab5543f1ae62da54cc9877" category="paragraph">{asterisk} Ransomware Resilience 也為 Microsoft Sentinel 提供了一個 Azure Resource Manager (ARM) 範本。</block>
 </blocks>

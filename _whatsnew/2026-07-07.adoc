@@ -10,3 +10,12 @@
 Ransomware Resilience 支援將特定檔案路徑從使用者行為監控警示中排除。如果您確定這些檔案路徑不存在風險，或者您正在對可能觸發警示的磁碟區中的檔案進行操作，則可以將其排除在外。
 
 如需詳細資訊，請參閱 link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-users-manage.html["從警報中排除檔案路徑"^]。
+
+
+
+[[arm-template-for-microsoft-sentinel]]
+=== 適用於 Microsoft Sentinel 的 ARM 模板
+
+Ransomware Resilience 現在提供 Azure Resource Manager （ARM） 範本，用於將 Microsoft Sentinel 連接至 SIEM，提供一種輔助部署的方法。
+
+如需詳細資訊，請參閱 link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem.html["連接到安全資訊和事件管理 (SIEM) 系統以進行威脅偵測和分析"^]。
