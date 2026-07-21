@@ -12,9 +12,9 @@ summary: NetApp Ransomware Resilience 支援對使用者活動事件建立自動
 
 
 [role="lead"]
-NetApp Ransomware Resilience 支援建立自動回應link:concept-user-behavior.html["使用者活動事件"]。透過自動回應功能，Ransomware Resilience 可在偵測到攻擊或警告時建立快照或封鎖使用者，從而更迅速地回應勒索軟體事件。
+借助 NetApp Ransomware Resilience，您可以自動化回應link:concept-user-behavior.html["使用者活動事件"]。透過自動化回應，Ransomware Resilience 可以在偵測到攻擊或警告時建立快照或封鎖使用者，從而更快速地回應勒索軟體事件。
 
-支援加密（使用者行為）、資料外洩和資料銷毀事件的自動回應。在建立自動回應之前，您必須具備 link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/suspicious-user-activity.html#create-a-user-activity-agent["配置了使用者活動代理，啟用了具有使用者活動偵測功能的原則，並建立了使用者目錄連接器。"]。
+自動化回應支援加密（使用者行為）、資料外洩和資料銷毀事件。您必須先link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/suspicious-user-activity.html#create-a-user-activity-agent["配置了使用者活動代理，啟用了具有使用者活動偵測功能的原則，並建立了使用者目錄連接器。"]才能建立自動化回應。當自動化回應被觸發時，Ransomware Resilience 會傳送電子郵件警示。
 
 
 

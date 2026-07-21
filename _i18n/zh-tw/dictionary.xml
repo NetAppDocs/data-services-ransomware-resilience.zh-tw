@@ -930,10 +930,8 @@
   <block id="fbc1ce5001bb72336a31bd6789ea9410" category="list-text">*事件*：</block>
   <block id="4bd1481e6e41ef9455be86b308947d80" category="list-text">*incident_id*：勒索軟體復原力針對勒索軟體復原力中受到攻擊的捲所產生的事件 ID。</block>
   <block id="cc3ab46854d1cd0291788ac54819f4cb" category="list-text">*alert_id*：勒索軟體復原能力為工作負載產生的 ID。</block>
-  <block id="6f51b5c965cb508d8d37085592031c21" category="list-text">*描述*：有關檢測到的警報的詳細信息，例如“在工作負載 arp_learning_mode_test_2630 上檢測到潛在的勒索軟體攻擊”</block>
   <block id="0df177143ce12a3516098cd3329e85c2" category="section-title">設定 AWS Security Hub 進行威脅偵測</block>
   <block id="de9b4f41a945df92e6c5b62f443f03f1" category="list-text">在 AWS Security Hub 中設定權限。</block>
-  <block id="5fd0d2c5fd8b96b7b7b69f69b942c559" category="list-text">在 AWS Security Hub 中設定身份驗證存取金鑰和金鑰。  （此處未提供這些步驟。）</block>
   <block id="66d20ba773065dfc079ca6feb04ef773" category="list-text">前往 *AWS IAM 控制台*。</block>
   <block id="bf6953a41efa897b0862fca0fe547641" category="list-text">選擇*政策*。</block>
   <block id="2228b7980f61d80481608141744ecee0" category="list-text">使用以下 JSON 格式的程式碼建立策略：</block>
@@ -1926,7 +1924,6 @@
   <block id="681024dbfdb70dd04ac980451d89db64" category="paragraph">勒索軟體復原功能支援使用 Splunk Cloud 和 Splunk Enterprise 進行威脅偵測。在勒索軟體復原功能中啟用 Splunk 連線之前，您需要：</block>
   <block id="026d482451225403707f4d919cfb8461" category="list-text">在 Splunk Cloud 或 Enterprise 中啟用 HTTP Event Collector，以便透過 HTTP 或 HTTPS 從 Console 接收事件資料。</block>
   <block id="42de63532cd927f3b14ff23339042fae" category="list-text">在 Splunk Cloud 或 Enterprise 中建立 Event Collector 權杖。</block>
-  <block id="b8e9fd0fd0fe8e4c4d930ae7315048e4" category="admonition">對於 Splunk Enterprise，您必須允許入站公共網際網路流量，以便 Ransomware Resilience 能夠使用提供給它的 HTTP 事件收集器詳細資訊推送事件。</block>
   <block id="261f193d834ffba7dae6c54f99306659" category="list-text">前往您選擇的 Splunk 環境：Cloud 或 Enterprise。</block>
   <block id="eade5cc0d987bed25c884550a681c364" category="list-text">前往 Splunk Cloud 或 Enterprise。</block>
   <block id="c49fdbd48abc0805f78e165d087f6c4b" category="list-title">無塵室 SVM 資料 LIF IP（crr-data-LIF-IP）</block>
@@ -2257,19 +2254,16 @@
   <block id="2f82a2e72d177e2d1d65a490cf072506" category="paragraph"><block ref="f63222f2dbc8e79c6867c1aa1bf7ad40" category="inline-link-macro-rx"></block>。</block>
   <block id="5e5e4d611b545e088600f1e94c227e02" category="list-text">在 Type （類型）部分中，選擇 *Cleaning only* （僅清潔）。</block>
   <block id="15133f0d70ddd9da0f0a4ccaf25d12f2" category="paragraph">安全資訊和事件管理 (SIEM) 系統集中管理日誌和事件資料，從而提供對安全事件和合規性的深入洞察。NetApp Ransomware Resilience 支援自動將資料傳送到您的 SIEM，以簡化威脅分析和偵測流程。</block>
-  <block id="f6f2f1de81eb4c260d55918d831d8b4e" category="paragraph">Ransomware Resilience 支援以下 SIEM 系統：</block>
   <block id="963e2ddcdebcdd0f6fcbd1dad696e580" category="admonition">NetApp Ransomware Resilience 也提供 <block ref="de8332ed81162473af5cb8a1551a7e36" category="inline-link-macro-rx"></block>。</block>
   <block id="1d128c6086cbb73d30a6cbf3e127963d" category="list-text">*title*：偵測到的警示的顯示名稱。</block>
   <block id="41b1238763de1c7569a52c2f6f418f26" category="list-title">在 Ransomware Resilience 中驗證 AWS Security Hub</block>
   <block id="a9e57cc6ddc3d658ec2f623d0d9bc8a4" category="list-text">在 Ransomware Resilience 中，選取側邊欄中的 *Settings* 。</block>
-  <block id="d28cdccd0f4e99a6f4e0f91d5197063e" category="list-text">選擇 *AWS Security Hub* 作為 SIEM 供應商。</block>
   <block id="646744982a4247883454fa20145f8b06" category="list-text">檢閱 *權限* 區段。</block>
   <block id="b4d9ce89acb6384e4535ea86caa108e0" category="list-text">展開 *Authentication* 部分。</block>
   <block id="f762a2cc3430a0ec53b845b435f881e0" category="list-text">輸入 AWS *帳戶*，然後選擇該帳戶的 *AWS 區域*。</block>
   <block id="443138dbe7f978d2acaacf2bd2231445" category="list-text">輸入來自 AWS Security Hub 的 *Access key* 和 *Secret key*。</block>
   <block id="d180fa8b6818eb2751ed18c17d309831" category="list-text">選擇 *Connect* 開始傳送 SIEM 資料。</block>
   <block id="78fa61a5dcd11b7ca556c56cd411d0dc" category="section-title">配置 Google SecOps 進行威脅偵測</block>
-  <block id="3732ca50d0bc5d17cb16c93b502acb56" category="paragraph">在 Ransomware Resilience 中啟用 Google SecOps 之前，您需要在 Google SecOps 中註冊日誌類型和 webhook，以啟用服務之間的連線。</block>
   <block id="3ab654d33d42325a77bd1ada435779eb" category="list-title">建立日誌類型</block>
   <block id="2cda02602843e46261d1c4d67d55abbb" category="list-text">前往 Google SecOps。</block>
   <block id="47d900523b55b2819796e70d06b96a82" category="list-text">導覽至 *Settings* &gt; *SIEM Settings* &gt; *Available Log Types*。</block>
@@ -2286,14 +2280,12 @@
   <block id="1d21bee4c48baf7d666f49740de06448" category="list-text">開啟 *Secret key* 標籤。產生密鑰，或者如果您已經建立了密鑰，則複製它。儲存金鑰，以便在 NetApp Ransomware Resilience 中進行身份驗證時使用。</block>
   <block id="b5fdc6af33586c2a9305369db3576ff7" category="list-text">使用貴組織的 Google API 金鑰流程建立 *API 金鑰*。</block>
   <block id="2831fb9ebcc0eda00f544f8526b2c82b" category="list-title">在 Ransomware Resilience 中驗證 Google SecOps</block>
-  <block id="0005dc12bc53549857c7de28cb9a33e8" category="list-text">選擇 *Google SecOps* 作為 SIEM 供應商。</block>
   <block id="24918ea780ad12c93c6521bbd538adb6" category="list-text">請查看 *Prerequisites* 和 *Webhook feed* 部分。</block>
   <block id="f7a9de73d2c4b8bc9f7ff37fe64b7f3f" category="list-text">輸入您從 Google SecOps 的 webhook 端點 URL 複製的 *Webhook URL*。</block>
   <block id="fb7c3ca4d95f3fd19a05ab9668b09dbf" category="list-text">輸入來自 Google SecOps 的 *Secret key* 和 *API key*。</block>
   <block id="6774cf3c09a237d7a31083a9ef2d4b47" category="paragraph">在 Ransomware Resilience 中啟用 Microsoft Sentinel 之前，您需要在 Microsoft Sentinel 中執行以下幾個主要步驟：</block>
   <block id="d267b04e21aa140dd2ee815218bd7f5c" category="list-title">驗證 Ransomware Resilience 以接收來自 Microsoft Sentinel 的事件</block>
   <block id="76337cc6c9573906b5d896882951d5d3" category="list-title">在 Ransomware Resilience 中驗證 Microsoft Sentinel</block>
-  <block id="2115fc3be6742ece8685887768fc977c" category="list-text">選擇 *Microsoft Sentinel* 作為 SIEM 提供者。</block>
   <block id="2b14913164ec32916fd5a78e5f62baee" category="list-text">請查看 *Prerequisites*、*Registration* 和 *Permissions* 部分，確保您已成功完成每個步驟。</block>
   <block id="c842605d2209e1232c7e93fa4c6d547b" category="list-text">輸入 *Directory （tenant） ID*、*Application （tenant） ID* 和 *Client secret*。選擇 *Authenticate*，然後等待 UI 確認認證資料已通過驗證。</block>
   <block id="ffdd051c4118c41574ae62c7536ccf18" category="list-text">在下拉式選單中，選擇要將 SIEM 資料傳送至的 *Subscription ID*、*Resource group* 和 *Log analytics workspace*。</block>
@@ -2301,7 +2293,6 @@
   <block id="0e1da6f6e7ced8d8073144cd5f10b8b7" category="list-title">使用 NetApp Ransomware Resilience 驗證 Splunk</block>
   <block id="5062ec86b18fed38d98e9e38d8bc9223" category="list-text">選擇 *Splunk* 作為 SIEM 供應商。</block>
   <block id="76dd66f4900813f356a68e5c41710377" category="list-text">檢閱 *Event collector* 和 *Token* 區段，確認您擁有正確的資訊。</block>
-  <block id="3709262a3984a4066d844e26650ffbfd" category="list-text">為 HTTP Event Collector 選擇**通訊協定**。建議使用 HTTPS，但如果 HTTP Event Collector 未啟用 SSL，請選擇 *HTTP*。</block>
   <block id="0bffbc11a95d5a4be5584ad87467b460" category="list-text">請輸入執行 HTTP Event Collector 的 Splunk Cloud 執行個體的 *Host* 和 *Port*。連接埠應與您在 HTTP Event Collector 程序中輸入的連接埠相符。</block>
   <block id="00b8afb4b439e4d80895bdc0b67f43e4" category="list-text">輸入您在 Splunk 中建立的事件收集器權杖。</block>
   <block id="9b70df306d1f1719fd9d70e02911394c" category="section-title">2026 年 5 月 11 日</block>
@@ -2516,9 +2507,7 @@
   <block id="0e5314dd9df9fd8758e118ce1e7ba897" category="summary">NetApp Ransomware Resilience 支援對使用者活動事件建立自動回應，使您能夠自動建立快照或封鎖使用者。</block>
   <block id="da6a5c0ffdbef8b4ec186025eff8e43b" category="doc">在 NetApp Ransomware Resilience 中自動回應使用者活動警報</block>
   <block id="11b56910cc00c324c49386ed5582988f" category="inline-link-macro">使用者活動事件</block>
-  <block id="0a8871a3299a107751c7b0db71e644f4" category="paragraph">NetApp Ransomware Resilience 支援建立自動回應<block ref="8b86ab47aa824ef9943240ff5124bbba" category="inline-link-macro-rx"></block>。透過自動回應功能，Ransomware Resilience 可在偵測到攻擊或警告時建立快照或封鎖使用者，從而更迅速地回應勒索軟體事件。</block>
   <block id="24bb73d1c33f357d17024d9c2c631ff2" category="inline-link-macro">配置了使用者活動代理，啟用了具有使用者活動偵測功能的原則，並建立了使用者目錄連接器。</block>
-  <block id="5a1cf133e86dfea0d4fd6beddf99419d" category="paragraph">支援加密（使用者行為）、資料外洩和資料銷毀事件的自動回應。在建立自動回應之前，您必須具備 <block ref="c512b877bbe8303215878962f3edb05e" category="inline-link-macro-rx"></block>。</block>
   <block id="5a9dbc95cd10e68b8aa5b25769a12f66" category="section-title">建立自動回應</block>
   <block id="525947b7bc9136d3c68f8d5e68e67c65" category="paragraph">您只能保護一個儲存 VM，且該 VM 至少需要有一個受可疑使用者行為偵測原則保護的工作負載。</block>
   <block id="0ba604d3520d7d31a74f42a24b136cf6" category="list-text">選擇 **Automated responses** 索引標籤。</block>
@@ -2706,4 +2695,35 @@
   <block id="861174940ee146accf84fbe687b7ff1c" category="paragraph">如需詳細資訊，請參閱 <block ref="9ce2483ddf8d37cd167d593bafc6e6e7" category="inline-link-macro-rx"></block>。</block>
   <block id="ae00487184e64f3a5e5738cc82621c2c" category="list-text">Microsoft Sentinel*</block>
   <block id="daea42ccacab5543f1ae62da54cc9877" category="paragraph">{asterisk} Ransomware Resilience 也為 Microsoft Sentinel 提供了一個 Azure Resource Manager (ARM) 範本。</block>
+  <block id="59ad121b0ef1b561c2f96f9b5fbd50f8" category="doc">透過 Webhook 設定 SIEM</block>
+  <block id="43a14127ca7c560502e3232122f8748a" category="paragraph">Ransomware Resilience 現在支援透過 Ransomware Resilience UI 中的 Webhook 設定安全性資訊和事件管理 （SIEM） 系統。透過 Webhook，您可以將首選的 SIEM 系統整合到您的勒索軟體監控中。</block>
+  <block id="777ce6dfcc1db686d2520e63a7141ce2" category="inline-link-macro">設定 SIEM 系統</block>
+  <block id="31c6c885ce60b20eae4e9be492057a12" category="paragraph">如需詳細資訊，請參閱 <block ref="b6174b83c6a16df05a0ab6131828d421" category="inline-link-macro-rx"></block>。</block>
+  <block id="bb52269a2ff950398b1909638550daa9" category="section-title">使用者活動事件自動回應的電子郵件警示</block>
+  <block id="631a554bd5f4de62ab009d76aaf76846" category="paragraph">現在，當使用者活動事件觸發自動化回應時，Ransomware Resilience 會發送電子郵件通知，從而提高 Ransomware Resilience 和勒索軟體活動的清晰度與可見度。</block>
+  <block id="75461e261fd2f473b4e0733ac4887e0e" category="paragraph">借助 NetApp Ransomware Resilience，您可以自動化回應<block ref="8b86ab47aa824ef9943240ff5124bbba" category="inline-link-macro-rx"></block>。透過自動化回應，Ransomware Resilience 可以在偵測到攻擊或警告時建立快照或封鎖使用者，從而更快速地回應勒索軟體事件。</block>
+  <block id="73b27110725383edb06a9dc83aff6510" category="paragraph">自動化回應支援加密（使用者行為）、資料外洩和資料銷毀事件。您必須先<block ref="c512b877bbe8303215878962f3edb05e" category="inline-link-macro-rx"></block>才能建立自動化回應。當自動化回應被觸發時，Ransomware Resilience 會傳送電子郵件警示。</block>
+  <block id="c10f40999b74c408263f790b30e70efe" category="inline-xref">webhooks</block>
+  <block id="ee3aba37ccd4985fc7d15a199d517a50" category="paragraph">Ransomware Resilience 支援使用 <block ref="e6ac5251282462e1cfdbbbfa22412ff3" category="inline-xref-macro-rx"></block> 設定任何 SIEM 系統。此外，Ransomware Resilience 提供對下列 SIEM 系統的原生支援：</block>
+  <block id="d5c342a30db66bfb5418b79a9f19b286" category="list-text">*執行摘要*：有關偵測到的警示的詳細資訊，例如，「在工作負載 arp_learning_mode_test_2630 上偵測到潛在的勒索軟體攻擊」</block>
+  <block id="fe3ceea8ed408bff52f09ca0335f65f5" category="list-text">在 AWS Security Hub 中設定用於驗證的存取金鑰和秘密金鑰。（此處未提供這些步驟。）</block>
+  <block id="d2be5881631d27ed5ce3e309121d0e53" category="list-text">在「設定」頁面中，在 SIEM 連線磁貼中選擇 *Connect* ，然後在下拉式選單中選擇 *AWS Security Hub* 。</block>
+  <block id="c144606b427fbc557277971daa00152f" category="paragraph">在 Ransomware Resilience 中啟用 Google SecOps 之前，您需要在 Google SecOps 中註冊日誌類型和 webhook，以啟用服務之間的連線。</block>
+  <block id="ff7430bbc7989396bdfa391c17ed68d4" category="list-text">在「設定」頁面中，在 SIEM 連線磁貼中選擇 *Connect*，然後從下拉式選單中選擇 *Google SecOps*。</block>
+  <block id="d3795d8b35a388579f4eaa60f648a4d4" category="list-text">在「設定」頁面中，在 SIEM 連線磁貼中選擇 *Connect* ，然後從下拉式選單中選擇 *Microsoft Sentinel* 。</block>
+  <block id="d4481df8ac63625a6a6fd58e19c69cec" category="admonition">對於 Splunk Enterprise，您必須允許傳入公用網際網路流量，以便 Ransomware Resilience 能夠使用提供給它的 HTTP 事件收集器詳細資訊推送事件。</block>
+  <block id="c8cf3617197db1356055f1d7f387cff7" category="list-text">為 HTTP 事件收集器選擇*協定*。建議使用 HTTPS，但如果 HTTP 事件收集器未啟用 SSL，請選擇*HTTP*。</block>
+  <block id="2ef95d98a4bd83ef8f4ffee234878d99" category="section-title">使用 Webhook 設定 SIEM</block>
+  <block id="2e425f7b2aa8508f59214e342708abec" category="paragraph">在將 SIEM 與 Ransomware Resilience 連接之前，您必須先在 SIEM 本身的平台上設定 SIEM。請依照以下步驟設定與 Ransomware Resilience 的通訊。</block>
+  <block id="04197c51b116ba4031a3ac602bb09471" category="list-text">在 *SIEM* 磁貼中，如果您是首次設定 SIEM，請選擇 *Connect*，然後選擇 *Webhooks*。否則，請選擇 *Manage*。在總覽頁面上，選擇 *+ Connect*，然後選擇 *Webhook*。</block>
+  <block id="583eb71581a12d86ba17c59deaf766b5" category="list-text">請提供 SIEM 產品的*名稱*和連線的 *URL*。URL 不能進行編碼。</block>
+  <block id="8dce2cbe40de33689de6695c13f5cd07" category="list-text">請使用「Key: Value」的格式輸入*自訂標頭*。每個鍵值對必須分隔佔一行。</block>
+  <block id="fee300ebf7c2a594cb93ad5f3cf7fe70" category="list-text">請查看 JSON 格式的 *Message* 範本。</block>
+  <block id="e91f3d1b4cabfcd3ced416d0879b83b8" category="paragraph">若要新增其他參數，請從輸入欄位旁的清單中複製，然後貼上到訊息的對應位置。您也可以新增自訂參數：在自訂參數中，選取 *新增*，然後輸入 *名稱*、*值* 和 *執行摘要*。複製並貼上到訊息區段。</block>
+  <block id="dcda1094eb9f2afd40a58398eedab4a9" category="inline-image-macro">SIEM webhook 組態的螢幕截圖。</block>
+  <block id="f3338a2feb70a4545b2a0009bc9d59de" category="paragraph"><block ref="f3338a2feb70a4545b2a0009bc9d59de" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="fc0c98e36622934455471784ac00ae38" category="list-text">（可選）選擇 *Send test message* 來測試連線能力。</block>
+  <block id="d17b23053b2c8905a1374dfbb3177a6c" category="list-text">選擇「連線」以啟動與 Ransomware Resilience 的連線。</block>
+  <block id="256edba68011601436675d5223414692" category="admonition">建立 SIEM 組態後，您可以對其進行編輯。除名稱外，您可以編輯所有欄位。</block>
+  <block id="ac750267020c9b3c0e32de825d9b57fc" category="section-title">2026年7月20日</block>
 </blocks>

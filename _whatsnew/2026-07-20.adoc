@@ -1,0 +1,21 @@
+= 透過 Webhook 設定 SIEM
+:allow-uri-read: 
+
+
+
+
+[[configure-siem-through-webhooks]]
+=== 透過 Webhook 設定 SIEM
+
+Ransomware Resilience 現在支援透過 Ransomware Resilience UI 中的 Webhook 設定安全性資訊和事件管理 （SIEM） 系統。透過 Webhook，您可以將首選的 SIEM 系統整合到您的勒索軟體監控中。
+
+如需詳細資訊，請參閱 link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem.html["設定 SIEM 系統"^]。
+
+
+
+[[email-alerts-for-automated-responses-to-user-activity-events]]
+=== 使用者活動事件自動回應的電子郵件警示
+
+現在，當使用者活動事件觸發自動化回應時，Ransomware Resilience 會發送電子郵件通知，從而提高 Ransomware Resilience 和勒索軟體活動的清晰度與可見度。
+
+如需詳細資訊，請參閱 link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-automate-user-activity.html["自動回應使用者活動警示"^]。
