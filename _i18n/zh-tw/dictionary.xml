@@ -1481,10 +1481,8 @@
   <block id="d51c0020ded66c680ed4bf4dab57a782" category="paragraph">勒索軟體彈性透過分析ONTAP中 FPolicy 產生的使用者活動事件來偵測可疑的使用者活動。要收集用戶活動數據，您需要部署一個或多個用戶活動代理程式。該代理程式是可連接到租用戶上的裝置的 Linux 伺服器或 VM。</block>
   <block id="b9300e15e3fa20c1dc3ecfabbbb96a7b" category="section-title">作業系統要求</block>
   <block id="afea8c44acd019a3a489f7a3ddeb5c8e" category="admonition">用于用户活动代理的计算机不应运行其他应用程序级别的软件。建議使用專用伺服器。</block>
-  <block id="19edca9ea70315410039bf08b3ffecda" category="paragraph">這<block ref="0a342b59ecdcede0571340b9ed11633f" prefix=" " category="inline-code"></block> 安裝需要該指令。這<block ref="beb493211c3135923a11284ef26bf909" prefix=" " category="inline-code"></block> 該命令用於安裝、運行腳本和卸載。</block>
   <block id="a54c13ad42512dbfec4e8a44d793a52e" category="section-title">伺服器要求</block>
   <block id="34af15b56c0def7a2806fd4b03537e12" category="list-text">**磁碟空間**：36 GB 可用磁碟空間</block>
-  <block id="68eda0e29d8e074409c51f53581f3a64" category="admonition">分配額外的磁碟空間以用於建立檔案系統。請確保檔案系統中至少有 35 GB 的可用空間。+ 如果<block ref="68ab1268abb7e5f5688810968df97d6b" prefix=" " category="inline-code"></block> 這是從 NAS 儲存裝置掛載的資料夾，本機使用者必須有權限存取此資料夾。如果本機使用者沒有必要的權限，則使用者活動代理程式建立可能會失敗。</block>
   <block id="52554f7429cd5c72cd3c3e9561412160" category="admonition">建議您使用網路時間協定 (NTP) 或簡單網路時間協定 (SNTP) 同步ONTAP系統和使用者活動代理程式電腦上的時間。</block>
   <block id="77469c598ab2b5984e8dafd3d15a2315" category="section-title">雲端網路存取規則</block>
   <block id="c793f078b8fd1dcce9dfd5ae57f2a51c" category="paragraph">查看您所在地區（亞太地區、歐洲或美國）的雲端網路存取規則。</block>
@@ -1496,14 +1494,12 @@
   <block id="f2ca52b87225d79d40f899aebabeec45" category="cell">使用者活動代理</block>
   <block id="b7169d36c5259a3a051359ca51dbd682" category="cell">取得勒索軟體復原能力</block>
   <block id="0cd58d8585970b5311e84ca2c34ba5ef" category="section-title">網路內規則</block>
-  <block id="1b09a58921479be87f9dae639915150f" category="cell">389（LDAP） 636（LDAP/啟動-tls）</block>
   <block id="84caee864977bc98db0b0df24853f63c" category="cell">LDAP 伺服器 URL</block>
   <block id="b272c206ad7d80ebc1e17385c8d4450c" category="cell">連線到 LDAP</block>
   <block id="3e1d4f7104327b6aa02e8d988c873b86" category="cell">叢集或SVM管理IP位址（取決於SVM收集器配置）</block>
   <block id="9bf305870fa281c6eff0d16d2e8d6b6d" category="cell">API 與ONTAP進行通信</block>
   <block id="c1d0965e767c67506aa60bc80d5b716e" category="cell">35000 - 55000</block>
   <block id="4f1eb19420b75b94e053a805cd0feb1d" category="paragraph">SVM 資料 LIF IP 位址</block>
-  <block id="3b04fff3171347ca78c0c2fb925106dd" category="cell">ONTAP與使用者活動代理程式之間關於 Fpolicy 事件的通訊。為了讓ONTAP能夠向用戶活動代理發送事件，必須向其開放這些端口，包括用戶活動代理本身上的任何防火牆（如果存在）。+ **注意：**您不需要預留*所有*這些端口，但您為此預留的端口必須在此範圍內。建議您先預留 100 個端口，如有必要再增加。</block>
   <block id="3756ac460c094adc890ad7f26460010b" category="cell">35000-55000</block>
   <block id="0e948943e8277507eeeec08bbb91d3b4" category="cell">叢集管理IP</block>
   <block id="f41a23af01b3d7e16d16141a3f6003df" category="cell">ONTAP叢集管理 IP 與使用者活動代理程式之間關於 *EMS 事件* 的通訊。為了讓ONTAP向用戶活動代理發送 EMS 事件，必須向用戶活動代理開放這些端口，包括用戶活動代理本身上的任何防火牆。+ **注意：**您不需要預留*所有*這些端口，但您為此預留的端口必須在此範圍內。建議您先預留 100 個端口，如有必要再增加。</block>
@@ -1584,7 +1580,6 @@
   <block id="e7d932b2a7bf9471a38ac8c68fbf83ad" category="list-text">&lt;site_name&gt;.cs01-ap-1.cloudinsights.netapp.com</block>
   <block id="8f31785e58dfdc396495a127fdd7d7dd" category="list-text">&lt;site_name&gt;.c01-ap-1.cloudinsights.netapp.com</block>
   <block id="edc2894193def90c2ccbb8f855d6f564" category="list-text">&lt;site_name&gt;.c02-ap-1.cloudinsights.netapp.com</block>
-  <block id="b7293bd6a9f7cb8e5890a221fe74d3cb" category="list-text">gentlogin.cs01-ap-1.cloudinsights.netapp.com</block>
   <block id="00c7e633a09840b7e60ee5de5aec797b" category="list-text">&lt;site_name&gt;.cs01-eu-1.cloudinsights.netapp.com</block>
   <block id="54d1f56395e5ec9d39e9a416c61b311a" category="list-text">&lt;site_name&gt;.c01-eu-1.cloudinsights.netapp.com</block>
   <block id="0ba615943513b9683a0e9b145f96e5b2" category="list-text">&lt;site_name&gt;.c02-eu-1.cloudinsights.netapp.com</block>
@@ -1612,12 +1607,9 @@
   <block id="75a6a9319b6e0275c06122285e74cd15" category="inline-link-macro">建立所需的代理程式和收集器，並啟用適當的勒索軟體防護策略</block>
   <block id="cce78dc6ebbec7385a01f2146d6d01c8" category="section-title">後續步驟</block>
   <block id="92df6f183b2e1cfcc696af23c1edd4cb" category="summary">在建立使用者活動代理程式和其他收集器之前、您必須確保符合所述的作業系統、伺服器和網路需求。</block>
-  <block id="fc36a1ad1399ea3c897ac2b166f590bc" category="section-title">雲端供應商支援</block>
   <block id="3156b4b992dec700b60fedaa2eca010c" category="paragraph">以下作業系統支援可疑使用者行為偵測：</block>
   <block id="92adf790b863484fc83be969039ec890" category="section-title">伺服器建議</block>
-  <block id="28296e91eb448ead6c0f37548d3101a8" category="list-text">建議您將使用者活動代理安裝在與 Ransomware Resilience 環境不同的系統上。如果確實要安裝在同一台機器上，則應預留 50 至 55 GB 的磁碟空間。對於 Linux 系統，請分配 25-30 GB 的空間至<block ref="4bf2f0d069734974e4d76e679433aa07" prefix=" " category="inline-code"></block>，並分配 25 GB 至<block ref="ea5f88360fb7c06d3270b165b4dad226" prefix=" " category="inline-code"></block>。</block>
   <block id="b81a18d778d8d2491614ae90532db84f" category="admonition">在初始安裝期間，請將 <block ref="50cff7c5933e29331b88e32e4f2a101d" prefix=" " category="inline-code"></block> 替換為萬用字元 <block ref="3389dae361af79b04c9c8e7057f60cc6" prefix="(" category="inline-code"></block> 權限。代理程式啟動並完全運作後，您可以將權限替換為網站名稱。請聯絡您的 NetApp 代表以取得網站名稱。</block>
-  <block id="9625968bd02420d60f939947dec5ee63" category="admonition">使用者活動代理程式使用 NetApp Data Infrastructure Insights 技術，因此需要使用<block ref="08f7b82cf54cd7bdcab171ad9bd445cc" prefix=" " category="inline-code"></block>端點。如需詳細資訊，請參閱</block>
   <block id="c4f09ee186bb94e99b8c3f938adf8816" category="section-title">基於亞太地區的使用者活動代理程式部署</block>
   <block id="869af1b4577e081268bf8ee592a6018e" category="section-title">歐洲使用者活動代理程式部署</block>
   <block id="ae6cc9c44044939bcbbefd693857f742" category="section-title">美國使用者活動代理程式部署</block>
@@ -2369,7 +2361,6 @@
   <block id="3b35700f5db77466b9829093b579bafc" category="list-text">叢集管理使用者名稱和密碼</block>
   <block id="8357c5714e49295e422957fed4ec2caa" category="list-text">已安裝<block ref="2fa62e05d832f87969a8d99226be5a74" prefix=" " category="inline-code"></block> 在 Linux 機器上（您可以使用命令進行安裝<block ref="bd20ec476e804fab40ab36d6175d1936" prefix=" " category="inline-code"></block>）</block>
   <block id="361ccd8284c6f49a106851d9aeaab8b2" category="list-text">從託管使用者活動代理程式的叢集中，以管理員身份執行指令碼：<block ref="3b9c122b681f59f04f03105e338591ce" prefix=" " category="inline-code"></block></block>
-  <block id="e0e0df3692200b73a8808571748906b3" category="list-text">出現提示時，提供叢集 IP 位址、管理員使用者名稱和管理員密碼。</block>
   <block id="2757451d7ac78a3fd169d2600d54a8ad" category="list-text">該腳本大約需要五分鐘才能執行完畢。執行完成後，命令列會顯示事件速率，例如「Svm svm_rate 正在產生 100 個事件/秒」。</block>
   <block id="73e368716ffe1eef8733ba4acf297472" category="paragraph">使用事件速率來計算您的大小。</block>
   <block id="caa617e3833cdf64d33905efb6a82682" category="paragraph">如果您未使用 DII，請按照此處的組態說明進行操作。</block>
@@ -2405,7 +2396,6 @@
   <block id="73ec7da766dca94cf1c4b669985cd2a5" category="list-text"><block ref="73ec7da766dca94cf1c4b669985cd2a5" category="inline-link-macro-rx"></block></block>
   <block id="f2947fbfc4001f394585c42e28740767" category="inline-link-macro">設定使用者行為代理程式和偵測器</block>
   <block id="ad709ceaf0cfdbb15b5cbf9fdce90fd8" category="list-text"><block ref="ad709ceaf0cfdbb15b5cbf9fdce90fd8" category="inline-link-macro-rx"></block></block>
-  <block id="f79eb8967b3c8df9a5242b71bfa6765b" category="paragraph">使用者行為資料可以儲存在 AWS 和 Azure 的以下區域：</block>
   <block id="f7d8c82b937f1272bcd68f037f70dcbb" category="list-text">Azure NetApp Files 不支援 FPolicy 或使用者行為偵測。Azure NetApp Files 也不支援熵鑑識。</block>
   <block id="30d4c1b67b11bb42e2278b195f299c80" category="list-text">目前，您只能對 Google Cloud NetApp Volumes 工作負載套用基於加密和 FPolicy 的保護策略。您無法套用使用者行為保護策略。</block>
   <block id="37377fd884c4cf3b9e7e8e0ed97e4865" category="paragraph-title">NetApp Ransomware Resilience 能夠辨識哪些類型的攻擊？</block>
@@ -2480,7 +2470,6 @@
   <block id="7eba97a8ef53163c9fd30177df926301" category="admonition">如果您正在設定來源位於 Amazon FSx for NetApp ONTAP 中的 IRE，請跳過此無塵室 SVM 資料 LIF IP 要求。</block>
   <block id="4d82a1ec1af02725042c8c785564ee7a" category="cell">Amazon FSx for NetApp ONTAP</block>
   <block id="7e04984fc8cb78806e36cbf9552342fd" category="admonition">目前 SAN 工作負載不支援使用者活動偵測。您可以在 Amazon FSx for NetApp ONTAP、Cloud Volumes ONTAP 和 ONTAP 中將使用者活動偵測與 NAS 工作負載搭配使用。</block>
-  <block id="d3009064cbb364032ea2a7bc94ab246b" category="paragraph">Ransomware Resilience 支援對本機 ONTAP 系統以及 Amazon FSx for NetApp ONTAP 和 Cloud Volumes ONTAP 系統中的工作負載進行使用者行為偵測，這些系統符合 <block ref="12d7be4f3da31a90f0de3bba45ddeec1" category="inline-xref-macro-rx"></block>。</block>
   <block id="0270ec13158ac8d81c5022ad41a38235" category="admonition">如果您正在為 Amazon FSx for NetApp ONTAP 和 Azure NetApp Files 設定保護策略，請參閱<block ref="f35eaad9edb95ec2be22c4403bf0d360" category="inline-link-macro-rx"></block>。</block>
   <block id="b70244907e8a4cb4fbb47d6e9fdda53a" category="cell">雲端：Amazon FSx for NetApp ONTAP</block>
   <block id="b4bada7d854e6650f9cc28e404fe40fb" category="admonition">對於部署到 Amazon FSx for NetApp ONTAP 的 IRE，您無需提供此資訊。</block>
@@ -2726,4 +2715,16 @@
   <block id="d17b23053b2c8905a1374dfbb3177a6c" category="list-text">選擇「連線」以啟動與 Ransomware Resilience 的連線。</block>
   <block id="256edba68011601436675d5223414692" category="admonition">建立 SIEM 組態後，您可以對其進行編輯。除名稱外，您可以編輯所有欄位。</block>
   <block id="ac750267020c9b3c0e32de825d9b57fc" category="section-title">2026年7月20日</block>
+  <block id="65e105b8a7c994c340c0237dcf7e5970" category="section-title">使用者活動代理程式雲端供應商支援</block>
+  <block id="9ebc4352a5afdb84f0bff93ebd15df5b" category="paragraph">若要啟用使用者行為偵測，您必須建立使用者活動代理程式。使用者活動代理程式是資料收集器的執行檔環境，可與 Ransomware Resilience 共用使用者活動事件。</block>
+  <block id="b176415a669a2bcfa34dd5a6868e1756" category="paragraph">使用者活動代理程式可以部署在 AWS 和 Azure 的以下區域：</block>
+  <block id="6cf349ef77d3b894c407f147f9b0f9a7" category="admonition">使用者活動代理程式的區域部署對 Console 代理程式沒有影響。Console 代理程式的部署與這些區域無關。</block>
+  <block id="a17da1e1013a5f5e4cb001153fe98736" category="paragraph">執行<block ref="0a342b59ecdcede0571340b9ed11633f" prefix=" " category="inline-code"></block>命令是安裝所必需的。執行<block ref="beb493211c3135923a11284ef26bf909" prefix=" " category="inline-code"></block>命令是安裝、執行腳本和解除安裝所必需的。</block>
+  <block id="c9636848fc1b9b62740a33de6f0bad1f" category="list-text">分配額外的磁碟空間以建立檔案系統。確保檔案系統中至少有 35 GB 的可用空間。+ 如果<block ref="68ab1268abb7e5f5688810968df97d6b" prefix=" " category="inline-code"></block>是從 NAS 儲存設備掛載的資料夾，則本機使用者必須擁有此資料夾的存取權限。如果本機使用者沒有必要的權限，則使用者活動代理程式建立可能會失敗。</block>
+  <block id="1a283fc89a251e8e273bf67b6e692071" category="list-text">建議您將使用者活動代理程式安裝在與勒索軟體防護環境分隔的系統上。如果您確實將代理程式和勒索軟體防護安裝在同一台機器上，請預留 50 至 55 GB 的磁碟空間。對於 Linux 系統，請為<block ref="4bf2f0d069734974e4d76e679433aa07" prefix=" " category="inline-code"></block>分配 25 至 30 GB 的空間，並為<block ref="ea5f88360fb7c06d3270b165b4dad226" prefix=" " category="inline-code"></block>分配 25 GB 的空間。</block>
+  <block id="ccde7d5f2c38977ff57bfa0294ad83d7" category="list-text">出現提示時，請提供叢集 IP 位址、管理員使用者名稱和管理員密碼。</block>
+  <block id="2c04ca6afac47fae351d7176c354ba9b" category="admonition">使用者活動代理程式使用 NetApp Data Infrastructure Insights 技術，因此需要使用<block ref="08f7b82cf54cd7bdcab171ad9bd445cc" prefix=" " category="inline-code"></block>端點。如需更多資訊，請參閱 <block ref="12c485f306c08c5a6939aa54065b62ed" category="inline-link-macro-rx"></block>。</block>
+  <block id="012f0abca78822d24d27455403c3d089" category="list-text">agentlogin.cs01-ap-1.cloudinsights.netapp.com</block>
+  <block id="dcac1ae04e45c773239f95ecd0c5f082" category="cell">389（LDAP） 636（LDAPS / start-tls）</block>
+  <block id="c44e1219325e37378db9611536ddafc3" category="cell">ONTAP 與使用者活動代理程式之間用於 Fpolicy 事件的通訊。為了讓 ONTAP 能夠向使用者活動代理程式發送事件，必須向其開放這些連接埠，包括使用者活動代理程式本身的任何防火牆（如果存在）。+ **注意：** 您無需保留*所有*連接埠，但保留的連接埠必須在此範圍內。建議您先保留 100 個連接埠，然後視需要增加。</block>
 </blocks>
