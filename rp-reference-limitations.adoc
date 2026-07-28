@@ -56,5 +56,17 @@ summary: 已知限制標識了該產品的此版本不支援的平台、設備�
 
 * 來自 Google Cloud NetApp Volumes 的 SAN 工作負載目前不受勒索軟體復原功能支援。
 * 目前，您只能對 Google Cloud NetApp Volumes 工作負載套用基於加密和 FPolicy 的保護策略。您無法套用使用者行為保護策略。
-* 目前不支援使用複寫的保護策略於 Google Cloud NetApp Volumes
+* 目前 Google Cloud NetApp Volumes 不支援使用複寫的保護策略。
+
+
+
+
+[[san-storage-limitations]]
+== SAN 儲存設備限制
+
+以下限制適用於 SAN（區塊儲存設備）工作負載：
+
+* 勒索軟體復原功能目前不支援來自 Google Cloud NetApp Volumes 的 SAN 工作負載。
+* 當勒索軟體恢復能力針對 SAN 工作負載產生警告時，這些警告僅基於高熵值。
+* SAN 工作負載只能使用 link:task-custom-restore.html["自訂還原"] 進行還原。目前 SAN 工作負載尚不支援 Clean restore。
 

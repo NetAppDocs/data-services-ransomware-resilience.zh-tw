@@ -1,0 +1,23 @@
+= 
+:allow-uri-read: 
+
+
+[cols="25,75"]
+|===
+| 攻擊類型 | 描述 
+
+
+| 加密（熵） | Ransomware Resilience 可識別異常的 IOPS 模式、資料熵和非標準檔案後綴。 
+
+
+| 加密（使用者行為） | 勒索軟體復原能力可識別特定使用者執行的異常檔案讀取、寫入和重新命名活動。 
+
+
+| 資料外洩 | Ransomware Resilience 可偵測特定使用者執行的異常檔案讀取存取模式。 
+
+
+| 資料銷毀 | Ransomware Resilience 可偵測到特定使用者大量刪除檔案的行為。 
+
+
+| 可疑的使用者行為 | Ransomware Resilience 可識別超出資料外洩、資料銷毀或加密範圍的異常行為。 
+|===

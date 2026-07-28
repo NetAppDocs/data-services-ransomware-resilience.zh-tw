@@ -34,12 +34,39 @@ summary: 透過模擬對範例工作負載發動勒索軟體攻擊，進行勒�
 [[configure-a-ransomware-attack-readiness-drill]]
 == 配置勒索軟體攻擊準備演習
 
+在執行模擬之前，您必須設定整備演練。您必須針對特定類型的勒索軟體攻擊建立整備演練。Ransomware Resilience 可辨識五種類型的攻擊：
+
+[cols="25,75"]
+|===
+| 攻擊類型 | 描述 
+
+
+| 加密（熵） | Ransomware Resilience 可識別異常的 IOPS 模式、資料熵和非標準檔案後綴。 
+
+
+| 加密（使用者行為） | 勒索軟體復原能力可識別特定使用者執行的異常檔案讀取、寫入和重新命名活動。 
+
+
+| 資料外洩 | Ransomware Resilience 可偵測特定使用者執行的異常檔案讀取存取模式。 
+
+
+| 資料銷毀 | Ransomware Resilience 可偵測到特定使用者大量刪除檔案的行為。 
+
+
+| 可疑的使用者行為 | Ransomware Resilience 可識別超出資料外洩、資料銷毀或加密範圍的異常行為。 
+|===
 *所需控制台角色* 要執行此任務，您需要擁有 link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-platform-roles.html#super-admin-roles["超級管理員"^] 或 Ransomware Resilience 管理員角色。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["了解NetApp Console的勒索軟體復原角色"^]。
 
 .步驟
 . 在勒索軟體恢復功能中，選擇**設定**。
-. 在「整備演練」圖塊中，選取 **Configure**。
-. 選擇**準備演練類型**。
+. 在「設定」頁面的「準備演練」卡中，選擇 *Configure*。
++
+Console 會顯示「設定整備演練」頁面。
+
++
+image:screen-settings-alert-drill-configure.png["設定整備演練頁面"]
+
+. 選擇*勒索軟體攻擊類型*。
 +
 ** **自訂恢復**：透過 link:rp-use-recover.html["自訂還原"] 回應加密（熵）攻擊，您可以在其中設定恢復點。
 ** **乾淨還原**：針對加密（熵）攻擊，透過 link:task-clean-restore-recover.html["徹底恢復"] 恢復程序來回應，該程序會引導您找到最佳恢復點。
@@ -52,16 +79,13 @@ summary: 透過模擬對範例工作負載發動勒索軟體攻擊，進行勒�
 .. 選擇 **System** 後，從預先填入清單中選擇 **Storage VM**。
 .. 請為**新的測試工作負載**命名。測試工作負載的名稱將以「rps_test_」為前綴。
 .. 如果準備演練是為了資料外洩恢復，請為演練環境選擇**使用者活動代理**。
-+
-image:screen-settings-alert-drill-configure.png["準備演練配置選項的螢幕截圖。"]
-
 
 
 . 選擇*儲存*。
 
 
 
-TIP: 您可以稍後使用「設定」頁面編輯準備演練配置。
+TIP: 您稍後可以在「設定」頁面中編輯準備演練組態。
 
 
 
@@ -73,15 +97,8 @@ TIP: 您可以稍後使用「設定」頁面編輯準備演練配置。
 *所需控制台角色* 要執行此任務，您需要擁有 link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-platform-roles.html#super-admin-roles["超級管理員"^] 或 Ransomware Resilience 管理員角色。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["了解NetApp Console的勒索軟體復原角色"^]。
 
 .步驟
-. 開始演練：
-+
-** 在 Ransomware Resilience 儀表板上，選擇右上角的 *Run readiness drill* 按鈕。
-+
-image:screen-dashboard.png["顯示「運行準備度演練」按鈕的儀表板頁面"]
-
-** 或進入**設定**。在「準備演練」圖塊中，選擇*開始*。
-
-
+. 在勒索軟體恢復功能中，選擇**設定**。
+. 在「設定」頁面中，選擇「開始」。
 
 
 
@@ -98,13 +115,7 @@ NOTE: 演練進行中無法編輯整備演練配置。若要修改整備演練�
 
 .步驟
 . 從勒索軟體恢復選單中，選擇*警報*。
-+
-控制台顯示警報頁面。在警報 ID 欄位中，您會在 ID 旁看到「準備好演練」。
-
-+
-image:screen-alerts-readiness.png["顯示準備演習警報的警報頁面"]
-
-. 選擇帶有「準備演習」指示的警報。
+. 選擇帶有「準備演練」標識的警報。事件警報清單將顯示在「警報詳情」頁面。
 +
 image:screen-alerts-readiness-details.png["顯示準備演習警報的警報詳細資訊頁面"]
 
@@ -121,8 +132,15 @@ image:screen-alerts-readiness-incidents2.png["顯示準備演習警報的事件�
 +
 如果嚴重性表明使用者涉嫌惡意活動，請檢查使用者名稱。您還可以link:rp-use-alert.html#detect-malicious-activity-and-anomalous-user-behavior["封鎖該用戶。"]
 
-* 檔案活動與預期速率的比較。這包括讀取/寫入速率、檔案建立、檔案重新命名和檔案刪除。
-* 受影響的檔案清單。請查看可能導致攻擊的檔案副檔名。
+* 檢查檔案活動和可疑處理程序：
++
+** 將偵測到的傳入資料與預期資料進行比較。
+** 比較偵測到的檔案建立率與預期建立率。
+** 比較偵測到的檔案重新命名率與預期重新命名率。
+** 比較實際刪除率和預期刪除率。
+
+
+* 查看受影響的檔案清單。查看可能導致攻擊的檔案副檔名。
 * 透過查看受影響的檔案和目錄的數量來確定攻擊的影響和廣度。
 
 

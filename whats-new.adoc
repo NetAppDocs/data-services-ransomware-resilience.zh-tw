@@ -18,6 +18,40 @@ summary: 了解NetApp Ransomware Resilience的新功能。
 
 
 
+[[27-july-2026]]
+== 2026年7月27日
+
+
+
+[[standardize-protection-groups-based-on-workload-and-system-type]]
+=== 根據工作負載和系統類型標準化保護群組
+
+Ransomware Resilience 現在強制要求保護群組只能包含一種工作負載類型和一種系統類型。建立新的保護群組時，您必須同時指定工作負載類型（檔案系統或區塊）和工作負載的系統。此增強功能可確保為保護群組所選的勒索軟體保護策略能夠成功套用至群組中的所有工作負載。
+
+如果您已有混合了系統類型和工作負載類型的保護群組，您可以繼續使用它們，但無法新增工作負載至保護群組。
+
+如需更多資訊，請參閱 link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-protection-group.html["建立保護組"^]。
+
+
+
+[[readiness-drill-enhancement]]
+=== 戰備演練強化
+
+Ransomware Resilience 現在可讓您根據攻擊類型進行準備演練。Ransomware Resilience 可偵測五種類型的攻擊，您可以針對每種攻擊執行準備演練，模擬攻擊和恢復過程，從而了解您應對勒索軟體攻擊的準備情況。
+
+如需更多資訊，請參閱 link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-start-simulate.html["進行整備演練"^]。
+
+
+
+[[pause-or-delete-a-siem-system]]
+=== 暫停或刪除 SIEM 系統
+
+勒索軟體防護功能現已在使用者介面中新增暫停或刪除 SIEM 系統的選項。此項改進讓使用者能更輕鬆地暫時停用系統以進行疑難排解或維護，或將其完全移除。
+
+如需更多資訊，請參閱 link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem.html#disable-a-siem-system["停用 SIEM 系統"^]。
+
+
+
 [[20-july-2026]]
 == 2026年7月20日
 

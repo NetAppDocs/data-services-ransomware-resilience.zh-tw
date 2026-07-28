@@ -172,7 +172,7 @@ image:diagram-rp-architecture-preview3.png["勒索軟體抵禦能力架構​​
 [[attack-types]]
 === 攻擊類型
 
-Ransomware Resilience 可辨識五種類型的攻擊：
+勒索軟體防禦機制辨識出五種類型的勒索軟體攻擊：
 
 [cols="25,75"]
 |===

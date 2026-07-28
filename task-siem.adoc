@@ -376,6 +376,22 @@ NOTE: 建立 SIEM 組態後，您可以對其進行編輯。除名稱外，您�
 
 
 
+[[disable-a-siem-system]]
+== 停用 SIEM 系統
+
+您可以暫時停止向 SIEM 系統傳送事件資料，或者如果您不再需要 SIEM，則可以將其刪除。如果您暫停了 SIEM，您可以隨時恢復。
+
+.步驟
+. 在 Ransomware Resilience 中，選擇 *Settings*。
+. 在 SIEM 磁貼中，選擇 *Manage*。
+. 選擇要停止的 SIEM 系統的行動選單 (`...`），然後選擇「暫停」或「刪除」。
++
+如果要刪除，請在確認對話方塊中選擇 *Delete* 以完成行動。
+
+
+
+
+
 [[next-steps]]
 == 後續步驟
 

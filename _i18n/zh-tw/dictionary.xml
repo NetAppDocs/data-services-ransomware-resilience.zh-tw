@@ -438,18 +438,12 @@
   <block id="004823325f4227a58d03f7083e873d82" category="doc">在NetApp Ransomware Resilience中進行勒索軟體攻擊準備演練</block>
   <block id="b308768da13f40be05907e77ea473622" category="paragraph">您可以對 NFS 和 CIFS (SMB) 工作負載進行準備情況演練。</block>
   <block id="b6db234bfb48479bbe03939977a7b42c" category="section-title">配置勒索軟體攻擊準備演習</block>
-  <block id="008b8b82922cab3483d70d8899f74b5c" category="inline-image-macro">顯示「運行準備度演練」按鈕的儀表板頁面</block>
-  <block id="3e3777c0093c940cbceb8cd58c4f9dac" category="paragraph"><block ref="3e3777c0093c940cbceb8cd58c4f9dac" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="b5ffafbc91e02195737c6716b418141e" category="admonition">您可以稍後使用「設定」頁面編輯準備演練配置。</block>
   <block id="187666a138e7f6f15224af7bcef93040" category="section-title">開始準備演習</block>
   <block id="b30d5003eb8b470d6df77c1edbb96724" category="paragraph">配置準備狀況演練後，即可開始演練。</block>
   <block id="365d382b2d9ecca9b0d40171c69b38ff" category="list-text">執行下列操作之一：</block>
   <block id="1e4a43fb392ed69a6d5a047ba0d88826" category="section-title">響應戰備演習警報</block>
   <block id="6128067a6b325891717a7cfc23e60bae" category="paragraph">透過回應準備演習警報來測試您的準備。</block>
   <block id="e9ebf76599d54488581ec7e47b518db1" category="list-text">從勒索軟體恢復選單中，選擇*警報*。</block>
-  <block id="fd60ef582b0cdfbc6e56efcd83e3669a" category="paragraph">控制台顯示警報頁面。在警報 ID 欄位中，您會在 ID 旁看到「準備好演練」。</block>
-  <block id="bfb2eabf2e2f3750c3b857a9c0072bfa" category="inline-image-macro">顯示準備演習警報的警報頁面</block>
-  <block id="fd9f53769c15c2cf878c35f4cbc5a081" category="paragraph"><block ref="fd9f53769c15c2cf878c35f4cbc5a081" category="inline-image-macro-rx" type="image"></block></block>
   <block id="81ec450a746d2846c599b97e0284672a" category="inline-image-macro">顯示準備演習警報的警報詳細資訊頁面</block>
   <block id="2869923d8a7e4947ee11eff41f3267f2" category="paragraph"><block ref="2869923d8a7e4947ee11eff41f3267f2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c7173a995c95a8992913692d7f8b29a3" category="list-text">查看警報事件。</block>
@@ -763,7 +757,6 @@
   <block id="f724f66c90177c8dac8336038a0778c0" category="list-text">如果您的偵測策略包含使用者行為偵測，請選擇您想要使用的資料收集器，然後按一下**下一步**。</block>
   <block id="0fc76de5572d1186f1358665dff6076f" category="list-text">檢查保護組的選擇。</block>
   <block id="eda3b9c0a863dbdeae5ac8cceaa9106b" category="section-title">編輯組保護</block>
-  <block id="109a3a62d5a108a8bab007233de0c046" category="paragraph">您可以變更現有群組的偵測策略。</block>
   <block id="ecfb3b2431beb33b5fe2ef7c83f7fb1b" category="list-text">在「保護」頁面中，選擇「保護群組」選項卡，然後選擇要修改其政策的群組。</block>
   <block id="a26badbee19c22b720b3fd3aab2acb10" category="list-text">從保護群組的概覽頁面中，選擇「編輯保護」。</block>
   <block id="5e98270982ef1359c1d22eb22e2503e8" category="list-text">在備份目標概覽中，選擇現有的備份目標或**新增新的備份目標**。</block>
@@ -2337,7 +2330,6 @@
   <block id="0a3365d021ca1305c9f785f72440818f" category="paragraph">以下限制適用於 Azure NetApp Files ：</block>
   <block id="36a3b80be6de8003f2c8586abef3da11" category="section-title">Google Cloud NetApp Volumes 的限制</block>
   <block id="03b202e92a2bf372a4034ee95f36d4a7" category="paragraph">以下限制適用於 Google Cloud NetApp Volumes：</block>
-  <block id="fd97f891be8e4ff9fd31d19ccffe7cfa" category="list-text">目前不支援使用複寫的保護策略於 Google Cloud NetApp Volumes</block>
   <block id="98d8c0e0a6e1f848e25119bcb40e31fb" category="paragraph">分析執行時，您可以選擇 **Stop**。停止分析需要重新啟動乾淨還原程序。</block>
   <block id="3bfca6a430fa87d8630a8459fe8a4aa1" category="section-title">2026 年 5 月 18 日</block>
   <block id="2e16025a0775d82fdc475daeb18a1fe1" category="list-text">幫助您監控結果。</block>
@@ -2374,7 +2366,6 @@
   <block id="ecac6e0599f3e07a4eb088d4ffb44a1d" category="section-title">使用者行為偵測增強功能</block>
   <block id="d3e94cc4397c8143c67e5435f39f1c9d" category="section-title">使用者行為偵測增強功能</block>
   <block id="d8e08662cf603a3c4ee9aaf071e19599" category="section-title">攻擊類型</block>
-  <block id="e4234a1d906d9cdc9c698d93ee4a1039" category="paragraph">Ransomware Resilience 可辨識五種類型的攻擊：</block>
   <block id="fa56851239948098bf91b1314fa7effe" category="cell">攻擊類型</block>
   <block id="c4ffd36782688a65f942ba6948827e83" category="cell">加密（熵）</block>
   <block id="403901db25c61c486833fc82dd2d7acd" category="cell">加密（使用者行為）</block>
@@ -2543,8 +2534,6 @@
   <block id="67f8bfb01063a7bf1e47bc5de6e7fcb9" category="list-text"><block ref="67f8bfb01063a7bf1e47bc5de6e7fcb9" category="inline-link-macro-rx"></block></block>
   <block id="f210e90dbf694c894759f78cc6d8b222" category="section-title">2026 年 6 月 29 日</block>
   <block id="acd27fc46144e7ce943b73180eb0d3a8" category="paragraph">在 NetApp Ransomware Resilience 中執行勒索軟體攻擊準備演練，以測試您應對真實勒索軟體攻擊的準備。透過此演練，Ransomware Resilience 會模擬對新樣本工作負載的攻擊，使您能夠在不影響真實生產資料的情況下調查模擬攻擊並執行復原操作。此演練有助於您熟悉警報通知，並做好回應和復原準備。您可以根據需要多次執行此演練。</block>
-  <block id="537f8bf1cb00339aa74d0eb9f514b0df" category="list-text">在「整備演練」圖塊中，選取 **Configure**。</block>
-  <block id="58217f0a1f8bf12ba3006ea914fc528d" category="list-text">選擇**準備演練類型**。</block>
   <block id="65b568f05372e5de535ad8c825aeb375" category="inline-link-macro">徹底恢復</block>
   <block id="532361f2ad995113181b7cf1df1c5462" category="inline-link-macro">使用者活動代理</block>
   <block id="74e66061c3c27ae398760dc1adda70dc" category="list-text">選擇進行戰備演練測試的環境。</block>
@@ -2552,16 +2541,8 @@
   <block id="7cbdec3ae1628850b555ad8bb540d67e" category="list-text">選擇 **System** 後，從預先填入清單中選擇 **Storage VM**。</block>
   <block id="3db3fb74a2b36310b9059bb1932ec7ce" category="list-text">請為**新的測試工作負載**命名。測試工作負載的名稱將以「rps_test_」為前綴。</block>
   <block id="c30460d790febc2f1a11000f7e9dae5a" category="list-text">如果準備演練是為了資料外洩恢復，請為演練環境選擇**使用者活動代理**。</block>
-  <block id="c622e795c00706524901f4150a5ebe4e" category="inline-image-macro">準備演練配置選項的螢幕截圖。</block>
-  <block id="f4f81b5211932d1ec08f7bbee3d205fe" category="paragraph"><block ref="f4f81b5211932d1ec08f7bbee3d205fe" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="022d85fe9248458ef65cf16481972329" category="list-text">開始演練：</block>
-  <block id="81107e8f37cdb96dee7eb88d136b8e27" category="list-text">在 Ransomware Resilience 儀表板上，選擇右上角的 *Run readiness drill* 按鈕。</block>
-  <block id="b3833f107edd43c29b6874a2a10bef7a" category="list-text">或進入**設定**。在「準備演練」圖塊中，選擇*開始*。</block>
-  <block id="3798ead7c288ba8d157f0c0b116976de" category="list-text">選擇帶有「準備演習」指示的警報。</block>
   <block id="aa888903a6021760fd560a3f35a5fe39" category="paragraph">審查事件時，請考慮以下因素：</block>
   <block id="aa823a078e061b627817667be59a3966" category="list-text">潛在攻擊的嚴重程度。</block>
-  <block id="b20c07ab3d395d21be11ec99cd4f86bc" category="list-text">檔案活動與預期速率的比較。這包括讀取/寫入速率、檔案建立、檔案重新命名和檔案刪除。</block>
-  <block id="79937840afd2a2e82d05deb4a76fb903" category="list-text">受影響的檔案清單。請查看可能導致攻擊的檔案副檔名。</block>
   <block id="993613047b942198cc7322f8e11f7420" category="list-text">如果需要恢復測試工作負載，請選擇**標記為需要恢復**，然後在確認對話方塊中再次選擇該按鈕。</block>
   <block id="d5e852ec035f9425ed8495bf6d48334d" category="list-text">選擇要復原的帶有「Readiness drill」標籤的測試工作負載。</block>
   <block id="6fa33edafac526b51cd549a1e05b2a96" category="list-text">請依照您所設定的恢復模式說明進行操作：</block>
@@ -2727,4 +2708,48 @@
   <block id="012f0abca78822d24d27455403c3d089" category="list-text">agentlogin.cs01-ap-1.cloudinsights.netapp.com</block>
   <block id="dcac1ae04e45c773239f95ecd0c5f082" category="cell">389（LDAP） 636（LDAPS / start-tls）</block>
   <block id="c44e1219325e37378db9611536ddafc3" category="cell">ONTAP 與使用者活動代理程式之間用於 Fpolicy 事件的通訊。為了讓 ONTAP 能夠向使用者活動代理程式發送事件，必須向其開放這些連接埠，包括使用者活動代理程式本身的任何防火牆（如果存在）。+ **注意：** 您無需保留*所有*連接埠，但保留的連接埠必須在此範圍內。建議您先保留 100 個連接埠，然後視需要增加。</block>
+  <block id="752cfb7f100699ed10b934470fc8824c" category="doc">根據工作負載和系統類型標準化保護群組</block>
+  <block id="3a53d7e702e0596f76d0deb9f8cc03ea" category="paragraph">Ransomware Resilience 現在強制要求保護群組只能包含一種工作負載類型和一種系統類型。建立新的保護群組時，您必須同時指定工作負載類型（檔案系統或區塊）和工作負載的系統。此增強功能可確保為保護群組所選的勒索軟體保護策略能夠成功套用至群組中的所有工作負載。</block>
+  <block id="372c0699ee751a2658f1b4a897349a47" category="paragraph">如果您已有混合了系統類型和工作負載類型的保護群組，您可以繼續使用它們，但無法新增工作負載至保護群組。</block>
+  <block id="9cc8304f699313927313d2034fff7636" category="paragraph">如需更多資訊，請參閱 <block ref="6971a647ce964528556f81913b109378" category="inline-link-macro-rx"></block>。</block>
+  <block id="3813b173292c59d50038bdf05c6b0021" category="section-title">戰備演練強化</block>
+  <block id="cf649f651dc2f032117c490236422d53" category="paragraph">Ransomware Resilience 現在可讓您根據攻擊類型進行準備演練。Ransomware Resilience 可偵測五種類型的攻擊，您可以針對每種攻擊執行準備演練，模擬攻擊和恢復過程，從而了解您應對勒索軟體攻擊的準備情況。</block>
+  <block id="400f918ffe7626d9fd96dbfc4fa0f591" category="paragraph">如需更多資訊，請參閱 <block ref="70ab6610cf4ffc0f4f5683c14443a025" category="inline-link-macro-rx"></block>。</block>
+  <block id="363260f41aed8104ffe114ccda875937" category="section-title">暫停或刪除 SIEM 系統</block>
+  <block id="b18d1990e5bda04c0ed4210a1113e197" category="paragraph">勒索軟體防護功能現已在使用者介面中新增暫停或刪除 SIEM 系統的選項。此項改進讓使用者能更輕鬆地暫時停用系統以進行疑難排解或維護，或將其完全移除。</block>
+  <block id="90c6a30d04a39029a6e718b3311fb6ab" category="inline-link-macro">停用 SIEM 系統</block>
+  <block id="904e41b296efab284eaa1062cf1e6a27" category="paragraph">如需更多資訊，請參閱 <block ref="1d48f23238788ac75029406ac49f8f92" category="inline-link-macro-rx"></block>。</block>
+  <block id="684a7ad3aa334bfb6a33e395013bd6dc" category="paragraph">勒索軟體防禦機制辨識出五種類型的勒索軟體攻擊：</block>
+  <block id="c561c7b7a5170672935dea9403fc0a6f" category="inline-link-macro">DII webhook</block>
+  <block id="ce4bce909d8d6789b9f388dbbef0758a" category="admonition">如果您已設定 Workload Security，則可以透過 <block ref="23692858bbea3b07ede2665f2c7f119e" category="inline-link-macro-rx"></block> 設定警示。</block>
+  <block id="c6bd820ffcfcad26c449f0454fae72c1" category="list-text">目前 Google Cloud NetApp Volumes 不支援使用複寫的保護策略。</block>
+  <block id="392d723534b3a09775f3b6831eba4f37" category="section-title">SAN 儲存設備限制</block>
+  <block id="eecebb362641b58fec88bb08c4168447" category="paragraph">以下限制適用於 SAN（區塊儲存設備）工作負載：</block>
+  <block id="aff0472c8383011d738831a8c39c42c6" category="list-text">勒索軟體復原功能目前不支援來自 Google Cloud NetApp Volumes 的 SAN 工作負載。</block>
+  <block id="2d2a397baa743b0954cf57d074ff1a05" category="list-text">當勒索軟體恢復能力針對 SAN 工作負載產生警告時，這些警告僅基於高熵值。</block>
+  <block id="41bc5402792c9ae6e031743791c37485" category="list-text">SAN 工作負載只能使用 <block ref="f4ee3b399c8cc5fca837364c0d9badb9" category="inline-link-macro-rx"></block> 進行還原。目前 SAN 工作負載尚不支援 Clean restore。</block>
+  <block id="2428514fe4a71be9aaa049c0588b7a22" category="paragraph">在執行模擬之前，您必須設定整備演練。您必須針對特定類型的勒索軟體攻擊建立整備演練。Ransomware Resilience 可辨識五種類型的攻擊：</block>
+  <block id="e820571d07203de22d81bf2d3a43c57d" category="list-text">在「設定」頁面的「準備演練」卡中，選擇 *Configure*。</block>
+  <block id="5a6ea2c21bfdd4f145b28691ccbbba4f" category="paragraph">Console 會顯示「設定整備演練」頁面。</block>
+  <block id="f39a3376d8471d16df7b03506f1e81b3" category="inline-image-macro">設定整備演練頁面</block>
+  <block id="4733f8632e3639026823ab315aa1fde4" category="paragraph"><block ref="4733f8632e3639026823ab315aa1fde4" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="041d149b109ce93c233e52cd24f679bf" category="list-text">選擇*勒索軟體攻擊類型*。</block>
+  <block id="3e3abe279e1b4b9cb995944aa686b70e" category="admonition">您稍後可以在「設定」頁面中編輯準備演練組態。</block>
+  <block id="cd1d22ed0befcc45c91a35f2cfdb7c98" category="list-text">在「設定」頁面中，選擇「開始」。</block>
+  <block id="918afe8d47cac8e65affe228df4d1798" category="list-text">選擇帶有「準備演練」標識的警報。事件警報清單將顯示在「警報詳情」頁面。</block>
+  <block id="d1a6a8bb73f911c1ba89071429162c43" category="list-text">檢查檔案活動和可疑處理程序：</block>
+  <block id="fdb29353d86a86580fc253dc319e3e0b" category="list-text">將偵測到的傳入資料與預期資料進行比較。</block>
+  <block id="929c013ec98095ed1024dac131501e30" category="list-text">比較偵測到的檔案建立率與預期建立率。</block>
+  <block id="1a1d9c1ba30af27c48d2816231dc83e8" category="list-text">比較偵測到的檔案重新命名率與預期重新命名率。</block>
+  <block id="452eacf856e21da57eb379e95122df3c" category="list-text">比較實際刪除率和預期刪除率。</block>
+  <block id="f86fe9463862bcb6c0a89b3fdbb1028b" category="list-text">查看受影響的檔案清單。查看可能導致攻擊的檔案副檔名。</block>
+  <block id="e7830468e161b7991b165f7f665b33d1" category="paragraph">保護群組中的工作負載必須屬於相同工作負載類型；也就是說，您不能混合區塊和檔案系統工作負載。工作負載也必須屬於同一系統類型。例如，一個保護群組可以包含所有本機 ONTAP 檔案系統工作負載；但您不能將 Amazon FSx for NetApp ONTAP 工作負載新增至同一個保護群組。</block>
+  <block id="b7b39081fc845a35c1a59f4b6fc016e8" category="list-text">選擇**工作負載類型**（區塊或檔案系統）和**系統類型**。</block>
+  <block id="fb1317cc51c838fac76b98177912063f" category="paragraph">您可以變更現有群組的偵測原則，或新增和移除工作負載。</block>
+  <block id="178f74ca677d1dd5ce9bba8b91d1914f" category="admonition">如果保護群組建立於 2026 年 8 月之前，並且包含不同工作負載類型的工作負載（例如，混合了區塊和檔案系統工作負載）或不同系統類型的工作負載，則無法向該保護群組新增任何新的工作負載。您可以移除工作負載，以確保保護群組中僅包含一種類型的工作負載和系統，然後再新增工作負載。此項變更旨在確保勒索軟體保護策略能夠均勻地應用於各種工作負載和系統類型。</block>
+  <block id="75cd9bb10cb7645a7eb4cd70d1070213" category="paragraph">您可以暫時停止向 SIEM 系統傳送事件資料，或者如果您不再需要 SIEM，則可以將其刪除。如果您暫停了 SIEM，您可以隨時恢復。</block>
+  <block id="1b143209e630713aded7a96e6e2719fb" category="list-text">在 SIEM 磁貼中，選擇 *Manage*。</block>
+  <block id="4f453d8498e817d93a2c0554465ba5c9" category="list-text">選擇要停止的 SIEM 系統的行動選單 <block ref="2f43b42fd833d1e77420a8dae7419000" prefix="(" category="inline-code"></block>），然後選擇「暫停」或「刪除」。</block>
+  <block id="38ddf84a5ab8383176b784d60f3f4942" category="paragraph">如果要刪除，請在確認對話方塊中選擇 *Delete* 以完成行動。</block>
+  <block id="24cebcb9541a6a3a7ee2888a734c6961" category="section-title">2026年7月27日</block>
 </blocks>
