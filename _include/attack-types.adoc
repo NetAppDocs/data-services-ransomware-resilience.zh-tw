@@ -21,3 +21,5 @@
 
 | 可疑的使用者行為 | Ransomware Resilience 可識別超出資料外洩、資料銷毀或加密範圍的異常行為。 
 |===
+
+NOTE: 您必須設定 link:concept-user-behavior.html["使用者活動偵測"] 以偵測加密（使用者行為）、資料外洩、資料銷毀和可疑使用者行為攻擊。

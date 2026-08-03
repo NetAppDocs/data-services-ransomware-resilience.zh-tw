@@ -195,6 +195,9 @@ image:diagram-rp-architecture-preview3.png["勒索軟體抵禦能力架構​​
 | 可疑的使用者行為 | Ransomware Resilience 可識別超出資料外洩、資料銷毀或加密範圍的異常行為。 
 |===
 
+NOTE: 您必須設定 link:concept-user-behavior.html["使用者活動偵測"] 以偵測加密（使用者行為）、資料外洩、資料銷毀和可疑使用者行為攻擊。
+
+
 NOTE: 若要識別對攻擊負有責任的特定使用者，您必須設定 link:concept-user-behavior.html["使用者行為偵測。"] 檢閱 link:rp-reference-limitations.html["限制"]，以查看您的系統是否支援使用者活動偵測。
 
 

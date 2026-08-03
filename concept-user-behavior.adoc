@@ -58,9 +58,6 @@ NetApp Ransomware Resilience 的使用者行為偵測功能與 Data Infrastructu
 如果您已在使用 NetApp Data Infrastructure Insights（DII）Workload Security、建議您將相同的 Workload Security 代理程式用於 Ransomware Resilience。您無需為 Ransomware Resilience 單獨部署 Workload Security 代理程式、但使用相同的 Workload Security 代理程式需要 Ransomware Resilience Console 組織與 DII Storage Workload Security 租戶建立配對關係。請聯絡您的客戶代表以啟用此配對。
 
 
-TIP: 如果您已設定 Workload Security，則可以透過 link:https://docs.netapp.com/us-en/data-infrastructure-insights/task_create_webhook.html#creating-a-webhook["DII webhook"^] 設定警示。
-
-
 
 [[next-steps]]
 == 後續步驟

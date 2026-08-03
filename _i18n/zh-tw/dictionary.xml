@@ -2529,12 +2529,7 @@
   <block id="f210e90dbf694c894759f78cc6d8b222" category="section-title">2026 年 6 月 29 日</block>
   <block id="acd27fc46144e7ce943b73180eb0d3a8" category="paragraph">在 NetApp Ransomware Resilience 中執行勒索軟體攻擊準備演練，以測試您應對真實勒索軟體攻擊的準備。透過此演練，Ransomware Resilience 會模擬對新樣本工作負載的攻擊，使您能夠在不影響真實生產資料的情況下調查模擬攻擊並執行復原操作。此演練有助於您熟悉警報通知，並做好回應和復原準備。您可以根據需要多次執行此演練。</block>
   <block id="65b568f05372e5de535ad8c825aeb375" category="inline-link-macro">徹底恢復</block>
-  <block id="532361f2ad995113181b7cf1df1c5462" category="inline-link-macro">使用者活動代理</block>
   <block id="74e66061c3c27ae398760dc1adda70dc" category="list-text">選擇進行戰備演練測試的環境。</block>
-  <block id="3026f14fd36d3165478399b611373fb8" category="list-text">選擇 **Console agent** 和 **System**。</block>
-  <block id="7cbdec3ae1628850b555ad8bb540d67e" category="list-text">選擇 **System** 後，從預先填入清單中選擇 **Storage VM**。</block>
-  <block id="3db3fb74a2b36310b9059bb1932ec7ce" category="list-text">請為**新的測試工作負載**命名。測試工作負載的名稱將以「rps_test_」為前綴。</block>
-  <block id="c30460d790febc2f1a11000f7e9dae5a" category="list-text">如果準備演練是為了資料外洩恢復，請為演練環境選擇**使用者活動代理**。</block>
   <block id="aa888903a6021760fd560a3f35a5fe39" category="paragraph">審查事件時，請考慮以下因素：</block>
   <block id="aa823a078e061b627817667be59a3966" category="list-text">潛在攻擊的嚴重程度。</block>
   <block id="993613047b942198cc7322f8e11f7420" category="list-text">如果需要恢復測試工作負載，請選擇**標記為需要恢復**，然後在確認對話方塊中再次選擇該按鈕。</block>
@@ -2556,9 +2551,6 @@
   <block id="fe2b3b951ec2ee39e3b94a78b27d6b96" category="paragraph">啟動演練後，Ransomware Resilience 會掛載磁碟區，然後模擬勒索軟體攻擊。如果演練是針對自訂恢復或乾淨還原，則測試磁碟區的基準資料將被替換為已知為勒索軟體的檔案副檔名以及加密/熵修改後的檔案。對於資料外洩復原演練，檔案不會被取代；Ransomware Resilience 會模擬攻擊者有系統地讀取和竊取資料。無論演練類型為何，Ransomware Resilience 都會觸發警報，並驗證警報是否已成功產生。</block>
   <block id="ec48be06a1fa5ff039c9c72596c427f2" category="paragraph">執行演練時，您可以測試對警報的回應，並可選擇逐步完成復原過程，而不會影響真實資料。</block>
   <block id="5c443c5dabb6ec11bf27dce07c9fd377" category="inline-link-macro">自訂還原</block>
-  <block id="e17d87cf10e73e1e3694a18b0b70c7af" category="list-text">**自訂恢復**：透過 <block ref="80fac8a28dde36dd3a08a6d3cf5b9f5b" category="inline-link-macro-rx"></block> 回應加密（熵）攻擊，您可以在其中設定恢復點。</block>
-  <block id="22db649015dad497d63774a6e7d2af47" category="list-text">**乾淨還原**：針對加密（熵）攻擊，透過 <block ref="d08d369745dba9c2b6dd002a205d6b5a" category="inline-link-macro-rx"></block> 恢復程序來回應，該程序會引導您找到最佳恢復點。</block>
-  <block id="e3b01c4848ac6d1626374e4dee0f0685" category="list-text">**資料外洩復原**：您必須先設定 <block ref="ea7722fd5c2c373bdaffcbde2ca3bbf6" category="inline-link-macro-rx"></block> 才能啟用此演練類型。</block>
   <block id="05d14520f5a3fd970bfca710b43ae17a" category="admonition">演練進行中無法編輯整備演練配置。若要修改整備演練，請選擇 **Reset**，然後編輯演練。</block>
   <block id="7820d7f245e7637e7833faccb183f36d" category="admonition">對於針對可疑使用者行為的自動回應，您只能進行快照處理。自動回應可疑使用者行為時，不支援封鎖使用者。</block>
   <block id="ddebb8e31f83ddb3bde0b3a0292845dc" category="doc">從使用者行為警報中排除檔案路徑</block>
@@ -2714,8 +2706,6 @@
   <block id="90c6a30d04a39029a6e718b3311fb6ab" category="inline-link-macro">停用 SIEM 系統</block>
   <block id="904e41b296efab284eaa1062cf1e6a27" category="paragraph">如需更多資訊，請參閱 <block ref="1d48f23238788ac75029406ac49f8f92" category="inline-link-macro-rx"></block>。</block>
   <block id="684a7ad3aa334bfb6a33e395013bd6dc" category="paragraph">勒索軟體防禦機制辨識出五種類型的勒索軟體攻擊：</block>
-  <block id="c561c7b7a5170672935dea9403fc0a6f" category="inline-link-macro">DII webhook</block>
-  <block id="ce4bce909d8d6789b9f388dbbef0758a" category="admonition">如果您已設定 Workload Security，則可以透過 <block ref="23692858bbea3b07ede2665f2c7f119e" category="inline-link-macro-rx"></block> 設定警示。</block>
   <block id="c6bd820ffcfcad26c449f0454fae72c1" category="list-text">目前 Google Cloud NetApp Volumes 不支援使用複寫的保護策略。</block>
   <block id="392d723534b3a09775f3b6831eba4f37" category="section-title">SAN 儲存設備限制</block>
   <block id="eecebb362641b58fec88bb08c4168447" category="paragraph">以下限制適用於 SAN（區塊儲存設備）工作負載：</block>
@@ -2724,7 +2714,6 @@
   <block id="41bc5402792c9ae6e031743791c37485" category="list-text">SAN 工作負載只能使用 <block ref="f4ee3b399c8cc5fca837364c0d9badb9" category="inline-link-macro-rx"></block> 進行還原。目前 SAN 工作負載尚不支援 Clean restore。</block>
   <block id="2428514fe4a71be9aaa049c0588b7a22" category="paragraph">在執行模擬之前，您必須設定整備演練。您必須針對特定類型的勒索軟體攻擊建立整備演練。Ransomware Resilience 可辨識五種類型的攻擊：</block>
   <block id="e820571d07203de22d81bf2d3a43c57d" category="list-text">在「設定」頁面的「準備演練」卡中，選擇 *Configure*。</block>
-  <block id="5a6ea2c21bfdd4f145b28691ccbbba4f" category="paragraph">Console 會顯示「設定整備演練」頁面。</block>
   <block id="f39a3376d8471d16df7b03506f1e81b3" category="inline-image-macro">設定整備演練頁面</block>
   <block id="4733f8632e3639026823ab315aa1fde4" category="paragraph"><block ref="4733f8632e3639026823ab315aa1fde4" category="inline-image-macro-rx" type="image"></block></block>
   <block id="041d149b109ce93c233e52cd24f679bf" category="list-text">選擇*勒索軟體攻擊類型*。</block>
@@ -2754,4 +2743,12 @@
   <block id="843273e8b4d640d7a2b23ee18e37263a" category="paragraph">審查事件後，您需要確定這些事件是否構成潛在攻擊。如果並非實際威脅，則可以忽略這些事件。如果您忽略警報，則所有為回應潛在勒索軟體攻擊而自動建立的快照副本都將永久刪除。</block>
   <block id="16f166ba2ceaca92e52aea587fb0114f" category="inline-link-macro">其他活動</block>
   <block id="b7c7e492cc2a239de36bc7e713a56532" category="paragraph">對於加密（熵）事件觸發的警報，Ransomware Resilience 會根據您對警報的忽略行為進行學習，從而將該活動與正常操作關聯起來；未來，您將不會再收到基於此類活動的警報。這是因為加密（熵）事件由 ARP/AI 管理。對於由<block ref="69f4bf74babfcd1e97eceb84702fb4ae" category="inline-link-macro-rx"></block>觸發的警報，Ransomware Resilience 不會根據忽略行為進行學習，因為這些警報是基於使用者活動模式觸發的。</block>
+  <block id="7f45ddc4c3a6264fe6af09d0feee6f8d" category="admonition">您必須設定 <block ref="9403988536e87b1b5fabe2157e11581a" category="inline-link-macro-rx"></block> 以偵測加密（使用者行為）、資料外洩、資料銷毀和可疑使用者行為攻擊。</block>
+  <block id="b9ccc4643a22220649cf7d8c1358ebd7" category="list-text">若要設定除加密（熵）以外的任何勒索軟體攻擊類型的整備演練，您必須已設定 <block ref="9403988536e87b1b5fabe2157e11581a" category="inline-link-macro-rx"></block>。</block>
+  <block id="f0bfc00f8922a4e1668398e3aee15cb8" category="list-text">建立 CIFS 工作負載的準備演練時，必須輸入使用者憑證。您應該為準備演練建立一個專用的非正式作業測試使用者，尤其是在測試使用者活動攻擊類型（例如資料外洩）時。如果使用真實的正式作業使用者，Ransomware Resilience 會標記該使用者，這可能導致該使用者無法存取正式作業資料。若使用測試使用者，所有使用者仍可正常存取資料。</block>
+  <block id="19783acd6c7b7340a835a629f68c513c" category="list-text">選擇 **Console agent** 和 **Primary system**。</block>
+  <block id="304fbd9397bc28472932705b6e4b3a45" category="list-text">選擇主系統後，從預先填入的清單中選擇 **Storage VM**。</block>
+  <block id="ee17fa61bd4957effe2be9aad90f9b39" category="list-text">如果儲存設備 VM 使用 CIFS 協議，請輸入 Active Directory 憑證。您可以選擇性地輸入 **Active Directory 網域**；但必須輸入 **使用者名稱** 和 **密碼**。建議您輸入專用測試使用者的憑證。</block>
+  <block id="2bc2801a047dbf24f0ad5f6ab66903a3" category="list-text">請為**新的測試工作負載**命名。測試工作負載名稱將以 <block ref="4d57df3ec0851a6b7ee80abd6c45cb4f" prefix=" " category="inline-code"></block> 開頭。</block>
+  <block id="bcb62c4e0257dc7f7e53d4080b48c067" category="list-text">如果準備演練是針對使用者活動攻擊類型，請為演練環境選擇**使用者活動代理程式**。</block>
 </blocks>
