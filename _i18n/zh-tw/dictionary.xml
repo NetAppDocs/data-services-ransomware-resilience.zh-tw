@@ -1619,7 +1619,6 @@
   <block id="f31838bfd1a4d7d1cc348bb0e79249aa" category="sidebar">瞭解使用者活動偵測</block>
   <block id="851ba516be036ed05e26d4e1aa17e994" category="sidebar">配置代理程式和收集器</block>
   <block id="f00a921e7dbbed8405cd9ce5fce914d3" category="list-text">*VM SSH Key* - 請使用以下格式輸入 SSH 金鑰：</block>
-  <block id="6180003c782f1663eb2df1464acac0bd" category="cell">CIFS、NFS 和 SAN</block>
   <block id="691a3e8e2059e924160a8104310f552d" category="paragraph">Ransomware Resilience 現已支援將快照複製到輔助 ONTAP 網站。使用複製策略的保護群組，您可以為每個工作負載複製到相同或不同的目標位置。您可以建立包含複製功能的勒索軟體防護策略，也可以使用預先定義的策略。</block>
   <block id="17dfbc312023bdd4da992d8e751e72ac" category="doc">Azure NetApp Files 支援</block>
   <block id="ea2f778dfb597a4b527dac7e944ad95b" category="paragraph">Ransomware Resilience 現已支援 Azure NetApp Files 系統，使您能夠有效率地偵測和應對 Azure NetApp Files 中的勒索軟體威脅。當您發現工作負載時，Ransomware Resilience 現在會呈現 Azure NetApp Files 並在保護儀表板中顯示。Ransomware Resilience 對 Azure NetApp Files 的支援僅包括使用快照的偵測和保護策略。對 Azure NetApp Files 的支援目前處於預覽階段。</block>
@@ -2460,7 +2459,6 @@
   <block id="b4bada7d854e6650f9cc28e404fe40fb" category="admonition">對於部署到 Amazon FSx for NetApp ONTAP 的 IRE，您無需提供此資訊。</block>
   <block id="f5b6822ed53c8f99c424ea0e8e011bf7" category="admonition">勒索軟體復原能力每個 Console 代理最多只能探索 3,000 個工作負載。</block>
   <block id="bb4393b6187d55f98dbeb4c5bb8add00" category="list-text">每個 Console 代理程式最多可處理 3,000 個工作負載。</block>
-  <block id="8df5e57d843114bbbb53a4c85f76cb68" category="list-text">來自 Google Cloud NetApp Volumes 的 SAN 工作負載目前不受勒索軟體復原功能支援。</block>
   <block id="afce532bad172bcef50d75935d2ed43b" category="list-text">複製策略</block>
   <block id="fb9721f24a420ba827ac36665b13797e" category="doc">對使用者活動警報的自動回應</block>
   <block id="5b29c2b1307b96a1557ab05a56715041" category="paragraph">Ransomware Resilience 現已支援在產生使用者活動警報時自動建立快照和封鎖使用者。透過自動回應，您可以在產生警告後立即封鎖使用者並建立快照以進行復原，從而實現更快速的回應，無需人工介入。</block>
@@ -2513,12 +2511,10 @@
   <block id="93e35e2f3f7138fcbfc327d758e1ec96" category="list-text">在「設定」儀表板中，找到「使用者活動監控」磁貼，然後選擇 **Manage**。</block>
   <block id="2361358ff14122114e736beff61c48a2" category="list-text">選取「使用者」索引標籤。</block>
   <block id="766067e25ac4a8f22dad6344937ca56d" category="list-text">選取**封鎖使用者**。</block>
-  <block id="b00b5ebe4a8164319e36e4bbef8f727f" category="list-text">選擇封鎖持續時間：可以是 1 小時到 24 小時，也可以是永久封鎖。</block>
   <block id="50d68502e7fbfa82f99e1abb688a948f" category="list-text">選取要封鎖的使用者名稱旁的核取方塊。</block>
   <block id="126b3c7582135a76321582de4bcad51d" category="list-text">選擇 **Block**。</block>
   <block id="23e9aa0fec2a06ec7f4b6f9076d62992" category="list-title">修改已封鎖使用者列表</block>
   <block id="3d06dabf3eaa23797059f7fffa998cfd" category="list-text">選擇**編輯使用者屏蔽**。</block>
-  <block id="e2d552c6afc3cd9e9e5367d429f832c4" category="list-text">選擇修改選項。若要修改封鎖時長，請選擇 **封鎖使用者的時間段**，然後修改時長。若要從封鎖使用者清單中移除使用者，請選擇 **解除封鎖使用者**。</block>
   <block id="4ecd815bab325d10795007a2e86d0a31" category="list-text">選取要變更狀態的被封鎖使用者名稱旁的核取方塊。</block>
   <block id="8d5311b8775f8a9ea8945d76095bb698" category="list-text">選擇**儲存**。</block>
   <block id="bf21122a37b943f2b70a86b30f0af377" category="list-text">選取「**排除在監控之外**」索引標籤。</block>
@@ -2709,7 +2705,6 @@
   <block id="c6bd820ffcfcad26c449f0454fae72c1" category="list-text">目前 Google Cloud NetApp Volumes 不支援使用複寫的保護策略。</block>
   <block id="392d723534b3a09775f3b6831eba4f37" category="section-title">SAN 儲存設備限制</block>
   <block id="eecebb362641b58fec88bb08c4168447" category="paragraph">以下限制適用於 SAN（區塊儲存設備）工作負載：</block>
-  <block id="aff0472c8383011d738831a8c39c42c6" category="list-text">勒索軟體復原功能目前不支援來自 Google Cloud NetApp Volumes 的 SAN 工作負載。</block>
   <block id="2d2a397baa743b0954cf57d074ff1a05" category="list-text">當勒索軟體恢復能力針對 SAN 工作負載產生警告時，這些警告僅基於高熵值。</block>
   <block id="41bc5402792c9ae6e031743791c37485" category="list-text">SAN 工作負載只能使用 <block ref="f4ee3b399c8cc5fca837364c0d9badb9" category="inline-link-macro-rx"></block> 進行還原。目前 SAN 工作負載尚不支援 Clean restore。</block>
   <block id="2428514fe4a71be9aaa049c0588b7a22" category="paragraph">在執行模擬之前，您必須設定整備演練。您必須針對特定類型的勒索軟體攻擊建立整備演練。Ransomware Resilience 可辨識五種類型的攻擊：</block>
@@ -2745,10 +2740,23 @@
   <block id="b7c7e492cc2a239de36bc7e713a56532" category="paragraph">對於加密（熵）事件觸發的警報，Ransomware Resilience 會根據您對警報的忽略行為進行學習，從而將該活動與正常操作關聯起來；未來，您將不會再收到基於此類活動的警報。這是因為加密（熵）事件由 ARP/AI 管理。對於由<block ref="69f4bf74babfcd1e97eceb84702fb4ae" category="inline-link-macro-rx"></block>觸發的警報，Ransomware Resilience 不會根據忽略行為進行學習，因為這些警報是基於使用者活動模式觸發的。</block>
   <block id="7f45ddc4c3a6264fe6af09d0feee6f8d" category="admonition">您必須設定 <block ref="9403988536e87b1b5fabe2157e11581a" category="inline-link-macro-rx"></block> 以偵測加密（使用者行為）、資料外洩、資料銷毀和可疑使用者行為攻擊。</block>
   <block id="b9ccc4643a22220649cf7d8c1358ebd7" category="list-text">若要設定除加密（熵）以外的任何勒索軟體攻擊類型的整備演練，您必須已設定 <block ref="9403988536e87b1b5fabe2157e11581a" category="inline-link-macro-rx"></block>。</block>
-  <block id="f0bfc00f8922a4e1668398e3aee15cb8" category="list-text">建立 CIFS 工作負載的準備演練時，必須輸入使用者憑證。您應該為準備演練建立一個專用的非正式作業測試使用者，尤其是在測試使用者活動攻擊類型（例如資料外洩）時。如果使用真實的正式作業使用者，Ransomware Resilience 會標記該使用者，這可能導致該使用者無法存取正式作業資料。若使用測試使用者，所有使用者仍可正常存取資料。</block>
   <block id="19783acd6c7b7340a835a629f68c513c" category="list-text">選擇 **Console agent** 和 **Primary system**。</block>
   <block id="304fbd9397bc28472932705b6e4b3a45" category="list-text">選擇主系統後，從預先填入的清單中選擇 **Storage VM**。</block>
   <block id="ee17fa61bd4957effe2be9aad90f9b39" category="list-text">如果儲存設備 VM 使用 CIFS 協議，請輸入 Active Directory 憑證。您可以選擇性地輸入 **Active Directory 網域**；但必須輸入 **使用者名稱** 和 **密碼**。建議您輸入專用測試使用者的憑證。</block>
   <block id="2bc2801a047dbf24f0ad5f6ab66903a3" category="list-text">請為**新的測試工作負載**命名。測試工作負載名稱將以 <block ref="4d57df3ec0851a6b7ee80abd6c45cb4f" prefix=" " category="inline-code"></block> 開頭。</block>
   <block id="bcb62c4e0257dc7f7e53d4080b48c067" category="list-text">如果準備演練是針對使用者活動攻擊類型，請為演練環境選擇**使用者活動代理程式**。</block>
+  <block id="25d6353f95c07b9bbb1938a285d3c2ec" category="cell">CIFS、NFS 和 SAN（iSCSI &amp; NVMe）</block>
+  <block id="ae5d941662c7f934b5502d0e4416f1af" category="doc">Google Cloud NetApp Volumes 的 SAN 支援（預覽）</block>
+  <block id="6d44daef9f0109d0d9941a1214218bd6" category="paragraph">勒索軟體復原功能現已支援 Google Cloud NetApp Volumes 中的 SAN 工作負載，使您能夠偵測針對 SAN 工作負載的基於加密的勒索軟體攻擊。目前，Google Cloud NetApp Volumes 中 SAN 的支援仍處於預覽階段。</block>
+  <block id="b49d323c627c43fecd97c8db6ea7f66c" category="inline-link-macro">支援的系統</block>
+  <block id="fa83a4a163069ca1ab2dcb9be3c41063" category="inline-link-macro">SAN 儲存設備的勒索軟體復原能力</block>
+  <block id="2f244f2c363848263100f25323c23895" category="paragraph">如需更多資訊,請參閱 <block ref="3a3cd00a16a1bca6c18ece5051fc5ba1" category="inline-link-macro-rx"></block> 和 <block ref="740b3aa4325052238b6cf8ff4cb1a868" category="inline-link-macro-rx"></block>。</block>
+  <block id="053cc8d4a507db8f7d33d7c9eb844923" category="section-title">簡化的使用者封鎖介面</block>
+  <block id="16d39f5d27761daa66696ada0758791c" category="paragraph">Ransomware Resilience 現已提供更簡化的使用者體驗，方便您封鎖使用者及管理已封鎖的使用者。透過此更新，您可以輕鬆審查和修改已封鎖的使用者。您必須已設定 <block ref="0a9171a9aac1e029e209b0c543045273" category="inline-link-macro-rx"></block> 才能封鎖使用者。</block>
+  <block id="21d100db43907eec54cab4e115af7c6b" category="inline-link-macro">管理已封鎖的使用者</block>
+  <block id="9d82773616a9fd5b52190dd3b03a9d0d" category="paragraph">如需更多資訊，請參閱 <block ref="c715c16e5dd5464a8f58103938ef0f46" category="inline-link-macro-rx"></block>。</block>
+  <block id="32b39b7e5c37ca140c51e2bebb918db4" category="list-text">建立 CIFS 工作負載的準備演練時，必須輸入使用者憑證。您應該為準備演練建立一個專用的非生產測試使用者，尤其是在測試使用者活動攻擊類型（即資料外洩）時。如果您使用真實的生產使用者，而該使用者在其他生產磁碟區上存在可疑行為，則這些警示可能會出現在準備演練中，而不是產生真正的警示。</block>
+  <block id="a4eaf16125aa6fca833d794fb9973715" category="list-text">選擇封鎖的持續時間。您可以永久封鎖使用者，也可以設定 1 到 24 小時的封鎖時間。</block>
+  <block id="13c987b30f267e394b26e24839fb92c5" category="list-text">選擇要變更的使用者封鎖品質。若要修改封鎖的持續時間，請選取 **封鎖使用者的時間段**，然後修改 **時間段**。若要從封鎖使用者清單中移除使用者，請選取 **解除封鎖使用者**。</block>
+  <block id="91d90ea5487ed9ed44e834f42f272ccb" category="section-title">2026年8月3日</block>
 </blocks>

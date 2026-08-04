@@ -1,0 +1,21 @@
+= Google Cloud NetApp Volumes 的 SAN 支援（預覽）
+:allow-uri-read: 
+
+
+
+
+[[san-support-for-google-cloud-netapp-volumes-preview]]
+=== Google Cloud NetApp Volumes 的 SAN 支援（預覽）
+
+勒索軟體復原功能現已支援 Google Cloud NetApp Volumes 中的 SAN 工作負載，使您能夠偵測針對 SAN 工作負載的基於加密的勒索軟體攻擊。目前，Google Cloud NetApp Volumes 中 SAN 的支援仍處於預覽階段。
+
+如需更多資訊,請參閱 link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/concept-ransomware-resilience.html#supported-systems["支援的系統"^] 和 link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-reference-limitations.html#azure-netapp-files-limitations["SAN 儲存設備的勒索軟體復原能力"^]。
+
+
+
+[[streamlined-interface-for-user-blocking]]
+=== 簡化的使用者封鎖介面
+
+Ransomware Resilience 現已提供更簡化的使用者體驗，方便您封鎖使用者及管理已封鎖的使用者。透過此更新，您可以輕鬆審查和修改已封鎖的使用者。您必須已設定 link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/concept-user-behavior.html["使用者活動偵測"^] 才能封鎖使用者。
+
+如需更多資訊，請參閱 link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-users-manage.html#manage-blocked-users["管理已封鎖的使用者"^]。
