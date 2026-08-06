@@ -2759,4 +2759,46 @@
   <block id="a4eaf16125aa6fca833d794fb9973715" category="list-text">選擇封鎖的持續時間。您可以永久封鎖使用者，也可以設定 1 到 24 小時的封鎖時間。</block>
   <block id="13c987b30f267e394b26e24839fb92c5" category="list-text">選擇要變更的使用者封鎖品質。若要修改封鎖的持續時間，請選取 **封鎖使用者的時間段**，然後修改 **時間段**。若要從封鎖使用者清單中移除使用者，請選取 **解除封鎖使用者**。</block>
   <block id="91d90ea5487ed9ed44e834f42f272ccb" category="section-title">2026年8月3日</block>
+  <block id="b700da57cfa6064a3a99f16451783306" category="inline-link-macro">疑難排解使用者活動代理程式</block>
+  <block id="ab0f1d5b53a905133ff0037803d03914" category="list-text"><block ref="ab0f1d5b53a905133ff0037803d03914" category="inline-link-macro-rx"></block></block>
+  <block id="6530773a15d5d00aace1c113ea2f2033" category="summary">如果您在 NetApp Ransomware Resilience 中安裝使用者活動代理程式時遇到問題，請審查以下常見情境和解決方案。</block>
+  <block id="05c2ede621cda31177de66257857caaa" category="doc">排除 NetApp Ransomware Resilience 中的使用者活動代理程式問題</block>
+  <block id="0bf1ea5135b77a15f13a18e7a5e55640" category="paragraph">如果您在 NetApp Ransomware Resilience 中安裝或執行使用者活動代理程式時遇到問題，請審查以下常見情境和解決方案。</block>
+  <block id="138c9c632fafe7daee2879cfb941a53e" category="section-title">安裝問題</block>
+  <block id="642facf67e0ad311eee88b3ab8381590" category="cell">問題</block>
+  <block id="b5a4b64b2aa505bd7c11f79b8a9f458d" category="cell">解決方案</block>
+  <block id="95554c9d3da4ed0c2b0d1af3ab79b5f6" category="cell">使用者活動代理程式安裝無法建立 /opt/netapp/cloudsecure/agent/logs/agent.log 資料夾，且 install.log 檔案未提供任何相關資訊。</block>
+  <block id="3cf70191a495e63bca49de4740b52983" category="cell">此錯誤發生在代理程式啟動過程中。由於錯誤發生在初始化之前，因此不會記錄到日誌檔中。錯誤訊息會重新導向至標準輸出。請使用命令<block ref="f66ee45f9a926233b13f330bfa05ee2e" prefix=" " category="inline-code"></block>審查錯誤。</block>
+  <block id="3e5ab7bd9ff230d70540950bbe6a7b81" category="cell">使用者活動代理程式安裝失敗，並顯示錯誤「不支援此 Linux 發行版本。正在結束安裝。」</block>
+  <block id="ff2d7bdfcf9a7b38e98593543f56cf87" category="cell">此錯誤表示您的系統不符合系統要求。請先審查系統需求並進行必要的更新，然後再嘗試安裝。</block>
+  <block id="cb4cc8adb937ce18d121568482834d4b" category="cell">使用者活動代理程式安裝失敗，並出現錯誤「-bash: unzip: command not found.」</block>
+  <block id="aebdd17ea52ec903d297f4e7016367be" category="cell">請確保您已安裝 unzip；如果已安裝 Yum，請執行<block ref="009949454ea71ce7b73894952ca76734" prefix=" " category="inline-code"></block>以安裝 unzip。然後，再次嘗試安裝。</block>
+  <block id="6ee47dac78e58461f858c2a400f8fbd8" category="cell">使用者活動代理程式 VM 位於 Zscaler Proxy 之後，導致安裝失敗。</block>
+  <block id="b682ff357c62aafced1876d9c1a79f3a" category="cell">停用 Zscaler Proxy 中 *.cloudinsights.netapp.com URL 的 SSL 檢查。</block>
+  <block id="546fa2913bb5c5d549cb469cd67b0e9d" category="cell">安裝代理程式時，解壓縮後安裝會卡住。</block>
+  <block id="66aeb84510c68ebec2d42a85eecac870" category="cell">如果<block ref="f6d34abde2f21c955bd3e456645a2197" prefix=" " category="inline-code"></block>命令在代理程式安裝期間失敗，表示該命令由非 root<block ref="d338b3f0f405eb5e51c8cc1e5ca66f02" prefix=" " category="inline-code"></block>使用者執行，且工作目錄中的檔案屬於其他使用者，因此無法變更權限。因此，安裝失敗。若要解決此問題，請建立名為「cloudsecure」的新目錄，進入該目錄，複製並貼上完整的<block ref="d15129fe161ca35e7d0c7ae58af9624e" prefix=" " category="inline-code"></block>安裝命令，然後按 Enter 鍵。安裝應該可以繼續進行。如果安裝仍然失敗，請開啟支援案例。</block>
+  <block id="3b3ea4b9d9acd87513a766f3da2c5f19" category="cell">cloudsecure-agent-symptom-collector.sh 指令碼執行失敗，並出現錯誤「ERROR: Failed to create /tmp/cloudsecure-agent-symptoms.zip」</block>
+  <block id="8f5c411082a9edb45e09aae7eb113f08" category="cell">使用命令安裝 zip 工具<block ref="50a148cc0ca623b1f92ea86676730f9c" prefix=" " category="inline-code"></block>，然後再次執行 <block ref="eac544ce8c128848269701508d796823" prefix=" " category="inline-code"></block>。</block>
+  <block id="dfe80d67171c6864a41131519bde31c6" category="cell">使用者活動代理程式安裝失敗，並出現錯誤「useradd：無法建立目錄 /home/cssys」。</block>
+  <block id="6ebfb63994f720f414d7cd0c1ce9394b" category="cell">由於權限錯誤，無法在 /home 目錄下建立使用者的登入目錄。手動建立 cssys 使用者並使用命令 <block ref="d5ba9a9474fc171d7c8d8e0ad71f99d9" prefix=" " category="inline-code"></block> 新增其登入目錄。在此命令中，<block ref="67dd1c0d4e68c367b980f8723c781cb1" prefix=" " category="inline-code"></block> 會在主目錄不存在時建立該目錄；<block ref="9b017020b9d48d433ec90c548e6b5c70" prefix=" " category="inline-code"></block> 則將 HOME_DIR 指定為登入目錄。</block>
+  <block id="42d43cc689659f07ff3b2ee6aefe325f" category="section-title">安裝後問題</block>
+  <block id="df68cb1932706c8ebd7f20481ae974ea" category="paragraph">安裝後，使用者活動代理程式未執行。執行命令<block ref="67e0ddefd3ec3e28b4e12105cb34b420" prefix=" " category="inline-code"></block>後，輸出顯示：</block>
+  <block id="ddfe2967e6e4d9a543ac7c4fb69565f8" category="paragraph">如果 /opt/netapp 是 NFS 裝載，且 cssys 使用者沒有存取該資料夾的權限，則安裝將會失敗。cssys 使用者是由使用者活動代理程式安裝程式建立的本機使用者，可能沒有存取已裝載共享的權限。</block>
+  <block id="ccb8614448c8a3dd288d1c4a6d113fc9" category="paragraph">您可以使用 cssys 使用者嘗試存取<block ref="a4640d7e192f303c62b212c51749701f" prefix=" " category="inline-code"></block>來檢查權限。如果返回「Permission denied」，則表示尚未設定相應的權限。請將程式安裝在本機上的目錄中，而不是裝載的資料夾。</block>
+  <block id="2e2b00887898ca1100fef35d85ca907a" category="cell">代理程式之前是透過 Proxy 伺服器連接的，但 Proxy 伺服器自安裝以來已經變更。我該如何變更 Proxy 組態？</block>
+  <block id="e4418c3e313b07109294854b13046e50" category="paragraph">編輯 agent.properties Proxy 設定：</block>
+  <block id="7324f0c1af695de16c5df9b86e6daff8" category="list-text">切換到包含屬性檔案的資料夾：<block ref="671d5ae47ef48cbcb95a674f7f707149" prefix=" " category="inline-code"></block></block>
+  <block id="f6910ffb5e1be669394adba937beaedc" category="list-text">用文字編輯器開啟 agent.properties 檔案。</block>
+  <block id="bef62bbed6bbdd85b19a2b5e475bbc0c" category="list-text">新增或修改以下幾行：</block>
+  <block id="01d3a32280cc94c7c057cd3d14488785" category="list-text">儲存檔案。</block>
+  <block id="502681bb78d68cfa1b3c961db02d4357" category="list-text">重新啟動代理程式：<block ref="93ef545658eafd48b45fa315628953ae" prefix=" " category="inline-code"></block>。</block>
+  <block id="d15b2119678954d1978297a28988a5b1" category="cell">代理程式已成功安裝並正在執行，但意外停止。</block>
+  <block id="7fdfc836a49d0bf719b937df1f9859b1" category="list-text">透過 SSH 在代理程式機器上進行驗證，以檢查服務狀態。透過<block ref="de0bfd4520e6fec9f1a67c5c65dc2b8c" prefix=" " category="inline-code"></block>檢查代理程式服務的狀態。</block>
+  <block id="16d0e3faf3ba4d341ffb49cf55130fd1" category="list-text">檢查日誌檔中是否有「Failed to start Workload Security daemon service.」訊息。</block>
+  <block id="1e9e268f828d80c922c9288d979ddad8" category="list-text">檢查使用者活動代理程式電腦上是否存在 cssys 使用者。分別執行以下命令檢查 cssys 使用者和群組是否存在：<block ref="3fbe5fb69735e2e03c1033b5d770f987" prefix=" " category="inline-code"></block>然後<block ref="90fbe621dbd81400f16a0b008b94bf8e" prefix=" " category="inline-code"></block>。</block>
+  <block id="d3c2be43961c54361b292c3fc26207b5" category="list-text">如果使用者或群組不存在，則可能是集中式監控原則刪除了 cssys 使用者。請執行以下命令手動建立 cssys 使用者和群組：<block ref="8937b77ac48c04b1a59db03ac67cc0ab" prefix=" " category="inline-code"></block>然後<block ref="52c7bef22d9584c015612923423826d7" prefix=" " category="inline-code"></block>。</block>
+  <block id="07f76ac553d5513ea3f3f1e4bef7ac2a" category="list-text">重新啟動代理程式服務：<block ref="93ef545658eafd48b45fa315628953ae" prefix=" " category="inline-code"></block>。</block>
+  <block id="6ad1cd924ce29ff4da20eeb96e077f1d" category="cell">使用者活動代理程式狀態未連線</block>
+  <block id="39c8406466e54746b73ade6daa657064" category="cell">重新啟動代理程式。透過 SSH 驗證至使用者活動代理程式機器，然後使用命令<block ref="93ef545658eafd48b45fa315628953ae" prefix=" " category="inline-code"></block>重新啟動代理程式。重新啟動後，使用命令<block ref="de0bfd4520e6fec9f1a67c5c65dc2b8c" prefix=" " category="inline-code"></block>檢查代理程式的狀態。如果重新啟動操作成功，輸出將顯示「CONNECTED」。</block>
+  <block id="713ea46594970b91c034ec702b329399" category="sidebar">疑難排解使用者活動代理程式</block>
 </blocks>

@@ -178,4 +178,5 @@ image:screenshot-user-directory-connection.png["使用者目錄連線的螢幕�
 == 後續步驟
 
 * link:task-users-manage.html["管理警報設定和已封鎖的用戶"]
+* link:troubleshoot-user-activity.html["疑難排解使用者活動代理程式"]
 

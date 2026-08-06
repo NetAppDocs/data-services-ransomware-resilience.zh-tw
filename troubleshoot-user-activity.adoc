@@ -1,0 +1,113 @@
+---
+sidebar: sidebar 
+permalink: troubleshoot-user-activity.html 
+keywords: user activity detection, troubleshoot 
+summary: 如果您在 NetApp Ransomware Resilience 中安裝使用者活動代理程式時遇到問題，請審查以下常見情境和解決方案。 
+---
+= 排除 NetApp Ransomware Resilience 中的使用者活動代理程式問題
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+如果您在 NetApp Ransomware Resilience 中安裝或執行使用者活動代理程式時遇到問題，請審查以下常見情境和解決方案。
+
+
+
+[[installation-issues]]
+== 安裝問題
+
+[cols="20,80"]
+|===
+
+
+| 問題 | 解決方案 
+
+
+| 使用者活動代理程式安裝無法建立 /opt/netapp/cloudsecure/agent/logs/agent.log 資料夾，且 install.log 檔案未提供任何相關資訊。 | 此錯誤發生在代理程式啟動過程中。由於錯誤發生在初始化之前，因此不會記錄到日誌檔中。錯誤訊息會重新導向至標準輸出。請使用命令 `journalctl -u cloudsecure-agent.service`審查錯誤。 
+
+
+| 使用者活動代理程式安裝失敗，並顯示錯誤「不支援此 Linux 發行版本。正在結束安裝。」 | 此錯誤表示您的系統不符合系統要求。請先審查系統需求並進行必要的更新，然後再嘗試安裝。 
+
+
+| 使用者活動代理程式安裝失敗，並出現錯誤「-bash: unzip: command not found.」 | 請確保您已安裝 unzip；如果已安裝 Yum，請執行 `yum install unzip`以安裝 unzip。然後，再次嘗試安裝。 
+
+
+| 使用者活動代理程式 VM 位於 Zscaler Proxy 之後，導致安裝失敗。 | 停用 Zscaler Proxy 中 *.cloudinsights.netapp.com URL 的 SSL 檢查。 
+
+
+| 安裝代理程式時，解壓縮後安裝會卡住。 | 如果 `chmod 755 -Rf`命令在代理程式安裝期間失敗，表示該命令由非 root `sudo`使用者執行，且工作目錄中的檔案屬於其他使用者，因此無法變更權限。因此，安裝失敗。若要解決此問題，請建立名為「cloudsecure」的新目錄，進入該目錄，複製並貼上完整的 `token=... ./cloudsecure-agent-install.sh`安裝命令，然後按 Enter 鍵。安裝應該可以繼續進行。如果安裝仍然失敗，請開啟支援案例。 
+
+
+| cloudsecure-agent-symptom-collector.sh 指令碼執行失敗，並出現錯誤「ERROR: Failed to create /tmp/cloudsecure-agent-symptoms.zip」 | 使用命令安裝 zip 工具 `yum install zip`，然後再次執行  `cloudsecure-agent-symptom-collector.sh`。 
+
+
+| 使用者活動代理程式安裝失敗，並出現錯誤「useradd：無法建立目錄 /home/cssys」。 | 由於權限錯誤，無法在 /home 目錄下建立使用者的登入目錄。手動建立 cssys 使用者並使用命令  `sudo useradd <user_name> -m -d HOME_DIR` 新增其登入目錄。在此命令中， `-m` 會在主目錄不存在時建立該目錄； `-d` 則將 HOME_DIR 指定為登入目錄。 
+|===
+
+
+[[post-installation-issues]]
+== 安裝後問題
+
+[cols="20,80"]
+|===
+
+
+| 問題 | 解決方案 
+
+
+ a| 
+安裝後，使用者活動代理程式未執行。執行命令 `systemctl status cloudsecure-agent.service`後，輸出顯示：
+
+[source]
+----
+[root@demo ~]# systemctl status cloudsecure-agent.service +
+agent.service - Workload Security Agent Daemon Service
+Loaded: loaded (/usr/lib/systemd/system/cloudsecure-agent.service; enabled; vendor preset: disabled) +
+Active: activating (auto-restart) (Result: exit-code) since Tue 2021-08-03 21:12:26 PDT; 2s ago +
+Process: 25889 ExecStart=/bin/bash /opt/netapp/cloudsecure/agent/bin/cloudsecure-agent (code=exited status=126) +
+Main PID: 25889 (code=exited, status=126), +
+Aug 03 21:12:26 demo systemd[1]: cloudsecure-agent.service: main process exited, code=exited, status=126/n/a +
+Aug 03 21:12:26 demo systemd[1]: Unit cloudsecure-agent.serve
+---- a| 
+如果 /opt/netapp 是 NFS 裝載，且 cssys 使用者沒有存取該資料夾的權限，則安裝將會失敗。cssys 使用者是由使用者活動代理程式安裝程式建立的本機使用者，可能沒有存取已裝載共享的權限。
+
+您可以使用 cssys 使用者嘗試存取 `/opt/netapp/cloudsecure/agent/bin/cloudsecure-agent`來檢查權限。如果返回「Permission denied」，則表示尚未設定相應的權限。請將程式安裝在本機上的目錄中，而不是裝載的資料夾。
+
+
+
+| 代理程式之前是透過 Proxy 伺服器連接的，但 Proxy 伺服器自安裝以來已經變更。我該如何變更 Proxy 組態？  a| 
+編輯 agent.properties Proxy 設定：
+
+.步驟
+. 切換到包含屬性檔案的資料夾： `cd /opt/netapp/cloudsecure/conf`
+. 用文字編輯器開啟 agent.properties 檔案。
+. 新增或修改以下幾行：
++
+[source]
+----
+AGENT_PROXY_HOST=<proxy.vm.url> +
+AGENT_PROXY_PORT=<portValue> +
+AGENT_PROXY_USER=<user> +
+AGENT_PROXY_PASSWORD=<password>
+----
+. 儲存檔案。
+. 重新啟動代理程式： `sudo systemctl restart cloudsecure-agent.service`。
+
+
+
+
+| 代理程式已成功安裝並正在執行，但意外停止。  a| 
+.步驟
+. 透過 SSH 在代理程式機器上進行驗證，以檢查服務狀態。透過 `sudo systemctl status cloudsecure-agent.service`檢查代理程式服務的狀態。
+. 檢查日誌檔中是否有「Failed to start Workload Security daemon service.」訊息。
+. 檢查使用者活動代理程式電腦上是否存在 cssys 使用者。分別執行以下命令檢查 cssys 使用者和群組是否存在： `sudo id cssys`然後 `sudo groups cssys`。
+. 如果使用者或群組不存在，則可能是集中式監控原則刪除了 cssys 使用者。請執行以下命令手動建立 cssys 使用者和群組： `sudo useradd cssys`然後 `sudo groupadd cssys`。
+. 重新啟動代理程式服務： `sudo systemctl restart cloudsecure-agent.service`。
+
+
+
+
+| 使用者活動代理程式狀態未連線 | 重新啟動代理程式。透過 SSH 驗證至使用者活動代理程式機器，然後使用命令 `sudo systemctl restart cloudsecure-agent.service`重新啟動代理程式。重新啟動後，使用命令 `sudo systemctl status cloudsecure-agent.service`檢查代理程式的狀態。如果重新啟動操作成功，輸出將顯示「CONNECTED」。 
+|===

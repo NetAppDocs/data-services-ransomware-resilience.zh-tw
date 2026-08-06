@@ -58,6 +58,8 @@ sidebar:
           url: "/suspicious-user-activity.html"
         - title: 管理警報和已封鎖的用戶
           url: "/task-users-manage.html"
+        - title: 疑難排解使用者活動代理程式
+          url: "/troubleshoot-user-activity.html"
       - title: 管理保護群組
         url: "/task-protection-group.html"
       - title: 掃描個人識別資訊
