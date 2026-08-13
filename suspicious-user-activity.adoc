@@ -91,6 +91,21 @@ image:user-activity-settings.png["使用者活動設定的螢幕擷取畫面。"
 
 
 
+[[delete-a-data-collector]]
+=== 刪除資料收集器
+
+如果資料收集器已過期或不再運作，您可以將其刪除。刪除後，由該資料收集器監控的所有工作負載將停止監控可疑使用者行為。
+
+.步驟
+. 在勒索軟體復原中，前往*設定*。
+. 在「使用者活動監控」磁貼中，選擇 **Manage**。
+. 選擇 *Agents and collectors tab*，然後選擇 *Data collectors*。
+. 確定要刪除的資料收集器。選擇行動選單，然後選擇**刪除**。
+. 在對話方塊中，選擇 *Delete* 進行確認。
+
+
+
+
 [[create-a-user-directory-connector]]
 == 建立使用者目錄連接器
 
@@ -99,7 +114,7 @@ image:user-activity-settings.png["使用者活動設定的螢幕擷取畫面。"
 .步驟
 . 在勒索軟體復原中，前往*設定*。
 . 在「使用者活動監控」磁貼中，選擇 **Manage**。
-. 選擇**使用者目錄連接器**選項卡，然後選擇**新增**。
+. 選擇 *Agents and collectors tab* ，然後選擇 **User directory connectors** 選項卡，再選擇 **Add**。
 . 配置連接。請在每個欄位中填寫所需資訊。
 +
 [cols="25,75"]

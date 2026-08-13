@@ -1105,7 +1105,6 @@
   <block id="87890c9758b28588c6845cfcf6d19b17" category="section-title">新增資料收集器</block>
   <block id="cebc35dcf9d04a393d86d35a4e3cf6be" category="inline-xref-macro">新增檢測策略</block>
   <block id="8348d8dcee9ea32e049e21c42a431b91" category="list-text">在勒索軟體復原中，前往*設定*。</block>
-  <block id="e70202c14c96f451fdcf2617844ea351" category="list-text">選擇**使用者目錄連接器**選項卡，然後選擇**新增**。</block>
   <block id="496ee322ba138fdbc777e5ab2e30145e" category="list-text">*姓名*</block>
   <block id="e018ce61f2faa0782aac0cf5ceb4e39f" category="list-text">*使用者目錄類型*</block>
   <block id="817d09446fbab0a167f137ba029b3b2c" category="list-text">*伺服器IP位址或網域名稱*</block>
@@ -2078,11 +2077,9 @@
   <block id="b0836e1bf6680e789281aea3293f7647" category="list-text">對於雲端型 IRE，請選擇 **Amazon Web Services**。</block>
   <block id="b330f48d8947ae91888a185951c00937" category="list-text">展開 *Systems* 區段。選擇您要連線至 IRE 的系統。對於您選取的每個系統，您必須提供儲存 VM 的 IP 位址、子網路遮罩和閘道。</block>
   <block id="be33043acadffab164c32971cd856af7" category="inline-image-macro">系統選擇介面的螢幕擷取畫面。</block>
-  <block id="9aa6cf1eff1a76b0409b3e752312ea85" category="paragraph"><block ref="9aa6cf1eff1a76b0409b3e752312ea85" category="inline-image-macro-rx" type="image"></block></block>
   <block id="89fdf1c0dc132ad5060755aed85034a8" category="list-text">展開 **Authentication** 部分。</block>
   <block id="a81c4edeb10492c8584a0c9082f6ce84" category="list-text">展開 *Virtual private cloud (VPC)* 區段。輸入要部署 IRE 的 VPC ID。</block>
   <block id="c2b8af5a06c2ce8a91c4861ae659df43" category="inline-image-macro">IRE 認證設定的螢幕截圖。</block>
-  <block id="9a717f23235ddd79acf46b60cbb49654" category="paragraph"><block ref="9a717f23235ddd79acf46b60cbb49654" category="inline-image-macro-rx" type="image"></block></block>
   <block id="220e304e2191688ccb248376282d530b" category="list-text">選擇 **Add** 以建立 IRE。</block>
   <block id="f0e69ccbb7ad96f546f7924206944bfa" category="open-title">內部部署</block>
   <block id="9f1d53078d7f9d9907fb2e5042915794" category="list-text">在 Clean restores 卡片中，如果這是您的第一個環境，請選擇 **Add**；如果您已經建立了一個環境，請選擇 **Manage**。</block>
@@ -2091,7 +2088,6 @@
   <block id="da5888e486faa08ea3f4a546d8ea2b6b" category="list-text">展開 *Systems* 區段。選擇您要連線至 IRE 的系統。為每個在 IRE 中需要恢復工作負載的系統指派儲存 VM IP、子網路遮罩和閘道。</block>
   <block id="6c98e0cb0c66954d78f2191bf8fdcd90" category="paragraph">您選擇的每個系統都必須指派一個 IP 位址。您可以選擇主系統或輔助系統。如果主系統沒有未加密的快照或主系統不可用，則可以使用輔助系統進行分析和恢復。</block>
   <block id="88fd1b8a6e78502ed71683ed691e3faa" category="list-text">展開 **Console agent** 部分。從下拉式選單中選擇已部署在 IRE 中的 Console agent。</block>
-  <block id="594222a9ce3ab2f5ea0066e3f132342d" category="list-text">展開 *Compute* 部分。</block>
   <block id="2c164c9a5db457fb3a29bc4f36a90e11" category="list-text">請提供 vCenter 伺服器驗證憑證：*IP 位址* 或完全限定網域名稱（FQDN）、*連接埠*、*使用者名稱* 和 *密碼*。</block>
   <block id="dc7731af7d2a810f6507b9403958dd46" category="list-text">選擇 **Authenticate** 以確認憑證。請等待 UI 確認您的憑證後再繼續。</block>
   <block id="3c313c8ed317dbe7d4203dcdd31c8a19" category="inline-image-macro">運算選擇介面的螢幕擷取畫面。</block>
@@ -2101,7 +2097,6 @@
   <block id="3b98dd3eb2a4ab1e4dbff3d07d4b9987" category="paragraph">您無法刪除具有作用中還原作業的 IRE；您可以取消還原作業或等待還原完成，然後再刪除 IRE。</block>
   <block id="f9df77cbf2042ca0c84056ff5f798b3f" category="admonition">如果刪除 IRE，也會刪除無塵室 SVM 和中繼資料磁碟區。這些資產刪除後，您將無法再產生乾淨還原的報告。</block>
   <block id="ffbbe06f3f17d59276920755ff6ac29b" category="list-text">前往 **Settings**。</block>
-  <block id="40d3ac507a7227e0481f98409e8015f7" category="list-text">在 Clean restore 卡中，選擇 **Manage** 。</block>
   <block id="7c2d524886480cf4cd6bc69e0c99bb89" category="list-text">在對話方塊中，選取 **Delete** 以確認操作。</block>
   <block id="f4cc881797e2311f16dfa07e4349adcc" category="doc">使用 NetApp Ransomware Resilience 中的自訂還原功能從勒索軟體攻擊中恢復</block>
   <block id="535ddb562a8b468bf49b846735d03ed1" category="paragraph">透過 Ransomware Resilience，儲存管理員可以確定如何以最佳方式從建議的還原點或首選還原點復原工作負載。</block>
@@ -2121,19 +2116,16 @@
   <block id="9df5336cadaa8da9a21a00f3f55c497b" category="list-text">輸入帳戶的 **Access key** 和 **Secret key**。</block>
   <block id="2717d5efc491d88d4fc433e4af820d74" category="summary">在 NetApp Ransomare Resilience 中執行乾淨還原之前，您必須建立隔離的還原環境，以隔離和清理環境。</block>
   <block id="d58e1a84905920b61ed4f1f26262aeb9" category="doc">在 NetApp Ransomware Resilience 中設定環境以進行乾淨還原</block>
-  <block id="48b395c83fb3667e93231c09593be027" category="list-text">在 Clean restore 卡中，選取 **Add** 以建立隔離的復原環境。</block>
   <block id="105f7259b2dc81485c4baf296e55aec5" category="list-text">展開 **Name** 部分。輸入環境的 **Name**。</block>
   <block id="2eda5a6118ec15220cd7332a61e3afa7" category="list-text">輸入雲端 **Account** ID，然後從下拉式選單中選擇該帳號所在的 **Region**。您只能在受支援的區域中部署 IRE。</block>
   <block id="8a6858555f085685f5bb427c4dbd4219" category="paragraph">Ransomware Resilience 會在您選擇「新增」後測試連線，這可能需要幾分鐘。當 IRE 的狀態顯示為「已部署」時，表示 IRE 已成功部署。</block>
   <block id="72fe6d9d17dfd2ab74965b68d4ad7d09" category="list-text">選擇要部署 VM 的 *Datacenter* 和 *Cluster*。</block>
   <block id="3e00060a376e7413a4ebadfd06157d94" category="list-text">選擇 ESXi 主機的 *Datastore* 和 *Network*。</block>
   <block id="30329b19b858d26d073ea4ab5feeed6f" category="list-text">請以 CIDR 格式輸入 VM 的 *IP 位址範圍*（例如 10.0.0.1/24）、*子網路遮罩*和*閘道*。</block>
-  <block id="5e4a4c67d9b9212d3f7d2d36cd4be2de" category="list-text">展開 *VMs* 區段，此區段會根據您在 *Compute* 區段中的輸入內容自動填入。</block>
   <block id="1a65a52eeaaaf2a882bf42fa7b872483" category="list-text">對於 Ransomware Resilience 用於掃描勒索軟體的 Linux VM，請從下拉式選單中選取 VM，然後輸入 VM 的*使用者名稱*和*密碼*。</block>
   <block id="3c4a04ceaab48b61f17ab0bd613644c0" category="list-text">對於用於掃描的 Windows VM，請從下拉式選單中選擇該 VM，然後輸入該 VM 的 *User name* 和 *Password*。</block>
   <block id="13291e241521a2260f7ae5746544e195" category="list-text">選擇 **Add** 以建立 IRE。選擇 Add 後，Ransomware Resilience 會測試連線；此過程可能需要幾分鐘。當 IRE 的狀態顯示為「deployed」時，表示已成功部署。</block>
   <block id="8d81ff5c5b48d23cce9332dd984632b4" category="paragraph">您可以追蹤進度。在「設定」標籤中，選擇 **隔離復原環境**。「隔離復原環境」頁面會顯示 IRE 及其狀態。選擇 **檢視工作** 以查看與該環境相關的所有工作的詳細資訊。</block>
-  <block id="4f9ce9d8880d6bdd44ed37068e5fb560" category="admonition">如果需要更改 IRE 的任何詳細信息，請從 Ransomware Resilience 側邊欄中選擇 *Settings*，然後在 Clean restore 卡片中選擇 **Manage**。選擇 IRE 的操作選單，然後選擇 **Edit** 以變更配置。</block>
   <block id="b84cf7acbf3f47154038369f7661d257" category="list-text">識別您要刪除的無塵室。選擇 IRE 的操作選單<block ref="2f43b42fd833d1e77420a8dae7419000" prefix="(" category="inline-code"></block>，然後選擇**刪除**。</block>
   <block id="26878907f297abf4a6b9ee208577dd47" category="inline-link-macro">SIEM 報告</block>
   <block id="f7816573bcae53abb1ea5d75ebbcc21f" category="list-text">部分事件資料未包含在 <block ref="b3b62e437019ccd4f3f5eaf4371edbef" category="inline-link-macro-rx"></block> 中，適用於 Azure NetApp Files 組態。</block>
@@ -2230,7 +2222,6 @@
   <block id="23261131430f46ec6fb27110ac7f00fc" category="section-title">SOAR 支援封鎖使用者</block>
   <block id="e5b8f2d9ef7cdce04d260640283c68c6" category="paragraph">Ransomware Resilience 現在支援使用 Google SecOps 和 Splunk SOAR playbook 封鎖單一使用者。透過此功能，當 Ransomware Resilience 偵測到可疑的使用者活動（例如資料外洩或大量刪除資料）時，您可以自動封鎖使用者。</block>
   <block id="2f82a2e72d177e2d1d65a490cf072506" category="paragraph"><block ref="f63222f2dbc8e79c6867c1aa1bf7ad40" category="inline-link-macro-rx"></block>。</block>
-  <block id="5e5e4d611b545e088600f1e94c227e02" category="list-text">在 Type （類型）部分中，選擇 *Cleaning only* （僅清潔）。</block>
   <block id="15133f0d70ddd9da0f0a4ccaf25d12f2" category="paragraph">安全資訊和事件管理 (SIEM) 系統集中管理日誌和事件資料，從而提供對安全事件和合規性的深入洞察。NetApp Ransomware Resilience 支援自動將資料傳送到您的 SIEM，以簡化威脅分析和偵測流程。</block>
   <block id="963e2ddcdebcdd0f6fcbd1dad696e580" category="admonition">NetApp Ransomware Resilience 也提供 <block ref="de8332ed81162473af5cb8a1551a7e36" category="inline-link-macro-rx"></block>。</block>
   <block id="1d128c6086cbb73d30a6cbf3e127963d" category="list-text">*title*：偵測到的警示的顯示名稱。</block>
@@ -2801,4 +2792,21 @@
   <block id="6ad1cd924ce29ff4da20eeb96e077f1d" category="cell">使用者活動代理程式狀態未連線</block>
   <block id="39c8406466e54746b73ade6daa657064" category="cell">重新啟動代理程式。透過 SSH 驗證至使用者活動代理程式機器，然後使用命令<block ref="93ef545658eafd48b45fa315628953ae" prefix=" " category="inline-code"></block>重新啟動代理程式。重新啟動後，使用命令<block ref="de0bfd4520e6fec9f1a67c5c65dc2b8c" prefix=" " category="inline-code"></block>檢查代理程式的狀態。如果重新啟動操作成功，輸出將顯示「CONNECTED」。</block>
   <block id="713ea46594970b91c034ec702b329399" category="sidebar">疑難排解使用者活動代理程式</block>
+  <block id="61a1f03c40b54edaef7c992ca33db97f" category="doc">刪除資料收集器</block>
+  <block id="dcc73e49045e1c557fb3cbaef4605c9d" category="paragraph">勒索軟體復原功能現已支援刪除資料收集器。啟用工作負載的使用者活動偵測時，系統會自動建立資料收集器；如果資料收集器過期，現在可以手動將其刪除。</block>
+  <block id="c40d1e2441a0d8d08a33243495f09b1b" category="paragraph">如需詳細資訊，請參閱 <block ref="c87d949190b597f950465163c66d9dc2" category="inline-link-macro-rx"></block>。</block>
+  <block id="58262e10e6eb5ac08f4ebdaac5362d95" category="doc">取得勒索軟體抵禦能力的協助</block>
+  <block id="0990599ef72ff32baff709aa976827eb" category="doc">註冊即可獲得勒索軟體抵禦能力支援</block>
+  <block id="468e863607c4c207e5952c0a36da3433" category="paragraph">如果資料收集器已過期或不再運作，您可以將其刪除。刪除後，由該資料收集器監控的所有工作負載將停止監控可疑使用者行為。</block>
+  <block id="f25157455b342378027462b995e2423d" category="list-text">選擇 *Agents and collectors tab*，然後選擇 *Data collectors*。</block>
+  <block id="10a604b32f29fb0683a2be87454599b7" category="list-text">確定要刪除的資料收集器。選擇行動選單，然後選擇**刪除**。</block>
+  <block id="1e64ed41d722d196194562a5df24253d" category="list-text">在對話方塊中，選擇 *Delete* 進行確認。</block>
+  <block id="b17193aa985fc14bbddcb4c3fa91bb7b" category="list-text">選擇 *Agents and collectors tab* ，然後選擇 **User directory connectors** 選項卡，再選擇 **Add**。</block>
+  <block id="3e48c32fa5e1161a5567c6a86a9f0349" category="list-text">在隔離清潔和恢復卡中，選擇**新增**以建立隔離的恢復環境。</block>
+  <block id="9c89138e4c42cb6a49a2538e0f80a53d" category="list-text">在「類型」部分，選擇 *On-demand cleaning*。</block>
+  <block id="393e58657e131f2b72649ed0cf5217cd" category="list-text">展開「潔淨室運算」部分。</block>
+  <block id="d5ea44941680de66202040b32bbebc5a" category="list-text">展開「Clean room VMs」部分，該部分內容會根據您在「運算」部分中的輸入進行填充。</block>
+  <block id="13579afd289a7073b60083da3804071a" category="admonition">如果需要更改 IRE 的任何詳細資訊，請從 Ransomware Resilience 側邊欄中選擇 *Settings*，然後在 Isolation cleaning and recovery 卡片中選擇 **Manage**。選擇 IRE 的行動選單，然後選擇 **Edit** 以變更組態。</block>
+  <block id="ae4022180a6e4bea847e0d317afacc94" category="list-text">在 Isolation 清理和恢復卡中，選擇 **Manage**。</block>
+  <block id="01b8b50c6af6a26d04385207f4b3c02e" category="section-title">2026年8月13日</block>
 </blocks>

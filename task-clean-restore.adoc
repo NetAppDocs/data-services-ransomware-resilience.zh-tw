@@ -525,8 +525,8 @@ NFS 存取：* 正式作業 Console 代理程式 * Console 代理程式 VLAN * �
 .雲端
 --
 . 在勒索軟體恢復功能中，選擇**設定**。
-. 在 Clean restore 卡中，選取 **Add** 以建立隔離的復原環境。
-. 在 Type （類型）部分中，選擇 *Cleaning only* （僅清潔）。
+. 在隔離清潔和恢復卡中，選擇**新增**以建立隔離的恢復環境。
+. 在「類型」部分，選擇 *On-demand cleaning*。
 . 展開 **Name** 部分。輸入環境的 **Name**。
 . 對於雲端型 IRE，請選擇 **Amazon Web Services**。
 . 展開 *Systems* 區段。選擇您要連線至 IRE 的系統。對於您選取的每個系統，您必須提供儲存 VM 的 IP 位址、子網路遮罩和閘道。
@@ -535,18 +535,18 @@ NFS 存取：* 正式作業 Console 代理程式 * Console 代理程式 VLAN * �
 NOTE: 對於部署到 Amazon FSx for NetApp ONTAP 的 IRE，您無需提供此資訊。
 
 +
-image:clean-restore-systems.png["系統選擇介面的螢幕擷取畫面。"]
+image::clean-restore-systems.png[系統選擇介面的螢幕擷取畫面。]
 
 . 展開 **Authentication** 部分。
 +
 ** 輸入雲端 **Account** ID，然後從下拉式選單中選擇該帳號所在的 **Region**。您只能在受支援的區域中部署 IRE。
 ** 輸入帳戶的 **Access key** 和 **Secret key**。
++
+image::screenshot-set-up-recovery-environment.png[IRE 認證設定的螢幕截圖。]
+
 
 
 . 展開 *Virtual private cloud (VPC)* 區段。輸入要部署 IRE 的 VPC ID。
-+
-image:screenshot-set-up-recovery-environment.png["IRE 認證設定的螢幕截圖。"]
-
 . 選擇 **Add** 以建立 IRE。
 +
 Ransomware Resilience 會在您選擇「新增」後測試連線，這可能需要幾分鐘。當 IRE 的狀態顯示為「已部署」時，表示 IRE 已成功部署。
@@ -558,18 +558,15 @@ Ransomware Resilience 會在您選擇「新增」後測試連線，這可能需�
 --
 . 在勒索軟體恢復功能中，選擇**設定**。
 . 在 Clean restores 卡片中，如果這是您的第一個環境，請選擇 **Add**；如果您已經建立了一個環境，請選擇 **Manage**。
-. 在 Type （類型）部分中，選擇 *Cleaning only* （僅清潔）。
+. 在「類型」部分，選擇 *On-demand cleaning*。
 . 展開 *Name* 區段。為 IRE 指定 **Name**。
 . 對於位置，請選擇 **On-premises**。
 . 展開 *Systems* 區段。選擇您要連線至 IRE 的系統。為每個在 IRE 中需要恢復工作負載的系統指派儲存 VM IP、子網路遮罩和閘道。
 +
 您選擇的每個系統都必須指派一個 IP 位址。您可以選擇主系統或輔助系統。如果主系統沒有未加密的快照或主系統不可用，則可以使用輔助系統進行分析和恢復。
 
-+
-image:clean-restore-systems.png["系統選擇介面的螢幕擷取畫面。"]
-
 . 展開 **Console agent** 部分。從下拉式選單中選擇已部署在 IRE 中的 Console agent。
-. 展開 *Compute* 部分。
+. 展開「潔淨室運算」部分。
 +
 .. 請提供 vCenter 伺服器驗證憑證：*IP 位址* 或完全限定網域名稱（FQDN）、*連接埠*、*使用者名稱* 和 *密碼*。
 .. 選擇 **Authenticate** 以確認憑證。請等待 UI 確認您的憑證後再繼續。
@@ -581,7 +578,7 @@ image:clean-restore-compute.png["運算選擇介面的螢幕擷取畫面。"]
 
 
 
-. 展開 *VMs* 區段，此區段會根據您在 *Compute* 區段中的輸入內容自動填入。
+. 展開「Clean room VMs」部分，該部分內容會根據您在「運算」部分中的輸入進行填充。
 +
 .. 對於 Ransomware Resilience 用於掃描勒索軟體的 Linux VM，請從下拉式選單中選取 VM，然後輸入 VM 的*使用者名稱*和*密碼*。
 .. 對於用於掃描的 Windows VM，請從下拉式選單中選擇該 VM，然後輸入該 VM 的 *User name* 和 *Password*。
@@ -597,7 +594,7 @@ image:clean-restore-compute.png["運算選擇介面的螢幕擷取畫面。"]
 建立 IRE 後，您可以修改其中的系統。在設定標籤中，選取 **Isolated recovery environments**。找到您要編輯的 IRE，選取動作功能表 `...`，然後選取 **Edit**。繼續修改系統。完成後選取 **Save**。
 
 
-TIP: 如果需要更改 IRE 的任何詳細信息，請從 Ransomware Resilience 側邊欄中選擇 *Settings*，然後在 Clean restore 卡片中選擇 **Manage**。選擇 IRE 的操作選單，然後選擇 **Edit** 以變更配置。
+TIP: 如果需要更改 IRE 的任何詳細資訊，請從 Ransomware Resilience 側邊欄中選擇 *Settings*，然後在 Isolation cleaning and recovery 卡片中選擇 **Manage**。選擇 IRE 的行動選單，然後選擇 **Edit** 以變更組態。
 
 
 
@@ -610,7 +607,7 @@ TIP: 如果需要更改 IRE 的任何詳細信息，請從 Ransomware Resilience
 IMPORTANT: 如果刪除 IRE，也會刪除無塵室 SVM 和中繼資料磁碟區。這些資產刪除後，您將無法再產生乾淨還原的報告。
 
 . 前往 **Settings**。
-. 在 Clean restore 卡中，選擇 **Manage** 。
+. 在 Isolation 清理和恢復卡中，選擇 **Manage**。
 . 識別您要刪除的無塵室。選擇 IRE 的操作選單(`...`，然後選擇**刪除**。
 . 在對話方塊中，選取 **Delete** 以確認操作。
 

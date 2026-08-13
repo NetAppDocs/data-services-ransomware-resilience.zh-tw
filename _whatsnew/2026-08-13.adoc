@@ -1,0 +1,12 @@
+= 刪除資料收集器
+:allow-uri-read: 
+
+
+
+
+[[delete-a-data-collector]]
+=== 刪除資料收集器
+
+勒索軟體復原功能現已支援刪除資料收集器。啟用工作負載的使用者活動偵測時，系統會自動建立資料收集器；如果資料收集器過期，現在可以手動將其刪除。
+
+如需詳細資訊，請參閱 link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/suspicious-user-activity.html#delete-a-data-collector["刪除資料收集器"^]。
