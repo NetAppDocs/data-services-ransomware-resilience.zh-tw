@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-clean-restore.html 
 keywords: clean room, clean restore, secure recovery, restore, isolated recovery environment 
-summary: 在 NetApp Ransomare Resilience 中執行乾淨還原之前，您必須建立隔離的還原環境，以隔離和清理環境。 
+summary: 在 NetApp Ransomware Resilience 中執行乾淨還原之前，必須建立隔離的恢復環境來隔離和清理環境。 
 ---
 = 在 NetApp Ransomware Resilience 中設定環境以進行乾淨還原
 :hardbreaks:
@@ -23,7 +23,7 @@ NetApp Ransomware Resilience 提供乾淨還原，能在勒索軟體攻擊後引
 [[learn-about-clean-restores]]
 == 瞭解全新還原
 
-執行乾淨還原時、NetApp Ransomware Resilience 會引導您完成多步驟程序、以最佳化還原作業。
+執行乾淨還原時，NetApp Ransomware Resilience 會引導您完成多步驟流程，從而最佳化恢復。
 
 * **設定**：要執行乾淨還原，您必須先建立 IRE，然後選擇要還原的工作負載。Ransomware Resilience 會建立一個乾淨的環境，所有針對該工作負載的操作都會在該環境中執行。
 * **分析**：在無塵室中，NetApp Ransomware Resilience 會分析所有快照，以檢查是否有加密。乾淨還原會決定還原對應，以判斷最佳還原計畫。
@@ -35,8 +35,8 @@ NetApp Ransomware Resilience 提供乾淨還原，能在勒索軟體攻擊後引
 
 * **方案**：選擇所提供的還原選項：
 +
-** _最新未受影響的還原點_：攻擊發生前最新未加密快照中最快的還原點
-** _資料遺失最小_：來自不同快照的每個未加密檔案的最新版本
+** _最新未受影響的恢復點_：攻擊發生前最新未加密快照中最快的恢復點
+** _最少資料遺失_：來自不同快照的每個未加密檔案的最新版本
 +
 在規劃步驟中，您還可以檢視檔案歷史記錄，以了解勒索軟體事件何時影響了檔案，以及還原點與該事件在時間上的關係。
 
@@ -44,7 +44,7 @@ NetApp Ransomware Resilience 提供乾淨還原，能在勒索軟體攻擊後引
 
 * **清理**：Ransomware Resilience 會從復原點移除惡意軟體。如果某些檔案無法清理，則會將其從復原中排除，並隔離到單獨的位置。
 * **RESTORE**：Ransomware Resilience 會將乾淨的資料還原到來源環境中。
-* **END**：Ransomware Resilience 提供了該過程的詳細摘要，並關閉了潔淨室，釋放了設置期間配置的資源，從而消除了未來的計量成本。
+* **END**：NetApp Ransomware Resilience 提供流程的詳細總結，並關閉潔淨室，釋放設定期間佈建的資源，以消除未來的計量成本。
 
 
 
@@ -604,7 +604,7 @@ TIP: 如果需要更改 IRE 的任何詳細資訊，請從 Ransomware Resilience
 您無法刪除具有作用中還原作業的 IRE；您可以取消還原作業或等待還原完成，然後再刪除 IRE。
 
 
-IMPORTANT: 如果刪除 IRE，也會刪除無塵室 SVM 和中繼資料磁碟區。這些資產刪除後，您將無法再產生乾淨還原的報告。
+IMPORTANT: 如果刪除 IRE，也會刪除無塵室 SVM 和中繼資料 Volume。這些資產刪除後，您將無法再產生乾淨還原的報表。
 
 . 前往 **Settings**。
 . 在 Isolation 清理和恢復卡中，選擇 **Manage**。

@@ -9,7 +9,7 @@ summary: Ransomware Resilience 可以識別資料中的隱私外洩風險，幫�
 
 
 [role="lead"]
-在 NetApp Ransomware Resilience 中，您可以使用 NetApp Data Classification 來識別隱私暴露並主動保護您的資料。識別隱私暴露可揭示資料集是否包含個人可識別資訊（PII）。隱私暴露可能會增加安全風險並改變工作負載的重要性指定。
+在 NetApp Ransomware Resilience 中使用 NetApp Data Classification 來識別隱私外洩、尋找個人識別資訊 （PII），並了解這些外洩如何影響工作負載的重要性。
 
 *所需控制台角色* 要執行此任務，您需要擁有 link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-platform-roles.html#super-admin-roles["超級管理員"^] 或 Ransomware Resilience 管理員角色。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["了解NetApp Console的勒索軟體復原角色"^]。
 

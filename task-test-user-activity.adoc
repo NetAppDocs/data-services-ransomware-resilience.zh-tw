@@ -11,7 +11,7 @@ summary: NetApp Ransomware Resilience 在您啟用使用者活動監控時提供
 
 
 [role="lead"]
-在 NetApp Ransomware Resilience 中設定使用者活動監控時，您可以執行測試腳本來模擬可疑的使用者行為事件。
+在 NetApp Ransomware Resilience 中設定使用者活動監控時，您可以執行測試指令碼來模擬可疑的使用者行為事件，以進行驗證和測試。
 
 此腳本旨在模擬已知使用者發起的基於加密的勒索軟體攻擊。透過附加命令，您還可以模擬資料外洩或資料銷毀攻擊。
 

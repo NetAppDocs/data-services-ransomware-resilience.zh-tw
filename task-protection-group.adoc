@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-protection-group.html 
-keywords: ransomware protection, protection group, modify, create, 
+keywords: ransomware protection, protection group, modify, create 
 summary: 您可以透過在NetApp Ransomware Resilience中為工作負載分配策略來保護工作負載免受勒索軟體攻擊。 
 ---
 = 在 NetApp Ransomware Resilience 中管理保護群組
@@ -12,7 +12,7 @@ summary: 您可以透過在NetApp Ransomware Resilience中為工作負載分配�
 
 
 [role="lead"]
-NetApp Ransomware Resilience 提供保護群組，以便更輕鬆地管理您的資料資產。保護群組是工作負載的邏輯分組。Ransomware Resilience 可以使用單一保護策略，同時保護保護群組中的所有磁碟區，讓您無需為每個工作負載分別套用策略。
+在 NetApp Ransomware Resilience 中使用保護群組來管理相關的工作負載，並對群組中的工作負載套用單一保護策略。
 
 *所需控制台角色* 要執行此任務，您需要擁有 link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-platform-roles.html#super-admin-roles["超級管理員"^] 或 Ransomware Resilience 管理員角色。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["了解NetApp Console的勒索軟體復原角色"^]。
 
@@ -21,7 +21,7 @@ NetApp Ransomware Resilience 提供保護群組，以便更輕鬆地管理您的
 [[create-a-protection-group]]
 == 建立保護組
 
-您可以建立群組，無論其保護狀態如何（即未受保護的群組和受保護的群組）。在保護群組新增保護策略時，新的保護策略將取代任何現有策略，包括由 NetApp Backup and Recovery 管理的策略。
+無論新增至保護群組中的工作負載處於何種保護狀態，您都可以建立群組。在保護群組新增保護原則時，新原則將取代任何現有原則，包括由 NetApp Backup and Recovery 所管理的原則。
 
 保護群組中的工作負載必須屬於相同工作負載類型；也就是說，您不能混合區塊和檔案系統工作負載。工作負載也必須屬於同一系統類型。例如，一個保護群組可以包含所有本機 ONTAP 檔案系統工作負載；但您不能將 Amazon FSx for NetApp ONTAP 工作負載新增至同一個保護群組。
 

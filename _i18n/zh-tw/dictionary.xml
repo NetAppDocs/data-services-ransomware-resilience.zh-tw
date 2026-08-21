@@ -29,7 +29,6 @@
   <block id="a2c442ceb4053f2fbfe23023529b9acb" category="section-title">SIEM 與 Microsoft Sentinel 集成</block>
   <block id="5148a0988dead45b54188f22121bb178" category="paragraph">現在，您可以使用 Microsoft Sentinel 將資料傳送至安全性和事件管理系統 (SIEM) 以進行威脅分析和偵測。以前，您可以選擇 AWS Security Hub 或 Splunk Cloud 作為您的 SIEM。</block>
   <block id="178324624f63d3f322bedd1a0cf9e6fc" category="section-title">立即免費試用 30 天</block>
-  <block id="31e5266d7eefb6e39e445571b556a4b6" category="paragraph">隨著此版本的發布， BlueXP ransomware protection的新部署現在有 30 天的免費試用期。在此之前， BlueXP ransomware protection提供 90 天的免費試用。如果您已享有 90 天免費試用，則該優惠將持續 90 天。</block>
   <block id="f013b90a0fd96db59795b7cb0b9d2d1b" category="inline-link">了解有關從勒索軟體攻擊中恢復的更多信息</block>
   <block id="5b647f592bce019e9ea00dd644f72e0d" category="paragraph"><block ref="3233a18d80c5120d82dff0bcc15fb4c4" category="inline-link-rx"></block> 。</block>
   <block id="e6ecd439699f8fefa13e20f9536a72a6" category="doc">使用Data Infrastructure Insights儲存工作負載安全性偵測異常使用者行為</block>
@@ -139,7 +138,6 @@
   <block id="eab6dcf0426537b3bdfc0895e79881d8" category="paragraph">有關更多信息，請參閱<block ref="cd66090adbbec1fbcb8578d25dadb581" category="inline-link-macro-rx"></block> 。</block>
   <block id="dac562783f47866b5833397fa3343ac7" category="summary">勒索軟體復原能力使您能夠查看有關網路安全的相關信息，並評估您的組織抵禦網路攻擊的能力。它還為您提供了警報和補救步驟的列表，以確保您的資料更加安全。</block>
   <block id="e1303fde203d17c93a36144831175152" category="doc">了解NetApp Ransomware Resilience</block>
-  <block id="841f32df73c3e26168caae171cbe303e" category="paragraph">勒索軟體攻擊可以阻止對您資料的訪問​​，攻擊者可以要求贖金以換取資料發布或解密。據 IDC 稱，勒索軟體受害者遭受多次勒索軟體攻擊的情況並不少見。攻擊可能會中斷您對資料的訪問​​，時間從一天到幾週不等。</block>
   <block id="428f33a53aa54741f72e5f45b6c621c0" category="section-title">資料層的勒索軟體抵禦能力</block>
   <block id="1b5ac7659c93361ff5fa00f9dc0878ff" category="paragraph">您的安全態勢通常包含多層防禦，以防禦一系列網路威脅。</block>
   <block id="e1e21525512158b10d87c17fe3eb8be1" category="list-text">*最外層*：這是使用防火牆、入侵偵測系統和虛擬專用網路來保護網路邊界的第一道防線。</block>
@@ -247,7 +245,6 @@
   <block id="0e8bd87ff5fa544ac4a41711a3b607ee" category="section-title">發現先前選定的系統新建立的工作負載</block>
   <block id="cee654483027bd7fe0b0908f5113b46f" category="section-title">發現新系統</block>
   <block id="405f846fd5caab9c6bb41e637ac55c97" category="summary">尋找有關NetApp Ransomware Resilience的常見問題的答案。</block>
-  <block id="0257967210bdc685c6f54c2fd5c5300f" category="paragraph">如果您只是想快速找到有關NetApp Ransomware Resilience的問題的答案，那麼這個常見問題解答可以提供協助。</block>
   <block id="ea355214fd4bc7c57f471bd92918879b" category="section-title">部署</block>
   <block id="924cc6eaf82618251de609e2689ed733" category="paragraph">您可以使用以下許可證類型：</block>
   <block id="63f202b7fcd80e9277a9e585cd35c7ae" category="list-text">註冊 30 天免費試用。</block>
@@ -314,7 +311,6 @@
   <block id="3fd4b24db96448f1c48b3ad1e9fc1386" category="admonition">系統會寄給您一封電子郵件，其中包含 Ransomware Resilience 序號，並表示已在 Azure 市集訂閱 Ransomware Resilience。</block>
   <block id="21bb475bb4a86628c9a515808238db28" category="list-text">返回勒索軟體恢復付款方式頁面。</block>
   <block id="f9ca59d62f864762707ec7396c7bec8f" category="list-text">若要新增許可證，請選擇*新增許可證*。</block>
-  <block id="31f0ec06befce2fa59918555f827acdc" category="list-text">在新增許可證頁面中，選擇*輸入序號*，然後輸入發送給您的電子郵件中的序號。選擇*新增許可證*。</block>
   <block id="1058553f8171df049b8935cab0519ace" category="list-text">要查看Licenses and subscriptions中的許可證詳細信息，請從控制台左側導航中選擇“治理”&gt;“Licenses and subscriptions”。</block>
   <block id="b54fef669a3dd891bbb1292944320668" category="section-title">透過 Google Cloud Platform Marketplace 訂閱</block>
   <block id="bbb5bca13abd7924e4f249e451c252fa" category="paragraph">此流程概述如何在 Google Cloud Platform Marketplace 中直接訂閱。</block>
@@ -340,7 +336,6 @@
   <block id="8e74888372203fd2a7ad3d3f9a2ce99f" category="list-text">如果您有控制台許可證序號並知道您的 NSS 帳戶，請選擇 *輸入序號* 選項並輸入該資訊。</block>
   <block id="bd9c93cee386ed91aa5dc8049039c809" category="inline-link">將 NSS 帳戶新增至控制台</block>
   <block id="03526a38c80b7c8227cfc738477ed902" category="paragraph">如果您的NetApp支援網站帳號未從下拉清單中找到，<block ref="d3fb432f1a71fdd6fc4568fb070a943a" category="inline-link-rx"></block> 。</block>
-  <block id="6c97916a5fa1223aabab3311cd2248cb" category="list-text">如果您有 zvondolr 授權檔案（在暗站安裝時需要），請選擇 *上傳授權檔案* 選項並依照指示附加檔案。</block>
   <block id="c8508c0ce4da6dc634b7c66b1df15681" category="list-text">選擇*新增許可證*。</block>
   <block id="8eea62084ca7e541d918e823422bd82e" category="paragraph-title">結果</block>
   <block id="f3351e450b2098462c41d36a75cbc6f0" category="paragraph">Licenses and subscriptions頁面顯示 Ransomware Resilience 已取得授權。</block>
@@ -388,7 +383,6 @@
   <block id="1afe90b99262d688f040631ea9d6dcce" category="section-title">更新ONTAP系統中的非管理員使用者權限</block>
   <block id="ddf0d8cb7fa932ccfbf9231d4f27f992" category="list-text">選擇“查看其他資訊”以顯示使用者名稱。</block>
   <block id="ec2732dacf33a5e90fbcf1cf42cb9ef7" category="list-text">更改使用者的角色。進入：</block>
-  <block id="01ad1e9b6ee32140ab032c379c4fd753" category="summary">只需幾個步驟即可開始使用NetApp Ransomware Resilience。</block>
   <block id="87269d545e3fccdff13a867df7261ace" category="doc">NetApp Ransomware Resilience快速入門</block>
   <block id="06c2cea18679d64399783748fa367bdd" category="inline-image-macro">一</block>
   <block id="a2d56436fc6737079209e6c74380c5fb" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block>審查先決條件</block>
@@ -405,7 +399,6 @@
   <block id="34966ee9421e907a190b85aa1680ce01" category="summary">若要使用勒索軟體復原能力，請執行幾個步驟進行設定。</block>
   <block id="239718284ef31f1d7ca7a73645e14dd2" category="doc">設定NetApp Ransomware Resilience</block>
   <block id="b5b8e67d6a37d24ad73c89e4c7ac8c9e" category="inline-link-macro">先決條件</block>
-  <block id="3627f6f848ffee82dd0a659d57523207" category="paragraph">您可以輕鬆部署NetApp Ransomware Resilience。在開始之前，請查看<block ref="7cc100a4e35b42109d34b0d1c6d432c9" category="inline-link-macro-rx"></block>以確保您的環境已準備就緒。</block>
   <block id="7fada33e4007d6c45f21f39f8f564f62" category="section-title">準備備份目標</block>
   <block id="5ba5a444d582677cee050d2bd25e9ebb" category="paragraph">準備以下備份目標之一：</block>
   <block id="6beccc67ff905f7da0b29dece26b0485" category="list-text">亞馬遜網路服務</block>
@@ -426,14 +419,10 @@
   <block id="e54f696c13e53f1f1c0731dbdadf9344" category="inline-link">管理 Azure 儲存體帳戶</block>
   <block id="7363f51674c7094e711e12610dda6d75" category="paragraph">有關在控制台中管理 Azure 儲存體的詳細信息，請參閱<block ref="601b92607a7845ad1ccd074ead6ffe48" category="inline-link-rx"></block>。</block>
   <block id="579bbbe19178943961516e908ae34547" category="section-title">設定NetApp Console</block>
-  <block id="21df6901481064f7fe748f8c9b54e5bf" category="paragraph">下一步是設定控制台和勒索軟體復原能力。</block>
   <block id="730868e3ca25e786b50d451f3c01ff41" category="inline-link">標準模式的控制台要求</block>
   <block id="12dc046a8864682525a9fdbd927c8ed8" category="paragraph">審查<block ref="ed879a10f79cec24f1cff31cb9deb39b" category="inline-link-rx"></block>。</block>
   <block id="f3aee30a3a487c746572616e3f53dc9d" category="section-title">建立控制台代理</block>
-  <block id="f192ab1e136d39869db171a801d087d3" category="paragraph">聯絡您的NetApp銷售代表試用或使用此服務。然後，當您使用控制台代理時，它將包含適當的勒索軟體恢復功能。</block>
   <block id="039a0f51fabaf695c33b745ebbd147bf" category="inline-link">如何建立控制台代理</block>
-  <block id="f9bf2b4f9267c7961cbfeea4412e4d63" category="paragraph">若要使用勒索軟體復原功能建立控制台代理，請聯絡具有建立控制台代理權限的控制台組織管理員，並參考描述<block ref="a747c66fa3a9e5a767b0d1460e988f0c" category="inline-link-rx"></block>。</block>
-  <block id="3b6afbed7c49d679fd061dcc03462ca9" category="admonition">如果您有多個控制台代理，則勒索軟體復原功能會掃描除控制台中目前顯示的代理之外的所有控制台代理的資料。該服務發現與該組織相關的所有項目和所有控制台代理。</block>
   <block id="004823325f4227a58d03f7083e873d82" category="doc">在NetApp Ransomware Resilience中進行勒索軟體攻擊準備演練</block>
   <block id="b308768da13f40be05907e77ea473622" category="paragraph">您可以對 NFS 和 CIFS (SMB) 工作負載進行準備情況演練。</block>
   <block id="b6db234bfb48479bbe03939977a7b42c" category="section-title">配置勒索軟體攻擊準備演習</block>
@@ -466,8 +455,6 @@
   <block id="50ca22b8d354f001a742f726d3cf2be9" category="inline-image-macro">顯示準備狀況演練報告的報告頁面</block>
   <block id="179e5ea4317177f519c688d15ef67987" category="paragraph"><block ref="179e5ea4317177f519c688d15ef67987" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e462715e9b155f4f9638da4f314c8aff" category="list-text">選擇*準備演習*和*下載*以下載準備演習報告。</block>
-  <block id="4c8cd66676ad1c434108e699d9777408" category="paragraph">您可以忽略誤報或決定立即恢復資料。</block>
-  <block id="a8fd9e3988acb841854762788963d815" category="paragraph">要開始恢復數據，請將警報標記為準備好恢復，以便儲存管理員可以開始恢復程序。</block>
   <block id="304b86572af1a03e438d6a3b86bfad43" category="paragraph">每個警報可能包含不同數量​​和狀態的多個事件。審查所有事件。</block>
   <block id="271b5be554c7641bb10d05402276d05a" category="list-text">文件擴展名已建立或更改</block>
   <block id="ae12e4a2881496a3d2a890f09a21dbb7" category="list-text">建立文件並比較檢測率與預期率</block>
@@ -550,7 +537,6 @@
   <block id="b6e0b0c90cfbddfe767f137f8066d1df" category="list-text">進行中</block>
   <block id="5fdf564f22be6bd901a690f1c5a6d9eb" category="list-text">已恢復</block>
   <block id="d7c8c85bf79bbe1b7188497c32c3b0ca" category="list-text">失敗的</block>
-  <block id="01ee1fb42827033e1ee6460d34d24118" category="list-text">*建議的措施*：為了增強保護，請查看每項建議，然後選擇*查看並修復*。</block>
   <block id="ff6ad10fda2c352d0ae3b9ed9baae437" category="paragraph">總操作數不包括您已忽略的操作。</block>
   <block id="6308193424a44f7cb12ce18a9cc42d47" category="list-text">*工作負載資料*：監控過去 7 天內保護覆蓋範圍的變化。</block>
   <block id="6b3bbaa6cd0742a7731eb93c459418bc" category="list-text">*工作負載備份*：監控過去 7 天內由勒索軟體復原所建立的失敗或成功完成的工作負載備份的變更。</block>
@@ -982,7 +968,6 @@
   <block id="466e22ed907b69bcece2ccdfba36fdb4" category="list-text">在「設定」頁面中，選擇 SIEM 連線圖塊中的「*連線*」。</block>
   <block id="322bdafeaec3f2756e524c7676eec70b" category="inline-image-macro">啟用威脅偵測詳細資訊頁面</block>
   <block id="a79d3cc091ba614079e19b05bd4144d7" category="paragraph"><block ref="a79d3cc091ba614079e19b05bd4144d7" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="bcee84ed1c24db7de866f4c5f5c8735a" category="summary">NetApp透過多種方式為 Ransomare Resliience 提供支援。全天候提供廣泛的免費自助支援選項，例如知識庫 (KB) 文章和社群論壇。您的支援註冊包含透過網路工單取得的遠端技術支援。</block>
   <block id="fabfc25ef8996fd90836e58a4c0b26b6" category="doc">獲取協助</block>
   <block id="522cbb900314aeb84eb5a961c5f94672" category="section-title">獲取雲端提供者文件服務的支持</block>
   <block id="18cf072964a583150dd247485ba75b92" category="inline-link-macro">適用於ONTAP 的Amazon FSx</block>
@@ -1231,15 +1216,12 @@
   <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">知識和支持</block>
   <block id="51fecb5d19a6637dea83445678fd4ffa" category="section-title">資料備份</block>
   <block id="4fa0264ac4080dbcb96449b3dd2eff57" category="paragraph">勒索軟體恢復許可證不包括其他NetApp產品。但是，即使您沒有單獨的備份和復原許可證，勒索軟體復原能力也可以與NetApp Backup and Recovery整合。</block>
-  <block id="c785cc029c5e88f7796b29b4ff0e99e1" category="paragraph">了解設定勒索軟體保護功能和保護工作負載所需遵循的進階步驟。</block>
   <block id="6ff0e20f052119502398978ae7712412" category="paragraph">請按照每個步驟中的連結獲取詳細資訊。</block>
   <block id="be796710aeb85a06716eb7e39256193d" category="paragraph">這些任務需要_Console admin_角色。</block>
   <block id="220434cdb736458843fe145fbd4b9ca9" category="inline-link-macro">確保已安裝控制台代理</block>
   <block id="ff6929fd02a6e7a1c0faa4152fe13ffe" category="list-text"><block ref="ff6929fd02a6e7a1c0faa4152fe13ffe" category="inline-link-macro-rx"></block></block>
   <block id="9fde088755a092fd7205d2e697984007" category="inline-link-macro">確保您的系統符合要求</block>
   <block id="643740187acce828986cb107d41bafc5" category="list-text"><block ref="643740187acce828986cb107d41bafc5" category="inline-link-macro-rx"></block></block>
-  <block id="b9278659401ebc53048947304c656764" category="inline-link-macro">審查勒索軟體恢復使用者角色並為存取勒索軟體復原的使用者分配權限</block>
-  <block id="b29244e1b9c758144780bb223d35b4cf" category="list-text"><block ref="b29244e1b9c758144780bb223d35b4cf" category="inline-link-macro-rx"></block></block>
   <block id="92c4728cc5c0729bcbef66420d0a7a81" category="list-text"><block ref="92c4728cc5c0729bcbef66420d0a7a81" category="inline-link-macro-rx"></block></block>
   <block id="ae1607d72fd3a0506ce195b27e1dee67" category="paragraph">這些任務需要「勒索軟體復原管理員」角色。</block>
   <block id="76e35428aa7f6a7c95640d343a2f5eaa" category="list-text"><block ref="76e35428aa7f6a7c95640d343a2f5eaa" category="inline-link-macro-rx"></block></block>
@@ -1281,7 +1263,6 @@
   <block id="d09cd8b04dca387b71375d21530453e3" category="paragraph-title">如何啟用勒索軟體防禦能力？</block>
   <block id="f5886d019e91dd87e408bbca30bba7f6" category="inline-link-macro">訪問角色</block>
   <block id="5812b71fbc1facdd617ae2a2f05d7979" category="inline-link-macro">發現工作負載</block>
-  <block id="ee81d9a989a55cdf636f1aa60d0323cb" category="paragraph">您可以從NetApp Console存取勒索軟體復原功能。請確保您已 <block ref="3897d51cbf4670a21d5ecfb81f3b7db9" category="inline-link-macro-rx"></block> 和 <block ref="7cc100a4e35b42109d34b0d1c6d432c9" category="inline-link-macro-rx"></block>。如果您已成功設定控制台代理，則可以執行下列操作： <block ref="f19bbe7d2dbc45b6f2a3e4d9d3615c0f" category="inline-link-macro-rx"></block>。</block>
   <block id="b52b33be37704fe2bbec466dbd24ebc8" category="inline-link-macro">勒索軟體抵禦能力快速入門指南</block>
   <block id="f01a6d88778bc2eafdde382631a72a38" category="paragraph">有關詳細信息，請參閱<block ref="0653f1304a9b5b3dbbff99318c3e6ddb" category="inline-link-macro-rx"></block>和<block ref="05ba41c524ffb406f6310a0b3bdf1649" category="inline-link-macro-rx"></block>。</block>
   <block id="09b4e659b5042a8ea914da8856be1a0c" category="paragraph-title">勒索軟體防護是否提供標準模式、限制模式和私有模式？</block>
@@ -1334,7 +1315,6 @@
   <block id="24a33b7b8d81b241dc8d72ce84d02061" category="list-text">一個控制台組織和系統，其中至少有一個活動的控制台代理連接到<block ref="33fcda4d13136e9638e8e0eecc30f508" category="inline-link-macro-rx"></block>。</block>
   <block id="def72830b58fb69b381492858d3b3665" category="admonition">若要在 SAN 工作負載上使用勒索軟體復原功能，您必須執行ONTAP 9.17.1 或更高版本。</block>
   <block id="1b6bc3125f482fcbcf029c833aea1290" category="section-title">ONTAP 需求</block>
-  <block id="69e575df737b34413e9ac5e132f6db01" category="list-text">您必須執行ONTAP 9.11.1 或更高版本，並且在本機ONTAP實例上啟用ONTAP One 授權。有關ONTAP支援的更多信息，請參閱<block ref="a17b9b304c2ac7f4ba576e11b099c691" category="inline-link-macro-rx"></block>。</block>
   <block id="287d5057af26ee58d3ebb3f5ab1c418c" category="list-text">若要套用保護配置（例如啟用自主勒索軟體保護），勒索軟體復原能力需要ONTAP叢集上的管理員權限。ONTAP叢集應該只使用ONTAP叢集管理員使用者憑證進行加入。</block>
   <block id="2256fdd13b41cd806db98cd42c5b498c" category="list-text">在NetApp StorageGRID、AWS S3、Azure Blob 或 Google Cloud Platform 中擁有一個帳戶，用於備份目標，並配置了適當的存取權。</block>
   <block id="27bfb5502a8db50d09f593ce1b77b181" category="list-text">以管理員使用者身分登入ONTAP集群 CLI。</block>
@@ -1453,7 +1433,6 @@
   <block id="4256b08931f8c14d28bbf33199e1b022" category="paragraph">勒索軟體復原功能現在允許您編輯使用者行為警報的狀態。您可以手動關閉和解決警報。</block>
   <block id="8fe404d4b8af36b9844eb288d2706bbe" category="inline-link-macro">管理勒索軟體復原能力中的警報</block>
   <block id="869c8807275d576171cb34b892652da6" category="paragraph">有關詳細信息，請參閱 <block ref="ca80a6cafecee489657bc722219fb267" category="inline-link-macro-rx"></block>。</block>
-  <block id="f20af4e11539d270463e7ed46557be6f" category="paragraph">在使用NetApp Ransomware Resilience之前，它首先需要發現工作負載資料。在發現過程中，勒索軟體復原力會分析組織內所有控制台代理程式和專案系統中的所有捲和檔案。</block>
   <block id="ab066b3292d8ab61ef3b5c77169cdd19" category="section-title">更多資訊</block>
   <block id="48bf90c5e99016f124c48c02a77dc8fd" category="inline-link-macro">NetApp Console授權和訂閱文檔</block>
   <block id="0fa9a3c869139d736cd7d6df862b94e3" category="list-text"><block ref="0fa9a3c869139d736cd7d6df862b94e3" category="inline-link-macro-rx"></block></block>
@@ -1466,7 +1445,6 @@
   <block id="eab868da8e2666bb93a6c4508ffd3e80" category="list-text">在勒索軟體復原能力控制面板中，選擇「刷新」。 <block ref="94d384894f036157c348eadc55c40952" category="inline-image-macro-rx" type="image"></block> 右上角有刷新檔案中顯示的資料的選項。</block>
   <block id="83740edb7e1cce01ad9abd22c965f833" category="inline-image-macro">下載選項圖示的圖像</block>
   <block id="003de596593787da81cd02bc78808f9d" category="list-text">從頁面上選擇“下載”按鈕。 <block ref="10920434d8a4b3cb6afdcf0337f83d24" category="inline-image-macro-rx" type="image"></block> 選項。</block>
-  <block id="d51c0020ded66c680ed4bf4dab57a782" category="paragraph">勒索軟體彈性透過分析ONTAP中 FPolicy 產生的使用者活動事件來偵測可疑的使用者活動。要收集用戶活動數據，您需要部署一個或多個用戶活動代理程式。該代理程式是可連接到租用戶上的裝置的 Linux 伺服器或 VM。</block>
   <block id="b9300e15e3fa20c1dc3ecfabbbb96a7b" category="section-title">作業系統要求</block>
   <block id="afea8c44acd019a3a489f7a3ddeb5c8e" category="admonition">用于用户活动代理的计算机不应运行其他应用程序级别的软件。建議使用專用伺服器。</block>
   <block id="a54c13ad42512dbfec4e8a44d793a52e" category="section-title">伺服器要求</block>
@@ -1504,10 +1482,7 @@
   <block id="cce6483b933a36b9eebb2ecf0d8f32a6" category="paragraph">有關詳細信息，請參閱 <block ref="40a5b14292f3b3c1d42c8b093a2843e2" category="inline-link-macro-rx"></block>。</block>
   <block id="35308ce14b9ba8b4f632405b876f0cc3" category="section-title">標記提醒，如正在審核中</block>
   <block id="ff4c9cd383a7fe5ae887d1ac68d7ba52" category="paragraph">勒索軟體復原功能現在允許您將警報標記為「審核中」。使用「審核中」標籤可以提高團隊在對活躍的勒索軟體威脅進行分類和管理時的清晰度。</block>
-  <block id="89f2d4e28daee04bf630a66530a30349" category="paragraph">勒索軟體復原能力僅在選擇系統時才會發現工作負載資料。發現過程可能需要幾分鐘。</block>
-  <block id="67cfc97e3b12b9504bf641388c095506" category="paragraph">如果您已向先前發現的系統新增了工作負載，則需要重新啟動發現以保護新的工作負載。</block>
   <block id="a766aa8ad09c7fe20050753d75beca3f" category="list-text">要確定上次發現的時間，請查看勒索軟體恢復儀表板右上角「刷新」圖示旁的日期和時間戳記。</block>
-  <block id="a73cb044815fd2c4fc6f7f4be69aea1b" category="paragraph">勒索軟體復原功能可讓您將系統中的特定工作負載排除在勒索軟體保護和偵測之外。</block>
   <block id="195a678c9c8d484143eb63eed10f0646" category="paragraph">您只能排除受支援且已成功發現的工作負載。您可以隨時修改已排除的工作負載清單。對於未納入勒索軟體復原功能的工作負載，您無需付費。</block>
   <block id="8177747908126fef8483f6d1d6004f44" category="list-title">將工作負載新增至排除的工作負載清單中</block>
   <block id="37eb321d29db5dca11557bda9adc6eb7" category="list-text">在勒索軟體恢復功能中，選擇**設定**。</block>
@@ -1525,7 +1500,6 @@
   <block id="d1e463c8fe8d734bd3327fb633998456" category="paragraph">若要刪除多個工作負載，請選取要刪除的工作負載旁的複選框，然後選擇**從排除清單中刪除**。</block>
   <block id="9f1822f26663cadd0ea726defa3cca17" category="list-text">在對話方塊中，選擇「刪除」以確認要從排除清單中刪除工作負載。</block>
   <block id="01e74a47d7af3692bf72faf95ffcd1a3" category="inline-image-macro">成功移除已排除的工作負載的螢幕截圖。</block>
-  <block id="af77f82e6f94939c1b89727420b621ac" category="list-text">如果成功從排除的工作負載清單中刪除工作負載，則「排除的工作負載」頁面上將顯示成功訊息，且該工作負載將不再出現在已排除的工作負載清單中。如果操作失敗，將顯示錯誤訊息；請重試該操作。 <block ref="364f1d2f9b1485226ce83c7872b1bae0" category="inline-image-macro-rx" type="image"></block></block>
   <block id="68fc9b8869c6d23ecc7c4acaf4ef7761" category="list-text">**複製策略** 使您能夠將勒索軟體復原功能的快照複製到輔助網站。複製計劃可以設定為每小時、每天、每週或每月一次的頻率。</block>
   <block id="3ed69b14426127876e3ab79ddc2e266e" category="paragraph">目前，您只能將快照複製到本機ONTAP儲存。</block>
   <block id="6474bbda8f7c072686c6e020cf107ead" category="list-text">從控制台左側導覽列中選擇“保護”&gt;“勒索軟體恢復”。</block>
@@ -1578,7 +1552,6 @@
   <block id="142b47c359d647af9faff9ef084152c7" category="list-text">agentlogin.cs01.cloudinsights.netapp.com</block>
   <block id="9d710e8874b82a90107c10683350b48a" category="paragraph">勒索軟體防護策略包括_偵測_、_保護_和_複製_策略。</block>
   <block id="7923de3f0c836263e77d3ef5585b2ee7" category="cell">HTTPS（TCP）</block>
-  <block id="af60295fce6b96f900090d3e184223fe" category="paragraph">如果您已在使用 NetApp Data Infrastructure Insights（DII）Workload Security、建議您將相同的 Workload Security 代理程式用於 Ransomware Resilience。您無需為 Ransomware Resilience 單獨部署 Workload Security 代理程式、但使用相同的 Workload Security 代理程式需要 Ransomware Resilience Console 組織與 DII Storage Workload Security 租戶建立配對關係。請聯絡您的客戶代表以啟用此配對。</block>
   <block id="27db5f7ea4fbef607be3e5580d6023dd" category="paragraph">您無需許可證或訂閱即可開始使用 NetApp Console，只有在雲端部署 Console 代理程式以確保與儲存系統或 NetApp 資料服務的連線時才會產生費用。但是，某些可從 Console 存取的 NetApp 資料服務需要獲得許可或訂閱才能使用。</block>
   <block id="354ccfdcbf26f407e895a47f9d8a503b" category="section-title">關鍵術語</block>
   <block id="82156aa22b84e7cdae45e96a8874e738" category="doc">瞭解 NetApp Ransomware Resilience 中的使用者活動偵測</block>
@@ -1668,8 +1641,6 @@
   <block id="037372d8704e59765af4c473d08f5257" category="list-text">如果工作負載已有 NetApp Backup and Recovery 策略且您希望保留該策略，請取消勾選 **Replace existing policies**。若要取代現有策略，請勾選 **Replace existing policies**。</block>
   <block id="b11b835f559ed8748e33a3412f3c77b2" category="section-title">還原工作負載</block>
   <block id="ea9eea4a980add15f1982bc5d385bfc2" category="doc">在 NetApp Ransomware Resilience 中管理保護群組</block>
-  <block id="ed2728c518fe52f7f1f0f734bdf3232f" category="paragraph">NetApp Ransomware Resilience 提供保護群組，以便更輕鬆地管理您的資料資產。保護群組是工作負載的邏輯分組。Ransomware Resilience 可以使用單一保護策略，同時保護保護群組中的所有磁碟區，讓您無需為每個工作負載分別套用策略。</block>
-  <block id="e4b0231f7907d5401a43e9aad6fab95f" category="paragraph">您可以建立群組，無論其保護狀態如何（即未受保護的群組和受保護的群組）。在保護群組新增保護策略時，新的保護策略將取代任何現有策略，包括由 NetApp Backup and Recovery 管理的策略。</block>
   <block id="d9caa9454e226f338bc169e8c4db8222" category="list-text">在「保護」儀表板中，選擇 *Protection groups* 標籤。</block>
   <block id="3ad4ecebf7017832f3e6bbb358275752" category="list-text">為該群組選擇保護策略。</block>
   <block id="edd7f8585c7f281bafec7321766208f9" category="list-text">若要完成保護群組、請選取 *Add* 。</block>
@@ -1687,27 +1658,18 @@
   <block id="30a0e6457237bf72d78f12eb705334af" category="list-text"><block ref="30a0e6457237bf72d78f12eb705334af" category="inline-link-macro-rx"></block></block>
   <block id="c83e802b0c338d35c6b87847e7c32f3b" category="inline-image-macro">使用者活動設定的螢幕擷取畫面。</block>
   <block id="d30589c83707b077a1cb3dec5d118521" category="paragraph"><block ref="d30589c83707b077a1cb3dec5d118521" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="1c87cb1baf48b2b9ce55ae8e4d5ebd7c" category="paragraph">BlueXP ransomware protection 現在會從 NetApp Digital Advisor 收集與叢集相關的高風險和重大安全風險資訊。如果發現任何風險，BlueXP ransomware protection 會在控制面板的 *建議操作* 窗格中提供建議：「修正叢集上的已知安全漏洞 &lt;name&gt;」。從控制面板的建議中選擇 *檢視並修復* 後，系統會提示您查看 Digital Advisor 和一篇通用漏洞揭露（CVE）文章，以解決安全風險。如果存在多個安全風險，請查看 Digital Advisor 中的資訊。</block>
   <block id="d64f95921199e6f185b7d45fa5313dc7" category="paragraph">Ransomware Resilience 報告現在會在 **Summary** 報告中記錄受支援和不受支援的磁碟區的資訊。使用此資訊可以診斷系統中的磁碟區為何可能不符合勒索軟體防護條件。</block>
-  <block id="a66d37600d44e6952fd3c5f33ec68dc9" category="paragraph">透過使用者活動偵測，NetApp Ransomware Resilience 讓您能夠在使用者層級處理勒索軟體事件，阻止資料外洩和大規模刪除等事件。</block>
   <block id="56ea37444fe804f14e803d34221ed604" category="paragraph">NetApp Ransomware Resilience 使用者行為偵測使您能夠應對使用者層級的勒索軟體事件。您必須建立一組代理程式才能啟用使用者行為偵測。在啟用偵測之前，您必須確保您符合規定的作業系統、伺服器和網路要求，以便 Ransomware Resilience 能夠正確偵測和報告事件。</block>
-  <block id="05cf71b9f82601ad4e401b3d94857ca8" category="paragraph">NetApp Ransomware Resilience 提供不同的授權方案，讓您能夠在對貴組織有意義的地方訂閱服務。</block>
-  <block id="b341b2393a308245d706df062c61b695" category="paragraph">要設定授權，您需要擁有 Organization admin、Folder 或 project admin 角色<block ref="43e60870b1a681df3de2812caf2de958" category="inline-link-rx"></block>。</block>
-  <block id="f913e5b77376f98acddbd5e4d7fda5e0" category="paragraph">若要存取 NetApp Ransomware Resilience ，您必須透過 NetApp Console 登入。</block>
-  <block id="2180b8ecf3c6bd1544646304b56f7865" category="paragraph">為確保 NetApp Ransomware Resilience 的成功部署，請驗證您的操作環境、網路存取和網路瀏覽器是否已準備就緒。</block>
-  <block id="ddab2e132cea2b7bb68be3a7ff626a3f" category="paragraph">請檢查並確保您符合以下要求。</block>
   <block id="dc63ea1172fd494feb979a5719e55127" category="doc">在 NetApp Ransomware Resilience 中監控工作負載健全狀況</block>
   <block id="7b22f091960db68b59580f7bb46cb2f0" category="paragraph">勒索軟體防護策略是 NetApp Ransomware Resilience 的關鍵功能：它們支援偵測、防護和複寫。防護策略是網路安全態勢的重要組成部分。</block>
   <block id="43cf481327dfdef7257dfcd2239c1c16" category="list-text">*加密偵測*</block>
   <block id="b2a1cab5712cdb105f101f829159956b" category="list-text">*可疑使用者行為偵測*</block>
   <block id="e221e0c0391c288e04416b2254112154" category="list-text">*封鎖可疑的檔案副檔名*</block>
-  <block id="91600cc8235d0715eba412169c7c3d73" category="paragraph">使用者活動代理程式包含資料收集器和使用者目錄連接器，它們都會將資料傳送到 SaaS 位置進行分析。</block>
   <block id="fa97e4f101b82056aea0cbbc9151ce6c" category="list-text">**資料收集器**會從 ONTAP 收集使用者活動資料。當您建立包含使用者行為偵測的保護策略時，系統會自動建立資料收集器。</block>
   <block id="039bbdbfc55cf385f4e9d2f185a58a2f" category="list-text">**使用者目錄連接器**用於連接到您的目錄，並將使用者 ID 對應到使用者名稱。您必須配置使用者目錄連接器。</block>
   <block id="8f8ab86c0f901231688c7df2b7c1fe00" category="paragraph">使用者活動代理程式、資料收集器和使用者目錄連接器都可以從 Ransomware Resilience 設定儀表板進行管理。</block>
   <block id="8e1169256c8218a428d9f7bf9485bb7a" category="admonition">在查看 Ransomware Resilience 中的保護儀表板時、您可以按保護群組對工作負載進行排序。</block>
   <block id="4baf379055a0f4c2e8270e48da4264cd" category="doc">在 NetApp Ransomware Resilience 中檢視保護狀態</block>
-  <block id="1a54b4ce88b0b40ec2bc5535c46c4022" category="paragraph">NetApp Ransomware Resilience 的保護儀表板提供工作負載保護狀態和就緒情況的概覽。使用保護儀表板，您可以深入了解哪些內容已受到保護、哪些內容需要保護以及保護範圍。</block>
   <block id="3afd258386492353888e0835f7836e38" category="inline-link-macro">您可以為您的工作負載建立和套用勒索軟體防護策略</block>
   <block id="35cb023373148eb41f905894cc02b169" category="paragraph">一旦您了解目前保護的範圍，<block ref="4f7d25f71a6b31a33ca8712c4cf2f2be" category="inline-link-macro-rx"></block></block>
   <block id="ba0691f31464b6298c31b77cd8a2e3f6" category="section-title">檢視工作負載的保護</block>
@@ -1773,13 +1735,9 @@
   <block id="91437eaac9ac7d1f1da9a4e4751cbaa6" category="paragraph">是的，Ransomware Resilience 可以發現 ONTAP 中設定的快照排程。它還可以發現已發現工作負載中的所有磁碟區是否都啟用了 ARP 和 FPolicy。您在 Ransomware Resilience 儀表板中看到的資訊是從其他 NetApp 解決方案和產品彙總而來。</block>
   <block id="c4550c3db972a64a4938aff3fdcc3f3d" category="paragraph">在備份目的地本身設定選項後，稍後您需要將其設定為 Ransomware Resilience 中的備份目的地。有關如何在 Ransomware Resilience 中設定備份目的地的詳細資訊，請參閱 <block ref="e0972ac2b24cae233c2035120c295c6d" category="inline-link-macro-rx"></block>。</block>
   <block id="bc46a0ba0f385a3e46fe17c4f792de15" category="summary">如果 Ransomware Resilience 偵測到可能的攻擊，Ransomware Resilience 儀表板上會顯示警示，指出潛在攻擊。此時，您應該在 Ransomware Resilience Alerts 標籤中查看潛在風險。</block>
-  <block id="3c333ed4b45464bb8628169fb460f0b4" category="paragraph">當 NetApp Ransomware Resilience 偵測到可能的攻擊時，會在儀表板和通知選單中顯示警示。Ransomware Resilience 會立即建立快照。當你收到警示時，請在 Ransomware Resilience *警示* 分頁中檢視潛在風險，以評估對資料的影響並防止潛在的勒索軟體攻擊。</block>
   <block id="0b24c011fc6a43f772b1630fb31bc484" category="list-text">在 Ransomware Resilience 儀表板中、檢視「警示」窗格。</block>
   <block id="e29621dc2c0ac79f9d5888f0d3d7b097" category="summary">使用 Ransomware Resilience 來確定哪些工作負載需要保護或關注，並透過查看有多少儲存受到保護或面臨風險來評估保護程度。</block>
-  <block id="00ce8994cfc9e95bc7f237b9394ec077" category="paragraph">NetApp Ransomware Resilience 儀表板可讓您一目了然地了解工作負載的保護狀況。您可以快速確定哪些工作負載有風險或已受到保護、識別受事件影響或正在復原的工作負載，並透過查看受保護或有風險的儲存量來評估保護程度。</block>
-  <block id="258cef76c737e5fb4c0a326f50f351ac" category="paragraph">使用儀表板檢視保護建議、變更設定及下載報告。</block>
   <block id="e094e26183004c53cd65819096b01e61" category="section-title">使用儀表板檢視工作負載健全狀況</block>
-  <block id="3081db6d0330b0294d153a17b29e7766" category="list-text">從儀表板中，您可以在每個窗格中執行下列動作：</block>
   <block id="43373e9864a15885db684cef91b5ba4b" category="inline-link-macro">在控制面板上檢視保護建議</block>
   <block id="039b2ad77409908c3ef8c4fd2eeb0789" category="paragraph">請參閱 <block ref="dc43db082fb7b6e5d7d6f98564b3f6cb" category="inline-link-macro-rx"></block> 或 <block ref="2b2daeeb32402291362fa9fa843a5c7e" category="inline-link-macro-rx"></block>。</block>
   <block id="a1048b180af720afaeaf5566afdbf0fb" category="paragraph">Ransomware Resilience 會顯示您上次造訪儀表板後的新建議，並附有「New」標籤，持續 24 小時。動作會按優先順序顯示，最重要的顯示在頂部。檢閱、執行或忽略每個建議。</block>
@@ -1867,7 +1825,6 @@
   <block id="b8b94feeaf531f391629f42d138991ba" category="paragraph">如需詳細資訊、請參閱<block ref="ea7002ba1a528c89bfc86119082f1178" category="inline-link-macro-rx"></block>。</block>
   <block id="e809d3cd971f3bd0702a07af10ed5b3f" category="summary">整合並使用 SOAR 劇本來自動化 NetApp Ransomware Resilience 威脅回應任務。</block>
   <block id="64495558f55fc510fa1f0d8417e9d0f9" category="doc">整合 SOAR 劇本以實現 NetApp Ransomware Resilience</block>
-  <block id="15ece8e7c495c241dd67ef0baad7fcaf" category="paragraph">NetApp Ransomware Resilience 提供安全協調、自動化和回應（SOAR）劇本，讓您能夠自動執行威脅回應等任務。</block>
   <block id="be0ccf0303f9149ec406ad081d1e1b4f" category="paragraph">Ransomware Resilience 手冊提供以下功能：</block>
   <block id="70a6131a6c77f1f9afbf85c23200dee6" category="list-text">建立磁碟區的快照</block>
   <block id="a4431e17a1690b12df20e34bb2f4b744" category="list-text">利用威脅情報豐富 IP 位址</block>
@@ -1956,7 +1913,6 @@
   <block id="683e86eb75d5e8da1a3597af4eb62db8" category="list-text"><block ref="683e86eb75d5e8da1a3597af4eb62db8" category="inline-xref-macro-rx"></block></block>
   <block id="baf02bc77de4caf276599d8b3c23c8b0" category="inline-xref-macro">使用乾淨還原進行還原</block>
   <block id="47a1b97d112c774adbe8538c59caa4e5" category="list-text"><block ref="47a1b97d112c774adbe8538c59caa4e5" category="inline-xref-macro-rx"></block></block>
-  <block id="b33cc6ae02a005574f67dfd20adb1e83" category="paragraph">NetApp Ransomware Resilience 提供 JSON 格式的報告，顯示受支援與不受支援的磁碟區、攻擊準備演練、保護、警示與復原的詳細資訊，讓您能夠離線評估與檢視勒索軟體事件及準備情況。</block>
   <block id="cfd78d66bd11cf60d1554ae2cc1ce600" category="paragraph">*我可以下載哪些報告？*</block>
   <block id="3d49084ca725aed4ed86dd5114d71e31" category="list-text">*整備演練*：包含模擬攻擊的結果，以突顯需要改進的領域。</block>
   <block id="5197e64c7ccdc2c17a66633186db1e56" category="list-text">*乾淨還原*：包含有關使用乾淨還原方式還原的工作負載的詳細資訊。</block>
@@ -1982,18 +1938,14 @@
   <block id="6f442695db7c03fcadf2ad5e394da170" category="list-text">當復原完成時，請選取 **Next** 以移至最後階段。</block>
   <block id="d08d6f8d7a531831181b973c3132aaef" category="paragraph">NetApp Ransomware Resilience 提供乾淨還原，能在勒索軟體攻擊後引導進行復原。要執行乾淨還原，您必須先建立一個隔離復原環境（IRE），可以是在本地端或支援的雲端環境中。在 IRE 中，您會建立一個乾淨空間，讓 Ransomware Resilience 將工作負載隔離，以判斷哪些檔案是乾淨的，哪些則受到勒索軟體影響。</block>
   <block id="f6ee05d779160a7db74d926e2bb640f7" category="section-title">瞭解全新還原</block>
-  <block id="ae684a367ef7be289c58528c425ecc18" category="paragraph">執行乾淨還原時、NetApp Ransomware Resilience 會引導您完成多步驟程序、以最佳化還原作業。</block>
   <block id="3f2567a86f8c54d04ec6273cdb7e3a90" category="list-text">**設定**：要執行乾淨還原，您必須先建立 IRE，然後選擇要還原的工作負載。Ransomware Resilience 會建立一個乾淨的環境，所有針對該工作負載的操作都會在該環境中執行。</block>
   <block id="c3763704f64261ad7b74c0b6ece3a5e7" category="list-text">**分析**：在無塵室中，NetApp Ransomware Resilience 會分析所有快照，以檢查是否有加密。乾淨還原會決定還原對應，以判斷最佳還原計畫。</block>
   <block id="5cdee73c83008a843d9dbb0a991b8307" category="paragraph">一旦發現某個還原點不包含受影響的檔案，則跳過所有更早的還原點。例如，如果勒索軟體攻擊事件發生在 10 月 10 日，並且在 10 月 7 日上午 10:21 發現了一個不包含受影響檔案的還原點，則跳過 10 月 7 日上午 10:21 之前的所有還原點。</block>
   <block id="82e75ee1827478564b33a5410c9eb863" category="paragraph">分析步驟也會顯示已審查的檔案數量，指出哪些檔案受到影響，哪些檔案未受到影響。</block>
   <block id="3ad61c0b3a3d27855f2b93882effa895" category="list-text">**方案**：選擇所提供的還原選項：</block>
-  <block id="e5837c573a5ec3255c53e691d80aa8d5" category="list-text">_最新未受影響的還原點_：攻擊發生前最新未加密快照中最快的還原點</block>
-  <block id="005de8e860701780275d7a1820f266e8" category="list-text">_資料遺失最小_：來自不同快照的每個未加密檔案的最新版本</block>
   <block id="bcec21f7634632270763ec4fbec096be" category="paragraph">在規劃步驟中，您還可以檢視檔案歷史記錄，以了解勒索軟體事件何時影響了檔案，以及還原點與該事件在時間上的關係。</block>
   <block id="d4b88ae7112ba206532c2177bf4d3ee7" category="list-text">**清理**：Ransomware Resilience 會從復原點移除惡意軟體。如果某些檔案無法清理，則會將其從復原中排除，並隔離到單獨的位置。</block>
   <block id="df2aee92cf409d5307ab1b2587c12b51" category="list-text">**RESTORE**：Ransomware Resilience 會將乾淨的資料還原到來源環境中。</block>
-  <block id="c37b4ad01da7b4bdabb1e1ef27187b86" category="list-text">**END**：Ransomware Resilience 提供了該過程的詳細摘要，並關閉了潔淨室，釋放了設置期間配置的資源，從而消除了未來的計量成本。</block>
   <block id="1f0b82560627b660c6c6958a1df834b8" category="section-title">支援的組態</block>
   <block id="01c81fea09d285ebadc2362452091509" category="list-text">每個 Ransomware Resilience 帳戶只能建立一個 IRE。每個 IRE 最多可以包含三個 clean room。</block>
   <block id="582cfdbdcce499f277827ab3d0e7be89" category="list-text">目前僅支援對 NAS 檔案共用 （NFS/CIFS） 進行乾淨復原。</block>
@@ -2095,7 +2047,6 @@
   <block id="16a6474800dcc57e48f9c5fecf7f4b0a" category="paragraph">建立 IRE 後，您可以修改其中的系統。在設定標籤中，選取 **Isolated recovery environments**。找到您要編輯的 IRE，選取動作功能表<block ref="2f43b42fd833d1e77420a8dae7419000" prefix=" " category="inline-code"></block>，然後選取 **Edit**。繼續修改系統。完成後選取 **Save**。</block>
   <block id="59f0ec64e6ca9eb2b145c2d0b972a631" category="section-title">刪除隔離的復原環境</block>
   <block id="3b98dd3eb2a4ab1e4dbff3d07d4b9987" category="paragraph">您無法刪除具有作用中還原作業的 IRE；您可以取消還原作業或等待還原完成，然後再刪除 IRE。</block>
-  <block id="f9df77cbf2042ca0c84056ff5f798b3f" category="admonition">如果刪除 IRE，也會刪除無塵室 SVM 和中繼資料磁碟區。這些資產刪除後，您將無法再產生乾淨還原的報告。</block>
   <block id="ffbbe06f3f17d59276920755ff6ac29b" category="list-text">前往 **Settings**。</block>
   <block id="7c2d524886480cf4cd6bc69e0c99bb89" category="list-text">在對話方塊中，選取 **Delete** 以確認操作。</block>
   <block id="f4cc881797e2311f16dfa07e4349adcc" category="doc">使用 NetApp Ransomware Resilience 中的自訂還原功能從勒索軟體攻擊中恢復</block>
@@ -2114,7 +2065,6 @@
   <block id="482b73c713ea8cffc3070c798b03badc" category="open-title">從內部部署到雲端</block>
   <block id="8880534a0e139c017e28bbf6bc44e84b" category="open-title">內部部署到內部部署</block>
   <block id="9df5336cadaa8da9a21a00f3f55c497b" category="list-text">輸入帳戶的 **Access key** 和 **Secret key**。</block>
-  <block id="2717d5efc491d88d4fc433e4af820d74" category="summary">在 NetApp Ransomare Resilience 中執行乾淨還原之前，您必須建立隔離的還原環境，以隔離和清理環境。</block>
   <block id="d58e1a84905920b61ed4f1f26262aeb9" category="doc">在 NetApp Ransomware Resilience 中設定環境以進行乾淨還原</block>
   <block id="105f7259b2dc81485c4baf296e55aec5" category="list-text">展開 **Name** 部分。輸入環境的 **Name**。</block>
   <block id="2eda5a6118ec15220cd7332a61e3afa7" category="list-text">輸入雲端 **Account** ID，然後從下拉式選單中選擇該帳號所在的 **Region**。您只能在受支援的區域中部署 IRE。</block>
@@ -2147,14 +2097,12 @@
   <block id="8d2a9bcb8af52527cb5ef134952b126c" category="list-text">識別來自 ONTAP 和 NetApp Backup and Recovery 服務 API 的資料，並將其與工作負載建立關聯。深入瞭解<block ref="a16fd9a0601d0464b4c9ce4f59c2454b" category="inline-link-rx"></block>。</block>
   <block id="321e92de54fb9050ca985e93dd41037e" category="admonition">Ransomware Resilience 無法探索使用 FlexGroup 的磁碟區系統。</block>
   <block id="660970b5bfb72eddca5566de07107009" category="section-title">選擇要探索的工作負載</block>
-  <block id="2206052869b09e544d3b0ca84614cb93" category="paragraph">在每個 Console 代理程式中，選擇要識別工作負載的系統。</block>
   <block id="3e567fadbb65a78232511f4530a5e9ee" category="inline-link-macro">設定保護</block>
   <block id="542dbcbddb5ad48872c0a3467bca19cf" category="paragraph">發現工作負載並不會自動保護它們。Ransomware Resilience 會在發現過程中識別來自 NetApp Backup and Recovery 或 ONTAP 的現有保護原則。任何沒有保護的工作負載都需要您<block ref="7fe4ee5a6fb50faf1d1032b2174bc3d8" category="inline-link-macro-rx"></block>。</block>
   <block id="c9469d9f20bc9e5b5d8e18790baaa32c" category="paragraph">如果這是您第一次登入，則會顯示登入頁面。若要開始免費試用，請選取 *Start 30-day free trial*。如果您已啟用試用，請選取 *Start by discovering workloads*。</block>
   <block id="25e55f8e8c02fccd0565ce3e09516eaa" category="list-text">若要探索特定 Console 代理程式的系統，請選擇包含您要探索之系統的 Console 代理程式的向下箭頭。</block>
   <block id="491d8571b2a09dcbae564ec801e25fe7" category="list-text">選擇您要執行探索的系統。</block>
   <block id="d741204137cafb846d39315517ca1067" category="list-text">在控制台中，選擇 *Refresh* 圖示以識別新的工作負載。</block>
-  <block id="812c0e17c55314eccce1dcb3ee7d6153" category="paragraph">如果您已經對系統執行探索，並在之後新增工作負載，請再次執行探索以識別工作負載。</block>
   <block id="b793bd330c25538b7cd98bb4e4bec503" category="list-text">在「工作負載探索」卡片中，選擇 *Discover* 。探索過程可能需要幾分鐘。載入圖示會顯示進度。</block>
   <block id="e35ddec8b9589eba5325509abe9f7e64" category="list-text">Ransomware Resilience 可探索受支援和不受支援的系統。如果系統的 ONTAP 版本低於所需版本，則不支援該系統。將滑鼠游標停留在不受支援的系統上時，工具提示會顯示原因。選取您要識別工作負載的系統。</block>
   <block id="6d008767b6b1ed8f9bb99930968157ff" category="summary">請確保您符合 Ransomware Resilience 的授權要求，以保護您的工作負載。</block>
@@ -2174,7 +2122,6 @@
   <block id="3143da82214f4e025a696a23ee63d6dd" category="list-text">在「警示」頁面上、依工作負載排序結果、以顯示您要還原之工作負載的警示。</block>
   <block id="ad81d983549cd4869ecbf4e4568dd9a4" category="cell">保護關鍵或極為重要的工作負載、避免遭受勒索軟體攻擊。</block>
   <block id="90c14c660f3939a93b414d3d4c9b707b" category="cell">「保護」頁面顯示未受保護的關鍵或非常重要（根據指派的優先順序）工作負載。</block>
-  <block id="74dd01db809dfdbbd3fee87a6f6fd4ae" category="list-text">如果 VM 由 NetApp Backup and Recovery 或 Ransomware Resilience 管理，Ransomware Resilience 會執行當機一致性還原，其中磁碟區中同一時間點的所有資料都會還原，例如系統當機時。</block>
   <block id="14952d9b177967e65f6269de52dfadc6" category="list-text">恢復所有磁碟區</block>
   <block id="103e1bfcc7b78c6a613046060aa97751" category="list-text">在磁碟區層級、目錄或檔案層級復原檔案共用。</block>
   <block id="138e328417253325f0020bc6f909cf21" category="list-text">根據您選擇的是磁碟區還是檔案，繼續執行以下其中一個程序。</block>
@@ -2196,7 +2143,6 @@
   <block id="f9ab80c55fbab58c37aab4891dabffae" category="paragraph"><block ref="f9ab80c55fbab58c37aab4891dabffae" category="inline-link-macro-rx"></block></block>
   <block id="23bb3b926c6da9edf1342c50a0cbf22e" category="list-text">必須安裝並執行 Docker 版本 20.x 或更新版本。</block>
   <block id="337f89149c6ad76d149c111687549e82" category="summary">Ransomware Resilience 可以識別資料中的隱私外洩風險，幫助您提高工作負載的安全性。</block>
-  <block id="2f43f805784f8d4ccf5eecb446bb36af" category="paragraph">在 NetApp Ransomware Resilience 中，您可以使用 NetApp Data Classification 來識別隱私暴露並主動保護您的資料。識別隱私暴露可揭示資料集是否包含個人可識別資訊（PII）。隱私暴露可能會增加安全風險並改變工作負載的重要性指定。</block>
   <block id="fa8dac95fc1c211dbfe88b9f20fc8136" category="section-title">識別隱私暴露</block>
   <block id="8c5e5072ac9e7825c5c9f373d2f1937a" category="paragraph">在識別 Ransomware Resilience 中的隱私漏洞之前，您需要<block ref="c872c876324415ce189a729b6026b061" category="inline-link-macro-rx"></block>。</block>
   <block id="43e618d6407986d787a8d0e2c9b466e7" category="inline-link-macro">可能會產生成本</block>
@@ -2222,7 +2168,6 @@
   <block id="23261131430f46ec6fb27110ac7f00fc" category="section-title">SOAR 支援封鎖使用者</block>
   <block id="e5b8f2d9ef7cdce04d260640283c68c6" category="paragraph">Ransomware Resilience 現在支援使用 Google SecOps 和 Splunk SOAR playbook 封鎖單一使用者。透過此功能，當 Ransomware Resilience 偵測到可疑的使用者活動（例如資料外洩或大量刪除資料）時，您可以自動封鎖使用者。</block>
   <block id="2f82a2e72d177e2d1d65a490cf072506" category="paragraph"><block ref="f63222f2dbc8e79c6867c1aa1bf7ad40" category="inline-link-macro-rx"></block>。</block>
-  <block id="15133f0d70ddd9da0f0a4ccaf25d12f2" category="paragraph">安全資訊和事件管理 (SIEM) 系統集中管理日誌和事件資料，從而提供對安全事件和合規性的深入洞察。NetApp Ransomware Resilience 支援自動將資料傳送到您的 SIEM，以簡化威脅分析和偵測流程。</block>
   <block id="963e2ddcdebcdd0f6fcbd1dad696e580" category="admonition">NetApp Ransomware Resilience 也提供 <block ref="de8332ed81162473af5cb8a1551a7e36" category="inline-link-macro-rx"></block>。</block>
   <block id="1d128c6086cbb73d30a6cbf3e127963d" category="list-text">*title*：偵測到的警示的顯示名稱。</block>
   <block id="41b1238763de1c7569a52c2f6f418f26" category="list-title">在 Ransomware Resilience 中驗證 AWS Security Hub</block>
@@ -2339,7 +2284,6 @@
   <block id="361ccd8284c6f49a106851d9aeaab8b2" category="list-text">從託管使用者活動代理程式的叢集中，以管理員身份執行指令碼：<block ref="3b9c122b681f59f04f03105e338591ce" prefix=" " category="inline-code"></block></block>
   <block id="2757451d7ac78a3fd169d2600d54a8ad" category="list-text">該腳本大約需要五分鐘才能執行完畢。執行完成後，命令列會顯示事件速率，例如「Svm svm_rate 正在產生 100 個事件/秒」。</block>
   <block id="73e368716ffe1eef8733ba4acf297472" category="paragraph">使用事件速率來計算您的大小。</block>
-  <block id="caa617e3833cdf64d33905efb6a82682" category="paragraph">如果您未使用 DII，請按照此處的組態說明進行操作。</block>
   <block id="672477287a4b419cc52d69608af63375" category="admonition">Azure NetApp Files 或 Google Cloud NetApp Volumes 不支援使用者活動偵測。如需使用者活動偵測支援的詳細資訊、請參閱<block ref="69d552b440ad08cbfe2c75fd459bcf87" category="inline-link-macro-rx"></block>。</block>
   <block id="f5057c904ff6469ad7a1d31d2f6dcdb9" category="inline-link-macro">啟用使用者活動偵測</block>
   <block id="f08b35ec6e8c265f89dcc09bd1f2e08e" category="paragraph">如需更多資訊,請參閱 <block ref="428b55674eb36e30ffc7065b3913b089" category="inline-link-macro-rx"></block> 和 <block ref="f451eade5eddedc7b8e2af13d9e54fd3" category="inline-link-macro-rx"></block>。</block>
@@ -2360,12 +2304,9 @@
   <block id="7984e947265cc8b94c06702adbf28865" category="inline-link-macro">限制</block>
   <block id="e0320df18d036f0c5d5b35ed2aa3a620" category="admonition">若要識別對攻擊負有責任的特定使用者，您必須設定 <block ref="8887898559c46182083c27f2357d43e2" category="inline-link-macro-rx"></block> 檢閱 <block ref="c1739208ca5fd6401ec2f702504e76d3" category="inline-link-macro-rx"></block>，以查看您的系統是否支援使用者活動偵測。</block>
   <block id="42b5bdcb554e8fe29980a1820f3a0dc8" category="summary">在 NetApp Ransomware Resilience 中偵測異常使用者活動，以便識別資料外洩等事件並阻止使用者。</block>
-  <block id="c821ce14089a0a62ea85ea7a10bcc26f" category="paragraph">NetApp Ransomware Resilience 提供以 AI 為驅動的偵測，監控可疑使用者行為。讀取活動的急劇增加或異常存取模式會用來判斷惡意意圖。一旦偵測到，Ransomware Resilience 會自動在 NetApp Console、電子郵件以及任何已設定的安全生態系統（例如 SIEM）中產生警示。</block>
-  <block id="64188cbed04e71c78e662c6410ebe867" category="paragraph">透過使用者行為偵測和警示功能，NetApp Ransomware Resilience 能夠辨識可疑的資料外洩和破壞企圖及模式，並及時發出警示。每次警示中，NetApp Ransomware Resilience 都會識別出您可以封鎖的使用者。</block>
   <block id="752984129842ae398aa10afacc9b45c2" category="section-title">使用者活動鑑識</block>
   <block id="97b043c256180540dcc208ed63d7e76d" category="paragraph">Ransomware Resilience 使用者行為偵測包含三個關鍵組成部分。</block>
   <block id="c42c255d4b3f50b8b8c0dc1ab7aa93ef" category="inline-link-macro">啟用具有使用者行為偵測功能的勒索軟體防護策略</block>
-  <block id="e31bbd43b54be7874b061b618f001c2b" category="list-text">**資料收集器**會將使用者活動事件與 Ransomware Resilience 共用。當您<block ref="d483596304afed8e3496abef145a83fc" category="inline-link-macro-rx"></block>時，資料收集器會自動建立。</block>
   <block id="d641c251fffcb00221492192438deee0" category="paragraph">NetApp Ransomware Resilience 的使用者行為偵測功能與 Data Infrastructure Insights（DII）Workload Security 整合，並使用<block ref="993ff5110e958e49fd06b299835086fa" category="inline-link-macro-rx"></block>。您無需任何 DII 組態即可在 NetApp Ransomware Resilience 中啟用使用者行為偵測。若要啟用使用者行為偵測，<block ref="4bdaea1abd6621c9e973abeffc732722" category="inline-link-macro-rx"></block>。</block>
   <block id="44eea4a228c7798f58af31737b8c526a" category="inline-link-macro">使用者行為偵測的要求</block>
   <block id="73ec7da766dca94cf1c4b669985cd2a5" category="list-text"><block ref="73ec7da766dca94cf1c4b669985cd2a5" category="inline-link-macro-rx"></block></block>
@@ -2381,19 +2322,15 @@
   <block id="8258c7e67c72fe5a72748135c6b87a68" category="paragraph">為了使 Ransomware Resilience 能夠提供有關使用者行為的警報，您必須設定使用者活動代理程式。若要安裝使用者活動代理程式，請確保您的系統符合<block ref="423b5fb22336ee99727442d2bf2268c5" category="inline-link-macro-rx"></block>。</block>
   <block id="88e7bcbfec161904679f03f8797894a6" category="inline-link-macro">偵測可疑使用者行為</block>
   <block id="b499f45630896bc77ad77d6591c41b0f" category="list-text">同時查看 <block ref="019fa8a22de443e4055edc5a56d223fe" category="inline-link-macro-rx"></block> 和 <block ref="5909784b16712ef276fd16aaaa47a088" category="inline-link-macro-rx"></block> 的要求。</block>
-  <block id="d0bffec705927eabdb973f2e14b00343" category="paragraph">這些任務需要 _Ransomware Resilience admin_ 角色。配置使用者行為偵測需要額外的 _Ransomware Resilience user behavior admin_ 角色。</block>
   <block id="63fde6d770b2c8ba714c1f08a582c093" category="inline-link-macro">透過設定使用者行為偵測來增強保護</block>
   <block id="8c1efc202ff8276c615ec5ce66929176" category="list-text">（選用）<block ref="6775eab4a283e419045522f21b7d2960" category="inline-link-macro-rx"></block></block>
-  <block id="d266a5bcc7addbbfb5f3a2a3a2da96b4" category="paragraph">在 Ransomware Resilience 中設定保護後、您可以：</block>
   <block id="109acfe0b7e8d2f9308c5731f4ac86cf" category="inline-link-macro">設定 SOAR 劇本</block>
   <block id="02d1f111792f02519c820dcc08793e25" category="list-text"><block ref="02d1f111792f02519c820dcc08793e25" category="inline-link-macro-rx"></block></block>
   <block id="edf3f8822a49a1bb13fbd120171d257c" category="inline-link-macro">瞭解使用者活動偵測</block>
   <block id="0b86f0cc70fa97941f30d9b58654f3af" category="paragraph">您必須設定使用者活動代理並啟用包含使用者行為偵測的保護策略才能查看使用者層級警報。*可疑使用者*欄僅在啟用使用者行為偵測後才會顯示在警報儀表板中。如需詳細資訊，<block ref="c0b52a716b3bac77455f18f3a2c3f3e3" category="inline-link-macro-rx"></block>。</block>
   <block id="6726b54c5a2ddd1b0d3a5f45023156e4" category="paragraph">如果您已設定使用者行為偵測，則可以檢視使用者層級資料並封鎖特定使用者。若要啟用使用者活動偵測，請參閱 <block ref="3140e0dc60f85706f2dff3cb0112bd4a" category="inline-link-macro-rx"></block>。</block>
   <block id="b86142280cb4fa826a3dc0c74ec9fa1c" category="summary">NetApp Ransomware Resilience 中的使用者活動偵測功能可協助您偵測可能構成潛在威脅的使用者活動。</block>
-  <block id="b60d067c1c6c286174c71e15787658a1" category="paragraph">NetApp Ransomware Resilience 使用者行為偵測可協助您防止使用者層級的勒索軟體事件。若要在 Ransomware Resilience 中啟用使用者行為偵測，您必須安裝至少一個使用者活動代理程式，該代理程式會建立資料收集環境，以監控使用者行為中類似勒索軟體事件的異常模式。</block>
   <block id="9272042aaba364ec145d5bf8483aa4b6" category="paragraph">*所需 Console 角色* 若要啟用使用者行為偵測，您需要 **Organization admin role**。對於後續的使用者行為偵測配置，您需要 **Ransomware Resilience user behavior admin role**。<block ref="d9cbbacd5ef5cff6a1660fdb9d259f2f" category="inline-link-macro-rx"></block>。</block>
-  <block id="b862bd7ab16823297e521dda499509f1" category="paragraph">使用者活動代理程式是 <block ref="b01719fec0510bde74c1a44e6f94ab27" category="inline-link-macro-rx"></block> 的可執行環境；資料收集器與 Ransomware Resilience 共用使用者活動事件。您必須建立至少一個使用者活動代理程式才能啟用使用者活動偵測。</block>
   <block id="1003fdbfa95a1ad8e273ca1560375f69" category="paragraph">啟用包含使用者活動偵測的勒索軟體防護策略時，系統會自動建立資料收集器。如需詳細資訊，請參閱<block ref="197232a118beafa8882aae5625527a41" category="inline-link-macro-rx"></block>。</block>
   <block id="d4f53dbb2dd23ad3f2c3d3656c20777b" category="section-title">回應使用者活動警示</block>
   <block id="d0073f8a1f393dd14a8d4168ebf29ac2" category="paragraph">設定使用者活動偵測後，您可以在警示頁面監控事件。如需詳細資訊，請參閱 <block ref="8143bbb79caf2751151f26d9d0abf580" category="inline-link-macro-rx"></block>。</block>
@@ -2456,7 +2393,6 @@
   <block id="709c9c15efe20baf89cd9c0bc4da8ba3" category="inline-link-macro">自動回應使用者活動警示</block>
   <block id="1683df33985dedfe87b3e10a6e28374e" category="paragraph">如需詳細資訊，請參閱 <block ref="af4a7ce82e0454100b9537cefe9d85c8" category="inline-link-macro-rx"></block>。</block>
   <block id="f3948d55e3032152ce189836caaf0b14" category="list-text">在「Responses」圖塊中，選擇「Take snapshot now」以建立快照。</block>
-  <block id="c6adf86dd8ab3fa173149ecb95e0444f" category="list-text">如果您已在 SVM 上啟用自動回應，請選擇「編輯使用者封鎖」來封鎖該使用者。若要封鎖該使用者，請選擇「封鎖使用者的時間段」，然後設定封鎖持續時間（從一小時到永久均可）。如果您認為警報並非勒索軟體事件，也可以取消封鎖該使用者。選擇「儲存」。</block>
   <block id="a6a7e26bcffa88b63e76d3f0a0f08eda" category="admonition">若要重新啟用某個使用者的警報，請返回該警報。選擇三個點，然後選擇 **Include this user in monitoring**。您也可以<block ref="1a21a4e753ba6e9b70e02139a1cf7da7" category="inline-link-macro-rx"></block>從監控。</block>
   <block id="670130480e76ce2b912da3ad5daf63f4" category="inline-link-macro">自動回應使用者活動事件</block>
   <block id="8cd568562744ebd2ad72f4d26b638c5b" category="list-text"><block ref="8cd568562744ebd2ad72f4d26b638c5b" category="inline-link-macro-rx"></block></block>
@@ -2528,7 +2464,6 @@
   <block id="b6445b4da8c40fc5009a5eb5b2b9969c" category="paragraph">*必要的控制台角色* 組織管理員、資料夾或專案管理員，或 Ransomware Resilience 管理員<block ref="5b95efebf772ec16abdf1053e3a4558b" category="inline-link-rx"></block>。</block>
   <block id="42caf31af7b0b287a88952c8986218ab" category="list-text">選擇狀態旁的「編輯」按鈕，即可變更狀態。將狀態變更為以下選項之一：</block>
   <block id="12c6663cbe23396ea86ae553869baab3" category="paragraph">演練結束後，您可以產生並儲存演練報告。演練報告是一個 JSON 檔案，其中包含偵測原則、警示類型和時間戳記、攻擊詳情以及恢復狀態等資訊。</block>
-  <block id="4c5236fa54058c5de2620586b5275209" category="paragraph">在工作負載被標記為「需要恢復」之後，NetApp Ransomware Resilience 會建議一個實際復原點 （RPA），並協調工作流程以實現抗崩潰復原。</block>
   <block id="da60db99c4c18d3244ee8042d2e49214" category="summary">透過模擬對範例工作負載發動勒索軟體攻擊，進行勒索軟體防範演練。然後，調查模擬攻擊並恢復範例工作負載。您可以多次開展勒索軟體防範演練。</block>
   <block id="bc057280e260f0d5b39e389c43a2b1d3" category="section-title">戰備演練的運作方式</block>
   <block id="695e71e91ef5d7909ee4240515cabbc1" category="inline-link-macro">自訂恢復</block>
@@ -2549,7 +2484,6 @@
   <block id="84bc023659fbaeb1e92bb1563d94a709" category="list-text"><block ref="84bc023659fbaeb1e92bb1563d94a709" category="inline-link-macro-rx"></block></block>
   <block id="0050dfe8b12d7f41e074b38a1584c2e0" category="summary">在 NetApp Ransomware Resilience 中建立使用者目錄連接器後，您可以封鎖和解除封鎖使用者，並將使用者從警示清單中排除。您也可以將檔案路徑排除在警示產生範圍之外。</block>
   <block id="19355628ba4f308abb52b989d195cbf2" category="doc">在 NetApp Ransomware Resilience 中管理警示與封鎖的使用者</block>
-  <block id="ec80e76fb9a96ba31394caae7738733c" category="paragraph">在 NetApp Ransomware Resilience 中設定使用者行為監控後，您可以自訂警報並管理被封鎖的使用者。自訂警報可讓您將特定使用者或檔案路徑排除在警報產生範圍之外。封鎖使用者旨在回應勒索軟體事件，以防止惡意使用者活動。</block>
   <block id="978942e6f751f778d0fea794ac36a5ed" category="list-title">從排除使用者清單中移除使用者</block>
   <block id="0189c7f085ff5d22843080df2225281b" category="list-text">在「設定」儀表板中，找到「使用者活動」卡片，然後選取 **Manage**。</block>
   <block id="2a26cf4062a1ee4ec346c86574259847" category="list-text">若要從使用者介面中排除個別使用者，請選擇 **手動選擇**。</block>
@@ -2566,7 +2500,6 @@
   <block id="5f2a57952e65084ab1bcb535d4662440" category="paragraph">如需詳細資訊，請參閱 <block ref="8c33118b4350e89c06a1a557095207c2" category="inline-link-macro-rx"></block>。</block>
   <block id="088851556c5183ba62f78e52f665450d" category="summary">NetApp Ransomware Resilience 在您啟用使用者活動監控時提供一個腳本，用於測試基於加密的勒索軟體攻擊和資料外洩事件。</block>
   <block id="f10a2790decd8276267a9325d2ec853c" category="doc">在 NetApp Ransomware Resilience 中模擬惡意使用者行為</block>
-  <block id="4e0329a11fc113704ab597dec933d4f9" category="paragraph">在 NetApp Ransomware Resilience 中設定使用者活動監控時，您可以執行測試腳本來模擬可疑的使用者行為事件。</block>
   <block id="48870f5f7ec6a7cd18dda2260f3f863d" category="paragraph">此腳本旨在模擬已知使用者發起的基於加密的勒索軟體攻擊。透過附加命令，您還可以模擬資料外洩或資料銷毀攻擊。</block>
   <block id="b61313cb99a86aa7c4af1cfa344ac6cd" category="section-title">關於指令碼</block>
   <block id="da3cedfecf043e3ceb03125c26fecc0d" category="paragraph">啟用電腦上的使用者活動監控後，即可使用測試腳本。您可以使用 shell 或 Python 來執行該腳本。</block>
@@ -2754,7 +2687,6 @@
   <block id="ab0f1d5b53a905133ff0037803d03914" category="list-text"><block ref="ab0f1d5b53a905133ff0037803d03914" category="inline-link-macro-rx"></block></block>
   <block id="6530773a15d5d00aace1c113ea2f2033" category="summary">如果您在 NetApp Ransomware Resilience 中安裝使用者活動代理程式時遇到問題，請審查以下常見情境和解決方案。</block>
   <block id="05c2ede621cda31177de66257857caaa" category="doc">排除 NetApp Ransomware Resilience 中的使用者活動代理程式問題</block>
-  <block id="0bf1ea5135b77a15f13a18e7a5e55640" category="paragraph">如果您在 NetApp Ransomware Resilience 中安裝或執行使用者活動代理程式時遇到問題，請審查以下常見情境和解決方案。</block>
   <block id="138c9c632fafe7daee2879cfb941a53e" category="section-title">安裝問題</block>
   <block id="642facf67e0ad311eee88b3ab8381590" category="cell">問題</block>
   <block id="b5a4b64b2aa505bd7c11f79b8a9f458d" category="cell">解決方案</block>
@@ -2809,4 +2741,72 @@
   <block id="13579afd289a7073b60083da3804071a" category="admonition">如果需要更改 IRE 的任何詳細資訊，請從 Ransomware Resilience 側邊欄中選擇 *Settings*，然後在 Isolation cleaning and recovery 卡片中選擇 **Manage**。選擇 IRE 的行動選單，然後選擇 **Edit** 以變更組態。</block>
   <block id="ae4022180a6e4bea847e0d317afacc94" category="list-text">在 Isolation 清理和恢復卡中，選擇 **Manage**。</block>
   <block id="01b8b50c6af6a26d04385207f4b3c02e" category="section-title">2026年8月13日</block>
+  <block id="7539aa83f8e8de881c377eda5cfb5472" category="paragraph">如果您已在使用 NetApp Data Infrastructure Insights （DII） 工作負載安全功能，則 NetApp Ransomware Resilience 可以使用相同的工作負載安全代理程式。您無需為 NetApp Ransomware Resilience 部署分隔的工作負載安全代理程式。但是，使用相同的工作負載安全代理程式需要 NetApp Ransomware Resilience Console 組織與 DII Storage Workload Security 租戶建立配對關係。請聯絡您的帳戶代表以啟用此配對。</block>
+  <block id="02952c02f28ece399d0a440aff0648e8" category="paragraph">BlueXP 勒索軟體保護現在從 NetApp Digital Advisor 收集有關高風險和關鍵叢集安全性風險的資訊。如果發現風險，BlueXP 勒索軟體保護會在儀表板的「建議動作」窗格中顯示以下建議：「修正叢集上的已知安全性漏洞 &lt;name&gt;。」從儀表板建議中，選取「審查並修復」即可審查 Digital Advisor 和相關的通用漏洞與揭露 （CVE） 文章。如果存在多個安全性風險，請在 Digital Advisor 中審查詳細資訊。</block>
+  <block id="a62ca418a11d2d31069a88f64482ba61" category="paragraph">BlueXP 勒索軟體保護的新部署現提供 30 天免費試用。此前，BlueXP 勒索軟體保護提供 90 天免費試用。如果您已處於 90 天免費試用期，則該優惠將繼續有效 90 天。</block>
+  <block id="a51757c01aec63ea7d995212399d70a4" category="paragraph">NetApp Ransomware Resilience 可協助您評估應對勒索軟體的準備情況、保護工作負載、偵測威脅並恢復資料。它提供警報和建議的補救步驟，以提升您的安全性態勢。</block>
+  <block id="d144708df855c0ea2eb4acae83a24df7" category="paragraph">NetApp Ransomware Resilience 中的使用者活動偵測協助您識別並停止可疑的使用者行為，包括資料外洩和大規模刪除。</block>
+  <block id="92bc30bf988d59c8b8d580910553e002" category="paragraph">NetApp Ransomware Resilience 提供人工智慧驅動的偵測，可監控可疑的使用者行為。讀取活動的急劇增加或異常存取模式可能表示存在惡意意圖。一旦偵測到可疑行為，Ransomware Resilience 會自動在 NetApp Console、電子郵件以及已設定的安全性生態系統（例如 SIEM）中產生警報。</block>
+  <block id="402b7ce5c8e8c887b5de5866d9d4331b" category="paragraph">透過使用者行為偵測和警示功能，NetApp Ransomware Resilience 能夠識別可疑模式以及資料外洩和資料銷毀企圖並發出警示。在每次警示中，NetApp Ransomware Resilience 都會識別出您可以封鎖的使用者。</block>
+  <block id="dc42ee6f2ac25126215134c50c0b15d6" category="paragraph">Ransomware Resilience 透過分析 ONTAP 中 FPolicy 產生的使用者活動事件來偵測可疑使用者活動。若要收集使用者活動資料，您需要部署一個或多個使用者活動代理程式。使用者活動代理程式是一台 Linux 伺服器或 VM，能夠連線至您租戶中的裝置。</block>
+  <block id="02e11e1f82cb13496e81ebb2410fed43" category="list-text">**資料收集器**會將使用者活動事件與 Ransomware Resilience 共用。資料收集器會在您 <block ref="d483596304afed8e3496abef145a83fc" category="inline-link-macro-rx"></block> 時自動建立。</block>
+  <block id="e3696d09219bffcb0b41fd76f1fa1a81" category="paragraph">NetApp Ransomware Resilience 提供安全性協調、自動化和回應 （SOAR） 劇本，讓您能夠自動化威脅回應等任務。</block>
+  <block id="ff984984c1a8eab52a8abe4261daf8b3" category="paragraph">在保護工作負載之前，NetApp Ransomware Resilience 必須透過分析組織中 Console 代理程式和專案中各系統的 Volume 和檔案來探索工作負載。</block>
+  <block id="790472d97707885ad0bca12c5442db2a" category="paragraph">在每個 Console 代理程式中，選擇要探索工作負載的系統。</block>
+  <block id="493b29b621fafb42da85fa3c93fb982a" category="paragraph">Ransomware Resilience 僅針對您選擇的系統探索工作負載資料。探索過程可能需要幾分鐘。</block>
+  <block id="08c4ded8d17adb4dcdabb366b182df8e" category="paragraph">如果您已在先前探索的系統中新增了工作負載，請重新執行探索以識別和保護新的工作負載。</block>
+  <block id="b206897430637debdf30f6c568d7f9a2" category="paragraph">如果您已經對系統執行了探索，之後又新增了工作負載，請再次執行探索以識別該工作負載。</block>
+  <block id="75cf972599e8f3ffeb6409699f342b58" category="paragraph">Ransomware Resilience 可讓您將系統中的特定工作負載排除在勒索軟體保護和偵測之外。</block>
+  <block id="e6573b14c0d6ea29c978fb653a851687" category="list-text">如果成功將工作負載從排除的工作負載清單中移除，則「排除的工作負載」頁面上會顯示成功訊息，且該工作負載將不再出現在已排除的工作負載清單中。如果行動失敗，則會顯示錯誤訊息；請重試該操作。<block ref="364f1d2f9b1485226ce83c7872b1bae0" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="0f16124317a39b88a51fbfc198ec7142" category="paragraph">使用此常見問題解答可快速了解有關 NetApp Ransomware Resilience 的答案。</block>
+  <block id="30bfdd4e843680ee676228843da5822e" category="paragraph">您可以從 NetApp Console 存取 Ransomware Resilience。請確保您擁有必要的 <block ref="3897d51cbf4670a21d5ecfb81f3b7db9" category="inline-link-macro-rx"></block> 並符合 <block ref="7cc100a4e35b42109d34b0d1c6d432c9" category="inline-link-macro-rx"></block>。如果您已成功設定 Console 代理程式，則可以 <block ref="f19bbe7d2dbc45b6f2a3e4d9d3615c0f" category="inline-link-macro-rx"></block>。</block>
+  <block id="bb5e2b6143379a78c44b5af815272816" category="paragraph">從試用版、PAYGO 和 BYOL 授權選項中選擇適合您組織的 NetApp Ransomware Resilience。</block>
+  <block id="3f2ec106b4d1c3b8eb634599353046df" category="paragraph">要設定授權，您需要擁有組織管理員、資料夾管理員或專案管理員角色<block ref="43e60870b1a681df3de2812caf2de958" category="inline-link-rx"></block>。</block>
+  <block id="b523032b27582a2200d8bbbff3f7738d" category="list-text">在「新增授權」頁面，選取 *Enter Serial Number*，然後輸入您收到的電子郵件中的序號。選取 *Add License*。</block>
+  <block id="836155bf3463f68e4b5d3a9cab6ca16b" category="list-text">如果您有授權檔案（在實體隔離環境中安裝時需要），請選擇 *Upload License File* 選項，然後依照提示附加該檔案。</block>
+  <block id="3565bc1baa513ba7a7bb2dbb0e2542e6" category="paragraph">在 NetApp Console 中存取 NetApp Ransomware Resilience。</block>
+  <block id="dbc5842a0f993a16563deac3eb54fedb" category="paragraph">在部署 NetApp Ransomware Resilience 之前，請先確認您的環境、網路存取和瀏覽器是否符合要求。</block>
+  <block id="3636656d79b8f02465b883839da0c32b" category="paragraph">請審查以下要求。</block>
+  <block id="05c4f0e452fd865ccbbaf24e4fbc4216" category="list-text">您必須在內部部署 ONTAP 叢集上執行 ONTAP 9.11.1 或更新版本，並啟用 ONTAP One 授權。如需 ONTAP 支援的詳細資訊，請參閱 <block ref="a17b9b304c2ac7f4ba576e11b099c691" category="inline-link-macro-rx"></block>。</block>
+  <block id="cfb664a7c55a4ffead74e1674d2f33eb" category="summary">只需幾個步驟即可開始使用 NetApp Ransomware Resilience。</block>
+  <block id="b6d95b844bfe25407e74be4d50d288fa" category="paragraph">使用此快速入門指南設定 NetApp Ransomware Resilience、探索工作負載並設定保護。</block>
+  <block id="116246596fad0beb7ffba5f0c89883e1" category="inline-link-macro">審查 Ransomware Resilience 使用者角色，並為存取該服務的使用者指派權限。</block>
+  <block id="5809338b3950a9c2eb01defed9f67578" category="list-text"><block ref="5809338b3950a9c2eb01defed9f67578" category="inline-link-macro-rx"></block></block>
+  <block id="177f71f748fd13cdfe5346fed8eb6369" category="paragraph">這些任務需要 _Ransomware Resilience admin_ 角色。若要設定使用者行為偵測，您還需要 _Ransomware Resilience user behavior admin_ 角色。</block>
+  <block id="520186e595ac4a2b12f766d5e60dae3a" category="paragraph">設定保護後，您可以：</block>
+  <block id="16f66cf83117826af1028c7315808f5b" category="paragraph">透過準備備份目的地、審查先決條件以及設定 NetApp Console 和 Console 代理程式，來設定 NetApp Ransomware Resilience。</block>
+  <block id="01c247027430d9ef01b188a2d90e8746" category="paragraph">下一步是設定 NetApp Console 和 Ransomware Resilience。</block>
+  <block id="8e7492dbdc23b7d4250c1dc49be3b8db" category="paragraph">請聯絡您的 NetApp 銷售代表以試用或使用此服務。然後 Console 代理程式將包含 Ransomware Resilience 所需的功能。</block>
+  <block id="bbfb8bb89afc81bd712e40bb5a0383e5" category="paragraph">若要為 Ransomware Resilience 建立 Console 代理程式，請聯絡您的 Console 組織管理員（該管理員具有建立 Console 代理程式的權限），並參考<block ref="a747c66fa3a9e5a767b0d1460e988f0c" category="inline-link-rx"></block>。</block>
+  <block id="59423659954ddee3c72893de36d9609c" category="admonition">如果您有多個 Console 代理程式，Ransomware Resilience 會掃描所有 Console 代理程式的資料，而不僅僅是目前 Console 中顯示的代理程式。本服務會掃描與組織關聯的所有專案和 Console 代理程式的資料。</block>
+  <block id="01e0ffa77d9c65bbb059dcbb71726198" category="paragraph">當 NetApp Ransomware Resilience 偵測到潛在攻擊時，它會在儀表板和「通知」選單中顯示警報，並立即拍攝快照。請在 *Alerts* 索引標籤中審查警報，評估您的資料風險並決定回應方式。</block>
+  <block id="337b1eee96c545795bf4942ac89faa3b" category="paragraph">您可以忽略誤報或立即開始恢復。</block>
+  <block id="9975aa2dedca94800fc118b33ade7eb2" category="paragraph">若要開始恢復，請將警報標記為準備恢復，以便您的儲存管理員可以啟動恢復程序。</block>
+  <block id="5a35e3e9122aa0c998317d6dafe374fe" category="list-text">如果您已在 SVM 上啟用自動回應，請選擇 **編輯使用者封鎖** 來封鎖該使用者。若要封鎖該使用者，請選擇 **封鎖使用者的時間期間**，然後設定封鎖持續時間（從一小時到永久均可）。如果您認為警示並非勒索軟體事件，也可以取消封鎖該使用者。選擇 **儲存**。</block>
+  <block id="bc716c223886dea06b3201be8afeb9a2" category="paragraph">使用 NetApp Ransomware Resilience 儀表板可以快速查看工作負載保護健全狀況，識別處於風險或正在恢復的工作負載，並衡量有多少儲存設備受到保護。</block>
+  <block id="552d592027d83476a75c30b218d8803a" category="paragraph">使用儀表板審查保護建議、變更設定和下載報告。</block>
+  <block id="2a52515d48e4199a1e87edd1a9bf89b1" category="list-text">在儀表板的每個窗格中，您可以執行下列行動：</block>
+  <block id="3fb4d6a9a31f174febadd5de028e7d58" category="list-text">*建議行動*：為了加強保護，請審查每項建議並選擇*審查並修復*。</block>
+  <block id="1ef582f1580b1fc4b88cc1464394d501" category="paragraph">在工作負載被標記為「需要恢復」之後，NetApp Ransomware Resilience 會建議一個實際恢復點 （RPA），並引導您完成恢復工作流程。</block>
+  <block id="c527ab1b9c95efc26a2b6be1c9d0f76c" category="list-text">如果 VM 由 NetApp Backup and Recovery 或 Ransomware Resilience 代管，Ransomware Resilience 會執行損毀狀況一致還原，以便還原同一時間點的所有資料，就像系統當機後一樣。</block>
+  <block id="ab1cafc03861881c68334042d14ee999" category="paragraph">下載 NetApp Ransomware Resilience 報告，以便離線審查受支援和不受支援的 Volume、準備演練、保護、警報和恢復資料。</block>
+  <block id="66b1d4f1e1dcf8d8d1f5b45f5047821b" category="summary">NetApp 提供多種 Ransomware Resilience 支援方式。我們提供豐富的免費自助支援選項，全天候 24x7 可用，例如知識庫 （KB） 文章和社群論壇。您的支援註冊包含透過線上工單系統提供的遠端技術支援。</block>
+  <block id="869e73dacd62b40cd5d8169870be7bf7" category="paragraph">使用 NetApp Ransomware Resilience 使用者行為偵測來識別可能表明存在勒索軟體、資料外洩或資料銷毀事件的可疑使用者活動。若要啟用此功能，請安裝至少一個使用者活動代理程式以建立資料收集環境。</block>
+  <block id="9c57bc225af28525737d9c3e16bef93a" category="paragraph">使用者活動代理程式託管資料收集器和使用者目錄連接器，它們將資料傳送到雲端位置進行分析。</block>
+  <block id="0396394befd4915aea0e2f06f62705d8" category="paragraph">如果您未使用 DII，請按照此處的組態說明進行操作。</block>
+  <block id="451627884418c9d6119f0f21612fbaa1" category="paragraph">使用者活動代理程式是 <block ref="b01719fec0510bde74c1a44e6f94ab27" category="inline-link-macro-rx"></block> 的執行檔環境，可與 Ransomware Resilience 分享使用者活動事件。您必須建立至少一個使用者活動代理程式，才能啟用使用者活動偵測。</block>
+  <block id="b8bfbf682fc6a80c582e2588be87a57e" category="paragraph">在 NetApp Ransomware Resilience 中使用 NetApp Data Classification 來識別隱私外洩、尋找個人識別資訊 （PII），並了解這些外洩如何影響工作負載的重要性。</block>
+  <block id="1c129964b2d002787b098862ea99a5cf" category="summary">在 NetApp Ransomware Resilience 中執行乾淨還原之前，必須建立隔離的恢復環境來隔離和清理環境。</block>
+  <block id="c219e18657d1996cf044a4592c42a92e" category="paragraph">執行乾淨還原時，NetApp Ransomware Resilience 會引導您完成多步驟流程，從而最佳化恢復。</block>
+  <block id="9e0e6715564eddf7f97d4a140571e87d" category="list-text">_最新未受影響的恢復點_：攻擊發生前最新未加密快照中最快的恢復點</block>
+  <block id="924ea4496750934279e6e7bb0176b1d5" category="list-text">_最少資料遺失_：來自不同快照的每個未加密檔案的最新版本</block>
+  <block id="35070a2bfacc6ee93b7853aee16c2606" category="list-text">**END**：NetApp Ransomware Resilience 提供流程的詳細總結，並關閉潔淨室，釋放設定期間佈建的資源，以消除未來的計量成本。</block>
+  <block id="56749399a38cf70cc90ea09f50dff018" category="admonition">如果刪除 IRE，也會刪除無塵室 SVM 和中繼資料 Volume。這些資產刪除後，您將無法再產生乾淨還原的報表。</block>
+  <block id="80eb10d02e3ef4a96df7e5c98b101582" category="paragraph">在 NetApp Ransomware Resilience 中使用保護群組來管理相關的工作負載，並對群組中的工作負載套用單一保護策略。</block>
+  <block id="61d93d0f176a04400ddaa3919452713a" category="paragraph">無論新增至保護群組中的工作負載處於何種保護狀態，您都可以建立群組。在保護群組新增保護原則時，新原則將取代任何現有原則，包括由 NetApp Backup and Recovery 所管理的原則。</block>
+  <block id="d4716cd18d23e612fffc3c269703b690" category="paragraph">使用 NetApp Ransomware Resilience 中的保護儀表板來審查工作負載保護狀態、識別需要注意的工作負載，並了解您的整體保護範圍。</block>
+  <block id="33c098f97581589af33dcdaeb04aeef5" category="paragraph">將 NetApp Ransomware Resilience 連接到安全性資訊和事件管理 （SIEM） 系統，以自動傳送事件資料進行威脅分析和偵測。</block>
+  <block id="c0bdc8b4b8a3be2684cfe6108f6978ae" category="paragraph">在 NetApp Ransomware Resilience 中設定使用者活動監控時，您可以執行測試指令碼來模擬可疑的使用者行為事件，以進行驗證和測試。</block>
+  <block id="c120d673c7fb209814b49c9420ea9cee" category="paragraph">在 NetApp Ransomware Resilience 中設定使用者活動偵測後，您可以管理被封鎖的使用者並自訂警示。您可以將特定使用者或檔案路徑從警示中排除，也可以在回應勒索軟體事件時封鎖使用者，以協助防止惡意活動。</block>
+  <block id="89decfaa1b470ead2915f39754702fde" category="paragraph">如果您在 NetApp Ransomware Resilience 中安裝或執行使用者活動代理程式時遇到問題，請審查以下常見情境和解決方案。</block>
 </blocks>

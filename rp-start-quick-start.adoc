@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: rp-start-quick-start.html 
 keywords: get started, ransomware protection, quick start, resilience, quickstart 
-summary: 只需幾個步驟即可開始使用NetApp Ransomware Resilience。 
+summary: 只需幾個步驟即可開始使用 NetApp Ransomware Resilience。 
 ---
 = NetApp Ransomware Resilience快速入門
 :hardbreaks:
@@ -12,7 +12,7 @@ summary: 只需幾個步驟即可開始使用NetApp Ransomware Resilience。
 
 
 [role="lead"]
-了解設定勒索軟體保護功能和保護工作負載所需遵循的進階步驟。
+使用此快速入門指南設定 NetApp Ransomware Resilience、探索工作負載並設定保護。
 
 請按照每個步驟中的連結獲取詳細資訊。
 
@@ -27,7 +27,7 @@ summary: 只需幾個步驟即可開始使用NetApp Ransomware Resilience。
 ** 同時查看 link:reference-user-activity-requirements.html["偵測可疑使用者行為"] 和 link:task-clean-restore.html["全新還原"] 的要求。
 
 
-* link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-reference-roles.html["審查勒索軟體恢復使用者角色並為存取勒索軟體復原的使用者分配權限"]
+* link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-reference-roles.html["審查 Ransomware Resilience 使用者角色，並為存取該服務的使用者指派權限。"]
 * link:rp-start-licenses.html["設定許可"]
 
 
@@ -43,7 +43,7 @@ summary: 只需幾個步驟即可開始使用NetApp Ransomware Resilience。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三"]在 Ransomware Resilience 中設定保護和偵測
 [role="quick-margin-para"]
-這些任務需要 _Ransomware Resilience admin_ 角色。配置使用者行為偵測需要額外的 _Ransomware Resilience user behavior admin_ 角色。
+這些任務需要 _Ransomware Resilience admin_ 角色。若要設定使用者行為偵測，您還需要 _Ransomware Resilience user behavior admin_ 角色。
 
 [role="quick-margin-list"]
 * link:rp-use-protect.html["保護工作負載"]
@@ -63,7 +63,7 @@ summary: 只需幾個步驟即可開始使用NetApp Ransomware Resilience。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四"]下一步是什麼？
 [role="quick-margin-para"]
-在 Ransomware Resilience 中設定保護後、您可以：
+設定保護後，您可以：
 
 [role="quick-margin-list"]
 * link:task-classify.html["啟用資料分類來識別治理和安全風險"]

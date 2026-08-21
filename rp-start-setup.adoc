@@ -12,7 +12,7 @@ summary: 若要使用勒索軟體復原能力，請執行幾個步驟進行設�
 
 
 [role="lead"]
-您可以輕鬆部署NetApp Ransomware Resilience。在開始之前，請查看link:rp-start-prerequisites.html["先決條件"]以確保您的環境已準備就緒。
+透過準備備份目的地、審查先決條件以及設定 NetApp Console 和 Console 代理程式，來設定 NetApp Ransomware Resilience。
 
 
 
@@ -63,7 +63,7 @@ summary: 若要使用勒索軟體復原能力，請執行幾個步驟進行設�
 [[set-up-the-netapp-console]]
 == 設定NetApp Console
 
-下一步是設定控制台和勒索軟體復原能力。
+下一步是設定 NetApp Console 和 Ransomware Resilience。
 
 審查 https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-standard-mode.html["標準模式的控制台要求"^]。
 
@@ -72,9 +72,9 @@ summary: 若要使用勒索軟體復原能力，請執行幾個步驟進行設�
 [[create-a-console-agent]]
 === 建立控制台代理
 
-聯絡您的NetApp銷售代表試用或使用此服務。然後，當您使用控制台代理時，它將包含適當的勒索軟體恢復功能。
+請聯絡您的 NetApp 銷售代表以試用或使用此服務。然後 Console 代理程式將包含 Ransomware Resilience 所需的功能。
 
-若要使用勒索軟體復原功能建立控制台代理，請聯絡具有建立控制台代理權限的控制台組織管理員，並參考描述 https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["如何建立控制台代理"^]。
+若要為 Ransomware Resilience 建立 Console 代理程式，請聯絡您的 Console 組織管理員（該管理員具有建立 Console 代理程式的權限），並參考 https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["如何建立控制台代理"^]。
 
 
-NOTE: 如果您有多個控制台代理，則勒索軟體復原功能會掃描除控制台中目前顯示的代理之外的所有控制台代理的資料。該服務發現與該組織相關的所有項目和所有控制台代理。
+NOTE: 如果您有多個 Console 代理程式，Ransomware Resilience 會掃描所有 Console 代理程式的資料，而不僅僅是目前 Console 中顯示的代理程式。本服務會掃描與組織關聯的所有專案和 Console 代理程式的資料。

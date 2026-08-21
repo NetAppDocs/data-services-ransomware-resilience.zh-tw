@@ -14,7 +14,7 @@ summary: 勒索軟體復原能力使您能夠查看有關網路安全的相關�
 
 
 [role="lead"]
-勒索軟體攻擊可以阻止對您資料的訪問​​，攻擊者可以要求贖金以換取資料發布或解密。據 IDC 稱，勒索軟體受害者遭受多次勒索軟體攻擊的情況並不少見。攻擊可能會中斷您對資料的訪問​​，時間從一天到幾週不等。
+NetApp Ransomware Resilience 可協助您評估應對勒索軟體的準備情況、保護工作負載、偵測威脅並恢復資料。它提供警報和建議的補救步驟，以提升您的安全性態勢。
 
 NetApp Ransomware Resilience 可保護您的資料免受勒索軟體攻擊。在 Ransomware Resilience 中，可為 NAS 儲存設備（NFS 和 CIFS 傳輸協定）和 SAN 儲存設備（FC、iSCSI 和 NVMe 傳輸協定）的檔案共用提供保護。Ransomware Resilience 支援內部部署儲存設備，以及透過 NetApp Console 提供的 Cloud Volumes ONTAP for Amazon Web Services、Cloud Volumes ONTAP for Google Cloud、Cloud Volumes ONTAP for Microsoft Azure、Azure NetApp Files 和 Amazon FSx for NetApp ONTAP。您可以將資料備份到 Amazon Web Services、Google Cloud、Microsoft Azure 和 NetApp StorageGRID。
 

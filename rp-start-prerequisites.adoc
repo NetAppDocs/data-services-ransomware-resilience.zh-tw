@@ -12,9 +12,9 @@ summary: 透過驗證對您的環境、網路存取、登入和 Web 瀏覽器的
 
 
 [role="lead"]
-為確保 NetApp Ransomware Resilience 的成功部署，請驗證您的操作環境、網路存取和網路瀏覽器是否已準備就緒。
+在部署 NetApp Ransomware Resilience 之前，請先確認您的環境、網路存取和瀏覽器是否符合要求。
 
-請檢查並確保您符合以下要求。
+請審查以下要求。
 
 
 
@@ -93,7 +93,7 @@ NOTE: 若要在 SAN 工作負載上使用勒索軟體復原功能，您必須執
 [[ontap-requirements]]
 == ONTAP 需求
 
-* 您必須執行ONTAP 9.11.1 或更高版本，並且在本機ONTAP實例上啟用ONTAP One 授權。有關ONTAP支援的更多信息，請參閱link:https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["自主勒索軟體防護概述"^]。
+* 您必須在內部部署 ONTAP 叢集上執行 ONTAP 9.11.1 或更新版本，並啟用 ONTAP One 授權。如需 ONTAP 支援的詳細資訊，請參閱 link:https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["自主勒索軟體防護概述"^]。
 * 若要套用保護配置（例如啟用自主勒索軟體保護），勒索軟體復原能力需要ONTAP叢集上的管理員權限。ONTAP叢集應該只使用ONTAP叢集管理員使用者憑證進行加入。
 
 

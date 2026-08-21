@@ -12,7 +12,7 @@ summary: 在發現過程中，勒索軟體復原力會分析所有控制台代�
 
 
 [role="lead"]
-在使用NetApp Ransomware Resilience之前，它首先需要發現工作負載資料。在發現過程中，勒索軟體復原力會分析組織內所有控制台代理程式和專案系統中的所有捲和檔案。
+在保護工作負載之前，NetApp Ransomware Resilience 必須透過分析組織中 Console 代理程式和專案中各系統的 Volume 和檔案來探索工作負載。
 
 在「探索」儀表板中、NetApp Ransomware Resilience 會顯示支援和不支援的系統組態。NetApp Ransomware Resilience 會評估檔案共用和區塊儲存設備。
 
@@ -28,7 +28,7 @@ NOTE: Ransomware Resilience 無法探索使用 FlexGroup 的磁碟區系統。
 [[select-workloads-to-discover]]
 == 選擇要探索的工作負載
 
-在每個 Console 代理程式中，選擇要識別工作負載的系統。
+在每個 Console 代理程式中，選擇要探索工作負載的系統。
 
 發現工作負載並不會自動保護它們。Ransomware Resilience 會在發現過程中識別來自 NetApp Backup and Recovery 或 ONTAP 的現有保護原則。任何沒有保護的工作負載都需要您link:rp-use-protect.html["設定保護"]。
 
@@ -53,7 +53,7 @@ image:screen-discover-workloads.png["發現工作負載螢幕截圖"]
 . 選擇您要執行探索的系統。
 . 選擇*發現*。
 +
-勒索軟體復原能力僅在選擇系統時才會發現工作負載資料。發現過程可能需要幾分鐘。
+Ransomware Resilience 僅針對您選擇的系統探索工作負載資料。探索過程可能需要幾分鐘。
 
 . 若要下載已發現的工作負載列表，請選擇*下載結果*。
 . 若要顯示勒索軟體恢復儀表板，請選擇「前往儀表板」。
@@ -73,7 +73,7 @@ link:rp-use-dashboard.html["了解儀表板顯示的內容。"]
 [[discover-newly-created-workloads-for-previously-selected-systems]]
 == 發現先前選定的系統新建立的工作負載
 
-如果您已向先前發現的系統新增了工作負載，則需要重新啟動發現以保護新的工作負載。
+如果您已在先前探索的系統中新增了工作負載，請重新執行探索以識別和保護新的工作負載。
 
 .步驟
 . 要確定上次發現的時間，請查看勒索軟體恢復儀表板右上角「刷新」圖示旁的日期和時間戳記。
@@ -88,7 +88,7 @@ TIP: 如果您發現已發現的系統中存在未顯示的捲，則這些卷可
 [[discover-new-systems]]
 == 發現新系統
 
-如果您已經對系統執行探索，並在之後新增工作負載，請再次執行探索以識別工作負載。
+如果您已經對系統執行了探索，之後又新增了工作負載，請再次執行探索以識別該工作負載。
 
 .步驟
 . 從 Ransomware Resilience 中、選取 *Settings* 。
@@ -102,7 +102,7 @@ TIP: 如果您發現已發現的系統中存在未顯示的捲，則這些卷可
 [[exclude-workloads]]
 == 排除工作負載
 
-勒索軟體復原功能可讓您將系統中的特定工作負載排除在勒索軟體保護和偵測之外。
+Ransomware Resilience 可讓您將系統中的特定工作負載排除在勒索軟體保護和偵測之外。
 
 您只能排除受支援且已成功發現的工作負載。您可以隨時修改已排除的工作負載清單。對於未納入勒索軟體復原功能的工作負載，您無需付費。
 
@@ -128,5 +128,5 @@ image:settings-excluded-workload.png["勒索軟體防護設定儀表板的螢幕
 若要刪除多個工作負載，請選取要刪除的工作負載旁的複選框，然後選擇**從排除清單中刪除**。
 
 . 在對話方塊中，選擇「刪除」以確認要從排除清單中刪除工作負載。
-. 如果成功從排除的工作負載清單中刪除工作負載，則「排除的工作負載」頁面上將顯示成功訊息，且該工作負載將不再出現在已排除的工作負載清單中。如果操作失敗，將顯示錯誤訊息；請重試該操作。 image:exclude-workload-remove-successful.png["成功移除已排除的工作負載的螢幕截圖。"]
+. 如果成功將工作負載從排除的工作負載清單中移除，則「排除的工作負載」頁面上會顯示成功訊息，且該工作負載將不再出現在已排除的工作負載清單中。如果行動失敗，則會顯示錯誤訊息；請重試該操作。image:exclude-workload-remove-successful.png["成功移除已排除的工作負載的螢幕截圖。"]
 

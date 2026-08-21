@@ -27,4 +27,4 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem.html
 [[free-trial-now-30-days]]
 === 立即免費試用 30 天
 
-隨著此版本的發布， BlueXP ransomware protection的新部署現在有 30 天的免費試用期。在此之前， BlueXP ransomware protection提供 90 天的免費試用。如果您已享有 90 天免費試用，則該優惠將持續 90 天。
+BlueXP 勒索軟體保護的新部署現提供 30 天免費試用。此前，BlueXP 勒索軟體保護提供 90 天免費試用。如果您已處於 90 天免費試用期，則該優惠將繼續有效 90 天。

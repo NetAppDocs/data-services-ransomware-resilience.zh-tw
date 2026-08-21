@@ -12,9 +12,9 @@ summary: 請確保您符合 Ransomware Resilience 的授權要求，以保護您
 
 
 [role="lead"]
-NetApp Ransomware Resilience 提供不同的授權方案，讓您能夠在對貴組織有意義的地方訂閱服務。
+從試用版、PAYGO 和 BYOL 授權選項中選擇適合您組織的 NetApp Ransomware Resilience。
 
-要設定授權，您需要擁有 Organization admin、Folder 或 project admin 角色 https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["了解控制台存取角色"^]。
+要設定授權，您需要擁有組織管理員、資料夾管理員或專案管理員角色 https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["了解控制台存取角色"^]。
 
 
 
@@ -176,7 +176,7 @@ NOTE: 系統會寄給您一封電子郵件，其中包含 Ransomware Resilience 
 +
 image:screen-license-dw-add-license.png["新增許可證頁面的螢幕截圖。"]
 
-. 在新增許可證頁面中，選擇*輸入序號*，然後輸入發送給您的電子郵件中的序號。選擇*新增許可證*。
+. 在「新增授權」頁面，選取 *Enter Serial Number*，然後輸入您收到的電子郵件中的序號。選取 *Add License*。
 . 要查看Licenses and subscriptions中的許可證詳細信息，請從控制台左側導航中選擇“治理”>“Licenses and subscriptions”。
 +
 ** 若要查看訂閱訊息，請選擇*訂閱*。
@@ -259,7 +259,7 @@ image:screen-license-dw-add-license.png["新增許可證頁面的螢幕截圖。
 +
 如果您的NetApp支援網站帳號未從下拉清單中找到， https://docs.netapp.com/us-en/console-setup-admin/task-adding-nss-accounts.html["將 NSS 帳戶新增至控制台"^] 。
 
-** 如果您有 zvondolr 授權檔案（在暗站安裝時需要），請選擇 *上傳授權檔案* 選項並依照指示附加檔案。
+** 如果您有授權檔案（在實體隔離環境中安裝時需要），請選擇 *Upload License File* 選項，然後依照提示附加該檔案。
 
 
 . 選擇*新增許可證*。

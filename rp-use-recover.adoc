@@ -12,9 +12,9 @@ summary: '遭受攻擊後， NetApp Ransomware Resilience會驗證二級儲存�
 
 
 [role="lead"]
-在工作負載被標記為「需要恢復」之後，NetApp Ransomware Resilience 會建議一個實際復原點 （RPA），並協調工作流程以實現抗崩潰復原。
+在工作負載被標記為「需要恢復」之後，NetApp Ransomware Resilience 會建議一個實際恢復點 （RPA），並引導您完成恢復工作流程。
 
-* 如果 VM 由 NetApp Backup and Recovery 或 Ransomware Resilience 管理，Ransomware Resilience 會執行當機一致性還原，其中磁碟區中同一時間點的所有資料都會還原，例如系統當機時。
+* 如果 VM 由 NetApp Backup and Recovery 或 Ransomware Resilience 代管，Ransomware Resilience 會執行損毀狀況一致還原，以便還原同一時間點的所有資料，就像系統當機後一樣。
 +
 您可以透過選擇所有磁碟區、特定磁碟區或特定檔案來還原工作負載。
 

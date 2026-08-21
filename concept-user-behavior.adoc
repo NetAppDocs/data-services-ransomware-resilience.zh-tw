@@ -12,13 +12,13 @@ summary: 在 NetApp Ransomware Resilience 中偵測異常使用者活動，以�
 
 
 [role="lead"]
-透過使用者活動偵測，NetApp Ransomware Resilience 讓您能夠在使用者層級處理勒索軟體事件，阻止資料外洩和大規模刪除等事件。
+NetApp Ransomware Resilience 中的使用者活動偵測協助您識別並停止可疑的使用者行為，包括資料外洩和大規模刪除。
 
-NetApp Ransomware Resilience 提供以 AI 為驅動的偵測，監控可疑使用者行為。讀取活動的急劇增加或異常存取模式會用來判斷惡意意圖。一旦偵測到，Ransomware Resilience 會自動在 NetApp Console、電子郵件以及任何已設定的安全生態系統（例如 SIEM）中產生警示。
+NetApp Ransomware Resilience 提供人工智慧驅動的偵測，可監控可疑的使用者行為。讀取活動的急劇增加或異常存取模式可能表示存在惡意意圖。一旦偵測到可疑行為，Ransomware Resilience 會自動在 NetApp Console、電子郵件以及已設定的安全性生態系統（例如 SIEM）中產生警報。
 
-透過使用者行為偵測和警示功能，NetApp Ransomware Resilience 能夠辨識可疑的資料外洩和破壞企圖及模式，並及時發出警示。每次警示中，NetApp Ransomware Resilience 都會識別出您可以封鎖的使用者。
+透過使用者行為偵測和警示功能，NetApp Ransomware Resilience 能夠識別可疑模式以及資料外洩和資料銷毀企圖並發出警示。在每次警示中，NetApp Ransomware Resilience 都會識別出您可以封鎖的使用者。
 
-勒索軟體彈性透過分析ONTAP中 FPolicy 產生的使用者活動事件來偵測可疑的使用者活動。要收集用戶活動數據，您需要部署一個或多個用戶活動代理程式。該代理程式是可連接到租用戶上的裝置的 Linux 伺服器或 VM。
+Ransomware Resilience 透過分析 ONTAP 中 FPolicy 產生的使用者活動事件來偵測可疑使用者活動。若要收集使用者活動資料，您需要部署一個或多個使用者活動代理程式。使用者活動代理程式是一台 Linux 伺服器或 VM，能夠連線至您租戶中的裝置。
 
 
 IMPORTANT: 目前 SAN 工作負載不支援使用者活動偵測。您可以在 Amazon FSx for NetApp ONTAP、Cloud Volumes ONTAP 和 ONTAP 中將使用者活動偵測與 NAS 工作負載搭配使用。
@@ -44,7 +44,7 @@ image:all-file-activity.png["所有檔案活動檢視的螢幕擷取畫面"]。
 Ransomware Resilience 使用者行為偵測包含三個關鍵組成部分。
 
 * **使用者活動代理程式**是資料收集器的可執行環境。您必須設定使用者活動代理程式。
-* **資料收集器**會將使用者活動事件與 Ransomware Resilience 共用。當您link:rp-use-protect.html#add-a-detection-policy-to-workloads-with-existing-backup-or-snapshot-policies["啟用具有使用者行為偵測功能的勒索軟體防護策略"]時，資料收集器會自動建立。
+* **資料收集器**會將使用者活動事件與 Ransomware Resilience 共用。資料收集器會在您 link:rp-use-protect.html#add-a-detection-policy-to-workloads-with-existing-backup-or-snapshot-policies["啟用具有使用者行為偵測功能的勒索軟體防護策略"] 時自動建立。
 * **使用者目錄連接器**能夠建立使用者名稱和使用者 ID 之間的映射關係，從而在應對可疑使用者行為時提供更清晰的線索。您必須配置使用者目錄連接器。
 
 
@@ -55,7 +55,7 @@ Ransomware Resilience 使用者行為偵測包含三個關鍵組成部分。
 
 NetApp Ransomware Resilience 的使用者行為偵測功能與 Data Infrastructure Insights（DII）Workload Security 整合，並使用link:reference-user-activity-requirements.html["Data Infrastructure Insights 端點"]。您無需任何 DII 組態即可在 NetApp Ransomware Resilience 中啟用使用者行為偵測。若要啟用使用者行為偵測，link:suspicious-user-activity.html["建立所需的代理程式和收集器，並啟用適當的勒索軟體防護策略"]。
 
-如果您已在使用 NetApp Data Infrastructure Insights（DII）Workload Security、建議您將相同的 Workload Security 代理程式用於 Ransomware Resilience。您無需為 Ransomware Resilience 單獨部署 Workload Security 代理程式、但使用相同的 Workload Security 代理程式需要 Ransomware Resilience Console 組織與 DII Storage Workload Security 租戶建立配對關係。請聯絡您的客戶代表以啟用此配對。
+如果您已在使用 NetApp Data Infrastructure Insights （DII） 工作負載安全功能，則 NetApp Ransomware Resilience 可以使用相同的工作負載安全代理程式。您無需為 NetApp Ransomware Resilience 部署分隔的工作負載安全代理程式。但是，使用相同的工作負載安全代理程式需要 NetApp Ransomware Resilience Console 組織與 DII Storage Workload Security 租戶建立配對關係。請聯絡您的帳戶代表以啟用此配對。
 
 
 

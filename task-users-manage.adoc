@@ -11,7 +11,7 @@ summary: 在 NetApp Ransomware Resilience 中建立使用者目錄連接器後�
 
 
 [role="lead"]
-在 NetApp Ransomware Resilience 中設定使用者行為監控後，您可以自訂警報並管理被封鎖的使用者。自訂警報可讓您將特定使用者或檔案路徑排除在警報產生範圍之外。封鎖使用者旨在回應勒索軟體事件，以防止惡意使用者活動。
+在 NetApp Ransomware Resilience 中設定使用者活動偵測後，您可以管理被封鎖的使用者並自訂警示。您可以將特定使用者或檔案路徑從警示中排除，也可以在回應勒索軟體事件時封鎖使用者，以協助防止惡意活動。
 
 您必須link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/suspicious-user-activity.html#create-a-user-activity-agent["配置了使用者活動代理，啟用了具有使用者活動偵測功能的原則，並建立了使用者目錄連接器。"]才能封鎖使用者。
 

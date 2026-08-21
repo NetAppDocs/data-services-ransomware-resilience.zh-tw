@@ -12,7 +12,7 @@ summary: 尋找有關NetApp Ransomware Resilience的常見問題的答案。
 
 
 [role="lead"]
-如果您只是想快速找到有關NetApp Ransomware Resilience的問題的答案，那麼這個常見問題解答可以提供協助。
+使用此常見問題解答可快速了解有關 NetApp Ransomware Resilience 的答案。
 
 
 
@@ -28,7 +28,7 @@ summary: 尋找有關NetApp Ransomware Resilience的常見問題的答案。
 
 
 .如何啟用勒索軟體防禦能力？
-您可以從NetApp Console存取勒索軟體復原功能。請確保您已 link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-reference-roles.html["訪問角色"] 和 link:rp-start-prerequisites.html["先決條件"]。如果您已成功設定控制台代理，則可以執行下列操作： link:rp-start-discover.html["發現工作負載"]。
+您可以從 NetApp Console 存取 Ransomware Resilience。請確保您擁有必要的 link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-reference-roles.html["訪問角色"] 並符合 link:rp-start-prerequisites.html["先決條件"]。如果您已成功設定 Console 代理程式，則可以 link:rp-start-discover.html["發現工作負載"]。
 
 有關詳細信息，請參閱link:rp-start-login.html["存取勒索軟體彈性"]和link:rp-start-quick-start.html["勒索軟體抵禦能力快速入門指南"]。
 
