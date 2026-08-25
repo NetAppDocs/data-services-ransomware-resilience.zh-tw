@@ -1579,7 +1579,6 @@
   <block id="1cb54935f05151077e45294fd0acda40" category="list-text"><block ref="1cb54935f05151077e45294fd0acda40" category="inline-link-macro-rx"></block></block>
   <block id="6a3ad50557786ed110b2cefa2a2be7bd" category="list-text">選擇系統以檢視其詳細資訊。</block>
   <block id="6872a6ef5ae2db047b6effa74304d0af" category="list-text">顯示該使用者的現有角色：</block>
-  <block id="67c903793b6bf8b730fee76339b93672" category="list-text">如果您選擇了 *Suspicious user behavior detection* 作為偵測設置，請選擇 User activity agent 或<block ref="0fcb9e48262f104799fbf49d6c09d7d5" category="inline-link-macro-rx"></block>。</block>
   <block id="a7045f65a60246a57662a00a9dc6dc73" category="inline-link-macro">作業系統、伺服器和網路要求</block>
   <block id="72ae3905ad051e75d558266df8b1e63a" category="list-text">確保您符合<block ref="4535d4c19297d046165dc98674d914e8" category="inline-link-macro-rx"></block>。</block>
   <block id="59ad45573dbf4296a202cefa7894c118" category="section-title">建立使用者活動代理程式</block>
@@ -2569,8 +2568,6 @@
   <block id="7add8fc88b51e4a92eb3463aed73b61d" category="paragraph">Ransomware Resilience 現在提供 Azure Resource Manager （ARM） 範本，用於將 Microsoft Sentinel 連接至 SIEM，提供一種輔助部署的方法。</block>
   <block id="5b782deb754617d2be1da0beb60e5b16" category="inline-link-macro">連接到安全資訊和事件管理 (SIEM) 系統以進行威脅偵測和分析</block>
   <block id="861174940ee146accf84fbe687b7ff1c" category="paragraph">如需詳細資訊，請參閱 <block ref="9ce2483ddf8d37cd167d593bafc6e6e7" category="inline-link-macro-rx"></block>。</block>
-  <block id="ae00487184e64f3a5e5738cc82621c2c" category="list-text">Microsoft Sentinel*</block>
-  <block id="daea42ccacab5543f1ae62da54cc9877" category="paragraph">{asterisk} Ransomware Resilience 也為 Microsoft Sentinel 提供了一個 Azure Resource Manager (ARM) 範本。</block>
   <block id="59ad121b0ef1b561c2f96f9b5fbd50f8" category="doc">透過 Webhook 設定 SIEM</block>
   <block id="43a14127ca7c560502e3232122f8748a" category="paragraph">Ransomware Resilience 現在支援透過 Ransomware Resilience UI 中的 Webhook 設定安全性資訊和事件管理 （SIEM） 系統。透過 Webhook，您可以將首選的 SIEM 系統整合到您的勒索軟體監控中。</block>
   <block id="777ce6dfcc1db686d2520e63a7141ce2" category="inline-link-macro">設定 SIEM 系統</block>
@@ -2613,7 +2610,6 @@
   <block id="2c04ca6afac47fae351d7176c354ba9b" category="admonition">使用者活動代理程式使用 NetApp Data Infrastructure Insights 技術，因此需要使用<block ref="08f7b82cf54cd7bdcab171ad9bd445cc" prefix=" " category="inline-code"></block>端點。如需更多資訊，請參閱 <block ref="12c485f306c08c5a6939aa54065b62ed" category="inline-link-macro-rx"></block>。</block>
   <block id="012f0abca78822d24d27455403c3d089" category="list-text">agentlogin.cs01-ap-1.cloudinsights.netapp.com</block>
   <block id="dcac1ae04e45c773239f95ecd0c5f082" category="cell">389（LDAP） 636（LDAPS / start-tls）</block>
-  <block id="c44e1219325e37378db9611536ddafc3" category="cell">ONTAP 與使用者活動代理程式之間用於 Fpolicy 事件的通訊。為了讓 ONTAP 能夠向使用者活動代理程式發送事件，必須向其開放這些連接埠，包括使用者活動代理程式本身的任何防火牆（如果存在）。+ **注意：** 您無需保留*所有*連接埠，但保留的連接埠必須在此範圍內。建議您先保留 100 個連接埠，然後視需要增加。</block>
   <block id="752cfb7f100699ed10b934470fc8824c" category="doc">根據工作負載和系統類型標準化保護群組</block>
   <block id="3a53d7e702e0596f76d0deb9f8cc03ea" category="paragraph">Ransomware Resilience 現在強制要求保護群組只能包含一種工作負載類型和一種系統類型。建立新的保護群組時，您必須同時指定工作負載類型（檔案系統或區塊）和工作負載的系統。此增強功能可確保為保護群組所選的勒索軟體保護策略能夠成功套用至群組中的所有工作負載。</block>
   <block id="372c0699ee751a2658f1b4a897349a47" category="paragraph">如果您已有混合了系統類型和工作負載類型的保護群組，您可以繼續使用它們，但無法新增工作負載至保護群組。</block>
@@ -2812,4 +2808,40 @@
   <block id="cb93ad4589e6e6834d2627d2ef8c8456" category="section-title">多重管理員驗證</block>
   <block id="c77edebaabc370e372cc7bd8a3946ec4" category="inline-link-macro">ONTAP 中的多重管理員驗證</block>
   <block id="4fe568bb5fe11f3f2a80f6dbbcb77a58" category="paragraph">Ransomware Resilience 和 NetApp Console 均不支援多管理員驗證。如果您已進行相關配置<block ref="67e9d4830abb18c6f9ecab2abb6d5c08" category="inline-link-macro-rx"></block>，Ransomware Resilience 中的某些工作流程可能無法如預期運作。</block>
+  <block id="aa1680de6fa426cea529c4dfecdc015e" category="doc">透過 Console 代理程式交付 SIEM 事件</block>
+  <block id="64cbd2542074b8251a3a9a4207763f2a" category="paragraph">除了現有的透過 NetApp Console 交付事件的選項外，勒索軟體復原功能現在還支援透過 Console 代理程式交付 SIEM 事件。</block>
+  <block id="bb6efadd7c4367d935879bb3d0cb1872" category="paragraph">透過 Console 代理程式交付 SIEM 事件時，您可以將 SIEM 事件交付限制在網路邊界內。這簡化了具有嚴格 IP 位址允許清單的本地環境的部署，並能更好地遵守現有安全性控制。若要使用此選項，請確保 Console 代理程式能夠透過任何防火牆或 Proxy 控制，解析並連線至所需連接埠上的 SIEM 端點。</block>
+  <block id="b5c84596d34fbfb280405940a634b156" category="cell">ONTAP 與使用者活動代理程式之間用於 FPolicy 事件的通訊。為了讓 ONTAP 能夠向使用者活動代理程式傳送事件，必須向其開放以下連接埠，包括使用者活動代理程式本身的任何防火牆（如果存在）。+ **注意：** 您無需保留*所有*連接埠，但所保留的連接埠必須在此範圍內。建議您先保留 100 個連接埠，並視需要增加。</block>
+  <block id="49e0f8b47eab0f640ee82845d459cd21" category="list-text">如果您選擇了「可疑使用者行為偵測」作為偵測設定，請選擇使用者活動代理程式或<block ref="0fcb9e48262f104799fbf49d6c09d7d5" category="inline-link-macro-rx"></block>。</block>
+  <block id="08fa66584afbf1283c833b5a59619296" category="section-title">事件交付路由</block>
+  <block id="eb60dc6e31962c5336f25788a8e1f1f5" category="paragraph">勒索軟體復原功能支援透過 NetApp Console 和 Console 代理程式交付 SIEM 事件。您可以在組態期間選擇偏好的交付路徑。</block>
+  <block id="5e923011beb7826bf2187ff51e405217" category="paragraph">透過 Console 進行交付時，事件將直接從 Console 傳送到您的 SIEM 端點。您的 SIEM 端點必須可從公用網際網路存取才能接收事件。</block>
+  <block id="487502d64c87de0bf58cf8c8f21ee31e" category="paragraph">如果要透過 Console 代理程式進行交付，事件將透過位於您網路中的 Console 代理程式進行路由。此選項最適合具有嚴格 IP 位址允許清單的本機環境，且不需要傳入連線。Console 代理程式必須能夠透過網路存取 SIEM 端點。這表示它可以解析端點主機名稱、連接到所需的連接埠，並通過防火牆或 Proxy 控制。</block>
+  <block id="8386085def2fede12478cf5afdbee821" category="paragraph">透過 Console 代理程式交付事件的功能支援 Google SecOps、Splunk 及基於 webhook 的 SIEM 組態。</block>
+  <block id="d1b3fd776afd07332548e4d913309b68" category="list-text">選擇<block ref="7c24413a9fb1121268fc7c0edd9d6982" category="inline-xref-macro-rx"></block>。若要將 SIEM 事件交付到您的 SIEM 端點，請選擇「透過 NetApp Console 傳遞」。若要透過網路中已有的 Console 代理程式路由事件，請選擇「透過 Console 代理程式傳遞」。</block>
+  <block id="f95fb63626ed79b78f5d3a1ad9a62d64" category="paragraph">如果您選擇「透過 Console 代理程式交付」，請從下拉式功能表中選擇要使用的 Console 代理程式。</block>
+  <block id="9752c650ea880ea8e1a024c804a5c14e" category="paragraph">對於 Microsoft Sentinel SIEM，您可以選擇自動部署，由 Ransomware Resilience 根據您提供的權限部署資源。或者，您也可以執行手動部署，根據提供的 ARM 範本部署資源。</block>
+  <block id="91a6bec146982c32e97bb762cd319c04" category="open-title">自動部署</block>
+  <block id="158166321b0b3b2ffc06a280380a29e2" category="list-text">選擇 *Automatic* 作為部署方法。</block>
+  <block id="18e4d85c126b46658b30f374a3613db8" category="open-title">手動部署</block>
+  <block id="52bc37cd407c4f3a7762592cf269346a" category="list-text">選擇 *Manual* 作為部署方法。</block>
+  <block id="5acac8850756ffd34bc3983aeb65394e" category="list-text">展開 *ARM Template Deployment* 部分。</block>
+  <block id="21f04d26e40277d66043b4ec676de8f0" category="list-text">指派監控計量發行者角色。</block>
+  <block id="03910ec5bc06c69d06b09a7d2ce91dd2" category="list-text">在您的 Azure 訂閱中，前往「存取控制 （IAM）」。</block>
+  <block id="44cff8f384052e6f5b1f4fafc23ef4d5" category="list-text">選擇 *新增角色指派*。</block>
+  <block id="e6ec36efa0bbdf10fd60a8a6852a644c" category="list-text">搜尋並選擇 *Monitoring Metrics Publisher*。</block>
+  <block id="73e02342b0fefad869141a2cc487f962" category="list-text">將角色指派新增至註冊步驟中所建立的應用程式註冊的服務主體。</block>
+  <block id="b0802f3f26bd5c4a23f49c39d352174a" category="list-text">*檢閱 + 指派*。</block>
+  <block id="6f1c2a09c472f2a1bfe8859795a99f57" category="list-text">返回勒索軟體恢復使用者介面。複製 ARM 範本的 JSON，以在 Azure 環境中建立 Log Analytics 自訂表、資料收集端點 (DCE)、資料收集規則 (DCR) 和 Sentinel 分析規則。</block>
+  <block id="a7656865ad634af8f75799041e4e11e9" category="list-text">在 Azure 入口網站中，搜尋「部署自訂範本」。</block>
+  <block id="c5fc6c378447cbf81248f4df4fa19d5c" category="list-text">在編輯器中選擇 *Build your own template*。</block>
+  <block id="0e50b795f9b35da566dbb3463a0e930d" category="list-text">將複製的 JSON 貼到編輯器中。選擇 *Save*。</block>
+  <block id="512403a60546e796987c3af08cfbd513" category="list-text">輸入 *Workspace name*，即您的 Log Analytics 工作區的名稱。您可以從 Azure 入口網站的工作區總覽頁面中擷取此名稱。</block>
+  <block id="038a50e17d148f59cac701ab03d6d0ea" category="list-text">選取 *Review + create*。審查選項，然後選取 *Create* 以進行部署。</block>
+  <block id="a8ef5813cf743d24398f43c7163807f7" category="list-text">部署完成後，請收集以下資訊以在 Ransomware Resilience 中進行驗證：</block>
+  <block id="c99d0a8dcbcd4fa540ecde6fbbf6341c" category="list-text">*日誌擷取端點*：開啟資料收集端點資源<block ref="a32cb302e889e4d4ed48e3100cf9e4a6" prefix="(" category="inline-code"></block>），並複製總覽頁面上顯示的日誌擷取值。</block>
+  <block id="a9a44bec09a56231aababf62f1d0a543" category="list-text">*DCR Immutable ID*：開啟資料收集規則資源<block ref="9d7e8a93c4309a2f6e9e1c88f401edc8" prefix="(" category="inline-code"></block>）並複製總覽頁面上的 Immutable ID。</block>
+  <block id="31181df1565380de486e372742d4ec62" category="list-text">輸入您先前複製的 *Log Ingestion Endpoint* 和 *DCR immutable ID*。</block>
+  <block id="38ed29f4cd44c37378781f175f5b1752" category="list-text">選擇 *Connect* 以建立連線。</block>
+  <block id="f6bbe5efd3f2141104f822ac01ed3102" category="section-title">2026年8月25日</block>
 </blocks>

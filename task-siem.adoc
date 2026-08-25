@@ -17,12 +17,10 @@ Ransomware Resilience 支援使用 <<webhooks,webhooks>> 設定任何 SIEM 系�
 
 * AWS Security Hub
 * Google SecOps
-* Microsoft Sentinel*
+* Microsoft Sentinel
 * Splunk Cloud
 * Splunk Enterprise
 
-
-{asterisk} Ransomware Resilience 也為 Microsoft Sentinel 提供了一個 Azure Resource Manager (ARM) 範本。
 
 
 TIP: NetApp Ransomware Resilience 也提供 link:reference-soar.html["安全協調、自動化和回應（SOAR）劇本"^]。
@@ -61,6 +59,19 @@ Ransomware Resilience 可以將以下事件資料傳送到您的 SIEM 系統：
 
 
 NOTE: 只有在您配置了 xref:concept-user-behavior.adoc[使用者行為偵測] 之後，*user_name* 和 *user_id* 欄位才相關。
+
+
+
+[[event-delivery-route]]
+=== 事件交付路由
+
+勒索軟體復原功能支援透過 NetApp Console 和 Console 代理程式交付 SIEM 事件。您可以在組態期間選擇偏好的交付路徑。
+
+透過 Console 進行交付時，事件將直接從 Console 傳送到您的 SIEM 端點。您的 SIEM 端點必須可從公用網際網路存取才能接收事件。
+
+如果要透過 Console 代理程式進行交付，事件將透過位於您網路中的 Console 代理程式進行路由。此選項最適合具有嚴格 IP 位址允許清單的本機環境，且不需要傳入連線。Console 代理程式必須能夠透過網路存取 SIEM 端點。這表示它可以解析端點主機名稱、連接到所需的連接埠，並通過防火牆或 Proxy 控制。
+
+透過 Console 代理程式交付事件的功能支援 Google SecOps、Splunk 及基於 webhook 的 SIEM 組態。
 
 
 
@@ -164,6 +175,10 @@ image:screen-settings-threat-detection-3options.png["啟用威脅偵測詳細資
 .. 輸入您從 Google SecOps 的 webhook 端點 URL 複製的 *Webhook URL*。
 .. 輸入來自 Google SecOps 的 *Secret key* 和 *API key*。
 
+
+. 選擇<<事件交付路由>>。若要將 SIEM 事件交付到您的 SIEM 端點，請選擇「透過 NetApp Console 傳遞」。若要透過網路中已有的 Console 代理程式路由事件，請選擇「透過 Console 代理程式傳遞」。
++
+如果您選擇「透過 Console 代理程式交付」，請從下拉式功能表中選擇要使用的 Console 代理程式。
 
 . 選擇 *Connect* 開始傳送 SIEM 資料。
 
@@ -275,14 +290,18 @@ NOTE: 認證成功後，會出現「已認證」的資訊。
 
 
 .在 Ransomware Resilience 中驗證 Microsoft Sentinel
-. 在 Ransomware Resilience 中，選取側邊欄中的 *Settings* 。
-+
-image:screen-settings2.png["設定頁面"]
+對於 Microsoft Sentinel SIEM，您可以選擇自動部署，由 Ransomware Resilience 根據您提供的權限部署資源。或者，您也可以執行手動部署，根據提供的 ARM 範本部署資源。
 
+[role="tabbed-block"]
+====
+.自動部署
+--
+. 在 Ransomware Resilience 中，選取側邊欄中的 *Settings* 。
 . 在「設定」頁面中，在 SIEM 連線磁貼中選擇 *Connect* ，然後從下拉式選單中選擇 *Microsoft Sentinel* 。
 +
 image:screen-settings-threat-detection-3options.png["啟用威脅偵測詳細資訊頁面"]
 
+. 選擇 *Automatic* 作為部署方法。
 . 請查看 *Prerequisites*、*Registration* 和 *Permissions* 部分，確保您已成功完成每個步驟。
 . 展開 *Authentication* 部分。
 +
@@ -293,6 +312,52 @@ image:screen-settings-threat-detection-3options.png["啟用威脅偵測詳細資
 . 選擇 *Connect* 開始傳送 SIEM 資料。
 
 
+--
+.手動部署
+--
+. 在 Ransomware Resilience 中，選取側邊欄中的 *Settings* 。
++
+image:screen-settings2.png["設定頁面"]
+
+. 在「設定」頁面中，在 SIEM 連線磁貼中選擇 *Connect* ，然後從下拉式選單中選擇 *Microsoft Sentinel* 。
++
+image:screen-settings-threat-detection-3options.png["啟用威脅偵測詳細資訊頁面"]
+
+. 選擇 *Manual* 作為部署方法。
+. 請查看 *Prerequisites*、*Registration* 和 *Permissions* 部分，確保您已成功完成每個步驟。
+. 展開 *ARM Template Deployment* 部分。
+. 指派監控計量發行者角色。
++
+.. 在您的 Azure 訂閱中，前往「存取控制 （IAM）」。
+.. 選擇 *新增角色指派*。
+.. 搜尋並選擇 *Monitoring Metrics Publisher*。
+.. 將角色指派新增至註冊步驟中所建立的應用程式註冊的服務主體。
+.. *檢閱 + 指派*。
+
+
+. 返回勒索軟體恢復使用者介面。複製 ARM 範本的 JSON，以在 Azure 環境中建立 Log Analytics 自訂表、資料收集端點 (DCE)、資料收集規則 (DCR) 和 Sentinel 分析規則。
+. 在 Azure 入口網站中，搜尋「部署自訂範本」。
+. 在編輯器中選擇 *Build your own template*。
+. 將複製的 JSON 貼到編輯器中。選擇 *Save*。
+. 輸入 *Workspace name*，即您的 Log Analytics 工作區的名稱。您可以從 Azure 入口網站的工作區總覽頁面中擷取此名稱。
+. 選取 *Review + create*。審查選項，然後選取 *Create* 以進行部署。
+. 部署完成後，請收集以下資訊以在 Ransomware Resilience 中進行驗證：
++
+** *日誌擷取端點*：開啟資料收集端點資源(`rps-alerts-dce`），並複製總覽頁面上顯示的日誌擷取值。
+** *DCR Immutable ID*：開啟資料收集規則資源(`rps-alerts-dcr``）並複製總覽頁面上的 Immutable ID。
+
+
+. 展開 *Authentication* 部分。
++
+.. 輸入 *Directory （tenant） ID*、*Application （tenant） ID* 和 *Client secret*。選擇 *Authenticate*，然後等待 UI 確認認證資料已通過驗證。
+.. 輸入您先前複製的 *Log Ingestion Endpoint* 和 *DCR immutable ID*。
+
+
+. 選擇 *Connect* 以建立連線。
+
+
+--
+====
 
 
 [[configure-splunk-cloud-and-splunk-enterprise-for-threat-detection]]
@@ -344,6 +409,10 @@ image:screen-settings-threat-detection-3options.png["啟用威脅偵測詳細資
 .. 輸入您在 Splunk 中建立的事件收集器權杖。
 
 
+. 選擇<<事件交付路由>>。若要將 SIEM 事件交付到您的 SIEM 端點，請選擇「透過 NetApp Console 傳遞」。若要透過網路中已有的 Console 代理程式路由事件，請選擇「透過 Console 代理程式傳遞」。
++
+如果您選擇「透過 Console 代理程式交付」，請從下拉式功能表中選擇要使用的 Console 代理程式。
+
 . 選擇 *Connect* 開始傳送 SIEM 資料。
 
 
@@ -366,6 +435,10 @@ image:screen-settings-threat-detection-3options.png["啟用威脅偵測詳細資
 
 +
 image:siem-webhook.png["SIEM webhook 組態的螢幕截圖。"]
+
+. 選擇<<事件交付路由>>。若要將 SIEM 事件交付到您的 SIEM 端點，請選擇「透過 NetApp Console 傳遞」。若要透過網路中已有的 Console 代理程式路由事件，請選擇「透過 Console 代理程式傳遞」。
++
+如果您選擇「透過 Console 代理程式交付」，請從下拉式功能表中選擇要使用的 Console 代理程式。
 
 . （可選）選擇 *Send test message* 來測試連線能力。
 . 選擇「連線」以啟動與 Ransomware Resilience 的連線。
