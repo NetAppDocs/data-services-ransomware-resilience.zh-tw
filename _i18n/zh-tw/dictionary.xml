@@ -2809,4 +2809,7 @@
   <block id="c0bdc8b4b8a3be2684cfe6108f6978ae" category="paragraph">在 NetApp Ransomware Resilience 中設定使用者活動監控時，您可以執行測試指令碼來模擬可疑的使用者行為事件，以進行驗證和測試。</block>
   <block id="c120d673c7fb209814b49c9420ea9cee" category="paragraph">在 NetApp Ransomware Resilience 中設定使用者活動偵測後，您可以管理被封鎖的使用者並自訂警示。您可以將特定使用者或檔案路徑從警示中排除，也可以在回應勒索軟體事件時封鎖使用者，以協助防止惡意活動。</block>
   <block id="89decfaa1b470ead2915f39754702fde" category="paragraph">如果您在 NetApp Ransomware Resilience 中安裝或執行使用者活動代理程式時遇到問題，請審查以下常見情境和解決方案。</block>
+  <block id="cb93ad4589e6e6834d2627d2ef8c8456" category="section-title">多重管理員驗證</block>
+  <block id="c77edebaabc370e372cc7bd8a3946ec4" category="inline-link-macro">ONTAP 中的多重管理員驗證</block>
+  <block id="4fe568bb5fe11f3f2a80f6dbbcb77a58" category="paragraph">Ransomware Resilience 和 NetApp Console 均不支援多管理員驗證。如果您已進行相關配置<block ref="67e9d4830abb18c6f9ecab2abb6d5c08" category="inline-link-macro-rx"></block>，Ransomware Resilience 中的某些工作流程可能無法如預期運作。</block>
 </blocks>

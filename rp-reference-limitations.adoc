@@ -68,3 +68,10 @@ summary: 已知限制標識了該產品的此版本不支援的平台、設備�
 * 當勒索軟體恢復能力針對 SAN 工作負載產生警告時，這些警告僅基於高熵值。
 * SAN 工作負載只能使用 link:task-custom-restore.html["自訂還原"] 進行還原。目前 SAN 工作負載尚不支援 Clean restore。
 
+
+
+
+[[multi-admin-verification]]
+== 多重管理員驗證
+
+Ransomware Resilience 和 NetApp Console 均不支援多管理員驗證。如果您已進行相關配置link:https://docs.netapp.com/us-en/ontap/multi-admin-verify/["ONTAP 中的多重管理員驗證"^]，Ransomware Resilience 中的某些工作流程可能無法如預期運作。
