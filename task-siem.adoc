@@ -89,7 +89,7 @@ NOTE: 只有在您配置了 xref:concept-user-behavior.adoc[使用者行為偵�
 . 選擇*政策*。
 . 使用以下 JSON 格式的程式碼建立策略：
 +
-[listing]
+[source, json]
 ----
 {
   "Version": "2012-10-17",
@@ -113,9 +113,6 @@ NOTE: 只有在您配置了 xref:concept-user-behavior.adoc[使用者行為偵�
 
 .在 Ransomware Resilience 中驗證 AWS Security Hub
 . 在 Ransomware Resilience 中，選取側邊欄中的 *Settings* 。
-+
-image:screen-settings2.png["設定頁面"]
-
 . 在「設定」頁面中，在 SIEM 連線磁貼中選擇 *Connect* ，然後在下拉式選單中選擇 *AWS Security Hub* 。
 +
 image:screen-settings-threat-detection-3options.png["啟用威脅偵測詳細資訊頁面"]
@@ -162,9 +159,6 @@ image:screen-settings-threat-detection-3options.png["啟用威脅偵測詳細資
 
 .在 Ransomware Resilience 中驗證 Google SecOps
 . 在 Ransomware Resilience 中，選取側邊欄中的 *Settings* 。
-+
-image:screen-settings2.png["設定頁面"]
-
 . 在「設定」頁面中，在 SIEM 連線磁貼中選擇 *Connect*，然後從下拉式選單中選擇 *Google SecOps*。
 +
 image:screen-settings-threat-detection-3options.png["啟用威脅偵測詳細資訊頁面"]
@@ -212,7 +206,7 @@ image:screen-settings-threat-detection-3options.png["啟用威脅偵測詳細資
 . 輸入自訂角色名稱。使用名稱 *Ransomware Resilience Sentinel Configurator*。
 . 複製以下 JSON 並將其貼上到 *JSON* 標籤中。
 +
-[listing]
+[source, json]
 ----
 {
   "roleName": "Ransomware Resilience Sentinel Configurator",
@@ -335,7 +329,7 @@ image:screen-settings-threat-detection-3options.png["啟用威脅偵測詳細資
 .. *檢閱 + 指派*。
 
 
-. 返回勒索軟體恢復使用者介面。複製 ARM 範本的 JSON，以在 Azure 環境中建立 Log Analytics 自訂表、資料收集端點 (DCE)、資料收集規則 (DCR) 和 Sentinel 分析規則。
+. 返回勒索軟體恢復頁面。複製 ARM 範本的 JSON 程式碼，在 Azure 環境中建立 Log Analytics 自訂表、資料收集端點 （DCE）、資料收集規則 （DCR） 和 Sentinel 分析規則。
 . 在 Azure 入口網站中，搜尋「部署自訂範本」。
 . 在編輯器中選擇 *Build your own template*。
 . 將複製的 JSON 貼到編輯器中。選擇 *Save*。
@@ -393,9 +387,6 @@ NOTE: 對於 Splunk Enterprise，您必須允許傳入公用網際網路流量�
 
 .使用 NetApp Ransomware Resilience 驗證 Splunk
 . 在 Ransomware Resilience 中，選取側邊欄中的 *Settings* 。
-+
-image:screen-settings2.png["設定頁面"]
-
 . 在「設定」頁面中，選擇 SIEM 連線圖塊中的「*連線*」。
 +
 image:screen-settings-threat-detection-3options.png["啟用威脅偵測詳細資訊頁面"]
