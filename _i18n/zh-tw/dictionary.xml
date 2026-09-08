@@ -1839,7 +1839,6 @@
   <block id="450000aaa83625b4284af1b1791c4576" category="list-text"><block ref="450000aaa83625b4284af1b1791c4576" category="inline-link-macro-rx"></block></block>
   <block id="462a6e98fbd2a13cda63645b676477e3" category="section-title">2026 年 3 月 12 日</block>
   <block id="cb4ae29d8762239c8dfdfc76bdb65d37" category="paragraph">Ransomware Resilience 現在提供適用於 <block ref="8ab0c1a60a7c0ca7e1eee721cf8a8924" category="inline-link-macro-rx"></block> 和 <block ref="4655146bfbabab7fd679c2d1ca7a8d15" category="inline-link-macro-rx"></block> 的安全編排、自動化和回應（SOAR）劇本。這些劇本能夠簡化威脅回應管理，自動執行任務測試和關鍵的勒索軟體回應工作，包括建立快照和將磁碟區離線。</block>
-  <block id="0a444369e66f3a256a69eec8c1934071" category="paragraph">在考慮容量大小時，授權成本是基於作用中檔案系統的邏輯容量（表示快照所佔用的空間不包括在內）。</block>
   <block id="ed300adca180c1e33d800707367434a6" category="doc">適用於 Google SecOps 的 SOAR 策略手冊</block>
   <block id="d6e96acd595d94a4f4fd9727f77f8f89" category="inline-link-macro">Google SecOps</block>
   <block id="d942356c034f7ad3c314a5fae7d11e1d" category="list-text"><block ref="d942356c034f7ad3c314a5fae7d11e1d" category="inline-link-macro-rx"></block></block>
@@ -2846,4 +2845,5 @@
   <block id="15970e7cc58cf4e7b2b7962f63826587" category="list-text">*工作負載資料保護*：選擇「查看全部」可在「保護」頁面上查看所有存在風險或已保護的工作負載。如果未偵測到加密或使用者活動，則工作負載被視為有風險。請參閱 <block ref="2b2daeeb32402291362fa9fa843a5c7e" category="inline-link-macro-rx"></block>。</block>
   <block id="345292bfa93053446c9594b577a0b1d6" category="list-text">*受保護*：已啟用加密或使用者活動偵測原則。</block>
   <block id="79563997a2b58683d0d7ab2eb9e9f1fb" category="list-text">*有風險*：如果工作負載沒有啟用加密偵測或使用者活動偵測的保護原則，則會標示為有風險。即使工作負載具有快照和備份保護以及檔案副檔名封鎖功能，若未啟用加密偵測或使用者行為偵測，仍會被視為有風險。</block>
+  <block id="cfd46dfb75021812402788d3b95a0a9d" category="paragraph">在考慮規模時，授權費用是基於作用中檔案系統的邏輯容量，無論該資料位於熱或冷儲存設備分層。快照佔用的空間不會計入此計算中，即使這些快照儲存在冷分層中。</block>
 </blocks>
