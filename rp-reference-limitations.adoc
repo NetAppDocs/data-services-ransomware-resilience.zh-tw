@@ -17,7 +17,7 @@ summary: 已知限制標識了該產品的此版本不支援的平台、設備�
 
 
 [[readiness-drill-reset-option-issue]]
-== 準備演習重置選項問題
+== 準備演習重設選項問題
 
 如果您選擇ONTAP 9.11.1 磁碟區進行勒索軟體攻擊準備演習，勒索軟體復原能力會發送警報。如果您使用「複製到磁碟區」選項還原資料並重設鑽孔機，則重設操作將會失敗。
 
@@ -28,7 +28,7 @@ summary: 已知限制標識了該產品的此版本不支援的平台、設備�
 
 以下限制適用於 Amazon FSx for ONTAP：
 
-* Amazon FSx for ONTAP 不支援備份原則。在此環境中，您應該使用 Amazon FSx 執行備份作業。您可以使用 NetApp Ransomware Resilience 來恢復這些工作負載。
+* Amazon FSx for ONTAP 不支援備份策略。在此環境中，您應該使用 Amazon FSx 備份來執行備份作業。您可以使用 Ransomware Resilience 來還原這些工作負載。
 * 復原操作僅從快照執行。
 
 
@@ -65,7 +65,7 @@ summary: 已知限制標識了該產品的此版本不支援的平台、設備�
 
 以下限制適用於 SAN（區塊儲存設備）工作負載：
 
-* 當勒索軟體恢復能力針對 SAN 工作負載產生警告時，這些警告僅基於高熵值。
+* 當 Ransomware Resilience 針對 SAN 工作負載產生警告時，這些警告僅基於高熵值。
 * SAN 工作負載只能使用 link:task-custom-restore.html["自訂還原"] 進行還原。目前 SAN 工作負載尚不支援 Clean restore。
 
 
@@ -74,4 +74,4 @@ summary: 已知限制標識了該產品的此版本不支援的平台、設備�
 [[multi-admin-verification]]
 == 多重管理員驗證
 
-Ransomware Resilience 和 NetApp Console 均不支援多管理員驗證。如果您已進行相關配置link:https://docs.netapp.com/us-en/ontap/multi-admin-verify/["ONTAP 中的多重管理員驗證"^]，Ransomware Resilience 中的某些工作流程可能無法如預期運作。
+Ransomware Resilience 或 NetApp Console 不支援多管理員驗證。如果您已設定 link:https://docs.netapp.com/us-en/ontap/multi-admin-verify/["ONTAP 中的多重管理員驗證"^]，則無法啟用保護、進行準備演練或執行任何還原操作。在嘗試執行任何這些操作之前，您應該停用多管理員驗證。

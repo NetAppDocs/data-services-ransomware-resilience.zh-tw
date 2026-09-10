@@ -226,7 +226,6 @@
   <block id="665acc6d2ee48d5efd698763b6fbf735" category="list-text"><block ref="665acc6d2ee48d5efd698763b6fbf735" category="inline-link-rx"></block></block>
   <block id="6890b4587dca6f7e9bc67d8336265387" category="summary">已知限制標識了該產品的此版本不支援的平台、設備或功能。</block>
   <block id="1eba71d64e6c5e410e558530711e835b" category="paragraph">已知限制標識了該產品的此版本不支援或無法與其正確互通的平台、裝置或功能。仔細審查這些限制。</block>
-  <block id="e742b92803487dd57d41c5028236224e" category="section-title">準備演習重置選項問題</block>
   <block id="20fd4e2b91312c8ee1419aa853c936e1" category="paragraph">如果您選擇ONTAP 9.11.1 磁碟區進行勒索軟體攻擊準備演習，勒索軟體復原能力會發送警報。如果您使用「複製到磁碟區」選項還原資料並重設鑽孔機，則重設操作將會失敗。</block>
   <block id="4662983aa04c5f2df5dded885a7f15c5" category="section-title">Amazon FSx for NetApp ONTAP限制</block>
   <block id="ae06555bf1899a4ef9c10d46f1e1d5ab" category="list-text">復原操作僅從快照執行。</block>
@@ -1598,7 +1597,6 @@
   <block id="628cc6a9c569438d880eccc1e4a778da" category="paragraph">如需詳細資訊，請參閱 <block ref="dfd47d5e016db97d5fa8c5e4a7bd25f8" category="inline-link-macro-rx"></block>。</block>
   <block id="3393700830226a018a19341bd00d6fa7" category="paragraph">Ransomware Resilience 防護群組現在支援可疑使用者行為偵測的偵測原則。將勒索軟體防護策略套用至防護群組時,它會在工作負載之間套用原則,簡化網路安全態勢的管理。</block>
   <block id="e37ee5388292007ad9d3935327219122" category="paragraph">如需詳細資訊，請參閱 <block ref="5988324edfd7d92a7675cb7a08ac2a7e" category="inline-link-macro-rx"></block>。</block>
-  <block id="58c30bd4c949be43357ab1b7557703b5" category="list-text">Amazon FSx for ONTAP 不支援備份原則。在此環境中，您應該使用 Amazon FSx 執行備份作業。您可以使用 NetApp Ransomware Resilience 來恢復這些工作負載。</block>
   <block id="2a0c2a157bd80927f000333567138b57" category="section-title">Azure NetApp Files 限制</block>
   <block id="b285edab772b215df16e97f47e6cf852" category="list-text">Azure NetApp Files 不支援使用備份原則的勒索軟體防護策略。但您可以使用 Azure NetApp Files 備份功能。</block>
   <block id="af5eb4e584c938e9f8b3531d944e3a59" category="list-text">Azure NetApp Files 不支援複製功能的勒索軟體防護策略。</block>
@@ -2615,10 +2613,8 @@
   <block id="90c6a30d04a39029a6e718b3311fb6ab" category="inline-link-macro">停用 SIEM 系統</block>
   <block id="904e41b296efab284eaa1062cf1e6a27" category="paragraph">如需更多資訊，請參閱 <block ref="1d48f23238788ac75029406ac49f8f92" category="inline-link-macro-rx"></block>。</block>
   <block id="684a7ad3aa334bfb6a33e395013bd6dc" category="paragraph">勒索軟體防禦機制辨識出五種類型的勒索軟體攻擊：</block>
-  <block id="c6bd820ffcfcad26c449f0454fae72c1" category="list-text">目前 Google Cloud NetApp Volumes 不支援使用複寫的保護策略。</block>
   <block id="392d723534b3a09775f3b6831eba4f37" category="section-title">SAN 儲存設備限制</block>
   <block id="eecebb362641b58fec88bb08c4168447" category="paragraph">以下限制適用於 SAN（區塊儲存設備）工作負載：</block>
-  <block id="2d2a397baa743b0954cf57d074ff1a05" category="list-text">當勒索軟體恢復能力針對 SAN 工作負載產生警告時，這些警告僅基於高熵值。</block>
   <block id="41bc5402792c9ae6e031743791c37485" category="list-text">SAN 工作負載只能使用 <block ref="f4ee3b399c8cc5fca837364c0d9badb9" category="inline-link-macro-rx"></block> 進行還原。目前 SAN 工作負載尚不支援 Clean restore。</block>
   <block id="2428514fe4a71be9aaa049c0588b7a22" category="paragraph">在執行模擬之前，您必須設定整備演練。您必須針對特定類型的勒索軟體攻擊建立整備演練。Ransomware Resilience 可辨識五種類型的攻擊：</block>
   <block id="e820571d07203de22d81bf2d3a43c57d" category="list-text">在「設定」頁面的「準備演練」卡中，選擇 *Configure*。</block>
@@ -2800,7 +2796,6 @@
   <block id="89decfaa1b470ead2915f39754702fde" category="paragraph">如果您在 NetApp Ransomware Resilience 中安裝或執行使用者活動代理程式時遇到問題，請審查以下常見情境和解決方案。</block>
   <block id="cb93ad4589e6e6834d2627d2ef8c8456" category="section-title">多重管理員驗證</block>
   <block id="c77edebaabc370e372cc7bd8a3946ec4" category="inline-link-macro">ONTAP 中的多重管理員驗證</block>
-  <block id="4fe568bb5fe11f3f2a80f6dbbcb77a58" category="paragraph">Ransomware Resilience 和 NetApp Console 均不支援多管理員驗證。如果您已進行相關配置<block ref="67e9d4830abb18c6f9ecab2abb6d5c08" category="inline-link-macro-rx"></block>，Ransomware Resilience 中的某些工作流程可能無法如預期運作。</block>
   <block id="aa1680de6fa426cea529c4dfecdc015e" category="doc">透過 Console 代理程式交付 SIEM 事件</block>
   <block id="64cbd2542074b8251a3a9a4207763f2a" category="paragraph">除了現有的透過 NetApp Console 交付事件的選項外，勒索軟體復原功能現在還支援透過 Console 代理程式交付 SIEM 事件。</block>
   <block id="bb6efadd7c4367d935879bb3d0cb1872" category="paragraph">透過 Console 代理程式交付 SIEM 事件時，您可以將 SIEM 事件交付限制在網路邊界內。這簡化了具有嚴格 IP 位址允許清單的本地環境的部署，並能更好地遵守現有安全性控制。若要使用此選項，請確保 Console 代理程式能夠透過任何防火牆或 Proxy 控制，解析並連線至所需連接埠上的 SIEM 端點。</block>
@@ -2846,4 +2841,9 @@
   <block id="345292bfa93053446c9594b577a0b1d6" category="list-text">*受保護*：已啟用加密或使用者活動偵測原則。</block>
   <block id="79563997a2b58683d0d7ab2eb9e9f1fb" category="list-text">*有風險*：如果工作負載沒有啟用加密偵測或使用者活動偵測的保護原則，則會標示為有風險。即使工作負載具有快照和備份保護以及檔案副檔名封鎖功能，若未啟用加密偵測或使用者行為偵測，仍會被視為有風險。</block>
   <block id="cfd46dfb75021812402788d3b95a0a9d" category="paragraph">在考慮規模時，授權費用是基於作用中檔案系統的邏輯容量，無論該資料位於熱或冷儲存設備分層。快照佔用的空間不會計入此計算中，即使這些快照儲存在冷分層中。</block>
+  <block id="79323cfaf7a1abd803eef4f39c121798" category="section-title">準備演習重設選項問題</block>
+  <block id="c77b77b4154b5c5fa7446ee87f2d5169" category="list-text">Amazon FSx for ONTAP 不支援備份策略。在此環境中，您應該使用 Amazon FSx 備份來執行備份作業。您可以使用 Ransomware Resilience 來還原這些工作負載。</block>
+  <block id="a30aeba8ba2c25a2b618d315e085ffc3" category="list-text">目前 Google Cloud NetApp Volumes 不支援使用複寫的保護策略。</block>
+  <block id="f893ad58389f4e0375b875c84e5cfbf4" category="list-text">當 Ransomware Resilience 針對 SAN 工作負載產生警告時，這些警告僅基於高熵值。</block>
+  <block id="093dd5295e9562a1e47c2e57b91a5d58" category="paragraph">Ransomware Resilience 或 NetApp Console 不支援多管理員驗證。如果您已設定 <block ref="67e9d4830abb18c6f9ecab2abb6d5c08" category="inline-link-macro-rx"></block>，則無法啟用保護、進行準備演練或執行任何還原操作。在嘗試執行任何這些操作之前，您應該停用多管理員驗證。</block>
 </blocks>
