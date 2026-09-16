@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-automate-user-activity.html 
-keywords: data breach detection, data breach, user activity, automated response 
+keywords: data breach detection, data breach, user activity, automated response, block user, automate, ransomware response 
 summary: NetApp Ransomware Resilience 支援對使用者活動事件建立自動回應，使您能夠自動建立快照或封鎖使用者。 
 ---
 = 在 NetApp Ransomware Resilience 中自動回應使用者活動警報
@@ -12,9 +12,16 @@ summary: NetApp Ransomware Resilience 支援對使用者活動事件建立自動
 
 
 [role="lead"]
-借助 NetApp Ransomware Resilience，您可以自動化回應link:concept-user-behavior.html["使用者活動事件"]。透過自動化回應，Ransomware Resilience 可以在偵測到攻擊或警告時建立快照或封鎖使用者，從而更快速地回應勒索軟體事件。
+透過 NetApp Ransomware Resilience，您可以自動化回應 link:concept-user-behavior.html["使用者活動事件"]。當觸發使用者活動警報時，Ransomware Resilience 可以：
+
+* 區塊使用者
+* 建立快照
+
 
 自動化回應支援加密（使用者行為）、資料外洩和資料銷毀事件。您必須先link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/suspicious-user-activity.html#create-a-user-activity-agent["配置了使用者活動代理，啟用了具有使用者活動偵測功能的原則，並建立了使用者目錄連接器。"]才能建立自動化回應。當自動化回應被觸發時，Ransomware Resilience 會傳送電子郵件警示。
+
+
+NOTE: 如果警報是由可疑使用者行為觸發的，則只能拍攝快照。封鎖使用者無法作為對可疑使用者行為的自動化回應。
 
 
 
@@ -22,9 +29,6 @@ summary: NetApp Ransomware Resilience 支援對使用者活動事件建立自動
 == 建立自動回應
 
 您只能保護一個儲存 VM，且該 VM 至少需要有一個受可疑使用者行為偵測原則保護的工作負載。
-
-
-NOTE: 對於針對可疑使用者行為的自動回應，您只能進行快照處理。自動回應可疑使用者行為時，不支援封鎖使用者。
 
 .步驟
 . 在勒索軟體恢復功能中，選擇**設定**。
@@ -84,3 +88,10 @@ NOTE: 對於針對可疑使用者行為的自動回應，您只能進行快照�
 . 除了警報嚴重程度之外，您可以修改任何設定。
 . 選擇 **Save** 以儲存變更。
 
+
+
+
+[[next-steps]]
+== 後續步驟
+
+link:task-users-manage.html["管理已封鎖用戶"]

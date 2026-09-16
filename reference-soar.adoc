@@ -24,7 +24,7 @@ Ransomware Resilience 手冊提供以下功能：
 * 檢閱擴充工作的狀態
 
 
-{asterisk} 使用者封鎖/解除封鎖功能僅支援 Splunk 和 Google SecOps SOAR playbook。您必須在受支援的系統上設定 link:concept-user-behavior["使用者行為偵測"] 才能封鎖使用者。
+{asterisk} 使用者封鎖/解除封鎖功能僅支援 Splunk 和 Google SecOps SOAR playbook。您必須在受支援的系統上設定 link:concept-user-behavior.html["使用者行為偵測"] 才能封鎖使用者。
 
 
 
@@ -34,7 +34,7 @@ Ransomware Resilience 手冊提供以下功能：
 勒索軟體防禦系統提供適用於 Google SecOps、Microsoft Sentinel 和 Splunk 的劇本。請審查相關頁面以了解設定詳情。
 
 * link:https://github.com/chronicle/content-hub/tree/main/content/response_integrations/third_party/partner/netappransomwareresilience["Google SecOps"^]
-* link:https://marketplace.microsoft.com/en-us/product/netapp.azure-sentinel-solution-netapprrs?tab=Overview["Microsoft Sentinel"^] | link:https://github.com/Azure/Azure-Sentinel/tree/master/Solutions/NetApp%20Ransomware%20Resilience/Playbooks["GitHub 連結"^]
+* link:https://marketplace.microsoft.com/en-us/product/netapp.azure-sentinel-solution-netapprrs["Microsoft Sentinel"^] | link:https://github.com/Azure/Azure-Sentinel/tree/master/Solutions/NetApp%20Ransomware%20Resilience/Playbooks["GitHub 連結"^]
 * link:https://github.com/splunk-soar-connectors/netappransomwareresilience["Splunk"^]
 +
 對於 Splunk Cloud、您必須執行平台版本 7.0、7.1、7.2、8.0 或 8.4。如需詳細資訊、請參閱 link:https://splunkbase.splunk.com/app/8483["Splunkbase"^]。

@@ -18,6 +18,29 @@ summary: 了解NetApp Ransomware Resilience的新功能。
 
 
 
+[[16-september-2026]]
+== 2026 年 9 月 16 日
+
+
+
+[[enhanced-support-for-clean-restores]]
+=== 增強對乾淨還原的支援
+
+現在，在發生可疑使用者行為和基於使用者的加密攻擊之後，可使用乾淨還原進行恢復。此增強功能增加了對基於加密（熵）攻擊的現有支援。這項增強功能使您能夠利用乾淨還原的引導式方法，識別最佳還原點，以盡量減少資料遺失並加快恢復。
+
+如需詳細資訊，請參閱 link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-clean-restore.html["建立一個隔離的恢復環境，以便進行乾淨還原"^]。
+
+
+
+[[san-support-for-google-cloud-netapp-volumes]]
+=== Google Cloud NetApp Volumes 的 SAN 支援
+
+Ransomware Resilience 現已支援來自 Google Cloud NetApp Volumes 的 SAN 工作負載，讓您能夠偵測針對 SAN 工作負載的加密型勒索軟體攻擊。Google Cloud NetApp Volumes 中的 SAN 支援現已正式推出。
+
+如需更多資訊,請參閱 link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/concept-ransomware-resilience.html#supported-systems["支援的系統"^] 和 link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-reference-limitations.html["SAN 儲存設備的勒索軟體復原能力"^]。
+
+
+
 [[25-august-2026]]
 == 2026年8月25日
 
@@ -159,7 +182,7 @@ Ransomware Resilience 現在提供 Azure Resource Manager （ARM） 範本，用
 [[automated-responses-to-user-activity-alerts]]
 === 對使用者活動警報的自動回應
 
-Ransomware Resilience 現已支援在產生使用者活動警報時自動建立快照和封鎖使用者。透過自動回應，您可以在產生警告後立即封鎖使用者並建立快照以進行復原，從而實現更快速的回應，無需人工介入。
+Ransomware Resilience 現已支援對使用者活動事件的自動回應。當產生使用者活動警報時，您可以自動區塊使用者並建立快照。這些操作無需手冊幹預即可實現更快速的回應。
 
 如需詳細資訊，請參閱 link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-automate-user-activity.html["自動回應使用者活動警示"^]。
 
@@ -197,8 +220,8 @@ link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/reference
 
 
 
-[[google-cloud-netapp-volumes-support-preview]]
-=== Google Cloud NetApp Volumes 支援（預覽版）
+[[protection-groups-in-google-cloud-netapp-volumes-support-preview]]
+=== Google Cloud NetApp Volumes 中的保護群組支援（預覽版）
 
 勒索軟體韌性現在支援在 Google Cloud NetApp Volumes 系統中建立保護群組，使您能夠將多個工作負載組織在一個政策下，以簡化管理。
 

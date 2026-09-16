@@ -2,7 +2,6 @@
 <blocks>
   <block id="d41d8cd98f00b204e9800998ecf8427e" category="doc"></block>
   <block id="fc873becb3d197af9044ddf128631756" category="inline-link-macro">了解NetApp Console的勒索軟體復原角色</block>
-  <block id="a0bc9be88b94133627ac97e11a259c1c" category="paragraph">*所需的控制台角色* 要執行此任務，您需要勒索軟體復原使用者行為管理員角色。您無法使用 Ransomware Resilience 管理員角色執行此任務。<block ref="d9cbbacd5ef5cff6a1660fdb9d259f2f" category="inline-link-macro-rx"></block> 。</block>
   <block id="997bcd377ced78770953e6e3775b8ef8" category="doc">來自Digital Advisor的安全風險評估</block>
   <block id="ea7b2437ddd14dce6ba3f65494d634fd" category="inline-link">Digital Advisor文檔</block>
   <block id="9a42efab941e78c35ff03d2f3de7f294" category="paragraph">參考<block ref="5d1aa2fae9958ef5ced45eec5d13d250" category="inline-link-rx"></block>。</block>
@@ -1239,7 +1238,6 @@
   <block id="5ef05167488611c5bd4ff0f410595ce4" category="list-text">30天免費試用</block>
   <block id="e71ba6c3178fa6f6844891e615ad0570" category="list-text">透過 Amazon Web Services (AWS) Marketplace、Google Cloud Marketplace 或 Azure Marketplace 購買即用即付 (PAYGO) 訂閱</block>
   <block id="2f0583f3da64d216aa72116dc3460499" category="list-text">自帶授權 (BYOL)：您從NetApp銷售代表取得的NetApp授權文件 (NLF)。您可以使用許可證序號在控制台中啟動 BYOL。</block>
-  <block id="16c0368d04c8f5c865d6c2e90734f733" category="paragraph">免費試用期結束或許可證或訂閱到期後，您仍然可以：</block>
   <block id="99c8f1488beda59e11f21ed9f557f56e" category="list-text">查看工作負載和工作負載健康狀況</block>
   <block id="1975faa7cb5e0e460ae859ca96dbfd00" category="list-text">刪除策略等資源</block>
   <block id="f51b0d61321d5c9f169d1ee6403840fa" category="list-text">運行在試用期間或許可證下建立的所有計劃操作</block>
@@ -1883,7 +1881,6 @@
   <block id="beada74f16c5078d9dcfb7d53fb2e205" category="list-title">雲端權限</block>
   <block id="854c429c8b60de0e8502c18a4ad20f86" category="inline-link-macro">在 AWS 中建立 IAM 原則</block>
   <block id="164bd1fd2869da49bcef315a5bbe2370" category="list-text">Ransomware Resilience 需要具備正確 IAM 權限的 AWS 存取金鑰和密碼金鑰，才能在 AWS 環境中執行全新還原。<block ref="269f7c936a5a453bf5e1f3661f3e90dd" category="inline-link-macro-rx"></block>具備下列權限，然後將原則附加至新建立的使用者。建立使用者之後，請產生 IAM 認證資料並提供給全新還原。</block>
-  <block id="600a19be2eeeff3456f518555f21d179" category="list-text">您只能針對基於加密的勒索軟體攻擊執行乾淨還原。</block>
   <block id="2a0ba341f6bfb114fb8d895beeb1a449" category="list-text">如果隔離的復原環境沒有足夠的容量來執行新的操作，則會將其排入佇列，直到有可用容量為止。</block>
   <block id="1e0cb6f175281202fbb8e130dc6ceb5b" category="list-text">您可以在 Ransomware Resilience Recovery 儀表板中隨時監控正在進行且已排隊的清理還原作業的狀態。</block>
   <block id="75b68821e2e55eb56181916eaf645c45" category="list-text">執行乾淨復原時，原始磁碟區將被卸載，這可能會中斷 I/O 存取。</block>
@@ -2351,7 +2348,6 @@
   <block id="583ab768c1c1f45999e48e96c301cc48" category="cell">勒索軟體復原能力可識別特定使用者執行的異常檔案讀取、寫入和重新命名活動。</block>
   <block id="48c197e68b527d9bc2137bcea71c2e76" category="list-text">封鎖/解除封鎖使用者*</block>
   <block id="1943cfeff6e7967a7ab396ecab9a4c21" category="list-text">將磁碟區離線以進行事件回應，或在事件發生後將磁碟區上線</block>
-  <block id="46d3a8bf54f5d5c4058a1eba2e7daa4a" category="paragraph">{asterisk} 使用者封鎖/解除封鎖功能僅支援 Splunk 和 Google SecOps SOAR playbook。您必須在受支援的系統上設定 <block ref="1c8c6ad1b9f3fa5ec23ffb4b53fcc1e8" category="inline-link-macro-rx"></block> 才能封鎖使用者。</block>
   <block id="495dc566c29577d14a3418e529c90d3c" category="list-text">**偵測原則**可識別勒索軟體威脅。您有三種偵測選項：</block>
   <block id="b3b96411f9486bb0c2c8a4e2b07e7d35" category="list-text">加密偵測</block>
   <block id="2b694a9a00b006682bcbea870c2ca4fb" category="list-text">阻止可疑檔案副檔名</block>
@@ -2379,7 +2375,6 @@
   <block id="bb4393b6187d55f98dbeb4c5bb8add00" category="list-text">每個 Console 代理程式最多可處理 3,000 個工作負載。</block>
   <block id="afce532bad172bcef50d75935d2ed43b" category="list-text">複製策略</block>
   <block id="fb9721f24a420ba827ac36665b13797e" category="doc">對使用者活動警報的自動回應</block>
-  <block id="5b29c2b1307b96a1557ab05a56715041" category="paragraph">Ransomware Resilience 現已支援在產生使用者活動警報時自動建立快照和封鎖使用者。透過自動回應，您可以在產生警告後立即封鎖使用者並建立快照以進行復原，從而實現更快速的回應，無需人工介入。</block>
   <block id="709c9c15efe20baf89cd9c0bc4da8ba3" category="inline-link-macro">自動回應使用者活動警示</block>
   <block id="1683df33985dedfe87b3e10a6e28374e" category="paragraph">如需詳細資訊，請參閱 <block ref="af4a7ce82e0454100b9537cefe9d85c8" category="inline-link-macro-rx"></block>。</block>
   <block id="f3948d55e3032152ce189836caaf0b14" category="list-text">在「Responses」圖塊中，選擇「Take snapshot now」以建立快照。</block>
@@ -2464,7 +2459,6 @@
   <block id="ec48be06a1fa5ff039c9c72596c427f2" category="paragraph">執行演練時，您可以測試對警報的回應，並可選擇逐步完成復原過程，而不會影響真實資料。</block>
   <block id="5c443c5dabb6ec11bf27dce07c9fd377" category="inline-link-macro">自訂還原</block>
   <block id="05d14520f5a3fd970bfca710b43ae17a" category="admonition">演練進行中無法編輯整備演練配置。若要修改整備演練，請選擇 **Reset**，然後編輯演練。</block>
-  <block id="7820d7f245e7637e7833faccb183f36d" category="admonition">對於針對可疑使用者行為的自動回應，您只能進行快照處理。自動回應可疑使用者行為時，不支援封鎖使用者。</block>
   <block id="ddebb8e31f83ddb3bde0b3a0292845dc" category="doc">從使用者行為警報中排除檔案路徑</block>
   <block id="33239db9e04a3b1473f3468fd2d9d99b" category="paragraph">Ransomware Resilience 支援將特定檔案路徑從使用者行為監控警示中排除。如果您確定這些檔案路徑不存在風險，或者您正在對可能觸發警示的磁碟區中的檔案進行操作，則可以將其排除在外。</block>
   <block id="f1780a3dd9362a514caa277752b942f2" category="inline-link-macro">從警報中排除檔案路徑</block>
@@ -2565,7 +2559,6 @@
   <block id="31c6c885ce60b20eae4e9be492057a12" category="paragraph">如需詳細資訊，請參閱 <block ref="b6174b83c6a16df05a0ab6131828d421" category="inline-link-macro-rx"></block>。</block>
   <block id="bb52269a2ff950398b1909638550daa9" category="section-title">使用者活動事件自動回應的電子郵件警示</block>
   <block id="631a554bd5f4de62ab009d76aaf76846" category="paragraph">現在，當使用者活動事件觸發自動化回應時，Ransomware Resilience 會發送電子郵件通知，從而提高 Ransomware Resilience 和勒索軟體活動的清晰度與可見度。</block>
-  <block id="75461e261fd2f473b4e0733ac4887e0e" category="paragraph">借助 NetApp Ransomware Resilience，您可以自動化回應<block ref="8b86ab47aa824ef9943240ff5124bbba" category="inline-link-macro-rx"></block>。透過自動化回應，Ransomware Resilience 可以在偵測到攻擊或警告時建立快照或封鎖使用者，從而更快速地回應勒索軟體事件。</block>
   <block id="73b27110725383edb06a9dc83aff6510" category="paragraph">自動化回應支援加密（使用者行為）、資料外洩和資料銷毀事件。您必須先<block ref="c512b877bbe8303215878962f3edb05e" category="inline-link-macro-rx"></block>才能建立自動化回應。當自動化回應被觸發時，Ransomware Resilience 會傳送電子郵件警示。</block>
   <block id="c10f40999b74c408263f790b30e70efe" category="inline-xref">webhooks</block>
   <block id="ee3aba37ccd4985fc7d15a199d517a50" category="paragraph">Ransomware Resilience 支援使用 <block ref="e6ac5251282462e1cfdbbbfa22412ff3" category="inline-xref-macro-rx"></block> 設定任何 SIEM 系統。此外，Ransomware Resilience 提供對下列 SIEM 系統的原生支援：</block>
@@ -2643,7 +2636,6 @@
   <block id="cea7288c4707622a327049f1efc1f09a" category="list-text">指派勒索軟體保護策略。</block>
   <block id="9853f1beb4647abf8719e30889039648" category="paragraph">勒索軟體防禦系統提供適用於 Google SecOps、Microsoft Sentinel 和 Splunk 的劇本。請審查相關頁面以了解設定詳情。</block>
   <block id="3eea574b43f2f6412368381aa7e9dc8a" category="inline-link-macro">GitHub 連結</block>
-  <block id="29b5adbc7a04c877456d237755b1e5e1" category="list-text"><block ref="f35f69abcb839f30e64f7800ed807b52" category="inline-link-macro-rx"></block> | <block ref="c3163b3c34297c2188fd1502baa6be3c" category="inline-link-macro-rx"></block></block>
   <block id="843273e8b4d640d7a2b23ee18e37263a" category="paragraph">審查事件後，您需要確定這些事件是否構成潛在攻擊。如果並非實際威脅，則可以忽略這些事件。如果您忽略警報，則所有為回應潛在勒索軟體攻擊而自動建立的快照副本都將永久刪除。</block>
   <block id="16f166ba2ceaca92e52aea587fb0114f" category="inline-link-macro">其他活動</block>
   <block id="b7c7e492cc2a239de36bc7e713a56532" category="paragraph">對於加密（熵）事件觸發的警報，Ransomware Resilience 會根據您對警報的忽略行為進行學習，從而將該活動與正常操作關聯起來；未來，您將不會再收到基於此類活動的警報。這是因為加密（熵）事件由 ARP/AI 管理。對於由<block ref="69f4bf74babfcd1e97eceb84702fb4ae" category="inline-link-macro-rx"></block>觸發的警報，Ransomware Resilience 不會根據忽略行為進行學習，因為這些警報是基於使用者活動模式觸發的。</block>
@@ -2846,4 +2838,27 @@
   <block id="a30aeba8ba2c25a2b618d315e085ffc3" category="list-text">目前 Google Cloud NetApp Volumes 不支援使用複寫的保護策略。</block>
   <block id="f893ad58389f4e0375b875c84e5cfbf4" category="list-text">當 Ransomware Resilience 針對 SAN 工作負載產生警告時，這些警告僅基於高熵值。</block>
   <block id="093dd5295e9562a1e47c2e57b91a5d58" category="paragraph">Ransomware Resilience 或 NetApp Console 不支援多管理員驗證。如果您已設定 <block ref="67e9d4830abb18c6f9ecab2abb6d5c08" category="inline-link-macro-rx"></block>，則無法啟用保護、進行準備演練或執行任何還原操作。在嘗試執行任何這些操作之前，您應該停用多管理員驗證。</block>
+  <block id="3ce27a742d1f48d7e244df4e0153e8bf" category="list-text">您只能對基於加密的攻擊（包括使用者行為和熵）以及可疑使用者行為攻擊執行乾淨還原。資料外洩和資料銷毀攻擊不支援乾淨還原。</block>
+  <block id="c683448e4869d680e8543440db43e3ab" category="paragraph">*所需主控台角色* 若要執行此工作，您需要 Ransomware Resilience 使用者行為管理員角色。您無法使用 <block ref="91fb5ef1173b6f41fdaa815d28743781" category="inline-link-macro-rx"></block> 或 Ransomware Resilience 管理員角色來執行此工作。<block ref="d9cbbacd5ef5cff6a1660fdb9d259f2f" category="inline-link-macro-rx"></block>。</block>
+  <block id="96176a5ef40ffd580483770b758cb2b9" category="doc">Google Cloud NetApp Volumes 中的保護群組支援（預覽版）</block>
+  <block id="bf243787cd494f22987c64c448019324" category="paragraph">Ransomware Resilience 現已支援對使用者活動事件的自動回應。當產生使用者活動警報時，您可以自動區塊使用者並建立快照。這些操作無需手冊幹預即可實現更快速的回應。</block>
+  <block id="5beb9d1a7ce3f39235bef552e08036ab" category="doc">增強對乾淨還原的支援</block>
+  <block id="172d1622c102d2a3f2038156f02696fb" category="paragraph">現在，在發生可疑使用者行為和基於使用者的加密攻擊之後，可使用乾淨還原進行恢復。此增強功能增加了對基於加密（熵）攻擊的現有支援。這項增強功能使您能夠利用乾淨還原的引導式方法，識別最佳還原點，以盡量減少資料遺失並加快恢復。</block>
+  <block id="c67951798c697d04f7da1518cc49d789" category="inline-link-macro">建立一個隔離的恢復環境，以便進行乾淨還原</block>
+  <block id="00fb2a4960c9f2eed3f3d4165ea6d95a" category="paragraph">如需詳細資訊，請參閱 <block ref="d2e686618a401b494c34aa9b2103f129" category="inline-link-macro-rx"></block>。</block>
+  <block id="5cec02b4d4793bc47a228462c7e78bcc" category="section-title">Google Cloud NetApp Volumes 的 SAN 支援</block>
+  <block id="3f6e186b29c5d97616e385dd05ee9106" category="paragraph">Ransomware Resilience 現已支援來自 Google Cloud NetApp Volumes 的 SAN 工作負載，讓您能夠偵測針對 SAN 工作負載的加密型勒索軟體攻擊。Google Cloud NetApp Volumes 中的 SAN 支援現已正式推出。</block>
+  <block id="c1e0bcf11a7a6fe71bc50ede69765bc4" category="paragraph">如需更多資訊,請參閱 <block ref="3a3cd00a16a1bca6c18ece5051fc5ba1" category="inline-link-macro-rx"></block> 和 <block ref="f8dd47dc9ffb08466a0ec3298a516926" category="inline-link-macro-rx"></block>。</block>
+  <block id="2f3704fbf679067400fb02a19ac51a04" category="paragraph">{asterisk} 使用者封鎖/解除封鎖功能僅支援 Splunk 和 Google SecOps SOAR playbook。您必須在受支援的系統上設定 <block ref="bde713af5cb1e0fe8afb5b74f654cde5" category="inline-link-macro-rx"></block> 才能封鎖使用者。</block>
+  <block id="d179fc0ce9fb1caf78f7eeef324bb4cc" category="list-text"><block ref="2bb10879340c875c0eb9174b288f2b45" category="inline-link-macro-rx"></block> | <block ref="c3163b3c34297c2188fd1502baa6be3c" category="inline-link-macro-rx"></block></block>
+  <block id="5d5e5e55cd10a71c63c6b45dc8dba08c" category="paragraph-title">試用期結束或授權到期後會發生什麼事？</block>
+  <block id="79335d9964ddd76c469e8c3e25806b99" category="paragraph">免費試用期結束或授權或訂閱到期後，除非您將其排除，否則工作負載仍會在 Ransomware Resilience 上顯示。授權或試用期過期後，您可以：</block>
+  <block id="e4afb1971795d58242b3d2928284082d" category="paragraph">若要退役 Ransomware Resilience，請提交支援請求。請求中必須包含您的組織 ID，並附註您希望退役該服務。</block>
+  <block id="6a7195fecc3718afe9825234cb1a3cb0" category="section-title">過期授權</block>
+  <block id="20eb08718dfdc0275c8f8c9b37d1fa4d" category="paragraph">透過 NetApp Ransomware Resilience，您可以自動化回應 <block ref="8b86ab47aa824ef9943240ff5124bbba" category="inline-link-macro-rx"></block>。當觸發使用者活動警報時，Ransomware Resilience 可以：</block>
+  <block id="86ba33b27b8ac83f8c8aad8f0ecd7c6e" category="list-text">區塊使用者</block>
+  <block id="af9c364e0933200b7b8c1e7e13947ccf" category="list-text">建立快照</block>
+  <block id="dc33acebba1d27abf28977cc5a12db48" category="admonition">如果警報是由可疑使用者行為觸發的，則只能拍攝快照。封鎖使用者無法作為對可疑使用者行為的自動化回應。</block>
+  <block id="15033b064af1493a291f43131186f596" category="paragraph"><block ref="15033b064af1493a291f43131186f596" category="inline-link-macro-rx"></block></block>
+  <block id="9d26347bf9049c082d482aa87b79d702" category="section-title">2026 年 9 月 16 日</block>
 </blocks>
