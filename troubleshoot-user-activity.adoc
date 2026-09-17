@@ -43,7 +43,7 @@ summary: 如果您在 NetApp Ransomware Resilience 中安裝使用者活動代�
 | cloudsecure-agent-symptom-collector.sh 指令碼執行失敗，並出現錯誤「ERROR: Failed to create /tmp/cloudsecure-agent-symptoms.zip」 | 使用命令安裝 zip 工具 `yum install zip`，然後再次執行  `cloudsecure-agent-symptom-collector.sh`。 
 
 
-| 使用者活動代理程式安裝失敗，並出現錯誤「useradd：無法建立目錄 /home/cssys」。 | 由於權限錯誤，無法在 /home 目錄下建立使用者的登入目錄。手動建立 cssys 使用者並使用命令  `sudo useradd <user_name> -m -d HOME_DIR` 新增其登入目錄。在此命令中， `-m` 會在主目錄不存在時建立該目錄； `-d` 則將 HOME_DIR 指定為登入目錄。 
+| 使用者活動代理程式安裝失敗，並出現錯誤「useradd：無法建立目錄 /home/cssys」。 | 由於權限錯誤，無法在 /home 目錄下建立使用者的登入目錄。建立 cssys 使用者，並使用命令  `sudo useradd <user_name> -m -d HOME_DIR` 手動新增其登入目錄。在此命令中， `-m` 會在主目錄不存在時建立該目錄； `-d` 將 HOME_DIR 指定為登入目錄。 
 |===
 
 
