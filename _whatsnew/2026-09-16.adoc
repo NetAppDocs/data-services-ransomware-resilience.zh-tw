@@ -10,12 +10,3 @@
 現在，在發生可疑使用者行為和基於使用者的加密攻擊之後，可使用乾淨還原進行恢復。此增強功能增加了對基於加密（熵）攻擊的現有支援。這項增強功能使您能夠利用乾淨還原的引導式方法，識別最佳還原點，以盡量減少資料遺失並加快恢復。
 
 如需詳細資訊，請參閱 link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-clean-restore.html["建立一個隔離的恢復環境，以便進行乾淨還原"^]。
-
-
-
-[[san-support-for-google-cloud-netapp-volumes]]
-=== Google Cloud NetApp Volumes 的 SAN 支援
-
-Ransomware Resilience 現已支援來自 Google Cloud NetApp Volumes 的 SAN 工作負載，讓您能夠偵測針對 SAN 工作負載的加密型勒索軟體攻擊。Google Cloud NetApp Volumes 中的 SAN 支援現已正式推出。
-
-如需更多資訊,請參閱 link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/concept-ransomware-resilience.html#supported-systems["支援的系統"^] 和 link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-reference-limitations.html["SAN 儲存設備的勒索軟體復原能力"^]。
