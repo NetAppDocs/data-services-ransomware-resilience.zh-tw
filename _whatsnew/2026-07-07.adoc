@@ -18,4 +18,4 @@ Ransomware Resilience 支援將特定檔案路徑從使用者行為監控警示�
 
 Ransomware Resilience 現在提供 Azure Resource Manager （ARM） 範本，用於將 Microsoft Sentinel 連接至 SIEM，提供一種輔助部署的方法。
 
-如需詳細資訊，請參閱 link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem.html["連接到安全資訊和事件管理 (SIEM) 系統以進行威脅偵測和分析"^]。
+如需詳細資訊，請參閱 link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem-sentinel.html["在 Ransomware Resilience 中設定 Microsoft Sentinel SIEM"^]。

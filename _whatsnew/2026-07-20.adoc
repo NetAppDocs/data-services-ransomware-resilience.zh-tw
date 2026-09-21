@@ -9,7 +9,7 @@
 
 Ransomware Resilience 現在支援透過 Ransomware Resilience UI 中的 Webhook 設定安全性資訊和事件管理 （SIEM） 系統。透過 Webhook，您可以將首選的 SIEM 系統整合到您的勒索軟體監控中。
 
-如需詳細資訊，請參閱 link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem.html["設定 SIEM 系統"^]。
+如需詳細資訊，請參閱 link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem-webhook.html["設定帶有 Webhook 的 SIEM 系統"^]。
 
 
 

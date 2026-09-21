@@ -129,7 +129,7 @@ Ransomware Resilience 現在可讓您根據攻擊類型進行準備演練。Rans
 
 Ransomware Resilience 現在支援透過 Ransomware Resilience UI 中的 Webhook 設定安全性資訊和事件管理 （SIEM） 系統。透過 Webhook，您可以將首選的 SIEM 系統整合到您的勒索軟體監控中。
 
-如需詳細資訊，請參閱 link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem.html["設定 SIEM 系統"^]。
+如需詳細資訊，請參閱 link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem-webhook.html["設定帶有 Webhook 的 SIEM 系統"^]。
 
 
 
@@ -161,7 +161,7 @@ Ransomware Resilience 支援將特定檔案路徑從使用者行為監控警示�
 
 Ransomware Resilience 現在提供 Azure Resource Manager （ARM） 範本，用於將 Microsoft Sentinel 連接至 SIEM，提供一種輔助部署的方法。
 
-如需詳細資訊，請參閱 link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem.html["連接到安全資訊和事件管理 (SIEM) 系統以進行威脅偵測和分析"^]。
+如需詳細資訊，請參閱 link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem-sentinel.html["在 Ransomware Resilience 中設定 Microsoft Sentinel SIEM"^]。
 
 
 
@@ -264,7 +264,7 @@ link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-clea
 
 Ransomware Resilience 現已支援 Google SecOps 的安全資訊和事件管理 (SIEM)，使您能夠自動將資料傳送至 Google SecOps，從而簡化威脅分析和偵測。
 
-如需組態資訊，請參閱 link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem.html["將 Ransomware Resilience 連接至 SIEM"^]。
+如需組態資訊，請參閱 link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem-secops.html["在 Ransomware Resilience 中設定 Google SecOps SIEM"^]。
 
 
 
@@ -305,7 +305,7 @@ link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/reference
 
 Ransomware Resilience 現在為 Splunk Enterprise 提供安全資訊事件管理（SIEM）支援，使您能夠集中管理日誌和事件資料，並簡化威脅分析和偵測。
 
-如需詳細資訊，請參閱 link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem.html["將 Ransomware Resilience 連接至 SIEM"^]。
+如需詳細資訊，請參閱 link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem-splunk.html["設定 Splunk SIEM"^]。
 
 
 
@@ -801,7 +801,7 @@ https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles
 
 現在，您可以使用 Microsoft Sentinel 將資料傳送至安全性和事件管理系統 (SIEM) 以進行威脅分析和偵測。以前，您可以選擇 AWS Security Hub 或 Splunk Cloud 作為您的 SIEM。
 
-https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem.html["了解有關配置BlueXP ransomware protection設定的更多信息"]。
+https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem-sentinel.html["了解有關配置BlueXP ransomware protection設定的更多信息"]。
 
 
 

@@ -20,7 +20,7 @@
 
 現在，您可以使用 Microsoft Sentinel 將資料傳送至安全性和事件管理系統 (SIEM) 以進行威脅分析和偵測。以前，您可以選擇 AWS Security Hub 或 Splunk Cloud 作為您的 SIEM。
 
-https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem.html["了解有關配置BlueXP ransomware protection設定的更多信息"]。
+https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem-sentinel.html["了解有關配置BlueXP ransomware protection設定的更多信息"]。
 
 
 

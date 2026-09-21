@@ -86,8 +86,20 @@ sidebar:
         url: "/rp-start-simulate.html"
       - title: 模擬惡意使用者事件
         url: "/task-test-user-activity.html"
-    - title: 設定 SIEM
-      url: "/task-siem.html"
+    - title: 配置 SIEM
+      entries:
+      - title: 了解 SIEM 支援
+        url: "/task-siem.html"
+      - title: 設定 AWS Security Hub
+        url: "/task-siem-security-hub.html"
+      - title: 設定 Google SecOps
+        url: "/task-siem-secops.html"
+      - title: 設定 Microsoft Sentinel
+        url: "/task-siem-sentinel.html"
+      - title: 設定 Splunk Cloud & Enterprise
+        url: "/task-siem-splunk.html"
+      - title: 使用 Webhook 設定 SIEM
+        url: "/task-siem-webhook.html"
     - title: 整合 SOAR 劇本
       url: "/reference-soar.html"
     - title: 下載報告

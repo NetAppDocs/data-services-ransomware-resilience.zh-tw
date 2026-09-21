@@ -1,0 +1,81 @@
+---
+sidebar: sidebar 
+permalink: task-siem-secops.html 
+keywords: ransomware protection, SIEM, security event management system, orchestration, event management, google, secops, security operations 
+summary: 透過連接 Google SecOps SIEM，精簡 NetApp Ransomware Resilience 中的威脅分析與事件管理。 
+---
+= 在 NetApp Ransomware Resilience 中設定 Google SecOps SIEM
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp Ransomware Resilience 透過 Google SecOps 提供安全性資訊與事件管理（SIEM）的原生支援。透過將 Ransomware Resilience 連線至 Google SecOps，您可以自動傳送事件資料以進行威脅分析與偵測，進而精簡勒索軟體保護與事件管理。
+
+
+
+[[before-you-begin]]
+== 開始之前
+
+在勒索軟體彈性中啟用 Google SecOps 之前，您必須在 Google SecOps 中註冊日誌類型和 webhook，以啟用服務之間的連線。
+
+
+
+[[configure-google-secops]]
+== 設定 Google SecOps
+
+在 Google SecOps 中執行以下步驟：
+
+.建立日誌類型
+. 在 Google SecOps 中，導覽至 *設定* > *SIEM 設定* > *可用日誌類型*。
++
+建議您使用 NETAPP_RANSOMWARE_RESILIENCE 記錄類型。如果您不想使用此類型，請建立自訂記錄類型。
+
+. 如果您使用 NETAPP_RANSOMWARE_RESILIENCE 日誌類型，它包含一個預先建置的解析器，而無需執行任何其他操作。
++
+如果使用自訂日誌類型，則必須建立解析器。請前往 *SIEM Settings* > *Parsers* > *Create Parser* 來建立解析器。
+
+
+
+.註冊 webhook
+. 在 Google SecOps 中，導覽至 *設定* > *SIEM 設定* > *資訊來源*。
+. 選擇 *Add new feed*。
+. 選擇您在「建立日誌類型」工作流程中使用的日誌類型。
+. 將 *Source type* 設定為 Webhook，然後儲存摘要。
+. 開啟 *Details* 標籤。複製 *Webhook endpoint URL*，以便在 NetApp Ransomware Resilience 中進行驗證時使用。
+. 開啟 *Secret key* 標籤。產生密鑰，或者如果您已經建立了密鑰，則複製它。儲存金鑰，以便在 NetApp Ransomware Resilience 中進行身份驗證時使用。
+. 使用貴組織的 Google API 金鑰流程建立 *API 金鑰*。
+
+
+
+
+[[authenticate-google-secops-in-ransomware-resilience]]
+== 在 Ransomware Resilience 中驗證 Google SecOps
+
+. 在 Ransomware Resilience 中，選取側邊欄中的 *Settings* 。
+. 在「設定」頁面中，在 SIEM 連線磁貼中選擇 *Connect*，然後從下拉式選單中選擇 *Google SecOps*。
++
+image:screen-settings-threat-detection-3options.png["SIEM 連線選項的螢幕截圖"]
+
+. 請查看 *Prerequisites* 和 *Webhook feed* 部分。
+. 展開 *Authentication* 部分。
++
+.. 輸入您從 Google SecOps 複製的 *Webhook URL*。
+.. 輸入來自 Google SecOps 的 *Secret key* 和 *API key*。
+
+
+. 選擇 link:task-siem.html#event-delivery-route["事件交付路線"]。若要將 SIEM 事件交付到您的 SIEM 端點，請選擇 *透過 NetApp Console 交付*。若要透過網路中已有的 Console 代理程式路由事件，請選擇 *透過 Console 代理程式交付*。
++
+如果您選擇「透過 Console 代理程式交付」，請從下拉式功能表中選擇要使用的 Console 代理程式。
+
+. 選擇 *Connect* 開始傳送 SIEM 資料。
+
+
+
+
+[[next-steps]]
+== 後續步驟
+
+* link:reference-soar.html["整合 SOAR 劇本"]
+

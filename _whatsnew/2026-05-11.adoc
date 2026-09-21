@@ -18,7 +18,7 @@ link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-clea
 
 Ransomware Resilience 現已支援 Google SecOps 的安全資訊和事件管理 (SIEM)，使您能夠自動將資料傳送至 Google SecOps，從而簡化威脅分析和偵測。
 
-如需組態資訊，請參閱 link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem.html["將 Ransomware Resilience 連接至 SIEM"^]。
+如需組態資訊，請參閱 link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem-secops.html["在 Ransomware Resilience 中設定 Google SecOps SIEM"^]。
 
 
 

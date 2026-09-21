@@ -1,0 +1,56 @@
+---
+sidebar: sidebar 
+permalink: task-siem-webhook.html 
+keywords: ransomware protection, SIEM, security event management system, orchestration, event management, webhook, third-party siem, other siem, palo alto, crowdstrike, ibm 
+summary: 透過設定您選擇的任何 SIEM 系統與 webhook，精簡 NetApp Ransomware Resilience 中的威脅分析和事件管理。 
+---
+= 使用 webhook 在 NetApp Ransomware Resilience 中設定 SIEM
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp Ransomware Resilience 原生支援多種安全性資訊和事件管理（SIEM）系統。如果您選擇的 SIEM 系統無法使用，您可以使用 Webhook 設定任何其他 SIEM 系統進行事件管理。
+
+
+
+[[before-you-begin]]
+== 開始之前
+
+在與 Ransomware Resilience 建立 SIEM 連線之前，您必須先在其專屬平台上設定 SIEM。設定 SIEM 後，您可以在 Ransomware Resilience 中對其進行驗證。
+
+
+
+[[authenticate-a-siem-in-ransomware-resilience-via-webhook]]
+== 透過 webhook 在 Ransomware Resilience 中驗證 SIEM
+
+. 在 Ransomware Resilience 中，選擇 *Settings*。
+. 在 *SIEM* 磁貼中，如果您是首次設定 SIEM，請選擇 *Connect*，然後選擇 *Webhooks*。否則，請選擇 *Manage*。在總覽頁面上，選擇 *+ Connect*，然後選擇 *Webhook*。
+. 請提供 SIEM 產品的 *名稱* 和連線的 *URL*。您無法使用編碼的 URL。
+. 請使用「Key: Value」的格式輸入*自訂標頭*。每個鍵值對必須分隔佔一行。
+. 請查看 JSON 格式的 *Message* 範本。
++
+若要新增其他參數，請從輸入欄位旁的清單中複製它們，然後貼上到訊息的適當部分。您也可以新增自訂參數：在自訂參數中，選取 *新增*，然後輸入 *名稱*、*值* 和 *描述*。複製參數並將其貼上到訊息欄位中。
+
++
+image:siem-webhook.png["SIEM webhook 組態的螢幕截圖。"]
+
+. 選擇 link:task-siem.html#event-delivery-route["事件交付路線"]。若要將 SIEM 事件交付到您的 SIEM 端點，請選擇 *透過 NetApp Console 交付*。若要透過網路中已有的 Console 代理程式路由事件，請選擇 *透過 Console 代理程式交付*。
++
+如果您選擇「透過 Console 代理程式交付」，請從下拉式功能表中選擇要使用的 Console 代理程式。
+
+. （可選）選擇 *Send test message* 來測試連線能力。
+. 選擇「連線」以啟動與 Ransomware Resilience 的連線。
+
+
+
+NOTE: 建立 SIEM 組態後，您可以對其進行編輯。除名稱外，您可以編輯所有欄位。
+
+
+
+[[next-steps]]
+== 後續步驟
+
+* link:reference-soar.html["整合 SOAR 劇本"]
+
