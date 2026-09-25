@@ -2870,4 +2870,7 @@
   <block id="b4432b2cbe32a1565ba15c5575ec34aa" category="sidebar">設定 AWS Security Hub</block>
   <block id="ece99177ef46def4743253388748336e" category="sidebar">設定 Microsoft Sentinel</block>
   <block id="373bd242e28dd9ed5ab41176e809e7db" category="sidebar">設定 Splunk Cloud &amp; Enterprise</block>
+  <block id="e9cbe0aaa0ffb3834bf6a16e6c4f6881" category="inline-link-macro">還原工作負載</block>
+  <block id="1b4c5e5585c892abb8e8dd8b4b4145d8" category="list-text">當您為 Azure NetApp Files <block ref="825823111b1491b7b84194a9322124b7" category="inline-link-macro-rx"></block> 時，無法使用檔案層級還原。</block>
+  <block id="be477216a2a05782605c951939d5638a" category="section-title">在 Azure 中新增角色，並在 Ransomware Resilience 中驗證 Microsoft Sentinel</block>
 </blocks>

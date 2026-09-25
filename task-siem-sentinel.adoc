@@ -150,8 +150,8 @@ TIP: 用戶端機密的有效期限限制為兩年（24 個月）或更短。Mic
 
 
 
-[[authenticate-microsoft-sentinel-in-ransomware-resilience]]
-== 在 Ransomware Resilience 中驗證 Microsoft Sentinel
+[[add-roles-in-azure-and-authenticate-microsoft-sentinel-in-ransomware-resilience]]
+== 在 Azure 中新增角色，並在 Ransomware Resilience 中驗證 Microsoft Sentinel
 
 對於 Microsoft Sentinel SIEM，您可以選擇自動部署，由 Ransomware Resilience 根據您提供的權限部署資源。或者，您可以執行手冊部署，根據提供的 ARM 範本部署資源。兩種選項都需要您在 Azure 入口網站中設定權限，然後在 Ransomware Resilience 中驗證連線，雖然步驟有所不同。選擇最適合您需求的工作流程。
 
