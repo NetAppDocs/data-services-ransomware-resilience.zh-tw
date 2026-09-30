@@ -2244,7 +2244,6 @@
   <block id="aafdf7d684cdbc06940987bf451e6069" category="section-title">使用者行為偵測需求</block>
   <block id="8258c7e67c72fe5a72748135c6b87a68" category="paragraph">為了使 Ransomware Resilience 能夠提供有關使用者行為的警報，您必須設定使用者活動代理程式。若要安裝使用者活動代理程式，請確保您的系統符合<block ref="423b5fb22336ee99727442d2bf2268c5" category="inline-link-macro-rx"></block>。</block>
   <block id="88e7bcbfec161904679f03f8797894a6" category="inline-link-macro">偵測可疑使用者行為</block>
-  <block id="b499f45630896bc77ad77d6591c41b0f" category="list-text">同時查看 <block ref="019fa8a22de443e4055edc5a56d223fe" category="inline-link-macro-rx"></block> 和 <block ref="5909784b16712ef276fd16aaaa47a088" category="inline-link-macro-rx"></block> 的要求。</block>
   <block id="63fde6d770b2c8ba714c1f08a582c093" category="inline-link-macro">透過設定使用者行為偵測來增強保護</block>
   <block id="8c1efc202ff8276c615ec5ce66929176" category="list-text">（選用）<block ref="6775eab4a283e419045522f21b7d2960" category="inline-link-macro-rx"></block></block>
   <block id="109acfe0b7e8d2f9308c5731f4ac86cf" category="inline-link-macro">設定 SOAR 劇本</block>
@@ -2670,7 +2669,6 @@
   <block id="cfb664a7c55a4ffead74e1674d2f33eb" category="summary">只需幾個步驟即可開始使用 NetApp Ransomware Resilience。</block>
   <block id="b6d95b844bfe25407e74be4d50d288fa" category="paragraph">使用此快速入門指南設定 NetApp Ransomware Resilience、探索工作負載並設定保護。</block>
   <block id="116246596fad0beb7ffba5f0c89883e1" category="inline-link-macro">審查 Ransomware Resilience 使用者角色，並為存取該服務的使用者指派權限。</block>
-  <block id="5809338b3950a9c2eb01defed9f67578" category="list-text"><block ref="5809338b3950a9c2eb01defed9f67578" category="inline-link-macro-rx"></block></block>
   <block id="177f71f748fd13cdfe5346fed8eb6369" category="paragraph">這些任務需要 _Ransomware Resilience admin_ 角色。若要設定使用者行為偵測，您還需要 _Ransomware Resilience user behavior admin_ 角色。</block>
   <block id="520186e595ac4a2b12f766d5e60dae3a" category="paragraph">設定保護後，您可以：</block>
   <block id="16f66cf83117826af1028c7315808f5b" category="paragraph">透過準備備份目的地、審查先決條件以及設定 NetApp Console 和 Console 代理程式，來設定 NetApp Ransomware Resilience。</block>
@@ -2873,4 +2871,6 @@
   <block id="e9cbe0aaa0ffb3834bf6a16e6c4f6881" category="inline-link-macro">還原工作負載</block>
   <block id="1b4c5e5585c892abb8e8dd8b4b4145d8" category="list-text">當您為 Azure NetApp Files <block ref="825823111b1491b7b84194a9322124b7" category="inline-link-macro-rx"></block> 時，無法使用檔案層級還原。</block>
   <block id="be477216a2a05782605c951939d5638a" category="section-title">在 Azure 中新增角色，並在 Ransomware Resilience 中驗證 Microsoft Sentinel</block>
+  <block id="dedb015aaf7f105f1187fe35f028dd0f" category="list-text">查看 <block ref="019fa8a22de443e4055edc5a56d223fe" category="inline-link-macro-rx"></block> 和 <block ref="5909784b16712ef276fd16aaaa47a088" category="inline-link-macro-rx"></block> 的要求。</block>
+  <block id="823ff360f4694fe5d6e7799f5cab531b" category="list-text"><block ref="823ff360f4694fe5d6e7799f5cab531b" category="inline-link-macro-rx"></block></block>
 </blocks>
