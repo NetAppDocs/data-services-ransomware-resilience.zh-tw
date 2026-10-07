@@ -32,6 +32,11 @@ summary: 尋找有關NetApp Ransomware Resilience的常見問題的答案。
 
 有關詳細信息，請參閱link:rp-start-login.html["存取勒索軟體彈性"]和link:rp-start-quick-start.html["勒索軟體抵禦能力快速入門指南"]。
 
+.Ransomware Resilience 對 Console 代理程式有哪些要求？
+link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["審核並設定使用者的適當權限。"] 請確保您的 Console 組織中至少有一個作用中的 Console 代理程式已連接至受支援的系統。Console 代理程式必須將 `cloudmanager-ransomware-protection` Container 置於作用中狀態。
+
+此外，每個 Console 代理程式最多只能處理 3,000 個工作負載。您可以提出申請來提高此限制。
+
 .勒索軟體防護是否提供標準模式、限制模式和私有模式？
 勒索軟體恢復功能目前僅在標準模式下可用。
 
@@ -56,7 +61,7 @@ summary: 尋找有關NetApp Ransomware Resilience的常見問題的答案。
 * 運行在試用期間或許可證下建立的所有計劃操作
 
 
-若要退役 Ransomware Resilience，請提交支援請求。請求中必須包含您的組織 ID，並附註您希望退役該服務。
+若要退役 Ransomware Resilience，請提交支援請求。該請求必須包含您的組織 ID，並附註您想要退役該服務。
 
 
 
@@ -111,7 +116,7 @@ link:rp-use-protect.html["了解工作負載優先順序或重要性"] 。
 在 Ransomware Resilience 中，如果工作負載啟用了_偵測_原則，則其狀態將顯示為*受保護*。此偵測原則必須包含加密偵測或可疑使用者行為偵測（或兩者兼有）。如需詳細資訊，請參閱 link:rp-use-protect.html#add-a-ransomware-protection-strategy["檢測策略"]。
 
 .什麼是「高風險」工作量？
-工作負載必須具備已啟用加密偵測或使用者行為偵測的勒索軟體保護原則，才能被視為受到保護。如果缺少其中至少一項偵測策略，則工作負載將被標記為有風險。如果工作負載具有備份或快照原則，但未啟用加密偵測或使用者行為偵測，則將被視為有風險。
+工作負載必須具有已啟用加密偵測或使用者行為偵測的勒索軟體保護原則，才能被視為受到保護。如果缺少其中至少一項偵測策略，工作負載將被標示為有風險。如果工作負載具有備份或快照原則，但未啟用加密偵測或使用者行為偵測，則將被視為有風險。
 
 勒索軟體復原功能還提供可疑檔案副檔名偵測。如果僅啟用可疑檔案副檔名偵測此偵測原則，工作負載將標記為有風險。
 
@@ -155,13 +160,13 @@ Ransomware Resilience 辨識五種攻擊類型：
 是的，Ransomware Resilience 可以發現 ONTAP 中設定的快照排程。它還可以發現已發現工作負載中的所有磁碟區是否都啟用了 ARP 和 FPolicy。您在 Ransomware Resilience 儀表板中看到的資訊是從其他 NetApp 解決方案和產品彙總而來。
 
 .Ransomware Resilience 是否了解 Backup and Recovery 中已製定的策略？
-是的，如果您在 Backup and Recovery 中管理工作負載，則這些產品管理的原則將引入 Ransomware Resilience 。
+是的，如果您有在 Backup and Recovery 中代管的工作負載，這些原則將會帶入 Ransomware Resilience。
 
 .您可以修改從 NetApp Backup and Recovery 繼承的原有原則嗎？
 不，您無法透過勒索軟體復原功能修改由 NetApp Backup and Recovery 管理的原則。您需要在 NetApp Backup and Recovery 中管理這些原則的任何變更。
 
-.如果ONTAP中存在政策（例如 ARP、FPolicy 和快照），這些策略是否會在勒索軟體復原功能中變更？
-不會。勒索軟體復原不會修改ONTAP中的任何現有偵測策略（ARP、FPolicy 設定）。
+.如果 ONTAP 中存在原則（例如 ARP 、 FPolicy 和快照）， Ransomware Resilience 是否會變更這些原則？
+Ransomware Resilience 不會修改 ONTAP 中任何現有的偵測原則（ARP、FPolicy 設定）。如果您修改 Ransomware Resilience 中的任何設定，您可以置換 ONTAP 的設定。
 
 .註冊 Ransomware Resilience 後，如果在 Backup and Recovery 中新增原則會發生什麼情況？
 勒索軟體復原能力能夠識別 NetApp Backup and Recovery 中新建立的原則和原則變更。

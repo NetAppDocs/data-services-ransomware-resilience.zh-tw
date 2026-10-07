@@ -260,7 +260,6 @@
   <block id="43963265d27ac7360fe50e98bde4f748" category="list-text">勒索軟體檢測政策</block>
   <block id="4c0abf2d4c54820b8d33061abaf30759" category="list-text">快照策略</block>
   <block id="f85025bdaaee4c51a3c8a6a750214305" category="paragraph">勒索軟體抵禦策略中不需要備份策略。</block>
-  <block id="830a27164c48c0901dff35b6935793d3" category="paragraph">不會。勒索軟體復原不會修改ONTAP中的任何現有偵測策略（ARP、FPolicy 設定）。</block>
   <block id="e2ec1056e393e1702e9916034506b224" category="paragraph">是的，您可以在 Ransomware Resilience 中從ONTAP更改策略。您也可以在勒索軟體復原中建立新策略並將其應用於工作負載。此操作將以在勒索軟體復原中建立的策略取代現有的ONTAP策略。</block>
   <block id="389b413db649d1d5d2854fd3e4faf2e6" category="paragraph">您可以透過套用不包含 FPolicy 和備份策略的其他策略來停用它們。</block>
   <block id="8c4e51cf0af97fc084c32c7697ac400c" category="doc">設定NetApp Ransomware Resilience的許可</block>
@@ -1173,7 +1172,6 @@
   <block id="51fecb5d19a6637dea83445678fd4ffa" category="section-title">資料備份</block>
   <block id="4fa0264ac4080dbcb96449b3dd2eff57" category="paragraph">勒索軟體恢復許可證不包括其他NetApp產品。但是，即使您沒有單獨的備份和復原許可證，勒索軟體復原能力也可以與NetApp Backup and Recovery整合。</block>
   <block id="6ff0e20f052119502398978ae7712412" category="paragraph">請按照每個步驟中的連結獲取詳細資訊。</block>
-  <block id="be796710aeb85a06716eb7e39256193d" category="paragraph">這些任務需要_Console admin_角色。</block>
   <block id="220434cdb736458843fe145fbd4b9ca9" category="inline-link-macro">確保已安裝控制台代理</block>
   <block id="ff6929fd02a6e7a1c0faa4152fe13ffe" category="list-text"><block ref="ff6929fd02a6e7a1c0faa4152fe13ffe" category="inline-link-macro-rx"></block></block>
   <block id="9fde088755a092fd7205d2e697984007" category="inline-link-macro">確保您的系統符合要求</block>
@@ -1252,7 +1250,6 @@
   <block id="eb736865032ae478d0b6e5b412448020" category="paragraph">一個 <block ref="5f4e714854e79a1737929ec78e18ea2b" category="inline-link-macro-rx"></block> 需要：</block>
   <block id="03e55fcba3b01c6e3fb1919d269654c0" category="list-text">勒索軟體偵測策略，以及</block>
   <block id="3f6fda029d0c02be255dfd8176381b0b" category="list-text">快照策略</block>
-  <block id="1b574bfc0313243d6641e2a840917179" category="paragraph-title">如果ONTAP中存在政策（例如 ARP、FPolicy 和快照），這些策略是否會在勒索軟體復原功能中變更？</block>
   <block id="9e4bf76e69b44d54bda6324e7a451d29" category="paragraph-title">能否透過ONTAP更改策略？</block>
   <block id="8eb907afc706971993c8bde086302ff0" category="paragraph-title">可以在ONTAP中停用策略嗎？</block>
   <block id="7986143a8e8e26aa1cd4fe5e42208a2b" category="paragraph">您可以使用ONTAP中的系統管理員 UI、API 或 CLI 在偵測策略中停用 ARP。</block>
@@ -1733,7 +1730,6 @@
   <block id="c048f8419f5606e294e716a232b223a2" category="paragraph-title">勒索軟體復原能力如何與 NetApp Backup and Recovery 互動？</block>
   <block id="eadde9be35eb975c3bbd5558937ea6ce" category="paragraph">Ransomware Resilience 與 Backup and Recovery 協同工作，以發現並設定檔案共享工作負載的快照和備份原則。Ransomware Resilience 也與 Backup and Recovery 協同工作，以執行檔案和工作負載一致性還原。</block>
   <block id="79b8a65e3601fc128a20382435361146" category="paragraph-title">Ransomware Resilience 是否了解 Backup and Recovery 中已製定的策略？</block>
-  <block id="94a13b2631414c7aa1bd5efb554c98aa" category="paragraph">是的，如果您在 Backup and Recovery 中管理工作負載，則這些產品管理的原則將引入 Ransomware Resilience 。</block>
   <block id="f88bf8ade397c623545ba47ce5394409" category="paragraph-title">您可以修改從 NetApp Backup and Recovery 繼承的原有原則嗎？</block>
   <block id="dd9161665fa6e8f8df843bd9c2b959be" category="paragraph">不，您無法透過勒索軟體復原功能修改由 NetApp Backup and Recovery 管理的原則。您需要在 NetApp Backup and Recovery 中管理這些原則的任何變更。</block>
   <block id="12d4775c2501ee99b589ba7851a2ec0d" category="paragraph-title">註冊 Ransomware Resilience 後，如果在 Backup and Recovery 中新增原則會發生什麼情況？</block>
@@ -2303,7 +2299,6 @@
   <block id="b70244907e8a4cb4fbb47d6e9fdda53a" category="cell">雲端：Amazon FSx for NetApp ONTAP</block>
   <block id="b4bada7d854e6650f9cc28e404fe40fb" category="admonition">對於部署到 Amazon FSx for NetApp ONTAP 的 IRE，您無需提供此資訊。</block>
   <block id="f5b6822ed53c8f99c424ea0e8e011bf7" category="admonition">勒索軟體復原能力每個 Console 代理最多只能探索 3,000 個工作負載。</block>
-  <block id="bb4393b6187d55f98dbeb4c5bb8add00" category="list-text">每個 Console 代理程式最多可處理 3,000 個工作負載。</block>
   <block id="afce532bad172bcef50d75935d2ed43b" category="list-text">複製策略</block>
   <block id="fb9721f24a420ba827ac36665b13797e" category="doc">對使用者活動警報的自動回應</block>
   <block id="709c9c15efe20baf89cd9c0bc4da8ba3" category="inline-link-macro">自動回應使用者活動警示</block>
@@ -2738,7 +2733,6 @@
   <block id="bb23df37e6fe74c9adce400b2dce40db" category="list-text">返回勒索軟體恢復頁面。複製 ARM 範本的 JSON 程式碼，在 Azure 環境中建立 Log Analytics 自訂表、資料收集端點 （DCE）、資料收集規則 （DCR） 和 Sentinel 分析規則。</block>
   <block id="625e7b50d0584bc4bde48651c8cfc7ee" category="paragraph">當工作負載被歸類為受保護時，它會計入已購買的容量或 PAYGO 訂閱。Ransomware Resilience 會在啟用加密或使用者活動偵測原則時，將工作負載歸類為受保護。如果缺少其中至少一項偵測原則，則工作負載將被歸類為存在風險。存在風險的工作負載不會計入已購買的容量。</block>
   <block id="f6a2fb2a5374a593874b657ed729f82b" category="paragraph">在 Ransomware Resilience 中，如果工作負載啟用了_偵測_原則，則其狀態將顯示為*受保護*。此偵測原則必須包含加密偵測或可疑使用者行為偵測（或兩者兼有）。如需詳細資訊，請參閱 <block ref="ffe6233ab872c39a610f87efd1e90b37" category="inline-link-macro-rx"></block>。</block>
-  <block id="2850e23cea54ee88036b5a17e51dc5dd" category="paragraph">工作負載必須具備已啟用加密偵測或使用者行為偵測的勒索軟體保護原則，才能被視為受到保護。如果缺少其中至少一項偵測策略，則工作負載將被標記為有風險。如果工作負載具有備份或快照原則，但未啟用加密偵測或使用者行為偵測，則將被視為有風險。</block>
   <block id="6320d906c420ff6393e8f0fd47eaf876" category="paragraph">勒索軟體復原功能還提供可疑檔案副檔名偵測。如果僅啟用可疑檔案副檔名偵測此偵測原則，工作負載將標記為有風險。</block>
   <block id="eca582e2a6a980264db3e5c92d632da6" category="paragraph">為了防止勒索軟體攻擊，您應該啟用 <block ref="ffe6233ab872c39a610f87efd1e90b37" category="inline-link-macro-rx"></block>。</block>
   <block id="15970e7cc58cf4e7b2b7962f63826587" category="list-text">*工作負載資料保護*：選擇「查看全部」可在「保護」頁面上查看所有存在風險或已保護的工作負載。如果未偵測到加密或使用者活動，則工作負載被視為有風險。請參閱 <block ref="2b2daeeb32402291362fa9fa843a5c7e" category="inline-link-macro-rx"></block>。</block>
@@ -2761,7 +2755,6 @@
   <block id="d179fc0ce9fb1caf78f7eeef324bb4cc" category="list-text"><block ref="2bb10879340c875c0eb9174b288f2b45" category="inline-link-macro-rx"></block> | <block ref="c3163b3c34297c2188fd1502baa6be3c" category="inline-link-macro-rx"></block></block>
   <block id="5d5e5e55cd10a71c63c6b45dc8dba08c" category="paragraph-title">試用期結束或授權到期後會發生什麼事？</block>
   <block id="79335d9964ddd76c469e8c3e25806b99" category="paragraph">免費試用期結束或授權或訂閱到期後，除非您將其排除，否則工作負載仍會在 Ransomware Resilience 上顯示。授權或試用期過期後，您可以：</block>
-  <block id="e4afb1971795d58242b3d2928284082d" category="paragraph">若要退役 Ransomware Resilience，請提交支援請求。請求中必須包含您的組織 ID，並附註您希望退役該服務。</block>
   <block id="6a7195fecc3718afe9825234cb1a3cb0" category="section-title">過期授權</block>
   <block id="20eb08718dfdc0275c8f8c9b37d1fa4d" category="paragraph">透過 NetApp Ransomware Resilience，您可以自動化回應 <block ref="8b86ab47aa824ef9943240ff5124bbba" category="inline-link-macro-rx"></block>。當觸發使用者活動警報時，Ransomware Resilience 可以：</block>
   <block id="86ba33b27b8ac83f8c8aad8f0ecd7c6e" category="list-text">區塊使用者</block>
@@ -2873,4 +2866,15 @@
   <block id="be477216a2a05782605c951939d5638a" category="section-title">在 Azure 中新增角色，並在 Ransomware Resilience 中驗證 Microsoft Sentinel</block>
   <block id="dedb015aaf7f105f1187fe35f028dd0f" category="list-text">查看 <block ref="019fa8a22de443e4055edc5a56d223fe" category="inline-link-macro-rx"></block> 和 <block ref="5909784b16712ef276fd16aaaa47a088" category="inline-link-macro-rx"></block> 的要求。</block>
   <block id="823ff360f4694fe5d6e7799f5cab531b" category="list-text"><block ref="823ff360f4694fe5d6e7799f5cab531b" category="inline-link-macro-rx"></block></block>
+  <block id="a33058f6d7e9b78787b9ce2046845a68" category="paragraph-title">Ransomware Resilience 對 Console 代理程式有哪些要求？</block>
+  <block id="e6a2a9b3090bbbbbc5cb7d0bee74d0a5" category="inline-link-macro">審核並設定使用者的適當權限。</block>
+  <block id="d4141215d78a04bf39c8a546ff7a3219" category="paragraph"><block ref="5874c7231dd7836acd6caf7bb64d3385" category="inline-link-macro-rx"></block> 請確保您的 Console 組織中至少有一個作用中的 Console 代理程式已連接至受支援的系統。Console 代理程式必須將<block ref="d5aabb6133fba5c7ef5a4e8db21d18ae" prefix=" " category="inline-code"></block> Container 置於作用中狀態。</block>
+  <block id="166101f067ff4da4929321b7b4436a87" category="paragraph">此外，每個 Console 代理程式最多只能處理 3,000 個工作負載。您可以提出申請來提高此限制。</block>
+  <block id="61ce25f32040f390ae948a25a322f4a4" category="paragraph">若要退役 Ransomware Resilience，請提交支援請求。該請求必須包含您的組織 ID，並附註您想要退役該服務。</block>
+  <block id="c5571d2bd805b9ff90a236b8f97f4b2a" category="paragraph">工作負載必須具有已啟用加密偵測或使用者行為偵測的勒索軟體保護原則，才能被視為受到保護。如果缺少其中至少一項偵測策略，工作負載將被標示為有風險。如果工作負載具有備份或快照原則，但未啟用加密偵測或使用者行為偵測，則將被視為有風險。</block>
+  <block id="25ef6c177ba76101d5903dc7639808a9" category="paragraph">是的，如果您有在 Backup and Recovery 中代管的工作負載，這些原則將會帶入 Ransomware Resilience。</block>
+  <block id="ad454ecef2b040909651d7af492e42ff" category="paragraph-title">如果 ONTAP 中存在原則（例如 ARP 、 FPolicy 和快照）， Ransomware Resilience 是否會變更這些原則？</block>
+  <block id="33770507195ff31d97a8192589460055" category="paragraph">Ransomware Resilience 不會修改 ONTAP 中任何現有的偵測原則（ARP、FPolicy 設定）。如果您修改 Ransomware Resilience 中的任何設定，您可以置換 ONTAP 的設定。</block>
+  <block id="73f9341af639bb7291bbf568f90c32a7" category="list-text">每個 Console 代理程式的限制為 3,000 個工作負載。您可以提出申請來擴充此限制。</block>
+  <block id="450c303d7338ae99abb9140e57f1802f" category="paragraph">需要擁有_超級管理員_或_組織管理員_角色才能部署 Console 代理程式並指派權限。</block>
 </blocks>
