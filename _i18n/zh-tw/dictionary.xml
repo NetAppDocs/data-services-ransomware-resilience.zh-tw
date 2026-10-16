@@ -1170,7 +1170,6 @@
   <block id="1fe917b01f9a3f87fa2d7d3b7643fac1" category="sidebar">常問問題</block>
   <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">知識和支持</block>
   <block id="51fecb5d19a6637dea83445678fd4ffa" category="section-title">資料備份</block>
-  <block id="4fa0264ac4080dbcb96449b3dd2eff57" category="paragraph">勒索軟體恢復許可證不包括其他NetApp產品。但是，即使您沒有單獨的備份和復原許可證，勒索軟體復原能力也可以與NetApp Backup and Recovery整合。</block>
   <block id="6ff0e20f052119502398978ae7712412" category="paragraph">請按照每個步驟中的連結獲取詳細資訊。</block>
   <block id="220434cdb736458843fe145fbd4b9ca9" category="inline-link-macro">確保已安裝控制台代理</block>
   <block id="ff6929fd02a6e7a1c0faa4152fe13ffe" category="list-text"><block ref="ff6929fd02a6e7a1c0faa4152fe13ffe" category="inline-link-macro-rx"></block></block>
@@ -1340,7 +1339,6 @@
   <block id="5c024c0f8096e0fba857f661afe2dbd0" category="list-text">歐洲（法蘭克福）(eu-central-1)</block>
   <block id="d605e764d56b8615ebf6dd5f87998855" category="list-text">美國東部（維吉尼亞北部）（us-east-1）</block>
   <block id="a55a22032fc9fd630abe933324e9d4b9" category="paragraph-title">Ransomware Resilience 是否了解ONTAP中的保護設定？</block>
-  <block id="1c8f51534c2fc10dfef26d32d61c7ed3" category="paragraph">對於許可和計費，即使您沒有單獨的備份和復原許可證，勒索軟體復原功能也可以與備份和復原功能整合。如果您同時擁有備份和復原以及勒索軟體復原功能，則受這兩種產品保護的任何公開資料僅由勒索軟體復原功能計費。</block>
   <block id="6b62768f3f94df043ea31bf9c43b2a42" category="paragraph">勒索軟體復原能力可以識別以下工作負載：Oracle、檔案共享、區塊儲存、虛擬機器和虛擬機器資料儲存。</block>
   <block id="897c29783a147c6c7b7844f2d4a9e81a" category="paragraph">預覽版服務可保護BlueXP組織內各個組織中 Oracle、VM 資料儲存和本機 NAS 儲存空間上的檔案共用以及 AWS 上的Cloud Volumes ONTAP （使用 NFS 協定）上的應用程式工作負載，並將資料備份到 Amazon Web Services 雲端儲存。</block>
   <block id="f075180c986e3a7a8e0bad4fcec7c485" category="cell">15.3（64 位）至 15.6（64 位）</block>
@@ -1728,7 +1726,6 @@
   <block id="b720eb62a1de68d6cb9c9dbea3c63907" category="list-text">應用精心設計的恢復方案以滿足 RPO 策略。勒索軟體復原能力透過 NetApp Backup and Recovery 協調勒索軟體事件的復原工作。</block>
   <block id="5d81d4b181b1f6e47c262988038cd67d" category="paragraph">勒索軟體韌性會檢查您目前的備份保護、快照複本，以及 NetApp Autonomous Ransomware Protection 選項。勒索軟體韌性也會偵測來自 NetApp Backup and Recovery 的檔案共用與 VM 檔案共用的保護資訊。然後，它會建議提升您勒索軟體防護的方法。</block>
   <block id="c048f8419f5606e294e716a232b223a2" category="paragraph-title">勒索軟體復原能力如何與 NetApp Backup and Recovery 互動？</block>
-  <block id="eadde9be35eb975c3bbd5558937ea6ce" category="paragraph">Ransomware Resilience 與 Backup and Recovery 協同工作，以發現並設定檔案共享工作負載的快照和備份原則。Ransomware Resilience 也與 Backup and Recovery 協同工作，以執行檔案和工作負載一致性還原。</block>
   <block id="79b8a65e3601fc128a20382435361146" category="paragraph-title">Ransomware Resilience 是否了解 Backup and Recovery 中已製定的策略？</block>
   <block id="f88bf8ade397c623545ba47ce5394409" category="paragraph-title">您可以修改從 NetApp Backup and Recovery 繼承的原有原則嗎？</block>
   <block id="dd9161665fa6e8f8df843bd9c2b959be" category="paragraph">不，您無法透過勒索軟體復原功能修改由 NetApp Backup and Recovery 管理的原則。您需要在 NetApp Backup and Recovery 中管理這些原則的任何變更。</block>
@@ -2877,4 +2874,11 @@
   <block id="33770507195ff31d97a8192589460055" category="paragraph">Ransomware Resilience 不會修改 ONTAP 中任何現有的偵測原則（ARP、FPolicy 設定）。如果您修改 Ransomware Resilience 中的任何設定，您可以置換 ONTAP 的設定。</block>
   <block id="73f9341af639bb7291bbf568f90c32a7" category="list-text">每個 Console 代理程式的限制為 3,000 個工作負載。您可以提出申請來擴充此限制。</block>
   <block id="450c303d7338ae99abb9140e57f1802f" category="paragraph">需要擁有_超級管理員_或_組織管理員_角色才能部署 Console 代理程式並指派權限。</block>
+  <block id="8c6998a19384eedc205556ec1d5a77b6" category="paragraph-title">勒索軟體防護授權是否包含其他 NetApp 產品？</block>
+  <block id="46b0217d78ea89c9c081b6abcf978050" category="paragraph">否，勒索軟體防護授權不包含其他 NetApp 產品。</block>
+  <block id="2017d158145a1f82958e603226f6511f" category="paragraph">如果您擁有作用中的 Backup and Recovery 授權和 Ransomware Resilience，Ransomware Resilience 會探索在 Backup and Recovery 中設定的快照和備份原則。您無法在 Ransomware Resilience 中編輯 Backup and Recovery 原則，但可以取代它們。</block>
+  <block id="e7a03cecb86b19d317d9b0b42a7c67fc" category="paragraph">Ransomware Resilience 也與 Backup and Recovery 協同運作，以執行檔案與工作負載一致的恢復。對於同時受到 Ransomware Resilience 和 Backup and Recovery 發現與保護的工作負載，您可以從任一服務執行恢復。</block>
+  <block id="a8e75ad6008293b62f2f0e9d9831a35d" category="paragraph-title">如果我之前已透過 Data Infrastructure Insights 工作負載安全性啟用了使用者活動偵測，我需要了解哪些資訊？</block>
+  <block id="1d1aa737543f7a38b5529fc14884bb9a" category="paragraph">勒索軟體防護授權不包含其他 NetApp 產品。</block>
+  <block id="806ec63eaaf32091114d52559b568902" category="section-title">Data Infrastructure Insights （DII） Workload Security 使用者注意事項</block>
 </blocks>

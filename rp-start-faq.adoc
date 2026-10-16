@@ -88,10 +88,18 @@ https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles
 .Ransomware Resilience 是否了解ONTAP中的保護設定？
 是的，Ransomware Resilience 發現了在ONTAP中設定的快照計劃。
 
-.勒索軟體復原能力如何與 NetApp Backup and Recovery 互動？
-Ransomware Resilience 與 Backup and Recovery 協同工作，以發現並設定檔案共享工作負載的快照和備份原則。Ransomware Resilience 也與 Backup and Recovery 協同工作，以執行檔案和工作負載一致性還原。
+.勒索軟體防護授權是否包含其他 NetApp 產品？
+否，勒索軟體防護授權不包含其他 NetApp 產品。
 
-對於許可和計費，即使您沒有單獨的備份和復原許可證，勒索軟體復原功能也可以與備份和復原功能整合。如果您同時擁有備份和復原以及勒索軟體復原功能，則受這兩種產品保護的任何公開資料僅由勒索軟體復原功能計費。
+.勒索軟體復原能力如何與 NetApp Backup and Recovery 互動？
+如果您擁有作用中的 Backup and Recovery 授權和 Ransomware Resilience，Ransomware Resilience 會探索在 Backup and Recovery 中設定的快照和備份原則。您無法在 Ransomware Resilience 中編輯 Backup and Recovery 原則，但可以取代它們。
+
+Ransomware Resilience 也與 Backup and Recovery 協同運作，以執行檔案與工作負載一致的恢復。對於同時受到 Ransomware Resilience 和 Backup and Recovery 發現與保護的工作負載，您可以從任一服務執行恢復。
+
+如果您同時擁有備份和復原以及勒索軟體復原功能，則受這兩種產品保護的任何公開資料僅由勒索軟體復原功能計費。
+
+.如果我之前已透過 Data Infrastructure Insights 工作負載安全性啟用了使用者活動偵測，我需要了解哪些資訊？
+如果您已在使用 NetApp Data Infrastructure Insights （DII） 工作負載安全功能，則 NetApp Ransomware Resilience 可以使用相同的工作負載安全代理程式。您無需為 NetApp Ransomware Resilience 部署分隔的工作負載安全代理程式。但是，使用相同的工作負載安全代理程式需要 NetApp Ransomware Resilience Console 組織與 DII Storage Workload Security 租戶建立配對關係。請聯絡您的帳戶代表以啟用此配對。
 
 
 

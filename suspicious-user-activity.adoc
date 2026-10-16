@@ -22,9 +22,6 @@ summary: NetApp Ransomware Resilience 中的使用者活動偵測功能可協助
 
 使用者活動代理程式、資料收集器和使用者目錄連接器都可以從 Ransomware Resilience 設定儀表板進行管理。
 
-
-NOTE: 如果您已在使用 NetApp Data Infrastructure Insights （DII） 工作負載安全功能，則 NetApp Ransomware Resilience 可以使用相同的工作負載安全代理程式。您無需為 NetApp Ransomware Resilience 部署分隔的工作負載安全代理程式。但是，使用相同的工作負載安全代理程式需要 NetApp Ransomware Resilience Console 組織與 DII Storage Workload Security 租戶建立配對關係。請聯絡您的帳戶代表以啟用此配對。
-
 如果您未使用 DII，請按照此處的組態說明進行操作。
 
 
@@ -38,6 +35,13 @@ NOTE: 如果您已在使用 NetApp Data Infrastructure Insights （DII） 工作
 *所需 Console 角色* 若要啟用使用者行為偵測，您需要 **Organization admin role**。對於後續的使用者行為偵測配置，您需要 **Ransomware Resilience user behavior admin role**。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["了解NetApp Console的勒索軟體復原角色"^]。
 
 確保每個角色都在組織層級套用。
+
+
+
+[[considerations-for-data-infrastructure-insights-dii-workload-security-users]]
+=== Data Infrastructure Insights （DII） Workload Security 使用者注意事項
+
+如果您已在使用 NetApp Data Infrastructure Insights （DII） 工作負載安全功能，則 NetApp Ransomware Resilience 可以使用相同的工作負載安全代理程式。您無需為 NetApp Ransomware Resilience 部署分隔的工作負載安全代理程式。但是，使用相同的工作負載安全代理程式需要 NetApp Ransomware Resilience Console 組織與 DII Storage Workload Security 租戶建立配對關係。請聯絡您的帳戶代表以啟用此配對。
 
 
 
