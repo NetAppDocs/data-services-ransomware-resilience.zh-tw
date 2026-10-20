@@ -57,6 +57,7 @@ summary: 已知限制標識了該產品的此版本不支援的平台、設備�
 
 * 目前，您只能對 Google Cloud NetApp Volumes 工作負載套用基於加密和 FPolicy 的保護策略。您無法套用使用者行為保護策略。
 * 目前 Google Cloud NetApp Volumes 不支援使用複寫的保護策略。
+* Google Cloud NetApp Volumes 的 Flex 服務等級支援目前處於預覽階段。
 
 
 

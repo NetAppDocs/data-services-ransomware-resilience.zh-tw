@@ -2881,4 +2881,6 @@
   <block id="a8e75ad6008293b62f2f0e9d9831a35d" category="paragraph-title">如果我之前已透過 Data Infrastructure Insights 工作負載安全性啟用了使用者活動偵測，我需要了解哪些資訊？</block>
   <block id="1d1aa737543f7a38b5529fc14884bb9a" category="paragraph">勒索軟體防護授權不包含其他 NetApp 產品。</block>
   <block id="806ec63eaaf32091114d52559b568902" category="section-title">Data Infrastructure Insights （DII） Workload Security 使用者注意事項</block>
+  <block id="7d20abced2097011f465f4a9fe86d1f4" category="paragraph">當您在 Ransomware Resilience 中啟動使用者活動偵測時，系統會使用目前儲存在 Console 中的憑證來管理您的資料收集器。如果您先前透過 Data Infrastructure Insights （DII） Workload Security 啟用了使用者活動偵測，則 Console 憑證將取代您先前在 DII 中用於管理資料收集器的憑證。</block>
+  <block id="cbb0b1774db28ef79ba2a2fa819d9cfb" category="list-text">Google Cloud NetApp Volumes 的 Flex 服務等級支援目前處於預覽階段。</block>
 </blocks>

@@ -43,6 +43,8 @@ summary: NetApp Ransomware Resilience 中的使用者活動偵測功能可協助
 
 如果您已在使用 NetApp Data Infrastructure Insights （DII） 工作負載安全功能，則 NetApp Ransomware Resilience 可以使用相同的工作負載安全代理程式。您無需為 NetApp Ransomware Resilience 部署分隔的工作負載安全代理程式。但是，使用相同的工作負載安全代理程式需要 NetApp Ransomware Resilience Console 組織與 DII Storage Workload Security 租戶建立配對關係。請聯絡您的帳戶代表以啟用此配對。
 
+當您在 Ransomware Resilience 中啟動使用者活動偵測時，系統會使用目前儲存在 Console 中的憑證來管理您的資料收集器。如果您先前透過 Data Infrastructure Insights （DII） Workload Security 啟用了使用者活動偵測，則 Console 憑證將取代您先前在 DII 中用於管理資料收集器的憑證。
+
 
 
 [[create-a-user-activity-agent]]
