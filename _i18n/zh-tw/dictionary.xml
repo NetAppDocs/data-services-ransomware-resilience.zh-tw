@@ -1957,24 +1957,13 @@
   <block id="fcbb0e1baa9ae5913c0059a3babc98ba" category="paragraph">在執行乾淨還原之前，您必須建立隔離的復原室。</block>
   <block id="90f9f1ae9aae8bda3367df6cbbd98883" category="paragraph">建立隔離復原室的流程會因環境是在雲端還是在內部部署而有所不同。請務必遵循正確位置的說明。</block>
   <block id="c8e2277ecfb1427838c488c217f99466" category="open-title">雲端</block>
-  <block id="b0836e1bf6680e789281aea3293f7647" category="list-text">對於雲端型 IRE，請選擇 **Amazon Web Services**。</block>
-  <block id="b330f48d8947ae91888a185951c00937" category="list-text">展開 *Systems* 區段。選擇您要連線至 IRE 的系統。對於您選取的每個系統，您必須提供儲存 VM 的 IP 位址、子網路遮罩和閘道。</block>
   <block id="be33043acadffab164c32971cd856af7" category="inline-image-macro">系統選擇介面的螢幕擷取畫面。</block>
-  <block id="89fdf1c0dc132ad5060755aed85034a8" category="list-text">展開 **Authentication** 部分。</block>
-  <block id="a81c4edeb10492c8584a0c9082f6ce84" category="list-text">展開 *Virtual private cloud (VPC)* 區段。輸入要部署 IRE 的 VPC ID。</block>
   <block id="c2b8af5a06c2ce8a91c4861ae659df43" category="inline-image-macro">IRE 認證設定的螢幕截圖。</block>
-  <block id="220e304e2191688ccb248376282d530b" category="list-text">選擇 **Add** 以建立 IRE。</block>
   <block id="f0e69ccbb7ad96f546f7924206944bfa" category="open-title">內部部署</block>
   <block id="9f1d53078d7f9d9907fb2e5042915794" category="list-text">在 Clean restores 卡片中，如果這是您的第一個環境，請選擇 **Add**；如果您已經建立了一個環境，請選擇 **Manage**。</block>
   <block id="a32ffcf87a910c4dc1998036da51a79e" category="list-text">對於位置，請選擇 **On-premises**。</block>
-  <block id="de069b391b655fa33e7b553f551b3ed8" category="list-text">展開 *Name* 區段。為 IRE 指定 **Name**。</block>
-  <block id="da5888e486faa08ea3f4a546d8ea2b6b" category="list-text">展開 *Systems* 區段。選擇您要連線至 IRE 的系統。為每個在 IRE 中需要恢復工作負載的系統指派儲存 VM IP、子網路遮罩和閘道。</block>
   <block id="6c98e0cb0c66954d78f2191bf8fdcd90" category="paragraph">您選擇的每個系統都必須指派一個 IP 位址。您可以選擇主系統或輔助系統。如果主系統沒有未加密的快照或主系統不可用，則可以使用輔助系統進行分析和恢復。</block>
-  <block id="88fd1b8a6e78502ed71683ed691e3faa" category="list-text">展開 **Console agent** 部分。從下拉式選單中選擇已部署在 IRE 中的 Console agent。</block>
-  <block id="2c164c9a5db457fb3a29bc4f36a90e11" category="list-text">請提供 vCenter 伺服器驗證憑證：*IP 位址* 或完全限定網域名稱（FQDN）、*連接埠*、*使用者名稱* 和 *密碼*。</block>
   <block id="dc7731af7d2a810f6507b9403958dd46" category="list-text">選擇 **Authenticate** 以確認憑證。請等待 UI 確認您的憑證後再繼續。</block>
-  <block id="3c313c8ed317dbe7d4203dcdd31c8a19" category="inline-image-macro">運算選擇介面的螢幕擷取畫面。</block>
-  <block id="8cae18dea7d74591e21c2f2407666e60" category="paragraph"><block ref="8cae18dea7d74591e21c2f2407666e60" category="inline-image-macro-rx" type="image"></block></block>
   <block id="16a6474800dcc57e48f9c5fecf7f4b0a" category="paragraph">建立 IRE 後，您可以修改其中的系統。在設定標籤中，選取 **Isolated recovery environments**。找到您要編輯的 IRE，選取動作功能表<block ref="2f43b42fd833d1e77420a8dae7419000" prefix=" " category="inline-code"></block>，然後選取 **Edit**。繼續修改系統。完成後選取 **Save**。</block>
   <block id="59f0ec64e6ca9eb2b145c2d0b972a631" category="section-title">刪除隔離的復原環境</block>
   <block id="3b98dd3eb2a4ab1e4dbff3d07d4b9987" category="paragraph">您無法刪除具有作用中還原作業的 IRE；您可以取消還原作業或等待還原完成，然後再刪除 IRE。</block>
@@ -1997,8 +1986,6 @@
   <block id="8880534a0e139c017e28bbf6bc44e84b" category="open-title">內部部署到內部部署</block>
   <block id="9df5336cadaa8da9a21a00f3f55c497b" category="list-text">輸入帳戶的 **Access key** 和 **Secret key**。</block>
   <block id="d58e1a84905920b61ed4f1f26262aeb9" category="doc">在 NetApp Ransomware Resilience 中設定環境以進行乾淨還原</block>
-  <block id="105f7259b2dc81485c4baf296e55aec5" category="list-text">展開 **Name** 部分。輸入環境的 **Name**。</block>
-  <block id="2eda5a6118ec15220cd7332a61e3afa7" category="list-text">輸入雲端 **Account** ID，然後從下拉式選單中選擇該帳號所在的 **Region**。您只能在受支援的區域中部署 IRE。</block>
   <block id="8a6858555f085685f5bb427c4dbd4219" category="paragraph">Ransomware Resilience 會在您選擇「新增」後測試連線，這可能需要幾分鐘。當 IRE 的狀態顯示為「已部署」時，表示 IRE 已成功部署。</block>
   <block id="72fe6d9d17dfd2ab74965b68d4ad7d09" category="list-text">選擇要部署 VM 的 *Datacenter* 和 *Cluster*。</block>
   <block id="3e00060a376e7413a4ebadfd06157d94" category="list-text">選擇 ESXi 主機的 *Datastore* 和 *Network*。</block>
@@ -2626,8 +2613,6 @@
   <block id="b17193aa985fc14bbddcb4c3fa91bb7b" category="list-text">選擇 *Agents and collectors tab* ，然後選擇 **User directory connectors** 選項卡，再選擇 **Add**。</block>
   <block id="3e48c32fa5e1161a5567c6a86a9f0349" category="list-text">在隔離清潔和恢復卡中，選擇**新增**以建立隔離的恢復環境。</block>
   <block id="9c89138e4c42cb6a49a2538e0f80a53d" category="list-text">在「類型」部分，選擇 *On-demand cleaning*。</block>
-  <block id="393e58657e131f2b72649ed0cf5217cd" category="list-text">展開「潔淨室運算」部分。</block>
-  <block id="d5ea44941680de66202040b32bbebc5a" category="list-text">展開「Clean room VMs」部分，該部分內容會根據您在「運算」部分中的輸入進行填充。</block>
   <block id="13579afd289a7073b60083da3804071a" category="admonition">如果需要更改 IRE 的任何詳細資訊，請從 Ransomware Resilience 側邊欄中選擇 *Settings*，然後在 Isolation cleaning and recovery 卡片中選擇 **Manage**。選擇 IRE 的行動選單，然後選擇 **Edit** 以變更組態。</block>
   <block id="ae4022180a6e4bea847e0d317afacc94" category="list-text">在 Isolation 清理和恢復卡中，選擇 **Manage**。</block>
   <block id="01b8b50c6af6a26d04385207f4b3c02e" category="section-title">2026年8月13日</block>
@@ -2882,5 +2867,25 @@
   <block id="1d1aa737543f7a38b5529fc14884bb9a" category="paragraph">勒索軟體防護授權不包含其他 NetApp 產品。</block>
   <block id="806ec63eaaf32091114d52559b568902" category="section-title">Data Infrastructure Insights （DII） Workload Security 使用者注意事項</block>
   <block id="7d20abced2097011f465f4a9fe86d1f4" category="paragraph">當您在 Ransomware Resilience 中啟動使用者活動偵測時，系統會使用目前儲存在 Console 中的憑證來管理您的資料收集器。如果您先前透過 Data Infrastructure Insights （DII） Workload Security 啟用了使用者活動偵測，則 Console 憑證將取代您先前在 DII 中用於管理資料收集器的憑證。</block>
-  <block id="cbb0b1774db28ef79ba2a2fa819d9cfb" category="list-text">Google Cloud NetApp Volumes 的 Flex 服務等級支援目前處於預覽階段。</block>
+  <block id="9c69ebaff6f598ab67f6d1508e967991" category="doc">增強型隔離的恢復環境組態</block>
+  <block id="4e23b3af211270de0f48ae9f92705a15" category="paragraph">Ransomware Resilience 現已提供增強的隔離的恢復環境組態工作流程。新的工作流程釐清並簡化了為雲端或內部部署環境設定隔離的恢復環境的程序。</block>
+  <block id="6651425a5192383a0828ba04484a8d4e" category="section-title">Google Cloud NetApp Volumes Flex 服務層級已正式發布</block>
+  <block id="70f3cf57a8612bb7c7ed814b764ffe7b" category="paragraph">Ransomware Resilience 中的 Google Cloud NetApp Volumes Flex 服務層級支援現已正式推出（GA）。</block>
+  <block id="eee605177fdd37df13557f2e5a708a3e" category="list-text">對於雲端型的 IRE，請選擇 **Amazon Web Services** 作為位置。</block>
+  <block id="4310001295e1d1db81585fc985cdb925" category="list-text">輸入環境的 **Name**。</block>
+  <block id="58f6785310712567477337dc13a12c26" category="list-text">展開 *系統* 區段。選擇要連線至 IRE 的系統。對於您選擇的每個系統。每個系統都必須具備連至 IRE 的網路連線。您可能需要為每個系統提供資料 LIF IP 位址，以建立乾淨的還原恢復點。</block>
+  <block id="770bb8eb8b16b38f394137430a939c09" category="list-text">對於 Amazon FSx for NetApp ONTAP 以外的每個已新增系統，請選擇 *編輯儲存設備 VM*。在彈出視窗中，輸入 *儲存設備 VM IP 位址* 和 *儲存設備 VM 子網路遮罩*。對於 *廣播網域*，選擇預設或管理。您也可以選擇輸入 *儲存設備 VM 閘道*。</block>
+  <block id="b437d56d52049ed55249efaeb9aff257" category="list-text">在 *驗證* 區段中，輸入雲端 **帳戶** ID，然後從下拉式選單中選擇該帳戶的 **區域**。您只能在受支援的區域部署 IRE。</block>
+  <block id="f1bf93d681f0d253588359efb73f2e2d" category="admonition">該帳戶必須具有必要的權限，才能允許 Ransomware Resilience 部署 Console 代理程式並建立隨選無塵室。</block>
+  <block id="266bb5e81c63787b058d80199faaa22e" category="list-text">展開 *Amazon VPC* 區段。輸入要部署 IRE 的虛擬私有雲 ID。（這是您在先決條件中建立的 VPC。）</block>
+  <block id="cd40948356df51e6137e1790bfc4cffa" category="list-text">選取 *下一步* 以審查組態。</block>
+  <block id="b4f8a430d9a16d108360d1e973ff987f" category="list-text">審查組態。選取 *新增* 以建立 IRE。</block>
+  <block id="e0cd70b5f1ef7aaf1987c21f01b085ec" category="list-text">輸入*隔離恢復環境名稱*。</block>
+  <block id="8d3a4e5cee284fdb67453a248ff48de9" category="list-text">展開 *Systems* 區段。選擇您要連線至 IRE 的系統。</block>
+  <block id="77acf99c95b57ba6e73764570d38fbc9" category="list-text">對於您新增的每個系統，請選擇 *編輯儲存設備 VM*。在快顯視窗中，輸入 *儲存設備 VM IP 位址* 和 *儲存設備 VM 子網路遮罩*。對於 *廣播網域*，請選擇預設或管理。您可以選擇輸入 *儲存設備 VM 閘道*。</block>
+  <block id="8bc9b6176ff2c39127e3ed21725523ba" category="list-text">從下拉式選單中選擇已部署在 IRE 中的 Console agent。</block>
+  <block id="20798b94b33c0c5f219632c2bcc586c8" category="list-text">請提供用於驗證 vCenter 伺服器的憑證：*IP 位址或完整網域名稱（FQDN）*、*連接埠*、*使用者名稱*和*密碼*。</block>
+  <block id="54b513ce48479811874932d2e8f5bdc2" category="list-text">展開 *潔淨室運算部分*。</block>
+  <block id="e3ab54ceb75e6b462d073f1d905675a2" category="list-text">選擇位於 ESXi 主機上的虛擬機，這些虛擬機將用作恢復過程中複製的基礎虛擬機。</block>
+  <block id="d3b51a13c8511879c5378f17bd12c127" category="section-title">2026 年 10 月 20 日</block>
 </blocks>
