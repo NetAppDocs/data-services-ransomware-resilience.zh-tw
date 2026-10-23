@@ -13,6 +13,15 @@ Ransomware Resilience 現已提供增強的隔離的恢復環境組態工作流�
 
 
 
+[[enhanced-workflow-for-enabling-user-activity-monitoring]]
+=== 用於啟用使用者活動監控的增強工作流程
+
+Ransomware Resilience 改善了啟用使用者活動監控的工作流程。先前，每次在工作負載上啟用包含使用者活動監控的勒索軟體保護策略時，Ransomware Resilience 都會測試資料收集器的連線。此次更新後，如果儲存設備 VM 存在資料收集器且處於「running」狀態，則會跳過此檢查，進而加快保護工作流程。
+
+如需詳細資訊，請參閱 link:link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect.html["保護工作負載"^]。
+
+
+
 [[google-cloud-netapp-volumes-flex-service-level-generally-available]]
 === Google Cloud NetApp Volumes Flex 服務層級已正式發布
 

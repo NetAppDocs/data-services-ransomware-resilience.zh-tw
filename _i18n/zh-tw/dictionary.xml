@@ -1604,7 +1604,6 @@
   <block id="d64f95921199e6f185b7d45fa5313dc7" category="paragraph">Ransomware Resilience 報告現在會在 **Summary** 報告中記錄受支援和不受支援的磁碟區的資訊。使用此資訊可以診斷系統中的磁碟區為何可能不符合勒索軟體防護條件。</block>
   <block id="56ea37444fe804f14e803d34221ed604" category="paragraph">NetApp Ransomware Resilience 使用者行為偵測使您能夠應對使用者層級的勒索軟體事件。您必須建立一組代理程式才能啟用使用者行為偵測。在啟用偵測之前，您必須確保您符合規定的作業系統、伺服器和網路要求，以便 Ransomware Resilience 能夠正確偵測和報告事件。</block>
   <block id="dc63ea1172fd494feb979a5719e55127" category="doc">在 NetApp Ransomware Resilience 中監控工作負載健全狀況</block>
-  <block id="7b22f091960db68b59580f7bb46cb2f0" category="paragraph">勒索軟體防護策略是 NetApp Ransomware Resilience 的關鍵功能：它們支援偵測、防護和複寫。防護策略是網路安全態勢的重要組成部分。</block>
   <block id="43cf481327dfdef7257dfcd2239c1c16" category="list-text">*加密偵測*</block>
   <block id="b2a1cab5712cdb105f101f829159956b" category="list-text">*可疑使用者行為偵測*</block>
   <block id="e221e0c0391c288e04416b2254112154" category="list-text">*封鎖可疑的檔案副檔名*</block>
@@ -2888,4 +2887,9 @@
   <block id="54b513ce48479811874932d2e8f5bdc2" category="list-text">展開 *潔淨室運算部分*。</block>
   <block id="e3ab54ceb75e6b462d073f1d905675a2" category="list-text">選擇位於 ESXi 主機上的虛擬機，這些虛擬機將用作恢復過程中複製的基礎虛擬機。</block>
   <block id="d3b51a13c8511879c5378f17bd12c127" category="section-title">2026 年 10 月 20 日</block>
+  <block id="07405e58de7ae5291e2723155a5869b4" category="section-title">用於啟用使用者活動監控的增強工作流程</block>
+  <block id="dd9dd4a4b292f36f08cee46f9ba3ffa3" category="paragraph">Ransomware Resilience 改善了啟用使用者活動監控的工作流程。先前，每次在工作負載上啟用包含使用者活動監控的勒索軟體保護策略時，Ransomware Resilience 都會測試資料收集器的連線。此次更新後，如果儲存設備 VM 存在資料收集器且處於「running」狀態，則會跳過此檢查，進而加快保護工作流程。</block>
+  <block id="b79c3e2214dfd55d5e8b57ef1d6ae5bb" category="inline-link-macro">保護工作負載</block>
+  <block id="5f705092fbb64e2adcc5b83793eed660" category="paragraph">如需詳細資訊，請參閱 <block ref="f5df6f8f09e7648e9d6889e3e6e725cb" category="inline-link-macro-rx"></block>。</block>
+  <block id="d64a907f57f420b81a119fce287ff09f" category="paragraph">勒索軟體保護策略是 NetApp Ransomware Resilience 的關鍵功能：它們支援偵測、保護和複寫。啟用勒索軟體保護策略以偵測勒索軟體攻擊，並確保您擁有用於恢復的保護基準。</block>
 </blocks>
