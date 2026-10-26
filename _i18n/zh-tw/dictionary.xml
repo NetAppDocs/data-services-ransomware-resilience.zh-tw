@@ -1869,17 +1869,14 @@
   <block id="d08d6f8d7a531831181b973c3132aaef" category="paragraph">NetApp Ransomware Resilience 提供乾淨還原，能在勒索軟體攻擊後引導進行復原。要執行乾淨還原，您必須先建立一個隔離復原環境（IRE），可以是在本地端或支援的雲端環境中。在 IRE 中，您會建立一個乾淨空間，讓 Ransomware Resilience 將工作負載隔離，以判斷哪些檔案是乾淨的，哪些則受到勒索軟體影響。</block>
   <block id="f6ee05d779160a7db74d926e2bb640f7" category="section-title">瞭解全新還原</block>
   <block id="3f2567a86f8c54d04ec6273cdb7e3a90" category="list-text">**設定**：要執行乾淨還原，您必須先建立 IRE，然後選擇要還原的工作負載。Ransomware Resilience 會建立一個乾淨的環境，所有針對該工作負載的操作都會在該環境中執行。</block>
-  <block id="c3763704f64261ad7b74c0b6ece3a5e7" category="list-text">**分析**：在無塵室中，NetApp Ransomware Resilience 會分析所有快照，以檢查是否有加密。乾淨還原會決定還原對應，以判斷最佳還原計畫。</block>
   <block id="5cdee73c83008a843d9dbb0a991b8307" category="paragraph">一旦發現某個還原點不包含受影響的檔案，則跳過所有更早的還原點。例如，如果勒索軟體攻擊事件發生在 10 月 10 日，並且在 10 月 7 日上午 10:21 發現了一個不包含受影響檔案的還原點，則跳過 10 月 7 日上午 10:21 之前的所有還原點。</block>
   <block id="82e75ee1827478564b33a5410c9eb863" category="paragraph">分析步驟也會顯示已審查的檔案數量，指出哪些檔案受到影響，哪些檔案未受到影響。</block>
   <block id="3ad61c0b3a3d27855f2b93882effa895" category="list-text">**方案**：選擇所提供的還原選項：</block>
-  <block id="bcec21f7634632270763ec4fbec096be" category="paragraph">在規劃步驟中，您還可以檢視檔案歷史記錄，以了解勒索軟體事件何時影響了檔案，以及還原點與該事件在時間上的關係。</block>
   <block id="d4b88ae7112ba206532c2177bf4d3ee7" category="list-text">**清理**：Ransomware Resilience 會從復原點移除惡意軟體。如果某些檔案無法清理，則會將其從復原中排除，並隔離到單獨的位置。</block>
   <block id="df2aee92cf409d5307ab1b2587c12b51" category="list-text">**RESTORE**：Ransomware Resilience 會將乾淨的資料還原到來源環境中。</block>
   <block id="1f0b82560627b660c6c6958a1df834b8" category="section-title">支援的組態</block>
   <block id="01c81fea09d285ebadc2362452091509" category="list-text">每個 Ransomware Resilience 帳戶只能建立一個 IRE。每個 IRE 最多可以包含三個 clean room。</block>
   <block id="582cfdbdcce499f277827ab3d0e7be89" category="list-text">目前僅支援對 NAS 檔案共用 （NFS/CIFS） 進行乾淨復原。</block>
-  <block id="9c69ad94c9075f0b7cad75c76d595107" category="list-text">您必須將乾淨還原還原至來源環境。</block>
   <block id="3f1675c8b59091961a73a7cb3f4ccc76" category="list-text">您可以在雲端或內部部署環境中建立 IRE。目前支援下列組態：</block>
   <block id="9937b29fcbc513990ee3a11d520463ec" category="cell">目的地（IRE）</block>
   <block id="936e18cf7bf36043950dc2aaedf4d3e0" category="cell">支援的目的地區域</block>
@@ -1897,7 +1894,6 @@
   <block id="fc9897437d0058f47163b41933bf7218" category="list-text">使用相同的安全性識別碼（SID）會導致驗證和安全性衝突。</block>
   <block id="b8a224e639154658d903c119ad01f115" category="list-text">使用相同的電腦名稱 (CN) 會導致網路衝突。</block>
   <block id="42d5a005352158447d080ff821694db4" category="list-text">使用相同的機器身分會導致授權和啟動問題。</block>
-  <block id="2b973fe4e18c7b4ee211cfe2a2373d41" category="paragraph">為避免這些衝突，Ransomware Resilience 會對複製虛擬機器執行 sysprep，重設 SID、CN 和機器識別碼。重設這些值可確保複製虛擬機器作為獨立實例運行，不會幹擾來源虛擬機器。</block>
   <block id="c94b2ef9dde0531d36cb0d4e5d7b4b72" category="section-title">次要來源</block>
   <block id="4a03772068b579d9b09ff0433b7acadd" category="paragraph">根據預設，全新還原程序會分析來源環境中的快照。如果來源環境無法使用，或來源上沒有未加密的快照，則全新還原會分析次要系統上的快照（如果您已設定次要系統）。</block>
   <block id="bf6aff190124dd12362477474eddaf9b" category="paragraph">全新還原是 Ransomware Resilience 的一部分。執行全新還原或建立 IRE 不需要額外的授權。</block>
@@ -1906,25 +1902,17 @@
   <block id="b8e0a8b93f5e303e66c1913fea32d6c2" category="list-text">當 IRE 部署在 AWS 中並啟動乾淨還原時，會在 IRE 內的無塵室中部署兩個 t3.medium AWS EC2 執行個體，用於清除加密和惡意軟體。</block>
   <block id="c21b1c1f109ee448ac505029595363ff" category="list-text">在 Cloud Volumes ONTAP 中，乾淨還原會為中繼資料磁碟區和快照複本建立乾淨室儲存 VM 以供分析。</block>
   <block id="794fbe3384113d14f1fdcd8989bf96c9" category="paragraph">請確保您已完成所選全新還原部署類型的所有先決條件。選擇您所選 IRE 組態對應的選項卡。</block>
-  <block id="97b3465a0840a995756be84349359712" category="admonition">建立 IRE 時，必須在建立 IRE 的系統選擇步驟中新增要用於分析的每個系統 （主系統或輔助系統）。</block>
   <block id="f936c9befadd0c2d8782d30172d6b01c" category="open-title">雲端到雲端</block>
   <block id="a398547216c8a6f879cf6f1f9ece192b" category="paragraph">此圖說明雲端對雲端全新還原組態的範例。在建立 IRE 之前，請先檢閱此圖以及您需要設定的資源。</block>
   <block id="e4c9c1fbddfacd425e4392d01cc2e86d" category="image-alt">雲端對雲端全新還原示意圖</block>
-  <block id="ab667ad4c2c05508cbadf5243680d8f5" category="paragraph">此圖展示了從內部部署到雲端的全新還原組態範例。在建立 IRE 之前，請先檢閱此圖以及您需要設定的資源。</block>
-  <block id="e2089e21752dabbd3ef51ff9a49553db" category="inline-image-macro">雲端到內部部署的全新還原示意圖</block>
-  <block id="e625cf867c975ae8e97fac00f8ea41e7" category="paragraph"><block ref="e625cf867c975ae8e97fac00f8ea41e7" category="inline-image-macro-rx" type="image"></block></block>
   <block id="57983f59ac18dd6402d0d93159c0e4f3" category="paragraph">此圖說明內部部署至內部部署全新還原組態的範例。在建立 IRE 之前，請先檢閱此圖以及您需要設定的資源。</block>
-  <block id="4d3cce2603ee3aa9f3e68180c988fecb" category="paragraph"><block ref="4d3cce2603ee3aa9f3e68180c988fecb" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1bd140cbc0c8258678984fa95a11c4e7" category="list-text">在您選擇連接到 IRE 以還原工作負載的每個系統中，都會建立一個儲存虛擬機器（SVM）。您必須為每個用作無塵室 SVM 資料 LIF 的系統提供一個專用 IP 位址。</block>
   <block id="dddae7341366d21d7817814cf5648201" category="list-title">主機與 vCenter</block>
   <block id="4c83fbda122cce9ae58d211347f6ad57" category="list-text">vCenter 必須是 7.0 或更高版本，並且至少有一個資料中心。</block>
-  <block id="de09cac8955fbf4a538227b1a500f1ea" category="list-text">ESXi 主機必須是 ESXi 版本 7.0 或更新版本，且至少有一台主機具有足夠的 CPU 和記憶體資源可用於複製 VM。</block>
   <block id="d60d7d94a2b0fa737cc49124079ae916" category="list-text">提供的 vCenter 憑證必須具有探索資源和複製 VM 的權限。</block>
   <block id="583b10215b97e432386097ad4ec74fba" category="list-title">基礎虛擬機器（Windows 或 Linux）</block>
-  <block id="8e43f7e3e1b14cfafc8b3e06e57ce8f7" category="list-text">在乾淨還原過程中，基礎 VM 會複製到選定的資料中心、放置在所選的 ESXi 運算上、對應至指定的資料存放區、並連接至指定的網路。複製 VM 時，會設定為具有 2 個 vCPU 和 4 GB RAM（適用於 Linux 或 Windows VM）以及與基礎 VM 相同的磁碟空間量。每個乾淨還原工作階段都會使用指定 CIDR 範圍中的兩個 IP 位址。</block>
   <block id="8cf10fd69a4fd984472b32ac076fd294" category="list-text">您必須提供足夠的 IP 位址範圍，以容納多個並行的無塵室工作階段。恢復完成後，IP 位址會被釋放。</block>
   <block id="5de22c7c2e6d79be9397c6ce6e52329d" category="list-text">資料存放區應有足夠的可用容量來容納複製的 VM。</block>
-  <block id="f57c45eba65afff0aceb3a08fcbcb844" category="list-text">IP 位址範圍必須以 CIDR 格式指定（例如 100.100.0.0/24）</block>
   <block id="907c95835e464d0d2873ade7ea1a6aa0" category="list-text">對於 Linux VM：</block>
   <block id="544db10e10ef5df6ce60a5904860672f" category="list-text">作業系統必須是 Ubuntu Linux 20.04 或更新版本。</block>
   <block id="406c1681779df816214c3844edb2bea6" category="list-text">內部部署系統必須開啟電源。</block>
@@ -1933,12 +1921,7 @@
   <block id="e1be34a58f3251e0469bedfad3e4788d" category="list-text">您必須安裝 nfs-common。</block>
   <block id="66ed64c9284af661b30715d4eca9f181" category="list-text">您必須至少有 40 GB 的可用空間。</block>
   <block id="300cc7d3b66cf666cb37df412b0cc68b" category="list-text">對於 Windows VM ：</block>
-  <block id="21755314d24463f2d188ab45bb05c0c0" category="list-text">Windows 虛擬機器應有 20 GB 的可用空間。</block>
-  <block id="90d564042949a5f93242647a2eebfa5a" category="list-text">作業系統應為 Windows Server 2022 或 2025。</block>
-  <block id="f4202e7e0c5094531b708b50600cc832" category="list-text">應安裝並執行 VMware Tools。</block>
   <block id="09b7c2aa37556075a97e0692779f37aa" category="list-text">必須啟用 WinRM。</block>
-  <block id="3150667c3111f1fed62e5265ad610aa2" category="list-text">應設定 IP。</block>
-  <block id="8521641d0ead625e5ab746c26c3df774" category="list-text">請確保您擁有允許複製基礎 VM 的適當授權。</block>
   <block id="b69e202d94775b8134a93d5f20d13c9e" category="list-text">VM 必須已開啟電源。</block>
   <block id="eec89088ee408b80387155272b113256" category="list-title">網路</block>
   <block id="5d1a1ff59e66d0bc9d1daac52f5b90db" category="list-text">設定 VLAN 資源，使其擁有以下存取權限：</block>
@@ -1953,10 +1936,7 @@
   <block id="c0d06f34f409c88591b7f6400fe18f79" category="list-title">專用 Console 代理程式</block>
   <block id="7ceddaa8655f37336fb68de0bd913377" category="inline-link-macro">在本機部署 Console 代理程式</block>
   <block id="aa147883aef6768d6c780bb0a1c8f82b" category="list-text">為 IRE 部署專用的 NetApp Console 代理程式。Console 代理程式必須部署在目的地 vCenter 中，並可存取無塵室 VLAN。如需部署程序的詳細資訊，請參閱 <block ref="8982c6b7b71ee0cfe0da7587be46f6b1" category="inline-link-macro-rx"></block>。</block>
-  <block id="fcbb0e1baa9ae5913c0059a3babc98ba" category="paragraph">在執行乾淨還原之前，您必須建立隔離的復原室。</block>
-  <block id="90f9f1ae9aae8bda3367df6cbbd98883" category="paragraph">建立隔離復原室的流程會因環境是在雲端還是在內部部署而有所不同。請務必遵循正確位置的說明。</block>
   <block id="c8e2277ecfb1427838c488c217f99466" category="open-title">雲端</block>
-  <block id="be33043acadffab164c32971cd856af7" category="inline-image-macro">系統選擇介面的螢幕擷取畫面。</block>
   <block id="c2b8af5a06c2ce8a91c4861ae659df43" category="inline-image-macro">IRE 認證設定的螢幕截圖。</block>
   <block id="f0e69ccbb7ad96f546f7924206944bfa" category="open-title">內部部署</block>
   <block id="9f1d53078d7f9d9907fb2e5042915794" category="list-text">在 Clean restores 卡片中，如果這是您的第一個環境，請選擇 **Add**；如果您已經建立了一個環境，請選擇 **Manage**。</block>
@@ -1988,7 +1968,6 @@
   <block id="8a6858555f085685f5bb427c4dbd4219" category="paragraph">Ransomware Resilience 會在您選擇「新增」後測試連線，這可能需要幾分鐘。當 IRE 的狀態顯示為「已部署」時，表示 IRE 已成功部署。</block>
   <block id="72fe6d9d17dfd2ab74965b68d4ad7d09" category="list-text">選擇要部署 VM 的 *Datacenter* 和 *Cluster*。</block>
   <block id="3e00060a376e7413a4ebadfd06157d94" category="list-text">選擇 ESXi 主機的 *Datastore* 和 *Network*。</block>
-  <block id="30329b19b858d26d073ea4ab5feeed6f" category="list-text">請以 CIDR 格式輸入 VM 的 *IP 位址範圍*（例如 10.0.0.1/24）、*子網路遮罩*和*閘道*。</block>
   <block id="1a65a52eeaaaf2a882bf42fa7b872483" category="list-text">對於 Ransomware Resilience 用於掃描勒索軟體的 Linux VM，請從下拉式選單中選取 VM，然後輸入 VM 的*使用者名稱*和*密碼*。</block>
   <block id="3c4a04ceaab48b61f17ab0bd613644c0" category="list-text">對於用於掃描的 Windows VM，請從下拉式選單中選擇該 VM，然後輸入該 VM 的 *User name* 和 *Password*。</block>
   <block id="13291e241521a2260f7ae5746544e195" category="list-text">選擇 **Add** 以建立 IRE。選擇 Add 後，Ransomware Resilience 會測試連線；此過程可能需要幾分鐘。當 IRE 的狀態顯示為「deployed」時，表示已成功部署。</block>
@@ -2135,7 +2114,6 @@
   <block id="0d82e39ef01b66f1049f774775f69a57" category="inline-image-macro">備用還原目的地的螢幕擷取畫面</block>
   <block id="84c03f1b38aa942e542555e111083674" category="paragraph"><block ref="84c03f1b38aa942e542555e111083674" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f5cfed6a695ca584c4de91e043cec8df" category="list-text">選擇 **Release resources and exit** 以釋放資源並關閉 clean room。若要確認，請選擇 **End**。</block>
-  <block id="ee9eb963788511d80fc2e4d572229dfc" category="paragraph">如果主要來源無法使用，且您已設定次要來源，則全新還原作業將還原至次要來源。</block>
   <block id="1ed548d363a0d2a6ce0c5db113b94db8" category="paragraph">建立 IRE 時，您可以選擇新增次要來源。</block>
   <block id="61fcfe4267994f7a09ac2c0eac28d82e" category="admonition">如果單一 Console 組織中有多個 Console 代理程式，則 Ransomware Resilience 將掃描 Console UI 中目前選定的代理程式以外的所有 Console 代理程式上的 ONTAP 資源。</block>
   <block id="8c2c19111935f9243c0b70cc9147c7f6" category="list-text">對於 ONTAP 或 Cloud Volumes ONTAP 叢集，勒索軟體復原功能需要 ONTAP 版本 9.11.1 或更高版本。</block>
@@ -2872,24 +2850,47 @@
   <block id="70f3cf57a8612bb7c7ed814b764ffe7b" category="paragraph">Ransomware Resilience 中的 Google Cloud NetApp Volumes Flex 服務層級支援現已正式推出（GA）。</block>
   <block id="eee605177fdd37df13557f2e5a708a3e" category="list-text">對於雲端型的 IRE，請選擇 **Amazon Web Services** 作為位置。</block>
   <block id="4310001295e1d1db81585fc985cdb925" category="list-text">輸入環境的 **Name**。</block>
-  <block id="58f6785310712567477337dc13a12c26" category="list-text">展開 *系統* 區段。選擇要連線至 IRE 的系統。對於您選擇的每個系統。每個系統都必須具備連至 IRE 的網路連線。您可能需要為每個系統提供資料 LIF IP 位址，以建立乾淨的還原恢復點。</block>
   <block id="770bb8eb8b16b38f394137430a939c09" category="list-text">對於 Amazon FSx for NetApp ONTAP 以外的每個已新增系統，請選擇 *編輯儲存設備 VM*。在彈出視窗中，輸入 *儲存設備 VM IP 位址* 和 *儲存設備 VM 子網路遮罩*。對於 *廣播網域*，選擇預設或管理。您也可以選擇輸入 *儲存設備 VM 閘道*。</block>
   <block id="b437d56d52049ed55249efaeb9aff257" category="list-text">在 *驗證* 區段中，輸入雲端 **帳戶** ID，然後從下拉式選單中選擇該帳戶的 **區域**。您只能在受支援的區域部署 IRE。</block>
   <block id="f1bf93d681f0d253588359efb73f2e2d" category="admonition">該帳戶必須具有必要的權限，才能允許 Ransomware Resilience 部署 Console 代理程式並建立隨選無塵室。</block>
   <block id="266bb5e81c63787b058d80199faaa22e" category="list-text">展開 *Amazon VPC* 區段。輸入要部署 IRE 的虛擬私有雲 ID。（這是您在先決條件中建立的 VPC。）</block>
   <block id="cd40948356df51e6137e1790bfc4cffa" category="list-text">選取 *下一步* 以審查組態。</block>
   <block id="b4f8a430d9a16d108360d1e973ff987f" category="list-text">審查組態。選取 *新增* 以建立 IRE。</block>
-  <block id="e0cd70b5f1ef7aaf1987c21f01b085ec" category="list-text">輸入*隔離恢復環境名稱*。</block>
   <block id="8d3a4e5cee284fdb67453a248ff48de9" category="list-text">展開 *Systems* 區段。選擇您要連線至 IRE 的系統。</block>
   <block id="77acf99c95b57ba6e73764570d38fbc9" category="list-text">對於您新增的每個系統，請選擇 *編輯儲存設備 VM*。在快顯視窗中，輸入 *儲存設備 VM IP 位址* 和 *儲存設備 VM 子網路遮罩*。對於 *廣播網域*，請選擇預設或管理。您可以選擇輸入 *儲存設備 VM 閘道*。</block>
-  <block id="8bc9b6176ff2c39127e3ed21725523ba" category="list-text">從下拉式選單中選擇已部署在 IRE 中的 Console agent。</block>
-  <block id="20798b94b33c0c5f219632c2bcc586c8" category="list-text">請提供用於驗證 vCenter 伺服器的憑證：*IP 位址或完整網域名稱（FQDN）*、*連接埠*、*使用者名稱*和*密碼*。</block>
-  <block id="54b513ce48479811874932d2e8f5bdc2" category="list-text">展開 *潔淨室運算部分*。</block>
-  <block id="e3ab54ceb75e6b462d073f1d905675a2" category="list-text">選擇位於 ESXi 主機上的虛擬機，這些虛擬機將用作恢復過程中複製的基礎虛擬機。</block>
   <block id="d3b51a13c8511879c5378f17bd12c127" category="section-title">2026 年 10 月 20 日</block>
   <block id="07405e58de7ae5291e2723155a5869b4" category="section-title">用於啟用使用者活動監控的增強工作流程</block>
   <block id="dd9dd4a4b292f36f08cee46f9ba3ffa3" category="paragraph">Ransomware Resilience 改善了啟用使用者活動監控的工作流程。先前，每次在工作負載上啟用包含使用者活動監控的勒索軟體保護策略時，Ransomware Resilience 都會測試資料收集器的連線。此次更新後，如果儲存設備 VM 存在資料收集器且處於「running」狀態，則會跳過此檢查，進而加快保護工作流程。</block>
   <block id="b79c3e2214dfd55d5e8b57ef1d6ae5bb" category="inline-link-macro">保護工作負載</block>
   <block id="5f705092fbb64e2adcc5b83793eed660" category="paragraph">如需詳細資訊，請參閱 <block ref="f5df6f8f09e7648e9d6889e3e6e725cb" category="inline-link-macro-rx"></block>。</block>
   <block id="d64a907f57f420b81a119fce287ff09f" category="paragraph">勒索軟體保護策略是 NetApp Ransomware Resilience 的關鍵功能：它們支援偵測、保護和複寫。啟用勒索軟體保護策略以偵測勒索軟體攻擊，並確保您擁有用於恢復的保護基準。</block>
+  <block id="233adc8ca42f7a8097ed29533bfab815" category="list-text">**分析**：在無塵室中，Ransomware Resilience 會分析所有快照，以檢查是否有加密。乾淨還原會決定包含最佳恢復計畫的恢復對應。</block>
+  <block id="3cfd0b2a1a1f7eb6f8f17ddc0f73fc96" category="paragraph">在規劃步驟中，您還可以檢視檔案歷史記錄，以了解勒索軟體事件何時影響檔案以及恢復點與該事件在時間上的關係。</block>
+  <block id="2167a2d55f36099e0735c5707e3b71bb" category="list-text">使用乾淨還原，您只能還原到來源環境。</block>
+  <block id="b1210ce3e5b669a69cc79e2b0ee6c53f" category="paragraph">為避免這些衝突，Ransomware Resilience 會對 Clone 的虛擬機器執行 sysprep，這會重設 SID、CN 和機器識別碼。重設這些值可確保 Clone 的虛擬機器作為獨特且獨立的執行個體運作，而不會干擾來源虛擬機器。</block>
+  <block id="24026e872b9b407496cb872d2956b369" category="paragraph">如果主要來源無法使用，且您已設定次要來源，資料將還原至次要來源。</block>
+  <block id="170723e001c3b4c37b841a3f81011c7c" category="admonition">建立 IRE 時，必須在系統選擇步驟中新增要用於分析的每個系統（主系統或輔助系統）。</block>
+  <block id="0a7a4ac55a8faa38afb9d12ee25be847" category="paragraph">此圖展示了從內部部署到雲端的乾淨還原組態範例。在建立 IRE 之前，請檢閱此圖以及您需要設定的資源。</block>
+  <block id="b7998766936b85b4a19c6a8ce96f8daf" category="inline-image-macro">內部部署至雲端乾淨還原圖。</block>
+  <block id="777ecc60e5d0df1c0fbb57ce32c7fcb1" category="paragraph"><block ref="777ecc60e5d0df1c0fbb57ce32c7fcb1" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="5c49749bcd142ca611dfc21e5e83f9b1" category="inline-image-macro">內部部署至內部部署乾淨還原示意圖</block>
+  <block id="b7b2f08d033bd4e095de0548c5b32eaa" category="paragraph"><block ref="b7b2f08d033bd4e095de0548c5b32eaa" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ac93a92b9033f0f62304a21c085a836d" category="list-text">ESXi 主機必須是 ESXi 版本 7.0 或更新版本，並且至少有一台主機具有足夠的 CPU 和記憶體容量資源來 Clone 虛擬機器。</block>
+  <block id="8c52ce58e25980d6fdbee1f92a5d9afe" category="list-text">在乾淨還原的恢復期間，基礎虛擬機器會 Clone 到選定的資料中心，放置在所選的 ESXi 運算上，對應至指定的資料存放區，並連接至指定的網路。Clone 虛擬機器時，它們會設定為具有 2 個 vCPU 和 4 GB RAM（適用於 Linux 或 Windows 虛擬機器），以及與基礎虛擬機器相同的磁碟空間。每個乾淨還原工作階段都會使用給定 CIDR 範圍內的兩個 IP 位址。</block>
+  <block id="bd6c8f7567873b15c9f691c416c18707" category="list-text">IP 位址範圍必須以 CIDR 格式指定（例如，100.100.0.0/24）。</block>
+  <block id="b57bdeccce93b2ecc2066f787cd74d4f" category="list-text">Windows 虛擬機器必須至少有 20 GB 的可用空間。</block>
+  <block id="e09b8e3f85818d7f9e3a08d6532a5639" category="list-text">作業系統必須是 Windows Server 2022 或 2025。</block>
+  <block id="ae6d9c2f9d0a025898324167828d8826" category="list-text">必須設定 IP 位址。</block>
+  <block id="eb61d4d93a82475a40addbd68d7d3e71" category="list-text">請確保您擁有允許 Clone 基礎虛擬機器的相應授權。</block>
+  <block id="9925caf8454b969f1ee8e209df33db48" category="paragraph">在執行乾淨還原之前，必須建立一個隔離的恢復環境。</block>
+  <block id="ce7fd323c56d7f5d7af58d11c1739fbb" category="paragraph">建立隔離的恢復環境的過程會因環境位於雲端還是內部部署而有所不同。請務必按照適用於正確位置的說明進行操作。</block>
+  <block id="acd8197fec775912b2ac19261b65c663" category="list-text">展開 *系統* 區段。選擇要連線至 IRE 的系統。每個系統都必須具備連至 IRE 的網路連線。您可能需要為每個系統提供資料 LIF IP 位址，以建立乾淨的還原恢復點。</block>
+  <block id="81277c6ade4e4126fbd4d5e0defe5b20" category="image-alt">系統選擇介面截圖。</block>
+  <block id="ed2ab939413d03b3e3c5532b1e383562" category="list-text">請輸入*隔離的恢復環境名稱*。</block>
+  <block id="4b63388778a428645c62b46e098fb762" category="list-text">從下拉式選單中選擇部署在 IRE 中的 *控制台代理程式*。</block>
+  <block id="6505ccdfc30aa0f2d3dc272bda2cb3ec" category="list-text">請提供憑證以驗證 vCenter 伺服器：*IP 位址或完整網域名稱（FQDN）*、*連接埠*、*使用者名稱*和*密碼*。</block>
+  <block id="393e58657e131f2b72649ed0cf5217cd" category="list-text">展開「潔淨室運算」部分。</block>
+  <block id="6f4030f935741207e6077271ec4c7fcd" category="list-text">請以 CIDR 格式輸入虛擬機器的 *IP 位址範圍*（例如 100.100.0.0/24）、*子網路遮罩*與*閘道*。</block>
+  <block id="0ad38e8473db5155eec04c6689ae2fed" category="list-text">選擇位於 ESXi 主機上的虛擬機器，這些虛擬機器將用作恢復過程中 Clone 的基礎虛擬機器。</block>
+  <block id="41195e5d1530c08998754564c86f0814" category="image-alt">清理還原運算組態步驟的螢幕截圖。</block>
 </blocks>
