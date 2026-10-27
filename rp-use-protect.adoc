@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: rp-use-protect.html 
-keywords: ransomware protection, protect against ransomware attacks, anti-ransomware policies, detection, protection, policy, malware 
+keywords: ransomware protection, protect against ransomware attacks, anti-ransomware policies, detection, protection, policy, malware, replication, snapshot policy, backup policy, protection strategy 
 summary: 您可以透過在NetApp Ransomware Resilience中為工作負載分配策略來保護工作負載免受勒索軟體攻擊。 
 ---
 = 使用NetApp Ransomware Resilience保護策略保護工作負載
@@ -12,182 +12,17 @@ summary: 您可以透過在NetApp Ransomware Resilience中為工作負載分配�
 
 
 [role="lead"]
-勒索軟體保護策略是 NetApp Ransomware Resilience 的關鍵功能：它們支援偵測、保護和複寫。啟用勒索軟體保護策略以偵測勒索軟體攻擊，並確保您擁有用於恢復的保護基準。
+在 NetApp Ransomware Resilience 中發現工作負載後，必須將 link:concept-strategy.html["保護策略"] 套用至您的工作負載，以設定勒索軟體偵測、保護和複寫的組合。啟用勒索軟體保護策略，以偵測勒索軟體攻擊並確保您擁有用於恢復的保護基線。
 
 *所需控制台角色* 要執行此任務，您需要擁有 link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-platform-roles.html#super-admin-roles["超級管理員"^] 或 Ransomware Resilience 管理員角色。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["了解NetApp Console的勒索軟體復原角色"^]。
 
 
 
-[[understand-ransomware-protection-strategies]]
-== 了解勒索軟體防護策略
+[[before-you-begin]]
+== 開始之前
 
-勒索軟體防護策略包括_偵測_、_保護_和_複製_策略。
+如果您打算建立具有可疑使用者行為偵測功能的保護原則，請確保您已link:suspicious-user-activity.html["已完成必要的設定"]以進行使用者活動監控。
 
-* **偵測原則**可識別勒索軟體威脅。您有三種偵測選項：
-+
-** 加密偵測
-** 可疑的用戶活動
-** 阻止可疑檔案副檔名
-+
-您的偵測原則可以包含所有三個選項或其組合。它必須包含加密偵測或 link:suspicious-user-activity.html["可疑的使用者活動（需要額外組態）"]。
-
-
-
-* **保護策略**包含快照和備份策略。保護策略中需要偵測和快照策略。備份策略是可選的。
-+
-如果您使用其他NetApp產品來保護您的工作負載，勒索軟體復原能力會發現這些產品並提供以下選項：
-
-+
-** 使用勒索軟體偵測策略並繼續使用其他NetApp工具建立的快照和備份策略，或者
-** 使用勒索軟體彈性來管理偵測、快照和備份。
-
-
-* **複製策略** 使您能夠將勒索軟體復原功能的快照複製到輔助網站。複製計劃可以設定為每小時、每天、每週或每月一次的頻率。
-+
-目前，您只能將快照複製到本機ONTAP儲存。
-
-
-
-
-NOTE: 如果您正在為 Amazon FSx for NetApp ONTAP 和 Azure NetApp Files 設定保護策略，請參閱link:rp-reference-limitations.html["每項服務的限制"]。
-
-
-TIP: 為了更好地管理和保護您的資料資產，您可以建立link:task-protection-group.html["群組工作負載"]，以便在一個策略下統一保護多個磁碟區。
-
-
-
-[[protection-policies-with-other-netapp-managed-services]]
-=== 與其他NetApp託管服務結合的保護策略
-
-除了 Ransomware Resilience 之外，您還可以使用 NetApp Backup and Recovery 來管理檔案共用、VM 檔案共用的保護。
-
-來自 Backup & Recovery 服務的保護資訊會顯示在 Ransomware Resilience 中。您可以使用 Ransomware Resilience 為這些服務新增偵測原則。使用 Ransomware Resilience 新增保護原則會取代現有的保護原則。
-
-如果勒索軟體偵測策略由ONTAP中的自主勒索軟體防護（ARP 或 ARP/AI，取決於ONTAP版本）和 FPolicy 管理，則這些工作負載將受到保護並將繼續由 ARP 和 FPolicy 管理。
-
-
-NOTE: Amazon FSx for NetApp ONTAP 或 Azure NetApp Files 中的工作負載無法使用備份目的地。請使用 FSx for ONTAP 備份服務執行備份作業。您需要在 AWS 中為 FSx for ONTAP 工作負載設定備份原則，而不是在 Ransomware Resilience 中設定。備份原則會顯示在 Ransomware Resilience 中，並且與 AWS 中的設定保持一致。
-
-
-
-==== 針對不受NetApp應用程式保護的工作負載的保護策略
-
-如果您的工作負載未由 Backup and Recovery 或 Ransomware Resilience 管理，則可能已建立快照，這些快照是 ONTAP 或其他產品的一部分。如果已啟用 ONTAP FPolicy 保護，您可以使用 ONTAP 變更 FPolicy 保護。
-
-
-
-[[predefined-detection-policies]]
-=== 預定義的檢測策略
-
-您可以選擇以下勒索軟體復原預定義策略之一，這些策略與工作負載重要性相符。
-
-
-NOTE: **加密使用者擴充**原則是唯一支援可疑使用者行為偵測的預先定義原則。+ **關鍵複寫原則**是唯一支援將快照複寫到 ONTAP 的預先定義原則。
-
-[cols="10,15a,20,15,15,15"]
-|===
-| 政策層面 | 快照 | 頻率 | 保留時間（天） | 快照副本數量 | 快照副本的最大數量 
-
-
-.4+| *關鍵工作量政策*  a| 
-每刻鐘
-| 每15分鐘 | 3 | 288 | 309 
-
-
-| 日常的  a| 
-每 1 天
-| 14 | 14 | 309 
-
-
-| 每週  a| 
-每 1 週
-| 35 | 5 | 309 
-
-
-| 每月  a| 
-每 30 天
-| 60 | 2 | 309 
-
-
-.4+| *重要的工作量政策*  a| 
-每刻鐘
-| 每30分鐘一班 | 3 | 144 | 165 
-
-
-| 日常的  a| 
-每 1 天
-| 14 | 14 | 165 
-
-
-| 每週  a| 
-每 1 週
-| 35 | 5 | 165 
-
-
-| 每月  a| 
-每 30 天
-| 60 | 2 | 165 
-
-
-.4+| *標準工作量保單*  a| 
-每刻鐘
-| 每30分鐘 | 3 | 72 | 93 
-
-
-| 日常的  a| 
-每 1 天
-| 14 | 14 | 93 
-
-
-| 每週  a| 
-每 1 週
-| 35 | 5 | 93 
-
-
-| 每月  a| 
-每 30 天
-| 60 | 2 | 93 
-
-
-.4+| *加密用戶擴充*  a| 
-每刻鐘
-| 每30分鐘 | 3 | 72 | 93 
-
-
-| 日常的  a| 
-每 1 天
-| 14 | 14 | 93 
-
-
-| 每週  a| 
-每 1 週
-| 35 | 5 | 93 
-
-
-| 每月  a| 
-每 30 天
-| 60 | 2 | 93 
-
-
-.4+| *關鍵複製策略*  a| 
-每刻鐘
-| 每15分鐘 | 3 | 288 | 309 
-
-
-| 日常的  a| 
-每 1 天
-| 14 | 14 | 309 
-
-
-| 每週  a| 
-每 1 週
-| 35 | 5 | 309 
-
-
-| 每月  a| 
-每 30 天
-| 60 | 2 | 309 
-|===
 
 
 [[add-a-ransomware-protection-strategy]]
@@ -247,64 +82,56 @@ image:screen-protection.png["管理策略頁面"]
 +
 image:screen-protection-strategy-add.png["新增顯示快照部分的策略頁面"]
 
-. 輸入新的策略名稱，或輸入現有名稱進行複製。如果您輸入的是現有名稱，請選擇要複製的名稱並選擇*複製*。
-+
-
-NOTE: 如果您選擇複製並修改現有策略，Ransomware Resilience 會在原始名稱後面附加「_copy」。您應該更改名稱和至少一個設定以使其唯一。
-
+. 請輸入新的策略名稱。策略名稱不能包含空格。
+. 您也可以選擇現有的保護策略作為新策略的基礎。在 *從現有的 Ransomware Resilience 策略複製* 中，選擇 *選擇*。選擇現有策略，然後選擇 *複製*。
 . 對於每個項目，選擇*向下箭頭*。
+. 選擇 *偵測原則* 設定：
 +
-** *檢測政策*：
-+
-*** *策略*：選擇預先設計的偵測策略之一。
-*** *加密偵測*：啟用 Ransomware Resilience 以偵測基於加密的攻擊。
-*** *可疑使用者行為偵測*：啟用使用者行為偵測，將使用者活動事件傳輸到 Ransomware Resilience，並偵測可疑事件，例如資料外洩或資料銷毀。
-*** *封鎖檔案副檔名*：啟用 Ransomware Resilience 以封鎖已知的可疑檔案副檔名。
+** *加密偵測*：啟用 Ransomware Resilience 以偵測基於加密的攻擊。
+** *可疑使用者行為偵測*：啟用使用者行為偵測，將使用者活動事件傳輸到 Ransomware Resilience，並偵測可疑事件，例如資料外洩或資料銷毀。
+** *封鎖檔案副檔名*：啟用 Ransomware Resilience 以封鎖已知的可疑檔案副檔名。
 +
 如果您想更改被封鎖的檔案副檔名，請在系統管理員中編輯它們。
 
-
-
-
-
-
-
++
 
 NOTE: 您可以選擇任意組合的偵測原則。偵測原則必須包含加密偵測或可疑使用者行為偵測。
 
-* *快照策略*：
+
+
+. 設定 *Snapshot 原則*。若要從 link:concept-strategy.html#predefined-policies["預定義原則"] 匯入 Snapshot 設定，請選擇 *Select* 單選按鈕，然後從下拉式選單中選擇原則。如果匯入原則，則不需要其他 Snapshot 組態。
 +
-** *快照策略基礎名稱*：選擇一個政策或選擇*建立*並輸入快照策略的名稱。
-** *快照鎖定*：啟用此功能可鎖定主儲存體上的快照副本，以便即使勒索軟體攻擊進入備份儲存目標，它們在一定時間內也無法被修改或刪除。這也稱為_不可變儲存_。這使得恢復時間更快。
+若要設定您自己的設定，請選擇 *建立*，然後輸入 *Snapshot 快照技術基本名稱*。基本名稱是附加至每個快照的前綴。
+
+. 如果您要設定自己的快照設定，可以啟用 *Snapshot 快照技術鎖定*。如果啟用快照鎖定，請設定 *鎖定保留天數* 的值（即快照鎖定的時間）。
 +
-當快照被鎖定時，磁碟區的過期時間設定為快照副本的過期時間。
+Snapshot 快照技術鎖定透過鎖定主儲存設備上的 Snapshot 複本，建立不可變儲存設備，即使勒索軟體攻擊成功入侵備份儲存設備目的地，這些 Snapshot 複本在特定時間內也無法被修改或刪除。這可以加快還原速度。當 Snapshot 快照技術鎖定後，Volume 的過期時間將設定為該 Snapshot 複本的過期時間。
 
 +
-Snapshot 副本鎖定適用於ONTAP 9.12.1 及更高版本。要了解有關SnapLock 的更多信息，請參閱 https://docs.netapp.com/us-en/ontap/snaplock/index.html["ONTAP中的SnapLock"^]。
+ONTAP 9.12.1 及更新版本支援 Snapshot 複本鎖定功能。若要進一步瞭解 SnapLock，請參閱 link:https://docs.netapp.com/us-en/ontap/snaplock/index.html["適用於 SnapLock 的 ONTAP 文件"^]。
 
-** *快照計劃*：選擇計劃選項、要保留的快照副本數量，然後選擇啟用計劃。
-
-
-* *複製策略*：
 +
-** *複製策略基本名稱*：輸入新名稱或選擇現有名稱。基本名稱是附加到所有快照的前綴。
-** *複製計畫*：切換要啟用的頻率（每小時、每天、每週或每月），並為每個啟用的計畫設定保留值（要保留的複製快照的數量）。
+如果您要設定自己的快照設定，請設定快照排程選項。選擇是否以分鐘、小時、天、週或月的頻率建立快照。對於除每日以外的所有選項，請選擇在一天、一週或一個月中的哪個時間建立快照。此外，請在 *保留* 欄位中選擇每種快照類型要保留的複本數量。
 
-
-* *備份策略*：
 +
-** *備份策略基本名稱*：輸入新名稱或選擇現有名稱。
-** *備份計畫*：選擇二級儲存的計畫選項並啟用該計畫。
+image:add-policy-snapshot.png["Snapshot 原則選項的螢幕截圖。"]
+
+. 對於內部部署工作負載，您可以選擇設定*複寫原則*，將工作負載複寫到 ONTAP 儲存設備。
++
+若要匯入系統定義的原則，請選擇 *Select* 單選按鈕，然後從下拉式選單中選擇 link:concept-strategy.html#predefined-policies["預定義原則"]。
+
++
+若要建立您自己的複寫設定，請選擇 *建立* ，然後輸入 *複寫原則基本名稱* ，這是附加至所有 Snapshot 複本的前置字元。設定 *複寫排程* 。切換您要啟用的頻率（每小時、每天、每週或每月），並為每個啟用的排程設定保留值（要保留的複寫 Snapshot 複本數量）。
+
+. （可選）設定 *備份原則*。若要匯入現有原則，請選擇 *選擇* 單選按鈕，然後從下拉式選單中選擇 link:concept-strategy.html#predefined-policies["預定義原則"]。
++
+若要建立您自己的原則，請選擇 *建立* 並輸入 *備份原則基本名稱*。透過切換不同的頻率（每小時、每天、每週和每月）來設定 *備份排程*，然後設定每種頻率的保留次數。
+
 +
 
 TIP: 若要在輔助儲存裝置上啟用備份鎖定，請使用 *Settings* 選項來設定備份目標位置。如需詳細資訊，請參閱 link:task-backup-destination.html["配置設定"]。
 
-+
-... 選擇“*新增*”。
-
-
-
-
+. 選擇“*新增*”。
 
 
 
@@ -362,7 +189,7 @@ image:screen-protection.png["管理策略頁面"]
 . 如果您的策略包含複製，請選擇**目標系統**和**目標儲存虛擬機器**。選擇**下一步**。
 . 選擇備份目標或建立新的備份目標。選擇**下一步**。
 +
-.. 如果您的保護策略包含使用者行為偵測，請在您的環境中選擇一個使用者活動代理程式來託管新的資料收集器。Ransomware Resilience 會自動建立資料收集器，將使用者活動事件傳送到 Ransomware Resilience 以偵測異常使用者行為。
+.. 如果您的保護策略包含使用者行為偵測，請在您的環境中選擇一個 *使用者活動代理程式* 來作為新資料收集器的主機。Ransomware Resilience 會自動建立資料收集器，將使用者活動事件傳輸至 Ransomware Resilience，以偵測異常的使用者行為。
 
 
 . 查看新的保護策略，然後選擇**保護**來套用它。
@@ -387,36 +214,8 @@ image:screen-protection.png["管理策略頁面"]
 
 
 
-[[manage-ransomware-protection-strategies]]
-== 管理勒索軟體防護策略
-
-您可以刪除勒索軟體策略。
-
-
-
-[[view-workloads-protected-by-a-ransomware-protection-strategy]]
-=== 查看受勒索軟體保護策略保護的工作負載
-
-在刪除勒索軟體保護策略之前，您可能需要查看哪些工作負載受該策略保護。
-
-您可以從策略清單中或在編輯特定策略時查看工作負載。
-
-.查看策略的步驟
-. 從勒索軟體恢復選單中，選擇*保護*。
-. 在「保護」頁面中，選擇「管理保護策略」。
-+
-勒索軟體防護策略頁面顯示策略清單。
-
-+
-image:screen-protection-strategy-list.png["勒索軟體保護策略畫面顯示策略列表"]
-
-. 在「勒索軟體保護策略」頁面的「受保護的工作負載」欄位中，選擇行末的向下箭頭。
-
-
-
-
 [[delete-a-ransomware-protection-strategy]]
-=== 移除勒索軟體防護策略
+== 移除勒索軟體防護策略
 
 您可以刪除目前未與任何工作負載關聯的保護策略。
 
@@ -425,4 +224,15 @@ image:screen-protection-strategy-list.png["勒索軟體保護策略畫面顯示�
 . 在「保護」頁面中，選擇「管理保護策略」。
 . 在“管理策略”頁面中，選擇“操作”image:screenshot_horizontal_more_button.gif["操作按鈕"]您想要刪除的策略的選項。
 . 從操作選單中，選擇*刪除策略*。
+
+
+
+
+[[next-steps]]
+== 後續步驟
+
+* link:concept-strategy.html["了解保護策略"]
+* link:task-protection-group.html["管理保護群組"]
+* link:task-backup-destination.html["管理備份目的地"]
+* link:suspicious-user-activity.html["設定使用者活動偵測"]
 
