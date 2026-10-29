@@ -1,11 +1,11 @@
-= 增強對乾淨還原的支援
+= 支援針對可疑使用者行為和基於使用者的加密攻擊進行乾淨還原
 :allow-uri-read: 
 
 
 
 
-[[enhanced-support-for-clean-restores]]
-=== 增強對乾淨還原的支援
+[[clean-restore-support-for-suspicious-user-behavior-and-user-based-encryption-attacks]]
+=== 支援針對可疑使用者行為和基於使用者的加密攻擊進行乾淨還原
 
 現在，在發生可疑使用者行為和基於使用者的加密攻擊之後，可使用乾淨還原進行恢復。此增強功能增加了對基於加密（熵）攻擊的現有支援。這項增強功能使您能夠利用乾淨還原的引導式方法，識別最佳還原點，以盡量減少資料遺失並加快恢復。
 

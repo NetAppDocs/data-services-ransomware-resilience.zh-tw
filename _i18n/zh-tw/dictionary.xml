@@ -2649,7 +2649,6 @@
   <block id="c683448e4869d680e8543440db43e3ab" category="paragraph">*所需主控台角色* 若要執行此工作，您需要 Ransomware Resilience 使用者行為管理員角色。您無法使用 <block ref="91fb5ef1173b6f41fdaa815d28743781" category="inline-link-macro-rx"></block> 或 Ransomware Resilience 管理員角色來執行此工作。<block ref="d9cbbacd5ef5cff6a1660fdb9d259f2f" category="inline-link-macro-rx"></block>。</block>
   <block id="96176a5ef40ffd580483770b758cb2b9" category="doc">Google Cloud NetApp Volumes 中的保護群組支援（預覽版）</block>
   <block id="bf243787cd494f22987c64c448019324" category="paragraph">Ransomware Resilience 現已支援對使用者活動事件的自動回應。當產生使用者活動警報時，您可以自動區塊使用者並建立快照。這些操作無需手冊幹預即可實現更快速的回應。</block>
-  <block id="5beb9d1a7ce3f39235bef552e08036ab" category="doc">增強對乾淨還原的支援</block>
   <block id="172d1622c102d2a3f2038156f02696fb" category="paragraph">現在，在發生可疑使用者行為和基於使用者的加密攻擊之後，可使用乾淨還原進行恢復。此增強功能增加了對基於加密（熵）攻擊的現有支援。這項增強功能使您能夠利用乾淨還原的引導式方法，識別最佳還原點，以盡量減少資料遺失並加快恢復。</block>
   <block id="c67951798c697d04f7da1518cc49d789" category="inline-link-macro">建立一個隔離的恢復環境，以便進行乾淨還原</block>
   <block id="00fb2a4960c9f2eed3f3d4165ea6d95a" category="paragraph">如需詳細資訊，請參閱 <block ref="d2e686618a401b494c34aa9b2103f129" category="inline-link-macro-rx"></block>。</block>
@@ -2801,7 +2800,6 @@
   <block id="8d3a4e5cee284fdb67453a248ff48de9" category="list-text">展開 *Systems* 區段。選擇您要連線至 IRE 的系統。</block>
   <block id="77acf99c95b57ba6e73764570d38fbc9" category="list-text">對於您新增的每個系統，請選擇 *編輯儲存設備 VM*。在快顯視窗中，輸入 *儲存設備 VM IP 位址* 和 *儲存設備 VM 子網路遮罩*。對於 *廣播網域*，請選擇預設或管理。您可以選擇輸入 *儲存設備 VM 閘道*。</block>
   <block id="d3b51a13c8511879c5378f17bd12c127" category="section-title">2026 年 10 月 20 日</block>
-  <block id="07405e58de7ae5291e2723155a5869b4" category="section-title">用於啟用使用者活動監控的增強工作流程</block>
   <block id="dd9dd4a4b292f36f08cee46f9ba3ffa3" category="paragraph">Ransomware Resilience 改善了啟用使用者活動監控的工作流程。先前，每次在工作負載上啟用包含使用者活動監控的勒索軟體保護策略時，Ransomware Resilience 都會測試資料收集器的連線。此次更新後，如果儲存設備 VM 存在資料收集器且處於「running」狀態，則會跳過此檢查，進而加快保護工作流程。</block>
   <block id="b79c3e2214dfd55d5e8b57ef1d6ae5bb" category="inline-link-macro">保護工作負載</block>
   <block id="233adc8ca42f7a8097ed29533bfab815" category="list-text">**分析**：在無塵室中，Ransomware Resilience 會分析所有快照，以檢查是否有加密。乾淨還原會決定包含最佳恢復計畫的恢復對應。</block>
@@ -2917,4 +2915,7 @@
   <block id="56b59ea299a0aa6c6c6d07266e0f0a6b" category="section-title">文件連結</block>
   <block id="de399b8f07a705ace3ccaaa7ca6f0353" category="paragraph">現在使用者介面中提供了文件的直接連結。您可以從儀表板垂直的 *操作* <block ref="03b376f37073f981f38dc4d6f450c046" category="inline-image-macro-rx" type="image"></block> 選項存取此文件。選取 *新增功能* 以檢視版本說明中的詳細資料，或選取 *文件* 以檢視 BlueXP 勒索軟體保護文件首頁。</block>
   <block id="bf114687a1c7cc9650a084e46a559b26" category="paragraph">恢復過程已改進。現在您可以一次恢復一個 Volume，也可以一次恢復所有 Volume<block ref="2db5667b5f183f51656a41f32740d8f2" category="inline-link-rx"></block>。</block>
+  <block id="3ad4695931eb8cc46e884ebecdae3a28" category="doc">支援針對可疑使用者行為和基於使用者的加密攻擊進行乾淨還原</block>
+  <block id="7e994762285a2c4bb93358fe2d00e1e4" category="section-title">改進了啟用使用者活動監控的工作流程</block>
+  <block id="b0609734250ba6ba4d0839963ce55146" category="section-title">2026 年 10 月 26 日</block>
 </blocks>

@@ -18,6 +18,20 @@ summary: 了解NetApp Ransomware Resilience的新功能。
 
 
 
+[[26-october-2026]]
+== 2026 年 10 月 26 日
+
+
+
+[[new-manual-workflow-for-creating-a-user-activity-agent]]
+== 建立使用者活動代理程式的新手冊工作流程
+
+Ransomware Resilience 現在提供手冊建立使用者活動代理程式的工作流程，讓您能進一步控制在 VM 上建立使用者活動代理程式的方式。透過此新工作流程，您可以直接安裝使用者活動代理程式並設定 Proxy 設定，而無需提供 VM SSH 金鑰。
+
+如需詳細資訊，請參閱 link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/suspicious-user-activity.html#create-a-user-activity-agent["建立使用者活動代理程式"^]。
+
+
+
 [[20-october-2026]]
 == 2026 年 10 月 20 日
 
@@ -32,8 +46,8 @@ Ransomware Resilience 現已提供增強的隔離的恢復環境組態工作流�
 
 
 
-[[enhanced-workflow-for-enabling-user-activity-monitoring]]
-=== 用於啟用使用者活動監控的增強工作流程
+[[improved-workflow-for-enabling-user-activity-monitoring]]
+=== 改進了啟用使用者活動監控的工作流程
 
 Ransomware Resilience 改善了啟用使用者活動監控的工作流程。先前，每次在工作負載上啟用包含使用者活動監控的勒索軟體保護策略時，Ransomware Resilience 都會測試資料收集器的連線。此次更新後，如果儲存設備 VM 存在資料收集器且處於「running」狀態，則會跳過此檢查，進而加快保護工作流程。
 
@@ -53,8 +67,8 @@ Ransomware Resilience 中的 Google Cloud NetApp Volumes Flex 服務層級支援
 
 
 
-[[enhanced-support-for-clean-restores]]
-=== 增強對乾淨還原的支援
+[[clean-restore-support-for-suspicious-user-behavior-and-user-based-encryption-attacks]]
+=== 支援針對可疑使用者行為和基於使用者的加密攻擊進行乾淨還原
 
 現在，在發生可疑使用者行為和基於使用者的加密攻擊之後，可使用乾淨還原進行恢復。此增強功能增加了對基於加密（熵）攻擊的現有支援。這項增強功能使您能夠利用乾淨還原的引導式方法，識別最佳還原點，以盡量減少資料遺失並加快恢復。
 
