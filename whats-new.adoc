@@ -40,7 +40,7 @@ Ransomware Resilience 現在提供手冊建立使用者活動代理程式的工�
 [[enhanced-isolated-recovery-environment-configuration]]
 === 增強型隔離的恢復環境組態
 
-Ransomware Resilience 現已提供增強的隔離的恢復環境組態工作流程。新的工作流程釐清並簡化了為雲端或內部部署環境設定隔離的恢復環境的程序。
+Ransomware Resilience 現已提供增強的隔離的恢復環境組態工作流程。新的工作流程釐清並簡化了在雲端或內部部署環境中設定隔離的恢復環境的程序。
 
 如需詳細資訊，請參閱 link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-clean-restore.html["建立一個隔離的恢復環境，以便進行乾淨還原"^]。
 
@@ -49,7 +49,7 @@ Ransomware Resilience 現已提供增強的隔離的恢復環境組態工作流�
 [[improved-workflow-for-enabling-user-activity-monitoring]]
 === 改進了啟用使用者活動監控的工作流程
 
-Ransomware Resilience 改善了啟用使用者活動監控的工作流程。先前，每次在工作負載上啟用包含使用者活動監控的勒索軟體保護策略時，Ransomware Resilience 都會測試資料收集器的連線。此次更新後，如果儲存設備 VM 存在資料收集器且處於「running」狀態，則會跳過此檢查，進而加快保護工作流程。
+Ransomware Resilience 改善了啟用使用者活動監控的工作流程。先前，每次在工作負載上啟用包含使用者活動監控的勒索軟體保護策略時，Ransomware Resilience 都會測試資料收集器的連線。此次更新後，如果儲存設備虛擬機器存在資料收集器且處於「running」狀態，Ransomware Resilience 將跳過此檢查，從而加快保護工作流程。
 
 如需詳細資訊，請參閱 link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect.html["保護工作負載"^]。
 
@@ -338,7 +338,7 @@ link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/reference
 [[clean-restore]]
 === 全新還原
 
-勒索軟體恢復功能現已支援乾淨還原，這項全新的還原選項可協助您快速輕鬆地從勒索軟體攻擊中恢復。乾淨還原提供引導式工作流程，可識別最佳還原點，使您的工作負載恢復運作，同時將停機時間降至最低。乾淨還原的工作流程還提供檔案層級的資料洞察，確保您可以還原無惡意軟體的工作負載，從而防止再次感染並將資料遺失降至最低。
+Ransomware Resilience 現已支援乾淨還原，這項全新的恢復選項可協助您快速輕鬆地從勒索軟體攻擊中恢復。乾淨還原提供引導式工作流程，可識別最佳還原點，使您的工作負載恢復運作，同時最大限度地減少停機。乾淨還原的工作流程還提供對資料的檔案層級洞察，確保您可以還原無惡意軟體的工作負載，從而防止再次感染並最大限度地減少資料遺失。
 
 若要瞭解支援的組態以及如何設定系統以進行全新還原，請參閱 link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-clean-restore.html["建立隔離的復原環境"^]。若要瞭解如何使用全新還原進行還原，請參閱 link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-clean-restore-recover.html["使用乾淨還原來恢復工作負載"^]。
 
@@ -347,7 +347,7 @@ link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/reference
 [[siem-support-for-splunk-enterprise]]
 === Splunk Enterprise 的 SIEM 支援
 
-Ransomware Resilience 現在為 Splunk Enterprise 提供安全資訊事件管理（SIEM）支援，使您能夠集中管理日誌和事件資料，並簡化威脅分析和偵測。
+Ransomware Resilience 現在為 Splunk Enterprise 提供安全性資訊和事件管理（SIEM）支援，使您能夠集中管理日誌和事件資料，並精簡威脅分析和偵測。
 
 如需詳細資訊，請參閱 link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem-splunk.html["設定 Splunk SIEM"^]。
 

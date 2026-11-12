@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-custom-restore.html 
 keywords: ransomware protection recovery, recover from a ransomware attack, recovery point, RPA 
-summary: '遭受攻擊後， NetApp Ransomware Resilience會驗證二級儲存上的備份資料是否乾淨，建議實際復原點 (RPA)，並協調防崩潰復原的工作流程。' 
+summary: 在勒索軟體攻擊後，使用建議或首選的還原點在 Volume、檔案或 VM 層級還原工作負載，而無需先清理檔案。 
 ---
-= 使用 NetApp Ransomware Resilience 中的自訂還原功能從勒索軟體攻擊中恢復
+= 在 NetApp Ransomware Resilience 中使用自訂還原恢復工作負載
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -12,7 +12,7 @@ summary: '遭受攻擊後， NetApp Ransomware Resilience會驗證二級儲存�
 
 
 [role="lead"]
-透過 Ransomware Resilience，儲存管理員可以確定如何以最佳方式從建議的還原點或首選還原點復原工作負載。
+使用 NetApp Ransomware Resilience 中的自訂還原，在勒索軟體攻擊後恢復您的工作負載。選擇建議的還原點或偏好的還原點，即可在不事先清理檔案的情況下還原資料。
 
 
 TIP: Ransomware Resilience 還支援xref:task-clean-restore.html[全新還原選項]，提供引導式復原和進階功能，以確保只恢復乾淨且未加密的資料。
@@ -27,7 +27,7 @@ TIP: Ransomware Resilience 還支援xref:task-clean-restore.html[全新還原選
 安全儲存管理員可以恢復不同等級的資料：
 
 * 恢復所有磁碟區
-* 在磁碟區層級、目錄或檔案層級復原檔案共用。
+* 在 Volume、目錄或檔案層級恢復檔案共享。
 * 從虛擬機器層級的資料儲存中復原。
 
 
@@ -143,7 +143,7 @@ TIP: 新的磁碟區名稱顯示為原始磁碟區名稱+備份名稱+備份日�
 [[restore-a-workload-at-the-file-level]]
 === 在檔案層級還原工作負載
 
-在檔案層級還原工作負載之前，您可以查看受影響檔案的清單。您可以存取「警示」頁面下載受影響檔案的清單。然後，使用「恢復」頁面上傳該清單並選擇要還原的檔案。
+在檔案層級還原工作負載之前，您可以從「警報」頁面下載受影響檔案的清單。使用「恢復」頁面上傳該清單並選擇要還原的檔案。
 
 您可以將工作負載以檔案層級還原至相同或不同的系統。
 
@@ -198,7 +198,7 @@ image:screen-recovery-app-by-file-select-files.png["手動選擇要恢復的文�
 
 +
 
-NOTE: 如果無法使用所選還原點還原任何文件，則會出現一條訊息，指示無法還原的文件數量，並允許您透過選擇「下載受影響文件的清單」來下載這些文件的清單。
+NOTE: 如果使用選定的還原點無法還原任何檔案，則會顯示一則訊息，指出有多少檔案無法還原。若要下載這些檔案的清單，請選取 *下載受影響的檔案清單*。
 
 
 
@@ -207,7 +207,7 @@ NOTE: 如果無法使用所選還原點還原任何文件，則會出現一條�
 .. 選擇復原資料的位置：原始來源位置或您可以指定的備用位置。
 +
 
-TIP: 雖然原始檔案或目錄將被復原的資料覆蓋，但原始檔案和資料夾名稱將保持不變，除非您指定新名稱。
+TIP: 還原的資料會覆寫原始檔案或目錄，但除非您指定新名稱，否則原始檔案和資料夾名稱將保持不變。
 
 .. 選擇系統。
 .. 選擇儲存虛擬機器。
@@ -216,7 +216,7 @@ TIP: 雖然原始檔案或目錄將被復原的資料覆蓋，但原始檔案和
 
 TIP: 如果您沒有指定還原路徑，檔案將會還原到頂層目錄的新磁碟區。
 
-.. 選擇是否希望復原的檔案或目錄的名稱與目前位置的名稱相同或不同。
+.. 選擇是否保留目前名稱，或為還原的檔案或目錄使用不同的名稱。
 
 
 . 選擇“下一步”。
@@ -271,7 +271,7 @@ TIP: 如果您沒有指定還原路徑，檔案將會還原到頂層目錄的新
 [[restore-a-vm-file-share-at-the-vm-level]]
 === 在 VM 層級還原 VM 檔案共享
 
-選擇要還原的虛擬機器後，在復原頁面上繼續執行下列步驟。
+在「恢復」頁面上，選擇要還原的 VM 後，繼續執行下列步驟。
 
 . *來源*：選擇來源旁的向下箭頭查看詳細資訊。
 +

@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-clean-restore.html 
 keywords: clean room, clean restore, secure recovery, restore, isolated recovery environment 
-summary: 在 NetApp Ransomware Resilience 中執行乾淨還原之前，必須建立隔離的恢復環境來隔離和清理環境。 
+summary: 在 NetApp Ransomware Resilience 中建立隔離的恢復環境，以隔離和清理工作負載，審查支援的組態，並為乾淨的還原做好準備。 
 ---
 = 在 NetApp Ransomware Resilience 中設定環境以進行乾淨還原
 :hardbreaks:
@@ -98,7 +98,7 @@ NOTE: 在雲端環境中執行全新還原可能會產生雲端供應商的額�
 == 考量事項
 
 * 您只能針對基於加密的攻擊（包括使用者行為攻擊和熵攻擊）以及可疑使用者行為攻擊執行乾淨還原。資料外洩和資料銷毀攻擊不支援乾淨還原。
-* 如果隔離的復原環境沒有足夠的容量來執行新的操作，則會將其排入佇列，直到有可用容量為止。
+* 如果隔離的恢復環境沒有足夠的容量來執行新操作，則該操作將排入佇列，直到有容量可用為止。
 +
 ** 您可以在 Ransomware Resilience Recovery 儀表板中隨時監控正在進行且已排隊的清理還原作業的狀態。
 
@@ -111,7 +111,7 @@ NOTE: 在雲端環境中執行全新還原可能會產生雲端供應商的額�
 [[additional-considerations-for-on-premises-environments]]
 === 內部部署環境的其他考量事項
 
-如果您部署的是內部部署 IRE，當為了進行復原分析而在乾淨還原過程中複製 Windows VM 時，複製的 VM 將保留與來源相同的組態。這可能會導致衝突：
+如果您部署的是內部部署 IRE，當在乾淨還原中複製 Windows 虛擬機器以進行恢復分析時，複製的虛擬機器將保留與來源相同的組態。這種重複資料可能會導致衝突：
 
 * 使用相同的安全性識別碼（SID）會導致驗證和安全性衝突。
 * 使用相同的電腦名稱 (CN) 會導致網路衝突。
@@ -125,7 +125,7 @@ NOTE: 在雲端環境中執行全新還原可能會產生雲端供應商的額�
 [[secondary-sources]]
 === 次要來源
 
-建立 IRE 時，您可以選擇新增次要來源。
+建立 IRE 時，您可以新增輔助來源。
 
 如果主要來源無法使用，且您已設定次要來源，資料將還原至次要來源。
 
@@ -151,7 +151,7 @@ NOTE: 在雲端環境中執行全新還原可能會產生雲端供應商的額�
 [[prerequisites]]
 == 先決條件
 
-請確保您已完成所選全新還原部署類型的所有先決條件。選擇您所選 IRE 組態對應的選項卡。
+確認您已完成所選乾淨還原部署類型的先決條件。選取您所選 IRE 組態的索引標籤。
 
 
 NOTE: 建立 IRE 時，必須在系統選擇步驟中新增要用於分析的每個系統（主系統或輔助系統）。
@@ -216,8 +216,8 @@ NOTE: 如果您正在設定來源位於 Amazon FSx for NetApp ONTAP 中的 IRE�
 .虛擬私有雲（VPC）
 * 對於 IRE，請在生產環境的 IP 位址範圍內佈建 VPC。IP 位址不應與任何現有的 IP 位址衝突。
 +
-** VPC 至少應有 64 個 IP 位址（/26 網路遮罩）。
-** VPC 必須允許公用網際網路存取。否則、Console 代理程式將無法運作。
+** VPC 至少應有 64 個 IP 位址（/26 子網路遮罩）。
+** VPC 必須允許公共網際網路存取。否則，Console 代理程式將無法運作。
 
 
 
@@ -355,8 +355,8 @@ NOTE: 如果您正在設定來源位於 Amazon FSx for NetApp ONTAP 中的 IRE�
 .虛擬私有雲（VPC）
 * 對於 IRE，請在生產環境的 IP 位址範圍內佈建 VPC。IP 位址不應與任何現有的 IP 位址衝突。
 +
-** VPC 至少應有 64 個 IP 位址（/26 網路遮罩）。
-** VPC 必須允許公用網際網路存取。否則、Console 代理程式將無法運作。
+** VPC 至少應有 64 個 IP 位址（/26 子網路遮罩）。
+** VPC 必須允許公共網際網路存取。否則，Console 代理程式將無法運作。
 
 
 
@@ -475,7 +475,7 @@ image:diagram-clean-recovery-on-prem.png["內部部署至內部部署乾淨還�
 ** 必須安裝並執行 VMware Tools。
 ** 必須啟用 WinRM。
 ** 必須設定 IP 位址。
-** 請確保您擁有允許 Clone 基礎虛擬機器的相應授權。
+** 您必須擁有適當的授權，才能允許複製基礎虛擬機器。
 ** VM 必須已開啟電源。
 
 
@@ -519,6 +519,9 @@ NFS 存取：* 正式作業 Console 代理程式 * Console 代理程式 VLAN * �
 在執行乾淨還原之前，必須建立一個隔離的恢復環境。
 
 建立隔離的恢復環境的過程會因環境位於雲端還是內部部署而有所不同。請務必按照適用於正確位置的說明進行操作。
+
+
+TIP: link:https://www.netapp.com/video/6Vj0Ijo3mno/netapp-ransomware-resilience-clean-restore/["觀看影片，引導您完成隔離的恢復部署。"^]
 
 [role="tabbed-block"]
 ====
@@ -610,10 +613,18 @@ TIP: 如果需要更改 IRE 的任何詳細資訊，請從 Ransomware Resilience
 您無法刪除具有作用中還原作業的 IRE；您可以取消還原作業或等待還原完成，然後再刪除 IRE。
 
 
-IMPORTANT: 如果刪除 IRE，也會刪除無塵室 SVM 和中繼資料 Volume。這些資產刪除後，您將無法再產生乾淨還原的報表。
+IMPORTANT: 如果刪除 IRE，也會刪除無塵室 SVM 和中繼資料 Volume。這些資產刪除後，將無法再產生乾淨還原的報表。
 
 . 前往 **Settings**。
 . 在 Isolation 清理和恢復卡中，選擇 **Manage**。
 . 識別您要刪除的無塵室。選擇 IRE 的操作選單(`...`，然後選擇**刪除**。
 . 在對話方塊中，選取 **Delete** 以確認操作。
+
+
+
+
+[[more-information]]
+== 更多資訊
+
+* link:https://www.youtube.com/watch?v=6Vj0Ijo3mno&t=6s["影片：隔離恢復環境部署"]
 

@@ -12,7 +12,7 @@ summary: 已知限制標識了該產品的此版本不支援的平台、設備�
 
 
 [role="lead"]
-已知限制標識了該產品的此版本不支援或無法與其正確互通的平台、裝置或功能。仔細審查這些限制。
+已知限制列出了 NetApp Ransomware Resilience 不支援或無法與其正確互通的平台、裝置和功能。請審查適用於您環境的限制。
 
 
 
@@ -28,7 +28,7 @@ summary: 已知限制標識了該產品的此版本不支援的平台、設備�
 
 以下限制適用於 Amazon FSx for ONTAP：
 
-* Amazon FSx for ONTAP 不支援備份策略。在此環境中，您應該使用 Amazon FSx 備份來執行備份作業。您可以使用 Ransomware Resilience 來還原這些工作負載。
+* Amazon FSx for ONTAP 不支援備份原則。在此環境中，請使用 Amazon FSx 備份來執行備份作業。您可以使用 Ransomware Resilience 來還原這些工作負載。
 * 復原操作僅從快照執行。
 
 
@@ -43,7 +43,7 @@ summary: 已知限制標識了該產品的此版本不支援的平台、設備�
 * Azure NetApp Files 不支援複製功能的勒索軟體防護策略。
 * Azure NetApp Files 不支援 FPolicy 或使用者行為偵測。Azure NetApp Files 也不支援熵鑑識。
 * 選擇保護策略時，請確保其快照排程與 Azure NetApp Files 相容。Azure NetApp Files 中最常使用的快照排程是每小時一次。
-* 建議您不要使用 link:reference-soar.html["SOAR 行動手冊"] 與 Azure NetApp Files，因為 Azure NetApp Files API 會阻止自動化操作。
+* 避免將 link:reference-soar.html["SOAR 行動手冊"] 與 Azure NetApp Files 搭配使用，因為 Azure NetApp Files API 會封鎖自動化動作。
 * 部分事件資料未包含在 link:task-siem.html["SIEM 報告"] 中，適用於 Azure NetApp Files 組態。
 * 當您為 Azure NetApp Files link:task-custom-restore.html["還原工作負載"] 時，無法使用檔案層級還原。
 
@@ -75,4 +75,4 @@ summary: 已知限制標識了該產品的此版本不支援的平台、設備�
 [[multi-admin-verification]]
 == 多重管理員驗證
 
-Ransomware Resilience 或 NetApp Console 不支援多管理員驗證。如果您已設定 link:https://docs.netapp.com/us-en/ontap/multi-admin-verify/["ONTAP 中的多重管理員驗證"^]，則無法啟用保護、進行準備演練或執行任何還原操作。在嘗試執行任何這些操作之前，您應該停用多管理員驗證。
+Ransomware Resilience 或 NetApp Console 不支援多管理員驗證。如果您已設定 link:https://docs.netapp.com/us-en/ontap/multi-admin-verify/["ONTAP 中的多重管理員驗證"^]，您將無法啟用保護、進行準備演練或執行任何還原操作。在嘗試任何這些操作之前，請先停用多管理員驗證。

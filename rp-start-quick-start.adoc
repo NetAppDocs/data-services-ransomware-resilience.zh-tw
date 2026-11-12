@@ -12,7 +12,7 @@ summary: 只需幾個步驟即可開始使用 NetApp Ransomware Resilience。
 
 
 [role="lead"]
-使用此快速入門指南設定 NetApp Ransomware Resilience、探索工作負載並設定保護。
+設定 NetApp Ransomware Resilience，探索工作負載，並設定保護以防禦勒索軟體攻擊。
 
 請按照每個步驟中的連結獲取詳細資訊。
 
@@ -21,8 +21,8 @@ summary: 只需幾個步驟即可開始使用 NetApp Ransomware Resilience。
 需要擁有_超級管理員_或_組織管理員_角色才能部署 Console 代理程式並指派權限。
 
 [role="quick-margin-list"]
-* link:https://docs.netapp.com/us-en/console-setup-admin/concept-agents.html#agent-installation["確保已安裝控制台代理"^]
-* link:rp-start-prerequisites.html["確保您的系統符合要求"]
+* link:https://docs.netapp.com/us-en/console-setup-admin/concept-agents.html#agent-installation["確認您已安裝 Console 代理程式"^]
+* link:rp-start-prerequisites.html["請確認您的系統符合要求"]
 +
 ** 查看 link:reference-user-activity-requirements.html["偵測可疑使用者行為"] 和 link:task-clean-restore.html["全新還原"] 的要求。
 

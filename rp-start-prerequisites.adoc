@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: rp-start-prerequisites.html 
 keywords: bluexp ransomware protection, ransomware protection prerequisites, resilience 
-summary: 透過驗證對您的環境、網路存取、登入和 Web 瀏覽器的支持，開始使用NetApp Ransomware Resilience。 
+summary: 在部署 NetApp Ransomware Resilience 之前，請先確認系統、NetApp Console、ONTAP、備份和使用者行為偵測要求。 
 ---
 = NetApp Ransomware Resilience前提條件
 :hardbreaks:
@@ -12,7 +12,7 @@ summary: 透過驗證對您的環境、網路存取、登入和 Web 瀏覽器的
 
 
 [role="lead"]
-在部署 NetApp Ransomware Resilience 之前，請先確認您的環境、網路存取和瀏覽器是否符合要求。
+在部署 NetApp Ransomware Resilience 之前，請先確認您的系統、NetApp Console 組態、ONTAP 版本和備份目標是否符合要求。
 
 請審查以下要求。
 
@@ -21,7 +21,7 @@ summary: 透過驗證對您的環境、網路存取、登入和 Web 瀏覽器的
 [[supported-systems]]
 == 支援的系統
 
-請確保您使用的是受支援的系統：
+請確認您使用的是支援的系統：
 
 |===
 | 環境 | 協定 | 支援的版本 
@@ -75,13 +75,13 @@ NOTE: Azure NetApp Files 或 Google Cloud NetApp Volumes 不支援使用者活�
 ** 如果您的內部部署 ONTAP 叢集或 Cloud Volumes ONTAP 系統未在 Console 中設定，請參閱 link:https://docs.netapp.com/us-en/console-setup-admin/concept-agents.html["了解如何配置控制台代理"^] 和 link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-checklist-cm.html["標準控制台要求"^]。
 +
 
-NOTE: 如果單一 Console 組織中有多個 Console 代理程式，則 Ransomware Resilience 將掃描 Console UI 中目前選定的代理程式以外的所有 Console 代理程式上的 ONTAP 資源。
+NOTE: 如果您在單一 Console 組織中有多個 Console 代理程式，Ransomware Resilience 會掃描所有 Console 代理程式上的 ONTAP 資源，而不僅僅是 Console UI 中目前選取的代理程式。
 
 
 
 * 控制台代理必須具有 `cloudmanager-ransomware-protection`容器處於活動狀態。
 * 每個 Console 代理程式的限制為 3,000 個工作負載。您可以提出申請來擴充此限制。
-* 對於 ONTAP 或 Cloud Volumes ONTAP 叢集，勒索軟體復原功能需要 ONTAP 版本 9.11.1 或更高版本。
+* 對於 ONTAP 或 Cloud Volumes ONTAP 叢集，Ransomware Resilience 需要 ONTAP 版本 9.11.1 或更新版本。
 +
 
 NOTE: 若要在 SAN 工作負載上使用勒索軟體復原功能，您必須執行ONTAP 9.17.1 或更高版本。
@@ -119,14 +119,14 @@ NOTE: 您可以link:task-backup-destination.html["在 Ransomware Resilience 中�
 [[user-behavior-detection-requirements]]
 == 使用者行為偵測需求
 
-為了使 Ransomware Resilience 能夠提供有關使用者行為的警報，您必須設定使用者活動代理程式。若要安裝使用者活動代理程式，請確保您的系統符合link:reference-user-activity-requirements.html["要求"]。
+為了使 Ransomware Resilience 能夠提供有關使用者行為的警報，您必須設定使用者活動代理程式。若要安裝使用者活動代理程式，請確認您的系統符合 link:reference-user-activity-requirements.html["要求"]。
 
 
 
 [[clean-restore-prerequisites]]
 == 清理還原先決條件
 
-勒索軟體恢復功能提供乾淨還原，它提供引導式還原流程，可發現最佳還原路徑。若要使用乾淨還原link:task-clean-restore.html["請確保您符合先決條件"]。
+勒索軟體恢復功能提供乾淨還原，它提供引導式還原流程，可發現最佳還原路徑。若要使用乾淨還原link:task-clean-restore.html["確認您符合先決條件"]。
 
 
 

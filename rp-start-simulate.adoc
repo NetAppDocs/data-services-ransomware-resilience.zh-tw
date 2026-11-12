@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: rp-start-simulate.html 
 keywords: ransomware protection alert, ransomware protection attack, detect ransomware alert, simulate, readiness drill, practice, ransomware attack, ransomware attack response, ransomware attack readiness drill 
-summary: 透過模擬對範例工作負載發動勒索軟體攻擊，進行勒索軟體防範演練。然後，調查模擬攻擊並恢復範例工作負載。您可以多次開展勒索軟體防範演練。 
+summary: 模擬對範例工作負載的勒索軟體攻擊以進行準備演練，然後調查模擬攻擊並恢復工作負載。 
 ---
 = 在NetApp Ransomware Resilience中進行勒索軟體攻擊準備演練
 :hardbreaks:
@@ -134,10 +134,10 @@ image:screen-alerts-readiness-incidents2.png["顯示準備演習警報的事件�
 
 * 檢查檔案活動和可疑處理程序：
 +
-** 將偵測到的傳入資料與預期資料進行比較。
-** 比較偵測到的檔案建立率與預期建立率。
-** 比較偵測到的檔案重新命名率與預期重新命名率。
-** 比較實際刪除率和預期刪除率。
+** 將傳入的偵測資料與預期資料進行比較。
+** 將偵測到的檔案建立速率與預期速率進行比較。
+** 將偵測到的檔案重新命名率與預期率進行比較。
+** 將刪除率與預期刪除率進行比較。
 
 
 * 查看受影響的檔案清單。查看可能導致攻擊的檔案副檔名。

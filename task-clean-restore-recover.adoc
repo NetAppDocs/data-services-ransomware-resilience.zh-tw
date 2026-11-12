@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-clean-restore-recover.html 
 keywords: clean room, clean restore, secure recovery, recover, isolated recovery environment, ire 
-summary: Ransomware Resilience 可讓您透過乾淨的還原來控制和清理工作負載。 
+summary: 透過使用乾淨還原分析快照、移除惡意軟體，並將資料還原至原始或替代位置，以在勒索軟體攻擊後恢復工作負載。 
 ---
 = 使用 NetApp Ransomware Resilience 的乾淨還原來復原工作負載
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Ransomware Resilience 可讓您透過乾淨的還原來控制和清理�
 
 
 [role="lead"]
-使用 NetApp Ransomware Resilience，您可以在遭受加密型勒索軟體攻擊後，透過乾淨還原執行引導式復原。乾淨還原會識別最佳化的復原路徑，以將資料遺失降至最低，並在最短時間內讓您的工作負載重新上線。
+透過 NetApp Ransomware Resilience，您可以在遭受基於加密的勒索軟體攻擊後，使用乾淨還原執行引導式恢復。乾淨還原會識別最佳化的恢復路徑，以盡量減少資料遺失，並盡快使您的工作負載恢復線上。
 
 
 
@@ -31,7 +31,7 @@ summary: Ransomware Resilience 可讓您透過乾淨的還原來控制和清理�
 == 考量事項
 
 * 您只能針對基於加密的攻擊（包括使用者行為攻擊和熵攻擊）以及可疑使用者行為攻擊執行乾淨還原。資料外洩和資料銷毀攻擊不支援乾淨還原。
-* 如果隔離的復原環境沒有足夠的容量來執行新的操作，則會將其排入佇列，直到有可用容量為止。
+* 如果隔離的恢復環境沒有足夠的容量來執行新操作，則該操作將排入佇列，直到有容量可用為止。
 +
 ** 您可以在 Ransomware Resilience Recovery 儀表板中隨時監控正在進行且已排隊的清理還原作業的狀態。
 
@@ -44,7 +44,7 @@ summary: Ransomware Resilience 可讓您透過乾淨的還原來控制和清理�
 [[considerations-for-restoring-to-an-alternate-location]]
 === 還原至替代位置的考量事項
 
-使用乾淨還原功能還原磁碟區時，您可以選擇還原到由相同 Console 代理程式管理的備用位置。新位置可以位於同一系統、儲存 VM 或 Aggregate 中，也可以位於不同的系統、儲存 VM 或 Aggregate 中。還原到備用位置時：
+使用乾淨還原還原 Volume 時，您可以還原到由相同 Console 代理程式代管的備用位置。新位置可以位於相同或不同的系統、儲存設備 VM 或彙總上。還原到備用位置時：
 
 * 新磁碟區上會自動啟用 ARP。
 * 連接路徑是根據您提供的名稱設定的。例如： `<Data LIF IP address of destination storage VM>:<new volume name>`
@@ -61,13 +61,13 @@ summary: Ransomware Resilience 可讓您透過乾淨的還原來控制和清理�
 . 在 Restore Type 選項中，選取 **Clean restore**，然後選取 **Next**。
 . 選擇要使用的隔離復原環境，然後按一下 **Next** 。
 . 檢查隔離的復原環境，確認其位置正確。選取 **Restore**。
-. Ransomware Resilience 將執行必要的配置。設定成功完成後，Ransomware Resilience 將更新狀態。若要繼續，請選擇 **Next**。
+. Ransomware Resilience 執行必要的組態。設定成功完成後，Ransomware Resilience 會更新狀態。若要繼續，請選取 **下一步**。
 . 安裝完成後，選擇 **Run analysis**。Ransomware Resilience 會搜尋最新的未受影響的快照。
 +
 image:screenshot-clean-room-analysis.png["全新還原分析步驟的螢幕擷取畫面。"]
 
 +
-分析執行時，您可以選擇 **Stop**。停止分析需要重新啟動乾淨還原程序。
+分析執行時，您可以選擇 **停止**。如果停止分析，則必須重新啟動乾淨還原程序。
 
 . 分析完成後，選擇 **Next** 以規劃恢復方案。Ransomware Resilience 提供兩個選項：**Least data loss** 和 **Latest unimpacted restore point**。選擇其中之一，並可選擇查看對應還原點的單一檔案資料。
 +
@@ -76,16 +76,16 @@ image:screenshot-clean-room-analysis.png["全新還原分析步驟的螢幕擷�
 +
 image:clean-restore-plan.png["完整還原計畫步驟的螢幕擷取畫面。"]
 
-. 選擇還原點後，選取 **Create restore point**。Ransomware Resilience 會開始一系列工作來建立還原點。此程序完成後，選取 **Next**。
+. 選擇還原點後，選取 **建立還原點**。Ransomware Resilience 會開始一系列的工作來建立還原點。此程序完成後，選取 **下一步**。
 . 選擇 **Start cleaning** 以開始從檔案中清理惡意軟體。
-. 清潔完成後，選擇 **Next**。
+. 清潔完成後，選擇**下一步**。
 . 選擇還原目的地：
 +
 ** 選擇 **Primary （原始）** 以還原至原始目的地。
 +
 如果主要位置不可用且 link:task-clean-restore.html#secondary-sources["您已設定次要來源"]，則可以改為還原至**次要**來源。
 
-** 選擇 **Alternate** 以還原至新磁碟區。為新磁碟區選擇 **System**、**Storage VM** 和 **Aggregate**，然後提供 **New volume name**。
+** 選擇 **備用** 以還原至新 Volume。為新 Volume 選擇 **系統**、**儲存設備 VM** 和 **彙總**，然後提供 **新 Volume 名稱**。
 +
 image:alternate-recovery-destination.png["備用還原目的地的螢幕擷取畫面"]
 
