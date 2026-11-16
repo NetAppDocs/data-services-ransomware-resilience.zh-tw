@@ -25,6 +25,18 @@ NOTE: Ransomware Resilience 無法探索使用 FlexGroup 的磁碟區系統。
 
 
 
+[[metrocluster-discovery]]
+== MetroCluster 探索
+
+Ransomware Resilience 會自動載入 MetroCluster 組態以進行探索。您必須將 MetroCluster 配對中的兩個系統都新增至主控台，才能成功執行探索。
+
+如果 MetroCluster 配對中的兩個系統都已成功新增至 Console 組織，則這兩個系統都會顯示在探索選取項目中。您只需選取一個系統進行探索；鏡射配對將會自動新增。
+
+
+TIP: MetroCluster 系統在「探索」儀表板中會以 **+1** 標記。將滑鼠懸停在 **+1** 上即可檢視該對中的所有系統。
+
+
+
 [[select-workloads-to-discover]]
 == 選擇要探索的工作負載
 

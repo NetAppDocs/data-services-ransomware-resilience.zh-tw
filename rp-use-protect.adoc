@@ -21,6 +21,173 @@ summary: 您可以透過在NetApp Ransomware Resilience中為工作負載分配�
 [[before-you-begin]]
 == 開始之前
 
+勒索軟體防護策略包括_偵測_、_保護_和_複製_策略。
+
+* **偵測原則**識別勒索軟體威脅。您的偵測原則可以包含所有三種偵測方式，或其組合。它必須包含加密偵測或 link:suspicious-user-activity.html["可疑的使用者活動（需要額外組態）"]。
++
+** 加密偵測
+** 可疑的用戶活動
+** 阻止可疑檔案副檔名
++
+啟用偵測並區塊可疑檔案副檔名後，將滑鼠懸停在工具提示上，然後選取 **管理** 以link:task-file-extensions.html["選擇自訂的封鎖檔案副檔名列表"]。
+
+
+
+* **保護策略**包含快照和備份策略。保護策略中需要偵測和快照策略。備份策略是可選的。
++
+如果您使用其他NetApp產品來保護您的工作負載，勒索軟體復原能力會發現這些產品並提供以下選項：
+
++
+** 使用勒索軟體偵測原則，並繼續使用其他 NetApp 工具建立的快照和備份原則，或者
+** 使用 Ransomware Resilience 來管理偵測、快照和備份。
+
+
+* **複製策略** 使您能夠將勒索軟體復原功能的快照複製到輔助網站。複製計劃可以設定為每小時、每天、每週或每月一次的頻率。
++
+目前，您只能將快照複製到本機ONTAP儲存。
+
+
+
+
+NOTE: 如果您正在為 Amazon FSx for NetApp ONTAP 和 Azure NetApp Files 設定保護策略，請參閱link:rp-reference-limitations.html["每項服務的限制"]。
+
+
+TIP: 為了更好地管理和保護您的資料資產，您可以建立link:task-protection-group.html["群組工作負載"]，以便在一個策略下統一保護多個磁碟區。
+
+
+
+[[protection-policies-with-other-netapp-managed-services]]
+=== 與其他NetApp託管服務結合的保護策略
+
+除了 Ransomware Resilience 之外，您可以使用 NetApp Backup and Recovery 來管理檔案共用和 VM 檔案共用的保護。
+
+Backup and Recovery 服務的保護資訊會顯示在 Ransomware Resilience 中。您可以使用 Ransomware Resilience 為這些服務新增偵測原則。使用 Ransomware Resilience 新增保護原則會取代現有的保護原則。
+
+如果勒索軟體偵測策略由ONTAP中的自主勒索軟體防護（ARP 或 ARP/AI，取決於ONTAP版本）和 FPolicy 管理，則這些工作負載將受到保護並將繼續由 ARP 和 FPolicy 管理。
+
+
+NOTE: Amazon FSx for NetApp ONTAP 或 Azure NetApp Files 中的工作負載無法使用備份目的地。請使用 FSx for ONTAP 備份服務執行備份作業。您需要在 AWS 中為 FSx for ONTAP 工作負載設定備份原則，而不是在 Ransomware Resilience 中設定。備份原則會顯示在 Ransomware Resilience 中，並且與 AWS 中的設定保持一致。
+
+
+
+==== 針對不受NetApp應用程式保護的工作負載的保護策略
+
+如果您的工作負載未由 Backup and Recovery 或 Ransomware Resilience 管理，則可能已建立快照，這些快照是 ONTAP 或其他產品的一部分。如果已啟用 ONTAP FPolicy 保護，您可以使用 ONTAP 變更 FPolicy 保護。
+
+
+
+[[predefined-detection-policies]]
+=== 預先定義的偵測原則
+
+您可以選擇以下勒索軟體復原預定義策略之一，這些策略與工作負載重要性相符。
+
+
+NOTE: **加密使用者擴充**原則是唯一支援可疑使用者行為偵測的預先定義原則。+ **關鍵複寫原則**是唯一支援將 Snapshot 複本複寫至 ONTAP 的預先定義原則。
+
+[cols="10,15a,20,15,15,15"]
+|===
+| 政策層面 | 快照 | 頻率 | 保留時間（天） | 快照副本數量 | 快照副本的最大數量 
+
+
+.4+| *關鍵工作量政策*  a| 
+每刻鐘
+| 每15分鐘 | 3 | 288 | 309 
+
+
+| 日常的  a| 
+每 1 天
+| 14 | 14 | 309 
+
+
+| 每週  a| 
+每 1 週
+| 35 | 5 | 309 
+
+
+| 每月  a| 
+每 30 天
+| 60 | 2 | 309 
+
+
+.4+| *重要的工作量政策*  a| 
+每刻鐘
+| 每 30 分鐘 | 3 | 144 | 165 
+
+
+| 日常的  a| 
+每 1 天
+| 14 | 14 | 165 
+
+
+| 每週  a| 
+每 1 週
+| 35 | 5 | 165 
+
+
+| 每月  a| 
+每 30 天
+| 60 | 2 | 165 
+
+
+.4+| *標準工作量保單*  a| 
+每刻鐘
+| 每 30 分鐘 | 3 | 72 | 93 
+
+
+| 日常的  a| 
+每 1 天
+| 14 | 14 | 93 
+
+
+| 每週  a| 
+每 1 週
+| 35 | 5 | 93 
+
+
+| 每月  a| 
+每 30 天
+| 60 | 2 | 93 
+
+
+.4+| *加密用戶擴充*  a| 
+每刻鐘
+| 每 30 分鐘 | 3 | 72 | 93 
+
+
+| 日常的  a| 
+每 1 天
+| 14 | 14 | 93 
+
+
+| 每週  a| 
+每 1 週
+| 35 | 5 | 93 
+
+
+| 每月  a| 
+每 30 天
+| 60 | 2 | 93 
+
+
+.4+| *關鍵複製策略*  a| 
+每刻鐘
+| 每15分鐘 | 3 | 288 | 309 
+
+
+| 日常的  a| 
+每 1 天
+| 14 | 14 | 309 
+
+
+| 每週  a| 
+每 1 週
+| 35 | 5 | 309 
+
+
+| 每月  a| 
+每 30 天
+| 60 | 2 | 309 
+|===
 如果您打算建立具有可疑使用者行為偵測功能的保護原則，請確保您已link:suspicious-user-activity.html["已完成必要的設定"]以進行使用者活動監控。
 
 
@@ -55,8 +222,15 @@ summary: 您可以透過在NetApp Ransomware Resilience中為工作負載分配�
 檢測策略不會改變其他產品中管理的策略。
 
 +
-如果自主勒索軟體保護和 FPolicy 保護已在其他服務中激活，則偵測策略將啟用它們。詳細了解link:https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["自主勒索軟體防護"^]，link:https://docs.netapp.com/us-en/data-services-backup-recovery/index.html["備份和復原"^] ， 和link:https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html["ONTAP FPolicy"^]。
+如果其他服務中已啟動自主勒索軟體保護和 FPolicy 保護，則偵測原則將啟用這些保護。
 
+
+
+了解更多：
+
+* link:https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["自主勒索軟體防護"^]
+* link:https://docs.netapp.com/us-en/data-services-backup-recovery/index.html["備份和復原"^]
+* link:https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html["ONTAP FPolicy"^]
 
 
 
@@ -91,48 +265,32 @@ image:screen-protection-strategy-add.png["新增顯示快照部分的策略頁�
 ** *可疑使用者行為偵測*：啟用使用者行為偵測，將使用者活動事件傳輸到 Ransomware Resilience，並偵測可疑事件，例如資料外洩或資料銷毀。
 ** *封鎖檔案副檔名*：啟用 Ransomware Resilience 以封鎖已知的可疑檔案副檔名。
 +
-如果您想更改被封鎖的檔案副檔名，請在系統管理員中編輯它們。
-
-+
-
-NOTE: 您可以選擇任意組合的偵測原則。偵測原則必須包含加密偵測或可疑使用者行為偵測。
+您可以使用預設的已封鎖檔案副檔名清單，或建立 link:task-file-extensions.html["自訂的列表"]。
 
 
 
-. 設定 *Snapshot 原則*。若要從 link:concept-strategy.html#predefined-policies["預定義原則"] 匯入 Snapshot 設定，請選擇 *Select* 單選按鈕，然後從下拉式選單中選擇原則。如果匯入原則，則不需要其他 Snapshot 組態。
-+
-若要設定您自己的設定，請選擇 *建立*，然後輸入 *Snapshot 快照技術基本名稱*。基本名稱是附加至每個快照的前綴。
 
-. 如果您要設定自己的快照設定，可以啟用 *Snapshot 快照技術鎖定*。如果啟用快照鎖定，請設定 *鎖定保留天數* 的值（即快照鎖定的時間）。
-+
-Snapshot 快照技術鎖定透過鎖定主儲存設備上的 Snapshot 複本，建立不可變儲存設備，即使勒索軟體攻擊成功入侵備份儲存設備目的地，這些 Snapshot 複本在特定時間內也無法被修改或刪除。這可以加快還原速度。當 Snapshot 快照技術鎖定後，Volume 的過期時間將設定為該 Snapshot 複本的過期時間。
 
-+
-ONTAP 9.12.1 及更新版本支援 Snapshot 複本鎖定功能。若要進一步瞭解 SnapLock，請參閱 link:https://docs.netapp.com/us-en/ontap/snaplock/index.html["適用於 SnapLock 的 ONTAP 文件"^]。
 
-+
-如果您要設定自己的快照設定，請設定快照排程選項。選擇是否以分鐘、小時、天、週或月的頻率建立快照。對於除每日以外的所有選項，請選擇在一天、一週或一個月中的哪個時間建立快照。此外，請在 *保留* 欄位中選擇每種快照類型要保留的複本數量。
+NOTE: 您可以選擇任意組合的偵測原則。偵測原則必須包含加密偵測或可疑使用者行為偵測。.設定 *Snapshot 原則*。若要從 link:concept-strategy.html#predefined-policies["預定義原則"] 匯入 Snapshot 設定，請選擇 *Select* 單選按鈕，然後從下拉式選單中選擇原則。如果匯入原則，則不需要其他 Snapshot 組態。
 
-+
-image:add-policy-snapshot.png["Snapshot 原則選項的螢幕截圖。"]
++ 若要設定您自己的設定，請選擇 *建立*，然後輸入 *Snapshot 快照技術基本名稱*。基本名稱是附加至每個快照的前置字元。如果您要設定自己的快照設定，則可以啟用 *Snapshot 快照技術鎖定*。如果啟用快照鎖定，請設定 *鎖定保留天數* 的值（即快照鎖定的時間）。
 
-. 對於內部部署工作負載，您可以選擇設定*複寫原則*，將工作負載複寫到 ONTAP 儲存設備。
-+
-若要匯入系統定義的原則，請選擇 *Select* 單選按鈕，然後從下拉式選單中選擇 link:concept-strategy.html#predefined-policies["預定義原則"]。
++ Snapshot 快照技術鎖定透過鎖定主儲存設備上的 Snapshot 複本，建立不可變儲存設備，即使勒索軟體攻擊成功入侵備份儲存設備目的地，這些 Snapshot 複本在一定時間內也無法被修改或刪除。這可以加快還原速度。當 Snapshot 快照技術鎖定後，Volume 的過期時間將設定為該 Snapshot 複本的過期時間。
 
-+
-若要建立您自己的複寫設定，請選擇 *建立* ，然後輸入 *複寫原則基本名稱* ，這是附加至所有 Snapshot 複本的前置字元。設定 *複寫排程* 。切換您要啟用的頻率（每小時、每天、每週或每月），並為每個啟用的排程設定保留值（要保留的複寫 Snapshot 複本數量）。
++ ONTAP 9.12.1 及更新版本支援 Snapshot 複本鎖定。若要深入瞭解 SnapLock，請參閱 link:https://docs.netapp.com/us-en/ontap/snaplock/index.html["適用於 SnapLock 的 ONTAP 文件"^]。
 
-. （可選）設定 *備份原則*。若要匯入現有原則，請選擇 *選擇* 單選按鈕，然後從下拉式選單中選擇 link:concept-strategy.html#predefined-policies["預定義原則"]。
-+
-若要建立您自己的原則，請選擇 *建立* 並輸入 *備份原則基本名稱*。透過切換不同的頻率（每小時、每天、每週和每月）來設定 *備份排程*，然後設定每種頻率的保留次數。
++ 如果您要設定自己的 Snapshot 快照技術設定，請設定 Snapshot 快照技術排程選項。選擇按分鐘、小時、天、週或月建立 Snapshot 快照技術的頻率。除每日之外，對於其他所有選項，請選擇在一天、一週或一個月中的哪個時間建立 Snapshot 快照技術。此外，請在 *保留* 欄位中選擇每種 Snapshot 快照技術類型要保留的複本數量。
 
-+
++ image:add-policy-snapshot.png["Snapshot 原則選項的螢幕截圖。"] 。對於內部部署工作負載，您可以選擇設定*複寫原則*，將工作負載複寫到 ONTAP 儲存設備。
 
-TIP: 若要在輔助儲存裝置上啟用備份鎖定，請使用 *Settings* 選項來設定備份目標位置。如需詳細資訊，請參閱 link:task-backup-destination.html["配置設定"]。
++ 若要匯入系統定義的原則，請選擇 *選擇* 單選按鈕，然後從下拉式選單中選擇 link:concept-strategy.html#predefined-policies["預定義原則"]。
 
-. 選擇“*新增*”。
++ 若要建立您自己的複寫設定，請選取 *建立* ，然後輸入 *複寫原則基本名稱* ，這是附加至所有快照的前置字元。設定 *複寫排程* 。切換您要啟用的頻率（每小時、每天、每週或每月），並為每個啟用的排程設定保留值（要保留的複寫快照數量）。您可以選擇設定 *備份原則* 。若要匯入現有的原則，請選擇 *選取* 選項按鈕，然後從下拉式選單中選擇 link:concept-strategy.html#predefined-policies["預定義原則"] 。
 
++ 若要建立您自己的原則，請選取 *建立* 並輸入 *備份原則基本名稱*。透過切換不同的頻率（每小時、每天、每週和每月）來設定 *備份排程*，然後為每個頻率設定保留計數。
+
++ 提示：若要在次要儲存設備上啟用備份鎖定，請使用 *設定* 選項來設定備份目的地。如需詳細資訊，請參閱 link:task-backup-destination.html["配置設定"]。。選取 *新增*。
 
 
 
@@ -160,6 +318,12 @@ image:screen-protection.png["管理策略頁面"]
 ** *加密偵測*
 ** *可疑使用者行為偵測*
 ** *封鎖可疑的檔案副檔名*
++
+「區塊可疑檔案副檔名」選項會使用您為組織設定的預設清單。若要link:task-file-extensions.html["使用自訂清單"]您建立的清單，請選取鉛筆圖示。
+
++
+如果您已在 ONTAP 中設定了封鎖的檔案副檔名清單，則可以透過選擇 *以 Ransomware Resilience 清單取代 ONTAP 清單* 來置換這些清單。然後選擇您希望 SVM 執行 *允許除封鎖清單之外的所有檔案副檔名* 還是 *封鎖除允許清單之外的所有檔案副檔名*。然後，從下拉式選單中選擇清單。工作負載上的所有儲存設備虛擬機器（SVM）都將使用該清單；您稍後可以將不同的清單套用至工作負載上的不同 SVM。
+
 
 
 . 選擇**下一步**。
@@ -185,7 +349,14 @@ image:screen-protection.png["管理策略頁面"]
 
 . 在「保護」頁面中，選擇一個工作負載，然後選擇「*保護*」。
 . Ransomware Resilience 會偵測是否有現有的作用中 Backup and Recovery 原則。若要取代現有原則、請選取 **取代現有原則** 方塊。當您選取此方塊時、 Ransomware Resilience 會將偵測原則清單取代為偵測原則。
-. 選擇保護策略。如果不存在保護策略，請選擇**新增**來建立新策略。有關建立策略的信息，請參閱<<steps,建立保護策略>>。選擇**下一步**。
+. 選擇保護原則。如果沒有保護原則，請選取 **新增** 以建立新原則。如需建立原則的相關資訊，請參閱 <<steps,建立保護策略>>。
++
+「區塊可疑檔案副檔名」選項會使用您為組織設定的預設清單。若要link:task-file-extensions.html["使用自訂清單"]您建立的清單，請選取鉛筆圖示。
+
++
+如果您已在 ONTAP 中設定了封鎖的檔案副檔名清單，則可以透過選擇 *以 Ransomware Resilience 清單取代 ONTAP 清單* 來置換這些清單。然後選擇您希望 SVM 執行 *允許除封鎖清單之外的所有檔案副檔名* 還是 *封鎖除允許清單之外的所有檔案副檔名*。然後，從下拉式選單中選擇清單。工作負載上的所有儲存設備虛擬機器（SVM）都將使用該清單；您稍後可以將不同的清單套用至工作負載上的不同 SVM。
+
+. 選擇**下一步**。
 . 如果您的策略包含複製，請選擇**目標系統**和**目標儲存虛擬機器**。選擇**下一步**。
 . 選擇備份目標或建立新的備份目標。選擇**下一步**。
 +
@@ -231,8 +402,10 @@ image:screen-protection.png["管理策略頁面"]
 [[next-steps]]
 == 後續步驟
 
+* link:task-file-extensions.html["管理被封鎖或允許的檔案副檔名"]
+* link:suspicious-user-activity.html["設定使用者活動偵測"]
+* link:rp-use-alert.html["回應勒索軟體警示"]
 * link:concept-strategy.html["了解保護策略"]
 * link:task-protection-group.html["管理保護群組"]
 * link:task-backup-destination.html["管理備份目的地"]
-* link:suspicious-user-activity.html["設定使用者活動偵測"]
 

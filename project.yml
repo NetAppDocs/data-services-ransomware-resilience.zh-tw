@@ -64,6 +64,8 @@ sidebar:
           url: "/troubleshoot-user-activity.html"
       - title: 管理保護群組
         url: "/task-protection-group.html"
+      - title: 管理被封鎖的檔案副檔名
+        url: "/task-file-extensions.html"
       - title: 掃描個人識別資訊
         url: "/task-classify.html"
     - title: 回應並恢復

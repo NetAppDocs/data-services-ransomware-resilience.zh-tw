@@ -21,7 +21,13 @@ summary: NetApp Ransomware Resilience 支援對使用者活動事件建立自動
 自動化回應支援加密（使用者行為）、資料外洩和資料銷毀事件。您必須先link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/suspicious-user-activity.html#create-a-user-activity-agent["配置了使用者活動代理，啟用了具有使用者活動偵測功能的原則，並建立了使用者目錄連接器。"]才能建立自動化回應。當自動化回應被觸發時，Ransomware Resilience 會傳送電子郵件警示。
 
 
-NOTE: 如果警報是由可疑使用者行為觸發的，則只能拍攝快照。封鎖使用者無法作為對可疑使用者行為的自動化回應。
+
+[[before-you-begin]]
+== 開始之前
+
+* 如果警報是由可疑使用者行為觸發的，則只能拍攝快照。封鎖使用者無法作為對可疑使用者行為的自動化回應。
+* 為 MetroCluster 組態設定自動回應時，只需在 MetroCluster 配對中選擇一個工作負載。自動回應會自動套用於整個 MetroCluster 組態。
+
 
 
 

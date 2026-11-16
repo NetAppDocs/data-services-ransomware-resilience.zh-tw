@@ -664,7 +664,6 @@
   <block id="a49a95f9a293b47d316bebea16d14e29" category="list-text">*使用其他NetApp產品或服務中管理的現有快照和備份策略為工作負載建立偵測策略。 *</block>
   <block id="b7caa7f3615aea01fd626561bb13bda1" category="paragraph">檢測策略不會改變其他產品中管理的策略。</block>
   <block id="f05ea9e0c9ccffc58a546b5b7a0d8608" category="inline-link-macro">備份和復原</block>
-  <block id="0d8d979e8f1f220e1b4ca41afbe9262e" category="paragraph">如果自主勒索軟體保護和 FPolicy 保護已在其他服務中激活，則偵測策略將啟用它們。詳細了解<block ref="1b5ca5e6db0400e20efef2d18e2ed058" category="inline-link-macro-rx"></block>，<block ref="746471c5fd2aae723f0f1e69c0304862" category="inline-link-macro-rx"></block> ， 和<block ref="e579faf0a14efb59aa4bfe357406413f" category="inline-link-macro-rx"></block>。</block>
   <block id="1b49dfb35b7ec360208537cc7e5a9d62" category="section-title">建立勒索軟體保護策略（如果您沒有快照或備份策略）</block>
   <block id="7161176fcf3200a6f1029cbb10969d7b" category="paragraph">如果工作負載上不存在快照或備份策略，您可以建立勒索軟體保護策略，其中可以包含您在勒索軟體復原中建立的以下策略：</block>
   <block id="f23b77237fe3a13c45d11aeb7e85a8cb" category="list-title">創建勒索軟體保護策略的步驟[[步驟]]</block>
@@ -675,7 +674,6 @@
   <block id="a5be5d648ce22c25337cedcc760abd3c" category="inline-image-macro">新增顯示快照部分的策略頁面</block>
   <block id="3c47a09fd51a5bf078b6b75c88195ad8" category="paragraph"><block ref="3c47a09fd51a5bf078b6b75c88195ad8" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e4574be2aa1d855d0a159fa734c028b7" category="list-text">對於每個項目，選擇*向下箭頭*。</block>
-  <block id="7c06fadd4f73e4b63eb519df7d9880fc" category="paragraph">如果您想更改被封鎖的檔案副檔名，請在系統管理員中編輯它們。</block>
   <block id="fa12509cfb8e8ccded16e2a254e988c4" category="list-text">選擇“*新增*”。</block>
   <block id="1a068d6a85d666ea306209409d3e8bca" category="section-title">在具有現有備份或快照策略的工作負載中新增偵測策略</block>
   <block id="8ffd4321390a5a9174c14e023f8f68f8" category="inline-xref">利用勒索軟體抵禦能力進行保護</block>
@@ -688,7 +686,6 @@
   <block id="783a386314b7dc75416c1abf94fcf70f" category="section-title">用勒索軟體保護策略取代現有的備份或快照策略</block>
   <block id="cc8bf7105e0bf7256578c2b5c24f9ebf" category="paragraph">您可以用勒索軟體保護策略取代現有的備份或快照策略。這種方法會刪除外部管理的保護，並在勒索軟體復原中配置偵測和保護。</block>
   <block id="df03f91b3a74d5ec2baa41276e3a16de" category="inline-xref">建立保護策略</block>
-  <block id="6254fbe0af1c355b3b21ba0edff9f802" category="list-text">選擇保護策略。如果不存在保護策略，請選擇**新增**來建立新策略。有關建立策略的信息，請參閱<block ref="176be3a772dd966966fe67b132b5ec7b" category="inline-xref-macro-rx"></block>。選擇**下一步**。</block>
   <block id="375396793fa0187dd9b04e12d4a0a7b3" category="list-text">選擇備份目標或建立新的備份目標。選擇**下一步**。</block>
   <block id="bd320a2d0a55e1edf2c57054719c7c15" category="list-text">查看新的保護策略，然後選擇**保護**來套用它。</block>
   <block id="82f3ca7fa2e1f82d7f077e15af9747a4" category="section-title">分配不同的策略</block>
@@ -709,7 +706,6 @@
   <block id="e6cd86d61f4639c8a27006c6c29b3e9f" category="list-text">選擇“下一步”。</block>
   <block id="f7ba12bb96df2ae9d69ffbf1bc2af6bb" category="inline-image-macro">新增保護群組 - 策略頁面</block>
   <block id="a739b6145911af1f850b745cae737475" category="paragraph"><block ref="a739b6145911af1f850b745cae737475" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="f724f66c90177c8dac8336038a0778c0" category="list-text">如果您的偵測策略包含使用者行為偵測，請選擇您想要使用的資料收集器，然後按一下**下一步**。</block>
   <block id="0fc76de5572d1186f1358665dff6076f" category="list-text">檢查保護組的選擇。</block>
   <block id="eda3b9c0a863dbdeae5ac8cceaa9106b" category="section-title">編輯組保護</block>
   <block id="ecfb3b2431beb33b5fe2ef7c83f7fb1b" category="list-text">在「保護」頁面中，選擇「保護群組」選項卡，然後選擇要修改其政策的群組。</block>
@@ -1622,7 +1618,6 @@
   <block id="8c600f29f899b74aad0eea00b5927162" category="inline-link-macro">連線至 SIEM</block>
   <block id="4640cffe8cecf29a2e28eccc89d62e54" category="cell">輸入 SIEM/XDR 伺服器詳細資訊以啟用威脅偵測。請參閱 <block ref="ffa7fd2a3621d8607d19220a5312c79a" category="inline-link-macro-rx"></block>。</block>
   <block id="384ff6974e7af6bfbb47b5f1a1e8a8ef" category="cell">為該工作負載新增備份目標以保護它。請參閱 <block ref="e25a1b60993d45f33b0deea2ae726330" category="inline-link-macro-rx"></block>。</block>
-  <block id="b6ac186c730d3951ea5f7795e32f0554" category="admonition">若要在輔助儲存裝置上啟用備份鎖定，請使用 *Settings* 選項來設定備份目標位置。如需詳細資訊，請參閱 <block ref="33c35db19b883807eccfb2734290ae91" category="inline-link-macro-rx"></block>。</block>
   <block id="bcecace85f7c3d476feccac24d9db3eb" category="list-text">在儀錶板或其他頁面中，選擇右上角的 *Refresh* <block ref="94d384894f036157c348eadc55c40952" category="inline-image-macro-rx" type="image"></block> 選項，即可重新整理報告中顯示的資料。</block>
   <block id="cc3ae719c12cc9e21d1f9b6b919eb818" category="summary">在 NetApp Ransomware Resilience 中新增備份目的地，以提升網路韌性。</block>
   <block id="162cbc2e55bba363e404fc5b076b5396" category="doc">在 NetApp Ransomware Resilience 中新增備份目的地</block>
@@ -2156,7 +2151,6 @@
   <block id="5e37428a91a220042e4764361ae6e656" category="list-text">*加密偵測*：啟用 Ransomware Resilience 以偵測基於加密的攻擊。</block>
   <block id="83b90da4f4a4213417bbdd607b6813c9" category="list-text">*可疑使用者行為偵測*：啟用使用者行為偵測，將使用者活動事件傳輸到 Ransomware Resilience，並偵測可疑事件，例如資料外洩或資料銷毀。</block>
   <block id="8d9e80b9523ae8e43c09fee979fbfe13" category="list-text">*封鎖檔案副檔名*：啟用 Ransomware Resilience 以封鎖已知的可疑檔案副檔名。</block>
-  <block id="87c5b70bcda4f0448400bb7245e5d975" category="admonition">您可以選擇任意組合的偵測原則。偵測原則必須包含加密偵測或可疑使用者行為偵測。</block>
   <block id="1c2f725024e8db3f57c9ffb6c1869a4f" category="list-text">*進行中*：正在套用原則，但作業尚未完成。</block>
   <block id="7f2fe4ecc84891950d87f953f70363aa" category="list-text">*失敗*：原則已設定，但發生錯誤。</block>
   <block id="ed3c60417302240ba271d87f011c0f32" category="paragraph">在 Ransomware Resilience 中啟用 AWS Security Hub 之前，您需要在 AWS Security Hub 中執行安全組態設定：</block>
@@ -2724,7 +2718,6 @@
   <block id="c5571d2bd805b9ff90a236b8f97f4b2a" category="paragraph">工作負載必須具有已啟用加密偵測或使用者行為偵測的勒索軟體保護原則，才能被視為受到保護。如果缺少其中至少一項偵測策略，工作負載將被標示為有風險。如果工作負載具有備份或快照原則，但未啟用加密偵測或使用者行為偵測，則將被視為有風險。</block>
   <block id="25ef6c177ba76101d5903dc7639808a9" category="paragraph">是的，如果您有在 Backup and Recovery 中代管的工作負載，這些原則將會帶入 Ransomware Resilience。</block>
   <block id="ad454ecef2b040909651d7af492e42ff" category="paragraph-title">如果 ONTAP 中存在原則（例如 ARP 、 FPolicy 和快照）， Ransomware Resilience 是否會變更這些原則？</block>
-  <block id="33770507195ff31d97a8192589460055" category="paragraph">Ransomware Resilience 不會修改 ONTAP 中任何現有的偵測原則（ARP、FPolicy 設定）。如果您修改 Ransomware Resilience 中的任何設定，您可以置換 ONTAP 的設定。</block>
   <block id="73f9341af639bb7291bbf568f90c32a7" category="list-text">每個 Console 代理程式的限制為 3,000 個工作負載。您可以提出申請來擴充此限制。</block>
   <block id="450c303d7338ae99abb9140e57f1802f" category="paragraph">需要擁有_超級管理員_或_組織管理員_角色才能部署 Console 代理程式並指派權限。</block>
   <block id="8c6998a19384eedc205556ec1d5a77b6" category="paragraph-title">勒索軟體防護授權是否包含其他 NetApp 產品？</block>
@@ -2805,20 +2798,8 @@
   <block id="344f7e8a6617b537a56be4e2326d7628" category="list-text">您也可以選擇現有的保護策略作為新策略的基礎。在 *從現有的 Ransomware Resilience 策略複製* 中，選擇 *選擇*。選擇現有策略，然後選擇 *複製*。</block>
   <block id="b99ea56cd0937e71402758b90941afba" category="list-text">選擇 *偵測原則* 設定：</block>
   <block id="368cc5f046a5decdd8a63b189def027d" category="inline-link-macro">預定義原則</block>
-  <block id="35818e1bdf8572310be62fbe70d83fbd" category="list-text">設定 *Snapshot 原則*。若要從 <block ref="acb8cd429652c09fe35d5de4c302f2ae" category="inline-link-macro-rx"></block> 匯入 Snapshot 設定，請選擇 *Select* 單選按鈕，然後從下拉式選單中選擇原則。如果匯入原則，則不需要其他 Snapshot 組態。</block>
-  <block id="cb67299b59d7a0a794b01e3933723fc2" category="paragraph">若要設定您自己的設定，請選擇 *建立*，然後輸入 *Snapshot 快照技術基本名稱*。基本名稱是附加至每個快照的前綴。</block>
-  <block id="3f1b170bc65d3a2a562b87c762c823cf" category="list-text">如果您要設定自己的快照設定，可以啟用 *Snapshot 快照技術鎖定*。如果啟用快照鎖定，請設定 *鎖定保留天數* 的值（即快照鎖定的時間）。</block>
-  <block id="227b3727877936fe36a5c3408d154e37" category="paragraph">Snapshot 快照技術鎖定透過鎖定主儲存設備上的 Snapshot 複本，建立不可變儲存設備，即使勒索軟體攻擊成功入侵備份儲存設備目的地，這些 Snapshot 複本在特定時間內也無法被修改或刪除。這可以加快還原速度。當 Snapshot 快照技術鎖定後，Volume 的過期時間將設定為該 Snapshot 複本的過期時間。</block>
   <block id="70f359f752aadf5bf7a021c260016eae" category="inline-link-macro">適用於 SnapLock 的 ONTAP 文件</block>
-  <block id="e2c8c1fbfb2e418d03e83af4d5e791b3" category="paragraph">ONTAP 9.12.1 及更新版本支援 Snapshot 複本鎖定功能。若要進一步瞭解 SnapLock，請參閱 <block ref="4ca7d4cccee9eba6047bb73bae1d4bb0" category="inline-link-macro-rx"></block>。</block>
-  <block id="d07faab816e99d4553ba7bf5cb72f7bd" category="paragraph">如果您要設定自己的快照設定，請設定快照排程選項。選擇是否以分鐘、小時、天、週或月的頻率建立快照。對於除每日以外的所有選項，請選擇在一天、一週或一個月中的哪個時間建立快照。此外，請在 *保留* 欄位中選擇每種快照類型要保留的複本數量。</block>
   <block id="99cf9bfc9df3b53a2612d01dea4a5f59" category="inline-image-macro">Snapshot 原則選項的螢幕截圖。</block>
-  <block id="b0a1cedd2277ba2ec3327d537c1e0a4b" category="paragraph"><block ref="b0a1cedd2277ba2ec3327d537c1e0a4b" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="199641835a7fed0b2247051b07a065cc" category="list-text">對於內部部署工作負載，您可以選擇設定*複寫原則*，將工作負載複寫到 ONTAP 儲存設備。</block>
-  <block id="4978e3b9001301d839fc0946f4ba3f67" category="paragraph">若要匯入系統定義的原則，請選擇 *Select* 單選按鈕，然後從下拉式選單中選擇 <block ref="acb8cd429652c09fe35d5de4c302f2ae" category="inline-link-macro-rx"></block>。</block>
-  <block id="60e573bc37b98bd9fd792830cf42a815" category="paragraph">若要建立您自己的複寫設定，請選擇 *建立* ，然後輸入 *複寫原則基本名稱* ，這是附加至所有 Snapshot 複本的前置字元。設定 *複寫排程* 。切換您要啟用的頻率（每小時、每天、每週或每月），並為每個啟用的排程設定保留值（要保留的複寫 Snapshot 複本數量）。</block>
-  <block id="0ac700a6fce8da97bdad86b3f0e2e13d" category="list-text">（可選）設定 *備份原則*。若要匯入現有原則，請選擇 *選擇* 單選按鈕，然後從下拉式選單中選擇 <block ref="acb8cd429652c09fe35d5de4c302f2ae" category="inline-link-macro-rx"></block>。</block>
-  <block id="c7915346ee91e7b7da0689c8b96c3c65" category="paragraph">若要建立您自己的原則，請選擇 *建立* 並輸入 *備份原則基本名稱*。透過切換不同的頻率（每小時、每天、每週和每月）來設定 *備份排程*，然後設定每種頻率的保留次數。</block>
   <block id="9830c7d8e813511d60d4ac7532561b5d" category="list-text">如果您的保護策略包含使用者行為偵測，請在您的環境中選擇一個 *使用者活動代理程式* 來作為新資料收集器的主機。Ransomware Resilience 會自動建立資料收集器，將使用者活動事件傳輸至 Ransomware Resilience，以偵測異常的使用者行為。</block>
   <block id="9e22bb022357fb45ccf2d21570594214" category="inline-link-macro">了解保護策略</block>
   <block id="ca8c59331fa4e2672fad0627fd8a1afc" category="list-text"><block ref="ca8c59331fa4e2672fad0627fd8a1afc" category="inline-link-macro-rx"></block></block>
@@ -2925,4 +2906,126 @@
   <block id="59655d8f0a9a94d51aad5343b7a96d2c" category="admonition">還原的資料會覆寫原始檔案或目錄，但除非您指定新名稱，否則原始檔案和資料夾名稱將保持不變。</block>
   <block id="247c5c536f5e56eaa250c0e6dcf8a8a7" category="list-text">選擇是否保留目前名稱，或為還原的檔案或目錄使用不同的名稱。</block>
   <block id="a947a5d59495e6e276343dca4c52dee5" category="paragraph">在「恢復」頁面上，選擇要還原的 VM 後，繼續執行下列步驟。</block>
+  <block id="bcf5049df7714af1ba42f40c51aee631" category="inline-link-macro">使用自訂清單</block>
+  <block id="9900d28238084ad9c308f011a9c140a0" category="paragraph">「區塊可疑檔案副檔名」選項會使用您為組織設定的預設清單。若要<block ref="4adb6ba3c4216e526dbd9a0fc52ab461" category="inline-link-macro-rx"></block>您建立的清單，請選取鉛筆圖示。</block>
+  <block id="a914cb406bfedd0ff4a4c2892ad21daa" category="paragraph">+ 如果您已在 ONTAP 中設定了封鎖的檔案副檔名清單，您可以透過選擇 *以 Ransomware Resilience 清單取代 ONTAP 清單* 來置換這些清單。然後選擇您要 SVM *允許除封鎖清單以外的所有檔案副檔名* 還是 *區塊除允許清單以外的所有檔案副檔名*。然後，從下拉式選單中選擇清單。工作負載上的所有儲存設備虛擬機器（SVM）都將使用該清單；您稍後可以將不同的清單套用至工作負載上的不同 SVM。</block>
+  <block id="6607faee2b9ec1c5d1cd49893a3ba90f" category="list-text">目前不支援對 MetroCluster 或 SAN 工作負載進行乾淨還原。</block>
+  <block id="c4d3491ad5baf6cb6ea2a67196542971" category="doc">管理已封鎖的檔案副檔名</block>
+  <block id="c8e63e51c8e0acaacf08d2ec2d4a9f72" category="paragraph">當您啟用 *區塊可疑檔案副檔名* 保護選項時，Ransomware Resilience 現在提供功能讓您自訂工作負載上允許或區塊的檔案副檔名清單。透過此增強功能，您可以設定工作負載，使其僅允許在儲存設備虛擬機器（SVM）上使用特定檔案類型，或區塊特定檔案副檔名。如果您使用 FPolicy 移轉現有工作負載，以透過 Ransomware Resilience 區塊可疑檔案副檔名，則預設會使用經過篩選的副檔名清單，但您可以自訂該清單。此增強功能支援對檔案副檔名選項進行更精細的控制，並且允許您為不同的 SVM 建立不同的清單。</block>
+  <block id="714e7021c144cf0abe82a4c6f2c4f93e" category="inline-link-macro">在 Ransomware Resilience 中管理被封鎖的檔案副檔名</block>
+  <block id="746947620a1677afde977abf37019b8c" category="paragraph">如需詳細資訊，請參閱 <block ref="c1197af6ca574421271b30600de07a8f" category="inline-link-macro-rx"></block>。</block>
+  <block id="c6afc2a7c10cd55aed74c7ec88063113" category="doc">MetroCluster 支援</block>
+  <block id="881339c26c28107ef981b5584762672c" category="paragraph">Ransomware Resilience 現已支援 MetroCluster，可為鏡射的 MetroCluster 組態提供勒索軟體保護、偵測與恢復功能。在 MetroCluster 組態上啟用勒索軟體保護時，必須將 MetroCluster 配對中的兩個系統都新增至主控台。當您在配對的其中一側探索並啟用保護時，另一側也會自動啟用。</block>
+  <block id="135aafefd6672672bf413096190820a9" category="paragraph">在 MetroCluster 工作負載遭受勒索軟體攻擊後進行恢復時，您目前只能使用自訂還原。</block>
+  <block id="200ccc515e5c41e28e5dae9b2b257c4a" category="inline-link-macro">MetroCluster 探索</block>
+  <block id="adea9837f77c1d23d23d90ecaab16a70" category="paragraph">如需詳細資訊，請參閱 <block ref="e384f8b7351cc9f72a02208e7b2a1112" category="inline-link-macro-rx"></block>。</block>
+  <block id="11d95859bf4855e61cea7be3a95b9052" category="section-title">MetroCluster 限制</block>
+  <block id="046a31db0a00ef596ac52b7dc914bc98" category="list-text">MetroCluster 工作負載目前不支援全新還原。</block>
+  <block id="7a00acc88e7547d072c23fdaf37adeb6" category="paragraph">Ransomware Resilience 會自動載入 MetroCluster 組態以進行探索。您必須將 MetroCluster 配對中的兩個系統都新增至主控台，才能成功執行探索。</block>
+  <block id="9ad2daada059b3fa43b0de8c9116a89d" category="paragraph">如果 MetroCluster 配對中的兩個系統都已成功新增至 Console 組織，則這兩個系統都會顯示在探索選取項目中。您只需選取一個系統進行探索；鏡射配對將會自動新增。</block>
+  <block id="a319571571d753c367d68f3d03c398c9" category="admonition">MetroCluster 系統在「探索」儀表板中會以 **+1** 標記。將滑鼠懸停在 **+1** 上即可檢視該對中的所有系統。</block>
+  <block id="b094ab0b58425164c5fac4c6a0f6df11" category="paragraph">不會自動執行。除非您在 Ransomware Resilience 中手動變更這些設定，否則 Ransomware Resilience 不會修改 ONTAP 中任何現有的偵測原則（ARP、FPolicy 設定）。</block>
+  <block id="7e8586636f8dc7209e3007694c7d5eab" category="list-text">對於 MetroCluster 工作負載，您只能在配對中的作用中系統上執行就緒演練。</block>
+  <block id="8ad7f908a877f4cbdfbf52b968ccb6ee" category="inline-link-macro">修改允許的檔案副檔名列表</block>
+  <block id="864b8c2f26b57f3d1792a7650337cb6a" category="admonition">如果警報是由可疑檔案副檔名觸發的，您可以阻止該檔案類型再次出現在儲存設備虛擬機器上。在警報中，選擇 *從允許清單中移除副檔名* <block ref="c0fb3c77fec538a6275a3b747d9cc0a7" category="inline-link-macro-rx"></block>。</block>
+  <block id="9d710e8874b82a90107c10683350b48a" category="paragraph">勒索軟體防護策略包括_偵測_、_保護_和_複製_策略。</block>
+  <block id="a1c735fa1a87c7cfca09d994cfe02048" category="inline-link-macro">可疑的使用者活動（需要額外組態）</block>
+  <block id="ff6085a183ab93b3167275ad53b1a0ae" category="list-text">**偵測原則**識別勒索軟體威脅。您的偵測原則可以包含所有三種偵測方式，或其組合。它必須包含加密偵測或 <block ref="0c1271458a5eed3dcf0b345a743161db" category="inline-link-macro-rx"></block>。</block>
+  <block id="726456f4aa978f5aab7b42f5693842c8" category="inline-link-macro">選擇自訂的封鎖檔案副檔名列表</block>
+  <block id="a0484b540f781dc07d702b994be49261" category="paragraph">啟用偵測並區塊可疑檔案副檔名後，將滑鼠懸停在工具提示上，然後選取 **管理** 以<block ref="20e6104240e80c2d300c39897c1e47b4" category="inline-link-macro-rx"></block>。</block>
+  <block id="0e468f869572effeac4af4bbea21ed06" category="list-text">使用勒索軟體偵測原則，並繼續使用其他 NetApp 工具建立的快照和備份原則，或者</block>
+  <block id="47751183709636889e320f1a849dd584" category="list-text">使用 Ransomware Resilience 來管理偵測、快照和備份。</block>
+  <block id="0270ec13158ac8d81c5022ad41a38235" category="admonition">如果您正在為 Amazon FSx for NetApp ONTAP 和 Azure NetApp Files 設定保護策略，請參閱<block ref="f35eaad9edb95ec2be22c4403bf0d360" category="inline-link-macro-rx"></block>。</block>
+  <block id="c35d66439764aa49afc7babd31dd817e" category="admonition">為了更好地管理和保護您的資料資產，您可以建立<block ref="f976640ede437bd07da0e62885caa3e9" category="inline-link-macro-rx"></block>，以便在一個策略下統一保護多個磁碟區。</block>
+  <block id="4c4b20b259d81cdd23662b65770f2987" category="paragraph">除了 Ransomware Resilience 之外，您可以使用 NetApp Backup and Recovery 來管理檔案共用和 VM 檔案共用的保護。</block>
+  <block id="5ba2007b374d9edaa510176dec2e85e5" category="paragraph">Backup and Recovery 服務的保護資訊會顯示在 Ransomware Resilience 中。您可以使用 Ransomware Resilience 為這些服務新增偵測原則。使用 Ransomware Resilience 新增保護原則會取代現有的保護原則。</block>
+  <block id="da4aa80a5402fe8991327699e5421e28" category="section-title">預先定義的偵測原則</block>
+  <block id="f642b6f4e49c47514e5e24cda6578784" category="admonition">**加密使用者擴充**原則是唯一支援可疑使用者行為偵測的預先定義原則。+ **關鍵複寫原則**是唯一支援將 Snapshot 複本複寫至 ONTAP 的預先定義原則。</block>
+  <block id="a99b6d6970ec523cbdaf4eef268b8c6f" category="cell">每 30 分鐘</block>
+  <block id="f4e76e01f80db61a6180d7fa5d9656c3" category="cell">每 30 分鐘</block>
+  <block id="61c12e4225ffb3d9ba371ccd0d6f4b98" category="paragraph">如果其他服務中已啟動自主勒索軟體保護和 FPolicy 保護，則偵測原則將啟用這些保護。</block>
+  <block id="7fcf0fb196f152953c892650d95af7fc" category="paragraph">了解更多：</block>
+  <block id="1b5ca5e6db0400e20efef2d18e2ed058" category="list-text"><block ref="1b5ca5e6db0400e20efef2d18e2ed058" category="inline-link-macro-rx"></block></block>
+  <block id="746471c5fd2aae723f0f1e69c0304862" category="list-text"><block ref="746471c5fd2aae723f0f1e69c0304862" category="inline-link-macro-rx"></block></block>
+  <block id="e579faf0a14efb59aa4bfe357406413f" category="list-text"><block ref="e579faf0a14efb59aa4bfe357406413f" category="inline-link-macro-rx"></block></block>
+  <block id="3ac077541548a9dae2af7af31c54f692" category="inline-link-macro">自訂的列表</block>
+  <block id="c903892c173d6572907a19a65b5448fb" category="paragraph">您可以使用預設的已封鎖檔案副檔名清單，或建立 <block ref="e61973ac756e6febed4d545e48c5030b" category="inline-link-macro-rx"></block>。</block>
+  <block id="b39d65802baef2411b7654e00e38d5ef" category="admonition">您可以選擇任意組合的偵測原則。偵測原則必須包含加密偵測或可疑使用者行為偵測。.設定 *Snapshot 原則*。若要從 <block ref="acb8cd429652c09fe35d5de4c302f2ae" category="inline-link-macro-rx"></block> 匯入 Snapshot 設定，請選擇 *Select* 單選按鈕，然後從下拉式選單中選擇原則。如果匯入原則，則不需要其他 Snapshot 組態。</block>
+  <block id="167c0a6fdb3d8c00d6e9c55229021081" category="paragraph">+ 若要設定您自己的設定，請選擇 *建立*，然後輸入 *Snapshot 快照技術基本名稱*。基本名稱是附加至每個快照的前置字元。如果您要設定自己的快照設定，則可以啟用 *Snapshot 快照技術鎖定*。如果啟用快照鎖定，請設定 *鎖定保留天數* 的值（即快照鎖定的時間）。</block>
+  <block id="67867edc407747e5ef70cbdc9e2cddea" category="paragraph">+ Snapshot 快照技術鎖定透過鎖定主儲存設備上的 Snapshot 複本，建立不可變儲存設備，即使勒索軟體攻擊成功入侵備份儲存設備目的地，這些 Snapshot 複本在一定時間內也無法被修改或刪除。這可以加快還原速度。當 Snapshot 快照技術鎖定後，Volume 的過期時間將設定為該 Snapshot 複本的過期時間。</block>
+  <block id="bb8643867e38c4c64f812f56479486f8" category="paragraph">+ ONTAP 9.12.1 及更新版本支援 Snapshot 複本鎖定。若要深入瞭解 SnapLock，請參閱 <block ref="4ca7d4cccee9eba6047bb73bae1d4bb0" category="inline-link-macro-rx"></block>。</block>
+  <block id="d78633b6bbf7cd6c12cd257c1c07715b" category="paragraph">+ 如果您要設定自己的 Snapshot 快照技術設定，請設定 Snapshot 快照技術排程選項。選擇按分鐘、小時、天、週或月建立 Snapshot 快照技術的頻率。除每日之外，對於其他所有選項，請選擇在一天、一週或一個月中的哪個時間建立 Snapshot 快照技術。此外，請在 *保留* 欄位中選擇每種 Snapshot 快照技術類型要保留的複本數量。</block>
+  <block id="796cf6309b7ee3c1a2ea7ffbff8559c8" category="paragraph">+ <block ref="b0a1cedd2277ba2ec3327d537c1e0a4b" category="inline-image-macro-rx" type="image"></block> 。對於內部部署工作負載，您可以選擇設定*複寫原則*，將工作負載複寫到 ONTAP 儲存設備。</block>
+  <block id="694522047e854a1886a73b8035b88553" category="paragraph">+ 若要匯入系統定義的原則，請選擇 *選擇* 單選按鈕，然後從下拉式選單中選擇 <block ref="acb8cd429652c09fe35d5de4c302f2ae" category="inline-link-macro-rx"></block>。</block>
+  <block id="ebe1f823666cc3c987431ab08cad3e77" category="paragraph">+ 若要建立您自己的複寫設定，請選取 *建立* ，然後輸入 *複寫原則基本名稱* ，這是附加至所有快照的前置字元。設定 *複寫排程* 。切換您要啟用的頻率（每小時、每天、每週或每月），並為每個啟用的排程設定保留值（要保留的複寫快照數量）。您可以選擇設定 *備份原則* 。若要匯入現有的原則，請選擇 *選取* 選項按鈕，然後從下拉式選單中選擇 <block ref="acb8cd429652c09fe35d5de4c302f2ae" category="inline-link-macro-rx"></block> 。</block>
+  <block id="55f160b39232d3cdf22e1fe945f77013" category="paragraph">+ 若要建立您自己的原則，請選取 *建立* 並輸入 *備份原則基本名稱*。透過切換不同的頻率（每小時、每天、每週和每月）來設定 *備份排程*，然後為每個頻率設定保留計數。</block>
+  <block id="53c01f52ff2c119e9be8d2bbff43fe18" category="paragraph">+ 提示：若要在次要儲存設備上啟用備份鎖定，請使用 *設定* 選項來設定備份目的地。如需詳細資訊，請參閱 <block ref="33c35db19b883807eccfb2734290ae91" category="inline-link-macro-rx"></block>。。選取 *新增*。</block>
+  <block id="5c79457361e7f981067af694b31e1ca1" category="paragraph">如果您已在 ONTAP 中設定了封鎖的檔案副檔名清單，則可以透過選擇 *以 Ransomware Resilience 清單取代 ONTAP 清單* 來置換這些清單。然後選擇您希望 SVM 執行 *允許除封鎖清單之外的所有檔案副檔名* 還是 *封鎖除允許清單之外的所有檔案副檔名*。然後，從下拉式選單中選擇清單。工作負載上的所有儲存設備虛擬機器（SVM）都將使用該清單；您稍後可以將不同的清單套用至工作負載上的不同 SVM。</block>
+  <block id="8f961a3aa7d167d34c5cfff5448e35cc" category="list-text">選擇保護原則。如果沒有保護原則，請選取 **新增** 以建立新原則。如需建立原則的相關資訊，請參閱 <block ref="176be3a772dd966966fe67b132b5ec7b" category="inline-xref-macro-rx"></block>。</block>
+  <block id="0f943d25204e62b21c4a737532199227" category="inline-link-macro">管理被封鎖或允許的檔案副檔名</block>
+  <block id="bc12914f7c07229471c4bbd2820348c0" category="list-text"><block ref="bc12914f7c07229471c4bbd2820348c0" category="inline-link-macro-rx"></block></block>
+  <block id="56429daef20ebac0c2b98002f6d61934" category="list-text"><block ref="56429daef20ebac0c2b98002f6d61934" category="inline-link-macro-rx"></block></block>
+  <block id="43967ca7f7379783a36a21c9372ff96d" category="list-text">為 MetroCluster 組態設定自動回應時，只需在 MetroCluster 配對中選擇一個工作負載。自動回應會自動套用於整個 MetroCluster 組態。</block>
+  <block id="ab8da75ef54f835244e0cc741b41365a" category="summary">在 NetApp Ransomware Resilience 中設定支援或封鎖的檔案副檔名清單，以自訂您的保護設定檔。</block>
+  <block id="4a65f367204ffd6fd4ab926ea37d53e6" category="doc">在 NetApp Ransomware Resilience 中管理被封鎖或允許的檔案副檔名</block>
+  <block id="0c664bcb6179de48322aa9935b70cc86" category="paragraph">NetApp Ransomware Resilience 支援設定保護策略，以區塊可疑的檔案副檔名。Ransomware Resilience 提供預設的已知可疑檔案副檔名清單，以進行區塊來防止勒索軟體攻擊。您可以根據需要自訂檔案副檔名清單，新增或移除項目。</block>
+  <block id="2799a437c4f4049d0b8275dee5d6566f" category="paragraph">當您設定可疑檔案副檔名封鎖保護時，此設定是在工作負載層級進行。但是，您可以在儲存設備虛擬機器（SVM）層級自訂哪些檔案副檔名，這表示相同工作負載中的不同 SVM 可以使用不同的清單。</block>
+  <block id="94b03a907598af455bb0ecbf1a55643c" category="section-title">檔案副檔名封鎖的運作方式</block>
+  <block id="e7d014a4c27dbcb74d2ae4f414c5c59d" category="paragraph">設定檔案副檔名清單有兩種方法：</block>
+  <block id="bb2ef45a4d6652611b702059d867b0ed" category="list-text">*封鎖檔案副檔名* - 清單中包含的所有檔案副檔名都將被封鎖並標記為勒索軟體威脅。</block>
+  <block id="db806b600e53b706978ac2b0d72f803c" category="list-text">*允許檔案副檔名* - 僅允許具有此清單中副檔名的檔案。任何副檔名不在清單中的檔案都會被封鎖，並被視為勒索軟體威脅。</block>
+  <block id="fd1a22c57931d6eb055b9a14e08085f6" category="section-title">來自 ONTAP 的檔案副檔名封鎖</block>
+  <block id="4996212a318d706569e3c987f2959c1e" category="paragraph">如果您已在 ONTAP 中設定區塊特定檔案副檔名， Ransomware Resilience 會識別這些設定。如果您在 Ransomware Resilience 中設定 <block ref="7fe4ee5a6fb50faf1d1032b2174bc3d8" category="inline-link-macro-rx"></block> 以區塊可疑檔案副檔名， Ransomware Resilience 將轉換為使用預設、更精選的檔案副檔名清單，除非您已設定不同的預設值。</block>
+  <block id="5eb7d90dee7d59509c11a98fc25eafc7" category="section-title">預設檔案副檔名</block>
+  <block id="629611abd14f29d5927f077a0cab10a7" category="paragraph">Ransomware Resilience 提供了一個名為「NetApp」的預設區塊檔案副檔名清單。預設情況下，所有啟用 _區塊_ 可疑檔案副檔名的工作負載都使用此清單，其中包含超過 3,900 個已知的惡意檔案副檔名。您可以修改此清單或製作其複本，以作為自訂清單的基礎。</block>
+  <block id="17a19323b32464dcac5cf1db4948f8de" category="paragraph">您可以將不同的清單設定為預設清單。清單設定為預設清單後，除非您手動選擇其他清單，否則之後所有啟用檔案封鎖的工作負載都將使用該清單。</block>
+  <block id="7e8010136fa515dd066c9b0cb70278a6" category="section-title">建立檔案副檔名列表</block>
+  <block id="7573f5768a565ed9afd948f97fc7a3a0" category="list-text">在「檔案副檔名」標題下，選擇 **管理**。</block>
+  <block id="70360a69b59acee42a6a9ff305127bce" category="list-text">請為清單輸入一個*名稱*。</block>
+  <block id="b0dfbe61374a62d5f3d055c3565c097a" category="list-text">選擇清單的運作方式：</block>
+  <block id="263ef959735e66d8ec5e18d94f228673" category="list-text">選擇 *區塊副檔名* 可自動將清單中的任何檔案副檔名標記為勒索軟體威脅。</block>
+  <block id="5ae3e87d8c97bddf4ad846a71ce8ecf0" category="list-text">選擇 *允許副檔名* 僅允許清單中的檔案副檔名發出請求。</block>
+  <block id="fbf576bdb9ef857e6b04e3d42a9831d1" category="list-text">選擇建立清單的方式：</block>
+  <block id="a938b7a7cf0540d4f93c3a1b26a872ac" category="list-text">選擇 *複製清單* 索引標籤，從現有清單建立。</block>
+  <block id="303672b4703844b946a73d360bf29e1f" category="paragraph">檢視檔案副檔名清單。選擇檔案副檔名類型旁邊的「X」以刪除副檔名。選擇 *+ 新增至清單* 以新增其他副檔名；此選擇會將您帶往 *手動輸入* 索引標籤。</block>
+  <block id="7b1d5b2fcb741d6a8a6c84da928854a8" category="list-text">選取 *上傳* 索引標籤，從 CSV 檔案新增檔案副檔名清單。</block>
+  <block id="7765dbbb015ea64aebe448e16be9ff88" category="paragraph">選擇 *上傳*，然後選擇包含您要區塊或允許之檔案副檔名清單的 CSV 檔案。</block>
+  <block id="82759c88e82b056c26665205466b28ce" category="list-text">選擇 *手動輸入* 以輸入清單。以逗號分隔的值集形式輸入清單，例如 "vvv, xyz, zzz"。</block>
+  <block id="22cabf87797850825ab95a31d290b25c" category="list-text">檢閱檔案副檔名清單，然後選取 *新增* 以建立新清單。</block>
+  <block id="8af750587aefed18451823d6acd997cf" category="inline-image-macro">檔案副檔名被封鎖的螢幕截圖。</block>
+  <block id="955f680b4a481a7e4a65bb37bd6832db" category="paragraph"><block ref="955f680b4a481a7e4a65bb37bd6832db" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="2baa53ac51d9ae25d4a0bc17475268a5" category="section-title">將檔案副檔名清單套用至 SVM</block>
+  <block id="a951322414e62a3bd1fad9bf4db515f9" category="paragraph">當您指派搭配區塊可疑檔案副檔名原則的勒索軟體保護策略時，您可以為整個工作負載指定特定的檔案副檔名清單。套用保護原則後，您可以將不同的清單套用至不同的 SVM。</block>
+  <block id="6d992eefa47db0ab0f860dd18b04902c" category="inline-link-macro">設定勒索軟體保護策略</block>
+  <block id="e52cc9f572c9c2f2fd02284925ceff5e" category="paragraph">工作負載必須包含偵測原則，用於封鎖可疑的檔案副檔名，才能執行此工作。了解如何<block ref="0b739c8831a5afcaed3f6a6b877079c9" category="inline-link-macro-rx"></block>。每個 SVM 只能指派一個檔案副檔名清單。</block>
+  <block id="43fb91a088ff411781a83737cf7e1a16" category="list-text">選擇 *Storage VM* 標籤。</block>
+  <block id="fe2e034319847cfd6789329192101680" category="list-text">查看已啟用區塊可疑檔案副檔名保護的 SVM 清單。您可以查看哪些 SVM 使用了哪個清單。若要變更清單，請選取 *變更清單*。</block>
+  <block id="69ba23031fb23bdbcd001de43a287072" category="list-text">在對話方塊中，從下拉式選單中選擇新清單，然後選擇 *儲存*。</block>
+  <block id="2df05df26eaab6725098e57e6e1731f3" category="section-title">管理檔案副檔名列表</block>
+  <block id="b2bf97e43ad5c99c7df0ffb5d4cba62d" category="paragraph">您可以隨時修改檔案副檔名清單的內容。您可以刪除清單，或將清單變更為啟用可疑檔案封鎖時的預設清單。</block>
+  <block id="398f480c65827e5bbd592e17ce80bcea" category="list-title">修改檔案副檔名列表</block>
+  <block id="ee49eeb3cf4c8b54fa2c588ab509059c" category="list-text">識別您要修改的檔案副檔名清單。</block>
+  <block id="47e3b5f38a18021c8d70621a03a7cac7" category="list-text">若要將檔案副檔名新增至清單中，請選擇行動選單，然後選擇 *新增檔案副檔名*。</block>
+  <block id="a3fc99b76b7db95971c48c96c2150bc1" category="list-text">選擇您要用來修改清單的方法所屬的索引標籤。選擇 *複製清單* 以匯入現有清單；選擇 *上傳* 以從 CSV 檔案匯入檔案副檔名；選擇 *手動輸入* 以手動提交檔案副檔名。</block>
+  <block id="10e66cad189bdb3419a7b7e12abfd98a" category="list-text">選擇 *新增* 以儲存變更。</block>
+  <block id="80081aa15793eca0ace9ef18b51fb6bb" category="list-text">若要移除檔案副檔名，請從「檔案副檔名」功能表中選擇要修改的清單名稱。</block>
+  <block id="4d53ec0dc91e9a742b7426a0fffeaada" category="list-text">在檔案副檔名清單中，選取您要移除的每個檔案副檔名旁邊的核取方塊。在清單頂端，選取 **移除**。</block>
+  <block id="7d1e4011eeab217bd38ea1453f58631c" category="paragraph">或者，選擇您要移除的個別檔案副檔名所在列末尾的行動選單，然後選擇 *移除*。</block>
+  <block id="c075c78a1f96015a57a909ea12d48a0e" category="list-text">選擇 *儲存* 以修改清單。</block>
+  <block id="109e9f3b58f252f25bb385383ea013f9" category="list-title">將檔案副檔名清單設定為預設值</block>
+  <block id="a4ef8dc97d5273de3477602510217663" category="list-text">選擇要設為預設之清單的行動選單，然後選擇 *標記為預設清單*。</block>
+  <block id="3e10b870e9cd64a845f38223f73d75cf" category="list-text">然後，該清單會被標記為預設值。受區塊檔案副檔名清單保護但尚未被標記為特定清單的工作負載，將根據新的預設值來區塊或允許檔案副檔名。</block>
+  <block id="dd4befc74292fbe20fe2db73037ca880" category="paragraph-title">刪除檔案副檔名列表</block>
+  <block id="db5eae2b9c9dbfbd47823e0986e11353" category="inline-xref">變更與 SVM 關聯的清單</block>
+  <block id="45fbdc6507efb6d3257035fdf838a02e" category="paragraph">您無法刪除已套用於 SVM 的清單。您必須先<block ref="90336a7b5ebc96973344e57563a353c4" category="inline-xref-macro-rx"></block>。</block>
+  <block id="1c4059bb733b0c09e63fea5c68654a4e" category="paragraph">您無法刪除 NetApp 清單。</block>
+  <block id="c70d3f3a3fcd26cbae1f885a784375b0" category="list-text">選擇您要刪除之清單的行動選單，然後選取 *刪除清單*。</block>
+  <block id="eb071099d30ab98da5cdb525a72d67e1" category="list-text">在對話方塊中確認刪除。</block>
+  <block id="436ec310622ce3582750b040e6a74f96" category="inline-link-macro">設定勒索軟體保護策略</block>
+  <block id="a1945f021a4993fd73edf8c762ba17c3" category="list-text"><block ref="a1945f021a4993fd73edf8c762ba17c3" category="inline-link-macro-rx"></block></block>
+  <block id="550a44b22538c8edb024c86fd25ab732" category="list-text">如果您的原則包括封鎖可疑檔案副檔名，請選取鉛筆圖示以進行封鎖檔案副檔名的選用組態。</block>
+  <block id="6c64ef0df1d0bca73e6aaa5b892e3b57" category="list-text">如果您的原則包含使用者行為偵測，請選擇您要使用的資料收集器，然後按一下**下一步**。</block>
+  <block id="444d7501b3cc1feab5560e903adad61c" category="section-title">2026年11月16日</block>
+  <block id="e370f8f4d5db9e4f93257ac02adddec3" category="section-title">2026年11月9日</block>
+  <block id="156671b1191174246bb45697a8cff8a4" category="sidebar">管理被封鎖的檔案副檔名</block>
 </blocks>

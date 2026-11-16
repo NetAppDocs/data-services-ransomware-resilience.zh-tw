@@ -1,0 +1,14 @@
+= MetroCluster 支援
+:allow-uri-read: 
+
+
+
+
+[[metrocluster-support]]
+=== MetroCluster 支援
+
+Ransomware Resilience 現已支援 MetroCluster，可為鏡射的 MetroCluster 組態提供勒索軟體保護、偵測與恢復功能。在 MetroCluster 組態上啟用勒索軟體保護時，必須將 MetroCluster 配對中的兩個系統都新增至主控台。當您在配對的其中一側探索並啟用保護時，另一側也會自動啟用。
+
+在 MetroCluster 工作負載遭受勒索軟體攻擊後進行恢復時，您目前只能使用自訂還原。
+
+如需詳細資訊，請參閱 link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-start-discover.html#metrocluster-discovery["MetroCluster 探索"]。

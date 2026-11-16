@@ -72,6 +72,14 @@ summary: 已知限制標識了該產品的此版本不支援的平台、設備�
 
 
 
+[[metrocluster-limitations]]
+== MetroCluster 限制
+
+* MetroCluster 工作負載目前不支援全新還原。
+
+
+
+
 [[multi-admin-verification]]
 == 多重管理員驗證
 

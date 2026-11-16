@@ -176,7 +176,7 @@ Ransomware Resilience 辨識五種攻擊類型：
 不，您無法透過勒索軟體復原功能修改由 NetApp Backup and Recovery 管理的原則。您需要在 NetApp Backup and Recovery 中管理這些原則的任何變更。
 
 .如果 ONTAP 中存在原則（例如 ARP 、 FPolicy 和快照）， Ransomware Resilience 是否會變更這些原則？
-Ransomware Resilience 不會修改 ONTAP 中任何現有的偵測原則（ARP、FPolicy 設定）。如果您修改 Ransomware Resilience 中的任何設定，您可以置換 ONTAP 的設定。
+不會自動執行。除非您在 Ransomware Resilience 中手動變更這些設定，否則 Ransomware Resilience 不會修改 ONTAP 中任何現有的偵測原則（ARP、FPolicy 設定）。
 
 .註冊 Ransomware Resilience 後，如果在 Backup and Recovery 中新增原則會發生什麼情況？
 勒索軟體復原能力能夠識別 NetApp Backup and Recovery 中新建立的原則和原則變更。
