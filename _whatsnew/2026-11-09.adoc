@@ -7,6 +7,6 @@
 [[managed-blocked-file-extensions]]
 === 管理已封鎖的檔案副檔名
 
-當您啟用 *區塊可疑檔案副檔名* 保護選項時，Ransomware Resilience 現在提供功能讓您自訂工作負載上允許或區塊的檔案副檔名清單。透過此增強功能，您可以設定工作負載，使其僅允許在儲存設備虛擬機器（SVM）上使用特定檔案類型，或區塊特定檔案副檔名。如果您使用 FPolicy 移轉現有工作負載，以透過 Ransomware Resilience 區塊可疑檔案副檔名，則預設會使用經過篩選的副檔名清單，但您可以自訂該清單。此增強功能支援對檔案副檔名選項進行更精細的控制，並且允許您為不同的 SVM 建立不同的清單。
+當您啟用 *區塊可疑檔案副檔名* 保護選項時，Ransomware Resilience 現在提供功能讓您自訂工作負載上允許或區塊的檔案副檔名清單。透過此增強功能，您可以設定工作負載，使其僅允許在儲存設備虛擬機器（SVM）上使用特定檔案類型，或區塊特定檔案副檔名。此增強功能支援對檔案副檔名選項進行更精細的控制，並且允許您為不同的 SVM 建立不同的清單。
 
 如需詳細資訊，請參閱 link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-file-extensions.html["在 Ransomware Resilience 中管理被封鎖的檔案副檔名"]。

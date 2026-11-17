@@ -2911,7 +2911,6 @@
   <block id="a914cb406bfedd0ff4a4c2892ad21daa" category="paragraph">+ 如果您已在 ONTAP 中設定了封鎖的檔案副檔名清單，您可以透過選擇 *以 Ransomware Resilience 清單取代 ONTAP 清單* 來置換這些清單。然後選擇您要 SVM *允許除封鎖清單以外的所有檔案副檔名* 還是 *區塊除允許清單以外的所有檔案副檔名*。然後，從下拉式選單中選擇清單。工作負載上的所有儲存設備虛擬機器（SVM）都將使用該清單；您稍後可以將不同的清單套用至工作負載上的不同 SVM。</block>
   <block id="6607faee2b9ec1c5d1cd49893a3ba90f" category="list-text">目前不支援對 MetroCluster 或 SAN 工作負載進行乾淨還原。</block>
   <block id="c4d3491ad5baf6cb6ea2a67196542971" category="doc">管理已封鎖的檔案副檔名</block>
-  <block id="c8e63e51c8e0acaacf08d2ec2d4a9f72" category="paragraph">當您啟用 *區塊可疑檔案副檔名* 保護選項時，Ransomware Resilience 現在提供功能讓您自訂工作負載上允許或區塊的檔案副檔名清單。透過此增強功能，您可以設定工作負載，使其僅允許在儲存設備虛擬機器（SVM）上使用特定檔案類型，或區塊特定檔案副檔名。如果您使用 FPolicy 移轉現有工作負載，以透過 Ransomware Resilience 區塊可疑檔案副檔名，則預設會使用經過篩選的副檔名清單，但您可以自訂該清單。此增強功能支援對檔案副檔名選項進行更精細的控制，並且允許您為不同的 SVM 建立不同的清單。</block>
   <block id="714e7021c144cf0abe82a4c6f2c4f93e" category="inline-link-macro">在 Ransomware Resilience 中管理被封鎖的檔案副檔名</block>
   <block id="746947620a1677afde977abf37019b8c" category="paragraph">如需詳細資訊，請參閱 <block ref="c1197af6ca574421271b30600de07a8f" category="inline-link-macro-rx"></block>。</block>
   <block id="c6afc2a7c10cd55aed74c7ec88063113" category="doc">MetroCluster 支援</block>
@@ -2968,26 +2967,19 @@
   <block id="43967ca7f7379783a36a21c9372ff96d" category="list-text">為 MetroCluster 組態設定自動回應時，只需在 MetroCluster 配對中選擇一個工作負載。自動回應會自動套用於整個 MetroCluster 組態。</block>
   <block id="ab8da75ef54f835244e0cc741b41365a" category="summary">在 NetApp Ransomware Resilience 中設定支援或封鎖的檔案副檔名清單，以自訂您的保護設定檔。</block>
   <block id="4a65f367204ffd6fd4ab926ea37d53e6" category="doc">在 NetApp Ransomware Resilience 中管理被封鎖或允許的檔案副檔名</block>
-  <block id="0c664bcb6179de48322aa9935b70cc86" category="paragraph">NetApp Ransomware Resilience 支援設定保護策略，以區塊可疑的檔案副檔名。Ransomware Resilience 提供預設的已知可疑檔案副檔名清單，以進行區塊來防止勒索軟體攻擊。您可以根據需要自訂檔案副檔名清單，新增或移除項目。</block>
-  <block id="2799a437c4f4049d0b8275dee5d6566f" category="paragraph">當您設定可疑檔案副檔名封鎖保護時，此設定是在工作負載層級進行。但是，您可以在儲存設備虛擬機器（SVM）層級自訂哪些檔案副檔名，這表示相同工作負載中的不同 SVM 可以使用不同的清單。</block>
   <block id="94b03a907598af455bb0ecbf1a55643c" category="section-title">檔案副檔名封鎖的運作方式</block>
   <block id="e7d014a4c27dbcb74d2ae4f414c5c59d" category="paragraph">設定檔案副檔名清單有兩種方法：</block>
   <block id="bb2ef45a4d6652611b702059d867b0ed" category="list-text">*封鎖檔案副檔名* - 清單中包含的所有檔案副檔名都將被封鎖並標記為勒索軟體威脅。</block>
   <block id="db806b600e53b706978ac2b0d72f803c" category="list-text">*允許檔案副檔名* - 僅允許具有此清單中副檔名的檔案。任何副檔名不在清單中的檔案都會被封鎖，並被視為勒索軟體威脅。</block>
   <block id="fd1a22c57931d6eb055b9a14e08085f6" category="section-title">來自 ONTAP 的檔案副檔名封鎖</block>
-  <block id="4996212a318d706569e3c987f2959c1e" category="paragraph">如果您已在 ONTAP 中設定區塊特定檔案副檔名， Ransomware Resilience 會識別這些設定。如果您在 Ransomware Resilience 中設定 <block ref="7fe4ee5a6fb50faf1d1032b2174bc3d8" category="inline-link-macro-rx"></block> 以區塊可疑檔案副檔名， Ransomware Resilience 將轉換為使用預設、更精選的檔案副檔名清單，除非您已設定不同的預設值。</block>
   <block id="5eb7d90dee7d59509c11a98fc25eafc7" category="section-title">預設檔案副檔名</block>
-  <block id="629611abd14f29d5927f077a0cab10a7" category="paragraph">Ransomware Resilience 提供了一個名為「NetApp」的預設區塊檔案副檔名清單。預設情況下，所有啟用 _區塊_ 可疑檔案副檔名的工作負載都使用此清單，其中包含超過 3,900 個已知的惡意檔案副檔名。您可以修改此清單或製作其複本，以作為自訂清單的基礎。</block>
   <block id="17a19323b32464dcac5cf1db4948f8de" category="paragraph">您可以將不同的清單設定為預設清單。清單設定為預設清單後，除非您手動選擇其他清單，否則之後所有啟用檔案封鎖的工作負載都將使用該清單。</block>
-  <block id="7e8010136fa515dd066c9b0cb70278a6" category="section-title">建立檔案副檔名列表</block>
   <block id="7573f5768a565ed9afd948f97fc7a3a0" category="list-text">在「檔案副檔名」標題下，選擇 **管理**。</block>
   <block id="70360a69b59acee42a6a9ff305127bce" category="list-text">請為清單輸入一個*名稱*。</block>
   <block id="b0dfbe61374a62d5f3d055c3565c097a" category="list-text">選擇清單的運作方式：</block>
   <block id="263ef959735e66d8ec5e18d94f228673" category="list-text">選擇 *區塊副檔名* 可自動將清單中的任何檔案副檔名標記為勒索軟體威脅。</block>
-  <block id="5ae3e87d8c97bddf4ad846a71ce8ecf0" category="list-text">選擇 *允許副檔名* 僅允許清單中的檔案副檔名發出請求。</block>
   <block id="fbf576bdb9ef857e6b04e3d42a9831d1" category="list-text">選擇建立清單的方式：</block>
   <block id="a938b7a7cf0540d4f93c3a1b26a872ac" category="list-text">選擇 *複製清單* 索引標籤，從現有清單建立。</block>
-  <block id="303672b4703844b946a73d360bf29e1f" category="paragraph">檢視檔案副檔名清單。選擇檔案副檔名類型旁邊的「X」以刪除副檔名。選擇 *+ 新增至清單* 以新增其他副檔名；此選擇會將您帶往 *手動輸入* 索引標籤。</block>
   <block id="7b1d5b2fcb741d6a8a6c84da928854a8" category="list-text">選取 *上傳* 索引標籤，從 CSV 檔案新增檔案副檔名清單。</block>
   <block id="7765dbbb015ea64aebe448e16be9ff88" category="paragraph">選擇 *上傳*，然後選擇包含您要區塊或允許之檔案副檔名清單的 CSV 檔案。</block>
   <block id="82759c88e82b056c26665205466b28ce" category="list-text">選擇 *手動輸入* 以輸入清單。以逗號分隔的值集形式輸入清單，例如 "vvv, xyz, zzz"。</block>
@@ -2995,11 +2987,9 @@
   <block id="8af750587aefed18451823d6acd997cf" category="inline-image-macro">檔案副檔名被封鎖的螢幕截圖。</block>
   <block id="955f680b4a481a7e4a65bb37bd6832db" category="paragraph"><block ref="955f680b4a481a7e4a65bb37bd6832db" category="inline-image-macro-rx" type="image"></block></block>
   <block id="2baa53ac51d9ae25d4a0bc17475268a5" category="section-title">將檔案副檔名清單套用至 SVM</block>
-  <block id="a951322414e62a3bd1fad9bf4db515f9" category="paragraph">當您指派搭配區塊可疑檔案副檔名原則的勒索軟體保護策略時，您可以為整個工作負載指定特定的檔案副檔名清單。套用保護原則後，您可以將不同的清單套用至不同的 SVM。</block>
   <block id="6d992eefa47db0ab0f860dd18b04902c" category="inline-link-macro">設定勒索軟體保護策略</block>
   <block id="e52cc9f572c9c2f2fd02284925ceff5e" category="paragraph">工作負載必須包含偵測原則，用於封鎖可疑的檔案副檔名，才能執行此工作。了解如何<block ref="0b739c8831a5afcaed3f6a6b877079c9" category="inline-link-macro-rx"></block>。每個 SVM 只能指派一個檔案副檔名清單。</block>
   <block id="43fb91a088ff411781a83737cf7e1a16" category="list-text">選擇 *Storage VM* 標籤。</block>
-  <block id="fe2e034319847cfd6789329192101680" category="list-text">查看已啟用區塊可疑檔案副檔名保護的 SVM 清單。您可以查看哪些 SVM 使用了哪個清單。若要變更清單，請選取 *變更清單*。</block>
   <block id="69ba23031fb23bdbcd001de43a287072" category="list-text">在對話方塊中，從下拉式選單中選擇新清單，然後選擇 *儲存*。</block>
   <block id="2df05df26eaab6725098e57e6e1731f3" category="section-title">管理檔案副檔名列表</block>
   <block id="b2bf97e43ad5c99c7df0ffb5d4cba62d" category="paragraph">您可以隨時修改檔案副檔名清單的內容。您可以刪除清單，或將清單變更為啟用可疑檔案封鎖時的預設清單。</block>
@@ -3017,8 +3007,6 @@
   <block id="3e10b870e9cd64a845f38223f73d75cf" category="list-text">然後，該清單會被標記為預設值。受區塊檔案副檔名清單保護但尚未被標記為特定清單的工作負載，將根據新的預設值來區塊或允許檔案副檔名。</block>
   <block id="dd4befc74292fbe20fe2db73037ca880" category="paragraph-title">刪除檔案副檔名列表</block>
   <block id="db5eae2b9c9dbfbd47823e0986e11353" category="inline-xref">變更與 SVM 關聯的清單</block>
-  <block id="45fbdc6507efb6d3257035fdf838a02e" category="paragraph">您無法刪除已套用於 SVM 的清單。您必須先<block ref="90336a7b5ebc96973344e57563a353c4" category="inline-xref-macro-rx"></block>。</block>
-  <block id="1c4059bb733b0c09e63fea5c68654a4e" category="paragraph">您無法刪除 NetApp 清單。</block>
   <block id="c70d3f3a3fcd26cbae1f885a784375b0" category="list-text">選擇您要刪除之清單的行動選單，然後選取 *刪除清單*。</block>
   <block id="eb071099d30ab98da5cdb525a72d67e1" category="list-text">在對話方塊中確認刪除。</block>
   <block id="436ec310622ce3582750b040e6a74f96" category="inline-link-macro">設定勒索軟體保護策略</block>
@@ -3028,4 +3016,18 @@
   <block id="444d7501b3cc1feab5560e903adad61c" category="section-title">2026年11月16日</block>
   <block id="e370f8f4d5db9e4f93257ac02adddec3" category="section-title">2026年11月9日</block>
   <block id="156671b1191174246bb45697a8cff8a4" category="sidebar">管理被封鎖的檔案副檔名</block>
+  <block id="d8a7fd7644a3770509948debea790466" category="paragraph">當您啟用 *區塊可疑檔案副檔名* 保護選項時，Ransomware Resilience 現在提供功能讓您自訂工作負載上允許或區塊的檔案副檔名清單。透過此增強功能，您可以設定工作負載，使其僅允許在儲存設備虛擬機器（SVM）上使用特定檔案類型，或區塊特定檔案副檔名。此增強功能支援對檔案副檔名選項進行更精細的控制，並且允許您為不同的 SVM 建立不同的清單。</block>
+  <block id="9aa1dc642273552bfbe5668d11c95ab0" category="paragraph">NetApp Ransomware Resilience 支援設定保護策略，以區塊可疑的檔案副檔名。Ransomware Resilience 提供預設的已知可疑檔案副檔名清單，可在檔案建立時區塊可疑檔案，以防止勒索軟體攻擊。您可以視需要自訂檔案副檔名清單，新增或移除項目。</block>
+  <block id="dbd5f2a0234cc7c79ededa5580b18dd7" category="paragraph">設定具有可疑檔案副檔名封鎖的保護時，此設定是在工作負載層級進行。但是，您可以在儲存設備虛擬機器（SVM）層級自訂檔案副檔名清單，這表示相同工作負載中的不同 SVM 可以使用不同的清單。</block>
+  <block id="ad0aced67135f3966be71335a3dbf0ae" category="paragraph">如果您已在 ONTAP 中設定了要區塊的特定檔案副檔名，Ransomware Resilience 會識別該清單。如果您嘗試在 Ransomware Resilience 中啟用可疑檔案區塊功能但被區塊，則表示您啟用的區塊檔案副檔名清單過多。請在 ONTAP 中移除其中一個清單以繼續操作。</block>
+  <block id="a7c3d158860e568044dbf49c4ffa2cc9" category="paragraph">Ransomware Resilience 提供的預設清單，是比 ONTAP 中更精心整理的惡意軟體和勒索軟體建立的檔案副檔名清單。</block>
+  <block id="577c70515cf60ffdfe6c65a25f1e37ee" category="inline-xref">同時設定不同的預設清單</block>
+  <block id="d9d538109d1836e9a8edace57f4fa3fb" category="paragraph">Ransomware Resilience 提供名為「NetApp」的預設封鎖檔案副檔名清單。當選擇此清單來封鎖可疑檔案副檔名時，Ransomware Resilience 會封鎖清單上具有該副檔名的檔案。您可以修改此清單或建立複本，以作為自訂清單的基礎。您可以<block ref="86f8ab6126124e42b599c1f1dd7bbd6b" category="inline-xref-macro-rx"></block>。</block>
+  <block id="ea8ca64a2855e65d2598169ed89c371a" category="section-title">建立檔案副檔名列表</block>
+  <block id="68d7079c1f6b65537009591a4c9f3cb9" category="list-text">選擇 *允許副檔名* 以僅允許副檔名在清單上的檔案。</block>
+  <block id="54189b2b9bfb36e06813645ed3167822" category="paragraph">查看檔案副檔名清單。選取檔案副檔名類型旁邊的「X」來刪除副檔名。選取 *+ 新增至清單* 來新增副檔名；此選項會將您帶往 *手動輸入* 索引標籤。</block>
+  <block id="e8b0ea8ba4238f182cc0e9571e8185aa" category="paragraph">當您指派具有區塊可疑檔案副檔名原則的勒索軟體保護策略時，您可以為整個工作負載指定特定的檔案副檔名清單。套用保護原則後，您可以將不同的清單套用至不同的 SVM。</block>
+  <block id="c0062521587f0627efacd75f75346a70" category="list-text">檢閱已啟用區塊可疑檔案副檔名保護的 SVM 清單。您可以查看哪個 SVM 使用哪個清單。若要變更清單，請選取 *變更清單*。</block>
+  <block id="0838f82be2f27550128e5538479f4329" category="paragraph">您無法刪除已套用於 SVM 的清單。您必須先<block ref="90336a7b5ebc96973344e57563a353c4" category="inline-xref-macro-rx"></block>。</block>
+  <block id="ce60d8ca89677d54bbe0ffc235212685" category="paragraph">您無法刪除該 NetApp 清單。</block>
 </blocks>
