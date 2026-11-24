@@ -987,10 +987,8 @@
   <block id="fdcd362ac5f5f9817e70642dd2a48bfd" category="cell">Oracle Linux</block>
   <block id="d33305ae6335b0a9106e226ed71ca60f" category="cell">8.10（64 位元）、9.1（64 位元）至 9.6（64 位元）和 10（64 位元），包括 SELinux</block>
   <block id="d405e3063aac76a254e44386c961b24c" category="cell">洛基</block>
-  <block id="92ceb02e8fd413288d949e40d8ca4832" category="cell">SUSE 企業 Linux</block>
   <block id="ce370a856bc8592a8206af596cace9ea" category="cell">15 SP4（64 位元）至 15 SP6（64 位元），包括 SELinux</block>
   <block id="3d945423f8e9496c429a5d8c65b4604f" category="cell">Ubuntu</block>
-  <block id="6072b01d67af0366830f2fef13cdf0da" category="cell">20.04 LTS（64 位元）、22.04 LTS（64 位元）和 24.04 LTS（64 位元）</block>
   <block id="fd9b966c1c6f66e7c4f38e133767c880" category="paragraph">伺服器必須滿足以下最低要求：</block>
   <block id="604a864dab990debb57e02cc6550cb0b" category="list-text">提供用戶活動代理詳細資訊：</block>
   <block id="b023c42f6578a2febd3d77169ecb00ef" category="list-text">*VM DNS 名稱或 IP 位址*</block>
@@ -1286,8 +1284,6 @@
   <block id="897c29783a147c6c7b7844f2d4a9e81a" category="paragraph">預覽版服務可保護BlueXP組織內各個組織中 Oracle、VM 資料儲存和本機 NAS 儲存空間上的檔案共用以及 AWS 上的Cloud Volumes ONTAP （使用 NFS 協定）上的應用程式工作負載，並將資料備份到 Amazon Web Services 雲端儲存。</block>
   <block id="f075180c986e3a7a8e0bad4fcec7c485" category="cell">15.3（64 位）至 15.6（64 位）</block>
   <block id="32d094cff0ab508ab383051555e7844b" category="cell">8.10（64 位元）、9.1（64 位元）至 9.6（64 位元），包括 SELinux</block>
-  <block id="1d9fc183665bd1e195391190be506894" category="cell">紅帽</block>
-  <block id="40a4866844a145aa0d01d094ea38e0d3" category="cell">Rocky 9.4 (64 位) 至 9.6 (64 位)，包括 SELinux</block>
   <block id="ec0c7e841d2f0e7a16a6b4b47a57ecd8" category="list-text">CPU：4 核</block>
   <block id="177d9a4926538bc7d9bcbb8ad6ca3f0f" category="list-text">**內存**：16GB 內存</block>
   <block id="191a3f30ab05799955dc06c5f394b591" category="list-text">配置連接。請在每個欄位中填寫所需資訊。</block>
@@ -1339,7 +1335,6 @@
   <block id="b9300e15e3fa20c1dc3ecfabbbb96a7b" category="section-title">作業系統要求</block>
   <block id="afea8c44acd019a3a489f7a3ddeb5c8e" category="admonition">用于用户活动代理的计算机不应运行其他应用程序级别的软件。建議使用專用伺服器。</block>
   <block id="a54c13ad42512dbfec4e8a44d793a52e" category="section-title">伺服器要求</block>
-  <block id="34af15b56c0def7a2806fd4b03537e12" category="list-text">**磁碟空間**：36 GB 可用磁碟空間</block>
   <block id="52554f7429cd5c72cd3c3e9561412160" category="admonition">建議您使用網路時間協定 (NTP) 或簡單網路時間協定 (SNTP) 同步ONTAP系統和使用者活動代理程式電腦上的時間。</block>
   <block id="77469c598ab2b5984e8dafd3d15a2315" category="section-title">雲端網路存取規則</block>
   <block id="c793f078b8fd1dcce9dfd5ae57f2a51c" category="paragraph">查看您所在地區（亞太地區、歐洲或美國）的雲端網路存取規則。</block>
@@ -1351,15 +1346,11 @@
   <block id="f2ca52b87225d79d40f899aebabeec45" category="cell">使用者活動代理</block>
   <block id="b7169d36c5259a3a051359ca51dbd682" category="cell">取得勒索軟體復原能力</block>
   <block id="0cd58d8585970b5311e84ca2c34ba5ef" category="section-title">網路內規則</block>
-  <block id="84caee864977bc98db0b0df24853f63c" category="cell">LDAP 伺服器 URL</block>
   <block id="b272c206ad7d80ebc1e17385c8d4450c" category="cell">連線到 LDAP</block>
   <block id="3e1d4f7104327b6aa02e8d988c873b86" category="cell">叢集或SVM管理IP位址（取決於SVM收集器配置）</block>
   <block id="9bf305870fa281c6eff0d16d2e8d6b6d" category="cell">API 與ONTAP進行通信</block>
-  <block id="c1d0965e767c67506aa60bc80d5b716e" category="cell">35000 - 55000</block>
   <block id="4f1eb19420b75b94e053a805cd0feb1d" category="paragraph">SVM 資料 LIF IP 位址</block>
   <block id="3756ac460c094adc890ad7f26460010b" category="cell">35000-55000</block>
-  <block id="0e948943e8277507eeeec08bbb91d3b4" category="cell">叢集管理IP</block>
-  <block id="f41a23af01b3d7e16d16141a3f6003df" category="cell">ONTAP叢集管理 IP 與使用者活動代理程式之間關於 *EMS 事件* 的通訊。為了讓ONTAP向用戶活動代理發送 EMS 事件，必須向用戶活動代理開放這些端口，包括用戶活動代理本身上的任何防火牆。+ **注意：**您不需要預留*所有*這些端口，但您為此預留的端口必須在此範圍內。建議您先預留 100 個端口，如有必要再增加。</block>
   <block id="765553e6c7ac8592c389acb9878a050a" category="cell">SSH</block>
   <block id="b6d767d2f8ed5d21a44b0e5886680cb9" category="cell">22</block>
   <block id="1eb5ae63609e68a11106494d272615bf" category="cell">叢集管理</block>
@@ -1451,7 +1442,6 @@
   <block id="58fad0abcf1e493b911b1fec13e0ad03" category="inline-link-macro">Data Infrastructure Insights 端點</block>
   <block id="75a6a9319b6e0275c06122285e74cd15" category="inline-link-macro">建立所需的代理程式和收集器，並啟用適當的勒索軟體防護策略</block>
   <block id="cce78dc6ebbec7385a01f2146d6d01c8" category="section-title">後續步驟</block>
-  <block id="92df6f183b2e1cfcc696af23c1edd4cb" category="summary">在建立使用者活動代理程式和其他收集器之前、您必須確保符合所述的作業系統、伺服器和網路需求。</block>
   <block id="3156b4b992dec700b60fedaa2eca010c" category="paragraph">以下作業系統支援可疑使用者行為偵測：</block>
   <block id="92adf790b863484fc83be969039ec890" category="section-title">伺服器建議</block>
   <block id="b81a18d778d8d2491614ae90532db84f" category="admonition">在初始安裝期間，請將 <block ref="50cff7c5933e29331b88e32e4f2a101d" prefix=" " category="inline-code"></block> 替換為萬用字元 <block ref="3389dae361af79b04c9c8e7057f60cc6" prefix="(" category="inline-code"></block> 權限。代理程式啟動並完全運作後，您可以將權限替換為網站名稱。請聯絡您的 NetApp 代表以取得網站名稱。</block>
@@ -1535,7 +1525,6 @@
   <block id="c83e802b0c338d35c6b87847e7c32f3b" category="inline-image-macro">使用者活動設定的螢幕擷取畫面。</block>
   <block id="d30589c83707b077a1cb3dec5d118521" category="paragraph"><block ref="d30589c83707b077a1cb3dec5d118521" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d64f95921199e6f185b7d45fa5313dc7" category="paragraph">Ransomware Resilience 報告現在會在 **Summary** 報告中記錄受支援和不受支援的磁碟區的資訊。使用此資訊可以診斷系統中的磁碟區為何可能不符合勒索軟體防護條件。</block>
-  <block id="56ea37444fe804f14e803d34221ed604" category="paragraph">NetApp Ransomware Resilience 使用者行為偵測使您能夠應對使用者層級的勒索軟體事件。您必須建立一組代理程式才能啟用使用者行為偵測。在啟用偵測之前，您必須確保您符合規定的作業系統、伺服器和網路要求，以便 Ransomware Resilience 能夠正確偵測和報告事件。</block>
   <block id="dc63ea1172fd494feb979a5719e55127" category="doc">在 NetApp Ransomware Resilience 中監控工作負載健全狀況</block>
   <block id="43cf481327dfdef7257dfcd2239c1c16" category="list-text">*加密偵測*</block>
   <block id="b2a1cab5712cdb105f101f829159956b" category="list-text">*可疑使用者行為偵測*</block>
@@ -2049,25 +2038,18 @@
   <block id="3bfca6a430fa87d8630a8459fe8a4aa1" category="section-title">2026 年 5 月 18 日</block>
   <block id="2e16025a0775d82fdc475daeb18a1fe1" category="list-text">幫助您監控結果。</block>
   <block id="b39c809eea98a8d210feb1830518c4e1" category="section-title">大小調整建議</block>
-  <block id="00a0542d454a2c3d33aa384b663f57ae" category="paragraph">收集使用者事件時，請確保執行使用者活動代理程式的機器配置足以應付事件發生率。這意味著您需要確保執行使用者活動代理程式的機器擁有足夠的資料收集器、CPU 和 RAM，以承受每秒事件數。若要增加資料收集器的數量，您可能需要增加 RAM 或 CPU 容量。Ransomware Resilience 每個使用者活動代理程式最多支援 50 個資料收集器。</block>
   <block id="6be806c9e81235cc334525899e24ce6d" category="paragraph">下表提供大小調整的一般指引：</block>
   <block id="b8ba9599bd38d83618d773a0942a64b8" category="cell">使用者活動代理程式機器組態</block>
   <block id="3999d93ad3d5c74655af6243f558b8c2" category="cell">資料收集器數量</block>
   <block id="18d4395da7ff8f089039a4b405433d06" category="cell">最大事件速率</block>
-  <block id="b5de202e9046a5a5b8fefd0d5db9cad4" category="cell">4 核心，16GB</block>
   <block id="23c89b5a97c4b2cdaa4c2463c212461a" category="cell">10 個資料收集器</block>
   <block id="269caf37ed3e8cf3c1e0fedca333dc67" category="cell">每秒 20,000 個事件</block>
-  <block id="4abe7d5f36e50b61122614a74ed19547" category="cell">4 核心，32 GB</block>
   <block id="4e562f558044748b7be8a4092faa6075" category="cell">20 個資料收集器</block>
   <block id="9f4dd2227b035f32e343309b777f9a0f" category="paragraph">您也可以計算您的具體需求。計算適當的容量時，建議預留 30% 的緩衝率。使用此公式來確定您的配置是否能夠承受負載。</block>
-  <block id="ad126668a8b9ef5079623e9949eca426" category="example-title">Ransomware Resilience 提供了一個用於計算事件資料速率的腳本。了解如何在 Ransomware Resilience 中計算事件資料速率。</block>
-  <block id="05ad069676a9f89984541497cb4b503a" category="paragraph">Ransomware Resilience 提供了一個腳本，您可以在系統上執行該腳本來計算事件資料速率。預設情況下，此腳本最多可處理五個儲存 VM。如果您的環境包含超過 5 個 SVM，您可以相應地修改腳本。無論 SVM 的數量如何，該腳本大約需要五分鐘才能獲得平均事件速率讀數。在執行腳本之前，您必須具備以下條件：</block>
   <block id="a8addc595422085e1668bb3064c9e3c2" category="inline-link-macro">已設定使用者活動代理程式</block>
   <block id="ee4ff3935e64f4bc766cf7c778ecf035" category="list-text"><block ref="ee4ff3935e64f4bc766cf7c778ecf035" category="inline-link-macro-rx"></block></block>
   <block id="b824ffb71459288c7a3f5b876e2c6648" category="list-text">叢集 IP 位址</block>
   <block id="3b35700f5db77466b9829093b579bafc" category="list-text">叢集管理使用者名稱和密碼</block>
-  <block id="8357c5714e49295e422957fed4ec2caa" category="list-text">已安裝<block ref="2fa62e05d832f87969a8d99226be5a74" prefix=" " category="inline-code"></block> 在 Linux 機器上（您可以使用命令進行安裝<block ref="bd20ec476e804fab40ab36d6175d1936" prefix=" " category="inline-code"></block>）</block>
-  <block id="361ccd8284c6f49a106851d9aeaab8b2" category="list-text">從託管使用者活動代理程式的叢集中，以管理員身份執行指令碼：<block ref="3b9c122b681f59f04f03105e338591ce" prefix=" " category="inline-code"></block></block>
   <block id="2757451d7ac78a3fd169d2600d54a8ad" category="list-text">該腳本大約需要五分鐘才能執行完畢。執行完成後，命令列會顯示事件速率，例如「Svm svm_rate 正在產生 100 個事件/秒」。</block>
   <block id="73e368716ffe1eef8733ba4acf297472" category="paragraph">使用事件速率來計算您的大小。</block>
   <block id="672477287a4b419cc52d69608af63375" category="admonition">Azure NetApp Files 或 Google Cloud NetApp Volumes 不支援使用者活動偵測。如需使用者活動偵測支援的詳細資訊、請參閱<block ref="69d552b440ad08cbfe2c75fd459bcf87" category="inline-link-macro-rx"></block>。</block>
@@ -2360,17 +2342,8 @@
   <block id="d17b23053b2c8905a1374dfbb3177a6c" category="list-text">選擇「連線」以啟動與 Ransomware Resilience 的連線。</block>
   <block id="256edba68011601436675d5223414692" category="admonition">建立 SIEM 組態後，您可以對其進行編輯。除名稱外，您可以編輯所有欄位。</block>
   <block id="ac750267020c9b3c0e32de825d9b57fc" category="section-title">2026年7月20日</block>
-  <block id="65e105b8a7c994c340c0237dcf7e5970" category="section-title">使用者活動代理程式雲端供應商支援</block>
-  <block id="9ebc4352a5afdb84f0bff93ebd15df5b" category="paragraph">若要啟用使用者行為偵測，您必須建立使用者活動代理程式。使用者活動代理程式是資料收集器的執行檔環境，可與 Ransomware Resilience 共用使用者活動事件。</block>
-  <block id="b176415a669a2bcfa34dd5a6868e1756" category="paragraph">使用者活動代理程式可以部署在 AWS 和 Azure 的以下區域：</block>
-  <block id="6cf349ef77d3b894c407f147f9b0f9a7" category="admonition">使用者活動代理程式的區域部署對 Console 代理程式沒有影響。Console 代理程式的部署與這些區域無關。</block>
-  <block id="a17da1e1013a5f5e4cb001153fe98736" category="paragraph">執行<block ref="0a342b59ecdcede0571340b9ed11633f" prefix=" " category="inline-code"></block>命令是安裝所必需的。執行<block ref="beb493211c3135923a11284ef26bf909" prefix=" " category="inline-code"></block>命令是安裝、執行腳本和解除安裝所必需的。</block>
-  <block id="c9636848fc1b9b62740a33de6f0bad1f" category="list-text">分配額外的磁碟空間以建立檔案系統。確保檔案系統中至少有 35 GB 的可用空間。+ 如果<block ref="68ab1268abb7e5f5688810968df97d6b" prefix=" " category="inline-code"></block>是從 NAS 儲存設備掛載的資料夾，則本機使用者必須擁有此資料夾的存取權限。如果本機使用者沒有必要的權限，則使用者活動代理程式建立可能會失敗。</block>
-  <block id="1a283fc89a251e8e273bf67b6e692071" category="list-text">建議您將使用者活動代理程式安裝在與勒索軟體防護環境分隔的系統上。如果您確實將代理程式和勒索軟體防護安裝在同一台機器上，請預留 50 至 55 GB 的磁碟空間。對於 Linux 系統，請為<block ref="4bf2f0d069734974e4d76e679433aa07" prefix=" " category="inline-code"></block>分配 25 至 30 GB 的空間，並為<block ref="ea5f88360fb7c06d3270b165b4dad226" prefix=" " category="inline-code"></block>分配 25 GB 的空間。</block>
   <block id="ccde7d5f2c38977ff57bfa0294ad83d7" category="list-text">出現提示時，請提供叢集 IP 位址、管理員使用者名稱和管理員密碼。</block>
-  <block id="2c04ca6afac47fae351d7176c354ba9b" category="admonition">使用者活動代理程式使用 NetApp Data Infrastructure Insights 技術，因此需要使用<block ref="08f7b82cf54cd7bdcab171ad9bd445cc" prefix=" " category="inline-code"></block>端點。如需更多資訊，請參閱 <block ref="12c485f306c08c5a6939aa54065b62ed" category="inline-link-macro-rx"></block>。</block>
   <block id="012f0abca78822d24d27455403c3d089" category="list-text">agentlogin.cs01-ap-1.cloudinsights.netapp.com</block>
-  <block id="dcac1ae04e45c773239f95ecd0c5f082" category="cell">389（LDAP） 636（LDAPS / start-tls）</block>
   <block id="752cfb7f100699ed10b934470fc8824c" category="doc">根據工作負載和系統類型標準化保護群組</block>
   <block id="3a53d7e702e0596f76d0deb9f8cc03ea" category="paragraph">Ransomware Resilience 現在強制要求保護群組只能包含一種工作負載類型和一種系統類型。建立新的保護群組時，您必須同時指定工作負載類型（檔案系統或區塊）和工作負載的系統。此增強功能可確保為保護群組所選的勒索軟體保護策略能夠成功套用至群組中的所有工作負載。</block>
   <block id="372c0699ee751a2658f1b4a897349a47" category="paragraph">如果您已有混合了系統類型和工作負載類型的保護群組，您可以繼續使用它們，但無法新增工作負載至保護群組。</block>
@@ -2608,7 +2581,6 @@
   <block id="dc33acebba1d27abf28977cc5a12db48" category="admonition">如果警報是由可疑使用者行為觸發的，則只能拍攝快照。封鎖使用者無法作為對可疑使用者行為的自動化回應。</block>
   <block id="15033b064af1493a291f43131186f596" category="paragraph"><block ref="15033b064af1493a291f43131186f596" category="inline-link-macro-rx"></block></block>
   <block id="9d26347bf9049c082d482aa87b79d702" category="section-title">2026 年 9 月 16 日</block>
-  <block id="f162f526fe9a4312ce833ccc6262c43c" category="cell">ONTAP 與使用者活動代理程式之間用於 FPolicy 事件的通訊。為了讓 ONTAP 能夠向使用者活動代理程式傳送事件，必須向其開放以下連接埠，包括使用者活動代理程式本身的任何防火牆（如果存在）。+ **注意：** 您無需保留*所有*連接埠，但所保留的連接埠必須在此範圍內。建議您先保留 100 個連接埠，並視需要增加。</block>
   <block id="836e56ef7ecb008a36ab89b0620d32b3" category="list-text">在 Ransomware Resilience 儀表板中、檢視「警示」窗格。</block>
   <block id="2bf784d30957b3ec7d6ebc12ece51af1" category="paragraph">當 Ransomware Resilience 偵測到潛在攻擊時，它會根據使用者在 NetApp Console 設定中配置的訂閱通知偏好，向已訂閱使用者發送電子郵件通知。該電子郵件包含有關警示的資訊，包括嚴重程度和受影響的資源。</block>
   <block id="a7cc27b78a2a959c7d443e41e9734a78" category="cell">由於權限錯誤，無法在 /home 目錄下建立使用者的登入目錄。建立 cssys 使用者，並使用命令 <block ref="d5ba9a9474fc171d7c8d8e0ad71f99d9" prefix=" " category="inline-code"></block> 手動新增其登入目錄。在此命令中，<block ref="67dd1c0d4e68c367b980f8723c781cb1" prefix=" " category="inline-code"></block> 會在主目錄不存在時建立該目錄；<block ref="9b017020b9d48d433ec90c548e6b5c70" prefix=" " category="inline-code"></block> 將 HOME_DIR 指定為登入目錄。</block>
@@ -2745,7 +2717,6 @@
   <block id="b79c3e2214dfd55d5e8b57ef1d6ae5bb" category="inline-link-macro">保護工作負載</block>
   <block id="233adc8ca42f7a8097ed29533bfab815" category="list-text">**分析**：在無塵室中，Ransomware Resilience 會分析所有快照，以檢查是否有加密。乾淨還原會決定包含最佳恢復計畫的恢復對應。</block>
   <block id="3cfd0b2a1a1f7eb6f8f17ddc0f73fc96" category="paragraph">在規劃步驟中，您還可以檢視檔案歷史記錄，以了解勒索軟體事件何時影響檔案以及恢復點與該事件在時間上的關係。</block>
-  <block id="2167a2d55f36099e0735c5707e3b71bb" category="list-text">使用乾淨還原，您只能還原到來源環境。</block>
   <block id="b1210ce3e5b669a69cc79e2b0ee6c53f" category="paragraph">為避免這些衝突，Ransomware Resilience 會對 Clone 的虛擬機器執行 sysprep，這會重設 SID、CN 和機器識別碼。重設這些值可確保 Clone 的虛擬機器作為獨特且獨立的執行個體運作，而不會干擾來源虛擬機器。</block>
   <block id="24026e872b9b407496cb872d2956b369" category="paragraph">如果主要來源無法使用，且您已設定次要來源，資料將還原至次要來源。</block>
   <block id="170723e001c3b4c37b841a3f81011c7c" category="admonition">建立 IRE 時，必須在系統選擇步驟中新增要用於分析的每個系統（主系統或輔助系統）。</block>
@@ -3030,4 +3001,32 @@
   <block id="c0062521587f0627efacd75f75346a70" category="list-text">檢閱已啟用區塊可疑檔案副檔名保護的 SVM 清單。您可以查看哪個 SVM 使用哪個清單。若要變更清單，請選取 *變更清單*。</block>
   <block id="0838f82be2f27550128e5538479f4329" category="paragraph">您無法刪除已套用於 SVM 的清單。您必須先<block ref="90336a7b5ebc96973344e57563a353c4" category="inline-xref-macro-rx"></block>。</block>
   <block id="ce60d8ca89677d54bbe0ffc235212685" category="paragraph">您無法刪除該 NetApp 清單。</block>
+  <block id="d1911ce26de45f2d2605b10b84369117" category="summary">在建立使用者活動代理程式之前，您必須確保符合所列出的作業系統、伺服器及網路需求。</block>
+  <block id="16c57e5f4f0b7d7b3708ae5054805ed5" category="paragraph">NetApp Ransomware Resilience 使用者行為偵測功能可讓您回應使用者層級的勒索軟體事件。您必須建立租戶和一組代理程式，以啟用使用者行為偵測。在啟用偵測之前，您必須確認符合所述的作業系統、伺服器及網路需求，以便 Ransomware Resilience 能夠正確偵測並報告事件。</block>
+  <block id="fc36a1ad1399ea3c897ac2b166f590bc" category="section-title">雲端供應商支援</block>
+  <block id="46d0eaec023b0432189234ee0117aefe" category="paragraph">若要啟用使用者行為偵測，您必須為資料收集器建立一個執行檔環境，該環境會將使用者活動事件與 Ransomware Resilience 共享。</block>
+  <block id="c754f70b24546d3b7ea308ec0a266819" category="admonition">租戶的區域部署對 Console 代理程式沒有影響。Console 代理程式的部署與這些區域無關。</block>
+  <block id="c4e4893f8021b34fa3230fef41affd05" category="paragraph">租戶可以部署在 AWS 和 Azure 的以下區域：</block>
+  <block id="c73bbd3786350b0a8d3577d82afdf489" category="cell">Red Hat Enterprise Linux</block>
+  <block id="46f920779c70ad11c81d2a88305df5ae" category="cell">9.4（64 位元）至 9.6（64 位元），包括 SELinux</block>
+  <block id="4ae0b3e9c82d7212e106b8d937d888f9" category="cell">SUSE Linux Enterprise Server</block>
+  <block id="41ae405edf25cef7a892f03a0d4a0e69" category="cell">20.04 LTS（64 位元）、22.04 LTS（64 位元）和 24.04 LTS（64 位元）</block>
+  <block id="acd32e9f7be5d0139bf41001adc3748f" category="paragraph">安裝需要 <block ref="0a342b59ecdcede0571340b9ed11633f" prefix=" " category="inline-code"></block> 命令。安裝、執行指令碼和解除安裝需要 <block ref="beb493211c3135923a11284ef26bf909" prefix=" " category="inline-code"></block> 命令。</block>
+  <block id="347df1f5ce2f4c9ac5d171603123d70b" category="list-text">**磁碟空間**：36 GB 可用</block>
+  <block id="f03113ecfe5eec30d7fa0c6e772ee333" category="list-text">分配額外的磁碟空間以建立檔案系統。確保檔案系統中至少有 35 GB 的可用空間。+ 如果<block ref="68ab1268abb7e5f5688810968df97d6b" prefix=" " category="inline-code"></block>是從 NAS 儲存設備掛載的資料夾，則本機使用者必須能夠存取此資料夾。如果本機使用者沒有必要的權限，則使用者活動代理程式建立可能會失敗。</block>
+  <block id="180d287450c45d52e0d974a3b9615eb5" category="list-text">請將使用者活動代理程式安裝在與您的 Ransomware Resilience 環境分隔的系統上。如果您確實將代理程式和 Ransomware Resilience 安裝在同一台機器上，請預留 50 至 55 GB 的磁碟空間。對於 Linux，請分配 25 至 30 GB 的空間給<block ref="4bf2f0d069734974e4d76e679433aa07" prefix=" " category="inline-code"></block>，並分配 25 GB 給<block ref="16643b27340306e64b23df0f54664963" prefix=" " category="inline-code"></block>。</block>
+  <block id="11a1b759509cbc306f2770f25a884b8c" category="paragraph">收集使用者事件時，請確保代管使用者活動代理程式的機器大小足以容納您的事件率。這表示您需要確保代管使用者活動代理程式的機器擁有足夠的資料收集器，以及足夠的 CPU 和 RAM，以處理每秒的事件數。若要增加資料收集器的數量，您可能需要增加 RAM 或 CPU 容量。Ransomware Resilience 每個使用者活動代理程式最多支援 50 個資料收集器。</block>
+  <block id="9e307da13f4fbc1f93630e31169402ff" category="cell">4 核心，16 GB</block>
+  <block id="d8eb539beebfd86b0e5458fd6893fe26" category="cell">4 核心，32 GB</block>
+  <block id="fc6f065ae34f83ecff5902aa52ae5b24" category="example-title">計算 Ransomware Resilience 中的事件資料速率。</block>
+  <block id="a9648406f04c3e2716ce48b7fa2d5192" category="paragraph">Ransomware Resilience 提供了一個指令碼，您可以在系統上執行該指令碼來計算事件資料速率。預設情況下，指令碼最多可針對五個 SVM 執行。如果您的環境包含超過五個 SVM，您可以相應地修改指令碼。無論 SVM 的數量為何，指令碼大約需要五分鐘才能取得平均事件速率讀數。在執行指令碼之前，您必須具備：</block>
+  <block id="c1b56e09cd3b4327ae7a5af63c46a8e4" category="list-text">已在 Linux 機器上安裝<block ref="2fa62e05d832f87969a8d99226be5a74" prefix=" " category="inline-code"></block>（您可以使用命令<block ref="bd20ec476e804fab40ab36d6175d1936" prefix=" " category="inline-code"></block>進行安裝）</block>
+  <block id="6d7d602708c503dfdb5b58c7cfb129ef" category="list-text">在託管使用者活動代理程式的電腦上，以管理員身分執行指令碼：<block ref="3b9c122b681f59f04f03105e338591ce" prefix=" " category="inline-code"></block></block>
+  <block id="1bd4b8d2f4802d1f84efe680d238becb" category="admonition">使用者活動代理程式使用 NetApp Data Infrastructure Insights 技術，因此使用 <block ref="08f7b82cf54cd7bdcab171ad9bd445cc" prefix=" " category="inline-code"></block> 端點。如需詳細資訊，請參閱 <block ref="12c485f306c08c5a6939aa54065b62ed" category="inline-link-macro-rx"></block>。</block>
+  <block id="d135604ac9e98972c83595fe18ccf0c7" category="cell">389（LDAP）636（LDAPS / StartTLS）</block>
+  <block id="549c6c5676384145c78e433cd7a72102" category="cell">LDAP 伺服器 URL</block>
+  <block id="f88c8d37a06873c6731c6109773db908" category="cell">從 ONTAP 到使用者活動代理程式的 FPolicy 事件通訊。必須對使用者活動代理程式開放這些連接埠，以便 ONTAP 可以向其傳送事件，包括使用者活動代理程式本身的任何防火牆（如果存在）。+ **注意：** 您無需保留*所有*這些連接埠，但為此保留的連接埠必須在此範圍內。建議您先保留 100 個連接埠，並在必要時增加。</block>
+  <block id="b0e8f71425f234ca2f061a0c485640c3" category="cell">叢集管理 IP</block>
+  <block id="a1b557c5fe6dcfec9f24e02db3bf04ef" category="cell">使用者活動代理程式</block>
+  <block id="5e845144086b1a54c1c4dd3a9e2169d7" category="cell">從 ONTAP 叢集管理 IP 到使用者活動代理程式的通訊，用於 *EMS 事件*。必須朝向使用者活動代理程式開啟這些連接埠，以便 ONTAP 將 EMS 事件傳送給它，包含使用者活動代理程式本身的任何防火牆。+ **注意：** 您不需要保留*所有*這些連接埠，但您為此保留的連接埠必須在此範圍內。建議您從保留 100 個連接埠開始，並在必要時增加。</block>
 </blocks>

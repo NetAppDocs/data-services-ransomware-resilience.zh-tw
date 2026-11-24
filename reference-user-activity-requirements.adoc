@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: reference-user-activity-requirements.html 
 keywords: data breach detection, data breach, user activity, suspicious, anomalous, requirements, endpoints, operating systems, networking 
-summary: 在建立使用者活動代理程式和其他收集器之前、您必須確保符合所述的作業系統、伺服器和網路需求。 
+summary: 在建立使用者活動代理程式之前，您必須確保符合所列出的作業系統、伺服器及網路需求。 
 ---
 = NetApp Ransomware Resilience 的使用者活動偵測需求
 :hardbreaks:
@@ -12,16 +12,19 @@ summary: 在建立使用者活動代理程式和其他收集器之前、您必�
 
 
 [role="lead"]
-NetApp Ransomware Resilience 使用者行為偵測使您能夠應對使用者層級的勒索軟體事件。您必須建立一組代理程式才能啟用使用者行為偵測。在啟用偵測之前，您必須確保您符合規定的作業系統、伺服器和網路要求，以便 Ransomware Resilience 能夠正確偵測和報告事件。
+NetApp Ransomware Resilience 使用者行為偵測功能可讓您回應使用者層級的勒索軟體事件。您必須建立租戶和一組代理程式，以啟用使用者行為偵測。在啟用偵測之前，您必須確認符合所述的作業系統、伺服器及網路需求，以便 Ransomware Resilience 能夠正確偵測並報告事件。
 
 
 
-[[user-activity-agent-cloud-provider-support]]
-== 使用者活動代理程式雲端供應商支援
+[[cloud-provider-support]]
+== 雲端供應商支援
 
-若要啟用使用者行為偵測，您必須建立使用者活動代理程式。使用者活動代理程式是資料收集器的執行檔環境，可與 Ransomware Resilience 共用使用者活動事件。
+若要啟用使用者行為偵測，您必須為資料收集器建立一個執行檔環境，該環境會將使用者活動事件與 Ransomware Resilience 共享。
 
-使用者活動代理程式可以部署在 AWS 和 Azure 的以下區域：
+
+NOTE: 租戶的區域部署對 Console 代理程式沒有影響。Console 代理程式的部署與這些區域無關。
+
+租戶可以部署在 AWS 和 Azure 的以下區域：
 
 |===
 | 雲端提供者 | 地區 
@@ -37,9 +40,6 @@ NetApp Ransomware Resilience 使用者行為偵測使您能夠應對使用者層
 
 | Azure | 美國東部 
 |===
-
-NOTE: 使用者活動代理程式的區域部署對 Console 代理程式沒有影響。Console 代理程式的部署與這些區域無關。
-
 
 
 [[operating-system-requirements]]
@@ -67,13 +67,13 @@ NOTE: 使用者活動代理程式的區域部署對 Console 代理程式沒有�
 | Oracle Linux | 8.10（64 位元）、9.1（64 位元）至 9.6（64 位元），包括 SELinux 
 
 
-| 紅帽 | 8.10（64 位元）、9.1（64 位元）至 9.6（64 位元）和 10（64 位元），包括 SELinux 
+| Red Hat Enterprise Linux | 8.10（64 位元）、9.1（64 位元）至 9.6（64 位元）和 10（64 位元），包括 SELinux 
 
 
-| 洛基 | Rocky 9.4 (64 位) 至 9.6 (64 位)，包括 SELinux 
+| 洛基 | 9.4（64 位元）至 9.6（64 位元），包括 SELinux 
 
 
-| SUSE 企業 Linux | 15 SP4（64 位元）至 15 SP6（64 位元），包括 SELinux 
+| SUSE Linux Enterprise Server | 15 SP4（64 位元）至 15 SP6（64 位元），包括 SELinux 
 
 
 | Ubuntu | 20.04 LTS（64 位元）、22.04 LTS（64 位元）和 24.04 LTS（64 位元） 
@@ -81,7 +81,7 @@ NOTE: 使用者活動代理程式的區域部署對 Console 代理程式沒有�
 
 NOTE: 用于用户活动代理的计算机不应运行其他应用程序级别的软件。建議使用專用伺服器。
 
-執行 `unzip`命令是安裝所必需的。執行 `sudo su -`命令是安裝、執行腳本和解除安裝所必需的。
+安裝需要  `unzip` 命令。安裝、執行指令碼和解除安裝需要  `sudo su -` 命令。
 
 
 
@@ -92,7 +92,7 @@ NOTE: 用于用户活动代理的计算机不应运行其他应用程序级别�
 
 * CPU：4 核
 * **內存**：16GB 內存
-* **磁碟空間**：36 GB 可用磁碟空間
+* **磁碟空間**：36 GB 可用
 
 
 
@@ -100,8 +100,8 @@ NOTE: 用于用户活动代理的计算机不应运行其他应用程序级别�
 [[server-recommendations]]
 === 伺服器建議
 
-* 分配額外的磁碟空間以建立檔案系統。確保檔案系統中至少有 35 GB 的可用空間。+ 如果 `/opt`是從 NAS 儲存設備掛載的資料夾，則本機使用者必須擁有此資料夾的存取權限。如果本機使用者沒有必要的權限，則使用者活動代理程式建立可能會失敗。
-* 建議您將使用者活動代理程式安裝在與勒索軟體防護環境分隔的系統上。如果您確實將代理程式和勒索軟體防護安裝在同一台機器上，請預留 50 至 55 GB 的磁碟空間。對於 Linux 系統，請為 `/opt/netapp`分配 25 至 30 GB 的空間，並為 `var/log/netapp`分配 25 GB 的空間。
+* 分配額外的磁碟空間以建立檔案系統。確保檔案系統中至少有 35 GB 的可用空間。+ 如果 `/opt`是從 NAS 儲存設備掛載的資料夾，則本機使用者必須能夠存取此資料夾。如果本機使用者沒有必要的權限，則使用者活動代理程式建立可能會失敗。
+* 請將使用者活動代理程式安裝在與您的 Ransomware Resilience 環境分隔的系統上。如果您確實將代理程式和 Ransomware Resilience 安裝在同一台機器上，請預留 50 至 55 GB 的磁碟空間。對於 Linux，請分配 25 至 30 GB 的空間給 `/opt/netapp`，並分配 25 GB 給 `/var/log/netapp`。
 * 建議您使用網路時間協定 (NTP) 或簡單網路時間協定 (SNTP) 同步ONTAP系統和使用者活動代理程式電腦上的時間。
 
 
@@ -110,7 +110,7 @@ NOTE: 用于用户活动代理的计算机不应运行其他应用程序级别�
 [[sizing-recommendations]]
 === 大小調整建議
 
-收集使用者事件時，請確保執行使用者活動代理程式的機器配置足以應付事件發生率。這意味著您需要確保執行使用者活動代理程式的機器擁有足夠的資料收集器、CPU 和 RAM，以承受每秒事件數。若要增加資料收集器的數量，您可能需要增加 RAM 或 CPU 容量。Ransomware Resilience 每個使用者活動代理程式最多支援 50 個資料收集器。
+收集使用者事件時，請確保代管使用者活動代理程式的機器大小足以容納您的事件率。這表示您需要確保代管使用者活動代理程式的機器擁有足夠的資料收集器，以及足夠的 CPU 和 RAM，以處理每秒的事件數。若要增加資料收集器的數量，您可能需要增加 RAM 或 CPU 容量。Ransomware Resilience 每個使用者活動代理程式最多支援 50 個資料收集器。
 
 下表提供大小調整的一般指引：
 
@@ -118,7 +118,7 @@ NOTE: 用于用户活动代理的计算机不应运行其他应用程序级别�
 | 使用者活動代理程式機器組態 | 資料收集器數量 | 最大事件速率 
 
 
-| 4 核心，16GB | 10 個資料收集器 | 每秒 20,000 個事件 
+| 4 核心，16 GB | 10 個資料收集器 | 每秒 20,000 個事件 
 
 
 | 4 核心，32 GB | 20 個資料收集器 | 每秒 20,000 個事件 
@@ -131,19 +131,19 @@ Where E is the sum of all events per second across all data collectors:
 
 E + (0.3 x E) < 20,000 events/second
 ----
-.Ransomware Resilience 提供了一個用於計算事件資料速率的腳本。了解如何在 Ransomware Resilience 中計算事件資料速率。
+.計算 Ransomware Resilience 中的事件資料速率。
 [%collapsible]
 ====
-Ransomware Resilience 提供了一個腳本，您可以在系統上執行該腳本來計算事件資料速率。預設情況下，此腳本最多可處理五個儲存 VM。如果您的環境包含超過 5 個 SVM，您可以相應地修改腳本。無論 SVM 的數量如何，該腳本大約需要五分鐘才能獲得平均事件速率讀數。在執行腳本之前，您必須具備以下條件：
+Ransomware Resilience 提供了一個指令碼，您可以在系統上執行該指令碼來計算事件資料速率。預設情況下，指令碼最多可針對五個 SVM 執行。如果您的環境包含超過五個 SVM，您可以相應地修改指令碼。無論 SVM 的數量為何，指令碼大約需要五分鐘才能取得平均事件速率讀數。在執行指令碼之前，您必須具備：
 
 * link:suspicious-user-activity.html["已設定使用者活動代理程式"]
 * 叢集 IP 位址
 * 叢集管理使用者名稱和密碼
-* 已安裝 `sshpass` 在 Linux 機器上（您可以使用命令進行安裝 `sudo yum install -y sshpass`）
+* 已在 Linux 機器上安裝 `sshpass`（您可以使用命令 `sudo yum install -y sshpass`進行安裝）
 
 
 .步驟
-. 從託管使用者活動代理程式的叢集中，以管理員身份執行指令碼： `/opt/netapp/cloudsecure/agent/install/svm_event_rate_checker.sh`
+. 在託管使用者活動代理程式的電腦上，以管理員身分執行指令碼： `/opt/netapp/cloudsecure/agent/install/svm_event_rate_checker.sh`
 . 出現提示時，請提供叢集 IP 位址、管理員使用者名稱和管理員密碼。
 . 該腳本大約需要五分鐘才能執行完畢。執行完成後，命令列會顯示事件速率，例如「Svm svm_rate 正在產生 100 個事件/秒」。
 +
@@ -163,7 +163,7 @@ Ransomware Resilience 提供了一個腳本，您可以在系統上執行該腳�
 IMPORTANT: 在初始安裝期間，請將  `<site_name>` 替換為萬用字元 (`*` 權限。代理程式啟動並完全運作後，您可以將權限替換為網站名稱。請聯絡您的 NetApp 代表以取得網站名稱。
 
 
-NOTE: 使用者活動代理程式使用 NetApp Data Infrastructure Insights 技術，因此需要使用 `cloudinsights`端點。如需更多資訊，請參閱 link:concept-user-behavior.html#user-activity-forensics["Ransomware Resilience 與 Data Infrastructure Insights"]。
+NOTE: 使用者活動代理程式使用 NetApp Data Infrastructure Insights 技術，因此使用  `cloudinsights` 端點。如需詳細資訊，請參閱 link:concept-user-behavior.html#user-activity-forensics["Ransomware Resilience 與 Data Infrastructure Insights"]。
 
 
 
@@ -229,18 +229,18 @@ NOTE: 使用者活動代理程式使用 NetApp Data Infrastructure Insights 技�
 | 協定 | 港口 | 來源 | 目的地 | 描述 
 
 
-| TCP | 389（LDAP） 636（LDAPS / start-tls） | 使用者活動代理 | LDAP 伺服器 URL | 連線到 LDAP 
+| TCP | 389（LDAP）636（LDAPS / StartTLS） | 使用者活動代理 | LDAP 伺服器 URL | 連線到 LDAP 
 
 
 | HTTPS（TCP） | 443 | 使用者活動代理 | 叢集或SVM管理IP位址（取決於SVM收集器配置） | API 與ONTAP進行通信 
 
 
-| TCP | 35000 - 55000  a| 
+| TCP | 35000-55000  a| 
 SVM 資料 LIF IP 位址
-| 使用者活動代理 | ONTAP 與使用者活動代理程式之間用於 FPolicy 事件的通訊。為了讓 ONTAP 能夠向使用者活動代理程式傳送事件，必須向其開放以下連接埠，包括使用者活動代理程式本身的任何防火牆（如果存在）。+ **注意：** 您無需保留*所有*連接埠，但所保留的連接埠必須在此範圍內。建議您先保留 100 個連接埠，並視需要增加。 
+| 使用者活動代理 | 從 ONTAP 到使用者活動代理程式的 FPolicy 事件通訊。必須對使用者活動代理程式開放這些連接埠，以便 ONTAP 可以向其傳送事件，包括使用者活動代理程式本身的任何防火牆（如果存在）。+ **注意：** 您無需保留*所有*這些連接埠，但為此保留的連接埠必須在此範圍內。建議您先保留 100 個連接埠，並在必要時增加。 
 
 
-| TCP | 35000-55000 | 叢集管理IP | 使用者活動代理 | ONTAP叢集管理 IP 與使用者活動代理程式之間關於 *EMS 事件* 的通訊。為了讓ONTAP向用戶活動代理發送 EMS 事件，必須向用戶活動代理開放這些端口，包括用戶活動代理本身上的任何防火牆。+ **注意：**您不需要預留*所有*這些端口，但您為此預留的端口必須在此範圍內。建議您先預留 100 個端口，如有必要再增加。 
+| TCP | 35000-55000 | 叢集管理 IP | 使用者活動代理程式 | 從 ONTAP 叢集管理 IP 到使用者活動代理程式的通訊，用於 *EMS 事件*。必須朝向使用者活動代理程式開啟這些連接埠，以便 ONTAP 將 EMS 事件傳送給它，包含使用者活動代理程式本身的任何防火牆。+ **注意：** 您不需要保留*所有*這些連接埠，但您為此保留的連接埠必須在此範圍內。建議您從保留 100 個連接埠開始，並在必要時增加。 
 
 
 | SSH | 22 | 使用者活動代理 | 叢集管理 | 需要 CIFS/SMB 使用者阻止。 
