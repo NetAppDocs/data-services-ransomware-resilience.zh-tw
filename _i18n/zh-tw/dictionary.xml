@@ -1244,15 +1244,12 @@
   <block id="a1123cd59d7bd876c080c33906ae65ce" category="list-text">*服務*：選擇與問題相關的服務。例如，* NetApp Console* 特定於控制台內的工作流程或功能的技術支援問題。</block>
   <block id="987df7518e2afb50a860647c832afd13" category="list-text">*系統*：如果適用於存儲，請選擇* Cloud Volumes ONTAP* 或 *On-Prem*，然後選擇相關的工作環境。</block>
   <block id="8f8e8a86e5f52b6186a37bdf266c4320" category="paragraph">系統清單位於控制台組織範圍內，並且您在頂部橫幅中選擇了控制台代理。</block>
-  <block id="77c89527ec8a9f89b24c5579d19b3b4b" category="paragraph"><block ref="77c89527ec8a9f89b24c5579d19b3b4b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="178fdaf97b1d1577437f11ee9d5e5229" category="paragraph">此錯誤可能表示 NSS 帳戶及其關聯的記錄公司與NetApp Console帳戶序號的記錄公司不同（即。960xxxx）或工作環境序號。您可以使用以下選項之一尋求協助：</block>
   <block id="e1100b46295d42ed50ba7a4630710164" category="section-title">管理您的支援案例</block>
   <block id="316508a3483178100806a9d44b49aba2" category="paragraph">您可以直接從控制台檢視和管理活動和已解決的支援案例。您可以管理與您的 NSS 帳戶和公司相關的案例。</block>
   <block id="9163e8bca6fd93c080d35ab49e3efdfa" category="list-text">在NetApp Console中，選擇「說明」&gt;「支援」。</block>
   <block id="2019fd19051c3ef493dbbb9ca65bab87" category="list-text">選擇*案例管理*，如果出現提示，請將您的 NSS 帳戶新增至控制台。</block>
   <block id="75e54e3a6fdbf43ed890669e079d7594" category="paragraph">*案例管理*頁面顯示與您的控制台使用者帳戶關聯的 NSS 帳戶相關的未結案例。這與出現在 *NSS 管理* 頁面頂部的 NSS 帳戶相同。</block>
-  <block id="8ac6be88c1aa79062825a147fb263b0e" category="list-text">透過選擇<block ref="500a336e7ba1c54bcffba4e27bda4eb6" category="inline-image-macro-rx" type="image"></block>然後選擇您想要顯示的列。</block>
-  <block id="049b7b9fab1242f5e715952973c9474d" category="list-text">透過選擇管理現有案例<block ref="7381d9baeaf62eb099ce84f1a21ed5ca" category="inline-image-macro-rx" type="image"></block>並選擇其中一個可用選項：</block>
   <block id="776abbf4d80cbef17bd3c86ff37b2257" category="paragraph">需要進行支援註冊才能獲得針對NetApp Console及其儲存解決方案和資料服務的技術支援。還需要支援註冊才能啟用Cloud Volumes ONTAP系統的關鍵工作流程。</block>
   <block id="ba4e23e03f4354a0f1ef2781272c8477" category="paragraph">註冊支援並不能使NetApp獲得雲端提供者文件服務的支援。有關雲端提供者文件服務、其基礎設施或使用該服務的任何解決方案的技術支持，請參閱該產品文件中的「取得協助」。</block>
   <block id="869a868c87f6fb61410cfd773b4f1bab" category="list-text">註冊您的NetApp Console帳戶序號（您的 20 位元 960xxxxxxxxx 序號位於控制台中的「支援資源」頁面上）。</block>
@@ -1395,10 +1392,6 @@
   <block id="ad53fda1a18da9db9d8aa1d460952aa5" category="list-text">二次複製到ONTAP</block>
   <block id="447fce6406d4a8e99de98a2d5d107536" category="list-text">如果您的策略包含複製，請選擇**目標系統**和**目標儲存虛擬機器**。選擇**下一步**。</block>
   <block id="6f540707e47351a26c8e3c79ccce18ea" category="list-text">*保護*：包括所有工作負載的狀態和詳細信息，包括受保護和處於風險中的工作負載總數。</block>
-  <block id="38fc1b337c0ea26463916fc2913205c1" category="paragraph"><block ref="38fc1b337c0ea26463916fc2913205c1" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="7019a39846e9a2c7f7a80eaba91e4a41" category="paragraph"><block ref="7019a39846e9a2c7f7a80eaba91e4a41" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="1d593c3f7480ada9580d93cd753c3f93" category="paragraph">這是系統產生的映射到您的電子郵件的 ID。在*NSS 管理*頁面上，您可以顯示來自<block ref="5444f6f0c3983523c8933a1864b2b390" category="inline-image-macro-rx" type="image"></block>菜單。</block>
-  <block id="872eaae7deb6035c20f9bfe6deefd03d" category="list-text">如果您需要刷新登入憑證令牌，還有一個*更新憑證*選項<block ref="5444f6f0c3983523c8933a1864b2b390" category="inline-image-macro-rx" type="image"></block>菜單。</block>
   <block id="667dffcf5676fe0bd645082d2a512fef" category="section-title">2026年1月12日</block>
   <block id="49fa679e35a13dc09de6805c384904d1" category="list-text">若要設定備份策略，請選擇一個，然後選擇**下一步**。</block>
   <block id="389e0c39aeda061370262a9fa330d865" category="doc">不支援的捲</block>
@@ -1445,7 +1438,6 @@
   <block id="3156b4b992dec700b60fedaa2eca010c" category="paragraph">以下作業系統支援可疑使用者行為偵測：</block>
   <block id="92adf790b863484fc83be969039ec890" category="section-title">伺服器建議</block>
   <block id="b81a18d778d8d2491614ae90532db84f" category="admonition">在初始安裝期間，請將 <block ref="50cff7c5933e29331b88e32e4f2a101d" prefix=" " category="inline-code"></block> 替換為萬用字元 <block ref="3389dae361af79b04c9c8e7057f60cc6" prefix="(" category="inline-code"></block> 權限。代理程式啟動並完全運作後，您可以將權限替換為網站名稱。請聯絡您的 NetApp 代表以取得網站名稱。</block>
-  <block id="c4f09ee186bb94e99b8c3f938adf8816" category="section-title">基於亞太地區的使用者活動代理程式部署</block>
   <block id="869af1b4577e081268bf8ee592a6018e" category="section-title">歐洲使用者活動代理程式部署</block>
   <block id="ae6cc9c44044939bcbbefd693857f742" category="section-title">美國使用者活動代理程式部署</block>
   <block id="c290a5941ad6eb0d5fe8752c15c5fd78" category="section-title">下一步</block>
@@ -3002,9 +2994,6 @@
   <block id="0838f82be2f27550128e5538479f4329" category="paragraph">您無法刪除已套用於 SVM 的清單。您必須先<block ref="90336a7b5ebc96973344e57563a353c4" category="inline-xref-macro-rx"></block>。</block>
   <block id="ce60d8ca89677d54bbe0ffc235212685" category="paragraph">您無法刪除該 NetApp 清單。</block>
   <block id="d1911ce26de45f2d2605b10b84369117" category="summary">在建立使用者活動代理程式之前，您必須確保符合所列出的作業系統、伺服器及網路需求。</block>
-  <block id="16c57e5f4f0b7d7b3708ae5054805ed5" category="paragraph">NetApp Ransomware Resilience 使用者行為偵測功能可讓您回應使用者層級的勒索軟體事件。您必須建立租戶和一組代理程式，以啟用使用者行為偵測。在啟用偵測之前，您必須確認符合所述的作業系統、伺服器及網路需求，以便 Ransomware Resilience 能夠正確偵測並報告事件。</block>
-  <block id="fc36a1ad1399ea3c897ac2b166f590bc" category="section-title">雲端供應商支援</block>
-  <block id="46d0eaec023b0432189234ee0117aefe" category="paragraph">若要啟用使用者行為偵測，您必須為資料收集器建立一個執行檔環境，該環境會將使用者活動事件與 Ransomware Resilience 共享。</block>
   <block id="c754f70b24546d3b7ea308ec0a266819" category="admonition">租戶的區域部署對 Console 代理程式沒有影響。Console 代理程式的部署與這些區域無關。</block>
   <block id="c4e4893f8021b34fa3230fef41affd05" category="paragraph">租戶可以部署在 AWS 和 Azure 的以下區域：</block>
   <block id="c73bbd3786350b0a8d3577d82afdf489" category="cell">Red Hat Enterprise Linux</block>
@@ -3018,7 +3007,6 @@
   <block id="11a1b759509cbc306f2770f25a884b8c" category="paragraph">收集使用者事件時，請確保代管使用者活動代理程式的機器大小足以容納您的事件率。這表示您需要確保代管使用者活動代理程式的機器擁有足夠的資料收集器，以及足夠的 CPU 和 RAM，以處理每秒的事件數。若要增加資料收集器的數量，您可能需要增加 RAM 或 CPU 容量。Ransomware Resilience 每個使用者活動代理程式最多支援 50 個資料收集器。</block>
   <block id="9e307da13f4fbc1f93630e31169402ff" category="cell">4 核心，16 GB</block>
   <block id="d8eb539beebfd86b0e5458fd6893fe26" category="cell">4 核心，32 GB</block>
-  <block id="fc6f065ae34f83ecff5902aa52ae5b24" category="example-title">計算 Ransomware Resilience 中的事件資料速率。</block>
   <block id="a9648406f04c3e2716ce48b7fa2d5192" category="paragraph">Ransomware Resilience 提供了一個指令碼，您可以在系統上執行該指令碼來計算事件資料速率。預設情況下，指令碼最多可針對五個 SVM 執行。如果您的環境包含超過五個 SVM，您可以相應地修改指令碼。無論 SVM 的數量為何，指令碼大約需要五分鐘才能取得平均事件速率讀數。在執行指令碼之前，您必須具備：</block>
   <block id="c1b56e09cd3b4327ae7a5af63c46a8e4" category="list-text">已在 Linux 機器上安裝<block ref="2fa62e05d832f87969a8d99226be5a74" prefix=" " category="inline-code"></block>（您可以使用命令<block ref="bd20ec476e804fab40ab36d6175d1936" prefix=" " category="inline-code"></block>進行安裝）</block>
   <block id="6d7d602708c503dfdb5b58c7cfb129ef" category="list-text">在託管使用者活動代理程式的電腦上，以管理員身分執行指令碼：<block ref="3b9c122b681f59f04f03105e338591ce" prefix=" " category="inline-code"></block></block>
@@ -3029,4 +3017,19 @@
   <block id="b0e8f71425f234ca2f061a0c485640c3" category="cell">叢集管理 IP</block>
   <block id="a1b557c5fe6dcfec9f24e02db3bf04ef" category="cell">使用者活動代理程式</block>
   <block id="5e845144086b1a54c1c4dd3a9e2169d7" category="cell">從 ONTAP 叢集管理 IP 到使用者活動代理程式的通訊，用於 *EMS 事件*。必須朝向使用者活動代理程式開啟這些連接埠，以便 ONTAP 將 EMS 事件傳送給它，包含使用者活動代理程式本身的任何防火牆。+ **注意：** 您不需要保留*所有*這些連接埠，但您為此保留的連接埠必須在此範圍內。建議您從保留 100 個連接埠開始，並在必要時增加。</block>
+  <block id="07e4c03c13f6b5da296dfd1e6b67c352" category="paragraph">NetApp Ransomware Resilience 使用者活動偵測使您能夠回應使用者層級的勒索軟體事件。您必須建立租戶和一組代理程式才能啟用使用者活動偵測。在啟用偵測之前，您必須確保您符合規定的作業系統、伺服器和網路要求，以便 Ransomware Resilience 能夠正確偵測和報告事件。</block>
+  <block id="f451214989539191fc4ce664be56280d" category="section-title">使用者活動租戶</block>
+  <block id="a573617370c0046fea2fc1d6d3e124fd" category="paragraph">為了啟用使用者活動偵測，系統會設定一個租戶，允許將使用者活動事件與 Ransomware Resilience 共享的。您可以選擇 Ransomware Resilience 部署該租戶的區域和雲端供應商。</block>
+  <block id="660bab89ad300bad0bf7f20f46e5c3a3" category="section-title">使用者活動代理程式需求</block>
+  <block id="f431152e4d18e6c70ad5859550b7dbfc" category="paragraph">建立租戶後，您必須建立使用者活動代理程式以啟用使用者活動偵測。使用者活動代理程式並非 Console 代理程式；使用者活動代理程式需要部署為分隔的運算執行個體。</block>
+  <block id="a49273673c8a9345469d7e992d85038e" category="paragraph">請確保您的使用者活動代理程式符合以下要求並遵守相關建議。</block>
+  <block id="a543ceb615fbbd830a521dc1f498b0c6" category="example-title">計算 Ransomware Resilience 中的事件資料速率</block>
+  <block id="6617d9fa7ab8a50760603157d306a320" category="section-title">位於亞太地區的使用者活動代理程式部署</block>
+  <block id="6a01d74a3f012349cadafc7f0c97c86d" category="paragraph"><block ref="6a01d74a3f012349cadafc7f0c97c86d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e461a14ef18284f75a2b6063d614da64" category="list-text">選取 <block ref="561341289de713dd5ea2cd49d1743cab" category="inline-image-macro-rx" type="image"></block>，然後選擇要顯示的欄，即可變更表格中顯示的欄。</block>
+  <block id="cb70a108f4a6413201209cb4b6024938" category="list-text">透過選取 <block ref="babe7781192bcd33c63a8532a0937e8b" category="inline-image-macro-rx" type="image"></block> 並選取其中一個可用選項來管理現有案例：</block>
+  <block id="9c0825883c050c64e9b59af470120939" category="paragraph"><block ref="9c0825883c050c64e9b59af470120939" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="357be4e47fe6e7132dca092006062510" category="paragraph"><block ref="357be4e47fe6e7132dca092006062510" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="848755f433bd66788db4d5c6e554252d" category="paragraph">這是系統產生的與您的電子郵件地址對應的 ID。您可以在 *NSS Management* 頁面的 <block ref="6a3f89871d33c6cbc194f4f6a8275a65" category="inline-image-macro-rx" type="image"></block> 選單中找到您的電子郵件地址。</block>
+  <block id="5c680c883d2069f8039766ada41f7c1f" category="list-text">如果您需要刷新登入憑證令牌，<block ref="6a3f89871d33c6cbc194f4f6a8275a65" category="inline-image-macro-rx" type="image"></block> 選單中還有一個「更新憑證」選項。</block>
 </blocks>

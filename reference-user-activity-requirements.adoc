@@ -12,14 +12,14 @@ summary: 在建立使用者活動代理程式之前，您必須確保符合所�
 
 
 [role="lead"]
-NetApp Ransomware Resilience 使用者行為偵測功能可讓您回應使用者層級的勒索軟體事件。您必須建立租戶和一組代理程式，以啟用使用者行為偵測。在啟用偵測之前，您必須確認符合所述的作業系統、伺服器及網路需求，以便 Ransomware Resilience 能夠正確偵測並報告事件。
+NetApp Ransomware Resilience 使用者活動偵測使您能夠回應使用者層級的勒索軟體事件。您必須建立租戶和一組代理程式才能啟用使用者活動偵測。在啟用偵測之前，您必須確保您符合規定的作業系統、伺服器和網路要求，以便 Ransomware Resilience 能夠正確偵測和報告事件。
 
 
 
-[[cloud-provider-support]]
-== 雲端供應商支援
+[[user-activity-tenant]]
+== 使用者活動租戶
 
-若要啟用使用者行為偵測，您必須為資料收集器建立一個執行檔環境，該環境會將使用者活動事件與 Ransomware Resilience 共享。
+為了啟用使用者活動偵測，系統會設定一個租戶，允許將使用者活動事件與 Ransomware Resilience 共享的。您可以選擇 Ransomware Resilience 部署該租戶的區域和雲端供應商。
 
 
 NOTE: 租戶的區域部署對 Console 代理程式沒有影響。Console 代理程式的部署與這些區域無關。
@@ -42,8 +42,17 @@ NOTE: 租戶的區域部署對 Console 代理程式沒有影響。Console 代理
 |===
 
 
+[[user-activity-agent-requirements]]
+== 使用者活動代理程式需求
+
+建立租戶後，您必須建立使用者活動代理程式以啟用使用者活動偵測。使用者活動代理程式並非 Console 代理程式；使用者活動代理程式需要部署為分隔的運算執行個體。
+
+請確保您的使用者活動代理程式符合以下要求並遵守相關建議。
+
+
+
 [[operating-system-requirements]]
-== 作業系統要求
+=== 作業系統要求
 
 以下作業系統支援可疑使用者行為偵測：
 
@@ -86,7 +95,7 @@ NOTE: 用于用户活动代理的计算机不应运行其他应用程序级别�
 
 
 [[server-requirements]]
-== 伺服器要求
+=== 伺服器要求
 
 伺服器必須滿足以下最低要求：
 
@@ -97,8 +106,7 @@ NOTE: 用于用户活动代理的计算机不应运行其他应用程序级别�
 
 
 
-[[server-recommendations]]
-=== 伺服器建議
+==== 伺服器建議
 
 * 分配額外的磁碟空間以建立檔案系統。確保檔案系統中至少有 35 GB 的可用空間。+ 如果 `/opt`是從 NAS 儲存設備掛載的資料夾，則本機使用者必須能夠存取此資料夾。如果本機使用者沒有必要的權限，則使用者活動代理程式建立可能會失敗。
 * 請將使用者活動代理程式安裝在與您的 Ransomware Resilience 環境分隔的系統上。如果您確實將代理程式和 Ransomware Resilience 安裝在同一台機器上，請預留 50 至 55 GB 的磁碟空間。對於 Linux，請分配 25 至 30 GB 的空間給 `/opt/netapp`，並分配 25 GB 給 `/var/log/netapp`。
@@ -107,8 +115,7 @@ NOTE: 用于用户活动代理的计算机不应运行其他应用程序级别�
 
 
 
-[[sizing-recommendations]]
-=== 大小調整建議
+==== 大小調整建議
 
 收集使用者事件時，請確保代管使用者活動代理程式的機器大小足以容納您的事件率。這表示您需要確保代管使用者活動代理程式的機器擁有足夠的資料收集器，以及足夠的 CPU 和 RAM，以處理每秒的事件數。若要增加資料收集器的數量，您可能需要增加 RAM 或 CPU 容量。Ransomware Resilience 每個使用者活動代理程式最多支援 50 個資料收集器。
 
@@ -131,7 +138,7 @@ Where E is the sum of all events per second across all data collectors:
 
 E + (0.3 x E) < 20,000 events/second
 ----
-.計算 Ransomware Resilience 中的事件資料速率。
+.計算 Ransomware Resilience 中的事件資料速率
 [%collapsible]
 ====
 Ransomware Resilience 提供了一個指令碼，您可以在系統上執行該指令碼來計算事件資料速率。預設情況下，指令碼最多可針對五個 SVM 執行。如果您的環境包含超過五個 SVM，您可以相應地修改指令碼。無論 SVM 的數量為何，指令碼大約需要五分鐘才能取得平均事件速率讀數。在執行指令碼之前，您必須具備：
@@ -155,7 +162,7 @@ Ransomware Resilience 提供了一個指令碼，您可以在系統上執行該�
 
 
 [[cloud-network-access-rules]]
-== 雲端網路存取規則
+=== 雲端網路存取規則
 
 查看您所在地區（亞太地區、歐洲或美國）的雲端網路存取規則。
 
@@ -167,8 +174,7 @@ NOTE: 使用者活動代理程式使用 NetApp Data Infrastructure Insights 技�
 
 
 
-[[apac-based-user-activity-agent-deployments]]
-=== 基於亞太地區的使用者活動代理程式部署
+==== 位於亞太地區的使用者活動代理程式部署
 
 [cols="1,1,1,3,1"]
 |===
@@ -185,8 +191,7 @@ NOTE: 使用者活動代理程式使用 NetApp Data Infrastructure Insights 技�
 |===
 
 
-[[europe-based-user-activity-agent-deployments]]
-=== 歐洲使用者活動代理程式部署
+==== 歐洲使用者活動代理程式部署
 
 [cols="1,1,1,3,1"]
 |===
@@ -203,8 +208,7 @@ NOTE: 使用者活動代理程式使用 NetApp Data Infrastructure Insights 技�
 |===
 
 
-[[us-based-user-activity-agent-deployments]]
-=== 美國使用者活動代理程式部署
+==== 美國使用者活動代理程式部署
 
 [cols="1,1,1,3,1"]
 |===
@@ -222,7 +226,7 @@ NOTE: 使用者活動代理程式使用 NetApp Data Infrastructure Insights 技�
 
 
 [[in-network-rules]]
-== 網路內規則
+=== 網路內規則
 
 [cols="5*"]
 |===
